@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>遵义大酒店五星级软装工程全周期商业操盘研报 ｜ 梁清波 商业专案库</title>
+    <!-- Google Fonts 典藏学术与静奢排版字体族 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=JetBrains+Mono:ital,wght@0,400..700;1,400..700&family=Noto+Serif+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <!-- ECharts 5 现代交互图表库 -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <style>
+        :root {
+            /* 静奢典藏自然羊皮纸调色盘 (Quiet Luxury & Archival Paper) */
+            --bg-page: #fbfbfa;           /* 典藏羊皮纸本白底色 */
+            --bg-card: #ffffff;           /* 纯净研报卡片白 */
+            --bg-subtle: #f5f4ef;         /* 雅致羊皮纸浅底 */
+            --bg-table-head: #f5f4ef;     /* 雅致古籍米灰 */
+            --border-hairline: rgba(18, 19, 22, 0.08); /* 0.5px 极细发丝分割线 */
+            --border-strong: rgba(18, 19, 22, 0.22);   /* 书籍装订骨架线 */
+            --border-accent: #8a6839;     /* 沉香古铜金装饰线 */
+            
+            --text-primary: #121316;      /* 碳素墨黑，沉稳高对比度 */
+            --text-secondary: #383b42;    /* 铅印中灰，用于正文叙述 */
+            --text-tertiary: #6e727d;     /* 浅注银灰，用于旁注与规格参数 */
+            --text-bronze: #8a6839;       /* 沉香古铜金文字 */
+            
+            --accent-navy: #162a45;       /* 萨维尔街牛津深海蓝，严正权威 */
+            --accent-bronze: #8a6839;     /* 沉香古铜金，低奢灵魂标色 */
+            --accent-gold: #c5a059;       /* 典雅明金 */
+            --accent-sage: #2a4c38;       /* 英国皇家墨玉绿 */
+            --accent-forest: #3a6351;     /* 森林墨绿 */
+            --accent-slate: #475569;      /* 冷板岩深灰 */
+            --accent-crimson: #8b263e;    /* 典雅绯红 */
+            
+            --font-serif: "Noto Serif SC", "EB Garamond", "Songti SC", STSong, "Times New Roman", SimSun, serif;
+            --font-mono: "JetBrains Mono", Consolas, "Courier New", monospace;
+            
+            --card-shadow: 0 1px 3px rgba(18, 19, 22, 0.04), 0 8px 24px -6px rgba(18, 19, 22, 0.03);
+            --card-hover-shadow: 0 4px 12px -2px rgba(18, 19, 22, 0.06), 0 16px 36px -8px rgba(18, 19, 22, 0.06);
+            --radius-lg: 8px;
+            --radius-md: 4px;
+            --radius-sm: 2px;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        
+        body {
+            background-color: var(--bg-page);
+            color: var(--text-primary);
+            font-family: var(--font-serif);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+            font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+            font-kerning: normal;
+            line-height: 1.76;
+            padding: 40px 24px 80px 24px;
+        }
+
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+        }
+
+        /* 顶部导航与锚点 (专案典藏录 Registry) */
+        .nav-dock {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(251, 251, 250, 0.94);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-md);
+            padding: 12px 28px;
+            margin-bottom: 48px;
+            position: sticky;
+            top: 20px;
+            z-index: 100;
+            box-shadow: 0 2px 12px rgba(18, 19, 22, 0.03);
+        }
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            white-space: nowrap;
+        }
+        .nav-brand-code {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            color: #ffffff;
+            background: var(--accent-navy);
+            padding: 2px 7px;
+            border-radius: 2px;
+            white-space: nowrap;
+        }
+        .nav-brand-title {
+            font-family: var(--font-serif);
+            font-size: 13.5px;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: 0.02em;
+            white-space: nowrap;
+        }
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+            align-items: center;
+        }
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            transition: color 0.2s ease;
+            white-space: nowrap;
+        }
+        .nav-links a:hover {
+            color: var(--accent-bronze);
+            text-decoration: underline;
+        }
+
+        .nav-back-btn {
+            background: rgba(138, 104, 57, 0.08);
+            border: 1px solid rgba(138, 104, 57, 0.28);
+            color: var(--accent-bronze);
+            font-family: var(--font-serif);
+            font-size: 12px;
+            font-weight: 700;
+            padding: 5px 14px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            white-space: nowrap;
+            text-decoration: none;
+        }
+        .nav-back-btn:hover {
+            background: var(--accent-bronze);
+            color: #ffffff;
+            border-color: var(--accent-bronze);
+        }
+
+        /* 头部 Hero 区域 */
+        .hero {
+            padding: 24px 0 52px 0;
+            border-bottom: 2px solid var(--border-strong);
+            margin-bottom: 52px;
+        }
+        .archival-eyebrow {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--accent-bronze);
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .eyebrow-sep {
+            color: var(--border-hairline);
+        }
+        .hero-title {
+            font-size: 36px;
+            font-weight: 900;
+            letter-spacing: -0.01em;
+            line-height: 1.28;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+        .hero-subhead {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--accent-navy);
+            display: inline-block;
+            margin-bottom: 16px;
+        }
+        .hero-subtitle {
+            font-size: 14.5px;
+            line-height: 1.85;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+            text-align: justify;
+        }
+        .hero-subtitle strong {
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+
+        /* 规格矩阵台 / KPI 卡片群 */
+        .spec-matrix, .kpi-deck {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 1px;
+            background: var(--border-hairline);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+        }
+        .spec-cell, .kpi-card {
+            background: var(--bg-card);
+            padding: 20px 22px;
+            transition: background-color 0.2s ease;
+        }
+        .spec-cell:hover, .kpi-card:hover {
+            background-color: #faf9f6;
+        }
+        .spec-label, .kpi-label {
+            font-family: var(--font-mono);
+            font-size: 10.5px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--text-tertiary);
+            margin-bottom: 8px;
+        }
+        .spec-value, .kpi-value {
+            font-size: 21px;
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1.25;
+            margin-bottom: 6px;
+        }
+        .spec-value small, .kpi-value small {
+            font-size: 12px;
+            font-weight: 400;
+            color: var(--text-tertiary);
+            margin-left: 4px;
+        }
+        .spec-desc, .kpi-desc {
+            font-size: 11.5px;
+            color: var(--text-tertiary);
+            line-height: 1.5;
+        }
+
+        /* 卡片容器与三线表 */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-md);
+            padding: 32px 36px;
+            margin-bottom: 36px;
+            box-shadow: var(--card-shadow);
+        }
+        .card-caption-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-hairline);
+            padding-bottom: 14px;
+            margin-bottom: 22px;
+        }
+        .card-heading {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: -0.01em;
+        }
+        .card-tag {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            color: var(--accent-bronze);
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13.5px;
+            line-height: 1.6;
+            margin-top: 14px;
+        }
+        .data-table th, .data-table td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-hairline);
+        }
+        .data-table th {
+            background-color: var(--bg-table-head);
+            font-weight: 700;
+            color: var(--text-primary);
+            border-top: 1.5px solid var(--border-strong);
+            border-bottom: 1.5px solid var(--border-strong);
+            font-size: 13px;
+            letter-spacing: 0.04em;
+        }
+        .data-table tr:last-child td {
+            border-bottom: 1.5px solid var(--border-strong);
+        }
+
+        /* 徽章与药丸标签 */
+        .code-pill {
+            display: inline-block;
+            font-family: var(--font-mono);
+            font-size: 11px;
+            padding: 2px 7px;
+            background: var(--bg-subtle);
+            border: 1px solid var(--border-hairline);
+            border-radius: 2px;
+            color: var(--text-secondary);
+        }
+        .pill-badge {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 2px;
+            background: rgba(138, 104, 57, 0.1);
+            color: var(--accent-bronze);
+        }
+
+        /* 页脚 */
+        .archival-footer, .footer {
+            margin-top: 60px;
+            padding-top: 24px;
+            border-top: 1.5px solid var(--border-hairline);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            color: var(--text-tertiary);
+        }
+
+        /* 媒体查询响应式支持 */
+        @media (max-width: 1150px) {
+            .nav-brand-title { display: none; }
+        }
+        @media (max-width: 1024px) {
+            .spec-matrix, .kpi-deck { grid-template-columns: repeat(2, 1fr); }
+            .card { padding: 24px 20px; }
+        }
+        @media (max-width: 640px) {
+            .spec-matrix, .kpi-deck { grid-template-columns: 1fr; }
+            .nav-dock { flex-direction: column; gap: 12px; }
+            .nav-links { flex-wrap: wrap; justify-content: center; gap: 12px; }
+            .hero-title { font-size: 26px; }
+            .hero-subhead { font-size: 18px; }
+        }
+
+        /* 图表容器与标题 —— 修复模板渲染时图表样式段丢失导致的图表不可见 */
+        .chart-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+        .chart-header { margin-bottom: 14px; }
+        .chart-fig-num { font-family: "JetBrains Mono", monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; color: var(--accent-bronze); }
+        .chart-title { font-size: 14px; font-weight: 700; color: var(--text-primary); margin-top: 4px; }
+        #chart-contract, #chart-share { width: 100%; height: 360px; }
+        #chart-sankey { width: 100%; height: 420px; }
+        @media (max-width: 760px) { .chart-grid { grid-template-columns: 1fr; } }
+
+        /* 三线表 (LaTeX booktabs 规范) —— 修复表格线条缺失 */
+        .booktabs-table { width: 100%; border-collapse: collapse; font-size: 13px; border-top: 2.2px solid var(--border-strong); border-bottom: 2.2px solid var(--border-strong); }
+        .booktabs-table th { text-align: left; font-size: 12px; font-weight: 700; letter-spacing: 0.05em; color: var(--text-primary); padding: 12px 14px; border-bottom: 1.2px solid var(--border-strong); background-color: var(--bg-table-head); white-space: nowrap; }
+        .booktabs-table td { padding: 12px 14px; border-bottom: 1px solid var(--border-hairline); color: var(--text-secondary); line-height: 1.6; }
+        .booktabs-table tr:last-child td { border-bottom: none; }
+        .booktabs-table tr:hover td { background-color: #f7f6f1; }
+
+        /* dossier 2×2 对称排版 —— 修复方格卡片/左侧金色竖条缺失 */
+        .dossier-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-bottom: 36px; }
+        .dossier-item { background: #ffffff; border: 1px solid var(--border-hairline); border-left: 3.5px solid var(--accent-bronze); border-radius: var(--radius-md); padding: 24px 26px; box-shadow: var(--card-shadow); display: flex; flex-direction: column; justify-content: flex-start; }
+        .dossier-item h3 { font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+        .dossier-item h3 span { font-family: "JetBrains Mono", monospace; font-size: 12px; font-weight: 600; color: var(--text-tertiary); }
+        .dossier-item ul { list-style: none; font-size: 13.5px; color: var(--text-secondary); line-height: 1.78; }
+        .dossier-item li { position: relative; padding-left: 18px; margin-bottom: 10px; text-align: justify; }
+        .dossier-item li::before { content: "◆"; position: absolute; left: 4px; top: 6px; color: var(--accent-bronze); font-size: 7px; }
+        .dossier-item strong { color: var(--text-primary); font-weight: 700; }
+        @media (max-width: 760px) { .dossier-grid { grid-template-columns: 1fr; } }
+
+        /* spec 规格格排版 —— 修复规格标签与数值字体 */
+        .spec-label { font-family: "JetBrains Mono", monospace; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-tertiary); margin-bottom: 8px; }
+        .spec-value { font-size: 16px; font-weight: 700; color: var(--text-primary); line-height: 1.3; }
+        .spec-value span { font-size: 12px; font-weight: 500; color: var(--text-secondary); }
+
+        /* 卡片标题与归档眉栏字体 */
+        .card-heading { font-size: 17px; font-weight: 700; color: var(--text-primary); }
+        .card-tag { font-family: "JetBrains Mono", monospace; font-size: 11px; font-weight: 600; letter-spacing: 0.08em; color: var(--accent-bronze); }
+        .archival-eyebrow { font-family: "JetBrains Mono", monospace; font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent-bronze); margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+        .eyebrow-sep { color: var(--border-hairline); }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- 顶部导航 Dock -->
+    <nav class="nav-dock">
+        <div class="nav-brand">
+            <a href="javascript:void(0)" onclick="returnToParentMonograph()" class="nav-back-btn" style="padding:4px 10px;">
+                ‹ 返回云软装大盘
+            </a>
+            <span class="nav-brand-code">PRJ-ZY-2018</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#sec-origination">§ I 项目承接与协同</a></li>
+            <li><a href="#sec-deal-structuring">§ II 合同与回款机制</a></li>
+            <li><a href="#sec-macro-contract">§ III 合同条款与履约</a></li>
+            <li><a href="#sec-audit-settlement">§ IV 审计与结算审定</a></li>
+        </ul>
+    </nav>
+
+    <!-- 头部扉页 Hero -->
+    <header class="hero">
+        <div class="archival-eyebrow">
+            <span>ARCHIVAL MONOGRAPH</span>
+            <span class="eyebrow-sep">/</span>
+            <span>PRJ-ZY-2018</span>
+            <span class="eyebrow-sep">/</span>
+            <span>ZUNYI GRAND HOTEL PROJECT</span>
+        </div>
+        <h1 class="hero-title">遵义大酒店五星级软装工程全周期商业操盘研报</h1>
+        <p class="hero-subtitle">
+            遵义新蒲新区五星级酒店 · 1.25 亿元软装专业分包（母盘 5.0 亿元）· 商务承接、合同风控、工程协同实施与 9,300 万元结算审定总结
+        </p>
+
+        <div class="spec-matrix">
+            <div class="spec-cell">
+                <div class="spec-label">工作分工与角色</div>
+                <div class="spec-value">商务承接 <span>/ 工程部实施</span></div>
+                <div class="spec-desc">梁清波（业务承接 · 合同谈判 · 结算核对）</div>
+            </div>
+            <div class="spec-cell">
+                <div class="spec-label">分包签约标的</div>
+                <div class="spec-value">1.25 亿 <span>(母盘 5.0 亿)</span></div>
+                <div class="spec-desc">道桥集团发包 / 软装专业分包</div>
+            </div>
+            <div class="spec-cell">
+                <div class="spec-label">最终结算审定</div>
+                <div class="spec-value">9,300 <span>万元</span></div>
+                <div class="spec-desc">经审计与商务复核最终审定金额</div>
+            </div>
+            <div class="spec-cell">
+                <div class="spec-label">回款联动比例</div>
+                <div class="spec-value">25.0% <span>按比联动</span></div>
+                <div class="spec-desc">按母公司收到款项同步划拨</div>
+            </div>
+            <div class="spec-cell">
+                <div class="spec-label">票据贴现约定</div>
+                <div class="spec-value">费用按比分摊</div>
+                <div class="spec-desc">商票贴现成本由双方同比例承担</div>
+            </div>
+            <div class="spec-cell">
+                <div class="spec-label">合同调整限额</div>
+                <div class="spec-value">5% 变更限额</div>
+                <div class="spec-desc">物料变更控制 / 严禁擅自转包</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 专案特化核心正文插槽 -->
+    <!-- 第一篇：项目承接、母子协同与内部交底 -->
+    <section id="sec-origination" class="card" style="margin-bottom: 28px;">
+        <div class="card-caption-bar">
+            <h2 class="card-heading">项目承接、母子协同与内部交底</h2>
+            <span class="card-tag">SECTION I · PROJECT ORIGINATION & SYNERGY</span>
+        </div>
+        <p style="font-size:13.5px; color:var(--text-secondary); margin-bottom:16px;">
+            依托设计院合作基础对接业务，母公司签署总包、软装独立分包；明确施工界面后由工程部驻场实施。
+        </p>
+
+        <table class="booktabs-table" style="margin-bottom: 24px;">
+            <thead>
+                <tr>
+                    <th class="table-dim">管控维度</th>
+                    <th class="table-fact">关键事实与核心数据</th>
+                    <th>业务背景与管控重点</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="table-dim">工程标的</td>
+                    <td class="table-fact"><strong>精装母盘 5.0 亿元 ｜ 软装分包 1.25 亿元</strong></td>
+                    <td>遵义新蒲新区核心板块五星级国宾政务酒店软装工程</td>
+                </tr>
+                <tr>
+                    <td class="table-dim">项目分工</td>
+                    <td class="table-fact"><strong>商务主导承接，工程部驻场实施</strong></td>
+                    <td>业务端负责项目对接、商务合同与回款条款谈判；签约后组织交底由工程部驻场推进施工深化与排产；后期主导竣工审计结算</td>
+                </tr>
+                <tr>
+                    <td class="table-dim">结算审定</td>
+                    <td class="table-fact"><strong>最终审定金额 9,300 万元</strong></td>
+                    <td>经业主与第三方审计核对工程量及结算凭证，最终审定结算金额为 9,300 万元</td>
+                </tr>
+                <tr>
+                    <td class="table-dim">回款约定</td>
+                    <td class="table-fact"><strong>按母公司实收款项 25% 比例同步支付</strong></td>
+                    <td>约定分包回款与母公司实收工程款挂钩，商票贴现成本同比例承担，防范资金垫付风险</td>
+                </tr>
+                <tr>
+                    <td class="table-dim">合同约束</td>
+                    <td class="table-fact"><strong>饰品变更限额 5% ｜ 假冒伪劣 2 倍罚则 ｜ 严禁转包</strong></td>
+                    <td>控制现场物料变更比例，保障原厂品质，设立违约责任确保由内部专业团队组织实施</td>
+                </tr>
+                <tr>
+                    <td class="table-dim">执行周期</td>
+                    <td class="table-fact"><strong>2018 年 11 月签署 ｜ 2018–2021 年交付审定</strong></td>
+                    <td>跟踪地方融资与付款进度，完善签证与结算凭据，保障项目平稳落地与审计合规</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- 2×2 对称矩阵 -->
+        <div class="dossier-grid">
+            <div class="dossier-item">
+                <h3>§ 1 项目承接与业务协同</h3>
+                <ul>
+                    <li><strong>渠道接洽与立项</strong>：依托设计院长期合作关系，在方案阶段介入并对接遵义道桥项目，推动母公司承接 5.0 亿元精装大盘，软装子公司签署 1.25 亿元专业分包合同。</li>
+                    <li><strong>母子协同模式</strong>：母公司提供建筑装饰施工资质与大盘承接通道，软装子公司以独立主体签约并独立核算，发挥专业优势。</li>
+                </ul>
+            </div>
+
+            <div class="dossier-item">
+                <h3>§ 2 施工界面清晰划分</h3>
+                <ul>
+                    <li><strong>明确施工边界</strong>：大堂挑空主吊灯、客房满铺阻燃地毯纳入硬装母盘；全酒店活动家具、定制艺术灯具、块毯、挂画饰品及布艺花艺纳入软装分包，界面清晰，避免交叉施工争议。</li>
+                    <li><strong>独立核算保障</strong>：前置约定权责边界，防止硬装变更或工期问题随意向软装摊派成本，保障分包核算独立。</li>
+                </ul>
+            </div>
+
+            <div class="dossier-item">
+                <h3>§ 3 内部交底与工程协同</h3>
+                <ul>
+                    <li><strong>内部交底移交</strong>：商务合同签署后，组织专项交底会议，将图纸方案、工期节点与成本控制目标完整交接给工程部驻场团队。</li>
+                    <li><strong>分工各司其职</strong>：工程部专业团队专注现场排产深化、物流跟进与安装交付；商务端负责款项催收、资金跟踪与竣工结算对账。</li>
+                </ul>
+            </div>
+
+            <div class="dossier-item">
+                <h3>§ 4 资金安全与合规把控</h3>
+                <ul>
+                    <li><strong>重视资金安全</strong>：不盲目追求合同数字，通过比例联动回款与贴现成本共担等机制，降低大项目的垫资风险。</li>
+                    <li><strong>合规结算确权</strong>：在结算审计阶段以合同约定、供货清单与验收凭据为依据，配合完成 9,300 万元结算审定。</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第二篇：合同结构与回款机制 -->
+    <section id="sec-deal-structuring" class="card" style="margin-bottom: 28px;">
+        <div class="card-caption-bar">
+            <h2 class="card-heading">合同结构与回款机制</h2>
+            <span class="card-tag">SECTION II · CONTRACT STRUCTURE & CASH FLOW</span>
+        </div>
+        <p style="font-size:13.5px; color:var(--text-secondary); margin-bottom:16px;">
+            约定背靠背比例付款与贴现成本分摊，降低垫资风险，保障项目现金流平稳。
+        </p>
+
+        <!-- 联动公式卡片 -->
+        <div style="background: var(--bg-subtle); border:1px solid var(--border-hairline); border-radius:4px; padding: 20px 24px; margin-bottom: 24px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px;">
+                <div>
+                    <span style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--accent-bronze); letter-spacing: 0.08em;">PAYMENT MECHANISM</span>
+                    <h3 style="font-family: var(--font-serif); font-size: 16px; font-weight: 700; color: var(--text-primary); margin-top: 4px;">背靠背联动付款与商票贴现成本分摊</h3>
+                </div>
+                <div style="font-family: var(--font-mono); font-size: 12.5px; font-weight: 700; color: var(--accent-navy); background: rgba(22,42,69,0.06); padding: 5px 12px; border-radius: 3px; border: 1px solid rgba(22,42,69,0.15);">
+                    分包应收款 = 甲方实收款项 × [1500 ÷ 6000] <strong>(25.0%)</strong>
+                </div>
+            </div>
+            <p style="font-size: 13.5px; color: var(--text-secondary); margin-top: 10px; line-height: 1.7;">
+                针对地方城投付款周期长的特点，合同约定分包款支付与母公司实收工程款挂钩，按 25% 比例同步支付；同时约定商业承兑汇票等票据贴现费用由双方同比例承担，避免分包单方承担资金贴现损失。
+            </p>
+        </div>
+
+        <!-- 图表第一排：合同体量演进 + 资金切割份额环形图 -->
+        <div class="chart-grid">
+            <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
+                <div class="chart-header">
+                    <div class="chart-title-wrap">
+                        <span class="chart-fig-num">FIG. 01</span>
+                        <div class="chart-title">合同投资演进与审定阶梯 (亿元)</div>
+                    </div>
+                </div>
+                <div id="chart-contract" class="chart-container"></div>
+            </div>
+
+            <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
+                <div class="chart-header">
+                    <div class="chart-title-wrap">
+                        <span class="chart-fig-num">FIG. 02</span>
+                        <div class="chart-title">5 亿元精装母盘之软装分包份额 (%)</div>
+                    </div>
+                </div>
+                <div id="chart-share" class="chart-container"></div>
+            </div>
+        </div>
+
+        <div style="height: 20px;"></div>
+
+        <!-- 联动付款桑基图 -->
+        <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
+            <div class="chart-header">
+                <div class="chart-title-wrap">
+                    <span class="chart-fig-num">FIG. 03</span>
+                    <div class="chart-title">工程款 X [1500÷6000] 联动资金流向图</div>
+                </div>
+            </div>
+            <div id="chart-sankey" class="chart-container"></div>
+        </div>
+    </section>
+
+    <!-- 第三篇：合同关键条款与履约把控 -->
+    <section id="sec-macro-contract" class="card" style="margin-bottom: 28px;">
+        <div class="card-caption-bar">
+            <h2 class="card-heading">合同关键条款与履约把控</h2>
+            <span class="card-tag">SECTION III · CONTRACT PROVISIONS & COMPLIANCE</span>
+        </div>
+        <p style="font-size:13.5px; color:var(--text-secondary); margin-bottom:16px;">
+            穿透双方盖章合同核心条款（编号 GY-2018-YW-131），严格落实各项履约与质量合规要求。
+        </p>
+
+        <table class="booktabs-table" style="font-size:12.5px;">
+            <thead>
+                <tr>
+                    <th style="width: 16%;">合同条款项</th>
+                    <th style="width: 44%;">约定条款核心内容 (原件摘录)</th>
+                    <th style="width: 40%;">业务含义与管控重点</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>第二条 · 承包范围与工序界面</strong></td>
+                    <td>包含活动家具、灯具（吊灯、壁灯除外）、窗帘、活动块毯（满铺毯除外）、挂画、美陈饰品、布艺、花艺等物料配置、物流配送、现场摆设及安装等工作。</td>
+                    <td><strong>明确硬装与软装分工界面</strong>：大堂主吊灯与满铺地毯归母盘硬装，所有活动类与艺术陈设划归软装分包，界面清晰，避免交叉施工推诿。</td>
+                </tr>
+                <tr>
+                    <td><strong>第五条 · 联动回款与贴现共担</strong></td>
+                    <td>甲方收到道桥集团款项后 5 个工作日内向乙方支付：分包应收款 = 甲方实收款项 × [1500 ÷ 6000] (25.0%)。如涉及资金成本（贴现），乙方按实收金额分摊相应成本。</td>
+                    <td><strong>明确回款与贴现机制</strong>：锁定 25% 回款联动份额，约定商票贴现成本按实收比例共同分摊，降低资金占用风险。</td>
+                </tr>
+                <tr>
+                    <td><strong>第六条 · 饰品选型 5% 调整红线</strong></td>
+                    <td>如需更换物料，调整部分的饰品价格与饰品总价比例<strong>必须控制在 5% 以内</strong>；所更换物料由道桥集团审核或协商确定单价执行，超额不得索赔。</td>
+                    <td><strong>控制非标物料变更</strong>：设定 5% 调整限额，防止现场随意增项或换样导致成本超支。</td>
+                </tr>
+                <tr>
+                    <td><strong>第八条 · 原厂制造双倍违约罚则</strong></td>
+                    <td>材料、设备生产厂家品牌必须为原厂生产，禁止使用委托第三方生产后贴用品牌。一经发现按假冒伪劣处理，<strong>按该部分材料设备总价 2 倍向发包人支付违约金</strong>。</td>
+                    <td><strong>严格保证材料品质</strong>：要求材料设备原厂制造，严禁贴牌代工，保证五星级国宾酒店工程品质。</td>
+                </tr>
+                <tr>
+                    <td><strong>第十一条 · 严禁擅自转包违约责任</strong></td>
+                    <td>若乙方有擅自转包行为的，按合同暂定总金额的 <strong>10% (1,250.00 万元)</strong> 向甲方支付违约金。</td>
+                    <td><strong>保障自主实施团队</strong>：设立违约责任，杜绝层层转包，由内部专业工程部保质履约。</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- 第四篇：竣工结算与 9,300 万元审计审定 -->
+    <section id="sec-audit-settlement" class="card" style="margin-bottom: 28px;">
+        <div class="card-caption-bar">
+            <h2 class="card-heading">竣工结算与 9,300 万元审计审定</h2>
+            <span class="card-tag">SECTION IV · AUDIT & FINAL SETTLEMENT</span>
+        </div>
+        <p style="font-size:13.5px; color:var(--text-secondary); margin-bottom:16px;">
+            工程完工后主导结算对账，经过多轮资料核对与据实沟通，最终审定结算金额为 9,300 万元。
+        </p>
+
+        <table class="booktabs-table" style="font-size:12.5px; margin-bottom: 24px;">
+            <thead>
+                <tr>
+                    <th style="width: 20%;">结算核对阶段</th>
+                    <th style="width: 32%;">审计核实重点与沟通焦点</th>
+                    <th style="width: 33%;">核对要点与依据凭据</th>
+                    <th style="width: 15%; text-align: right;">核定结果</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>第一阶段 · 合同与清单核对<br><span style="font-size:11px;color:var(--text-tertiary);">合同暂定额核实</span></strong></td>
+                    <td>核实 1.25 亿元暂定总价合同与现场实际供货范围的对应关系。</td>
+                    <td>以图纸与深化排产清单为准，梳理实际供货与原合同暂定清单的差异，剔除未实施部分，锁定有效供货清单。</td>
+                    <td style="text-align: right; font-weight:700; color:var(--accent-bronze);">范围明确</td>
+                </tr>
+                <tr>
+                    <td><strong>第二阶段 · 签证与单价审核<br><span style="font-size:11px;color:var(--text-tertiary);">变更限额与材料合规</span></strong></td>
+                    <td>审计方重点核验非标定制品单价、现场签证变更及材料原厂合格证明。</td>
+                    <td>出具各批次深化确认图纸、现场进场验收签证单及原厂检测报告，严格遵循饰品变更 5% 调价约定据实对账。</td>
+                    <td style="text-align: right; font-weight:700; color:var(--accent-bronze);">单价与签证确认</td>
+                </tr>
+                <tr>
+                    <td><strong>第三阶段 · 审计审定与确权<br><span style="font-size:11px;color:var(--text-tertiary);">最终达成审定共识</span></strong></td>
+                    <td>结合工程总体造价控制要求，开展多方结算综合会商与对账。</td>
+                    <td>在合法合规的前提下，经商务复核与多轮据实协商，最终各方达成一致，审定结算金额为 9,300.00 万元（审减率 25.6%）。</td>
+                    <td style="text-align: right; font-weight:700; color:var(--accent-navy); font-size:13.5px;">9,300.00 万元</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- 总结复盘卡片 -->
+        <div style="background: var(--bg-subtle); border:1px solid var(--border-hairline); border-radius:4px; padding: 20px 24px; font-size: 13.5px; line-height: 1.8; color: var(--text-secondary);">
+            <div style="font-weight: 700; color: var(--text-primary); margin-bottom: 10px; font-size: 14.5px;">
+                项目总结与管控要点
+            </div>
+            <p style="margin-bottom: 8px;">
+                <strong>一、 业务对接与协同分工</strong>：依托设计院长期合作基础获取项目契机，促成母公司承接精装总包、软装公司独立签署 1.25 亿元专业分包合同，实现上市公司平台优势与专业公司的协同。
+            </p>
+            <p style="margin-bottom: 8px;">
+                <strong>二、 付款联动与资金把控</strong>：针对地方城投回款周期特点，合同前置约定 <code>分包应收款 = 甲方实收款项 × [1500 ÷ 6000]</code>（25%）背靠背支付，并明确商票贴现利息按比分摊，从源头控制资金垫付风险。
+            </p>
+            <p style="margin-bottom: 8px;">
+                <strong>三、 内部交底与工程实施</strong>：合同签订与施工界面清晰界定后，及时组织内部交底移交工程部驻场团队深化排产与施工，商务口转入资金跟踪与城投融资动态关注。
+            </p>
+            <p style="margin-bottom: 0;">
+                <strong>四、 审计对账与结算确权</strong>：工程完工后主导结算对账工作，以现场图纸、签证及合规凭据为依托，经过多轮沟通核实，最终审定结算金额为 9,300 万元，实现项目平稳收官。
+            </p>
+        </div>
+    </section>
+
+    <!-- 统一底层单一真实源数据依据 -->
+    <section id="sec-provenance" class="card" style="margin-top: 36px;">
+        <div class="card-caption-bar">
+            <h2 class="card-heading">数据依据与来源说明</h2>
+            <span class="card-tag">SOURCES ｜ PRJ-ZY-2018</span>
+        </div>
+        <p style="font-size:14px; color:var(--text-secondary); line-height:1.75; margin-bottom:14px;">
+            本研报所述遵义大酒店五星级软装工程（签约合同 1.25 亿元、最终审定金额 9,300.00 万元），数据源自双方盖章的《建设工程专业分包合同》（合同编号：GY-2018-YW-131）原件、最终工程结算审定签署文件与资金清算记录。
+        </p>
+
+        <div style="font-size:13px; color:var(--text-tertiary); line-height:1.6; margin-bottom:16px;">
+            <strong>参考标准</strong>：建设工程施工合同（示范文本）/ 建设工程造价审计规范 / 广田云软装合同管理制度 ｜ <strong>归档状态</strong>：商业专案库确认版 (PRJ-ZY-2018)
+        </div>
+
+        <div style="background:#f7f6f2; border:1px solid rgba(18,19,22,0.1); border-radius:4px; padding:14px 18px; font-family:var(--font-mono); font-size:11.5px; color:#2c3238; line-height:1.7;">
+            <div style="font-weight:700; color:var(--accent-bronze); margin-bottom:6px; display:flex; align-items:center; gap:6px;">
+                <span>📊</span><span>数据查询参考</span>
+            </div>
+            <code style="color:#162a45;">
+                ATTACH 'data/career_analytics_lake.duckdb' AS lake (READ_ONLY);
+.read data/views_guangtian_cloud_master.sql
+SELECT * FROM v_gt_contracts_master WHERE 项目名称 LIKE '%遵义大酒店%';
+
+            </code>
+        </div>
+    </section>
+
+    <!-- 页脚版权与底注 -->
+    <footer class="archival-footer">
+        <div>
+            <span>ARCHIVAL DOSSIER · PRJ-ZY-2018 · 遵义大酒店五星级软装工程商业操盘总结</span>
+        </div>
+        <div style="font-family:var(--font-mono); font-size:11px;">
+            2026 商业专案库归档
+        </div>
+    </footer>
+
+</div>
+
+<!-- 基础通信与安全交互脚本 -->
+<script>
+    // 跨域与总舱安全通信闭环
+    window.handleBackToParent = function() {
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({ type: 'NAVIGATE_BACK' }, '*');
+            window.parent.postMessage({ type: 'close-modal' }, '*');
+        } else if (window.opener) {
+            window.close();
+        } else if (history.length > 1) {
+            history.back();
+        } else {
+            window.location.href = '../';
+        }
+    };
+
+    // 子专案返回父大盘
+    window.returnToParentMonograph = function() {
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({ type: 'NAVIGATE_BACK' }, '*');
+        } else {
+            window.location.href = '深圳市广田云软装科技全生命周期商业操盘与供应链大盘商业研报.html';
+        }
+    };
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const latexTooltip = {
+        backgroundColor: '#ffffff',
+        borderColor: '#dcd7ce',
+        borderWidth: 1.5,
+        textStyle: { color: '#111317', fontFamily: '"Noto Serif SC", "EB Garamond", serif', fontSize: 13 },
+        extraCssText: 'box-shadow: 0 8px 30px rgba(17, 19, 23, 0.08); border-radius: 4px; padding: 12px 16px;'
+    };
+
+    // 1. 合同阶梯演进柱图
+    const chartCEl = document.getElementById('chart-contract');
+    if (chartCEl) {
+        const chartContract = echarts.init(chartCEl);
+        chartContract.setOption({
+            tooltip: {
+                ...latexTooltip,
+                trigger: 'axis',
+                axisPointer: { type: 'shadow' },
+                formatter: function(params) {
+                    let p = params[0];
+                    let desc = '';
+                    if (p.dataIndex === 0) desc = '道桥发包精装施工总承包母盘';
+                    else if (p.dataIndex === 1) desc = '软装专业分包合同暂定签约额';
+                    else if (p.dataIndex === 2) desc = '竣工结算审计审定金额';
+                    return `<strong>${p.name}</strong><br/>体量金额：<span style="font-weight:700;color:#162a45;">${p.value} 亿元</span><br/><span style="font-size:11.5px;color:#5e6670;">${desc}</span>`;
+                }
+            },
+            grid: { left: '4%', right: '5%', top: '15%', bottom: '10%', containLabel: true },
+            xAxis: {
+                type: 'category',
+                data: ['精装总包母合同\n(5.00亿暂定)', '软装专业分包\n(1.25亿暂定)', '最终审定确权\n(9,300万锁定)'],
+                axisLine: { lineStyle: { color: '#111317', width: 1.5 } },
+                axisTick: { lineStyle: { color: '#111317' } },
+                axisLabel: { color: '#2c3238', fontSize: 11.5, fontFamily: '"Noto Serif SC", serif', lineHeight: 15 }
+            },
+            yAxis: {
+                type: 'value',
+                name: '金额 (亿元)',
+                splitLine: { lineStyle: { color: '#e6e3dc', type: 'dashed' } },
+                axisLabel: { color: '#2c3238', fontFamily: '"JetBrains Mono", serif' }
+            },
+            series: [{
+                type: 'bar',
+                data: [5.00, 1.25, 0.93],
+                barWidth: '40%',
+                itemStyle: {
+                    color: function(params) {
+                        const colors = ['#8a6839', '#162a45', '#2a4c38'];
+                        return colors[params.dataIndex];
+                    },
+                    borderRadius: [2, 2, 0, 0]
+                },
+                label: {
+                    show: true,
+                    position: 'top',
+                    color: '#111317',
+                    fontWeight: 700,
+                    fontSize: 12,
+                    fontFamily: '"JetBrains Mono", serif',
+                    formatter: function(params) {
+                        const vals = ['5.00 亿元', '1.25 亿元', '9,300 万元'];
+                        return vals[params.dataIndex];
+                    }
+                }
+            }]
+        });
+        window.addEventListener('resize', () => chartContract.resize());
+    }
+
+    // 2. 资金份额环形图
+    const chartSEl = document.getElementById('chart-share');
+    if (chartSEl) {
+        const chartShare = echarts.init(chartSEl);
+        chartShare.setOption({
+            tooltip: { ...latexTooltip, trigger: 'item', formatter: '{b}: <strong>{c} 亿元</strong> ({d}%)' },
+            legend: {
+                orient: 'vertical',
+                right: '4%',
+                top: 'center',
+                itemGap: 14,
+                textStyle: { color: '#111317', fontFamily: '"Noto Serif SC", serif', fontSize: 12 }
+            },
+            series: [{
+                type: 'pie',
+                center: ['40%', '50%'],
+                radius: ['42%', '68%'],
+                avoidLabelOverlap: true,
+                itemStyle: { borderColor: '#ffffff', borderWidth: 2 },
+                label: {
+                    show: true,
+                    position: 'inside',
+                    formatter: '{d}%',
+                    color: '#ffffff',
+                    fontSize: 12,
+                    fontWeight: 700
+                },
+                data: [
+                    { value: 1.25, name: '软装专业分包 (1.25亿)', itemStyle: { color: '#162a45' } },
+                    { value: 3.75, name: '硬装及机电施工 (3.75亿)', itemStyle: { color: '#cfcac0' } }
+                ]
+            }]
+        });
+        window.addEventListener('resize', () => chartShare.resize());
+    }
+
+    // 3. 联动回款桑基图
+    const chartSankeyEl = document.getElementById('chart-sankey');
+    if (chartSankeyEl) {
+        const chartSankey = echarts.init(chartSankeyEl);
+        chartSankey.setOption({
+            tooltip: { ...latexTooltip, trigger: 'item' },
+            series: [{
+                type: 'sankey',
+                layout: 'none',
+                left: '3%',
+                right: '26%',
+                top: '6%',
+                bottom: '6%',
+                emphasis: { focus: 'adjacency' },
+                nodeWidth: 16,
+                nodeGap: 24,
+                data: [
+                    { name: '遵义道桥支付工程款\n(6000万基准示例)', itemStyle: { color: '#111317' } },
+                    { name: '广田集团母体收款', itemStyle: { color: '#8a6839' } },
+                    { name: '软装专业分包 25%\n(1500万 联动划拨)', itemStyle: { color: '#162a45' } },
+                    { name: '硬装施工及其他大盘 75%\n(4500万)', itemStyle: { color: '#cfcac0' } }
+                ],
+                links: [
+                    { source: '遵义道桥支付工程款\n(6000万基准示例)', target: '广田集团母体收款', value: 6000 },
+                    { source: '广田集团母体收款', target: '软装专业分包 25%\n(1500万 联动划拨)', value: 1500 },
+                    { source: '广田集团母体收款', target: '硬装施工及其他大盘 75%\n(4500万)', value: 4500 }
+                ],
+                lineStyle: { color: 'gradient', curveness: 0.5, opacity: 0.35 },
+                label: { color: '#111317', fontSize: 11.5, fontWeight: 600, fontFamily: '"Noto Serif SC", "EB Garamond", serif', lineHeight: 15 }
+            }]
+        });
+        window.addEventListener('resize', () => chartSankey.resize());
+    }
+});
+</script>
+
+</body>
+</html>

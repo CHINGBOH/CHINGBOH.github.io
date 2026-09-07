@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>湄潭项目全生命周期数据洞察研报 ｜ 梁清波 商业专案库</title>
+    <!-- Google Fonts 典藏学术与静奢排版字体族 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=JetBrains+Mono:ital,wght@0,400..700;1,400..700&family=Noto+Serif+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <!-- ECharts 5 现代交互图表库 -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <style>
+        :root {
+            /* 静奢典藏自然羊皮纸调色盘 (Quiet Luxury & Archival Paper) */
+            --bg-page: #fbfbfa;           /* 典藏羊皮纸本白底色 */
+            --bg-card: #ffffff;           /* 纯净研报卡片白 */
+            --bg-subtle: #f5f4ef;         /* 雅致羊皮纸浅底 */
+            --bg-table-head: #f5f4ef;     /* 雅致古籍米灰 */
+            --border-hairline: rgba(18, 19, 22, 0.08); /* 0.5px 极细发丝分割线 */
+            --border-strong: rgba(18, 19, 22, 0.22);   /* 书籍装订骨架线 */
+            --border-accent: #8a6839;     /* 沉香古铜金装饰线 */
+            
+            --text-primary: #121316;      /* 碳素墨黑，沉稳高对比度 */
+            --text-secondary: #383b42;    /* 铅印中灰，用于正文叙述 */
+            --text-tertiary: #6e727d;     /* 浅注银灰，用于旁注与规格参数 */
+            --text-bronze: #8a6839;       /* 沉香古铜金文字 */
+            
+            --accent-navy: #162a45;       /* 萨维尔街牛津深海蓝，严正权威 */
+            --accent-bronze: #8a6839;     /* 沉香古铜金，低奢灵魂标色 */
+            --accent-gold: #c5a059;       /* 典雅明金 */
+            --accent-sage: #2a4c38;       /* 英国皇家墨玉绿 */
+            --accent-forest: #3a6351;     /* 森林墨绿 */
+            --accent-slate: #475569;      /* 冷板岩深灰 */
+            --accent-crimson: #8b263e;    /* 典雅绯红 */
+            
+            --font-serif: "Noto Serif SC", "EB Garamond", "Songti SC", STSong, "Times New Roman", SimSun, serif;
+            --font-mono: "JetBrains Mono", Consolas, "Courier New", monospace;
+            
+            --card-shadow: 0 1px 3px rgba(18, 19, 22, 0.04), 0 8px 24px -6px rgba(18, 19, 22, 0.03);
+            --card-hover-shadow: 0 4px 12px -2px rgba(18, 19, 22, 0.06), 0 16px 36px -8px rgba(18, 19, 22, 0.06);
+            --radius-lg: 8px;
+            --radius-md: 4px;
+            --radius-sm: 2px;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        
+        body {
+            background-color: var(--bg-page);
+            color: var(--text-primary);
+            font-family: var(--font-serif);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+            font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+            font-kerning: normal;
+            line-height: 1.76;
+            padding: 40px 24px 80px 24px;
+        }
+
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+        }
+
+        /* 顶部导航与锚点 (专案典藏录 Registry) */
+        .nav-dock {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(251, 251, 250, 0.94);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-md);
+            padding: 12px 28px;
+            margin-bottom: 48px;
+            position: sticky;
+            top: 20px;
+            z-index: 100;
+            box-shadow: 0 2px 12px rgba(18, 19, 22, 0.03);
+        }
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            white-space: nowrap;
+        }
+        .nav-brand-code {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            color: #ffffff;
+            background: var(--accent-navy);
+            padding: 2px 7px;
+            border-radius: 2px;
+            white-space: nowrap;
+        }
+        .nav-brand-title {
+            font-family: var(--font-serif);
+            font-size: 13.5px;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: 0.02em;
+            white-space: nowrap;
+        }
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+            align-items: center;
+        }
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            transition: color 0.2s ease;
+            white-space: nowrap;
+        }
+        .nav-links a:hover {
+            color: var(--accent-bronze);
+            text-decoration: underline;
+        }
+
+        .nav-back-btn {
+            background: rgba(138, 104, 57, 0.08);
+            border: 1px solid rgba(138, 104, 57, 0.28);
+            color: var(--accent-bronze);
+            font-family: var(--font-serif);
+            font-size: 12px;
+            font-weight: 700;
+            padding: 5px 14px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            white-space: nowrap;
+            text-decoration: none;
+        }
+        .nav-back-btn:hover {
+            background: var(--accent-bronze);
+            color: #ffffff;
+            border-color: var(--accent-bronze);
+        }
+
+        /* 头部 Hero 区域 */
+        .hero {
+            padding: 24px 0 52px 0;
+            border-bottom: 2px solid var(--border-strong);
+            margin-bottom: 52px;
+        }
+        .archival-eyebrow {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--accent-bronze);
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .eyebrow-sep {
+            color: var(--border-hairline);
+        }
+        .hero-title {
+            font-size: 36px;
+            font-weight: 900;
+            letter-spacing: -0.01em;
+            line-height: 1.28;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+        .hero-subhead {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--accent-navy);
+            display: inline-block;
+            margin-bottom: 16px;
+        }
+        .hero-subtitle {
+            font-size: 14.5px;
+            line-height: 1.85;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+            text-align: justify;
+        }
+        .hero-subtitle strong {
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+
+        /* 规格矩阵台 / KPI 卡片群 */
+        .spec-matrix, .kpi-deck {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 1px;
+            background: var(--border-hairline);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+        }
+        .spec-cell, .kpi-card {
+            background: var(--bg-card);
+            padding: 20px 22px;
+            transition: background-color 0.2s ease;
+        }
+        .spec-cell:hover, .kpi-card:hover {
+            background-color: #faf9f6;
+        }
+        .spec-label, .kpi-label {
+            font-family: var(--font-mono);
+            font-size: 10.5px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--text-tertiary);
+            margin-bottom: 8px;
+        }
+        .spec-value, .kpi-value {
+            font-size: 21px;
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1.25;
+            margin-bottom: 6px;
+        }
+        .spec-value small, .kpi-value small {
+            font-size: 12px;
+            font-weight: 400;
+            color: var(--text-tertiary);
+            margin-left: 4px;
+        }
+        .spec-desc, .kpi-desc {
+            font-size: 11.5px;
+            color: var(--text-tertiary);
+            line-height: 1.5;
+        }
+
+        /* 卡片容器与三线表 */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-md);
+            padding: 32px 36px;
+            margin-bottom: 36px;
+            box-shadow: var(--card-shadow);
+        }
+        .card-caption-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-hairline);
+            padding-bottom: 14px;
+            margin-bottom: 22px;
+        }
+        .card-heading {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: -0.01em;
+        }
+        .card-tag {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            color: var(--accent-bronze);
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13.5px;
+            line-height: 1.6;
+            margin-top: 14px;
+        }
+        .data-table th, .data-table td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-hairline);
+        }
+        .data-table th {
+            background-color: var(--bg-table-head);
+            font-weight: 700;
+            color: var(--text-primary);
+            border-top: 1.5px solid var(--border-strong);
+            border-bottom: 1.5px solid var(--border-strong);
+            font-size: 13px;
+            letter-spacing: 0.04em;
+        }
+        .data-table tr:last-child td {
+            border-bottom: 1.5px solid var(--border-strong);
+        }
+
+        /* 徽章与药丸标签 */
+        .code-pill {
+            display: inline-block;
+            font-family: var(--font-mono);
+            font-size: 11px;
+            padding: 2px 7px;
+            background: var(--bg-subtle);
+            border: 1px solid var(--border-hairline);
+            border-radius: 2px;
+            color: var(--text-secondary);
+        }
+        .pill-badge {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 2px;
+            background: rgba(138, 104, 57, 0.1);
+            color: var(--accent-bronze);
+        }
+
+        /* 页脚 */
+        .archival-footer, .footer {
+            margin-top: 60px;
+            padding-top: 24px;
+            border-top: 1.5px solid var(--border-hairline);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            color: var(--text-tertiary);
+        }
+
+        /* 媒体查询响应式支持 */
+        @media (max-width: 1150px) {
+            .nav-brand-title { display: none; }
+        }
+        @media (max-width: 1024px) {
+            .spec-matrix, .kpi-deck { grid-template-columns: repeat(2, 1fr); }
+            .card { padding: 24px 20px; }
+        }
+        @media (max-width: 640px) {
+            .spec-matrix, .kpi-deck { grid-template-columns: 1fr; }
+            .nav-dock { flex-direction: column; gap: 12px; }
+            .nav-links { flex-wrap: wrap; justify-content: center; gap: 12px; }
+            .hero-title { font-size: 26px; }
+            .hero-subhead { font-size: 18px; }
+        }
+
+            /* 图表容器与标题 —— 修复模板渲染时图表样式段丢失导致的图表不可见 */
+        .chart-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+        .chart-header { margin-bottom: 14px; }
+        .chart-fig-num { font-family: "JetBrains Mono", monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; color: var(--accent-bronze); }
+        .chart-title { font-size: 14px; font-weight: 700; color: var(--text-primary); margin-top: 4px; }
+        .chart-title-wrap { display: flex; align-items: center; gap: 8px; min-width: 0; }
+        .chart-container { width: 100%; height: 380px; }
+        #chart-sankey { height: 440px; }
+        @media (max-width: 760px) { .chart-grid { grid-template-columns: 1fr; } }
+
+    
+        /* 三线表 (LaTeX booktabs) —— 修复表格线条缺失 */
+        .booktabs-table { width: 100%; border-collapse: collapse; font-size: 13px; border-top: 2.2px solid var(--border-strong); border-bottom: 2.2px solid var(--border-strong); }
+        .booktabs-table th { text-align: left; font-size: 12px; font-weight: 700; letter-spacing: 0.05em; color: var(--text-primary); padding: 12px 14px; border-bottom: 1.2px solid var(--border-strong); background-color: var(--bg-table-head); white-space: nowrap; }
+        .booktabs-table td { padding: 12px 14px; border-bottom: 1px solid var(--border-hairline); color: var(--text-secondary); line-height: 1.6; }
+        .booktabs-table tr:last-child td { border-bottom: none; }
+        .booktabs-table tr:hover td { background-color: #f7f6f1; }
+
+        /* dossier 2×2 对称排版 */
+        .dossier-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-bottom: 36px; }
+        .dossier-item { background: #ffffff; border: 1px solid var(--border-hairline); border-left: 3.5px solid var(--accent-bronze); border-radius: var(--radius-md); padding: 24px 26px; box-shadow: var(--card-shadow); display: flex; flex-direction: column; justify-content: flex-start; }
+        .dossier-item h3 { font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+        .dossier-item h3 span { font-family: "JetBrains Mono", monospace; font-size: 12px; font-weight: 600; color: var(--text-tertiary); }
+        .dossier-item ul { list-style: none; font-size: 13.5px; color: var(--text-secondary); line-height: 1.78; }
+        .dossier-item li { position: relative; padding-left: 18px; margin-bottom: 10px; text-align: justify; }
+        .dossier-item li::before { content: "◆"; position: absolute; left: 4px; top: 6px; color: var(--accent-bronze); font-size: 7px; }
+        .dossier-item strong { color: var(--text-primary); font-weight: 700; }
+        @media (max-width: 760px) { .dossier-grid { grid-template-columns: 1fr; } }
+
+        /* KPI 顶栏瓷砖 */
+        .kpi-tile { background: var(--bg-card); border: 1px solid var(--border-hairline); border-top: 3px solid var(--accent-bronze); border-radius: var(--radius-md); padding: 20px 16px; box-shadow: var(--card-shadow); }
+        .kpi-eyebrow { font-family: "JetBrains Mono", monospace; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-bronze); margin-bottom: 4px; }
+        .kpi-figure { font-size: 26px; font-weight: 700; letter-spacing: -0.02em; color: var(--text-primary); margin: 6px 0 2px 0; font-variant-numeric: tabular-nums lining-nums; white-space: nowrap; }
+        .kpi-figure span { font-size: 13px; font-weight: 600; color: var(--accent-bronze); }
+        .kpi-subtext { font-size: 11px; color: var(--text-tertiary); margin-top: 4px; line-height: 1.4; }
+        .kpi-title-zh { font-size: 13px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px; }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- 顶部导航 Dock -->
+    <nav class="nav-dock">
+        <div class="nav-brand">
+            <a href="javascript:void(0)" onclick="returnToParentMonograph()" class="nav-back-btn" style="padding:4px 10px;">
+                ‹ 返回云软装大盘
+            </a>
+            <span class="nav-brand-code">PRJ-MEITAN-2016</span>
+            <span class="eyebrow-sep" style="color:var(--border-strong);margin:0 4px;">/</span>
+            <span class="nav-brand-title">湄潭项目全生命周期数据洞察研报</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#dossier">§ I 操盘实录</a></li>
+            <li><a href="#dashboard">§ II 经营看板</a></li>
+            <li><a href="#spatial-asset-dashboard">§ III 空间资产</a></li>
+        </ul>
+    </nav>
+
+    <!-- 头部扉页 Hero -->
+    <header class="hero">
+        <div class="archival-eyebrow">
+            <span>ARCHIVAL MONOGRAPH</span>
+            <span class="eyebrow-sep">/</span>
+            <span>PRJ-MEITAN-2016</span>
+            <span class="eyebrow-sep">/</span>
+            <span>ZUNYI MEIJIANG HOT SPRING RESORT HOTEL</span>
+        </div>
+        <h1 class="hero-title">湄潭项目全生命周期数据洞察研报</h1>
+        <p class="hero-subtitle">
+            贵州遵义标杆五星级文旅温泉度假酒店群 · 17,241 ㎡ 室内空间总承包、四轨博弈定价、47 ㎡ 样板先行集采降本与 2,570 万现金回款闭环纪实
+        </p>
+
+        <div class="spec-matrix">
+            <div class="spec-cell">
+                <div class="spec-label">操盘模式与主体</div>
+                <div class="spec-value">国资发包 <span>/ 四局总包</span></div>
+                <div class="spec-desc">广田专业承包（梁清波 采销总控）</div>
+            </div>
+            <div class="spec-cell">
+                <div class="spec-label">送审与审定总额</div>
+                <div class="spec-value">2,798.5 ➔ 2,650 <span>万</span></div>
+                <div class="spec-desc">送审2798.5万 / 审减仅 5.31%</div>
+            </div>
+            <div class="spec-cell">
+                <div class="spec-label">激光实测面积定额</div>
+                <div class="spec-value">17,241 <span>㎡</span></div>
+                <div class="spec-desc">五星级度假酒店 1,537 元/㎡</div>
+            </div>
+            <div class="spec-cell">
+                <div class="spec-label">综合经营毛利锁定</div>
+                <div class="spec-value">约 28.5% <span>毛利率</span></div>
+                <div class="spec-desc">扣除中建四局 12% 配合费后</div>
+            </div>
+            <div class="spec-cell">
+                <div class="spec-label">最终结算现金回款</div>
+                <div class="spec-value">2,570.50 <span>万元</span></div>
+                <div class="spec-desc">97% 节点 / 现金达成率 100%</div>
+            </div>
+            <div class="spec-cell">
+                <div class="spec-label">总工期与大货摆场</div>
+                <div class="spec-value">91 天 <span>/ 集中 20 天</span></div>
+                <div class="spec-desc">样板先行 / 跨省干线物流倒排</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 专案特化核心正文插槽 -->
+    <!-- 上篇：商业操盘与履约风控实录 -->
+    <section id="dossier" class="card" style="margin-bottom: 28px;">
+        <div class="card-caption-bar">
+            <h2 class="card-heading">商业操盘与履约风控实录</h2>
+            <span class="card-tag">SECTION I · COMMERCIAL OPERATIONS & RISK CONTROL</span>
+        </div>
+        <p style="font-size:13.5px; color:var(--text-secondary); margin-bottom:16px;">
+            基于施工分包合同原件、竣工结算报告第一册与多轮四轨调价底账，系统还原商业操盘的完整闭环。
+        </p>
+
+        <table class="booktabs-table" style="margin-bottom: 24px;">
+            <thead>
+                <tr>
+                    <th class="table-dim">管控维度</th>
+                    <th class="table-fact">关键事实与核心数据</th>
+                    <th>业务背景与商业管控重点</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="table-dim">发包业主主体</td>
+                    <td class="table-fact"><strong>遵义市通途公路建设投资有限公司</strong></td>
+                    <td>遵义市国资重点文旅平台，承担湄江温泉旅游度假区整体开发建设。</td>
+                </tr>
+                <tr>
+                    <td class="table-dim">总包与配合费</td>
+                    <td class="table-fact"><strong>中建四局第三建筑工程有限公司</strong>（配合费 12%）</td>
+                    <td>中建四局总承包，广田专业承包；合同约定向总包支付 12% 配合费，商务测算前置预留利差空间。</td>
+                </tr>
+                <tr>
+                    <td class="table-dim">送审与审定确权</td>
+                    <td class="table-fact"><strong>送审 2,798.50 万 ➔ 审定 2,650.00 万</strong>（审减率仅 5.31%）</td>
+                    <td>包含包干金额 2,686.20 万元与现场签证 112.30 万元；多轮审计抗辩审减仅 148.5 万元，实现行业顶尖防御效果。</td>
+                </tr>
+                <tr>
+                    <td class="table-dim">实收现金与达成</td>
+                    <td class="table-fact"><strong>实收现金 2,570.50 万元</strong>（合同结算 97% 节点达成率 100%）</td>
+                    <td>严格按 30% 预付 + 80% 形象进度 + 85% 竣工 + 97% 结算执行，余 3% (79.5万) 为质保金。</td>
+                </tr>
+                <tr>
+                    <td class="table-dim">空间体量定额</td>
+                    <td class="table-fact"><strong>实测面积 17,241 ㎡ · 综合单方 1,537 元/㎡</strong></td>
+                    <td>全案 10 大功能区域激光实测闭环，单方造价 1,537 元/㎡，高度符合国内五星级温泉度假酒店投资定额。</td>
+                </tr>
+                <tr>
+                    <td class="table-dim">工期与极速抢工</td>
+                    <td class="table-fact"><strong>总工期 91 天 · 集中进场 20 天高效摆场</strong></td>
+                    <td>47 ㎡ 样板房先行封样，珠三角产业集群批量排产，大货 20 天内极速进场摆场就位，确保盛大开业。</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- 2×2 对称矩阵 -->
+        <div class="dossier-grid">
+            <div class="dossier-item">
+                <h3>§ 1 四轨定价策略与利差锁定</h3>
+                <ul>
+                    <li><strong>四轨价格模型构建</strong>：系统建立出厂基准裸价、内部控制预算、商务谈判底限、正式报审报价四轨机制；</li>
+                    <li><strong>前置预留配合费空间</strong>：将中建四局 12% 配合费与税费刚性计入模型，确保多轮压价拉锯后仍锁定 28.5% 综合经营毛利；</li>
+                    <li><strong>品类差异化溢价策略</strong>：艺术品与高定家具高毛利防守，标品灯具与布艺规模走量，实现结构性利差平衡。</li>
+                </ul>
+            </div>
+
+            <div class="dossier-item">
+                <h3>§ 2 样板先行与规模集采降本</h3>
+                <ul>
+                    <li><strong>47 ㎡ 豪华套房先行封样</strong>：以典型客房为突破口，提前打样封样，锁定面料阻燃、漆面封闭度及五金标准；</li>
+                    <li><strong>规模集采撬动让利</strong>：以封样标准为基准，向珠三角源头工厂批量发包，平均降本幅度达 32.8%（沙发降 36.1%、书桌降 34.4%）；</li>
+                    <li><strong>白胚飞检源头把关</strong>：亲赴工厂白胚飞检，规避进场返工风险，实现批量大货一次性验收通过。</li>
+                </ul>
+            </div>
+
+            <div class="dossier-item">
+                <h3>§ 3 现场签证 112.3 万审计证据链</h3>
+                <ul>
+                    <li><strong>三批次签证严密归档</strong>：针对 A2 会见厅增设沙发(27.1万)、专议11号改床(6.6万)、XMB-128总套变更(78.5万)建立完整卷宗；</li>
+                    <li><strong>政府与国资纪要为据</strong>：所有增项均取得政府联系单与通途酒店会议纪要盖章签字，实现变更 100% 留痕；</li>
+                    <li><strong>冲抵造价审减防线</strong>：在多轮第三方审计中据理力争，以 112.3 万元全额核准增项有效冲抵合同包干审减，锁定 2,650 万元审定大盘。</li>
+                </ul>
+            </div>
+
+            <div class="dossier-item">
+                <h3>§ 4 资金链条闭环与现金流保障</h3>
+                <ul>
+                    <li><strong>严格节点确权收款</strong>：狠抓 30% 预付款与 80% 出货进度款，确保出货前覆盖工厂采购直接成本，实现零垫资；</li>
+                    <li><strong>结算款 97% 刚性回笼</strong>：竣工验收后以审计终审报告为依托，迅速锁定 2,570.50 万元现金到账，回款达成率 100%；</li>
+                    <li><strong>总包配合费合规核销</strong>：与中建四局合规清算 318 万元配合费，账实相符，全面终结潜在经济与法务纠纷。</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 下篇：项目经营结算与资金闭环看板 -->
+    <section id="dashboard" class="card" style="margin-bottom: 28px;">
+        <div class="card-caption-bar">
+            <h2 class="card-heading">项目经营结算与资金闭环看板</h2>
+            <span class="card-tag">SECTION II · COMMERCIAL CLOSURE & CASH METRICS</span>
+        </div>
+
+        <!-- 6 大核心 KPI -->
+        <div class="kpi-deck">
+            <div class="kpi-tile">
+                <div class="kpi-eyebrow">SUBMITTED SUM</div>
+                <div class="kpi-title-zh">报审送审总造价</div>
+                <div class="kpi-figure">2,798.5 <span>万</span></div>
+                <div class="kpi-subtext">包干 2686.2万 + 签证 112.3万</div>
+            </div>
+            <div class="kpi-tile">
+                <div class="kpi-eyebrow">AUDITED SUM</div>
+                <div class="kpi-title-zh">最终审定总额</div>
+                <div class="kpi-figure">2,650.0 <span>万</span></div>
+                <div class="kpi-subtext">审减率仅 5.31% 防御极佳</div>
+            </div>
+            <div class="kpi-tile">
+                <div class="kpi-eyebrow">CASH INFLOW</div>
+                <div class="kpi-title-zh">最终实收现金</div>
+                <div class="kpi-figure">2,570.5 <span>万</span></div>
+                <div class="kpi-subtext">97% 结算款达成率 100%</div>
+            </div>
+            <div class="kpi-tile">
+                <div class="kpi-eyebrow">OPERATING MARGIN</div>
+                <div class="kpi-title-zh">综合经营毛利</div>
+                <div class="kpi-figure">28.5 <span>%</span></div>
+                <div class="kpi-subtext">扣减中建四局 12% 配合费后</div>
+            </div>
+            <div class="kpi-tile">
+                <div class="kpi-eyebrow">MEASURED AREA</div>
+                <div class="kpi-title-zh">激光实测面积</div>
+                <div class="kpi-figure">17,241 <span>㎡</span></div>
+                <div class="kpi-subtext">包干综合单方 1,537 元/㎡</div>
+            </div>
+            <div class="kpi-tile">
+                <div class="kpi-eyebrow">ASSET INVENTORY</div>
+                <div class="kpi-title-zh">合同发包采购量</div>
+                <div class="kpi-figure">12,850 <span>件(套)</span></div>
+                <div class="kpi-subtext">449 行 BOM · 含全案家具及配套布艺饰品</div>
+            </div>
+        </div>
+
+        <!-- 经营看板第一排：四轨价格大盘 + 样板房集采降本 -->
+        <div class="chart-grid">
+            <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
+                <div class="chart-header">
+                    <div class="chart-title-wrap">
+                        <span class="chart-fig-num">FIG. 01</span>
+                        <div class="chart-title">18 大品类四轨价格博弈阶梯 (万元)</div>
+                    </div>
+                </div>
+                <div id="chart-pricing" class="chart-container"></div>
+            </div>
+
+            <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
+                <div class="chart-header">
+                    <div class="chart-title-wrap">
+                        <span class="chart-fig-num">FIG. 02</span>
+                        <div class="chart-title">样板房先行 vs 大货批量采购降本幅度 (%)</div>
+                    </div>
+                </div>
+                <div id="chart-mockup" class="chart-container"></div>
+            </div>
+        </div>
+
+        <div style="height: 20px;"></div>
+
+        <!-- 经营看板第二排：桑基图 + 六维雷达图 -->
+        <div class="chart-grid">
+            <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
+                <div class="chart-header">
+                    <div class="chart-title-wrap">
+                        <span class="chart-fig-num">FIG. 03</span>
+                        <div class="chart-title">2,798 万全案资金流动网络桑基图 (万元)</div>
+                    </div>
+                </div>
+                <div id="chart-sankey" class="chart-container"></div>
+            </div>
+
+            <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
+                <div class="chart-header">
+                    <div class="chart-title-wrap">
+                        <span class="chart-fig-num">FIG. 04</span>
+                        <div class="chart-title">千万级工程商业履约与综合治理六维雷达</div>
+                    </div>
+                </div>
+                <div id="chart-radar" class="chart-container"></div>
+            </div>
+        </div>
+
+        <div style="height: 20px;"></div>
+
+        <!-- 经营看板第三排：现金流瀑布图 + 现场签证 112.3 万审计证据表 -->
+        <div class="chart-grid">
+            <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
+                <div class="chart-header">
+                    <div class="chart-title-wrap">
+                        <span class="chart-fig-num">FIG. 05</span>
+                        <div class="chart-title">合同现金流履约五阶里程碑与核销阶梯瀑布</div>
+                    </div>
+                </div>
+                <div id="chart-cashflow-waterfall" class="chart-container"></div>
+            </div>
+
+            <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px; display:flex; flex-direction:column;">
+                <div class="chart-header">
+                    <div class="chart-title-wrap">
+                        <span class="chart-fig-num">TABLE 02</span>
+                        <div class="chart-title">现场签证 112.3 万元三大批次成因归因与审计证据链</div>
+                    </div>
+                </div>
+                <div style="overflow-x: auto; flex: 1;">
+                    <table class="booktabs-table" style="font-size: 12px; margin-top: 4px;">
+                        <thead>
+                            <tr>
+                                <th style="width: 45px;">批次</th>
+                                <th style="width: 80px;">凭证编号</th>
+                                <th>指令依据与变更成因</th>
+                                <th>现场签证主要内容</th>
+                                <th style="text-align: right; width: 75px;">送审(万)</th>
+                                <th style="text-align: center; width: 68px;">审计结论</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>01</strong></td>
+                                <td><span style="font-family:var(--font-mono); font-weight:700; color:var(--accent-navy);">XMB-39</span></td>
+                                <td>市委市政府及县政府提出的意见</td>
+                                <td>A2 会见厅增加 12 张沙发和 12 张方几</td>
+                                <td style="text-align: right; font-weight:700; color:var(--accent-bronze);">27.13</td>
+                                <td style="text-align: center;"><span style="padding:1px 5px; background:#edf5ee; color:#2a4c38; font-weight:700; font-size:11px; border-radius:2px;">全额确认</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>02</strong></td>
+                                <td><span style="font-family:var(--font-mono); font-weight:700; color:var(--accent-navy);">专议11号</span></td>
+                                <td>通途酒店专议[2016]11号会议要求</td>
+                                <td>A1/A2 两套房改床；三联套户外新增茶托、阳伞、书架等</td>
+                                <td style="text-align: right; font-weight:700; color:var(--accent-bronze);">6.65</td>
+                                <td style="text-align: center;"><span style="padding:1px 5px; background:#edf5ee; color:#2a4c38; font-weight:700; font-size:11px; border-radius:2px;">全额确认</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>03</strong></td>
+                                <td><span style="font-family:var(--font-mono); font-weight:700; color:var(--accent-navy);">XMB-128</span></td>
+                                <td>市政府领导与业主通途公司要求</td>
+                                <td>增换总套书桌、中餐包房餐桌、手动改电动窗帘、泡池加窗帘</td>
+                                <td style="text-align: right; font-weight:700; color:var(--accent-bronze);">78.52</td>
+                                <td style="text-align: center;"><span style="padding:1px 5px; background:#edf5ee; color:#2a4c38; font-weight:700; font-size:11px; border-radius:2px;">全额确认</span></td>
+                            </tr>
+                            <tr style="background: #faf9f5; font-weight: 700; border-top: 1.5px solid var(--border-hairline);">
+                                <td colspan="4" style="text-align: right;"><strong>现场签证增补送审总额合计</strong></td>
+                                <td style="text-align: right; color: var(--accent-bronze); font-size: 13.5px;">112.30</td>
+                                <td style="text-align: center; color: var(--accent-sage);">全额核准</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第三篇：空间资产数据看板与现场交付明细 -->
+    <section id="spatial-asset-dashboard" class="card" style="margin-bottom: 28px;">
+        <div class="card-caption-bar">
+            <h2 class="card-heading">空间资产数据看板与现场交付明细</h2>
+            <span class="card-tag">SECTION III · SPATIAL ASSET & DELIVERY TOPOLOGY</span>
+        </div>
+        <p style="font-size:13.5px; color:var(--text-secondary); margin-bottom:16px;">
+            按“空间边界 → 价值配置 → 资产结构 → 交付证据”组织；BOM 明细金额与结算送审金额清晰分离。
+        </p>
+
+        <!-- 空间图表第一排：区域包干分布 + 公区/客房业态双环图 -->
+        <div class="chart-grid">
+            <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
+                <div class="chart-header">
+                    <div class="chart-title-wrap">
+                        <span class="chart-fig-num">FIG. 06</span>
+                        <div class="chart-title">10 大主要区域包干结算造价分布 (万元)</div>
+                    </div>
+                </div>
+                <div id="chart-zones" class="chart-container"></div>
+            </div>
+
+            <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
+                <div class="chart-header">
+                    <div class="chart-title-wrap">
+                        <span class="chart-fig-num">FIG. 07</span>
+                        <div class="chart-title">公区 vs 客房业态造价投资双环嵌套结构 (%)</div>
+                    </div>
+                </div>
+                <div id="chart-typology" class="chart-container"></div>
+            </div>
+        </div>
+
+        <div style="height: 20px;"></div>
+
+        <!-- 空间图表第二排：五大核心品类双轴图 + 79 款大货家具出货摆场落位排行 -->
+        <div class="chart-grid">
+            <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
+                <div class="chart-header">
+                    <div class="chart-title-wrap">
+                        <span class="chart-fig-num">FIG. 08</span>
+                        <div class="chart-title">全案五大软装核心品类造价与工程量双轴全景</div>
+                    </div>
+                </div>
+                <div id="chart-categories" class="chart-container"></div>
+            </div>
+
+            <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
+                <div class="chart-header">
+                    <div class="chart-title-wrap">
+                        <span class="chart-fig-num">FIG. 09</span>
+                        <div class="chart-title">79 款大货家具出货摆场空间落位分布排行 (件)</div>
+                    </div>
+                </div>
+                <div id="chart-staging" class="chart-container"></div>
+            </div>
+        </div>
+
+        <div style="height: 20px;"></div>
+
+        <!-- 10 大区域激光实测面积底账表 -->
+        <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
+            <div class="chart-header" style="margin-bottom: 12px;">
+                <div class="chart-title-wrap">
+                    <span class="chart-fig-num">TABLE 03</span>
+                    <div class="chart-title">10 大功能区域激光实测面积与包干明细 (17,241.36 ㎡ 实测底账)</div>
+                </div>
+            </div>
+            <div style="overflow-x: auto;">
+                <table class="booktabs-table" style="font-size: 12.5px;">
+                    <thead>
+                        <tr>
+                            <th>功能空间区域</th>
+                            <th style="text-align: right;">实测建筑面积 (㎡)</th>
+                            <th style="text-align: right;">包干综合单价 (元)</th>
+                            <th style="text-align: right;">报审合价 (万元)</th>
+                            <th>商业定位与主要配置</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>A2 栋一层 (大堂/西餐/汤屋)</strong></td>
+                            <td style="text-align: right; font-weight: 700; color: var(--accent-navy);">5,043.12</td>
+                            <td style="text-align: right;">1,558.00</td>
+                            <td style="text-align: right; font-weight: 700; color: var(--accent-bronze);">785.72</td>
+                            <td>大堂前厅挑空艺术大吊灯、接待总台、全日制西餐厅桌椅、温泉前台</td>
+                        </tr>
+                        <tr>
+                            <td><strong>A2 栋二层 (中餐厅/包厢)</strong></td>
+                            <td style="text-align: right; font-weight: 700; color: var(--accent-navy);">2,914.00</td>
+                            <td style="text-align: right;">1,558.00</td>
+                            <td style="text-align: right; font-weight: 700; color: var(--accent-bronze);">454.00</td>
+                            <td>中餐散座宴会桌椅、高档餐饮豪华贵宾包间定制家具、艺术挂画</td>
+                        </tr>
+                        <tr>
+                            <td><strong>A2 栋三层 (会议中心/客房)</strong></td>
+                            <td style="text-align: right; font-weight: 700; color: var(--accent-navy);">1,858.00</td>
+                            <td style="text-align: right;">1,558.00</td>
+                            <td style="text-align: right; font-weight: 700; color: var(--accent-bronze);">289.48</td>
+                            <td>多功能会议大厅会议桌椅、宴会布草、无柱式多媒体影音厅地毯</td>
+                        </tr>
+                        <tr>
+                            <td><strong>A2 栋四层 (豪华套房区)</strong></td>
+                            <td style="text-align: right; font-weight: 700; color: var(--accent-navy);">1,422.00</td>
+                            <td style="text-align: right;">1,558.00</td>
+                            <td style="text-align: right; font-weight: 700; color: var(--accent-bronze);">221.55</td>
+                            <td>豪华套房客厅定制沙发组、茶几、高档书桌椅、定织羊毛印花地毯</td>
+                        </tr>
+                        <tr>
+                            <td><strong>A2 栋五层 (总统套房与行政区)</strong></td>
+                            <td style="text-align: right; font-weight: 700; color: var(--accent-navy);">1,422.00</td>
+                            <td style="text-align: right;">1,558.00</td>
+                            <td style="text-align: right; font-weight: 700; color: var(--accent-bronze);">221.55</td>
+                            <td>总统套房高定奢华家具组、行政接待专用实木办公桌、全手工纯毛地毯</td>
+                        </tr>
+                        <tr>
+                            <td><strong>A2 负一层温泉泳池区</strong></td>
+                            <td style="text-align: right; font-weight: 700; color: var(--accent-navy);">1,001.16</td>
+                            <td style="text-align: right;">1,558.00</td>
+                            <td style="text-align: right; font-weight: 700; color: var(--accent-bronze);">155.98</td>
+                            <td>室内温泉汤池耐水防潮躺椅、户外遮阳伞、休闲茶几、防腐木置物架</td>
+                        </tr>
+                        <tr>
+                            <td><strong>A2 二联套二层</strong></td>
+                            <td style="text-align: right; font-weight: 700; color: var(--accent-navy);">992.76</td>
+                            <td style="text-align: right;">1,558.00</td>
+                            <td style="text-align: right; font-weight: 700; color: var(--accent-bronze);">154.67</td>
+                            <td>联排度假套房卧房组家具、定制床头柜、遮光阻燃窗帘及挂画</td>
+                        </tr>
+                        <tr>
+                            <td><strong>A1 栋二层 (标准客房区)</strong></td>
+                            <td style="text-align: right; font-weight: 700; color: var(--accent-navy);">959.33</td>
+                            <td style="text-align: right;">1,558.00</td>
+                            <td style="text-align: right; font-weight: 700; color: var(--accent-bronze);">149.46</td>
+                            <td>标准双床房床架、写字桌、活动行李架、迷你吧酒柜、定制壁灯</td>
+                        </tr>
+                        <tr>
+                            <td><strong>A1 栋一层 (客房与配套区)</strong></td>
+                            <td style="text-align: right; font-weight: 700; color: var(--accent-navy);">887.44</td>
+                            <td style="text-align: right;">1,558.00</td>
+                            <td style="text-align: right; font-weight: 700; color: var(--accent-bronze);">138.26</td>
+                            <td>标准大床房、衣柜内置物架、走廊过道指示灯具及艺术装饰挂画</td>
+                        </tr>
+                        <tr>
+                            <td><strong>A2 二联套一层</strong></td>
+                            <td style="text-align: right; font-weight: 700; color: var(--accent-navy);">741.55</td>
+                            <td style="text-align: right;">1,558.00</td>
+                            <td style="text-align: right; font-weight: 700; color: var(--accent-bronze);">115.53</td>
+                            <td>度假庭院休闲沙发桌椅、会客厅配套电视柜及全套装饰陈设</td>
+                        </tr>
+                        <tr style="background: #faf9f5; font-weight: 700;">
+                            <td><strong>现场签证 3 大批次 (增项合计)</strong></td>
+                            <td style="text-align: right;">-</td>
+                            <td style="text-align: right;">签证审计定额</td>
+                            <td style="text-align: right; color: var(--accent-bronze);">112.30</td>
+                            <td>根据业主联系单变更增补家具、灯具及现场硬装配合调整</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- 统一底层单一真实源数据依据 -->
+    <section id="sec-provenance" class="card" style="margin-top: 36px;">
+        <div class="card-caption-bar">
+            <h2 class="card-heading">数据依据与来源说明</h2>
+            <span class="card-tag">SOURCES ｜ PRJ-MEITAN-2016</span>
+        </div>
+        <p style="font-size:14px; color:var(--text-secondary); line-height:1.75; margin-bottom:14px;">
+            本研报所述湄江温泉大酒店度假工程（签约合同 3,380.00 万元、最终审定金额 2,798.50 万元），均按原始经济分包合同文本、过程配合费记录与竣工结算报告第一册原件整理，可用财务凭据与审定档案相互印证。
+        </p>
+
+        <div style="font-size:13px; color:var(--text-tertiary); line-height:1.6; margin-bottom:16px;">
+            <strong>参考标准</strong>：建设工程施工合同（示范文本）/ 建设工程造价审计规范 / 广田云软装合同管理制度 ｜ <strong>归档状态</strong>：商业专案库确认版 (PRJ-MEITAN-2016)
+        </div>
+
+        <div style="background:#f7f6f2; border:1px solid rgba(18,19,22,0.1); border-radius:4px; padding:14px 18px; font-family:var(--font-mono); font-size:11.5px; color:#2c3238; line-height:1.7;">
+            <div style="font-weight:700; color:var(--accent-bronze); margin-bottom:6px; display:flex; align-items:center; gap:6px;">
+                <span>📊</span><span>数据查询参考</span>
+            </div>
+            <code style="color:#162a45;">
+                ATTACH 'data/career_analytics_lake.duckdb' AS lake (READ_ONLY);
+.read data/views_guangtian_cloud_master.sql
+SELECT * FROM v_gt_contracts_master WHERE 项目名称 LIKE '%湄潭%' OR 项目名称 LIKE '%湄江%';
+
+            </code>
+        </div>
+    </section>
+
+    <!-- 页脚版权与底注 -->
+    <footer class="archival-footer">
+        <div>
+            <span>ARCHIVAL DOSSIER · PRJ-MEITAN-2016 · 遵义市湄江温泉大酒店软装工程商业操盘实录</span>
+        </div>
+        <div style="font-family:var(--font-mono); font-size:11px;">
+            2026 商业专案库归档
+        </div>
+    </footer>
+
+</div>
+
+<!-- 基础通信与安全交互脚本 -->
+<script>
+    // 跨域与总舱安全通信闭环
+    window.handleBackToParent = function() {
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({ type: 'NAVIGATE_BACK' }, '*');
+            window.parent.postMessage({ type: 'close-modal' }, '*');
+        } else if (window.opener) {
+            window.close();
+        } else if (history.length > 1) {
+            history.back();
+        } else {
+            window.location.href = '../';
+        }
+    };
+
+    // 子专案返回父大盘
+    window.returnToParentMonograph = function() {
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({ type: 'NAVIGATE_BACK' }, '*');
+        } else {
+            window.location.href = '深圳市广田云软装科技全生命周期商业操盘与供应链大盘商业研报.html';
+        }
+    };
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const rawPricingTiers = [
+        {"category": "A1A2标间客房", "factory": 60.74, "budget": 61.24, "floor": 101.09, "target": 181.97, "margin": 66.6},
+        {"category": "A1A2套房客房", "factory": 75.02, "budget": 87.78, "floor": 146.24, "target": 263.24, "margin": 71.5},
+        {"category": "A1一层公区", "factory": 28.17, "budget": 33.15, "floor": 57.79, "target": 104.02, "margin": 72.9},
+        {"category": "A2二层及总套", "factory": 5.90, "budget": 10.85, "floor": 18.01, "target": 32.43, "margin": 81.8},
+        {"category": "A2公区家具", "factory": 68.38, "budget": 125.27, "floor": 207.94, "target": 377.51, "margin": 81.9},
+        {"category": "A1灯具工程", "factory": 1.84, "budget": 1.88, "floor": 3.59, "target": 10.78, "margin": 82.9},
+        {"category": "A2公区灯具", "factory": 7.31, "budget": 7.31, "floor": 13.95, "target": 41.86, "margin": 82.5},
+        {"category": "A2套房灯具", "factory": 1.87, "budget": 1.87, "floor": 3.37, "target": 10.10, "margin": 81.5},
+        {"category": "A1公区窗帘", "factory": 9.99, "budget": 9.99, "floor": 16.59, "target": 49.78, "margin": 79.9},
+        {"category": "A1套房窗帘", "factory": 4.51, "budget": 4.51, "floor": 7.49, "target": 22.48, "margin": 79.9},
+        {"category": "A2标间窗帘", "factory": 9.30, "budget": 9.30, "floor": 15.44, "target": 46.33, "margin": 79.9},
+        {"category": "A2套房窗帘", "factory": 22.01, "budget": 22.01, "floor": 36.54, "target": 109.62, "margin": 79.9},
+        {"category": "A2公区窗帘", "factory": 34.16, "budget": 34.16, "floor": 56.71, "target": 170.14, "margin": 79.9},
+        {"category": "A1公区艺术品", "factory": 12.56, "budget": 12.56, "floor": 22.46, "target": 72.71, "margin": 82.7},
+        {"category": "A1客房艺术品", "factory": 7.77, "budget": 7.77, "floor": 12.90, "target": 39.78, "margin": 80.5},
+        {"category": "A2公区艺术品", "factory": 59.16, "budget": 59.16, "floor": 98.21, "target": 273.91, "margin": 78.4},
+        {"category": "A2客房艺术品", "factory": 37.85, "budget": 37.85, "floor": 72.26, "target": 224.79, "margin": 83.2}
+    ];
+
+    const mockupItems = [
+        {"name": "沙发", "reduction": 36.12},
+        {"name": "写字椅", "reduction": 35.40},
+        {"name": "床头柜", "reduction": 35.24},
+        {"name": "床尾凳", "reduction": 34.88},
+        {"name": "书桌", "reduction": 34.36},
+        {"name": "茶几", "reduction": 33.91},
+        {"name": "迷你吧", "reduction": 33.42},
+        {"name": "电视柜", "reduction": 33.33},
+        {"name": "毛巾架", "reduction": 33.00},
+        {"name": "活动行李架", "reduction": 31.92},
+        {"name": "客房床架", "reduction": 28.57},
+        {"name": "床垫", "reduction": 0.00}
+    ];
+
+    const settlementAreas = [
+        {"name": "A2二联套一层", "area": 741.55, "amount": 115.53},
+        {"name": "A1一层客房", "area": 887.44, "amount": 138.26},
+        {"name": "A1二层标间", "area": 959.33, "amount": 149.46},
+        {"name": "A2二联套二层", "area": 992.76, "amount": 154.67},
+        {"name": "A2负一层泳池", "area": 1001.16, "amount": 155.98},
+        {"name": "A2四层套房", "area": 1422.00, "amount": 221.55},
+        {"name": "A2五层总套", "area": 1422.00, "amount": 221.55},
+        {"name": "A2三层会议", "area": 1858.00, "amount": 289.48},
+        {"name": "A2二层中餐", "area": 2914.00, "amount": 454.00},
+        {"name": "A2一层大堂", "area": 5043.12, "amount": 785.72}
+    ];
+
+    const latexTooltip = {
+        backgroundColor: '#ffffff',
+        borderColor: '#dcd7ce',
+        borderWidth: 1.5,
+        textStyle: { color: '#111317', fontFamily: '"Noto Serif SC", "EB Garamond", serif', fontSize: 13 },
+        extraCssText: 'box-shadow: 0 8px 30px rgba(17, 19, 23, 0.08); border-radius: 4px; padding: 12px 16px;'
+    };
+
+    // 1. 四轨价格对比
+    const chartPEl = document.getElementById('chart-pricing');
+    if (chartPEl) {
+        const chartPricing = echarts.init(chartPEl);
+        chartPricing.setOption({
+            tooltip: {
+                ...latexTooltip,
+                trigger: 'axis',
+                axisPointer: { type: 'shadow' },
+                formatter: function(params) {
+                    let res = `<strong>${params[0].name}</strong><br/>`;
+                    params.forEach(p => {
+                        if (p.seriesName === '综合毛利率') {
+                            res += `${p.marker} ${p.seriesName}：<span style="font-weight:700;color:#8a6839;">${p.value}%</span><br/>`;
+                        } else {
+                            res += `${p.marker} ${p.seriesName}：<span style="font-weight:700;color:#162a45;">${p.value} 万元</span><br/>`;
+                        }
+                    });
+                    return res;
+                }
+            },
+            legend: { textStyle: { color: '#111317', fontFamily: '"Noto Serif SC", serif', fontWeight: 600 }, top: 0 },
+            grid: { left: '3%', right: '4%', bottom: '15%', containLabel: true },
+            xAxis: {
+                type: 'category',
+                data: rawPricingTiers.map(d => d.category),
+                axisLabel: { color: '#2c3238', rotate: 28, interval: 0, fontSize: 11, fontFamily: '"Noto Serif SC", serif' },
+                axisLine: { lineStyle: { color: '#111317', width: 1.5 } }
+            },
+            yAxis: [
+                { type: 'value', name: '金额 (万元)', splitLine: { lineStyle: { color: '#e6e3dc', type: 'dashed' } }, axisLabel: { color: '#2c3238', fontFamily: '"JetBrains Mono", serif' } },
+                { type: 'value', name: '毛利率 (%)', axisLabel: { formatter: '{value}%', color: '#8a6839', fontFamily: '"JetBrains Mono", serif' }, splitLine: { show: false } }
+            ],
+            series: [
+                { name: '出厂基准成本', type: 'bar', data: rawPricingTiers.map(d => d.factory), itemStyle: { color: '#cfcac0', borderRadius: [2, 2, 0, 0] } },
+                { name: '内部控制预算', type: 'bar', data: rawPricingTiers.map(d => d.budget), itemStyle: { color: '#9c967d', borderRadius: [2, 2, 0, 0] } },
+                { name: '商务谈判底限', type: 'bar', data: rawPricingTiers.map(d => d.floor), itemStyle: { color: '#2a4c38', borderRadius: [2, 2, 0, 0] } },
+                { name: '正式报审报价', type: 'bar', data: rawPricingTiers.map(d => d.target), itemStyle: { color: '#162a45', borderRadius: [2, 2, 0, 0] } },
+                { name: '综合毛利率', type: 'line', yAxisIndex: 1, data: rawPricingTiers.map(d => d.margin), lineStyle: { color: '#8a6839', width: 2.2 }, itemStyle: { color: '#8a6839' } }
+            ]
+        });
+        window.addEventListener('resize', () => chartPricing.resize());
+    }
+
+    // 2. 样板房集采降本图
+    const chartMEl = document.getElementById('chart-mockup');
+    if (chartMEl) {
+        const chartMockup = echarts.init(chartMEl);
+        chartMockup.setOption({
+            tooltip: { ...latexTooltip, trigger: 'axis', formatter: '{b}: 批量采购降本 <strong>{c}%</strong>' },
+            grid: { left: '3%', right: '14%', bottom: '3%', top: '5%', containLabel: true },
+            xAxis: { type: 'value', axisLabel: { formatter: '{value}%', color: '#2c3238', fontFamily: '"JetBrains Mono", serif' }, splitLine: { lineStyle: { color: '#e6e3dc', type: 'dashed' } } },
+            yAxis: {
+                type: 'category',
+                data: mockupItems.map(d => d.name).reverse(),
+                axisLabel: { fontSize: 12, color: '#111317', fontWeight: 600, fontFamily: '"Noto Serif SC", serif' },
+                axisLine: { lineStyle: { color: '#111317', width: 1.5 } }
+            },
+            series: [{
+                type: 'bar',
+                data: mockupItems.map(d => d.reduction).reverse(),
+                label: { show: true, position: 'right', formatter: '{c}%', color: '#8a6839', fontWeight: 700, fontFamily: '"JetBrains Mono", serif' },
+                itemStyle: { color: '#2a4c38', borderRadius: [0, 2, 2, 0] },
+                barWidth: '55%'
+            }]
+        });
+        window.addEventListener('resize', () => chartMockup.resize());
+    }
+
+    // 3. 资金流动桑基图
+    const chartSEl = document.getElementById('chart-sankey');
+    if (chartSEl) {
+        const chartSankey = echarts.init(chartSEl);
+        chartSankey.setOption({
+            tooltip: { ...latexTooltip, trigger: 'item' },
+            animationDuration: 1600,
+            series: [{
+                type: 'sankey',
+                layout: 'none',
+                left: '12%',
+                right: '22%',
+                top: '8%',
+                bottom: '8%',
+                emphasis: { focus: 'adjacency' },
+                nodeWidth: 16,
+                nodeGap: 24,
+                data: [
+                    { name: '报审总造价\n2,798.5万', itemStyle: { color: '#111317' } },
+                    { name: '审定总造价\n2,650.0万', itemStyle: { color: '#162a45' } },
+                    { name: '审计核减\n148.5万', itemStyle: { color: '#606873' } },
+                    { name: '结算回款 97%\n2,570.5万', itemStyle: { color: '#2a4c38' } },
+                    { name: '质保金 3%\n79.5万', itemStyle: { color: '#5e6670' } },
+                    { name: '四局配合费 12%\n318.0万', itemStyle: { color: '#8a6839' } },
+                    { name: '直接采购与物流\n1,554.9万', itemStyle: { color: '#3a4756' } },
+                    { name: '经营留存收益\n777.1万', itemStyle: { color: '#8a6839' } }
+                ],
+                links: [
+                    { source: '报审总造价\n2,798.5万', target: '审定总造价\n2,650.0万', value: 2650.0 },
+                    { source: '报审总造价\n2,798.5万', target: '审计核减\n148.5万', value: 148.5 },
+                    { source: '审定总造价\n2,650.0万', target: '结算回款 97%\n2,570.5万', value: 2570.5 },
+                    { source: '审定总造价\n2,650.0万', target: '质保金 3%\n79.5万', value: 79.5 },
+                    { source: '结算回款 97%\n2,570.5万', target: '四局配合费 12%\n318.0万', value: 318.0 },
+                    { source: '结算回款 97%\n2,570.5万', target: '直接采购与物流\n1,554.9万', value: 1554.9 },
+                    { source: '结算回款 97%\n2,570.5万', target: '经营留存收益\n777.1万', value: 697.6 },
+                    { source: '质保金 3%\n79.5万', target: '经营留存收益\n777.1万', value: 79.5 }
+                ],
+                lineStyle: { color: 'gradient', curveness: 0.5, opacity: 0.35 },
+                label: { color: '#111317', fontSize: 11, fontWeight: 600, fontFamily: '"Noto Serif SC", serif', lineHeight: 15 }
+            }]
+        });
+        window.addEventListener('resize', () => chartSankey.resize());
+    }
+
+    // 4. 六维雷达图
+    const chartREl = document.getElementById('chart-radar');
+    if (chartREl) {
+        const chartRadar = echarts.init(chartREl);
+        chartRadar.setOption({
+            tooltip: { ...latexTooltip, trigger: 'item' },
+            animationDuration: 1600,
+            radar: {
+                radius: '60%',
+                center: ['50%', '52%'],
+                indicator: [
+                    { name: '单方造价定额 (1537元/㎡)', max: 2000 },
+                    { name: '审减率控制防守 (5.31%)', max: 15 },
+                    { name: '现金回款达成率 (100%)', max: 100 },
+                    { name: '样板集采降本率 (32.8%)', max: 50 },
+                    { name: '总包配合费承受 (12.0%)', max: 20 },
+                    { name: '综合经营毛利 (28.5%)', max: 40 }
+                ],
+                shape: 'polygon',
+                splitNumber: 4,
+                axisName: { color: '#111317', fontSize: 11, fontWeight: 700, fontFamily: '"Noto Serif SC", "EB Garamond", serif' },
+                splitLine: { lineStyle: { color: '#e6e3dc' } },
+                splitArea: { show: true, areaStyle: { color: ['#ffffff', '#faf9f5'] } }
+            },
+            series: [{
+                type: 'radar',
+                data: [{
+                    value: [1537, 5.31, 100.0, 32.8, 12.0, 28.5],
+                    name: '湄潭温泉酒店商业治理指标',
+                    symbol: 'circle',
+                    symbolSize: 6,
+                    itemStyle: { color: '#8a6839', borderColor: '#ffffff', borderWidth: 2 },
+                    lineStyle: { width: 2.2, color: '#8a6839' },
+                    areaStyle: { color: 'rgba(138, 104, 57, 0.14)' }
+                }]
+            }]
+        });
+        window.addEventListener('resize', () => chartRadar.resize());
+    }
+
+    // 5. 现金流瀑布图
+    const chartCFEl = document.getElementById('chart-cashflow-waterfall');
+    if (chartCFEl) {
+        const chartCashflowWaterfall = echarts.init(chartCFEl);
+        const cfCategories = ['报审总造价', '审计核减', '审定总额', '竣工付至85%', '结算付至97%', '实际现金到账', '质保金3%', '四局配合费12%'];
+        const cfValues = [2798.50, 148.50, 2650.00, 2252.50, 2570.50, 2570.50, 79.50, 318.00];
+        const cfColors = ['#111317', '#6e7783', '#162a45', '#48637f', '#2a4c38', '#1e5430', '#8a6839', '#964d3b'];
+        chartCashflowWaterfall.setOption({
+            tooltip: {
+                ...latexTooltip,
+                trigger: 'axis',
+                axisPointer: { type: 'shadow' },
+                formatter: function(params) {
+                    let idx = params[0].dataIndex;
+                    return `<strong>${cfCategories[idx]}</strong><br/>金额：<span style="font-weight:700;color:#162a45;">${cfValues[idx]} 万元</span>`;
+                }
+            },
+            grid: { left: '3%', right: '4%', bottom: '15%', top: '12%', containLabel: true },
+            xAxis: {
+                type: 'category',
+                data: cfCategories,
+                axisLabel: { color: '#2c3238', rotate: 25, interval: 0, fontSize: 11, fontFamily: '"Noto Serif SC", serif' },
+                axisLine: { lineStyle: { color: '#111317', width: 1.5 } }
+            },
+            yAxis: {
+                type: 'value',
+                name: '金额 (万元)',
+                splitLine: { lineStyle: { color: '#e6e3dc', type: 'dashed' } },
+                axisLabel: { color: '#2c3238', fontFamily: '"JetBrains Mono", serif' }
+            },
+            series: [{
+                type: 'bar',
+                data: cfValues.map((v, i) => ({
+                    value: v,
+                    itemStyle: { color: cfColors[i], borderRadius: [2, 2, 0, 0] }
+                })),
+                label: {
+                    show: true,
+                    position: 'top',
+                    formatter: '{c}万',
+                    color: '#111317',
+                    fontWeight: 700,
+                    fontSize: 11,
+                    fontFamily: '"JetBrains Mono", serif'
+                },
+                barWidth: '45%'
+            }]
+        });
+        window.addEventListener('resize', () => chartCashflowWaterfall.resize());
+    }
+
+    // 6. 10大区域包干造价图
+    const chartZEl = document.getElementById('chart-zones');
+    if (chartZEl) {
+        const chartZones = echarts.init(chartZEl);
+        chartZones.setOption({
+            tooltip: { ...latexTooltip, trigger: 'axis', formatter: '{b}: 包干造价 <strong>{c} 万元</strong>' },
+            grid: { left: '3%', right: '14%', bottom: '3%', top: '5%', containLabel: true },
+            xAxis: { type: 'value', splitLine: { lineStyle: { color: '#e6e3dc', type: 'dashed' } }, axisLabel: { color: '#2c3238', fontFamily: '"JetBrains Mono", serif' } },
+            yAxis: {
+                type: 'category',
+                data: settlementAreas.map(d => d.name),
+                axisLabel: { color: '#111317', fontSize: 12, fontWeight: 600, fontFamily: '"Noto Serif SC", serif' },
+                axisLine: { lineStyle: { color: '#111317', width: 1.5 } }
+            },
+            series: [{
+                type: 'bar',
+                data: settlementAreas.map(d => d.amount),
+                label: { show: true, position: 'right', formatter: '{c}万', color: '#162a45', fontWeight: 700, fontFamily: '"JetBrains Mono", serif' },
+                itemStyle: { color: '#162a45', borderRadius: [0, 2, 2, 0] },
+                barWidth: '55%'
+            }]
+        });
+        window.addEventListener('resize', () => chartZones.resize());
+    }
+
+    // 7. 业态双环图
+    const chartTEl = document.getElementById('chart-typology');
+    if (chartTEl) {
+        const chartTypology = echarts.init(chartTEl);
+        chartTypology.setOption({
+            tooltip: { ...latexTooltip, trigger: 'item', formatter: '{b}: <strong>{c} 万元</strong> ({d}%)' },
+            legend: {
+                orient: 'vertical',
+                right: '2%',
+                top: 'middle',
+                itemGap: 10,
+                textStyle: { color: '#111317', fontFamily: '"Noto Serif SC", serif', fontSize: 11 }
+            },
+            series: [
+                {
+                    name: '所属楼栋',
+                    type: 'pie',
+                    selectedMode: 'single',
+                    radius: ['18%', '38%'],
+                    center: ['36%', '50%'],
+                    label: { position: 'inner', fontSize: 10.5, color: '#ffffff', fontWeight: 600 },
+                    labelLine: { show: false },
+                    data: [
+                        { value: 2479.28, name: 'A2主体 82.5%', itemStyle: { color: '#162a45' } },
+                        { value: 527.37, name: 'A1独栋 17.5%', itemStyle: { color: '#8a6839' } }
+                    ]
+                },
+                {
+                    name: '空间功能业态',
+                    type: 'pie',
+                    radius: ['48%', '68%'],
+                    center: ['36%', '50%'],
+                    label: {
+                        formatter: '{b} {d}%',
+                        fontSize: 11,
+                        color: '#111317',
+                        fontWeight: 600,
+                        fontFamily: '"Noto Serif SC", serif'
+                    },
+                    labelLine: { length: 8, length2: 10 },
+                    data: [
+                        { value: 1580.19, name: '核心公区', itemStyle: { color: '#1f385c' } },
+                        { value: 942.09, name: '豪华套房', itemStyle: { color: '#2a4c38' } },
+                        { value: 395.33, name: '标准客房', itemStyle: { color: '#b38d4f' } },
+                        { value: 89.04, name: '客房走廊', itemStyle: { color: '#687382' } }
+                    ]
+                }
+            ]
+        });
+        window.addEventListener('resize', () => chartTypology.resize());
+    }
+
+    // 8. 五大品类双轴图
+    const chartCatEl = document.getElementById('chart-categories');
+    if (chartCatEl) {
+        const chartCategories = echarts.init(chartCatEl);
+        const catLabels = ['定制与活动家具', '艺术品与装饰陈设', '布艺与窗帘遮光', '配套工程物料', '灯具与工程照明'];
+        const catAmounts = [1934.75, 367.01, 350.55, 270.28, 84.06];
+        const catQuantities = [6450, 1260, 2980, 1780, 380];
+        chartCategories.setOption({
+            tooltip: {
+                ...latexTooltip,
+                trigger: 'axis',
+                axisPointer: { type: 'shadow' },
+                formatter: function(params) {
+                    let idx = params[0].dataIndex;
+                    return `<strong>${catLabels[idx]}</strong><br/>造价金额：<span style="font-weight:700;color:#162a45;">${catAmounts[idx]} 万元</span><br/>工程采购量：<span style="font-weight:700;color:#8a6839;">${catQuantities[idx]} 件</span>`;
+                }
+            },
+            legend: { textStyle: { color: '#111317', fontFamily: '"Noto Serif SC", serif', fontWeight: 600 }, top: 0 },
+            grid: { left: '4%', right: '5%', bottom: '12%', top: '15%', containLabel: true },
+            xAxis: {
+                type: 'category',
+                data: ['定制与活动\n家具', '艺术品与\n装饰陈设', '布艺与\n窗帘遮光', '配套\n工程物料', '灯具与\n工程照明'],
+                axisLabel: { color: '#2c3238', fontSize: 11, fontFamily: '"Noto Serif SC", serif', interval: 0, lineHeight: 15 },
+                axisLine: { lineStyle: { color: '#111317', width: 1.5 } }
+            },
+            yAxis: [
+                { type: 'value', name: '造价金额 (万元)', splitLine: { lineStyle: { color: '#e6e3dc', type: 'dashed' } }, axisLabel: { color: '#2c3238', fontFamily: '"JetBrains Mono", serif' } },
+                { type: 'value', name: '工程件数 (件)', axisLabel: { color: '#8a6839', fontFamily: '"JetBrains Mono", serif' }, splitLine: { show: false } }
+            ],
+            series: [
+                {
+                    name: '造价金额 (万元)',
+                    type: 'bar',
+                    data: catAmounts,
+                    barWidth: '42%',
+                    itemStyle: { color: '#162a45', borderRadius: [2, 2, 0, 0] },
+                    label: { show: true, position: 'top', formatter: '{c}万', color: '#162a45', fontWeight: 700, fontFamily: '"JetBrains Mono", serif' }
+                },
+                {
+                    name: '工程采购件数 (件)',
+                    type: 'line',
+                    yAxisIndex: 1,
+                    data: catQuantities,
+                    lineStyle: { color: '#8a6839', width: 2.4 },
+                    itemStyle: { color: '#8a6839' },
+                    symbol: 'circle',
+                    symbolSize: 7
+                }
+            ]
+        });
+        window.addEventListener('resize', () => chartCategories.resize());
+    }
+
+    // 9. 79款大货摆场落位排行
+    const chartStEl = document.getElementById('chart-staging');
+    if (chartStEl) {
+        const chartStaging = echarts.init(chartStEl);
+        const stagingSpaces = ["户外架空空间", "宴会前厅", "会议室", "大堂休息区", "负一层VIP休息室", "茶吧", "会见厅", "豪华贵宾房", "会议厅", "宴会厅"];
+        const stagingPieces = [22, 25, 31, 39, 48, 52, 55, 84, 230, 486];
+        const stagingPcts = ["1.9%", "2.1%", "2.6%", "3.3%", "4.1%", "4.4%", "4.7%", "7.1%", "19.5%", "41.2%"];
+        chartStaging.setOption({
+            tooltip: {
+                ...latexTooltip,
+                trigger: 'axis',
+                formatter: function(params) {
+                    let idx = params[0].dataIndex;
+                    return `<strong>${stagingSpaces[idx]}</strong><br/>现场摆场件数：<span style="font-weight:700;color:#2a4c38;">${stagingPieces[idx]} 件</span><br/>占比：<strong>${stagingPcts[idx]}</strong>`;
+                }
+            },
+            grid: { left: '3%', right: '16%', bottom: '3%', top: '5%', containLabel: true },
+            xAxis: { type: 'value', splitLine: { lineStyle: { color: '#e6e3dc', type: 'dashed' } }, axisLabel: { color: '#2c3238', fontFamily: '"JetBrains Mono", serif' } },
+            yAxis: {
+                type: 'category',
+                data: stagingSpaces,
+                axisLabel: { color: '#111317', fontSize: 12, fontWeight: 600, fontFamily: '"Noto Serif SC", serif' },
+                axisLine: { lineStyle: { color: '#111317', width: 1.5 } }
+            },
+            series: [{
+                type: 'bar',
+                data: stagingPieces,
+                label: {
+                    show: true,
+                    position: 'right',
+                    formatter: function(param) {
+                        return param.value + '件 (' + stagingPcts[param.dataIndex] + ')';
+                    },
+                    color: '#2a4c38',
+                    fontWeight: 700,
+                    fontSize: 11,
+                    fontFamily: '"JetBrains Mono", serif'
+                },
+                itemStyle: { color: '#2a4c38', borderRadius: [0, 2, 2, 0] },
+                barWidth: '55%'
+            }]
+        });
+        window.addEventListener('resize', () => chartStaging.resize());
+    }
+});
+</script>
+
+</body>
+</html>
