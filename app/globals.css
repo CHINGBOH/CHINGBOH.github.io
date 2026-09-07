@@ -677,12 +677,73 @@
             .skills-grid { grid-template-columns: repeat(2, 1fr); }
             .provenance-views-list { grid-template-columns: 1fr; }
             .nav-links { display: none; }
+            .hero-pillars-grid { grid-template-columns: repeat(2, 1fr); }
         }
         @media (max-width: 600px) {
             .skills-grid { grid-template-columns: 1fr; }
             .hero-title { font-size: 26px; }
             .hero-contacts { flex-direction: column; align-items: flex-start; gap: 4px; }
         }
+    
+    /* === 移动端阅读增强 (Next.js 响应式重构追加) === */
+    @media (max-width: 900px) {
+        .nav-dock { padding: 10px 14px; }
+        .section-title { font-size: 19px; }
+    }
+    @media (max-width: 600px) {
+        body { padding: 14px 12px 56px 12px; font-size: 14px; }
+        .nav-dock {
+            flex-wrap: wrap;
+            gap: 6px;
+            padding: 10px 12px;
+            top: 8px;
+        }
+        .nav-brand { gap: 6px; min-width: 0; }
+        .nav-brand-code { font-size: 10px; padding: 2px 5px; }
+        .nav-brand-title { font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 62vw; }
+        .nav-cta-btn { padding: 4px 9px; font-size: 11px !important; }
+
+        .hero { padding: 6px 0 22px 0; margin-bottom: 28px; }
+        .archival-eyebrow { font-size: 10px; gap: 5px; flex-wrap: wrap; }
+        .hero-title-row { flex-direction: column; align-items: flex-start; gap: 8px; }
+        .hero-title { font-size: 24px; flex-wrap: wrap; }
+        .hero-en { font-size: 17px; }
+        .hero-headline-chip { font-size: 13.5px; padding: 4px 10px; }
+        .hero-thesis { font-size: 13.5px; padding: 12px 14px; line-height: 1.75; }
+        .hero-pillars-grid { grid-template-columns: 1fr; gap: 10px; }
+        .hero-pillar-card { padding: 12px 14px; }
+        .pillar-mono { font-size: 10.5px; padding: 4px 7px; }
+        .btn-view-detail { padding: 8px 14px; font-size: 12.5px; }
+
+        .section-title { font-size: 17.5px; line-height: 1.35; }
+        .section-subtext { font-size: 12px; line-height: 1.6; }
+        .section-header { margin-bottom: 14px; }
+
+        /* 时间线表格：横向滚动，保留全网格阅读 */
+        .booktabs-container {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin-bottom: 28px;
+        }
+        .booktabs-table { min-width: 700px; font-size: 13px; }
+        .booktabs-table th { padding: 10px 12px; font-size: 11px; }
+        .booktabs-table td { padding: 11px 12px; }
+
+        .case-card { padding: 16px 16px; }
+        .case-title { font-size: 16px; }
+        .case-scope { font-size: 12px; }
+        .case-abstract { font-size: 13px; }
+        .case-footer { flex-wrap: wrap; gap: 10px; }
+
+        .skill-tile { padding: 14px 15px; }
+        .skill-tile h4 { font-size: 13.5px; }
+        .skill-tile li { font-size: 13px; line-height: 1.65; margin-bottom: 6px; }
+
+        .provenance-footnote { font-size: 12px; }
+        .runtime-audit { flex-direction: column; }
+        .provenance-item .provenance-name { font-size: 12px; }
+        .provenance-item div:last-child { font-size: 12px; }
+    }
     
     /* === 全局表格风格统一：全网格边框 (Playwright 核查后追加) === */
     .booktabs-table, .academic-table, .archival-table { border: 1px solid var(--border-strong); }
