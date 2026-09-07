@@ -557,105 +557,6 @@
             font-weight: 700;
         }
 
-        /* 模态弹窗 (Modal Viewer) */
-        .modal-overlay {
-            display: none;
-            position: fixed;
-            top: 0; left: 0; width: 100vw; height: 100vh;
-            background: rgba(18, 19, 22, 0.65);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            z-index: 1000;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: opacity 0.25s ease;
-        }
-        .modal-overlay.active {
-            display: flex;
-            opacity: 1;
-        }
-        .modal-window {
-            width: 90vw;
-            height: 90vh;
-            max-width: 1280px;
-            background: #fbfbfa;
-            border: 1px solid var(--border-strong);
-            border-radius: var(--radius-md);
-            box-shadow: 0 24px 60px rgba(0, 0, 0, 0.3);
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            transform: scale(0.98);
-            transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .modal-overlay.active .modal-window {
-            transform: scale(1);
-        }
-        .modal-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 12px 20px;
-            background: #ffffff;
-            border-bottom: 1.5px solid var(--border-strong);
-        }
-        .modal-title {
-            font-size: 16px;
-            font-weight: 700;
-            color: var(--text-primary);
-        }
-        .modal-actions {
-            display: flex;
-            gap: 8px;
-        }
-        .btn-modal-close {
-            background: var(--accent-navy);
-            color: #ffffff;
-            border: 1px solid var(--accent-navy);
-            padding: 5px 12px;
-            border-radius: var(--radius-sm);
-            font-size: 12px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-        .btn-modal-close:hover {
-            background: var(--accent-bronze);
-            border-color: var(--accent-bronze);
-        }
-        .btn-modal-back {
-            background: var(--bg-subtle, #f5f4ef);
-            color: var(--text-primary);
-            border: 1px solid var(--border-hairline, #e2dfd5);
-            padding: 5px 12px;
-            border-radius: var(--radius-sm);
-            font-size: 12px;
-            font-weight: 600;
-            cursor: pointer;
-            display: none;
-            align-items: center;
-            gap: 6px;
-            transition: all 0.2s ease;
-            white-space: nowrap;
-        }
-        .btn-modal-back:hover {
-            background: #eae7dd;
-            border-color: var(--accent-bronze);
-            color: var(--accent-bronze);
-        }
-        .modal-body {
-            flex: 1;
-            overflow: hidden;
-            position: relative;
-        }
-        #modal-iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            display: block;
-            background: #fbfbfa;
-        }
 
         @media (max-width: 900px) {
             .cases-grid { grid-template-columns: 1fr; }
@@ -737,7 +638,7 @@
                 <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--accent-bronze); margin: 8px 0 10px 0; line-height: 1.5; background: #ffffff; padding: 4px 8px; border-radius: 2px; border: 1px dashed rgba(138, 104, 57, 0.35);">
                     3,000万超募创办 · 45人编制 · 730条制度总纲 · 10年零仲裁
                 </div>
-                <button class="btn-view-detail" style="margin-top:auto; padding-top:10px; align-self:flex-start;" onclick="openMonograph('monograph-cloud')" aria-label="查看企业创办与制度治理专案">查看专案 →</button>
+                <button class="btn-view-detail" style="margin-top:auto; padding-top:10px; align-self:flex-start;" onclick="window.location.href='项目专案/深圳市广田云软装科技全生命周期商业操盘与供应链大盘商业研报.html'" aria-label="查看企业创办与制度治理专案">查看专案 →</button>
             </div>
             <div class="hero-pillar-card">
                 <div class="pillar-eyebrow">
@@ -749,7 +650,7 @@
                 <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--accent-bronze); margin: 8px 0 10px 0; line-height: 1.5; background: #ffffff; padding: 4px 8px; border-radius: 2px; border: 1px dashed rgba(138, 104, 57, 0.35);">
                     135份盖章合同 · 6.83亿大盘 · 遵义等破亿地标 · 30%~35%毛利锁定
                 </div>
-                <button class="btn-view-detail" style="margin-top:auto; padding-top:10px; align-self:flex-start;" onclick="openMonograph('monograph-zy')" aria-label="查看重大工程大盘与商务博弈专案">查看专案 →</button>
+                <button class="btn-view-detail" style="margin-top:auto; padding-top:10px; align-self:flex-start;" onclick="window.location.href='项目专案/遵义大酒店五星级软装工程全周期商业操盘研报.html'" aria-label="查看重大工程大盘与商务博弈专案">查看专案 →</button>
             </div>
             <div class="hero-pillar-card">
                 <div class="pillar-eyebrow">
@@ -761,7 +662,7 @@
                 <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--accent-bronze); margin: 8px 0 10px 0; line-height: 1.5; background: #ffffff; padding: 4px 8px; border-radius: 2px; border: 1px dashed rgba(138, 104, 57, 0.35);">
                     8大自研系统 · 2,804万行代码 · DuckDB列式中枢 · Agent状态机
                 </div>
-                <button class="btn-view-detail" style="margin-top:auto; padding-top:10px; align-self:flex-start;" onclick="openMonograph('monograph-ai')" aria-label="查看业务分析与AI全栈研发专案">查看专案 →</button>
+                <button class="btn-view-detail" style="margin-top:auto; padding-top:10px; align-self:flex-start;" onclick="window.location.href='项目专案/AI全栈工程与VibeCoding敏捷研发商业研报.html'" aria-label="查看业务分析与AI全栈研发专案">查看专案 →</button>
             </div>
             <div class="hero-pillar-card">
                 <div class="pillar-eyebrow">
@@ -773,7 +674,7 @@
                 <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--accent-bronze); margin: 8px 0 10px 0; line-height: 1.5; background: #ffffff; padding: 4px 8px; border-radius: 2px; border: 1px dashed rgba(138, 104, 57, 0.35);">
                     985理学学士 · 160+必修学分 · 24门数理骨干 · LBM介观流体模拟
                 </div>
-                <button class="btn-view-detail" style="margin-top:auto; padding-top:10px; align-self:flex-start;" onclick="openMonograph('monograph-hust')" aria-label="查看统计学与科学计算思维专案">查看专案 →</button>
+                <button class="btn-view-detail" style="margin-top:auto; padding-top:10px; align-self:flex-start;" onclick="window.location.href='项目专案/华中科技大学统计学学术奠基与数理底座商业研报.html'" aria-label="查看统计学与科学计算思维专案">查看专案 →</button>
             </div>
         </div>
     </header>
@@ -972,7 +873,7 @@
                 </div>
                 <div class="case-footer">
                     <span style="font-size:12px; color:var(--text-tertiary);">独立专案档案</span>
-                    <button class="btn-view-detail" onclick="openMonograph('monograph-hust')">
+                    <button class="btn-view-detail" onclick="window.location.href='项目专案/华中科技大学统计学学术奠基与数理底座商业研报.html'">
                         <span>查看专案详情</span>
                         <span>➔</span>
                     </button>
@@ -990,7 +891,7 @@
                 </div>
                 <div class="case-footer">
                     <span style="font-size:12px; color:var(--text-tertiary);">独立专案档案</span>
-                    <button class="btn-view-detail" onclick="openMonograph('monograph-gov')">
+                    <button class="btn-view-detail" onclick="window.location.href='项目专案/上市公司董办合规资本运作与总经办企业运营商业研报.html'">
                         <span>查看合规专案</span>
                         <span>➔</span>
                     </button>
@@ -1008,7 +909,7 @@
                 </div>
                 <div class="case-footer">
                     <span style="font-size:12px; color:var(--text-tertiary);">独立专案档案</span>
-                    <button class="btn-view-detail" onclick="openMonograph('monograph-cloud')">
+                    <button class="btn-view-detail" onclick="window.location.href='项目专案/深圳市广田云软装科技全生命周期商业操盘与供应链大盘商业研报.html'">
                         <span>查看大盘全景</span>
                         <span>➔</span>
                     </button>
@@ -1026,7 +927,7 @@
                 </div>
                 <div class="case-footer">
                     <span style="font-size:12px; color:var(--text-tertiary);">独立专案档案</span>
-                    <button class="btn-view-detail" onclick="openMonograph('monograph-ai')">
+                    <button class="btn-view-detail" onclick="window.location.href='项目专案/AI全栈工程与VibeCoding敏捷研发商业研报.html'">
                         <span>查看技术架构</span>
                         <span>➔</span>
                     </button>
@@ -1144,174 +1045,6 @@
     </footer>
 
 </div>
-
-<!-- 模态弹窗 (用于无缝浏览各专案画卷) -->
-<div id="monograph-modal" class="modal-overlay" onclick="closeModalOnOverlay(event)">
-    <div class="modal-window" onclick="event.stopPropagation()">
-        <div class="modal-header">
-            <div style="display:flex; align-items:center; gap:12px; min-width:0;">
-                <button id="modal-back-btn" class="btn-modal-back" onclick="navigateBackOrClose()">‹ 返回</button>
-                <span style="font-family:'JetBrains Mono'; font-size:11px; background:var(--accent-navy); color:#fff; padding:3px 7px; border-radius:2px; flex-shrink:0;">DOSSIER</span>
-                <span id="modal-title" class="modal-title" style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">专案详情</span>
-            </div>
-            <div class="modal-actions" style="display:flex; align-items:center; gap:8px; flex-shrink:0;">
-                <button id="modal-close-btn" class="btn-modal-close" onclick="closeAllModals()" title="关闭专案窗口，返回履历总舱">关闭 ✕</button>
-            </div>
-        </div>
-        <div class="modal-body">
-            <iframe id="modal-iframe" src="about:blank"></iframe>
-        </div>
-    </div>
-</div>
-
-<script>
-    // 8 个专案内嵌 Base64 字典（由 build_profile.py 自动注入编译）
-
-    const MONOGRAPH_TITLES = {
-        'monograph-hust': '华中科技大学统计学专业 · 本科数理培养与思维底座',
-        'monograph-gov': '上市公司合规治理、重大发债尽调与总经办运营',
-        'monograph-cloud': '广田全资子公司从0到1创办与十年商业大盘总操盘',
-        'monograph-zy': '遵义大酒店五星级软装工程全周期商业操盘',
-        'monograph-hhg': '红花岗南部城市综合体软装工程',
-        'monograph-ht': '上海华泰中心售楼处高奢软装工程',
-        'monograph-mt': '湄江温泉大酒店软装工程全周期操盘',
-        'monograph-ai': '数字化解决方案与全栈技术原型研发'
-    };
-
-    // 超链接模式：key -> 项目专案/研报文件名 (替代原 base64 内嵌)
-    const MONOGRAPH_FILES = {
-        'monograph-hust': '华中科技大学统计学学术奠基与数理底座商业研报.html',
-        'monograph-gov': '上市公司董办合规资本运作与总经办企业运营商业研报.html',
-        'monograph-cloud': '深圳市广田云软装科技全生命周期商业操盘与供应链大盘商业研报.html',
-        'monograph-zy': '遵义大酒店五星级软装工程全周期商业操盘研报.html',
-        'monograph-hhg': '红花岗项目全生命周期深度商业研报.html',
-        'monograph-ht': '上海华泰中心售楼处全生命周期商业操盘研报.html',
-        'monograph-mt': '湄潭项目全生命周期数据洞察研报.html',
-        'monograph-ai': 'AI全栈工程与VibeCoding敏捷研发商业研报.html'
-    };
-
-    const MONOGRAPH_SHORT_NAMES = {
-        'monograph-hust': '华科统计学术奠基',
-        'monograph-gov': '董办与总经办专案',
-        'monograph-cloud': '广田云软装大盘',
-        'monograph-zy': '遵义大酒店',
-        'monograph-hhg': '红花岗综合体',
-        'monograph-ht': '上海华泰中心',
-        'monograph-mt': '湄江温泉大酒店',
-        'monograph-ai': 'AI全栈工程'
-    };
-
-    let currentMonographKey = null;
-    let modalNavigationStack = []; // [{ key: string, title: string, scrollY: number }]
-
-    function loadMonographIntoIframe(key, onReady) {
-        const iframe = document.getElementById('modal-iframe');
-        if (MONOGRAPHS_B64 && MONOGRAPHS_B64[key]) {
-            try {
-                const b64 = MONOGRAPHS_B64[key];
-                const binaryStr = atob(b64);
-                const bytes = new Uint8Array(binaryStr.length);
-                for (let i = 0; i < binaryStr.length; i++) {
-                    bytes[i] = binaryStr.charCodeAt(i);
-                }
-                const decodedHtml = new TextDecoder('utf-8').decode(bytes);
-                const blob = new Blob([decodedHtml], { type: 'text/html;charset=utf-8' });
-                iframe.onload = function() {
-                    if (onReady) onReady();
-                    iframe.onload = null;
-                };
-                iframe.src = URL.createObjectURL(blob);
-            } catch (err) {
-                console.error("Failed to decode monograph b64:", err);
-            }
-        }
-    }
-
-    function updateModalHeaderUI() {
-        const titleEl = document.getElementById('modal-title');
-        const backBtn = document.getElementById('modal-back-btn');
-        const closeBtn = document.getElementById('modal-close-btn');
-
-        if (MONOGRAPH_TITLES[currentMonographKey]) {
-            titleEl.textContent = MONOGRAPH_TITLES[currentMonographKey];
-        }
-
-        if (modalNavigationStack.length > 0) {
-            const prev = modalNavigationStack[modalNavigationStack.length - 1];
-            const prevShort = MONOGRAPH_SHORT_NAMES[prev.key] || '上一专案';
-            backBtn.style.display = 'inline-flex';
-            backBtn.innerHTML = `‹ 返回 ${prevShort}`;
-            backBtn.title = `返回上一级专案：${prev.title || prevShort}`;
-        } else {
-            backBtn.style.display = 'none';
-        }
-
-        closeBtn.textContent = '关闭 ✕';
-        closeBtn.title = '关闭专案窗口，返回履历总舱';
-    }
-
-    function openMonograph(key, options) {
-        // 超链接模式：直接跳转到项目专案研报，不再嵌套 iframe
-        const file = MONOGRAPH_FILES[key];
-        if (file) {
-            window.location.href = '项目专案/' + file;
-        }
-    }
-
-    // 关键闭环：“从哪里打开的，关闭专案时就回到哪里”
-    function navigateBackOrClose() {
-        if (modalNavigationStack.length > 0) {
-            const target = modalNavigationStack.pop();
-            currentMonographKey = target.key;
-            updateModalHeaderUI();
-            loadMonographIntoIframe(target.key, function() {
-                const iframe = document.getElementById('modal-iframe');
-                if (iframe && iframe.contentWindow && target.scrollY) {
-                    iframe.contentWindow.postMessage({
-                        type: 'RESTORE_SCROLL',
-                        scrollY: target.scrollY
-                    }, '*');
-                }
-            });
-        } else {
-            closeAllModals();
-        }
-    }
-
-    // 彻底退出模态窗，返回履历总舱
-    function closeAllModals() {
-        const modal = document.getElementById('monograph-modal');
-        const iframe = document.getElementById('modal-iframe');
-        modal.classList.remove('active');
-        document.body.style.overflow = '';
-        currentMonographKey = null;
-        modalNavigationStack = [];
-        setTimeout(() => { iframe.src = 'about:blank'; }, 200);
-    }
-
-    function closeModalOnOverlay(e) {
-        if (e.target.id === 'monograph-modal') {
-            navigateBackOrClose();
-        }
-    }
-
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') navigateBackOrClose();
-    });
-
-    // 监听内嵌 iframe 发送的专案消息 (跨域安全通信)
-    window.addEventListener('message', function(event) {
-        if (!event.data) return;
-        if (event.data.type === 'OPEN_MONOGRAPH' && event.data.key) {
-            openMonograph(event.data.key, {
-                scrollY: event.data.scrollY,
-                fromKey: event.data.fromKey
-            });
-        } else if (event.data.type === 'NAVIGATE_BACK') {
-            navigateBackOrClose();
-        }
-    });
-</script>
 
 </body>
 </html>
