@@ -862,20 +862,20 @@
     <!-- 统一底层单一真实源数据依据 -->
     <section id="sec-provenance" class="card" style="margin-top: 36px;">
         <div class="card-caption-bar">
-            <h2 class="card-heading">公司治理与公开信披核实依据</h2>
-            <span class="card-tag">DATA PROVENANCE ｜ PRJ-CORP-GOV-2014</span>
+            <h2 class="card-heading">数据依据与来源说明</h2>
+            <span class="card-tag">SOURCES ｜ PRJ-CORP-GOV-2014</span>
         </div>
         <p style="font-size:14px; color:var(--text-secondary); line-height:1.75; margin-bottom:14px;">
-            本专案所引用的 206 篇法定公告、深交所零监管函件（最高 A 级信披评级）、12 亿元公司债核准发行、股票期权行权及 19 期经营决策例会督办台账（97.9% 销号率），均源自巨潮资讯网深交所公开披露法定文件（证券代码：002482）及上市公司总经理办公会议决议原档，具备公开市场可查验与法定审计效力。
+            本专案所述 206 篇法定公告、深交所零监管函件（最高 A 级信披评级）、12 亿元公司债核准发行、股票期权行权及 19 期经营决策例会记录（97.9% 销号率），均以巨潮资讯网深交所公开披露文件（证券代码：002482）及上市公司总经理办公会议决议原档为据，可供公开查验。
         </p>
 
         <div style="font-size:13px; color:var(--text-tertiary); line-height:1.6; margin-bottom:16px;">
-            <strong>商业与合规标准</strong>：中华人民共和国证券法 / 中华人民共和国公司法 / 深交所股票上市规则 / 上市公司信息披露管理办法 ｜ <strong>档案归档状态</strong>：商业专案库正式确认版 (PRJ-CORP-GOV-2014)
+            <strong>参考标准</strong>：中华人民共和国证券法 / 中华人民共和国公司法 / 深交所股票上市规则 / 上市公司信息披露管理办法 ｜ <strong>归档状态</strong>：商业专案库确认版 (PRJ-CORP-GOV-2014)
         </div>
 
         <div style="background:#f7f6f2; border:1px solid rgba(18,19,22,0.1); border-radius:4px; padding:14px 18px; font-family:var(--font-mono); font-size:11.5px; color:#2c3238; line-height:1.7;">
             <div style="font-weight:700; color:var(--accent-bronze); margin-bottom:6px; display:flex; align-items:center; gap:6px;">
-                <span>🏛️</span><span>DuckDB 湖仓单一真实源视图直接核验命令 (Direct Lake Audit Verification)</span>
+                <span>📊</span><span>数据查询参考</span>
             </div>
             <code style="color:#162a45;">
                 ATTACH 'data/career_analytics_lake.duckdb' AS lake (READ_ONLY);

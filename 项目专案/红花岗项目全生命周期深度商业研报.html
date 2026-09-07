@@ -1250,20 +1250,20 @@
     <!-- 统一底层单一真实源数据依据 -->
     <section id="sec-provenance" class="card" style="margin-top: 36px;">
         <div class="card-caption-bar">
-            <h2 class="card-heading">合同台账与商业数据核实依据</h2>
-            <span class="card-tag">DATA PROVENANCE ｜ PRJ-HHG-2016</span>
+            <h2 class="card-heading">数据依据与来源说明</h2>
+            <span class="card-tag">SOURCES ｜ PRJ-HHG-2016</span>
         </div>
         <p style="font-size:14px; color:var(--text-secondary); line-height:1.75; margin-bottom:14px;">
-            本研报所列遵义红花岗南部城市综合体（签约合同 3,112.5 万元、最终审定金额 2,200.00 万元），数据严格穿透原始分包经济合同文本、年前借款协议、过程配合费台账与 390 行原子级报审计清单原件，具备全景财务凭证与造价核实依据。
+            本研报所述红花岗南部城市综合体（签约合同 3,112.5 万元、最终审定金额 2,200.00 万元），均按原始分包经济合同文本、年前借款协议、过程配合费记录与 390 行报审计清单原件整理，可用财务凭证与造价往来相互印证。
         </p>
 
         <div style="font-size:13px; color:var(--text-tertiary); line-height:1.6; margin-bottom:16px;">
-            <strong>商业与合规标准</strong>：施工总承包专业分包合同 / 年前专款借款协议 / 报审计清单第一册原件 / 贵州省建筑装饰工程计价定额 ｜ <strong>档案归档状态</strong>：商业专案库正式确认版 (PRJ-HHG-2016)
+            <strong>参考标准</strong>：施工总承包专业分包合同 / 年前专款借款协议 / 报审计清单第一册原件 / 贵州省建筑装饰工程计价定额 ｜ <strong>归档状态</strong>：商业专案库确认版 (PRJ-HHG-2016)
         </div>
 
         <div style="background:#f7f6f2; border:1px solid rgba(18,19,22,0.1); border-radius:4px; padding:14px 18px; font-family:var(--font-mono); font-size:11.5px; color:#2c3238; line-height:1.7;">
             <div style="font-weight:700; color:var(--accent-bronze); margin-bottom:6px; display:flex; align-items:center; gap:6px;">
-                <span>🏛️</span><span>DuckDB 湖仓单一真实源视图直接核验命令 (Direct Lake Audit Verification)</span>
+                <span>📊</span><span>数据查询参考</span>
             </div>
             <code style="color:#162a45;">
                 ATTACH 'data/career_analytics_lake.duckdb' AS lake (READ_ONLY);
