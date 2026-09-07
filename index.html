@@ -1204,28 +1204,7 @@
     let currentMonographKey = null;
     let modalNavigationStack = []; // [{ key: string, title: string, scrollY: number }]
 
-    function loadMonographIntoIframe(key, onReady) {
-        const iframe = document.getElementById('modal-iframe');
-        if (MONOGRAPHS_B64 && MONOGRAPHS_B64[key]) {
-            try {
-                const b64 = MONOGRAPHS_B64[key];
-                const binaryStr = atob(b64);
-                const bytes = new Uint8Array(binaryStr.length);
-                for (let i = 0; i < binaryStr.length; i++) {
-                    bytes[i] = binaryStr.charCodeAt(i);
-                }
-                const decodedHtml = new TextDecoder('utf-8').decode(bytes);
-                const blob = new Blob([decodedHtml], { type: 'text/html;charset=utf-8' });
-                iframe.onload = function() {
-                    if (onReady) onReady();
-                    iframe.onload = null;
-                };
-                iframe.src = URL.createObjectURL(blob);
-            } catch (err) {
-                console.error("Failed to decode monograph b64:", err);
-            }
-        }
-    }
+    // 超链接模式：已移除原 loadMonographIntoIframe (base64 内嵌)，改为直连项目专案 html
 
     function updateModalHeaderUI() {
         const titleEl = document.getElementById('modal-title');
