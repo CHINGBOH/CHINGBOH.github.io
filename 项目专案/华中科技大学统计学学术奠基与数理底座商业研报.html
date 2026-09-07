@@ -810,7 +810,11 @@
             .algo-steps { grid-template-columns: 1fr; }
             body { padding: 20px 14px; }
         }
-    </style>
+    /* 返回总舱按钮 */
+        .nav-back-btn { background: rgba(138, 104, 57, 0.08); border: 1px solid rgba(138, 104, 57, 0.28); color: var(--accent-bronze); font-family: "JetBrains Mono", monospace; font-size: 11.5px; font-weight: 600; letter-spacing: 0.04em; padding: 6px 14px; border-radius: var(--radius-sm); cursor: pointer; transition: all 0.2s ease; white-space: nowrap; }
+        .nav-back-btn:hover { background: rgba(138, 104, 57, 0.16); text-decoration: underline; }
+
+        </style>
 </head>
 <body>
 
@@ -829,6 +833,9 @@
             <li><a href="#bridge">二十年映射</a></li>
             <li><a href="#provenance">真实源存证</a></li>
         </ul>
+        <button class="nav-back-btn" onclick="handleBackToParent()" title="返回总舱">
+            <span>‹ 返回总舱</span>
+        </button>
     </div>
 
     <!-- 头部 Hero 区域 -->
@@ -1785,6 +1792,11 @@ document.addEventListener('DOMContentLoaded', function() {
         chartBridge.resize();
     });
 });
+
+    // 返回总舱：无条件直跳
+    window.handleBackToParent = function() {
+        window.location.href = '../梁清波_全景商业专案与交互式履历总舱.html';
+    };
 </script>
 
 </body>
