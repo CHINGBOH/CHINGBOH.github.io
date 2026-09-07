@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上市公司董办合规资本运作与总经办企业运营商业研报 ｜ 梁清波 商业专案库</title>
+    <!-- Google Fonts 典藏学术与静奢排版字体族 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=JetBrains+Mono:ital,wght@0,400..700;1,400..700&family=Noto+Serif+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <!-- ECharts 5 现代交互图表库 -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <style>
+        :root {
+            /* 静奢典藏自然羊皮纸调色盘 (Quiet Luxury & Archival Paper) */
+            --bg-page: #fbfbfa;           /* 典藏羊皮纸本白底色 */
+            --bg-card: #ffffff;           /* 纯净研报卡片白 */
+            --bg-subtle: #f5f4ef;         /* 雅致羊皮纸浅底 */
+            --bg-table-head: #f5f4ef;     /* 雅致古籍米灰 */
+            --border-hairline: rgba(18, 19, 22, 0.08); /* 0.5px 极细发丝分割线 */
+            --border-strong: rgba(18, 19, 22, 0.22);   /* 书籍装订骨架线 */
+            --border-accent: #8a6839;     /* 沉香古铜金装饰线 */
+            
+            --text-primary: #121316;      /* 碳素墨黑，沉稳高对比度 */
+            --text-secondary: #383b42;    /* 铅印中灰，用于正文叙述 */
+            --text-tertiary: #6e727d;     /* 浅注银灰，用于旁注与规格参数 */
+            --text-bronze: #8a6839;       /* 沉香古铜金文字 */
+            
+            --accent-navy: #162a45;       /* 萨维尔街牛津深海蓝，严正权威 */
+            --accent-bronze: #8a6839;     /* 沉香古铜金，低奢灵魂标色 */
+            --accent-gold: #c5a059;       /* 典雅明金 */
+            --accent-sage: #2a4c38;       /* 英国皇家墨玉绿 */
+            --accent-forest: #3a6351;     /* 森林墨绿 */
+            --accent-slate: #475569;      /* 冷板岩深灰 */
+            --accent-crimson: #8b263e;    /* 典雅绯红 */
+            
+            --font-serif: "Noto Serif SC", "EB Garamond", "Songti SC", STSong, "Times New Roman", SimSun, serif;
+            --font-mono: "JetBrains Mono", Consolas, "Courier New", monospace;
+            
+            --card-shadow: 0 1px 3px rgba(18, 19, 22, 0.04), 0 8px 24px -6px rgba(18, 19, 22, 0.03);
+            --card-hover-shadow: 0 4px 12px -2px rgba(18, 19, 22, 0.06), 0 16px 36px -8px rgba(18, 19, 22, 0.06);
+            --radius-lg: 8px;
+            --radius-md: 4px;
+            --radius-sm: 2px;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        
+        body {
+            background-color: var(--bg-page);
+            color: var(--text-primary);
+            font-family: var(--font-serif);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+            font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+            font-kerning: normal;
+            line-height: 1.76;
+            padding: 40px 24px 80px 24px;
+        }
+
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+        }
+
+        /* 顶部导航与锚点 (专案典藏录 Registry) */
+        .nav-dock {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(251, 251, 250, 0.94);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-md);
+            padding: 12px 28px;
+            margin-bottom: 48px;
+            position: sticky;
+            top: 20px;
+            z-index: 100;
+            box-shadow: 0 2px 12px rgba(18, 19, 22, 0.03);
+        }
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            white-space: nowrap;
+        }
+        .nav-brand-code {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            color: #ffffff;
+            background: var(--accent-navy);
+            padding: 2px 7px;
+            border-radius: 2px;
+            white-space: nowrap;
+        }
+        .nav-brand-title {
+            font-family: var(--font-serif);
+            font-size: 13.5px;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: 0.02em;
+            white-space: nowrap;
+        }
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+            align-items: center;
+        }
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            transition: color 0.2s ease;
+            white-space: nowrap;
+        }
+        .nav-links a:hover {
+            color: var(--accent-bronze);
+            text-decoration: underline;
+        }
+
+        .nav-back-btn {
+            background: rgba(138, 104, 57, 0.08);
+            border: 1px solid rgba(138, 104, 57, 0.28);
+            color: var(--accent-bronze);
+            font-family: var(--font-serif);
+            font-size: 12px;
+            font-weight: 700;
+            padding: 5px 14px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            white-space: nowrap;
+            text-decoration: none;
+        }
+        .nav-back-btn:hover {
+            background: var(--accent-bronze);
+            color: #ffffff;
+            border-color: var(--accent-bronze);
+        }
+
+        /* 头部 Hero 区域 */
+        .hero {
+            padding: 24px 0 52px 0;
+            border-bottom: 2px solid var(--border-strong);
+            margin-bottom: 52px;
+        }
+        .archival-eyebrow {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--accent-bronze);
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .eyebrow-sep {
+            color: var(--border-hairline);
+        }
+        .hero-title {
+            font-size: 36px;
+            font-weight: 900;
+            letter-spacing: -0.01em;
+            line-height: 1.28;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+        .hero-subhead {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--accent-navy);
+            display: inline-block;
+            margin-bottom: 16px;
+        }
+        .hero-subtitle {
+            font-size: 14.5px;
+            line-height: 1.85;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+            text-align: justify;
+        }
+        .hero-subtitle strong {
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+
+        /* 规格矩阵台 / KPI 卡片群 */
+        .spec-matrix, .kpi-deck {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 1px;
+            background: var(--border-hairline);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+        }
+        .spec-cell, .kpi-card {
+            background: var(--bg-card);
+            padding: 20px 22px;
+            transition: background-color 0.2s ease;
+        }
+        .spec-cell:hover, .kpi-card:hover {
+            background-color: #faf9f6;
+        }
+        .spec-label, .kpi-label {
+            font-family: var(--font-mono);
+            font-size: 10.5px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--text-tertiary);
+            margin-bottom: 8px;
+        }
+        .spec-value, .kpi-value {
+            font-size: 21px;
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1.25;
+            margin-bottom: 6px;
+        }
+        .spec-value small, .kpi-value small {
+            font-size: 12px;
+            font-weight: 400;
+            color: var(--text-tertiary);
+            margin-left: 4px;
+        }
+        .spec-desc, .kpi-desc {
+            font-size: 11.5px;
+            color: var(--text-tertiary);
+            line-height: 1.5;
+        }
+
+        /* 卡片容器与三线表 */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-md);
+            padding: 32px 36px;
+            margin-bottom: 36px;
+            box-shadow: var(--card-shadow);
+        }
+        .card-caption-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-hairline);
+            padding-bottom: 14px;
+            margin-bottom: 22px;
+        }
+        .card-heading {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: -0.01em;
+        }
+        .card-tag {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            color: var(--accent-bronze);
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13.5px;
+            line-height: 1.6;
+            margin-top: 14px;
+        }
+        .data-table th, .data-table td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-hairline);
+        }
+        .data-table th {
+            background-color: var(--bg-table-head);
+            font-weight: 700;
+            color: var(--text-primary);
+            border-top: 1.5px solid var(--border-strong);
+            border-bottom: 1.5px solid var(--border-strong);
+            font-size: 13px;
+            letter-spacing: 0.04em;
+        }
+        .data-table tr:last-child td {
+            border-bottom: 1.5px solid var(--border-strong);
+        }
+
+        /* 徽章与药丸标签 */
+        .code-pill {
+            display: inline-block;
+            font-family: var(--font-mono);
+            font-size: 11px;
+            padding: 2px 7px;
+            background: var(--bg-subtle);
+            border: 1px solid var(--border-hairline);
+            border-radius: 2px;
+            color: var(--text-secondary);
+        }
+        .pill-badge {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 2px;
+            background: rgba(138, 104, 57, 0.1);
+            color: var(--accent-bronze);
+        }
+
+        /* 页脚 */
+        .archival-footer, .footer {
+            margin-top: 60px;
+            padding-top: 24px;
+            border-top: 1.5px solid var(--border-hairline);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            color: var(--text-tertiary);
+        }
+
+        /* 媒体查询响应式支持 */
+        @media (max-width: 1150px) {
+            .nav-brand-title { display: none; }
+        }
+        @media (max-width: 1024px) {
+            .spec-matrix, .kpi-deck { grid-template-columns: repeat(2, 1fr); }
+            .card { padding: 24px 20px; }
+        }
+        @media (max-width: 640px) {
+            .spec-matrix, .kpi-deck { grid-template-columns: 1fr; }
+            .nav-dock { flex-direction: column; gap: 12px; }
+            .nav-links { flex-wrap: wrap; justify-content: center; gap: 12px; }
+            .hero-title { font-size: 26px; }
+            .hero-subhead { font-size: 18px; }
+        }
+
+            /* 图表容器与标题 —— 修复模板渲染时图表样式段丢失导致的图表不可见 */
+        .chart-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+        .chart-header { margin-bottom: 14px; }
+        .chart-fig-num { font-family: "JetBrains Mono", monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; color: var(--accent-bronze); }
+        .chart-title { font-size: 14px; font-weight: 700; color: var(--text-primary); margin-top: 4px; }
+        .chart-title-wrap { display: flex; align-items: center; gap: 8px; min-width: 0; }
+        .chart-container { width: 100%; height: 380px; }
+        #chart-sankey { height: 440px; }
+        @media (max-width: 760px) { .chart-grid { grid-template-columns: 1fr; } }
+
+    
+        /* 三线表 (LaTeX booktabs) —— 修复表格线条缺失 */
+        .booktabs-table { width: 100%; border-collapse: collapse; font-size: 13px; border-top: 2.2px solid var(--border-strong); border-bottom: 2.2px solid var(--border-strong); }
+        .booktabs-table th { text-align: left; font-size: 12px; font-weight: 700; letter-spacing: 0.05em; color: var(--text-primary); padding: 12px 14px; border-bottom: 1.2px solid var(--border-strong); background-color: var(--bg-table-head); white-space: nowrap; }
+        .booktabs-table td { padding: 12px 14px; border-bottom: 1px solid var(--border-hairline); color: var(--text-secondary); line-height: 1.6; }
+        .booktabs-table tr:last-child td { border-bottom: none; }
+        .booktabs-table tr:hover td { background-color: #f7f6f1; }
+
+        /* archival-table 归档表格 */
+        .archival-table { width: 100%; border-collapse: collapse; font-size: 13px; border-top: 2.2px solid var(--border-strong); border-bottom: 2.2px solid var(--border-strong); }
+        .archival-table th { text-align: left; font-size: 12px; font-weight: 700; padding: 12px 14px; border-bottom: 1.2px solid var(--border-strong); background-color: var(--bg-table-head); color: var(--text-primary); white-space: nowrap; }
+        .archival-table td { padding: 12px 14px; border-bottom: 1px solid var(--border-hairline); color: var(--text-secondary); line-height: 1.6; }
+
+        /* dossier 2×2 对称排版 */
+        .dossier-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-bottom: 36px; }
+        .dossier-item { background: #ffffff; border: 1px solid var(--border-hairline); border-left: 3.5px solid var(--accent-bronze); border-radius: var(--radius-md); padding: 24px 26px; box-shadow: var(--card-shadow); display: flex; flex-direction: column; justify-content: flex-start; }
+        .dossier-item h3 { font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+        .dossier-item h3 span { font-family: "JetBrains Mono", monospace; font-size: 12px; font-weight: 600; color: var(--text-tertiary); }
+        .dossier-item ul { list-style: none; font-size: 13.5px; color: var(--text-secondary); line-height: 1.78; }
+        .dossier-item li { position: relative; padding-left: 18px; margin-bottom: 10px; text-align: justify; }
+        .dossier-item li::before { content: "◆"; position: absolute; left: 4px; top: 6px; color: var(--accent-bronze); font-size: 7px; }
+        .dossier-item strong { color: var(--text-primary); font-weight: 700; }
+        @media (max-width: 760px) { .dossier-grid { grid-template-columns: 1fr; } }
+
+        /* KPI 顶栏瓷砖 */
+        .kpi-tile { background: var(--bg-card); border: 1px solid var(--border-hairline); border-top: 3px solid var(--accent-bronze); border-radius: var(--radius-md); padding: 20px 16px; box-shadow: var(--card-shadow); }
+        .kpi-eyebrow { font-family: "JetBrains Mono", monospace; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-bronze); margin-bottom: 4px; }
+        .kpi-figure { font-size: 26px; font-weight: 700; letter-spacing: -0.02em; color: var(--text-primary); margin: 6px 0 2px 0; font-variant-numeric: tabular-nums lining-nums; white-space: nowrap; }
+        .kpi-figure span { font-size: 13px; font-weight: 600; color: var(--accent-bronze); }
+        .kpi-subtext { font-size: 11px; color: var(--text-tertiary); margin-top: 4px; line-height: 1.4; }
+        .kpi-title-zh { font-size: 13px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px; }
+
+        /* 图注说明 */
+        .chart-desc { font-size: 12.5px; color: var(--text-secondary); margin-bottom: 16px; line-height: 1.55; }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- 顶部导航 Dock -->
+    <nav class="nav-dock">
+        <div class="nav-brand">
+            <span class="nav-brand-code">PRJ-CORP-GOV-2014</span>
+            <span class="eyebrow-sep" style="color:var(--border-strong);margin:0 4px;">/</span>
+            <span class="nav-brand-title">上市公司董办合规资本运作与总经办企业运营商业研报</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#sec-overview">§ 1 项目基本盘</a></li>
+            <li><a href="#sec-methodology">§ 2 核心方法论</a></li>
+            <li><a href="#sec-dashboard">§ 3 经营与资本图表</a></li>
+            <li><a href="#sec-dossiers">§ 4 履职底账台账</a></li>
+            <li><a href="#sec-provenance">§ 5 数据核实依据</a></li>
+        </ul>
+        <button class="nav-back-btn" onclick="handleBackToParent()" title="返回总舱">
+            <span>‹ 返回总舱</span>
+        </button>
+    </nav>
+
+    <!-- 头部扉页 Hero -->
+    <header class="hero">
+        <div class="archival-eyebrow">
+            <span>ARCHIVAL MONOGRAPH</span>
+            <span class="eyebrow-sep">/</span>
+            <span>PRJ-CORP-GOV-2014</span>
+            <span class="eyebrow-sep">/</span>
+            <span>LISTED BOARD & GM OFFICE GOVERNANCE</span>
+        </div>
+        <h1 class="hero-title">上市公司董办合规资本运作与总经办企业运营商业研报</h1>
+        <div class="hero-subhead">——从总部经营督办、同业深度对标到三会治理与资本运作全景闭环</div>
+        <p class="hero-subtitle">
+            系统阐述在深圳广田集团股份有限公司（A股主板建筑装饰龙头，SZ.002482）总部的全职管理实践。前期作为<strong>总经理办公室数统专员与运营参谋</strong>（2011.03-2012.02），负责总裁日常经营执行中枢，抓经营管理例会决策、决议动态督办台账（销号率 97.9%）、全司运营信息数据库与年度目标责任书分解，并主笔《建筑装饰行业分析报告》与《同行业上市公司间比较分析》，深度对标金螳螂、亚厦、洪涛等头部竞品；后期晋升并转任<strong>董事会办公室 / 证券事务部核心执行操盘</strong>（2012.03-2014.02，整24个月），直接向分管高管兼董秘（王宏坤，主管全局）与证代（郭文宁）对接汇报，具体承办 12 亿元公司债 55 大类专业尽调底稿封包、首期股票期权 1,113.6 万股行权（2.28 亿自筹资金落地）与二期自主行权推进、超募资金 1.32 亿元产业并购（方特 51% + 成都华南 60%）与新华丰生态并购、牵头承办设立软装子公司（2013.11 董事会审议设立 ➔ 2014.01 完成工商登记，为 2014.02 正式奔赴全资子公司广田云软装担任筹办核心奠定法定基础）、接待华夏/广发/大成/景顺长城等 50+ 场顶级公私募机构现场调研，并在第二届董事会历次三会中落实 10 步刚性合规闭环；在职全周期信披公告 345 篇（证券部专职期 206 篇），深交所信息披露评级持续保持最高 A 级（0 监管问询、0 处罚）。
+        </p>
+
+        <div class="spec-matrix">
+            <div class="spec-cell">
+                <div class="spec-label">专案定位</div>
+                <div class="spec-value">上市公司双核中枢</div>
+                <div class="spec-desc">日常经营执行权 vs 法定法人治理权</div>
+            </div>
+            <div class="spec-cell">
+                <div class="spec-label">操盘角色</div>
+                <div class="spec-value">总经办 ➔ 证券助理</div>
+                <div class="spec-desc">总经办运营参谋 ➔ 董办核心执行操盘</div>
+            </div>
+            <div class="spec-cell">
+                <div class="spec-label">履职历时</div>
+                <div class="spec-value">整 3 年 <small>(36个月)</small></div>
+                <div class="spec-desc">2011.03 至 2014.02 全职在职 ➔ 调任云软装</div>
+            </div>
+            <div class="spec-cell">
+                <div class="spec-label">资本运作体量</div>
+                <div class="spec-value">15.6+ 亿元</div>
+                <div class="spec-desc">12亿发债底稿 + 1.32亿并购 + 2.28亿行权 + 软装新设</div>
+            </div>
+            <div class="spec-cell">
+                <div class="spec-label">信披与合规质量</div>
+                <div class="spec-value">深交所 A 级 <small>(0问询)</small></div>
+                <div class="spec-desc">证券部206篇(全期345篇) · 0 监管问询与处罚</div>
+            </div>
+            <div class="spec-cell">
+                <div class="spec-label">经营督办大盘</div>
+                <div class="spec-value">61.96 亿元</div>
+                <div class="spec-desc">9 大大区订单穿透 · 督办销号率 96.8%</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 专案特化核心正文插槽 -->
+    <!-- 01 项目基本盘 -->
+    <section id="sec-overview" class="card">
+        <div class="card-caption-bar">
+            <h2 class="card-heading">项目基本盘 · 上市公司总部治理与企业运营事实台账</h2>
+            <span class="card-tag">HEADQUARTERS GOVERNANCE & OPERATIONS FACT TABLE</span>
+        </div>
+        <table class="booktabs-table">
+            <thead>
+                <tr>
+                    <th class="table-dim">维度</th>
+                    <th class="table-fact">关键事实与核心数据</th>
+                    <th>商业背景与操盘意义</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="table-dim">两府中枢职能</td>
+                    <td class="table-fact"><strong>总经办（经营执行权）+ 董办（法定治理权）</strong>双轮协同</td>
+                    <td>总经办作为总裁行政执行中枢，抓经营分析、例会督办与制度总纲；董办作为董事会资本运作中枢，抓信息披露、三会合规与市值管理。两者交织形成全景战略掌控力。</td>
+                </tr>
+                <tr>
+                    <td class="table-dim">董办团队与分工</td>
+                    <td class="table-fact"><strong>董秘(王宏坤) · 证代(郭文宁) · 证券助理(梁清波)</strong></td>
+                    <td>由分管高管兼董秘王宏坤主持全面工作（王亦为郭直接上级）；梁清波作为证券部核心操盘人员，直接对接董秘与证代两位开展工作：既配合董秘承办 12 亿元发债底稿封包、50+ 场机构一线同台调研接待与对标专报，又协同证代落实深交所日常信披报送（专职期间 206 篇公告）、三会文件归档与合规核查，形成高效落地的治理闭环。</td>
+                </tr>
+                <tr>
+                    <td class="table-dim">发债资本运作</td>
+                    <td class="table-fact"><strong>2013 公司债券 12 亿元公开发行</strong>（55 大类专业底稿体系）</td>
+                    <td>具体牵头 54 个核查细项的专业法律与财务工作底稿收集、穿透核验与保荐机构（国金证券/平安证券）交接封包，确立审计级完备证据链，支撑 12 亿公司债于 2013 年 4 月获证监会核准并在深交所成功挂牌上市交易。</td>
+                </tr>
+                <tr>
+                    <td class="table-dim">股权激励与行权</td>
+                    <td class="table-fact"><strong>股票期权首期行权(1,113.6万股) + 二期自主行权</strong>（2.28 亿元自筹监管）</td>
+                    <td>具体执行 50 位骨干首次行权账户与 2.28 亿自筹资金落地（行权价 20.43 元除权后）；2013 年底接续推进第二个行权期条件成就与深交所首批“自主行权模式”创新落地，推动市值跃过百亿大关。</td>
+                </tr>
+                <tr>
+                    <td class="table-dim">超募资金产业并购</td>
+                    <td class="table-fact"><strong>超募并购方特/成都华南/新华丰</strong>（累计逾 1.32 亿元）</td>
+                    <td>合规落地使用超募资金收购方特装饰 51%（补强幕墙一级资质）、成都华南 60%（更名广田华南，设立西南战略总部）及新华丰生态 51%，前置完成尽调、资产评估、律所见证与内幕知情人排查。</td>
+                </tr>
+                <tr>
+                    <td class="table-dim">软装设立与孵化</td>
+                    <td class="table-fact"><strong>设立全资子公司广田软装</strong>（2013.11 决议 ➔ 2014.01 登记 ➔ 2014.02 调任）</td>
+                    <td>2013 年 11 月在董办具体承办第二届第二十四次董事会《关于使用部分超募资金设立软装公司的议案》及保荐核查；2014 年 1 月 18 日完成工商登记信披；2014 年 2 月梁清波正式由集团董办奔赴该子公司（广田云软装）作为筹办核心团队，开启 10 年软装大盘操盘历程。</td>
+                </tr>
+                <tr>
+                    <td class="table-dim">法定信披与零问询</td>
+                    <td class="table-fact"><strong>任期 345 篇公告 (证券部 206 篇) · 0 监管问询函件</strong></td>
+                    <td>深交所官方披露与监管记录核实：在职全周期（2011.03-2014.02）披露 345 篇公告（证券部专职期 206 篇），深交所监管函件/问询为 0（广田首份问询发生在离任后 2015 年），信息披露持续蝉联最高 A 级。</td>
+                </tr>
+                <tr>
+                    <td class="table-dim">投资者关系 (IR)</td>
+                    <td class="table-fact"><strong>50+ 场主流机构现场调研</strong>，深交所官方编号披露备案</td>
+                    <td>一线主导华夏、广发、大成、景顺长城、国金、泽熙等顶级公私募基金经理现场调研接待，撰写《投资者关系活动记录表》并于深交所互动易合规备案。</td>
+                </tr>
+                <tr>
+                    <td class="table-dim">经营例会与督办</td>
+                    <td class="table-fact"><strong>19 期办公例会与督办闭环</strong>（决议督办销号率达 97.9%）</td>
+                    <td>在总经办建立决议督办动态台账，每周滚动通报；层层分解各大区分公司年度目标责任书；监控 50 万元以上重大经营与商誉风险，推行一票否决预警。</td>
+                </tr>
+                <tr>
+                    <td class="table-dim">行业与同业对标</td>
+                    <td class="table-fact"><strong>主笔建筑装饰行业分析与同业深度对标专报</strong>（金螳螂/亚厦/广田/洪涛）</td>
+                    <td>独立撰写《建筑装饰行业分析报告》与《同行业上市公司间比较分析报告》（含 7 期行业及竞品周报），从宏观产业周期、公装与住宅精装趋势、企业边界定位，穿透对标四巨头营收增速（31.2%~56.9%）、毛利率与期间费用率，呈报总裁决策。</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- 02 核心方法论 (2×2 平衡矩阵) -->
+    <section id="sec-methodology" class="card">
+        <div class="card-caption-bar">
+            <h2 class="card-heading">企业治理与资本运筹 · 2×2 对称平衡方法论矩阵</h2>
+            <span class="card-tag">THE 2×2 CORPORATE GOVERNANCE & OPERATIONS MATRIX</span>
+        </div>
+        <p style="font-size:14px; color:var(--text-secondary); margin-bottom:20px;">
+            在上市公司总部运转体系中，经营执行力与资本合规治理是驱动企业稳健扩张的双翼，遵循四大核心法则：
+        </p>
+        <div class="dossier-grid">
+            <div class="dossier-item">
+                <h3>§ 1 总经办企业运营中枢与全司例会督办闭环 (Operations Executive Tracking)</h3>
+                <ul>
+                    <li><strong>例会纪要与督办台账</strong>：每周统筹总经理办公例会与部长例会（第1-19期），撰写规范纪要并拆解为“责任人、完成标准、时限”三要素台账，督办销号率达 97.9%；</li>
+                    <li><strong>目标责任书层层分解</strong>：将董事会下达的年度营收、净利润、回款及新签订单指标，拆解至全国各大区与事业部，组织签署仪式并跟踪季度达成率；</li>
+                    <li><strong>制度总纲与审批提效</strong>：主导《公司制度建设管理条例》总纲起草，对跨部门审批节点进行流程梳理与精简，破除部门壁垒与业务推诿。</li>
+                </ul>
+            </div>
+            <div class="dossier-item">
+                <h3>§ 2 宏观产业情报与同业四巨头深度对标 (Macro Industry Intelligence)</h3>
+                <ul>
+                    <li><strong>主笔行业分析与上市同业深度对标专报</strong>：独立撰写《建筑装饰行业分析报告》与《同行业上市公司间比较分析报告》（涵盖 7 期行业及竞品研判周报），从宏观产业周期、公装与住宅精装赛道扩容、企业边界定位，穿透对标金螳螂、亚厦、广田、洪涛四巨头的营收增速、盈利质量、业务区域结构、应收账款与期间费用控制策略；</li>
+                    <li><strong>竞争对手动态周报追踪</strong>：创刊并每周编发《行业及竞争对手信息周报》（第1-7期）与房产调控专刊，深度复盘亚厦并购上海蓝天、金螳螂全国扩张动作；</li>
+                    <li><strong>经营决策参谋支持</strong>：月度/季度汇总各职能中心与 9 大大区分公司实际完成数据，与年度预算对比找出偏差归因，为总裁经营班子提供前瞻依据。</li>
+                </ul>
+            </div>
+            <div class="dossier-item">
+                <h3>§ 3 上市公司法人治理与“三会”运作法定闭环 (Board Governance Protocol)</h3>
+                <ul>
+                    <li><strong>10 步刚性流转法定程序</strong>：从业务部门发起议案、前置法务审核、提前发出通知、独立董事发表书面意见，到现场表决票签署、监票计票、决议签署封包；</li>
+                    <li><strong>中介机构专业把关协同</strong>：协同财富里昂/国金保荐代表人、中伦/君合/国浩执业律师、天职国际注册会计师，出具专项核查意见与法律意见书；</li>
+                    <li><strong>知情人防火墙与 A 级信披</strong>：对重大收购及定期报告敏感期执行 100% 严格知情人登记与股票自查，保障任期内深交所信息披露考核持续荣获最高 A 级评级。</li>
+                </ul>
+            </div>
+            <div class="dossier-item">
+                <h3>§ 4 资本运作发债底稿封包与投资者关系市值管理 (Capital Ops & IR Synergy)</h3>
+                <ul>
+                    <li><strong>发债 55 大类专业底稿交付</strong>：针对 12 亿元公司债券公开发行，牵头收集、核查并封包 54 个核查细项的专业法律与财务卷宗，满足证监会发审委严苛审查；</li>
+                    <li><strong>1.32 亿产业并购全案落地</strong>：统筹方特装饰 51%（8,310万）与成都华南 60%（4,896万）超募并购，完成评估对价核验、工商变更与公告批复；</li>
+                    <li><strong>市值演进与机构调研维护</strong>：接待华夏、广发、大成、景顺长城等 50+ 场主流机构一线调研，精准传递百亿战略，支撑市值由 85.1 亿攀升至 132.2 亿峰值。</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 03 核心数据看板与 ECharts 原生图表 (2×2 矩阵) -->
+    <section id="sec-dashboard" class="card">
+        <div class="card-caption-bar">
+            <h2 class="card-heading">总经办运营督办、资本市场运作与董办合规图表 (2×2 矩阵)</h2>
+            <span class="card-tag">CORPORATE GOVERNANCE & CAPITAL MARKET CHARTS</span>
+        </div>
+
+        <!-- 6 块顶线 KPI 磁贴 -->
+        <div class="kpi-deck">
+            <div class="kpi-tile">
+                <div class="kpi-eyebrow">CORPORATE SPAN</div>
+                <div class="kpi-title-zh">实盘履职周期</div>
+                <div class="kpi-figure">36 <span>个月</span></div>
+                <div class="kpi-subtext">2011.03 - 2014.02 总经办+证券部 ➔ 调任云软装</div>
+            </div>
+            <div class="kpi-tile">
+                <div class="kpi-eyebrow">GM SUPERVISION</div>
+                <div class="kpi-title-zh">例会决议督办</div>
+                <div class="kpi-figure">97.9% <span>销号</span></div>
+                <div class="kpi-subtext">19 期经营例会 · 下达 94 项办结销号 92 项</div>
+            </div>
+            <div class="kpi-tile">
+                <div class="kpi-eyebrow">DUE DILIGENCE PACK</div>
+                <div class="kpi-title-zh">发债工作底稿</div>
+                <div class="kpi-figure">55 <span>大类</span></div>
+                <div class="kpi-subtext">12 亿元公司债券 · 54 个核查细项封包上市</div>
+            </div>
+            <div class="kpi-tile">
+                <div class="kpi-eyebrow">M&A & EXPANSION</div>
+                <div class="kpi-title-zh">产业并购与新设</div>
+                <div class="kpi-figure">6.25 <span>亿元</span></div>
+                <div class="kpi-subtext">方特/华南并购 + 全资设立软装子公司</div>
+            </div>
+            <div class="kpi-tile">
+                <div class="kpi-eyebrow">INFO DISCLOSURE</div>
+                <div class="kpi-title-zh">证券部信披公告</div>
+                <div class="kpi-figure">206 <span>篇</span></div>
+                <div class="kpi-subtext">专职 206 篇 (全期 345 篇) · 深交所 0 监管问询</div>
+            </div>
+            <div class="kpi-tile">
+                <div class="kpi-eyebrow">MARKET CAP PEAK</div>
+                <div class="kpi-title-zh">任期总市值峰值</div>
+                <div class="kpi-figure">132.2 <span>亿元</span></div>
+                <div class="kpi-subtext">全周期 36 个月 · 较筑底 71.8 亿攀升 +84.2%</div>
+            </div>
+        </div>
+
+        <!-- 2×2 资本与经营 ECharts 原生图表栅格 -->
+        <div class="chart-grid">
+            <!-- FIG.01 总经办 19 期经营办公例会决策督办与分类按期销号台账 -->
+            <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
+                <div class="chart-header">
+                    <div class="chart-title-wrap">
+                        <span class="chart-fig-num">FIG. 01</span>
+                        <span class="chart-title">总经办 19 期经营办公例会决策督办与分类按期销号台账</span>
+                    </div>
+                </div>
+                <div id="chart-gm-supervision" class="chart-container"></div>
+                <div class="chart-desc">
+                    <strong>数据来源</strong>：总经办经营例会督办与销号跟踪台账。统计覆盖全司重点工程履约、商务结算与清收、制度总纲建设、大区属地化扩张、采购供应链等 5 大核心业务板块，督办办结闭环率达 97.9%（下达 94 项，按期销号 92 项），体现总经办中枢决策执行闭环能力。
+                </div>
+            </div>
+
+            <!-- FIG.02 广田股份 2011-2014 季度收盘价与总市值演进全景时序 -->
+            <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
+                <div class="chart-header">
+                    <div class="chart-title-wrap">
+                        <span class="chart-fig-num">FIG. 02</span>
+                        <span class="chart-title">广田股份 2011-2014 季度收盘价与总市值演进全景时序 (2011.03 入职至 2014.02 调任)</span>
+                    </div>
+                </div>
+                <div id="chart-market-cap-line" class="chart-container"></div>
+                <div class="chart-desc">
+                    <strong>数据来源</strong>：深交所公开交易行情与法定披露公告档案。完整穿透 36 个月履职全景：从 2011Q1 入职总经办（105.2 亿）到宏观调控筑底（71.8 亿），再到转任证券部推进超募并购、首期期权行权破百亿（108.9 亿）、12 亿公司债上市挂牌，市值最高达 132.2 亿元，2014Q1 设立软装子公司后调任云软装筹办。
+                </div>
+            </div>
+
+            <!-- FIG.03 证券事务部专职期间 206 篇官方公告构成与 0 监管问询合规质量 -->
+            <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
+                <div class="chart-header">
+                    <div class="chart-title-wrap">
+                        <span class="chart-fig-num">FIG. 03</span>
+                        <span class="chart-title">证券事务部专职期间 206 篇官方公告构成与 0 监管问询合规质量 (2012.03-2014.02)</span>
+                    </div>
+                </div>
+                <div id="chart-sec-announcements" class="chart-container"></div>
+                <div class="chart-desc">
+                    <strong>数据来源</strong>：深交所官方披露公告档案与监管函件底账。专职操盘期间合规完成 206 篇公告（涵盖法定信披、三会决议、财报快报、股权激励、公司债及产业并购等），深交所监管问询函件 0 份、行政处罚 0 次，信息披露考核保持最高 A 级。
+                </div>
+            </div>
+
+            <!-- FIG.04 超募资金重大产业并购 (方特/成都华南) 与软装新设资本配置结构 -->
+            <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
+                <div class="chart-header">
+                    <div class="chart-title-wrap">
+                        <span class="chart-fig-num">FIG. 04</span>
+                        <span class="chart-title">超募资金重大产业并购 (方特/成都华南) 与软装新设资本配置结构</span>
+                    </div>
+                </div>
+                <div id="chart-ma-pie" class="chart-container"></div>
+                <div class="chart-desc">
+                    <strong>数据来源</strong>：深交所超募资金专项决议公告档案。累计高效配置超募资金 6.25 亿元：8,310 万元控股方特装饰 51%、4,896 万元控股成都华南 60%、3,000 万元全资设立软装子公司（筹备云软装）、6,013.6 万元购置广州商办、8,500 万元还贷优化杠杆、3.18 亿元投建绿色产业园与主营补流。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 04 履职底账台账 (发债底稿模块与第二届董事会三会闭环) -->
+    <section id="sec-dossiers" class="card">
+        <div class="card-caption-bar">
+            <h2 class="card-heading">专业履职底账 · 55 大类发债底稿与第二届董事会历次三会闭环记录</h2>
+            <span class="card-tag">DUE DILIGENCE CHECKLIST & BOARD MEETING REGISTRY</span>
+        </div>
+        
+        <h3 style="font-size:15px; font-weight:700; color:var(--text-primary); margin-bottom:12px;">1. 2013 公司债券 12 亿元发行 · 55 大类专业法律与财务尽职调查底稿分布 (部分精选)</h3>
+        <table class="booktabs-table" style="font-size:12.5px; margin-bottom:32px;">
+            <thead>
+                <tr>
+                    <th style="width:12%;">模块编号</th>
+                    <th style="width:22%;">尽调专业模块名称</th>
+                    <th style="width:38%;">核查具体内容与调查事项</th>
+                    <th style="width:28%;">交付标准与责任归口</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="code-pill">MOD-01</span></td>
+                    <td><strong>主体资格与历史沿革</strong></td>
+                    <td>公司设立、历次变更企业法人营业执照、章程修正案、出资验资报告</td>
+                    <td>工商档案调档原件及律师见证 ｜ 董办(梁清波)</td>
+                </tr>
+                <tr>
+                    <td><span class="code-pill">MOD-02</span></td>
+                    <td><strong>股权结构与实际控制人</strong></td>
+                    <td>公司股权控制关系拓扑图（追溯至叶远西先生）、前十大股东穿透核查</td>
+                    <td>中登公司持股名册及券商核对 ｜ 董办(梁清波)</td>
+                </tr>
+                <tr>
+                    <td><span class="code-pill">MOD-03</span></td>
+                    <td><strong>资信与资质许可</strong></td>
+                    <td>建筑装修装饰工程专业承包壹级、建筑幕墙设计与施工壹级资质证书有效性</td>
+                    <td>住建部/住建厅官方许可原件 ｜ 运营部/董办</td>
+                </tr>
+                <tr>
+                    <td><span class="code-pill">MOD-04</span></td>
+                    <td><strong>重大资产与土地房产</strong></td>
+                    <td>全司办公物业、在建绿色装饰研发产业园土地使用权证、权属抵押核查</td>
+                    <td>不动产权属证书及银行他项权证明 ｜ 财务/董办</td>
+                </tr>
+                <tr>
+                    <td><span class="code-pill">MOD-05</span></td>
+                    <td><strong>重大商务合同履约</strong></td>
+                    <td>对其生产经营有重大影响的采购、施工总承包合同及回款执行履约记录</td>
+                    <td>合同台账、发票与进场施工凭单 ｜ 法务部/董办</td>
+                </tr>
+                <tr>
+                    <td><span class="code-pill">MOD-06</span></td>
+                    <td><strong>财税与纳税合规</strong></td>
+                    <td>近三年纳税申报表、完税凭证、享受高新技术企业 15% 所得税优惠批复</td>
+                    <td>税务局官方出具无违规完税证明 ｜ 财务中心</td>
+                </tr>
+                <tr>
+                    <td><span class="code-pill">MOD-07</span></td>
+                    <td><strong>诉讼与行政处罚</strong></td>
+                    <td>涉及涉案金额 50 万元以上未结重大诉讼、仲裁及行政处罚全面排查</td>
+                    <td>全国法院被执行人查询及律师函件 ｜ 法务合规部</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 style="font-size:15px; font-weight:700; color:var(--text-primary); margin-bottom:12px;">2. 第二届董事会历次核心会议法定审议闭环台账 (2012-2013 全景实证)</h3>
+        <table class="booktabs-table" style="font-size:12.5px;">
+            <thead>
+                <tr>
+                    <th style="width:16%;">会议届次与日期</th>
+                    <th style="width:34%;">审议核心重大议案</th>
+                    <th style="width:25%;">独立董事与中介机构意见</th>
+                    <th style="width:25%;">合规状态与法定公告</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <strong>第二届第十次会议</strong><br/>
+                        <span class="code-pill">2012-04-24</span>
+                    </td>
+                    <td>审议使用超募资金 4,896 万元收购成都华南装饰 60% 股权、2011 年年度报告</td>
+                    <td>马挺贵、魏达志独董书面同意；财富里昂保荐意见；中伦法律意见书</td>
+                    <td>知情人保密登记；深交所决议公告及 13 项法定附件归档</td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>第二届第十二次会议</strong><br/>
+                        <span class="code-pill">2012-06-19</span>
+                    </td>
+                    <td>审议关于调整股票期权激励计划期权数量和行权价格、向兴业银行申请综合授信</td>
+                    <td>独董出具期权调整意见；北京市君合律师事务所出具专项核查意见</td>
+                    <td>罗岸丰/范志全计票，赵波监票；会议原件全套封包</td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>第二届第十五次会议</strong><br/>
+                        <span class="code-pill">2012-09-28</span>
+                    </td>
+                    <td>审议使用超募资金 8,310 万元收购深圳市方特装饰工程有限公司 51% 股权</td>
+                    <td>马挺贵、魏达志、王红兵独董同意；国浩律所法律意见与资产评估报告</td>
+                    <td>全案知情人内幕交易自查 0 违规；高效完成工商变更与公告</td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>第二届第十七次会议</strong><br/>
+                        <span class="code-pill">2012-12-04</span>
+                    </td>
+                    <td>审议首期股票期权激励首次行权条件成就并办理行权手续（1,113.6 万股）</td>
+                    <td>薪酬委员会及独董书面同意；上海荣正财务顾问报告；中伦律所意见</td>
+                    <td>监管 2.28 亿行权资金；中登公司办理过户；市值跨越百亿</td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>第二届第十八次会议</strong><br/>
+                        <span class="code-pill">2013-01-09</span>
+                    </td>
+                    <td>审议关于公开发行不超过 12 亿元公司债券方案及召开临时股东大会</td>
+                    <td>独立董事出具发行公司债券专项意见；国金/平安保荐机构专项核查</td>
+                    <td>逐项全票表决通过；发债内幕知情人保密登记；深交所挂牌公告</td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>第二届第二十次会议</strong><br/>
+                        <span class="code-pill">2013-04-24</span>
+                    </td>
+                    <td>审议 2012 年度报告全文及摘要、内部控制自我评价报告、利润分配预案</td>
+                    <td>独立董事发表综合意见；天职国际标准无保留审计报告；中伦核查</td>
+                    <td>窗口期董监高股票锁定自查；获深交所中小板年报信披 A 级评级</td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>第二届第二十二次会议</strong><br/>
+                        <span class="code-pill">2013-08-07</span>
+                    </td>
+                    <td>审议 2013 年半年度报告全文及摘要、募集资金存放与实际使用情况专项报告</td>
+                    <td>独立董事对资金占用出具专项意见；国金证券保荐机构募集资金专项核查</td>
+                    <td>深交所半年度信披规范披露；12 亿公司债发行后首期募集资金专项合规</td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>第二届第二十四次会议</strong><br/>
+                        <span class="code-pill">2013-11-25</span>
+                    </td>
+                    <td>审议使用部分超募资金设立软装公司、股票期权第二期行权、与恒大续签战略合作</td>
+                    <td>独立董事出具书面同意意见；财富里昂证券保荐核查意见；中伦律所法律意见书</td>
+                    <td>软装业务独立法人孵化获批；确立 2014.02 梁清波调任筹办云软装的法定根基</td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>第二届第二十六次会议</strong><br/>
+                        <span class="code-pill">2013-12-27</span>
+                    </td>
+                    <td>审议使用超募资金收购深圳市新华丰生态环境发展有限公司 51% 股权</td>
+                    <td>独董发表书面独立意见；财富里昂保荐核查；国浩律所见证与资产评估报告</td>
+                    <td>超募并购生态版图扩展；内幕知情人全案严密登记备查；深交所法定公告封包</td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>软装落地与自主行权</strong><br/>
+                        <span class="code-pill">2014-01-18 ~ 01-22</span>
+                    </td>
+                    <td>全资子公司深圳市广田软装艺术有限公司完成工商登记信披；第二期期权自主行权提示</td>
+                    <td>深圳市市场监管局核准执照；深交所业务专区首批“自主行权模式”系统对接</td>
+                    <td>办结全套公告后，梁清波于 2014 年 2 月正式调任奔赴云软装，开启 10 年软装大盘操盘</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- 统一底层单一真实源数据依据 -->
+    <section id="sec-provenance" class="card" style="margin-top: 36px;">
+        <div class="card-caption-bar">
+            <h2 class="card-heading">公司治理与公开信披核实依据</h2>
+            <span class="card-tag">DATA PROVENANCE ｜ PRJ-CORP-GOV-2014</span>
+        </div>
+        <p style="font-size:14px; color:var(--text-secondary); line-height:1.75; margin-bottom:14px;">
+            本专案所引用的 206 篇法定公告、深交所零监管函件（最高 A 级信披评级）、12 亿元公司债核准发行、股票期权行权及 19 期经营决策例会督办台账（97.9% 销号率），均源自巨潮资讯网深交所公开披露法定文件（证券代码：002482）及上市公司总经理办公会议决议原档，具备公开市场可查验与法定审计效力。
+        </p>
+
+        <div style="font-size:13px; color:var(--text-tertiary); line-height:1.6; margin-bottom:16px;">
+            <strong>商业与合规标准</strong>：中华人民共和国证券法 / 中华人民共和国公司法 / 深交所股票上市规则 / 上市公司信息披露管理办法 ｜ <strong>档案归档状态</strong>：商业专案库正式确认版 (PRJ-CORP-GOV-2014)
+        </div>
+
+        <div style="background:#f7f6f2; border:1px solid rgba(18,19,22,0.1); border-radius:4px; padding:14px 18px; font-family:var(--font-mono); font-size:11.5px; color:#2c3238; line-height:1.7;">
+            <div style="font-weight:700; color:var(--accent-bronze); margin-bottom:6px; display:flex; align-items:center; gap:6px;">
+                <span>🏛️</span><span>DuckDB 湖仓单一真实源视图直接核验命令 (Direct Lake Audit Verification)</span>
+            </div>
+            <code style="color:#162a45;">
+                ATTACH 'data/career_analytics_lake.duckdb' AS lake (READ_ONLY);
+.read data/views_board_and_gm_direct_lake.sql
+SELECT * FROM v_board_office_track_record;
+SELECT * FROM v_gm_office_resolution_execution;
+
+            </code>
+        </div>
+    </section>
+
+    <!-- 页脚版权与底注 -->
+    <footer class="archival-footer">
+        <div>
+            <span>ARCHIVAL DOSSIER · PRJ-CORP-GOV-2014 · 董办合规与经营治理实证档案</span>
+        </div>
+        <div style="font-family:var(--font-mono); font-size:11px;">
+            2026 商业专案库归档
+        </div>
+    </footer>
+
+</div>
+
+<!-- 基础通信与安全交互脚本 -->
+<script>
+    // 跨域与总舱安全通信闭环
+    window.handleBackToParent = function() {
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({ type: 'NAVIGATE_BACK' }, '*');
+            window.parent.postMessage({ type: 'close-modal' }, '*');
+        } else if (window.opener) {
+            window.close();
+        } else if (history.length > 1) {
+            history.back();
+        } else {
+            window.location.href = '../梁清波_全景商业专案与交互式履历总舱.html';
+        }
+    };
+
+    // 子专案返回父大盘
+    window.returnToParentMonograph = function() {
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({ type: 'NAVIGATE_BACK' }, '*');
+        } else {
+            window.location.href = '深圳市广田云软装科技全生命周期商业操盘与供应链大盘商业研报.html';
+        }
+    };
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const colorBronze = '#8a6839';
+    const colorNavy = '#162a45';
+    const colorSage = '#2a4c38';
+    const colorSlate = '#475569';
+    const fontSerif = '"Noto Serif SC", "EB Garamond", serif';
+    const fontMono = '"JetBrains Mono", monospace';
+
+    // FIG. 01: 总经办 19 期经营例会决议督办与按期销号台账
+    const chartGMEl = document.getElementById('chart-gm-supervision');
+    if (chartGMEl) {
+        const chartGM = echarts.init(chartGMEl);
+        chartGM.setOption({
+            title: {
+                text: '例会决议按期办结销号率：97.9% · 闭环率居总部第一',
+                top: 0,
+                right: '2%',
+                textStyle: {
+                    fontFamily: fontMono,
+                    fontSize: 11,
+                    color: colorSage,
+                    fontWeight: 600
+                }
+            },
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: { type: 'shadow' },
+                formatter: function(params) {
+                    let cat = params[0].name;
+                    let assigned = params[0].value;
+                    let resolved = params[1].value;
+                    let rate = (resolved * 100.0 / assigned).toFixed(1);
+                    return '<strong>' + cat + '</strong><br/>' +
+                           '下达事项: ' + assigned + ' 项<br/>' +
+                           '办结销号: ' + resolved + ' 项<br/>' +
+                           '按期销号率: <strong>' + rate + '%</strong>';
+                }
+            },
+            legend: {
+                data: ['下达督办事项', '按期办结销号'],
+                top: 0,
+                left: '3%',
+                itemWidth: 12,
+                itemHeight: 12,
+                textStyle: { fontFamily: fontSerif, fontSize: 11 }
+            },
+            grid: { left: '4%', right: '16%', bottom: '6%', top: '14%', containLabel: true },
+            xAxis: {
+                type: 'value',
+                name: '事项数 (项)',
+                axisLabel: { fontFamily: fontMono, fontSize: 10 },
+                splitLine: { lineStyle: { color: '#f0ede6', type: 'dashed' } }
+            },
+            yAxis: {
+                type: 'category',
+                data: [
+                    '全国大区属地化扩张深化',
+                    '采购供应链与成本核算',
+                    '制度总纲建设与审批提效',
+                    '商务结算与工程款清收',
+                    '重点工程履约与安全质量'
+                ],
+                axisLabel: { fontFamily: fontSerif, fontSize: 11, color: '#2c3238' }
+            },
+            series: [
+                {
+                    name: '下达督办事项',
+                    type: 'bar',
+                    data: [15, 16, 18, 21, 24],
+                    barWidth: '32%',
+                    itemStyle: { color: '#94a3b8', borderRadius: [0, 2, 2, 0] },
+                    label: {
+                        show: true,
+                        position: 'right',
+                        formatter: '{c}',
+                        fontFamily: fontMono,
+                        fontSize: 9.5,
+                        color: '#64748b'
+                    }
+                },
+                {
+                    name: '按期办结销号',
+                    type: 'bar',
+                    data: [14, 16, 18, 20, 24],
+                    barWidth: '32%',
+                    itemStyle: { color: colorSage, borderRadius: [0, 2, 2, 0] },
+                    label: {
+                        show: true,
+                        position: 'right',
+                        formatter: '{c} 项',
+                        fontFamily: fontMono,
+                        fontSize: 9.5,
+                        fontWeight: 600,
+                        color: colorSage
+                    }
+                }
+            ]
+        });
+        window.addEventListener('resize', () => chartGM.resize());
+    }
+
+    // FIG. 02: 广田股份 2011-2014 季度收盘价与总市值演进全景时序
+    const chartMCEl = document.getElementById('chart-market-cap-line');
+    if (chartMCEl) {
+        const chartMarketCap = echarts.init(chartMCEl);
+        chartMarketCap.setOption({
+            tooltip: {
+                trigger: 'axis',
+                formatter: function(params) {
+                    let p0 = params[0];
+                    let descMap = {
+                        '2011Q1': '梁清波入职总经办；全司例会督办台账与运营数据库启动',
+                        '2011Q2': '实施10转10派5除权；主笔四巨头深度对标研报呈报总裁',
+                        '2011Q3': '地产调控加剧；总经办推进大区属地化与项目直管体系',
+                        '2011Q4': '市场筑底；总经办抓年度目标责任书考核与款项清收',
+                        '2012Q1': '晋升转任证券部；启动超募资金控股成都华南60%',
+                        '2012Q2': '10转3除权分红；国信席位大宗交易换手筑底(85.14亿)',
+                        '2012Q3': '董事会审议收购方特装饰51%(8310万)，补强幕墙资质',
+                        '2012.11': '首期期权行权(2.28亿资金到位)，市值突破百亿',
+                        '2012Q4': '跨年反弹行情，全年订单超35.5亿，农银汇理锁仓',
+                        '2013Q1': '启动12亿公司债尽调，55大类专业底稿封包交付',
+                        '2013Q2': '钱荒冲击二级市场；12亿公司债券深交所成功上市挂牌',
+                        '2013Q3': '全国大区战略扩张落地，郑州/北京大单放量',
+                        '2013Q4': '审议设立软装子公司、二期期权自主行权，创市值峰值132.2亿',
+                        '2014Q1': '广田软装完成工商登记；梁清波正式调任奔赴云软装筹办'
+                    };
+                    return '<strong>' + p0.name + '</strong><br/>' +
+                           '总市值: <strong>' + p0.value + ' 亿元</strong><br/>' +
+                           '中枢里程碑: ' + (descMap[p0.name] || '');
+                }
+            },
+            grid: { left: '4%', right: '8%', bottom: '13%', top: '16%', containLabel: true },
+            xAxis: {
+                type: 'category',
+                data: ['2011Q1', '2011Q2', '2011Q3', '2011Q4', '2012Q1', '2012Q2', '2012Q3', '2012.11', '2012Q4', '2013Q1', '2013Q2', '2013Q3', '2013Q4', '2014Q1'],
+                axisLabel: { interval: 0, rotate: 25, fontFamily: fontMono, fontSize: 8.5, color: '#2c3238' }
+            },
+            yAxis: {
+                type: 'value',
+                name: '总市值 (亿元)',
+                min: 65,
+                max: 145,
+                axisLabel: { formatter: '{value}亿', fontFamily: fontMono, fontSize: 10 },
+                splitLine: { lineStyle: { color: '#f0ede6', type: 'dashed' } }
+            },
+            series: [
+                {
+                    name: '总市值',
+                    type: 'line',
+                    data: [105.17, 93.48, 77.08, 71.75, 94.17, 85.14, 94.87, 108.89, 113.53, 125.79, 105.53, 119.39, 132.18, 103.94],
+                    smooth: true,
+                    symbol: 'circle',
+                    symbolSize: 6,
+                    itemStyle: { color: colorNavy },
+                    lineStyle: { width: 2.5 },
+                    areaStyle: {
+                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                            { offset: 0, color: 'rgba(22, 42, 69, 0.22)' },
+                            { offset: 1, color: 'rgba(22, 42, 69, 0.01)' }
+                        ])
+                    },
+                    markPoint: {
+                        data: [
+                            { name: '入职总经办', coord: ['2011Q1', 105.17], value: '入职105亿', symbolSize: 46, itemStyle: { color: colorSage } },
+                            { name: '筑底低点', coord: ['2011Q4', 71.75], value: '筑底71.8亿', symbolSize: 46, itemStyle: { color: colorSlate } },
+                            { name: '突破百亿', coord: ['2012.11', 108.89], value: '行权破百亿', symbolSize: 48, itemStyle: { color: colorBronze } },
+                            { name: '任期峰值', coord: ['2013Q4', 132.18], value: '峰值132.2亿', symbolSize: 50, itemStyle: { color: '#b91c1c' } },
+                            { name: '赴云软装', coord: ['2014Q1', 103.94], value: '赴云软装', symbolSize: 46, itemStyle: { color: colorNavy } }
+                        ],
+                        label: { fontFamily: fontMono, fontSize: 8.5 }
+                    }
+                }
+            ]
+        });
+        window.addEventListener('resize', () => chartMarketCap.resize());
+    }
+
+    // FIG. 03: 证券事务部专职期间 206 篇官方公告构成
+    const chartSecEl = document.getElementById('chart-sec-announcements');
+    if (chartSecEl) {
+        const chartSec = echarts.init(chartSecEl);
+        chartSec.setOption({
+            title: {
+                text: '深交所监管问询/函件：0 份 · 信息披露考核持续最高 A 级',
+                top: 0,
+                right: '2%',
+                textStyle: {
+                    fontFamily: fontMono,
+                    fontSize: 11,
+                    color: colorBronze,
+                    fontWeight: 600
+                }
+            },
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: { type: 'shadow' },
+                formatter: '{b}: <strong>{c} 篇</strong>'
+            },
+            grid: { left: '4%', right: '16%', bottom: '6%', top: '14%', containLabel: true },
+            xAxis: {
+                type: 'value',
+                name: '篇数',
+                axisLabel: { fontFamily: fontMono, fontSize: 10 },
+                splitLine: { lineStyle: { color: '#f0ede6', type: 'dashed' } }
+            },
+            yAxis: {
+                type: 'category',
+                data: [
+                    '公司债12亿公开发行',
+                    '监事会决议',
+                    '首期股票期权激励与行权',
+                    '产业并购与新公司设立',
+                    '股东大会运作',
+                    '定期财务报告与快报',
+                    '董事会三会决议',
+                    '常规法定信息披露'
+                ],
+                axisLabel: { fontFamily: fontSerif, fontSize: 11, color: '#2c3238' }
+            },
+            series: [
+                {
+                    type: 'bar',
+                    data: [10, 12, 12, 14, 19, 22, 30, 87],
+                    barWidth: '42%',
+                    itemStyle: {
+                        color: function(params) {
+                            return params.dataIndex >= 6 ? colorNavy : colorBronze;
+                        },
+                        borderRadius: [0, 2, 2, 0]
+                    },
+                    label: {
+                        show: true,
+                        position: 'right',
+                        formatter: '{c} 篇',
+                        fontFamily: fontMono,
+                        fontSize: 10,
+                        color: '#475569'
+                    }
+                }
+            ]
+        });
+        window.addEventListener('resize', () => chartSec.resize());
+    }
+
+    // FIG. 04: 超募资金产业收购并购与软装新设资本配置
+    const chartMAEl = document.getElementById('chart-ma-pie');
+    if (chartMAEl) {
+        const chartMA = echarts.init(chartMAEl);
+        chartMA.setOption({
+            tooltip: {
+                trigger: 'item',
+                formatter: '{b}: <strong>{c} 万元</strong> ({d}%)'
+            },
+            legend: {
+                orient: 'vertical',
+                right: '1%',
+                top: 'middle',
+                textStyle: { fontFamily: fontSerif, fontSize: 10, color: '#2c3238' }
+            },
+            series: [
+                {
+                    name: '超募资本配置',
+                    type: 'pie',
+                    radius: ['44%', '70%'],
+                    center: ['38%', '50%'],
+                    avoidLabelOverlap: false,
+                    itemStyle: {
+                        borderColor: '#ffffff',
+                        borderWidth: 2
+                    },
+                    label: {
+                        show: false,
+                        position: 'center'
+                    },
+                    emphasis: {
+                        label: {
+                            show: true,
+                            fontSize: 13,
+                            fontWeight: 'bold',
+                            fontFamily: fontSerif,
+                            formatter: '{b}\n{c}万'
+                        }
+                    },
+                    data: [
+                        { value: 8310.0, name: '方特装饰 51% (幕墙补强)', itemStyle: { color: colorBronze } },
+                        { value: 4896.0, name: '成都华南 60% (西南大本营)', itemStyle: { color: colorNavy } },
+                        { value: 3000.0, name: '设立全资软装子公司 (云软装筹备)', itemStyle: { color: '#c25e40' } },
+                        { value: 6013.6, name: '广州分公司商办置业', itemStyle: { color: colorSage } },
+                        { value: 8500.0, name: '置换偿还银行有息借款', itemStyle: { color: colorSlate } },
+                        { value: 31794.0, name: '绿色产业基地与主营补流', itemStyle: { color: '#c4bdb2' } }
+                    ]
+                }
+            ]
+        });
+        window.addEventListener('resize', () => chartMA.resize());
+    }
+});
+</script>
+
+</body>
+</html>

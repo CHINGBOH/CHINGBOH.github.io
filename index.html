@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梁清波 · 个人履历与专业作品集 | 全资子公司初创奠基 · 大宗商业工程总操盘 · 数字化解决方案顾问 · 华中科技大学统计学</title>
+    
+    <!-- 引入 Google Fonts 权威学术与等宽字体源 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Noto+Serif+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* 典藏级低奢色彩体系 (Quiet Luxury System) */
+            --bg-page: #fbfbfa;          /* 天然棉浆纸柔白底色 */
+            --bg-card: #ffffff;          /* 纯净书写纸白 */
+            --bg-subtle: #f5f4ef;        /* 雅致羊皮纸浅底 */
+            --bg-table-head: #f7f6f1;    /* 经典表头浅纸底 */
+            
+            --text-primary: #111317;      /* 浓郁深炭黑 */
+            --text-secondary: #2c3238;    /* 矿石深灰 */
+            --text-tertiary: #5e6670;     /* 辅助说明灰 */
+            --text-bronze: #8a6839;       /* 沉香古铜金文字 */
+            
+            --accent-navy: #162a45;       /* 牛津深海蓝 */
+            --accent-bronze: #8a6839;     /* 沉香古铜金 */
+            --accent-sage: #2a4c38;       /* 墨玉绿 */
+            --accent-slate: #475569;      /* 冷板岩深灰 */
+            
+            --border-hairline: rgba(18, 19, 22, 0.08); /* 极细分割线 */
+            --border-strong: rgba(18, 19, 22, 0.20);   /* 书籍装订骨架线 */
+            
+            --card-shadow: 0 1px 3px rgba(18, 19, 22, 0.04), 0 6px 16px -4px rgba(18, 19, 22, 0.03);
+            --card-hover-shadow: 0 4px 12px -2px rgba(18, 19, 22, 0.06), 0 12px 28px -6px rgba(18, 19, 22, 0.05);
+            --radius-md: 4px;
+            --radius-sm: 2px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-page);
+            color: var(--text-primary);
+            font-family: "Noto Serif SC", "EB Garamond", "Songti SC", STSong, "Times New Roman", SimSun, serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+            line-height: 1.76;
+            font-size: 14.5px;
+            padding: 28px 24px 80px 24px;
+        }
+
+        html {
+            scrollbar-width: thin;
+            scrollbar-color: #cbd5e1 #f8fafc;
+            scroll-behavior: smooth;
+        }
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #f8fafc; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; border: 2px solid #f8fafc; }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* 顶部吸顶交互导航 */
+        .nav-dock {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(251, 251, 250, 0.96);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-md);
+            padding: 12px 24px;
+            margin-bottom: 32px;
+            position: sticky;
+            top: 14px;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(18, 19, 22, 0.02);
+        }
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .nav-brand-code {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            color: #ffffff;
+            background: var(--accent-navy);
+            padding: 2px 7px;
+            border-radius: 2px;
+        }
+        .nav-brand-title {
+            font-size: 13.5px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            list-style: none;
+        }
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            transition: color 0.2s ease;
+        }
+        .nav-links a:hover {
+            color: var(--accent-bronze);
+        }
+        .nav-cta-btn {
+            background: var(--accent-navy);
+            color: #ffffff !important;
+            padding: 5px 12px;
+            border-radius: 3px;
+            font-family: "JetBrains Mono", sans-serif;
+            font-size: 12px !important;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s ease;
+        }
+        .nav-cta-btn:hover {
+            background: var(--accent-bronze);
+            transform: translateY(-1px);
+        }
+
+        /* 扉页 Hero */
+        .hero {
+            padding: 12px 0 32px 0;
+            border-bottom: 1.5px solid var(--border-strong);
+            margin-bottom: 36px;
+        }
+        .archival-eyebrow {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--accent-bronze);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .hero-title-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 8px;
+        }
+        .hero-title {
+            font-size: 34px;
+            font-weight: 900;
+            line-height: 1.2;
+            color: var(--text-primary);
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+        }
+        .hero-en {
+            font-family: "EB Garamond", serif;
+            font-size: 20px;
+            font-weight: 500;
+            color: var(--text-tertiary);
+            font-style: italic;
+        }
+        .hero-contacts {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 12.5px;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .hero-headline {
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--accent-navy);
+            margin-bottom: 14px;
+        }
+        .hero-thesis {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-primary);
+            line-height: 1.8;
+            background: #ffffff;
+            border: 1px solid var(--border-hairline);
+            border-left: 3.5px solid var(--accent-bronze);
+            padding: 15px 20px;
+            border-radius: var(--radius-md);
+            margin-bottom: 18px;
+            box-shadow: 0 1px 2px rgba(18, 19, 22, 0.02);
+            text-align: justify;
+        }
+        .hero-pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 14px;
+            margin-top: 4px;
+        }
+        .hero-pillar-card {
+            background: #faf8f5;
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-sm);
+            padding: 14px 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            transition: all 0.2s ease;
+        }
+        .hero-pillar-card:hover {
+            border-color: var(--accent-bronze);
+            background: #ffffff;
+            box-shadow: 0 2px 8px rgba(18, 19, 22, 0.04);
+        }
+        .pillar-eyebrow {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: "JetBrains Mono", monospace;
+            font-size: 11px;
+            margin-bottom: 8px;
+        }
+        .pillar-code {
+            font-weight: 700;
+            color: var(--accent-bronze);
+            letter-spacing: 0.08em;
+        }
+        .pillar-period {
+            color: var(--text-tertiary);
+            font-size: 11px;
+        }
+        .pillar-title {
+            font-size: 13.5px;
+            font-weight: 700;
+            color: var(--accent-navy);
+            margin-bottom: 6px;
+            line-height: 1.4;
+        }
+        .pillar-fact {
+            font-size: 12px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* 章节标题 */
+        .section-header {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-hairline);
+        }
+        .section-badge {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            color: var(--accent-bronze);
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+        .section-title {
+            font-size: 21px;
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1.3;
+        }
+        .section-subtext {
+            font-size: 13px;
+            color: var(--text-tertiary);
+            margin-top: 3px;
+        }
+
+        /* 经典书式三线表格 (Booktabs Table) */
+        .booktabs-container {
+            background: #ffffff;
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 40px;
+        }
+        .booktabs-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13.5px;
+            line-height: 1.6;
+        }
+        .booktabs-table thead tr {
+            border-top: 2.5px solid var(--accent-navy);
+            border-bottom: 1px solid var(--border-strong);
+            background-color: var(--bg-table-head);
+        }
+        .booktabs-table th {
+            padding: 12px 16px;
+            text-align: left;
+            font-family: "JetBrains Mono", "Noto Serif SC", serif;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--accent-navy);
+            letter-spacing: 0.03em;
+        }
+        .booktabs-table tbody tr {
+            border-bottom: 1px solid var(--border-hairline);
+            transition: background 0.15s ease;
+        }
+        .booktabs-table tbody tr:hover {
+            background-color: #faf9f5;
+        }
+        .booktabs-table tbody tr:last-child {
+            border-bottom: 2px solid var(--border-strong);
+        }
+        .booktabs-table td {
+            padding: 14px 16px;
+            color: var(--text-secondary);
+            vertical-align: top;
+        }
+        .cell-period {
+            font-family: "JetBrains Mono", monospace;
+            font-weight: 700;
+            color: var(--accent-navy);
+            font-size: 13px;
+            white-space: nowrap;
+        }
+        .cell-duration {
+            font-size: 11px;
+            color: var(--text-tertiary);
+            font-weight: normal;
+        }
+        .cell-org {
+            font-weight: 700;
+            color: var(--text-primary);
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+        .cell-role {
+            font-size: 12.5px;
+            color: var(--text-bronze);
+            font-weight: 600;
+        }
+        .bullet-list {
+            list-style: none;
+        }
+        .bullet-list li {
+            position: relative;
+            padding-left: 14px;
+            margin-bottom: 5px;
+            font-size: 13px;
+            line-height: 1.65;
+            color: var(--text-secondary);
+        }
+        .bullet-list li::before {
+            content: "•";
+            position: absolute;
+            left: 2px;
+            color: var(--accent-bronze);
+        }
+        .tag-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 8px;
+        }
+        .tag {
+            font-family: "JetBrains Mono", sans-serif;
+            font-size: 11px;
+            padding: 2px 7px;
+            border-radius: 2px;
+            background: var(--bg-subtle);
+            color: var(--text-secondary);
+            border: 1px solid var(--border-hairline);
+            white-space: nowrap;
+        }
+
+        /* 案例卡片 2x2 网格 */
+        .cases-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+            margin-bottom: 40px;
+        }
+        .case-card {
+            background: #ffffff;
+            border: 1px solid var(--border-hairline);
+            border-top: 3.5px solid var(--accent-navy);
+            border-radius: var(--radius-md);
+            padding: 20px 22px;
+            box-shadow: var(--card-shadow);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.2s ease;
+        }
+        .case-card:hover {
+            box-shadow: var(--card-hover-shadow);
+            transform: translateY(-2px);
+            border-top-color: var(--accent-bronze);
+        }
+        .case-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid var(--border-hairline);
+            padding-bottom: 10px;
+        }
+        .case-badge {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 2px 6px;
+            border-radius: 2px;
+            background: var(--bg-subtle);
+            color: var(--accent-navy);
+            border: 1px solid var(--border-hairline);
+            white-space: nowrap;
+        }
+        .case-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1.4;
+        }
+        .case-scope {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 12px;
+            color: var(--text-tertiary);
+            margin-bottom: 10px;
+        }
+        .case-abstract {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 16px;
+            flex: 1;
+        }
+        .case-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 10px;
+            border-top: 1px solid var(--border-hairline);
+        }
+        .case-period {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 11.5px;
+            color: var(--text-tertiary);
+        }
+        .btn-view-detail {
+            background: #ffffff;
+            border: 1px solid var(--accent-navy);
+            color: var(--accent-navy);
+            padding: 4px 12px;
+            border-radius: var(--radius-sm);
+            font-family: "JetBrains Mono", sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            transition: all 0.2s ease;
+        }
+        .btn-view-detail:hover {
+            background: var(--accent-navy);
+            color: #ffffff;
+        }
+
+
+
+        /* 技能底座 4 列网格 */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+        .skill-tile {
+            background: #ffffff;
+            border: 1px solid var(--border-hairline);
+            border-top: 3px solid var(--accent-navy);
+            border-radius: var(--radius-md);
+            padding: 16px 18px;
+            box-shadow: var(--card-shadow);
+        }
+        .skill-tile h4 {
+            font-size: 14.5px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid var(--border-hairline);
+        }
+        .skill-tile ul {
+            list-style: none;
+        }
+        .skill-tile li {
+            position: relative;
+            padding-left: 14px;
+            margin-bottom: 6px;
+            font-size: 12.5px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .skill-tile li::before {
+            content: "•";
+            position: absolute;
+            left: 2px;
+            color: var(--accent-bronze);
+        }
+
+        /* 审计级底单与溯源页脚 */
+        .provenance-footnote {
+            border-top: 1.5px solid var(--border-strong);
+            padding-top: 20px;
+            margin-top: 40px;
+            font-size: 12px;
+            color: var(--text-tertiary);
+            font-family: "JetBrains Mono", sans-serif;
+        }
+        .provenance-views-list {
+            margin-top: 8px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+        .provenance-item {
+            background: #ffffff;
+            padding: 8px 12px;
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-sm);
+        }
+        .provenance-name {
+            color: var(--accent-navy);
+            font-weight: 700;
+        }
+
+
+        @media (max-width: 900px) {
+            .cases-grid { grid-template-columns: 1fr; }
+            .skills-grid { grid-template-columns: repeat(2, 1fr); }
+            .provenance-views-list { grid-template-columns: 1fr; }
+            .nav-links { display: none; }
+        }
+        @media (max-width: 600px) {
+            .skills-grid { grid-template-columns: 1fr; }
+            .hero-title { font-size: 26px; }
+            .hero-contacts { flex-direction: column; align-items: flex-start; gap: 4px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- 顶部吸顶交互导航 -->
+    <nav class="nav-dock">
+        <div class="nav-brand">
+            <span class="nav-brand-code">PORTFOLIO</span>
+            <span class="nav-brand-title">梁清波 · 个人履历与专业作品集</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#timeline">生涯时间线</a></li>
+            <li><a href="#cases">代表专案</a></li>
+            <li><a href="#skills">专业能力</a></li>
+            <li><a href="#provenance">数据底账</a></li>
+        </ul>
+        <a href="#cases" class="nav-cta-btn">
+            <span>📚 精选代表作</span>
+            <span>↓</span>
+        </a>
+    </nav>
+
+    <!-- 扉页 Hero -->
+    <header class="hero">
+        <div class="archival-eyebrow">
+            <span>Boone Liang</span>
+            <span>/</span>
+            <span>PROFESSIONAL PORTFOLIO</span>
+            <span>/</span>
+            <span>SELECTED WORK</span>
+        </div>
+        
+        <div class="hero-title-row">
+            <h1 class="hero-title">
+                梁清波
+                <span class="hero-en">Boone Liang</span>
+            </h1>
+            <div class="hero-contacts">
+                <span>♂ 性别：男</span>
+                <span>📍 中国 · 深圳</span>
+                <span>📱 130-7787-2618</span>
+                <span>✉️ <a href="mailto:kinpual@foxmail.com" style="color:inherit; text-decoration:none;">kinpual@foxmail.com</a></span>
+            </div>
+        </div>
+
+        <div class="hero-headline" style="margin-bottom: 16px;">
+            <span style="display: inline-block; font-family: 'Noto Serif SC', serif; font-size: 15.5px; font-weight: 700; color: var(--accent-navy); background: rgba(22, 42, 69, 0.04); border: 1px solid rgba(22, 42, 69, 0.12); padding: 5px 14px; border-radius: var(--radius-sm); letter-spacing: 0.04em; box-shadow: 0 1px 2px rgba(18, 19, 22, 0.02);">
+                全资子公司初创奠基 · 大宗商业工程总操盘 · 数字化解决方案顾问 · 华中科技大学统计学
+            </span>
+        </div>
+
+        <div class="hero-thesis">
+            在高度非标、多方博弈的复杂商业环境中，依靠数理逻辑与机制设计建立确定性：在商业操盘上，穿透成本底盘与多级定价博弈，锁定 30%~35% 稳健经营毛利与四维资金回款；在组织治理上，从 0 到 1 建章立制，以制度总纲与敏捷专班保障长周期合规与零仲裁运营；在数字化落地中，将实体大盘中验证过的业务规则与经营闭环，沉淀为现代软件系统、Agent 状态机与分析引擎。华中科技大学纯数统计推断、上市公司治理与全资子公司十年实操，构成上述价值交付的坚实基石。
+
+        </div>
+
+        <div class="hero-pillars-grid">
+            <div class="hero-pillar-card">
+                <div class="pillar-eyebrow">
+                    <span class="pillar-code">全资子公司奠基</span>
+                    <span class="pillar-period">2014 - 2024</span>
+                </div>
+                <div class="pillar-title">企业创办与制度治理</div>
+                <div class="pillar-fact">从0到1组建45人编制，主笔8大模块730条管理制度总纲与1,491㎡展厅，奠定10年合规与零仲裁底盘。</div>
+                <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--accent-bronze); margin: 8px 0 10px 0; line-height: 1.5; background: #ffffff; padding: 4px 8px; border-radius: 2px; border: 1px dashed rgba(138, 104, 57, 0.35);">
+                    3,000万超募创办 · 45人编制 · 730条制度总纲 · 10年零仲裁
+                </div>
+                <button class="btn-view-detail" style="margin-top:auto; padding-top:10px; align-self:flex-start;" onclick="window.location.href='项目专案/深圳市广田云软装科技全生命周期商业操盘与供应链大盘商业研报.html'" aria-label="查看企业创办与制度治理专案">查看专案 →</button>
+            </div>
+            <div class="hero-pillar-card">
+                <div class="pillar-eyebrow">
+                    <span class="pillar-code">大宗工程总操盘</span>
+                    <span class="pillar-period">2014 - 2024</span>
+                </div>
+                <div class="pillar-title">重大工程大盘与商务博弈</div>
+                <div class="pillar-fact">统领135份全盘盖章合同大盘（签约6.83亿/确权5.92亿），主导遵义大酒店等破亿地标交付与四维回款。</div>
+                <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--accent-bronze); margin: 8px 0 10px 0; line-height: 1.5; background: #ffffff; padding: 4px 8px; border-radius: 2px; border: 1px dashed rgba(138, 104, 57, 0.35);">
+                    135份盖章合同 · 6.83亿大盘 · 遵义等破亿地标 · 30%~35%毛利锁定
+                </div>
+                <button class="btn-view-detail" style="margin-top:auto; padding-top:10px; align-self:flex-start;" onclick="window.location.href='项目专案/遵义大酒店五星级软装工程全周期商业操盘研报.html'" aria-label="查看重大工程大盘与商务博弈专案">查看专案 →</button>
+            </div>
+            <div class="hero-pillar-card">
+                <div class="pillar-eyebrow">
+                    <span class="pillar-code">数字化全栈方案</span>
+                    <span class="pillar-period">2024 - 至今</span>
+                </div>
+                <div class="pillar-title">业务分析与AI全栈研发</div>
+                <div class="pillar-fact">自主推进AI Agent状态机、企业混合RAG与DuckDB列式中枢研发，8大旗舰工程2,804万行源码。</div>
+                <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--accent-bronze); margin: 8px 0 10px 0; line-height: 1.5; background: #ffffff; padding: 4px 8px; border-radius: 2px; border: 1px dashed rgba(138, 104, 57, 0.35);">
+                    8大自研系统 · 2,804万行代码 · DuckDB列式中枢 · Agent状态机
+                </div>
+                <button class="btn-view-detail" style="margin-top:auto; padding-top:10px; align-self:flex-start;" onclick="window.location.href='项目专案/AI全栈工程与VibeCoding敏捷研发商业研报.html'" aria-label="查看业务分析与AI全栈研发专案">查看专案 →</button>
+            </div>
+            <div class="hero-pillar-card">
+                <div class="pillar-eyebrow">
+                    <span class="pillar-code">数理统计学术底座</span>
+                    <span class="pillar-period">2002 - 2006</span>
+                </div>
+                <div class="pillar-title">统计学与科学计算思维</div>
+                <div class="pillar-fact">华中科技大学统计学理学学士，修读24门数理骨干课与160+学分，毕业论文攻关LBM介观流体数值模拟。</div>
+                <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--accent-bronze); margin: 8px 0 10px 0; line-height: 1.5; background: #ffffff; padding: 4px 8px; border-radius: 2px; border: 1px dashed rgba(138, 104, 57, 0.35);">
+                    985理学学士 · 160+必修学分 · 24门数理骨干 · LBM介观流体模拟
+                </div>
+                <button class="btn-view-detail" style="margin-top:auto; padding-top:10px; align-self:flex-start;" onclick="window.location.href='项目专案/华中科技大学统计学学术奠基与数理底座商业研报.html'" aria-label="查看统计学与科学计算思维专案">查看专案 →</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 职业生涯时间线 -->
+    <section id="timeline" style="margin-bottom: 40px;">
+        <div class="section-header">
+            <div>
+                <div class="section-badge">CAREER CHRONOLOGY</div>
+                <h2 class="section-title">职业生涯时间线与业务演进</h2>
+                <div class="section-subtext">从华科数理基础出发，经历管理咨询、上市公司合规治理、实体大盘运营至数字化全栈探索</div>
+            </div>
+        </div>
+
+        <div class="booktabs-container">
+            <table class="booktabs-table">
+                <thead>
+                    <tr>
+                        <th style="width: 140px;">起止周期</th>
+                        <th style="width: 220px;">机构与主体</th>
+                        <th style="width: 220px;">职务 / 业务角色</th>
+                        <th>核心工作职责与操盘要点</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="cell-period">
+                            2024.03 - 至今
+                            <div class="cell-duration">(2年)</div>
+                        </td>
+                        <td>
+                            <div class="cell-org">数字化解决方案与全栈技术研发 (独立顾问 / 软件原型研发)</div>
+                        </td>
+                        <td>
+                            <div class="cell-role">数字化解决方案顾问 / 全栈架构与技术研发</div>
+                        </td>
+                        <td>
+                            <ul class="bullet-list">
+                                <li>结合二十年数理分析与实体商业操盘经验，自主推进企业级数字化原型研发，主导混合检索 RAG 知识库、工作流编排 Agent 状态机与外贸业务自动化工具的系统设计与开发。</li>
+                                <li>基于 DuckDB 现代列式分析中枢，深度整合 vss 向量检索、httpfs 远程直查与跨源 Scanner 插件生态，并通过 Model Context Protocol (FastMCP) 建立 AI Agent 对本地湖仓与异构数据的即席分析与工具调用闭环。</li>
+                            </ul>
+                            <div class="tag-row">
+                                <span class="tag">RAG 混合检索</span>
+                                <span class="tag">Agent 状态机</span>
+                                <span class="tag">DuckDB 插件生态</span>
+                                <span class="tag">FastMCP 协议</span>
+                                <span class="tag">全栈敏捷研发</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cell-period">
+                            2014.03 - 2024.06
+                            <div class="cell-duration">(10年)</div>
+                        </td>
+                        <td>
+                            <div class="cell-org">深圳市广田云软装艺术科技有限公司 (广田全资子公司)</div>
+                        </td>
+                        <td>
+                            <div class="cell-role">全资子公司筹办初创负责人 · 大宗商业工程总操盘 · 重大工程专班牵头人</div>
+                        </td>
+                        <td>
+                            <ul class="bullet-list">
+                                <li>【企业创办与制度奠基】承接集团上市公司 3,000 万元超募投资创办全资子公司，从 0 到 1 组建 45 人初创团队编制，主笔发布八大业务模块 730 条管理制度总纲与 1,491 ㎡ 现代美学旗舰展厅，奠定 10 年 100% 用工合规与零劳动仲裁治理底盘。</li>
+                                <li>【重大工程专班总操盘】统领全盘 135 份真实盖章合同大盘（签约 6.83 亿元，确权产值 5.92 亿元），打破传统科层以重大工程为战元牵头跨部门敏捷专班，主揽并总操盘遵义大酒店（1.25 亿国宾工程）、开元名都（1.03 亿）、汇川康养城（1.09 亿）等 24 项标杆工程全流程高品质交付。</li>
+                                <li>【多轨定价博弈与毛利锁定】首创穿透珠三角源头工坊出厂成本底盘，建立“出厂成本 ➔ 内部控制 ➔ 商务底限 ➔ 正式报审报价”多级商务防波堤与动态加乘模型，在大货批量采购中运用价值工程 (VE) 刚性降本 30%+，始终坚守 30%~35% 综合经营毛利率红线。</li>
+                                <li>【四维回款防线与审计确权】构建“比例联动 / 节点进度 / 极速出厂 / 战采流水”四维资金回款机制，破解背靠背免责霸王条款，实现全盘 97.4% 高回款率；挂帅竣工结算答辩，凭激光实测底账与闭环现场签证抗辩财评审计，阻断审减风险，守住数千万元合法经营成果。</li>
+                            </ul>
+                            <div class="tag-row">
+                                <span class="tag">全资子公司创办</span>
+                                <span class="tag">730条制度总纲</span>
+                                <span class="tag">6.83亿合同大盘</span>
+                                <span class="tag">破亿级标杆专班</span>
+                                <span class="tag">30%~35%毛利锁定</span>
+                                <span class="tag">四维回款防线</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cell-period">
+                            2011.03 - 2014.02
+                            <div class="cell-duration">(3年)</div>
+                        </td>
+                        <td>
+                            <div class="cell-org">深圳广田装饰集团股份有限公司 (SZ.002482)</div>
+                        </td>
+                        <td>
+                            <div class="cell-role">总经办经营数据分析 ➔ 证券事务部专职 (合规与法定信披)</div>
+                        </td>
+                        <td>
+                            <ul class="bullet-list">
+                                <li>前段在总经办搭建经营数据分析模型，督办 19 期月度经营例会决议按期落实（办结率 97.9%）。</li>
+                                <li>后调任证券事务部专职，主导 12 亿元中小企业私募债发债全流程尽职调查，整理归档 55 类专业底稿；撰写同业竞品财务对标报告；负责深交所 206 篇法定信披公告，保持零监管函件与 A 级考评。</li>
+                            </ul>
+                            <div class="tag-row">
+                                <span class="tag">上市公司合规</span>
+                                <span class="tag">12亿发债尽调</span>
+                                <span class="tag">深交所A级信披</span>
+                                <span class="tag">经营例会决议督办</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cell-period">
+                            2009.07 - 2011.02
+                            <div class="cell-duration">(1.5年)</div>
+                        </td>
+                        <td>
+                            <div class="cell-org">鹏金元金融公司</div>
+                        </td>
+                        <td>
+                            <div class="cell-role">营运部金融产品运营分析</div>
+                        </td>
+                        <td>
+                            <ul class="bullet-list">
+                                <li>负责金融产品底层资产数据梳理，协助搭建基础投资风险监测模型与量化测算台账，支撑投资组合动态跟踪与风险测算。</li>
+                            </ul>
+                            <div class="tag-row">
+                                <span class="tag">金融资产运营</span>
+                                <span class="tag">量化测算台账</span>
+                                <span class="tag">风险监测</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cell-period">
+                            2006.07 - 2009.06
+                            <div class="cell-duration">(3年)</div>
+                        </td>
+                        <td>
+                            <div class="cell-org">高柏顾问公司</div>
+                        </td>
+                        <td>
+                            <div class="cell-role">企管部业务流程重构与运营数据分析</div>
+                        </td>
+                        <td>
+                            <ul class="bullet-list">
+                                <li>从事企业管理咨询，参与企业业务流程重构 (BPR) 与绩效考核指标体系设计；负责企业运营数据的清洗、建模与统计分析，提供经营报表与测算支持。</li>
+                            </ul>
+                            <div class="tag-row">
+                                <span class="tag">管理咨询BPR</span>
+                                <span class="tag">绩效指标设计</span>
+                                <span class="tag">运营数据分析</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cell-period">
+                            2002.09 - 2006.06
+                            <div class="cell-duration">(4年)</div>
+                        </td>
+                        <td>
+                            <div class="cell-org">华中科技大学 数学与统计学院</div>
+                        </td>
+                        <td>
+                            <div class="cell-role">统计学专业 · 理学学士 (Bachelor of Science)</div>
+                        </td>
+                        <td>
+                            <ul class="bullet-list">
+                                <li>系统修读数学分析 (I-III)、高等代数与几何 (I-II)、常微分方程、概率论、数理统计、多元统计分析等 24 门数理核心骨干课，修满 160+ 学分。</li>
+                                <li>本科毕业论文攻关《格子玻尔兹曼 (LBM) 算法与数值模拟》，在 D2Q9 速度空间实现流体介观演化编程，奠定终身受用的数理逻辑与科学计算底座。</li>
+                            </ul>
+                            <div class="tag-row">
+                                <span class="tag">985 理学学士</span>
+                                <span class="tag">24门数理骨干</span>
+                                <span class="tag">LBM 介观模拟</span>
+                                <span class="tag">科学计算</span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- 代表性商业专案与核心履职档案 -->
+    <section id="cases" style="margin-bottom: 40px;">
+        <div class="section-header">
+            <div>
+                <div class="section-badge">REPRESENTATIVE MONOGRAPHS & CAREER DOSSIERS</div>
+                <h2 class="section-title">代表性商业专案与核心履职档案</h2>
+                <div class="section-subtext">系统涵盖数理学术奠基、上市公司合规治理与资本运作、实体供应链大盘操盘与数字化技术研发四大独立专案研报</div>
+            </div>
+        </div>
+
+        <div class="cases-grid">
+            <div class="case-card">
+                <div>
+                    <div class="case-header">
+                        <span class="case-badge">学术奠基</span>
+                        <span class="case-period">2002 - 2006</span>
+                    </div>
+                    <h3 class="case-title">华中科技大学统计学专业 · 本科数理培养与思维底座</h3>
+                    <div class="case-scope">160+ 必修学分 · 24 门数理核心必修课 · LBM 介观模拟</div>
+                    <p class="case-abstract">系统梳理本科四年的纯数推导、概率统计、科学计算课程体系，以及格子玻尔兹曼 (LBM) 介观动力学流体数值模拟毕业设计研究。</p>
+                </div>
+                <div class="case-footer">
+                    <span style="font-size:12px; color:var(--text-tertiary);">独立专案档案</span>
+                    <button class="btn-view-detail" onclick="window.location.href='项目专案/华中科技大学统计学学术奠基与数理底座商业研报.html'">
+                        <span>查看专案详情</span>
+                        <span>➔</span>
+                    </button>
+                </div>
+            </div>
+            <div class="case-card">
+                <div>
+                    <div class="case-header">
+                        <span class="case-badge">合规与资本</span>
+                        <span class="case-period">2011 - 2014</span>
+                    </div>
+                    <h3 class="case-title">上市公司治理合规、重大发债尽调与总经办运营</h3>
+                    <div class="case-scope">深交所信披最高 A 级 · 12 亿私募债尽调 · 19 期经营例会督办</div>
+                    <p class="case-abstract">展现上市公司董事会办公室及证券事务部的法定信息披露实操、12 亿元发债融资尽调底稿归档，以及总经办经营例会决议的闭环督办体系。</p>
+                </div>
+                <div class="case-footer">
+                    <span style="font-size:12px; color:var(--text-tertiary);">独立专案档案</span>
+                    <button class="btn-view-detail" onclick="window.location.href='项目专案/上市公司董办合规资本运作与总经办企业运营商业研报.html'">
+                        <span>查看合规专案</span>
+                        <span>➔</span>
+                    </button>
+                </div>
+            </div>
+            <div class="case-card">
+                <div>
+                    <div class="case-header">
+                        <span class="case-badge">商业与操盘</span>
+                        <span class="case-period">2014 - 2024</span>
+                    </div>
+                    <h3 class="case-title">广田全资子公司创办奠基与大宗商业工程大盘</h3>
+                    <div class="case-scope">45 人编制 · 730 条制度总纲 · 135 份合同 (6.83 亿) · 遵义等破亿标杆</div>
+                    <p class="case-abstract">完整复盘全资子公司创办历程、制度建设与商业工程大盘操盘实践，沉淀多轨博弈定价模型、价值工程降本与四维资金回款防线。</p>
+                </div>
+                <div class="case-footer">
+                    <span style="font-size:12px; color:var(--text-tertiary);">独立专案档案</span>
+                    <button class="btn-view-detail" onclick="window.location.href='项目专案/深圳市广田云软装科技全生命周期商业操盘与供应链大盘商业研报.html'">
+                        <span>查看大盘全景</span>
+                        <span>➔</span>
+                    </button>
+                </div>
+            </div>
+            <div class="case-card">
+                <div>
+                    <div class="case-header">
+                        <span class="case-badge">技术与数字化</span>
+                        <span class="case-period">2024 - 至今</span>
+                    </div>
+                    <h3 class="case-title">数字化解决方案与全栈技术原型研发</h3>
+                    <div class="case-scope">8 大自研系统 · 2,804 万行源码 · DuckDB 插件生态 · FastMCP 智能体协议</div>
+                    <p class="case-abstract">展现围绕 DuckDB 现代列式湖仓与丰富插件生态（vss 向量检索、httpfs 远程直查、跨源 scanner、spatial 空间计算）、Model Context Protocol (FastMCP) 统一智能体数据协议、混合检索 RAG 与流程编排状态机，实现从本地分析到智能体即席推理的全栈研发闭环。</p>
+                </div>
+                <div class="case-footer">
+                    <span style="font-size:12px; color:var(--text-tertiary);">独立专案档案</span>
+                    <button class="btn-view-detail" onclick="window.location.href='项目专案/AI全栈工程与VibeCoding敏捷研发商业研报.html'">
+                        <span>查看技术架构</span>
+                        <span>➔</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 专业能力与技能底座 -->
+    <section id="skills" style="margin-bottom: 40px;">
+        <div class="section-header">
+            <div>
+                <div class="section-badge">CORE COMPETENCIES</div>
+                <h2 class="section-title">专业能力与技术栈底座</h2>
+                <div class="section-subtext">二十年复合复利所沉淀的跨界知识结构</div>
+            </div>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-tile">
+                <h4>数理统计与数据分析</h4>
+                <ul>
+                    <li>多元统计分析、假设检验与多元回归</li>
+                    <li>运筹最优化、线性规划与单纯形法</li>
+                    <li>DuckDB 进程内列式湖仓架构、向量化执行引擎与扩展插件群 (vss 向量检索 / httpfs 远程数据湖 / spatial 空间几何 / 跨源 scanner 联邦直查)</li>
+                    <li>企业经营指标池与 KPI 考核基线搭建</li>
+                    <li>底层资产现金流折现测算与量化风控</li>
+                </ul>
+            </div>
+            <div class="skill-tile">
+                <h4>企业商业操盘与组织治理</h4>
+                <ul>
+                    <li>全资子公司从0到1组织架构搭建、初创编制与制度总纲制定</li>
+                    <li>重大商业工程跨部门敏捷专班组建、资源调度与端到端实操操盘</li>
+                    <li>采销多轨博弈定价模型、价值工程 (VE) 降本与 30%~35% 毛利锁定</li>
+                    <li>四维刚性资金回款防线、苛刻支付条款抗辩与现金流风险阻断</li>
+                    <li>大宗工程全生命周期集中交验、竣工结算审计答辩与合法收益确权</li>
+                </ul>
+            </div>
+            <div class="skill-tile">
+                <h4>上市公司治理与资本合规</h4>
+                <ul>
+                    <li>深交所上市公司法定信息披露规范 (考评最高A级)</li>
+                    <li>中小企业私募债及重大融资尽调底稿管理</li>
+                    <li>上市公司三会议事规则与内幕信息登记</li>
+                    <li>同业竞品深度财务对标与竞争战略分析</li>
+                    <li>总经办经营例会决议闭环督办与跨部门推进</li>
+                </ul>
+            </div>
+            <div class="skill-tile">
+                <h4>软件工程与数字化解决方案</h4>
+                <ul>
+                    <li>Python / FastAPI / TypeScript / 前端现代工程</li>
+                    <li>Model Context Protocol (FastMCP) 架构设计与工具封装 (如 DuckDB MCP 智能体即席分析中枢、安全只读沙箱)</li>
+                    <li>混合检索 RAG 知识库 (Dense + Sparse 混合召回 / 重排序 / 知识图谱)</li>
+                    <li>Agent 状态机、工作流编排与自动化工具链交付</li>
+                    <li>Git 版本管理、Linux 环境与敏捷原型交付</li>
+                    <li>面向企业真实业务痛点的系统分析与技术落地</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 审计底单与数据来源 -->
+    <footer id="provenance" class="provenance-footnote">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px;">
+            <strong style="color:var(--text-secondary);">🏛️ 审计级数据来源与单一真实源声明 (Single Source of Truth)</strong>
+            <span>数据库底座: data/career_analytics_lake.duckdb</span>
+        </div>
+        <p style="line-height:1.6; color:var(--text-tertiary); margin-bottom:8px;">
+            关键量化指标在构建时由本地 DuckDB 湖仓视图群实时查询并通过断言后注入；下方保留本次构建的实证快照：
+        </p>
+        <div class="provenance-views-list">
+            <div class="provenance-item">
+                <div class="provenance-name">v_profile_flyleaf_summary & v_profile_career_pillars</div>
+                <div style="color:var(--text-secondary); margin-top:2px;">履历扉页概括性指标集市 (SSOT 单一真实源)</div>
+            </div>
+            <div class="provenance-item">
+                <div class="provenance-name">v_hust_curriculum_stages & v_hust_core_course_matrix</div>
+                <div style="color:var(--text-secondary); margin-top:2px;">华中科技大学培养阶段 160 学分、24 门核心课与 98 学分核心矩阵</div>
+            </div>
+            <div class="provenance-item">
+                <div class="provenance-name">v_guangtian_announcements_tenure & v_sec_bond_due_diligence</div>
+                <div style="color:var(--text-secondary); margin-top:2px;">董办任职期 345 条公告记录与 54 项发债尽调条目</div>
+            </div>
+            <div class="provenance-item">
+                <div class="provenance-name">v_gt_contracts_master & v_gt_portfolio_all_135</div>
+                <div style="color:var(--text-secondary); margin-top:2px;">24 项标杆工程与 135 份合同汇总（6.8348 亿签约、5.92155 亿审定）</div>
+            </div>
+            <div class="provenance-item">
+                <div class="provenance-name">v_ai_git_repositories & v_ai_work_summary</div>
+                <div style="color:var(--text-secondary); margin-top:2px;">8 个核心代码仓库、WakaTime 工时与 AI 工程资产实录</div>
+            </div>
+        </div>
+        <div class="runtime-audit" style="margin-top:18px; padding:12px 14px; background:#f7f6f1; border:1px solid var(--border-hairline);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom:7px; flex-wrap: wrap; gap: 6px;">
+                <div style="font-family:'JetBrains Mono'; font-size:11px; color:var(--accent-bronze); font-weight:700;">
+                    DUCKDB FASTMCP DIRECT-LAKE ENGINE · VERIFIED
+                </div>
+                <div style="font-family:'JetBrains Mono'; font-size:10px; color:var(--accent-navy); background:#fff; padding:1px 6px; border-radius:2px; border:1px solid var(--border-hairline);">
+                    EXTENSIONS: PARQUET · JSON · VSS · SPATIAL · HTTPFS · EXCEL
+                </div>
+            </div>
+            <div style="display:flex; flex-wrap:wrap; gap:8px 18px; color:var(--text-secondary); font-size:12px;">
+                <span>AI 旗舰仓库 8 个 / 28,038,054 LOC</span>
+                <span>WakaTime 120.8 小时</span>
+                <span>云软装 135 份合同 / 68,348.00 万元</span>
+                <span>断言通过 10 项</span>
+                <span>湖仓视图群 128 个</span>
+            </div>
+        </div>
+        <div style="text-align:center; margin-top:24px; color:var(--text-tertiary); font-size:11.5px;">
+            © 2026 Boone Liang (梁清波) · 个人履历与专业作品集 · 静态单文件自包含成品
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>
