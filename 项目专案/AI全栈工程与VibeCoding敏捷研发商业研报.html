@@ -786,10 +786,10 @@
                 </ul>
             </div>
             <div class="dossier-item">
-                <h3>⑤ 宏观计量延伸：从问卷跨到时序层面</h3>
+                <h3>⑤ 方法即跨界：同一套实证能力横跨"问卷 × 宏观"</h3>
                 <ul>
-                    <li><strong>做法</strong>：FRED 6 序列建 bronze→gold 湖仓，AUTOREG 泰勒规则 R²=0.3727 (F=92.97, p&lt;.0001)、收益率倒挂 LOGISTIC OR=39.23 (p=0.0012, AUC=0.671)、GARCH 波动率、SARIMA(0,1,1)(0,1,1)₁₂ 民航客运预测（ACF/PACF+白噪声+24个月区间）；</li>
-                    <li><strong>价值</strong>：证明同一套 SAS 实证能力能横跨"问卷横截面"与"宏观时序"两种数据形态，不是只会一种。</li>
+                    <li><strong>含义</strong>：上述 SAS 方法链不只作用于消费券问卷——同一套 <strong>PROC 家族（CORR / GLM / REG / LOGISTIC / AUTOREG / VARMAX）</strong> 也用于利率相关的宏观计量（见下节「另 · 利率专题独立 SAS 分析」）；</li>
+                    <li><strong>价值</strong>：证明这套实证能力能轻松横跨"问卷横截面"与"宏观时序"两种数据形态，不是只会一种统计场景。</li>
                 </ul>
             </div>
             <div class="dossier-item">
@@ -800,6 +800,48 @@
                 </ul>
             </div>
         </div>
+
+        <h3 style="font-size:15px; margin:32px 0 10px; color:var(--text-primary);">另 · 利率专题独立 SAS 分析：货币政策与收益率曲线的实证</h3>
+        <p style="font-size:13.5px; color:var(--text-secondary); margin:0 0 8px;">
+            除了消费券问卷，还有一条<strong>独立的利率相关 SAS 计量线</strong>——把宏观货币政策的"泰勒基准利率"、债券市场"收益率曲线倒挂"、"利率波动率"等做真刀真枪的实证。所有序列来自 FRED 官方，落地为 DuckDB 数据湖仓（原始层→规整层→成果层），SAS 在官方云端真跑、ODS 原始输出留证。
+        </p>
+
+        <div class="dossier-grid">
+            <div class="dossier-item">
+                <h3>A. 泰勒基准利率规则（泰勒规则）</h3>
+                <ul>
+                    <li><strong>验什么</strong>：政策利率是否遵循"通胀+增长"的泰勒反应函数；</li>
+                    <li><strong>怎么做</strong>：FRED 6 序列 → SAS AUTOREG 拟合 Taylor Rule；</li>
+                    <li><strong>发现什么</strong>：R²=0.3727 (F=92.97, p&lt;.0001)——政策利率对通胀/增长存在显著、可在统计上被识别的反应路径。</li>
+                </ul>
+            </div>
+            <div class="dossier-item">
+                <h3>B. 收益率曲线倒挂：衰退预警的第一课</h3>
+                <ul>
+                    <li><strong>验什么</strong>：10Y-2Y 收益率曲线是否真的在倒挂提前发出衰退警报；</li>
+                    <li><strong>怎么做</strong>：PROC LOGISTIC 把倒挂形态映射到未来衰退事件；</li>
+                    <li><strong>发现什么</strong>：OR=39.23 (p=0.0012, AUC=0.671)——曲线倒挂与衰退风险高度相关，是"藏在 K 线深处的预警信号"。</li>
+                </ul>
+            </div>
+            <div class="dossier-item">
+                <h3>C. GARCH 波动率：利率市场的"情绪仪表"</h3>
+                <ul>
+                    <li><strong>验什么</strong>：利率序列的波动是否"扎堆"（大波动跟着大波动）；</li>
+                    <li><strong>怎么做</strong>：PROC AUTOREG 条件异方差建模（GARCH）；</li>
+                    <li><strong>发现什么</strong>：识别出波动率聚集效应，为利率风险度量提供统计依据。</li>
+                </ul>
+            </div>
+            <div class="dossier-item">
+                <h3>D. 跨行业时序预测：SARIMA 民航客运</h3>
+                <ul>
+                    <li><strong>做法</strong>：SARIMA(0,1,1)(0,1,1)₁₂ 对民航客运建模（ACF/PACF + 白噪声检验 + 24 个月预测区间）；</li>
+                    <li><strong>价值</strong>：同样的 SAS 时序能力，既能算利率、也能预测行业客流——再一次印证"跨领域可运行"。配套萨姆规则 Jupyter 交互看板批量出告警级结论。</li>
+                </ul>
+            </div>
+        </div>
+        <p style="font-size:12.5px; color:var(--text-secondary); margin:8px 0 0;">
+            <span class="code-pill">V 关联</span> 数据真源 <code>macro_analysis.duckdb</code>（bronze 6 FRED 序列 → silver 318 行规整 → gold SAS 计量回灌）；产出 <code>01_macro_monetary_deepdive.ipynb</code> 与宏观研报 HTML。
+        </p>
 
         <h3 style="font-size:15px; margin:26px 0 10px; color:var(--text-primary);">三、工程证据与产物清单（多源采集 · SQL 可复验）</h3>
         <table class="archival-table">
