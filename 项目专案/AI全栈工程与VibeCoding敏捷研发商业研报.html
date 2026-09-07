@@ -424,9 +424,9 @@
         <ul class="nav-links">
             <li><a href="#sec-overview">§ 1 项目基本盘</a></li>
             <li><a href="#sec-methodology">§ 2 核心方法论</a></li>
-            <li><a href="#sec-dashboard">§ 3 研发效能图表</a></li>
-            <li><a href="#sec-prototypes">§ 4 六大业务原型</a></li>
-            <li><a href="#sec-statcase">§ 5 统计实证案例</a></li>
+            <li><a href="#sec-statcase">§ 3 统计实证案例</a></li>
+            <li><a href="#sec-dashboard">§ 4 研发效能图表</a></li>
+            <li><a href="#sec-prototypes">§ 5 六大业务原型</a></li>
             <li><a href="#sec-provenance">§ 6 数据依据与来源</a></li>
         </ul>
         <button class="nav-back-btn" onclick="handleBackToParent()" title="返回总舱">
@@ -579,7 +579,7 @@
             Vibe Coding 绝非无脑放任 AI 乱写代码，而是“以扎实的架构设计为骨架，以 AI 为高速打字机，以严密的测试为质检门禁”：
         </p>
         <div style="border-left:4px solid var(--accent-forest); background:linear-gradient(120deg,rgba(58,99,81,.08),transparent); padding:12px 16px; margin:6px 0 18px; font-size:14.5px; line-height:1.8; color:var(--text-primary);">
-            <strong>全篇立论</strong>　AI 的价值不在「生成代码」，而在 <strong>以 LLM × Harness 为支点，撬动项目 Context 这跟撑杆</strong>，把「数据处理」变成可交付的「工程成果」。下文所述 Vibe Coding 方法（§ 2）、DuckDB 湖仓与 MCP 数据总线（§ 3）、多引擎统计实证（§ 5），本质上是同一根杠杆的不同支点：<strong>先把自己积累的 Context 压缩、索引进湖仓，再用 LLM 理解、用 Harness 执行，最终撬动全部工程落地</strong>。本研报所有关键数字均可经 <code>v_vibe_engineering_overview</code> / <code>v_survey_engineering_evidence</code> 湖仓视图 SQL 复验。
+            <strong>全篇立论</strong>　AI 的价值不在「生成代码」，而在 <strong>以 LLM × Harness 为支点，撬动项目 Context 这跟撑杆</strong>，把「数据处理」变成可交付的「工程成果」。下文所述 Vibe Coding 方法（§ 2）、统计实证（§ 3）、DuckDB 湖仓与 BI（§ 4），本质上是同一根杠杆的不同支点：<strong>先把自己积累的 Context 压缩、索引进湖仓，再用 LLM 理解、用 Harness 执行，最终撬动全部工程落地</strong>。本研报所有关键数字均可经 <code>v_vibe_engineering_overview</code> / <code>v_survey_engineering_evidence</code> 湖仓视图 SQL 复验。
         </div>
         <div class="dossier-grid">
             <div class="dossier-item">
@@ -615,260 +615,6 @@
                 </ul>
             </div>
         </div>
-    </section>
-
-    <!-- 03 核心数据看板与 AI 专属原生图表 (ECharts 2×2 矩阵) -->
-    <section id="sec-dashboard" class="card">
-        <div class="card-caption-bar">
-            <h2 class="card-heading">研发效能、AI 智能体分工与全栈技术图表</h2>
-            <span class="card-tag">AI ENGINEERING METRICS & WORKFLOW CHARTS</span>
-        </div>
-        <p style="font-size:13px; color:var(--accent-forest); margin:0 0 6px;"><span class="code-pill">✔ 湖仓溯源</span> KPI 数字源自 <code>v_ai_work_summary</code>（120.8h 纯工时）/ <code>v_ai_tools_runtime</code>（13 代理 19,983 轮）/ <code>v_ai_git_repositories</code>（8 王牌 2,804 万行）</p>
-
-        <!-- 6 块顶线 KPI 磁贴 -->
-        <div class="kpi-deck">
-            <div class="kpi-tile">
-                <div class="kpi-eyebrow">DEVELOPMENT SPAN</div>
-                <div class="kpi-title-zh">实盘研发历时</div>
-                <div class="kpi-figure">近 10 <span>个月</span></div>
-                <div class="kpi-subtext">288 天自然跨度 (2025.11 - 2026.09)</div>
-            </div>
-            <div class="kpi-tile">
-                <div class="kpi-eyebrow">ACTIVE WORKDAYS</div>
-                <div class="kpi-title-zh">高强度实操投入</div>
-                <div class="kpi-figure">93 <span>个工作日</span></div>
-                <div class="kpi-subtext">折合 740+ 研发工时 · 纯敲代码 120.8h</div>
-            </div>
-            <div class="kpi-tile">
-                <div class="kpi-eyebrow">AI AGENT CALLS</div>
-                <div class="kpi-title-zh">AI 交互与指令轮次</div>
-                <div class="kpi-figure">1.99 <span>万次</span></div>
-                <div class="kpi-subtext">Claude Code / Cursor / Windsurf</div>
-            </div>
-            <div class="kpi-tile">
-                <div class="kpi-eyebrow">POLYGLOT STACK</div>
-                <div class="kpi-title-zh">全栈交付语言</div>
-                <div class="kpi-figure">5 <span>大主语言</span></div>
-                <div class="kpi-subtext">Python / TS / SQL / Rust / Go</div>
-            </div>
-            <div class="kpi-tile">
-                <div class="kpi-eyebrow">BUSINESS PROTOTYPES</div>
-                <div class="kpi-title-zh">垂直业务原型</div>
-                <div class="kpi-figure">6 <span>座</span></div>
-                <div class="kpi-subtext">外贸 / 电商 / 造价 / CAD / 企微 / 法务</div>
-            </div>
-            <div class="kpi-tile">
-                <div class="kpi-eyebrow">LINUX HOST & DEPLOY</div>
-                <div class="kpi-title-zh">系统底座与云端部署</div>
-                <div class="kpi-figure">Ubuntu <span>24.04</span></div>
-                <div class="kpi-subtext">Linux 原生开发 · 云服务器 Docker/Nginx/systemd</div>
-            </div>
-        </div>
-
-        <!-- 2×2 AI 专属原生图表栅格 -->
-        <div class="chart-grid">
-            <!-- FIG. 01 研发效能与交付周期对比 (水平对比柱状图) -->
-            <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
-                <div class="chart-header">
-                    <div class="chart-title-wrap">
-                        <span class="chart-fig-num">FIG. 01</span>
-                        <span class="chart-title">软件研发交付周期对比：传统开发 vs. Vibe Coding 敏捷协同</span>
-                    </div>
-                </div>
-                <div id="chart-velocity-bar" class="chart-container"></div>
-                <div class="chart-desc">
-                    注：单位为常规研发耗时（天）。直观呈现 Vibe Coding 对脚手架、核心编码、单元测试与原型交付的 5x~8x 提效倍率，同时凸显人脑在架构设计与边界把控上的核心不可替代性。
-                </div>
-            </div>
-
-            <!-- FIG. 02 13 款主流开发智能体分工与调用量分布 -->
-            <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
-                <div class="chart-header">
-                    <div class="chart-title-wrap">
-                        <span class="chart-fig-num">FIG. 02</span>
-                        <span class="chart-title">13 款主流开发智能体实战调用分布与工种拓扑 (1.99万次交互)</span>
-                    </div>
-                </div>
-                <div id="chart-agent-dist" class="chart-container"></div>
-                <div class="chart-desc">
-                    注：基于开发环境多 Agent 实际交互采样统计，呈现终端自驱代理（Claude Code 35.2%）、行内辅助（Cursor 20.3%）、深度推理（DSH 12.1%）等多工种协作格局。
-                </div>
-            </div>
-
-            <!-- FIG. 03 跨语言全栈交付生态分布 (南丁格尔玫瑰图) -->
-            <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
-                <div class="chart-header">
-                    <div class="chart-title-wrap">
-                        <span class="chart-fig-num">FIG. 03</span>
-                        <span class="chart-title">跨语言全栈交付生态 (Python / TS / SQL / Rust / Go)</span>
-                    </div>
-                </div>
-                <div id="chart-lang-rose" class="chart-container"></div>
-                <div class="chart-desc">
-                    注：真实代码库语言分布。体现后端并发与计算（Python 42%）、前端与企微交互（TS 28%）、湖仓分析（SQL 18%）、底层高性能工具（Rust 7%）与运维代理（Go 5%）的跨语言交付体系。
-                </div>
-            </div>
-
-            <!-- FIG. 04 6 大业务原型场景覆盖与痛点解决力四象限散点图 -->
-            <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
-                <div class="chart-header">
-                    <div class="chart-title-wrap">
-                        <span class="chart-fig-num">FIG. 04</span>
-                        <span class="chart-title">6 大自研业务原型场景覆盖与功能解决力象限</span>
-                    </div>
-                </div>
-                <div id="chart-proto-scatter" class="chart-container"></div>
-                <div class="chart-desc">
-                    注：气泡面积代表代码规模（LOC）。横轴映射系统技术栈与底层门槛，纵轴映射解决的业务痛点功能数。直观展现 6 个原型在各自垂直业务领域的落地深度。
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 04 6 大垂直场景自研业务原型实战清单 -->
-    <section id="sec-prototypes" class="card">
-        <div class="card-caption-bar">
-            <h2 class="card-heading">6 大垂直场景自研业务原型实战与功能交付清单</h2>
-            <span class="card-tag">FUNCTIONAL PROTOTYPE REGISTRY</span>
-        </div>
-        <p style="font-size:13px; color:var(--accent-forest); margin:0 0 6px;"><span class="code-pill">✔ 湖仓溯源</span> 6 大原型对应 <code>v_all_local_git_repositories</code>（外贸拓客 / 商业 BI / 造价 / CAD / 企微 / 法务）</p>
-        <p style="font-size:14px; color:var(--text-secondary); margin-bottom:16px;">
-            坚持“讲清楚真实功能、解决什么痛点、如何落地，杜绝浮夸概念”。以下 6 座系统原型均基于真实需求构建，具备完整代码实现与本地可运行链路：
-        </p>
-
-        <table class="archival-table">
-            <thead>
-                <tr>
-                    <th style="width:6%;">序号</th>
-                    <th style="width:20%;">业务原型系统名称</th>
-                    <th style="width:14%;">代码规模统计</th>
-                    <th style="width:38%;">核心业务功能与解决痛点</th>
-                    <th style="width:22%;">技术底座与关键实现</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>01</strong></td>
-                    <td>
-                        <strong style="color:var(--text-primary);">外贸自动化拓客助手</strong><br/>
-                        <span class="pill-badge">B2B 出海拓客</span>
-                    </td>
-                    <td>
-                        <strong style="font-family:'JetBrains Mono';">119,595</strong> 行<br/>
-                        <span style="font-size:11.5px; color:var(--text-tertiary);">37 commits · 928 files</span>
-                    </td>
-                    <td>
-                        <strong>解决海外买家线索分散、邮箱真伪难辨、开发信石沉大海痛点</strong>：<br/>
-                        多渠道抓取海外采购商企业画像与关键决策人，通过真实 DNS MX 协议探测邮箱存活状态，基于行业背景与买家特征自动化生成高转化外贸开发信。
-                    </td>
-                    <td>
-                        <span class="code-pill">Ubuntu / Linux</span> <span class="code-pill">Python</span><br/>
-                        <span class="code-pill">SQLite</span> DNS MX 路由探针<br/>
-                        WhatsApp / 飞书 WS 网关
-                    </td>
-                </tr>
-                <tr>
-                    <td><strong>02</strong></td>
-                    <td>
-                        <strong style="color:var(--text-primary);">电商商业分析与 BI 矩阵</strong><br/>
-                        <span class="pill-badge">数据中枢与大盘</span>
-                    </td>
-                    <td>
-                        <strong style="font-family:'JetBrains Mono';">114,529</strong> 行<br/>
-                        <span style="font-size:11.5px; color:var(--text-tertiary);">20 commits · 1,776 files</span>
-                    </td>
-                    <td>
-                        <strong>解决海量电商订单聚合迟缓、智能体无法直接分析离线湖仓痛点</strong>：<br/>
-                        依托 DuckDB 现代进程内列式湖仓与 MCP 协议，赋予 Agent 免运维即席 SQL 分析与向量检索能力；支持用户 RFM 分群、留存率分析；构建 Apache Superset 深度探索大盘与 FineBI 商业驾驶舱。
-                    </td>
-                    <td>
-                        <span class="code-pill">DuckDB (vss/httpfs)</span><br/>
-                        <span class="code-pill">DuckDB MCP 协议</span><br/>
-                        <span class="code-pill">Superset / FineBI</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td><strong>03</strong></td>
-                    <td>
-                        <strong style="color:var(--text-primary);">工程造价与软装核算平台</strong><br/>
-                        <span class="pill-badge">垂直行业 RAG</span>
-                    </td>
-                    <td>
-                        <strong style="font-family:'JetBrains Mono';">120,103</strong> 行<br/>
-                        <span style="font-size:11.5px; color:var(--text-tertiary);">68 commits · 616 files</span>
-                    </td>
-                    <td>
-                        <strong>解决工程定额规范晦涩、材料清单与单价匹配耗时易错痛点</strong>：<br/>
-                        融合稠密向量 (Dense)、关键词精确匹配 (BM25)、定额层级图谱 (Neo4j) 与 BGE 重排模型，实现秒级高精度工程定额检索与软装 BOM 造价核算。
-                    </td>
-                    <td>
-                        <span class="code-pill">Neo4j</span> <span class="code-pill">Milvus</span> <span class="code-pill">BM25</span><br/>
-                        FastAPI + 混合多路重排<br/>
-                        云服务器集群 + Nginx 反代部署
-                    </td>
-                </tr>
-                <tr>
-                    <td><strong>04</strong></td>
-                    <td>
-                        <strong style="color:var(--text-primary);">建筑 CAD 户型拓扑解析引擎</strong><br/>
-                        <span class="pill-badge">CAD/BIM 几何计算</span>
-                    </td>
-                    <td>
-                        <strong style="font-family:'JetBrains Mono';">71,998</strong> 行<br/>
-                        <span style="font-size:11.5px; color:var(--text-tertiary);">9 commits · 2,932 files</span>
-                    </td>
-                    <td>
-                        <strong>解决 CAD 施工图离散线段无法自动识别人体工学、房间与面积痛点</strong>：<br/>
-                        基于 DCEL 双半边数据结构实现离散线段自动构面与闭合，运行 Isovist 空间视域通透性分析算法，并支持自动化生成并导出标准化建筑 DXF 图纸。
-                    </td>
-                    <td>
-                        <span class="code-pill">Python</span> <span class="code-pill">ezdxf</span><br/>
-                        DCEL 双半边拓扑算法<br/>
-                        Isovist 空间视域计算
-                    </td>
-                </tr>
-                <tr>
-                    <td><strong>05</strong></td>
-                    <td>
-                        <strong style="color:var(--text-primary);">美业私域客户运营与智能客服</strong><br/>
-                        <span class="pill-badge">企微私域自动化</span>
-                    </td>
-                    <td>
-                        <strong style="font-family:'JetBrains Mono';">132,510</strong> 行<br/>
-                        <span style="font-size:11.5px; color:var(--text-tertiary);">189 commits · 5,421 files</span>
-                    </td>
-                    <td>
-                        <strong>解决私域社群响应不及时、预约排班与客情流转低效脱节痛点</strong>：<br/>
-                        原生对接企业微信 (WeCom API & WebSocket 长连接)，实现客户咨询多轮智能应答、预约排班自动同步、客户服务历史与画像归集。
-                    </td>
-                    <td>
-                        <span class="code-pill">TypeScript</span> <span class="code-pill">WeCom</span><br/>
-                        PostgreSQL (pgvector)<br/>
-                        systemd 守护自愈 + WebSocket
-                    </td>
-                </tr>
-                <tr>
-                    <td><strong>06</strong></td>
-                    <td>
-                        <strong style="color:var(--text-primary);">法律合规文书知识图谱</strong><br/>
-                        <span class="pill-badge">法律知识工程</span>
-                    </td>
-                    <td>
-                        <strong style="font-family:'JetBrains Mono';">86,154</strong> 行<br/>
-                        <span style="font-size:11.5px; color:var(--text-tertiary);">10 commits · 528 files</span>
-                    </td>
-                    <td>
-                        <strong>解决企业法务合同审查耗时漫长、合规条款难以全面溯源痛点</strong>：<br/>
-                        构建司法裁判文书与法律条文知识图谱，实现合同条款关键法律风险自动对标、潜在违约条款预警与依据法规精准引证溯源。
-                    </td>
-                    <td>
-                        <span class="code-pill">Neo4j</span> <span class="code-pill">PostgreSQL</span><br/>
-                        法律实体拓扑抽取<br/>
-                        合同合规风险检测
-                    </td>
-                </tr>
-            </tbody>
-        </table>
     </section>
 
     <!-- 05 统计实证案例：Vibe Coding 驱动 SPSS + SAS 多引擎交叉验证 -->
@@ -1195,6 +941,260 @@
             <span style="font-size:12px; font-family:'JetBrains Mono',monospace; color:var(--text-tertiary);">数据真源 · 单源直达：<code>career_analytics_lake.duckdb</code> → 视图群 <code>v_survey_sas_key_stats</code> / <code>v_survey_macro_gold</code> / <code>v_survey_pain_points</code> / <code>v_survey_engineering_evidence</code> / <code>v_survey_empirical_bronze</code> / <code>v_survey_empirical_audit</code>（<code>data/views_survey_empirical_direct_lake.sql</code>），bronze 层底账 <code>data/survey_empirical_bronze.parquet</code> 77 条实证记录，覆盖引擎数字 + 多源工程证据 + 第三方开源依赖生态（8 层 45+ 成熟库）+ Agent 运行时实跑痕迹（hermes 23 skills / 3 cron + DSH 9 项目 session），每条带证据来源与清洗口径，SQL 可复验。</span>
         </p>
     </section>
+    <!-- 03 核心数据看板与 AI 专属原生图表 (ECharts 2×2 矩阵) -->
+    <section id="sec-dashboard" class="card">
+        <div class="card-caption-bar">
+            <h2 class="card-heading">研发效能、AI 智能体分工与全栈技术图表</h2>
+            <span class="card-tag">AI ENGINEERING METRICS & WORKFLOW CHARTS</span>
+        </div>
+        <p style="font-size:13px; color:var(--accent-forest); margin:0 0 6px;"><span class="code-pill">✔ 湖仓溯源</span> KPI 数字源自 <code>v_ai_work_summary</code>（120.8h 纯工时）/ <code>v_ai_tools_runtime</code>（13 代理 19,983 轮）/ <code>v_ai_git_repositories</code>（8 王牌 2,804 万行）</p>
+
+        <!-- 6 块顶线 KPI 磁贴 -->
+        <div class="kpi-deck">
+            <div class="kpi-tile">
+                <div class="kpi-eyebrow">DEVELOPMENT SPAN</div>
+                <div class="kpi-title-zh">实盘研发历时</div>
+                <div class="kpi-figure">近 10 <span>个月</span></div>
+                <div class="kpi-subtext">288 天自然跨度 (2025.11 - 2026.09)</div>
+            </div>
+            <div class="kpi-tile">
+                <div class="kpi-eyebrow">ACTIVE WORKDAYS</div>
+                <div class="kpi-title-zh">高强度实操投入</div>
+                <div class="kpi-figure">93 <span>个工作日</span></div>
+                <div class="kpi-subtext">折合 740+ 研发工时 · 纯敲代码 120.8h</div>
+            </div>
+            <div class="kpi-tile">
+                <div class="kpi-eyebrow">AI AGENT CALLS</div>
+                <div class="kpi-title-zh">AI 交互与指令轮次</div>
+                <div class="kpi-figure">1.99 <span>万次</span></div>
+                <div class="kpi-subtext">Claude Code / Cursor / Windsurf</div>
+            </div>
+            <div class="kpi-tile">
+                <div class="kpi-eyebrow">POLYGLOT STACK</div>
+                <div class="kpi-title-zh">全栈交付语言</div>
+                <div class="kpi-figure">5 <span>大主语言</span></div>
+                <div class="kpi-subtext">Python / TS / SQL / Rust / Go</div>
+            </div>
+            <div class="kpi-tile">
+                <div class="kpi-eyebrow">BUSINESS PROTOTYPES</div>
+                <div class="kpi-title-zh">垂直业务原型</div>
+                <div class="kpi-figure">6 <span>座</span></div>
+                <div class="kpi-subtext">外贸 / 电商 / 造价 / CAD / 企微 / 法务</div>
+            </div>
+            <div class="kpi-tile">
+                <div class="kpi-eyebrow">LINUX HOST & DEPLOY</div>
+                <div class="kpi-title-zh">系统底座与云端部署</div>
+                <div class="kpi-figure">Ubuntu <span>24.04</span></div>
+                <div class="kpi-subtext">Linux 原生开发 · 云服务器 Docker/Nginx/systemd</div>
+            </div>
+        </div>
+
+        <!-- 2×2 AI 专属原生图表栅格 -->
+        <div class="chart-grid">
+            <!-- FIG. 01 研发效能与交付周期对比 (水平对比柱状图) -->
+            <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
+                <div class="chart-header">
+                    <div class="chart-title-wrap">
+                        <span class="chart-fig-num">FIG. 01</span>
+                        <span class="chart-title">软件研发交付周期对比：传统开发 vs. Vibe Coding 敏捷协同</span>
+                    </div>
+                </div>
+                <div id="chart-velocity-bar" class="chart-container"></div>
+                <div class="chart-desc">
+                    注：单位为常规研发耗时（天）。直观呈现 Vibe Coding 对脚手架、核心编码、单元测试与原型交付的 5x~8x 提效倍率，同时凸显人脑在架构设计与边界把控上的核心不可替代性。
+                </div>
+            </div>
+
+            <!-- FIG. 02 13 款主流开发智能体分工与调用量分布 -->
+            <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
+                <div class="chart-header">
+                    <div class="chart-title-wrap">
+                        <span class="chart-fig-num">FIG. 02</span>
+                        <span class="chart-title">13 款主流开发智能体实战调用分布与工种拓扑 (1.99万次交互)</span>
+                    </div>
+                </div>
+                <div id="chart-agent-dist" class="chart-container"></div>
+                <div class="chart-desc">
+                    注：基于开发环境多 Agent 实际交互采样统计，呈现终端自驱代理（Claude Code 35.2%）、行内辅助（Cursor 20.3%）、深度推理（DSH 12.1%）等多工种协作格局。
+                </div>
+            </div>
+
+            <!-- FIG. 03 跨语言全栈交付生态分布 (南丁格尔玫瑰图) -->
+            <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
+                <div class="chart-header">
+                    <div class="chart-title-wrap">
+                        <span class="chart-fig-num">FIG. 03</span>
+                        <span class="chart-title">跨语言全栈交付生态 (Python / TS / SQL / Rust / Go)</span>
+                    </div>
+                </div>
+                <div id="chart-lang-rose" class="chart-container"></div>
+                <div class="chart-desc">
+                    注：真实代码库语言分布。体现后端并发与计算（Python 42%）、前端与企微交互（TS 28%）、湖仓分析（SQL 18%）、底层高性能工具（Rust 7%）与运维代理（Go 5%）的跨语言交付体系。
+                </div>
+            </div>
+
+            <!-- FIG. 04 6 大业务原型场景覆盖与痛点解决力四象限散点图 -->
+            <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
+                <div class="chart-header">
+                    <div class="chart-title-wrap">
+                        <span class="chart-fig-num">FIG. 04</span>
+                        <span class="chart-title">6 大自研业务原型场景覆盖与功能解决力象限</span>
+                    </div>
+                </div>
+                <div id="chart-proto-scatter" class="chart-container"></div>
+                <div class="chart-desc">
+                    注：气泡面积代表代码规模（LOC）。横轴映射系统技术栈与底层门槛，纵轴映射解决的业务痛点功能数。直观展现 6 个原型在各自垂直业务领域的落地深度。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 04 6 大垂直场景自研业务原型实战清单 -->
+    <section id="sec-prototypes" class="card">
+        <div class="card-caption-bar">
+            <h2 class="card-heading">6 大垂直场景自研业务原型实战与功能交付清单</h2>
+            <span class="card-tag">FUNCTIONAL PROTOTYPE REGISTRY</span>
+        </div>
+        <p style="font-size:13px; color:var(--accent-forest); margin:0 0 6px;"><span class="code-pill">✔ 湖仓溯源</span> 6 大原型对应 <code>v_all_local_git_repositories</code>（外贸拓客 / 商业 BI / 造价 / CAD / 企微 / 法务）</p>
+        <p style="font-size:14px; color:var(--text-secondary); margin-bottom:16px;">
+            坚持“讲清楚真实功能、解决什么痛点、如何落地，杜绝浮夸概念”。以下 6 座系统原型均基于真实需求构建，具备完整代码实现与本地可运行链路：
+        </p>
+
+        <table class="archival-table">
+            <thead>
+                <tr>
+                    <th style="width:6%;">序号</th>
+                    <th style="width:20%;">业务原型系统名称</th>
+                    <th style="width:14%;">代码规模统计</th>
+                    <th style="width:38%;">核心业务功能与解决痛点</th>
+                    <th style="width:22%;">技术底座与关键实现</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>01</strong></td>
+                    <td>
+                        <strong style="color:var(--text-primary);">外贸自动化拓客助手</strong><br/>
+                        <span class="pill-badge">B2B 出海拓客</span>
+                    </td>
+                    <td>
+                        <strong style="font-family:'JetBrains Mono';">119,595</strong> 行<br/>
+                        <span style="font-size:11.5px; color:var(--text-tertiary);">37 commits · 928 files</span>
+                    </td>
+                    <td>
+                        <strong>解决海外买家线索分散、邮箱真伪难辨、开发信石沉大海痛点</strong>：<br/>
+                        多渠道抓取海外采购商企业画像与关键决策人，通过真实 DNS MX 协议探测邮箱存活状态，基于行业背景与买家特征自动化生成高转化外贸开发信。
+                    </td>
+                    <td>
+                        <span class="code-pill">Ubuntu / Linux</span> <span class="code-pill">Python</span><br/>
+                        <span class="code-pill">SQLite</span> DNS MX 路由探针<br/>
+                        WhatsApp / 飞书 WS 网关
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>02</strong></td>
+                    <td>
+                        <strong style="color:var(--text-primary);">电商商业分析与 BI 矩阵</strong><br/>
+                        <span class="pill-badge">数据中枢与大盘</span>
+                    </td>
+                    <td>
+                        <strong style="font-family:'JetBrains Mono';">114,529</strong> 行<br/>
+                        <span style="font-size:11.5px; color:var(--text-tertiary);">20 commits · 1,776 files</span>
+                    </td>
+                    <td>
+                        <strong>解决海量电商订单聚合迟缓、智能体无法直接分析离线湖仓痛点</strong>：<br/>
+                        依托 DuckDB 现代进程内列式湖仓与 MCP 协议，赋予 Agent 免运维即席 SQL 分析与向量检索能力；支持用户 RFM 分群、留存率分析；构建 Apache Superset 深度探索大盘与 FineBI 商业驾驶舱。
+                    </td>
+                    <td>
+                        <span class="code-pill">DuckDB (vss/httpfs)</span><br/>
+                        <span class="code-pill">DuckDB MCP 协议</span><br/>
+                        <span class="code-pill">Superset / FineBI</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>03</strong></td>
+                    <td>
+                        <strong style="color:var(--text-primary);">工程造价与软装核算平台</strong><br/>
+                        <span class="pill-badge">垂直行业 RAG</span>
+                    </td>
+                    <td>
+                        <strong style="font-family:'JetBrains Mono';">120,103</strong> 行<br/>
+                        <span style="font-size:11.5px; color:var(--text-tertiary);">68 commits · 616 files</span>
+                    </td>
+                    <td>
+                        <strong>解决工程定额规范晦涩、材料清单与单价匹配耗时易错痛点</strong>：<br/>
+                        融合稠密向量 (Dense)、关键词精确匹配 (BM25)、定额层级图谱 (Neo4j) 与 BGE 重排模型，实现秒级高精度工程定额检索与软装 BOM 造价核算。
+                    </td>
+                    <td>
+                        <span class="code-pill">Neo4j</span> <span class="code-pill">Milvus</span> <span class="code-pill">BM25</span><br/>
+                        FastAPI + 混合多路重排<br/>
+                        云服务器集群 + Nginx 反代部署
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>04</strong></td>
+                    <td>
+                        <strong style="color:var(--text-primary);">建筑 CAD 户型拓扑解析引擎</strong><br/>
+                        <span class="pill-badge">CAD/BIM 几何计算</span>
+                    </td>
+                    <td>
+                        <strong style="font-family:'JetBrains Mono';">71,998</strong> 行<br/>
+                        <span style="font-size:11.5px; color:var(--text-tertiary);">9 commits · 2,932 files</span>
+                    </td>
+                    <td>
+                        <strong>解决 CAD 施工图离散线段无法自动识别人体工学、房间与面积痛点</strong>：<br/>
+                        基于 DCEL 双半边数据结构实现离散线段自动构面与闭合，运行 Isovist 空间视域通透性分析算法，并支持自动化生成并导出标准化建筑 DXF 图纸。
+                    </td>
+                    <td>
+                        <span class="code-pill">Python</span> <span class="code-pill">ezdxf</span><br/>
+                        DCEL 双半边拓扑算法<br/>
+                        Isovist 空间视域计算
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>05</strong></td>
+                    <td>
+                        <strong style="color:var(--text-primary);">美业私域客户运营与智能客服</strong><br/>
+                        <span class="pill-badge">企微私域自动化</span>
+                    </td>
+                    <td>
+                        <strong style="font-family:'JetBrains Mono';">132,510</strong> 行<br/>
+                        <span style="font-size:11.5px; color:var(--text-tertiary);">189 commits · 5,421 files</span>
+                    </td>
+                    <td>
+                        <strong>解决私域社群响应不及时、预约排班与客情流转低效脱节痛点</strong>：<br/>
+                        原生对接企业微信 (WeCom API & WebSocket 长连接)，实现客户咨询多轮智能应答、预约排班自动同步、客户服务历史与画像归集。
+                    </td>
+                    <td>
+                        <span class="code-pill">TypeScript</span> <span class="code-pill">WeCom</span><br/>
+                        PostgreSQL (pgvector)<br/>
+                        systemd 守护自愈 + WebSocket
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>06</strong></td>
+                    <td>
+                        <strong style="color:var(--text-primary);">法律合规文书知识图谱</strong><br/>
+                        <span class="pill-badge">法律知识工程</span>
+                    </td>
+                    <td>
+                        <strong style="font-family:'JetBrains Mono';">86,154</strong> 行<br/>
+                        <span style="font-size:11.5px; color:var(--text-tertiary);">10 commits · 528 files</span>
+                    </td>
+                    <td>
+                        <strong>解决企业法务合同审查耗时漫长、合规条款难以全面溯源痛点</strong>：<br/>
+                        构建司法裁判文书与法律条文知识图谱，实现合同条款关键法律风险自动对标、潜在违约条款预警与依据法规精准引证溯源。
+                    </td>
+                    <td>
+                        <span class="code-pill">Neo4j</span> <span class="code-pill">PostgreSQL</span><br/>
+                        法律实体拓扑抽取<br/>
+                        合同合规风险检测
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
 
     <!-- 统一底层单一真实源数据依据 -->
     <section id="sec-provenance" class="card" style="margin-top: 36px;">
@@ -1203,7 +1203,7 @@
             <span class="card-tag">SOURCES ｜ PRJ-AI-VIBE-2026</span>
         </div>
         <p style="font-size:14px; color:var(--text-secondary); line-height:1.75; margin-bottom:14px;">
-            本研报所述 8 大核心受控仓库（2,804 万行代码）、120.8 小时 WakaTime 真实实操编码记录、1.99 万轮 AI 开发交互日志及 6 大垂直场景自研业务原型，均来自本地 Git 仓库提交记录、DuckDB 分析视图及 Linux 生产环境部署实测，数据真实透明、代码完全受控。§ 5 统计实证案例全部数字可溯源至本地仓库 <code>~/projects/survey-analysis</code>：SAS 官方云端原生 ODS 输出（6,281 行 HTML）、执行日志与截图录屏凭据、SPSS 引擎原生结果文本，以及 DuckDB gold 层回灌表。
+            本研报所述 8 大核心受控仓库（2,804 万行代码）、120.8 小时 WakaTime 真实实操编码记录、1.99 万轮 AI 开发交互日志及 6 大垂直场景自研业务原型，均来自本地 Git 仓库提交记录、DuckDB 分析视图及 Linux 生产环境部署实测，数据真实透明、代码完全受控。§ 3 统计实证案例全部数字可溯源至本地仓库 <code>~/projects/survey-analysis</code>：SAS 官方云端原生 ODS 输出（6,281 行 HTML）、执行日志与截图录屏凭据、SPSS 引擎原生结果文本，以及 DuckDB gold 层回灌表。
         </p>
 
         <div style="font-size:13px; color:var(--text-tertiary); line-height:1.6; margin-bottom:16px;">
