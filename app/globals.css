@@ -860,3 +860,18 @@
         border-bottom: 1.5px solid var(--border-strong);
     }
 
+/* === C 位核心能力卡：VIBE+ 技能块独占首行横幅 === */
+.skill-tile--highlight {
+    grid-column: 1 / -1;
+    border-top: 3px solid var(--accent-bronze) !important;
+    background: linear-gradient(180deg, #fdfbf7 0%, #ffffff 100%);
+    box-shadow: var(--card-hover-shadow);
+}
+.skill-tile--highlight h4 {
+    color: var(--accent-navy);
+    font-size: 15.5px;
+    letter-spacing: 0.02em;
+}
+.skill-tile--highlight li strong {
+    color: var(--accent-navy);
+}

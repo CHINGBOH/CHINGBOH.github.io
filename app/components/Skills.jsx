@@ -13,7 +13,7 @@ export default function Skills() {
 
       <div className="skills-grid">
         {skills.tiles.map((tile) => (
-          <div className="skill-tile" key={tile.title} data-highlight={tile.highlight || undefined}>
+          <div className={`skill-tile${tile.highlight ? ' skill-tile--highlight' : ''}`} key={tile.title} data-highlight={tile.highlight || undefined}>
             <h4>{tile.title}</h4>
             <ul>
               {tile.items.map((item, i) => (

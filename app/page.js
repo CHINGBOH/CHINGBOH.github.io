@@ -11,9 +11,9 @@ export default function HomePage() {
     <div className="container">
       <Nav />
       <Hero />
-      <Timeline />
-      <Cases />
       <Skills />
+      <Cases />
+      <Timeline />
       <Provenance />
     </div>
   );
