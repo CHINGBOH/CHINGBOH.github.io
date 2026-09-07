@@ -408,19 +408,20 @@
             white-space: nowrap;
         }
 
-        /* 案例卡片 2x2 网格 */
+        /* 案例卡片 4 列网格 (参照扉页 pillars: 4->2->1 渐变) */
         .cases-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 18px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 14px;
             margin-bottom: 40px;
         }
         .case-card {
+            min-width: 0;
             background: #ffffff;
             border: 1px solid var(--border-hairline);
             border-top: 3.5px solid var(--accent-navy);
             border-radius: var(--radius-md);
-            padding: 20px 22px;
+            padding: 16px 18px;
             box-shadow: var(--card-shadow);
             display: flex;
             flex-direction: column;
@@ -673,13 +674,14 @@
         }
 
         @media (max-width: 900px) {
-            .cases-grid { grid-template-columns: 1fr; }
+            .cases-grid { grid-template-columns: repeat(2, 1fr); }
             .skills-grid { grid-template-columns: repeat(2, 1fr); }
             .provenance-views-list { grid-template-columns: 1fr; }
             .nav-links { display: none; }
             .hero-pillars-grid { grid-template-columns: repeat(2, 1fr); }
         }
         @media (max-width: 600px) {
+            .cases-grid { grid-template-columns: 1fr; }
             .skills-grid { grid-template-columns: 1fr; }
             .hero-title { font-size: 26px; }
             .hero-contacts { flex-direction: column; align-items: flex-start; gap: 4px; }
