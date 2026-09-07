@@ -55,7 +55,7 @@ export const hero = {
     { label: '手机', value: '130-7787-2618' },
     { label: '邮箱', value: 'kinpual@foxmail.com', href: 'mailto:kinpual@foxmail.com' },
   ],
-  headline: '华中科技大学统计学 · 数字化解决方案顾问 · 全业务流程操盘者与工程化落地者',
+  headline: 'VIBE Coding+ 全链工具实践者 · 数字化解决方案顾问',
   thesis: (
     <>
       数学统计科班出身，多年实体业务让我沉淀了对真实数据和经营的直觉。2024 年起专注用 <strong>VIBE Coding+ 敏捷研发</strong>驱动全链工具——从<strong>生产级</strong>的 DuckDB 数据分析、FineBI 报表、SPSS及SAS 统计建模，到<strong>积木玩具级</strong>的外贸拓客系统、电商数据中台、美业 OS、RAG 知识库——覆盖从数据到应用的整条链路。
