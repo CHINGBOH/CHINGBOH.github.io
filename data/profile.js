@@ -110,14 +110,15 @@ export const timeline = {
       bullets: [
         '结合二十年数理分析与实体商业操盘经验，以 VIBE+ 敏捷研发方法论（LLM×Harness 支点 + Context 杠杆）自主推进企业级数字化原型研发，主导混合检索 RAG 知识库、工作流编排 Agent 状态机与外贸业务自动化工具的系统设计与开发。',
         '基于 DuckDB 现代列式分析中枢，深度整合 vss 向量检索、httpfs 远程直查与跨源 Scanner 插件生态，并通过 Model Context Protocol (FastMCP) 建立 AI Agent 对本地湖仓与异构数据的即席分析与工具调用闭环。',
+        '以 VIBE Coding+ 敏捷研发驱动生产级工具链（DuckDB 数据分析 / FineBI 报表 / SPSS 及 SAS 统计建模），并沉淀外贸拓客、电商数据中台、美业 OS、RAG 等积木玩具级原型，覆盖从数据到应用的整条链路。',
       ],
-      tags: ['VIBE+ 敏捷研发', 'RAG 混合检索', 'Agent 状态机', 'DuckDB 插件生态', 'FastMCP 协议'],
+      tags: ['VIBE Coding+ 敏捷研发', '生产级工具链', 'DuckDB/FineBI/SPSS/SAS', 'RAG 混合检索', 'Agent 状态机', 'FastMCP 协议'],
     },
     {
       period: '2014.03 - 2024.06',
       duration: '10年',
       org: '深圳市广田云软装艺术科技有限公司 (广田全资子公司)',
-      role: '全资子公司筹办初创负责人 · 大宗商业工程总操盘 · 重大工程专班牵头人',
+      role: '全资子公司筹办初创负责人 · 重大工程专班牵头人',
       bullets: [
         '【企业创办与制度奠基】承接集团上市公司 3,000 万元超募投资创办全资子公司，从 0 到 1 组建 45 人初创团队编制，主笔发布八大业务模块 730 条管理制度总纲与 1,491 ㎡ 现代美学旗舰展厅，奠定 10 年 100% 用工合规与零劳动仲裁治理底盘。',
         '【重大工程专班总操盘】统领全盘 135 份真实盖章合同大盘（签约 6.83 亿元，确权产值 5.92 亿元），打破传统科层以重大工程为战元牵头跨部门敏捷专班，主揽并总操盘遵义大酒店（1.25 亿国宾工程）、开元名都（1.03 亿）、汇川康养城（1.09 亿）等 24 项标杆工程全流程高品质交付。',
@@ -170,7 +171,7 @@ export const timeline = {
 export const cases = {
   badge: 'REPRESENTATIVE MONOGRAPHS & CAREER DOSSIERS',
   title: '代表性商业专案与核心履职档案',
-  subtext: '系统涵盖数理学术奠基、上市公司合规治理与资本运作、实体供应链大盘操盘与数字化技术研发四大独立专案研报',
+  subtext: '四大专案对应点题主线：VIBE Coding+ 全链工具、数理学术底座、实体业务沉淀与治理延伸',
   items: [
     {
       badge: '技术与数字化',
@@ -180,25 +181,8 @@ export const cases = {
       abstract: '以 VIBE+ 敏捷研发（LLM×Harness 支点 + Context 杠杆）展现围绕 DuckDB 现代列式湖仓与丰富插件生态（vss 向量检索、httpfs 远程直查、跨源 scanner、spatial 空间计算）、Model Context Protocol (FastMCP) 统一智能体数据协议、混合检索 RAG 与流程编排状态机，实现从本地分析到智能体即席推理的全栈研发闭环。',
       cta: '查看研发全貌',
       monograph: 'monograph-ai',
-    },
-    {
-      badge: '商业与操盘',
-      period: '2014 - 2024',
-      title: '广田全资子公司创办奠基与大宗商业工程大盘',
-      scope: '45 人编制 · 730 条制度总纲 · 135 份合同 (6.83 亿) · 遵义等破亿标杆',
-      abstract: '完整复盘全资子公司创办历程、制度建设与商业工程大盘操盘实践，沉淀多轨博弈定价模型、价值工程降本与四维资金回款防线。',
-      cta: '查看大盘全景',
-      monograph: 'monograph-cloud',
-    },
-    {
-      badge: '合规与资本',
-      period: '2011 - 2014',
-      title: '上市公司治理合规、重大发债尽调与总经办运营',
-      scope: '深交所信披最高 A 级 · 12 亿私募债尽调 · 19 期经营例会督办',
-      abstract: '展现上市公司董事会办公室及证券事务部的法定信息披露实操、12 亿元发债融资尽调底稿归档，以及总经办经营例会决议的闭环督办体系。',
-      cta: '查看合规专案',
-      monograph: 'monograph-gov',
-    },
+    },,
+
     {
       badge: '学术奠基',
       period: '2002 - 2006',
@@ -208,13 +192,33 @@ export const cases = {
       cta: '查看专案详情',
       monograph: 'monograph-hust',
     },
+
+    {
+      badge: '商业与操盘',
+      period: '2014 - 2024',
+      title: '广田全资子公司创办奠基与大宗商业工程大盘',
+      scope: '45 人编制 · 730 条制度总纲 · 135 份合同 (6.83 亿) · 遵义等破亿标杆',
+      abstract: '完整复盘全资子公司创办历程、制度建设与商业工程大盘操盘实践，沉淀多轨博弈定价模型、价值工程降本与四维资金回款防线。',
+      cta: '查看大盘全景',
+      monograph: 'monograph-cloud',
+    },,
+
+    {
+      badge: '合规与资本',
+      period: '2011 - 2014',
+      title: '上市公司治理合规、重大发债尽调与总经办运营',
+      scope: '深交所信披最高 A 级 · 12 亿私募债尽调 · 19 期经营例会督办',
+      abstract: '展现上市公司董事会办公室及证券事务部的法定信息披露实操、12 亿元发债融资尽调底稿归档，以及总经办经营例会决议的闭环督办体系。',
+      cta: '查看合规专案',
+      monograph: 'monograph-gov',
+    },,
   ],
 };
 
 export const skills = {
   badge: 'CORE COMPETENCIES',
   title: '专业能力与技术栈底座',
-  subtext: '二十年复合复利所沉淀的跨界知识结构',
+  subtext: '从数理科班出发，以 VIBE Coding+ 敏捷研发驱动全链工具，覆盖从数据到应用的整条链路',
   tiles: [
     {
       title: '软件工程与数字化解决方案',
@@ -229,27 +233,8 @@ export const skills = {
         'Agent 状态机、工作流编排与自动化工具链交付',
         '数据湖仓 (DuckDB) SSOT 单一真源 · 视图引擎 SQL 复验 · Git / Linux 敏捷交付',
       ],
-    },
-    {
-      title: '企业商业操盘与组织治理',
-      items: [
-        '全资子公司从0到1组织架构搭建、初创编制与制度总纲制定',
-        '重大商业工程跨部门敏捷专班组建、资源调度与端到端实操操盘',
-        '采销多轨博弈定价模型、价值工程 (VE) 降本与 30%~35% 毛利锁定',
-        '四维刚性资金回款防线、苛刻支付条款抗辩与现金流风险阻断',
-        '大宗工程全生命周期集中交验、竣工结算审计答辩与合法收益确权',
-      ],
-    },
-    {
-      title: '上市公司治理与资本合规',
-      items: [
-        '深交所上市公司法定信息披露规范 (考评最高A级)',
-        '中小企业私募债及重大融资尽调底稿管理',
-        '上市公司三会议事规则与内幕信息登记',
-        '同业竞品深度财务对标与竞争战略分析',
-        '总经办经营例会决议闭环督办与跨部门推进',
-      ],
-    },
+    },,
+
     {
       title: '数理统计与数据分析',
       items: [
@@ -260,6 +245,28 @@ export const skills = {
         '底层资产现金流折现测算与量化风控',
       ],
     },
+
+    {
+      title: '企业商业操盘与组织治理',
+      items: [
+        '全资子公司从0到1组织架构搭建、初创编制与制度总纲制定',
+        '重大商业工程跨部门敏捷专班组建、资源调度与端到端实操操盘',
+        '采销多轨博弈定价模型、价值工程 (VE) 降本与 30%~35% 毛利锁定',
+        '四维刚性资金回款防线、苛刻支付条款抗辩与现金流风险阻断',
+        '大宗工程全生命周期集中交验、竣工结算审计答辩与合法收益确权',
+      ],
+    },,
+
+    {
+      title: '上市公司治理与资本合规',
+      items: [
+        '深交所上市公司法定信息披露规范 (考评最高A级)',
+        '中小企业私募债及重大融资尽调底稿管理',
+        '上市公司三会议事规则与内幕信息登记',
+        '同业竞品深度财务对标与竞争战略分析',
+        '总经办经营例会决议闭环督办与跨部门推进',
+      ],
+    },,
   ],
 };
 
@@ -268,11 +275,11 @@ export const provenance = {
   db: 'data/career_analytics_lake.duckdb',
   desc: '关键量化指标在构建时由本地 DuckDB 数据视图查询并核验后注入；下方保留本次构建的数据快照：',
   views: [
+    ['v_ai_git_repositories & v_ai_work_summary', '8 个核心代码仓库、WakaTime 工时与 AI 工程资产实录'],
     ['v_profile_flyleaf_summary & v_profile_career_pillars', '履历扉页概括性指标集市 (SSOT 单一真实源)'],
     ['v_hust_curriculum_stages & v_hust_core_course_matrix', '华中科技大学培养阶段 160 学分、24 门核心课与 98 学分核心矩阵'],
     ['v_guangtian_announcements_tenure & v_sec_bond_due_diligence', '董办任职期 345 条公告记录与 54 项发债尽调条目'],
     ['v_gt_contracts_master & v_gt_portfolio_all_135', '24 项标杆工程与 135 份合同汇总（6.8348 亿签约、5.92155 亿审定）'],
-    ['v_ai_git_repositories & v_ai_work_summary', '8 个核心代码仓库、WakaTime 工时与 AI 工程资产实录'],
   ],
   runtime: {
     extensions: 'EXTENSIONS: PARQUET · JSON · VSS · SPATIAL · HTTPFS · EXCEL',
