@@ -743,9 +743,114 @@
         .runtime-audit { flex-direction: column; }
         .provenance-item .provenance-name { font-size: 12px; }
         .provenance-item div:last-child { font-size: 12px; }
+
+        /* 时间线：手机端纵向时间轴，圆点+卡片 */
+        .career-timeline { padding-left: 18px; }
+        .timeline-entry {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 6px;
+            position: relative;
+            padding-bottom: 22px;
+        }
+        .timeline-marker {
+            position: absolute;
+            left: -18px;
+            top: 4px;
+            bottom: 2px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .timeline-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--accent-bronze);
+            border: 2px solid #fff;
+            box-shadow: 0 0 0 2px var(--accent-bronze);
+            flex-shrink: 0;
+        }
+        .timeline-line {
+            flex: 1;
+            width: 2px;
+            background: var(--border-strong);
+            margin-top: 4px;
+        }
+        .timeline-entry:last-child .timeline-line { display: none; }
+        .timeline-period {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .period-text {
+            font-family: var(--font-mono);
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--accent-bronze);
+            letter-spacing: 0.02em;
+        }
+        .duration-text {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            color: var(--text-tertiary);
+            background: #f7f6f1;
+            border: 1px solid var(--border-hairline);
+            padding: 1px 7px;
+            border-radius: 2px;
+        }
+        .timeline-card {
+            background: #ffffff;
+            border: 1px solid var(--border-hairline);
+            border-left: 3.5px solid var(--accent-navy);
+            border-radius: var(--radius-md);
+            padding: 16px 18px;
+            box-shadow: var(--card-shadow);
+            transition: box-shadow 0.2s ease, border-left-color 0.2s ease;
+        }
+        .timeline-card:hover {
+            box-shadow: var(--card-hover-shadow);
+            border-left-color: var(--accent-bronze);
+        }
+        .timeline-org {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1.45;
+        }
+        .timeline-role {
+            font-size: 12.5px;
+            color: var(--accent-navy);
+            font-weight: 600;
+            margin: 3px 0 8px 0;
+        }
+        .timeline-card .bullet-list { margin-bottom: 10px; }
+        .timeline-card .bullet-list li { font-size: 13.5px; line-height: 1.7; color: var(--text-secondary); }
+        .timeline-card .tag-row { flex-wrap: wrap; }
     }
     
     /* === 全局表格风格统一：全网格边框 (Playwright 核查后追加) === */
+    /* === 时间线：桌面端时间轴左列 + 内容卡片右列 === */
+    @media (min-width: 601px) {
+        .career-timeline { padding-left: 0; }
+        .timeline-entry {
+            grid-template-columns: 158px 1fr;
+            column-gap: 26px;
+            padding-left: 44px;
+            padding-bottom: 30px;
+        }
+        .timeline-marker { left: 0; }
+        .timeline-period {
+            margin-top: 2px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 5px;
+        }
+        .period-text { font-size: 13.5px; }
+        .timeline-card { padding: 18px 22px; }
+        .timeline-card .bullet-list li { font-size: 13.8px; }
+    }
     .booktabs-table, .academic-table, .archival-table { border: 1px solid var(--border-strong); }
     .booktabs-table th, .booktabs-table td,
     .academic-table th, .academic-table td,
