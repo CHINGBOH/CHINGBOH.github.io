@@ -7,6 +7,7 @@
     
     <!-- 引入 Google Fonts 权威学术与等宽字体源 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@master/fonts.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Noto+Serif+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     
@@ -30,6 +31,8 @@
             
             --border-hairline: rgba(18, 19, 22, 0.08); /* 极细分割线 */
             --border-strong: rgba(18, 19, 22, 0.20);   /* 书籍装订骨架线 */
+            --border-grid: rgba(18, 19, 22, 0.14);      /* 全网格单元格分割线 (Playwright 核查后追加) */
+            --font-serif: "Computer Modern Serif", "Noto Serif SC", "EB Garamond", "Songti SC", STSong, "Times New Roman", SimSun, serif;
             
             --card-shadow: 0 1px 3px rgba(18, 19, 22, 0.04), 0 6px 16px -4px rgba(18, 19, 22, 0.03);
             --card-hover-shadow: 0 4px 12px -2px rgba(18, 19, 22, 0.06), 0 12px 28px -6px rgba(18, 19, 22, 0.05);
@@ -46,7 +49,7 @@
         body {
             background-color: var(--bg-page);
             color: var(--text-primary);
-            font-family: "Noto Serif SC", "EB Garamond", "Songti SC", STSong, "Times New Roman", SimSun, serif;
+            font-family: var(--font-serif);
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             text-rendering: optimizeLegibility;
@@ -92,7 +95,7 @@
             gap: 10px;
         }
         .nav-brand-code {
-            font-family: "JetBrains Mono", monospace;
+            font-family: var(--font-mono);
             font-size: 11px;
             font-weight: 700;
             letter-spacing: 0.12em;
@@ -127,7 +130,7 @@
             color: #ffffff !important;
             padding: 5px 12px;
             border-radius: 3px;
-            font-family: "JetBrains Mono", sans-serif;
+            font-family: var(--font-mono);
             font-size: 12px !important;
             font-weight: 600;
             text-decoration: none;
@@ -148,7 +151,7 @@
             margin-bottom: 36px;
         }
         .archival-eyebrow {
-            font-family: "JetBrains Mono", monospace;
+            font-family: var(--font-mono);
             font-size: 11px;
             font-weight: 600;
             letter-spacing: 0.14em;
@@ -177,14 +180,14 @@
             gap: 12px;
         }
         .hero-en {
-            font-family: "EB Garamond", serif;
+            font-family: var(--font-serif);
             font-size: 20px;
             font-weight: 500;
             color: var(--text-tertiary);
             font-style: italic;
         }
         .hero-contacts {
-            font-family: "JetBrains Mono", monospace;
+            font-family: var(--font-mono);
             font-size: 12.5px;
             color: var(--text-secondary);
             display: flex;
@@ -236,7 +239,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-family: "JetBrains Mono", monospace;
+            font-family: var(--font-mono);
             font-size: 11px;
             margin-bottom: 8px;
         }
@@ -272,7 +275,7 @@
             border-bottom: 1px solid var(--border-hairline);
         }
         .section-badge {
-            font-family: "JetBrains Mono", monospace;
+            font-family: var(--font-mono);
             font-size: 11px;
             font-weight: 600;
             letter-spacing: 0.08em;
@@ -315,7 +318,7 @@
         .booktabs-table th {
             padding: 12px 16px;
             text-align: left;
-            font-family: "JetBrains Mono", "Noto Serif SC", serif;
+            font-family: var(--font-mono);
             font-size: 12px;
             font-weight: 700;
             color: var(--accent-navy);
@@ -337,7 +340,7 @@
             vertical-align: top;
         }
         .cell-period {
-            font-family: "JetBrains Mono", monospace;
+            font-family: var(--font-mono);
             font-weight: 700;
             color: var(--accent-navy);
             font-size: 13px;
@@ -383,7 +386,7 @@
             margin-top: 8px;
         }
         .tag {
-            font-family: "JetBrains Mono", sans-serif;
+            font-family: var(--font-mono);
             font-size: 11px;
             padding: 2px 7px;
             border-radius: 2px;
@@ -427,7 +430,7 @@
             padding-bottom: 10px;
         }
         .case-badge {
-            font-family: "JetBrains Mono", monospace;
+            font-family: var(--font-mono);
             font-size: 11px;
             font-weight: 600;
             padding: 2px 6px;
@@ -444,7 +447,7 @@
             line-height: 1.4;
         }
         .case-scope {
-            font-family: "JetBrains Mono", monospace;
+            font-family: var(--font-mono);
             font-size: 12px;
             color: var(--text-tertiary);
             margin-bottom: 10px;
@@ -464,7 +467,7 @@
             border-top: 1px solid var(--border-hairline);
         }
         .case-period {
-            font-family: "JetBrains Mono", monospace;
+            font-family: var(--font-mono);
             font-size: 11.5px;
             color: var(--text-tertiary);
         }
@@ -474,7 +477,7 @@
             color: var(--accent-navy);
             padding: 4px 12px;
             border-radius: var(--radius-sm);
-            font-family: "JetBrains Mono", sans-serif;
+            font-family: var(--font-mono);
             font-size: 12px;
             font-weight: 600;
             cursor: pointer;
@@ -538,7 +541,7 @@
             margin-top: 40px;
             font-size: 12px;
             color: var(--text-tertiary);
-            font-family: "JetBrains Mono", sans-serif;
+            font-family: var(--font-mono);
         }
         .provenance-views-list {
             margin-top: 8px;
@@ -668,7 +671,18 @@
             .hero-title { font-size: 26px; }
             .hero-contacts { flex-direction: column; align-items: flex-start; gap: 4px; }
         }
-    </style>
+    
+    /* === 全局表格风格统一：全网格边框 (Playwright 核查后追加) === */
+    .booktabs-table, .academic-table, .archival-table { border: 1px solid var(--border-strong); }
+    .booktabs-table th, .booktabs-table td,
+    .academic-table th, .academic-table td,
+    .archival-table th, .archival-table td { border: 1px solid var(--border-grid); }
+    .booktabs-table th, .academic-table th, .archival-table th {
+        border-top: 1.5px solid var(--border-strong);
+        border-bottom: 1.5px solid var(--border-strong);
+    }
+
+</style>
 </head>
 <body>
 
@@ -684,7 +698,7 @@
             <li><a href="#timeline">生涯时间线</a></li>
             <li><a href="#cases">代表专案</a></li>
             <li><a href="#skills">专业能力</a></li>
-            <li><a href="#provenance">数据底账</a></li>
+            <li><a href="#provenance">数据依据</a></li>
         </ul>
         <a href="#cases" class="nav-cta-btn">
             <span>📚 精选代表作</span>
@@ -717,13 +731,12 @@
 
         <div class="hero-headline" style="margin-bottom: 16px;">
             <span style="display: inline-block; font-family: 'Noto Serif SC', serif; font-size: 15.5px; font-weight: 700; color: var(--accent-navy); background: rgba(22, 42, 69, 0.04); border: 1px solid rgba(22, 42, 69, 0.12); padding: 5px 14px; border-radius: var(--radius-sm); letter-spacing: 0.04em; box-shadow: 0 1px 2px rgba(18, 19, 22, 0.02);">
-                全资子公司初创奠基 · 大宗商业工程总操盘 · 数字化解决方案顾问 · 华中科技大学统计学
+                华中科技大学统计学 · 数字化解决方案顾问 · 全业务流程操盘者与工程化落地者
             </span>
         </div>
 
         <div class="hero-thesis">
-            在高度非标、多方博弈的复杂商业环境中，依靠数理逻辑与机制设计建立确定性：在商业操盘上，穿透成本底盘与多级定价博弈，锁定 30%~35% 稳健经营毛利与四维资金回款；在组织治理上，从 0 到 1 建章立制，以制度总纲与敏捷专班保障长周期合规与零仲裁运营；在数字化落地中，将实体大盘中验证过的业务规则与经营闭环，沉淀为现代软件系统、Agent 状态机与分析引擎。华中科技大学纯数统计推断、上市公司治理与全资子公司十年实操，构成上述价值交付的坚实基石。
-
+            我的价值交付横跨两条主线：一是<strong>大规模商业工程操盘</strong>——统领 135 份盖章合同、合计 6.83 亿的工程大盘，穿透成本底盘与多级定价博弈，锁定 30%~35% 稳健经营毛利与四维资金回款；二是<strong>数字化与工程化落地</strong>——自主推进 AI Agent 状态机、企业混合 RAG 与 DuckDB 分析中枢，沉淀 8 大自研系统、2,804 万行源码。二者由同一底层能力链接：华中科技大学统计学带来的严格数理推断与机制设计思维。
         </div>
 
         <div class="hero-pillars-grid">
@@ -1093,11 +1106,11 @@
     <!-- 审计底单与数据来源 -->
     <footer id="provenance" class="provenance-footnote">
         <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px;">
-            <strong style="color:var(--text-secondary);">🏛️ 审计级数据来源与单一真实源声明 (Single Source of Truth)</strong>
+            <strong style="color:var(--text-secondary);">📊 数据来源与构建说明</strong>
             <span>数据库底座: data/career_analytics_lake.duckdb</span>
         </div>
         <p style="line-height:1.6; color:var(--text-tertiary); margin-bottom:8px;">
-            关键量化指标在构建时由本地 DuckDB 湖仓视图群实时查询并通过断言后注入；下方保留本次构建的实证快照：
+            关键量化指标在构建时由本地 DuckDB 数据视图查询并核验后注入；下方保留本次构建的数据快照：
         </p>
         <div class="provenance-views-list">
             <div class="provenance-item">
