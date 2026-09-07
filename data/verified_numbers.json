@@ -1,0 +1,75 @@
+{
+  "db": "/home/l/个人资料仓库/data/career_analytics_lake.duckdb",
+  "checked_at": "2026-09-08T01:36:58",
+  "views": {
+    "v_ai_git_repositories": [
+      [
+        8
+      ]
+    ],
+    "v_ai_line_count": [
+      [
+        28038054
+      ]
+    ],
+    "v_ai_work_summary_hours": [
+      [
+        120.8
+      ]
+    ],
+    "v_gt_portfolio_all_135": [
+      [
+        135
+      ]
+    ],
+    "v_gt_signed_wan": [
+      [
+        68348.0
+      ]
+    ],
+    "v_gt_audited_wan": [
+      [
+        59215.5
+      ]
+    ]
+  },
+  "passed": true,
+  "checks": [
+    {
+      "metric": "AI 旗舰仓库数",
+      "actual": 8.0,
+      "expected": 8,
+      "pass": true
+    },
+    {
+      "metric": "AI 源码行数",
+      "actual": 28038054.0,
+      "expected": 28038054,
+      "pass": true
+    },
+    {
+      "metric": "WakaTime 工时",
+      "actual": 120.8,
+      "expected": 120.8,
+      "pass": true
+    },
+    {
+      "metric": "合同份数",
+      "actual": 135.0,
+      "expected": 135,
+      "pass": true
+    },
+    {
+      "metric": "签约额(万元)",
+      "actual": 68348.0,
+      "expected": 68348.0,
+      "pass": true
+    },
+    {
+      "metric": "审定额(万元)",
+      "actual": 59215.5,
+      "expected": 59215.5,
+      "pass": true
+    }
+  ]
+}
