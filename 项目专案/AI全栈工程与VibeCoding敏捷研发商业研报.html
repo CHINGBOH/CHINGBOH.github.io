@@ -6,6 +6,7 @@
     <title>AI 全栈工程操盘与 Vibe Coding 敏捷研发 ｜ 梁清波 商业专案库</title>
     <!-- Google Fonts 典藏学术与静奢排版字体族 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@master/fonts.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=JetBrains+Mono:ital,wght@0,400..700;1,400..700&family=Noto+Serif+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <!-- ECharts 5 现代交互图表库 -->
@@ -19,6 +20,7 @@
             --bg-table-head: #f5f4ef;     /* 雅致古籍米灰 */
             --border-hairline: rgba(18, 19, 22, 0.08); /* 0.5px 极细发丝分割线 */
             --border-strong: rgba(18, 19, 22, 0.22);   /* 书籍装订骨架线 */
+            --border-grid: rgba(18, 19, 22, 0.14);      /* 全网格单元格分割线 (Playwright 核查后追加) */
             --border-accent: #8a6839;     /* 沉香古铜金装饰线 */
             
             --text-primary: #121316;      /* 碳素墨黑，沉稳高对比度 */
@@ -34,7 +36,7 @@
             --accent-slate: #475569;      /* 冷板岩深灰 */
             --accent-crimson: #8b263e;    /* 典雅绯红 */
             
-            --font-serif: "Noto Serif SC", "EB Garamond", "Songti SC", STSong, "Times New Roman", SimSun, serif;
+            --font-serif: "Computer Modern Serif", "Noto Serif SC", "EB Garamond", "Songti SC", STSong, "Times New Roman", SimSun, serif;
             --font-mono: "JetBrains Mono", Consolas, "Courier New", monospace;
             
             --card-shadow: 0 1px 3px rgba(18, 19, 22, 0.04), 0 8px 24px -6px rgba(18, 19, 22, 0.03);
@@ -353,7 +355,7 @@
             /* 图表容器与标题 —— 修复模板渲染时图表样式段丢失导致的图表不可见 */
         .chart-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
         .chart-header { margin-bottom: 14px; }
-        .chart-fig-num { font-family: "JetBrains Mono", monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; color: var(--accent-bronze); }
+        .chart-fig-num { font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.06em; color: var(--accent-bronze); }
         .chart-title { font-size: 14px; font-weight: 700; color: var(--text-primary); margin-top: 4px; }
         .chart-title-wrap { display: flex; align-items: center; gap: 8px; min-width: 0; }
         .chart-container { width: 100%; height: 380px; }
@@ -377,7 +379,7 @@
         .dossier-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-bottom: 36px; }
         .dossier-item { background: #ffffff; border: 1px solid var(--border-hairline); border-left: 3.5px solid var(--accent-bronze); border-radius: var(--radius-md); padding: 24px 26px; box-shadow: var(--card-shadow); display: flex; flex-direction: column; justify-content: flex-start; }
         .dossier-item h3 { font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
-        .dossier-item h3 span { font-family: "JetBrains Mono", monospace; font-size: 12px; font-weight: 600; color: var(--text-tertiary); }
+        .dossier-item h3 span { font-family: var(--font-mono); font-size: 12px; font-weight: 600; color: var(--text-tertiary); }
         .dossier-item ul { list-style: none; font-size: 13.5px; color: var(--text-secondary); line-height: 1.78; }
         .dossier-item li { position: relative; padding-left: 18px; margin-bottom: 10px; text-align: justify; }
         .dossier-item li::before { content: "◆"; position: absolute; left: 4px; top: 6px; color: var(--accent-bronze); font-size: 7px; }
@@ -386,7 +388,7 @@
 
         /* KPI 顶栏瓷砖 */
         .kpi-tile { background: var(--bg-card); border: 1px solid var(--border-hairline); border-top: 3px solid var(--accent-bronze); border-radius: var(--radius-md); padding: 20px 16px; box-shadow: var(--card-shadow); }
-        .kpi-eyebrow { font-family: "JetBrains Mono", monospace; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-bronze); margin-bottom: 4px; }
+        .kpi-eyebrow { font-family: var(--font-mono); font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-bronze); margin-bottom: 4px; }
         .kpi-figure { font-size: 26px; font-weight: 700; letter-spacing: -0.02em; color: var(--text-primary); margin: 6px 0 2px 0; font-variant-numeric: tabular-nums lining-nums; white-space: nowrap; }
         .kpi-figure span { font-size: 13px; font-weight: 600; color: var(--accent-bronze); }
         .kpi-subtext { font-size: 11px; color: var(--text-tertiary); margin-top: 4px; line-height: 1.4; }
@@ -395,7 +397,18 @@
         /* 图注说明 */
         .chart-desc { font-size: 12.5px; color: var(--text-secondary); margin-bottom: 16px; line-height: 1.55; }
 
-    </style>
+    
+    /* === 全局表格风格统一：全网格边框 (Playwright 核查后追加) === */
+    .booktabs-table, .academic-table, .archival-table { border: 1px solid var(--border-strong); }
+    .booktabs-table th, .booktabs-table td,
+    .academic-table th, .academic-table td,
+    .archival-table th, .archival-table td { border: 1px solid var(--border-grid); }
+    .booktabs-table th, .academic-table th, .archival-table th {
+        border-top: 1.5px solid var(--border-strong);
+        border-bottom: 1.5px solid var(--border-strong);
+    }
+
+</style>
 </head>
 <body>
 
@@ -413,7 +426,8 @@
             <li><a href="#sec-methodology">§ 2 核心方法论</a></li>
             <li><a href="#sec-dashboard">§ 3 研发效能图表</a></li>
             <li><a href="#sec-prototypes">§ 4 六大业务原型</a></li>
-            <li><a href="#sec-provenance">§ 5 数据核实依据</a></li>
+            <li><a href="#sec-statcase">§ 5 统计实证案例</a></li>
+            <li><a href="#sec-provenance">§ 6 数据依据与来源</a></li>
         </ul>
         <button class="nav-back-btn" onclick="handleBackToParent()" title="返回总舱">
             <span>‹ 返回总舱</span>
@@ -476,6 +490,7 @@
             <h2 class="card-heading">项目基本盘 · 研发属性与核心业务事实台账</h2>
             <span class="card-tag">SYSTEM SPECIFICATION FACT TABLE</span>
         </div>
+        <p style="font-size:13px; color:var(--accent-forest); margin:0 0 10px;"><span class="code-pill">✔ 湖仓溯源</span> 全部事实台账基于 <code>v_all_local_git_repositories</code>（61 工程 8,688 万行）/ <code>v_ai_git_repositories</code>（8 王牌 2,804 万行）/ 认知底座 <code>v_ai_cognition_vault</code>（186.6 万字），SQL 单源直达可复核</p>
         <table class="booktabs-table">
             <thead>
                 <tr>
@@ -502,8 +517,8 @@
                 </tr>
                 <tr>
                     <td class="table-dim">系统工程底账</td>
-                    <td class="table-fact"><strong>8 大自研系统原型</strong>（413,966 个受控文件，2,804 万行代码真实入库）</td>
-                    <td>自研仓库均为围绕真实业务需求构建的敏捷探索型系统原型（PoC / MVP），跨越外贸、商业 BI、造价、CAD、企微多领域，全部支持端到端运行验证。</td>
+                    <td class="table-fact"><strong>8 大自研系统王牌</strong>（413,966 个受控文件，2,804 万行源码）；<strong>全仓 61 个工程</strong>累计 <strong>8,688 万行</strong></td>
+                    <td>自研仓库均为围绕真实业务需求构建的敏捷探索型系统原型（PoC / MVP），跨越外贸、商业 BI、造价、CAD、企微多领域，全部支持端到端运行验证。口径分列：<strong>8 大王牌自研 2,804 万行</strong>（核心交付）与<strong>全仓 61 工程 8,688 万行</strong>（含开源引入研读/运维中台），二者分别对应湖仓视图 <code>v_ai_git_repositories</code> 与 <code>v_all_local_git_repositories</code>，SQL 可复核。</td>
                 </tr>
                 <tr>
                     <td class="table-dim">实战研发投入</td>
@@ -535,9 +550,12 @@
             <h2 class="card-heading">Vibe Coding 敏捷工程化实录 · 2×2 平衡对称架构</h2>
             <span class="card-tag">THE 2×2 BALANCED ENGINEERING AXIOM</span>
         </div>
-        <p style="font-size:14px; color:var(--text-secondary); margin-bottom:20px;">
+        <p style="font-size:14px; color:var(--text-secondary); margin-bottom:12px;">
             Vibe Coding 绝非无脑放任 AI 乱写代码，而是“以扎实的架构设计为骨架，以 AI 为高速打字机，以严密的测试为质检门禁”：
         </p>
+        <div style="border-left:4px solid var(--accent-forest); background:linear-gradient(120deg,rgba(58,99,81,.08),transparent); padding:12px 16px; margin:6px 0 18px; font-size:14.5px; line-height:1.8; color:var(--text-primary);">
+            <strong>全篇立论</strong>　AI 的价值不在「生成代码」，而在 <strong>以 LLM × Harness 为支点，撬动项目 Context 这跟撑杆</strong>，把「数据处理」变成可交付的「工程成果」。下文所述 Vibe Coding 方法（§ 2）、DuckDB 湖仓与 MCP 数据总线（§ 3）、多引擎统计实证（§ 5），本质上是同一根杠杆的不同支点：<strong>先把自己积累的 Context 压缩、索引进湖仓，再用 LLM 理解、用 Harness 执行，最终撬动全部工程落地</strong>。本研报所有关键数字均可经 <code>v_vibe_engineering_overview</code> / <code>v_survey_engineering_evidence</code> 湖仓视图 SQL 复验。
+        </div>
         <div class="dossier-grid">
             <div class="dossier-item">
                 <h3>§ 1 业务需求敏捷转化与契约前置 (Intent to Architecture)</h3>
@@ -580,6 +598,7 @@
             <h2 class="card-heading">研发效能、AI 智能体分工与全栈技术图表</h2>
             <span class="card-tag">AI ENGINEERING METRICS & WORKFLOW CHARTS</span>
         </div>
+        <p style="font-size:13px; color:var(--accent-forest); margin:0 0 6px;"><span class="code-pill">✔ 湖仓溯源</span> KPI 数字源自 <code>v_ai_work_summary</code>（120.8h 纯工时）/ <code>v_ai_tools_runtime</code>（13 代理 19,983 轮）/ <code>v_ai_git_repositories</code>（8 王牌 2,804 万行）</p>
 
         <!-- 6 块顶线 KPI 磁贴 -->
         <div class="kpi-deck">
@@ -623,7 +642,7 @@
 
         <!-- 2×2 AI 专属原生图表栅格 -->
         <div class="chart-grid">
-            <!-- FIG.01 研发效能与交付周期对比 (水平对比柱状图) -->
+            <!-- FIG. 01 研发效能与交付周期对比 (水平对比柱状图) -->
             <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
                 <div class="chart-header">
                     <div class="chart-title-wrap">
@@ -637,7 +656,7 @@
                 </div>
             </div>
 
-            <!-- FIG.02 13 款主流开发智能体分工与调用量分布 -->
+            <!-- FIG. 02 13 款主流开发智能体分工与调用量分布 -->
             <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
                 <div class="chart-header">
                     <div class="chart-title-wrap">
@@ -651,7 +670,7 @@
                 </div>
             </div>
 
-            <!-- FIG.03 跨语言全栈交付生态分布 (南丁格尔玫瑰图) -->
+            <!-- FIG. 03 跨语言全栈交付生态分布 (南丁格尔玫瑰图) -->
             <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
                 <div class="chart-header">
                     <div class="chart-title-wrap">
@@ -665,7 +684,7 @@
                 </div>
             </div>
 
-            <!-- FIG.04 6 大业务原型场景覆盖与痛点解决力四象限散点图 -->
+            <!-- FIG. 04 6 大业务原型场景覆盖与痛点解决力四象限散点图 -->
             <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
                 <div class="chart-header">
                     <div class="chart-title-wrap">
@@ -687,6 +706,7 @@
             <h2 class="card-heading">6 大垂直场景自研业务原型实战与功能交付清单</h2>
             <span class="card-tag">FUNCTIONAL PROTOTYPE REGISTRY</span>
         </div>
+        <p style="font-size:13px; color:var(--accent-forest); margin:0 0 6px;"><span class="code-pill">✔ 湖仓溯源</span> 6 大原型对应 <code>v_all_local_git_repositories</code>（外贸拓客 / 商业 BI / 造价 / CAD / 企微 / 法务）</p>
         <p style="font-size:14px; color:var(--text-secondary); margin-bottom:16px;">
             坚持“讲清楚真实功能、解决什么痛点、如何落地，杜绝浮夸概念”。以下 6 座系统原型均基于真实需求构建，具备完整代码实现与本地可运行链路：
         </p>
@@ -826,6 +846,331 @@
         </table>
     </section>
 
+    <!-- 05 统计实证案例：Vibe Coding 驱动 SPSS + SAS 多引擎交叉验证 -->
+    <section id="sec-statcase" class="card">
+        <div class="card-caption-bar">
+            <h2 class="card-heading">统计实证案例 · Vibe Coding 驱动 SAS / SPSS 多引擎问卷分析全链路</h2>
+            <span class="card-tag">STATISTICAL EMPIRICAL CASE · SURVEY-ANALYSIS</span>
+        </div>
+        <p style="font-size:14px; color:var(--text-secondary); margin-bottom:16px;">
+            以本人统计学专业背景为依托，对两份真实回收的消费券问卷（青年消费券 N=205、浙江省数字消费券 N=208）开展多引擎交叉验证实证研究。全程以 Vibe Coding 方式驱动：AI 代理自动化操控 SAS Studio 官方云端（SAS 9.4 / ODA 集群）与本机 IBM SPSS 统计引擎，R 与 DuckDB 湖仓做对照与数据底座，从原始 Excel 到发布级统计研报形成端到端可复现闭环（仓库 <code>survey-analysis</code>，代码、日志、截图、录屏四重凭据留存）。
+        </p>
+
+        <h3 style="font-size:15px; margin:24px 0 10px; color:var(--text-primary);">零、Vibe Coding 的本质 —— Context 管理杠杆（LLM × Harness）</h3>
+        <p style="font-size:14px; color:var(--text-secondary); margin-bottom:6px;">
+            Vibe Coding 的价值不在「生成代码」——单点生成代码门槛已极低；真正的稀缺能力，是用 <strong>LLM 与 Harness 作为支点，撬动项目 Context 这跟撑杆</strong>，把「数据处理」变成可交付的「工程成果」。整套湖仓视图体系（<code>v_vibe_engineering_overview</code> / <code>v_survey_engineering_evidence</code> / bronze 底账）正是这一原理的实证载体：散落各处的 Context 被压缩、索引、复用进 DuckDB，才能被 LLM（理解）与 Harness（执行）随时撬动。
+        </p>
+        <div style="background:linear-gradient(120deg,rgba(58,99,81,.10),rgba(28,44,38,.16)); border:1px solid rgba(58,99,81,.28); border-radius:10px; padding:16px 18px; margin:14px 0; font-size:13.5px; line-height:1.8; color:var(--text-primary);">
+            <strong>杠杆力学图示</strong>
+            <div style="font-family:'JetBrains Mono',monospace; margin-top:8px; font-size:12.5px; color:var(--accent-forest); white-space:pre; overflow-x:auto;">
+        Context（知识撑杆：82 条 bronze → 95 视图，压缩/索引/复用）
+                │  ▲
+            [压缩]  [索引]
+                ▼  │
+        Agent 数据处理闭环（Compress → Index → Reuse）
+                ▲
+                │ 杠杆曲率 =
+        ┌───────┴───────┐
+        │  LLM × Harness   │ ← 支点
+        └───────────────┘
+                ▲
+                │
+        ┌───────┴────────┐
+        │  负载 = 工程成果  │（61 工程 / 8,688 万行 / 95 视角，全部 SQL 可复验）
+        └────────────────┘
+            </div>
+        </div>
+        <table class="archival-table">
+            <thead>
+                <tr>
+                    <th style="width:14%;">杠杆元件</th>
+                    <th style="width:30%;">角色</th>
+                    <th style="width:56%;">实证映射</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>LLM</strong>（支点·脑）</td>
+                    <td>理解 Context 的推理中枢</td>
+                    <td>deepseek-v4-flash / Claude Code / OpenAI Codex 驱动：读 ODML、判显著性、规划三代迭代；13 代理累计 19,983 轮实跑会话。</td>
+                </tr>
+                <tr>
+                    <td><strong>Harness</strong>（支点·躯干）</td>
+                    <td>把理解变成可执行动作</td>
+                    <td>DSH 50 插件包 + hermes 23 skills/3 cron + n8n 17 工作流 + Koishi 桥接 + Playwright 驱动：自动化操控 SAS 云端、SPSS 本机与 FineBI/Superset 看板。</td>
+                </tr>
+                <tr>
+                    <td><strong>Context</strong>（撑杆·知识）</td>
+                    <td>被压缩/索引化后随时可撬的知识资产</td>
+                    <td>6,281 行 ODS → bronze 82 条（压缩 76×）；243 行《UI 功能键登记手册》；61 工程 → 湖仓 95 视图（全仓 SQL 直达）。</td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="font-size:13px; color:var(--text-secondary); margin:10px 0 18px;">
+            无 LLM → Context 休眠在文件里；无 Harness → LLM 只会「说」不会「做」。<strong>LLM 给方向、Harness 给执行力、Context 给燃料</strong>，三者咬合成一根杠杆，才撬得动整个工程——下述 9 步过程实录，就是这条杠杆在 SAS / SPSS / 全栈工程上的每一次落笔。
+        </p>
+
+        <h3 style="font-size:15px; margin:20px 0 10px; color:var(--text-primary);">一、Vibe Coding 工程化过程实录</h3>
+        <table class="archival-table">
+            <thead>
+                <tr>
+                    <th style="width:6%;">步骤</th>
+                    <th style="width:26%;">工程动作</th>
+                    <th style="width:42%;">具体实现</th>
+                    <th style="width:26%;">实证凭据</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>01</strong></td>
+                    <td><strong>界面逆向与操作地图沉淀</strong></td>
+                    <td>Playwright 实时解构 SAS Studio 3.8 全界面 DOM 树，逐一登记功能按键的 DOM ID 与精准定位器，形成《UI 功能键权威登记手册》，作为后续全部自动化脚本的接口契约。</td>
+                    <td><span class="code-pill">probe_sas_dom.py</span> <span class="code-pill">ui_button_registry.md</span> 界面实拍截图 8 幅</td>
+                </tr>
+                <tr>
+                    <td><strong>02</strong></td>
+                    <td><strong>先验后跑：AST 语法门禁</strong></td>
+                    <td>自研基于 tree-sitter-sas 的 SAS 语法抽象语法树检查器，任何程序上云执行前先过静态校验，杜绝大模型生成代码的语法幻觉。</td>
+                    <td><span class="code-pill">sas_ast_checker.py</span></td>
+                </tr>
+                <tr>
+                    <td><strong>03</strong></td>
+                    <td><strong>云端执行全自动闭环</strong></td>
+                    <td>Headless Chrome 自动登录 → 注入 .sas 程序 → F3 提交官方云端集群计算 → 抓取 LOG / RESULTS → 下载原生 ODS HTML 报表，全程无人值守。</td>
+                    <td><span class="code-pill">run_sas_survey2_master.py</span> 执行日志 + 过程截图</td>
+                </tr>
+                <tr>
+                    <td><strong>04</strong></td>
+                    <td><strong>三代迭代收敛数据质量</strong></td>
+                    <td>full → master → clean 三代流水线演进：针对中文乱码与跳转逻辑缺失值，前置 Python 清洗产出 54 列标准宽表与多选题长表，最终云端日志收敛为 <strong>错误 0 · 警告 0</strong>。</td>
+                    <td><span class="code-pill">clean_survey_for_sas.py</span> <span class="code-pill">sas_clean_survey.csv</span></td>
+                </tr>
+                <tr>
+                    <td><strong>05</strong></td>
+                    <td><strong>报表程序化转译与装配</strong></td>
+                    <td>BeautifulSoup 解析 6,281 行原始 ODS HTML，程序化转译为中文统计研报（Markdown / Word），并自动截取 APA7 三线表渲染取证，杜绝手抄数字。</td>
+                    <td><span class="code-pill">build_rich_sas_md_report.py</span> 8 模块统计研报 md + docx</td>
+                </tr>
+                <tr>
+                    <td><strong>06</strong></td>
+                    <td><strong>DuckDB 湖仓分层回灌</strong></td>
+                    <td>bronze → silver → gold 三层建模，SAS 回归参数、多选题渗透率等结果回灌 gold 视图表，实现研报数字的 SQL 级溯源。</td>
+                    <td><span class="code-pill">gold_sas_reg_params</span> <span class="code-pill">gold_sas_pain_points</span></td>
+                </tr>
+                <tr>
+                    <td><strong>07</strong></td>
+                    <td><strong>SPSS 一键流水线（Windows 侧）</strong></td>
+                    <td>零依赖解析 xlsx → 生成含中文变量/值标签的 .sps 语法 → SPSS 引擎真跑 → 原生输出自动装配学术 Word 报告，批处理脚本双击复跑。</td>
+                    <td><span class="code-pill">run_pipeline.py</span> <span class="code-pill">analysis.sps</span> SPSS 原生结果文本</td>
+                </tr>
+                <tr>
+                    <td><strong>08</strong></td>
+                    <td><strong>多引擎 BI 驾驶舱 + 工作流编排 + Agent 运行时</strong></td>
+                    <td>同一套 Vibe Coding 方法向全栈延伸：<strong>BI 层</strong>—Apache Superset（49 大盘 / 363 图表 / 106 数据源 / 1380 字段，44MB 元数据库）、帆软 FineBI 6.0（Playwright 全自动驱动 21 脚本 / 37 截图 + Next.js 控制台）、Grafana（2 套运维看板 14 面板 JSON provisioning）、自研 Django 看板（8 模块 914 行含登录认证）；<strong>工作流编排层</strong>—n8n 2.x 生产实例双线部署：全渠道 Copilot 8 工作流 / 71 节点 / 54 连接（企微+飞书+钉钉+邮件+WhatsApp+BeautyOS），外贸拓客助手编排底座 9 工作流 / 55 节点 / 43 连接（飞书多维表格双表闭环+海外买家回信实时监控+LangChain AI Agent 智能拓客+海关进口商情报+自主买家决策人穿透），配套 Playwright 自动登录与 Docker psql 工作流同步；<strong>Agent 运行时层</strong>—DeepSeek-Harness（DSH）50 插件包（core/llm/sandbox/mcp/workflow/skill），Koishi 4.18 多平台桥接（160 行 cordis 配置，Landlock 沙箱 + DSH SDK 驱动，Telegram/企微/飞书三平台汇聚），LangGraph Hybrid Agent（business-agent-system 20,275 行 / 27 模块，StateGraph + ReAct + Forced-RAG + 循环检测 + 自学习循环，graph.py 4,527 行 + tools.py 6,221 行），外贸拓客助手 Dify 兼容标准 Agent 服务器（端口 8096，3 个 Dify OpenAPI 端点，bowen_agent + rag_retriever 436 行），Ollama 本地大模型 qwen3:8b 驱动 n8n 原生 LangChain AI Agent 智能拓客推理。AI 代理即席 SQL 对接 ClickHouse / DuckDB 数据底座完成指标建模与看板装配。</td>
+                    <td><span class="code-pill">~/.superset/superset.db</span> <span class="code-pill">tools/finebi_pw/</span> <span class="code-pill">n8n-dify-omnichannel/workflows/</span> <span class="code-pill">DeepSeek-Harness/packages/</span> <span class="code-pill">dsh-koishi-bridge/bridge.cordis.yml</span></td>
+                </tr>
+                <tr>
+                    <td><strong>09</strong></td>
+                    <td><strong>空间建模 + AI 渲染 + 多模态数据底座</strong></td>
+                    <td><strong>3D/CAD 层</strong>—FreeCAD 参数化 BIM 建模（71,998 LOC，FreeCADBlenderBridge XML-RPC，参数化 B-Rep + 墙体开洞 + 2D 图纸 .FCStd）、Blender Cycles 光追渲染（9 个同步脚本，PBR 材质 + Cycles 灯光 + .blend/.glb 导出 + 照片级渲染）、AutoCAD MCP Server（4,083 LOC，8 个 MCP 工具 drawing/entity/layer/block/annotation/pid/view/system，ezdxf 无头后端 + Win32 IPC + 3 个 AutoLISP）；<strong>AI 渲染层</strong>—ComfyUI + FLUX.1-dev（FP8）+ ControlNet Depth v3（35,831 LOC，36 个 JSON 工作流模板，空间容器→0.05s 实时 3D 景深→空间锁定，RTX 4070）；<strong>文档解析层</strong>—飞桨 PaddleOCR（135 文件引用跨 4 仓库，RAGFlow deepdoc paddleocr_parser）；<strong>多模态数据底座</strong>—向量数据库矩阵覆盖 29 仓库（SQLite 29 + Redis 14 + Milvus 14 + Neo4j 13 + PostgreSQL/pgvector 13 + Elasticsearch 11 + Qdrant 6 + ClickHouse 5）。</td>
+                    <td><span class="code-pill">open-floorplan-cad/</span> <span class="code-pill">comfyui-sdcpp-hotel-workflow/</span> <span class="code-pill">autocad-mcp/</span> <span class="code-pill">v_all_local_git_repositories</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 style="font-size:15px; margin:26px 0 10px; color:var(--text-primary);">二、统计成果与核心指标（数字均出自引擎原始输出）</h3>
+        <div class="dossier-grid">
+            <div class="dossier-item">
+                <h3>§ 1 SAS 发布级统计研报（N=208 · 8 大模块）</h3>
+                <ul>
+                    <li><strong>信度与分布</strong>：四题量表 Cronbach's α = 0.8819；PROC UNIVARIATE 偏度 |·|&lt;0.5、峰度 |·|&lt;0.35，参数检验前提成立；</li>
+                    <li><strong>差异与关联</strong>：生活费×用券经历卡方 p=0.76（普惠无门槛偏向）；性别增量 t 检验 p=0.49 并同步 Wilcoxon 非参双验证；</li>
+                    <li><strong>拉动机制</strong>：ANOVA F=3.60 (p=0.0074) + Tukey HSD；OLS 模型 R²=0.2686、F=7.40，累计节省金额 B=0.384 (p&lt;0.0001)、使用频次 (p=0.018) 为显著杠杆，全部 VIF&lt;1.5；</li>
+                    <li><strong>行为模型</strong>：PROC LOGISTIC 冲动消费模型（DESCENDING / EXPB），配套 SGPLOT 箱线图与残差诊断面板。</li>
+                </ul>
+            </div>
+            <div class="dossier-item">
+                <h3>§ 2 高阶计量与延伸专题（N=205 卷 + 时序）</h3>
+                <ul>
+                    <li><strong>多元方法扩展</strong>：PROC FACTOR 双因子降维、FASTCLUS 三群聚类、CORRESP 收入×痛点知觉图、CALIS 结构方程、DISCRIM 判别、ROC 曲线；</li>
+                    <li><strong>时序预测</strong>：SARIMA(0,1,1)(0,1,1)₁₂ 民航客运建模（ACF/PACF + 白噪声检验 + 24 个月预测区间）；</li>
+                    <li><strong>宏观计量</strong>：FRED 6 序列（联邦基金利率、失业率、核心 CPI 等）建 bronze→gold 湖仓，SAS AUTOREG 泰勒规则拟合 R²=0.3727 (F=92.97, p&lt;.0001)、收益率曲线倒挂 Logistic OR=39.23 (p=0.0012, AUC=0.671)、GARCH 波动率建模，配套萨姆规则 Jupyter 交互看板与 24 个月预测区间；</li>
+                    <li><strong>对照验证</strong>：R（psych / ggplot2）与 SPSS 对同卷复算，频率、信度、回归系数三引擎口径互校。</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3 style="font-size:15px; margin:26px 0 10px; color:var(--text-primary);">三、工程证据与产物清单（多源采集 · SQL 可复验）</h3>
+        <table class="archival-table">
+            <thead>
+                <tr>
+                    <th style="width:18%;">证据域</th>
+                    <th style="width:22%;">指标</th>
+                    <th style="width:20%;">实证值</th>
+                    <th style="width:40%;">来源与口径</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Git 版本记录</strong></td>
+                    <td>提交 Commit 数</td>
+                    <td><strong>1</strong> (HEAD: c8825f0)</td>
+                    <td><span class="code-pill">git log</span> 主题：feat: complete SAS survey analysis pipeline with DuckDB ELT</td>
+                </tr>
+                <tr>
+                    <td><strong>SAS 云端执行日志</strong></td>
+                    <td>日志体量 / NOTE / 警告 / 错误</td>
+                    <td><strong>228 KB</strong> · NOTE 342 · 警告 20 · 错误 65 (full 世代) → clean 世代收敛 <strong>0 错 0 警</strong></td>
+                    <td><span class="code-pill">output/sas_survey2_execution.log</span> 三段计数</td>
+                </tr>
+                <tr>
+                    <td><strong>发布级报告文档</strong></td>
+                    <td>docs 下 md / docx / html 合计</td>
+                    <td><strong>9 份</strong> · 3.9 MB</td>
+                    <td><span class="code-pill">docs/</span> 含 ODS 原生 HTML + 中文研报 + Word + PDF</td>
+                </tr>
+                <tr>
+                    <td><strong>实证截图</strong></td>
+                    <td>output 下 .png 合计</td>
+                    <td><strong>91 张</strong></td>
+                    <td><span class="code-pill">output/</span> 含登录/注入/LOG/RESULTS/APA7 三线表/看板</td>
+                </tr>
+                <tr>
+                    <td><strong>SAS 程序代码</strong></td>
+                    <td>git 已跟踪 .sas 文件</td>
+                    <td><strong>6 个</strong> · 2,186 行</td>
+                    <td><span class="code-pill">git ls-files | *.sas</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Python 自动化脚本</strong></td>
+                    <td>git 已跟踪 .py 文件</td>
+                    <td><strong>13 个</strong> · 4,999 行</td>
+                    <td><span class="code-pill">git ls-files | *.py</span></td>
+                </tr>
+                <tr>
+                    <td><strong>UI 登记手册</strong></td>
+                    <td>DOM 定位器条目</td>
+                    <td><strong>243 行</strong></td>
+                    <td><span class="code-pill">docs/sas_studio_ui_button_registry.md</span> 界面接口契约</td>
+                </tr>
+                <tr>
+                    <td><strong>FineBI 驾驶舱</strong></td>
+                    <td>Playwright 脚本 / 看板截图 / 控制台</td>
+                    <td><strong>21 脚本</strong> · <strong>37 截图</strong> · Next.js 16.3.1</td>
+                    <td><span class="code-pill">tools/finebi_pw/</span> 登录/数据导入/血缘校验全程取证</td>
+                </tr>
+                <tr>
+                    <td><strong>Apache Superset</strong></td>
+                    <td>看板 / 图表 / 数据源表 / 字段定义</td>
+                    <td><strong>49 看板</strong> · <strong>363 图表</strong> · <strong>466 图表位</strong> · 106 数据源 · 1380 字段</td>
+                    <td><span class="code-pill">~/.superset/superset.db</span> 44MB 元数据库 + 105 导出 YAML</td>
+                </tr>
+                <tr>
+                    <td><strong>Grafana 运维监控</strong></td>
+                    <td>JSON 看板面板</td>
+                    <td><strong>2 套</strong> · 电商可观测性 6 面板 + RAG 学习系统 8 面板</td>
+                    <td><span class="code-pill">platform/observability/grafana/</span> provisioning JSON</td>
+                </tr>
+                <tr>
+                    <td><strong>自研 Django 看板</strong></td>
+                    <td>看板模块文件 / 行数</td>
+                    <td><strong>8 模块</strong> · 914 行（含登录认证）</td>
+                    <td><span class="code-pill">rag-dashboard/django-service/dashboard/</span></td>
+                </tr>
+                <tr>
+                    <td><strong>n8n 工作流引擎</strong></td>
+                    <td>JSON 工作流 / 节点 / 连接</td>
+                    <td><strong>17 工作流</strong> · <strong>126 节点</strong> · 97 连接（双线部署）</td>
+                    <td><span class="code-pill">n8n-dify-omnichannel/</span> 全渠道 Copilot 8 WF + <span class="code-pill">外贸拓客助手/</span> 编排底座 9 WF</td>
+                </tr>
+                <tr>
+                    <td><strong>DeepSeek-Harness (DSH)</strong></td>
+                    <td>插件包 / 运行时 session</td>
+                    <td><strong>50 插件包</strong> · <strong>9 项目 session</strong>（deepseek-v4-flash 驱动）</td>
+                    <td><span class="code-pill">DeepSeek-Harness/</span> 1,028,807 LOC + <span class="code-pill">~/.dsh/</span></td>
+                </tr>
+                <tr>
+                    <td><strong>hermes-agent 运行时</strong></td>
+                    <td>自定义 skills / cron 自治任务</td>
+                    <td><strong>23 skills</strong> · 3 cron 任务 · 872,413 LOC 自有 Fork</td>
+                    <td><span class="code-pill">~/.hermes/</span> BeautyOS agent 分发 + 多通道 gateway</td>
+                </tr>
+                <tr>
+                    <td><strong>Koishi 多平台桥接</strong></td>
+                    <td>cordis 配置 / 覆盖平台</td>
+                    <td><strong>160 行</strong> · 3 平台（Telegram / 企微 / 飞书）</td>
+                    <td><span class="code-pill">dsh-koishi-bridge/bridge.cordis.yml</span> Landlock 沙箱</td>
+                </tr>
+                <tr>
+                    <td><strong>LangGraph Hybrid Agent</strong></td>
+                    <td>Agent 模块行数 / 模块数</td>
+                    <td><strong>20,275 行</strong> · 27 模块（StateGraph + ReAct + Forced-RAG）</td>
+                    <td><span class="code-pill">business-agent-system/.../agent/</span> graph.py 4,527 + tools.py 6,221</td>
+                </tr>
+                <tr>
+                    <td><strong>Dify 兼容 Agent 服务器</strong></td>
+                    <td>API 端点 / 行数</td>
+                    <td><strong>3 端点</strong> · 436 行（/v1/chat-messages + /workflows/run + /datasets）</td>
+                    <td><span class="code-pill">外贸拓客助手/services/dify_agent_engine/</span> 端口 8096</td>
+                </tr>
+                <tr>
+                    <td><strong>Ollama 本地大模型</strong></td>
+                    <td>qwen3:8b 引用文件</td>
+                    <td><strong>3 文件</strong>（n8n LangChain Agent + 飞书 WS Agent + 测试）</td>
+                    <td><span class="code-pill">native_langchain_agent_pipeline.n8n.json</span></td>
+                </tr>
+                <tr>
+                    <td><strong>ComfyUI + FLUX.1</strong></td>
+                    <td>AI 渲染引擎代码行数</td>
+                    <td><strong>35,831 LOC</strong> · 36 JSON 模板 · FLUX.1-dev + ControlNet Depth</td>
+                    <td><span class="code-pill">comfyui-sdcpp-hotel-workflow/</span> RTX 4070</td>
+                </tr>
+                <tr>
+                    <td><strong>FreeCAD BIM 建模</strong></td>
+                    <td>参数化 CAD 代码行数</td>
+                    <td><strong>71,998 LOC</strong> · FreeCADBlenderBridge XML-RPC</td>
+                    <td><span class="code-pill">open-floorplan-cad/</span> .FCStd / .obj / .glb</td>
+                </tr>
+                <tr>
+                    <td><strong>Blender Cycles 渲染</strong></td>
+                    <td>光追渲染脚本数</td>
+                    <td><strong>9 脚本</strong> · PBR 材质 + Cycles 灯光 + .blend/.glb</td>
+                    <td><span class="code-pill">open-floorplan-cad/scripts/</span></td>
+                </tr>
+                <tr>
+                    <td><strong>AutoCAD MCP Server</strong></td>
+                    <td>MCP 工具 / 代码行数</td>
+                    <td><strong>8 工具</strong> · 4,083 LOC · ezdxf 无头 + Win32 IPC</td>
+                    <td><span class="code-pill">autocad-mcp/</span> 3 AutoLISP</td>
+                </tr>
+                <tr>
+                    <td><strong>飞桨 PaddleOCR</strong></td>
+                    <td>OCR 引擎引用文件数</td>
+                    <td><strong>135 文件</strong> · 跨 4 仓库 · RAGFlow deepdoc</td>
+                    <td><span class="code-pill">agent-infra-hub/</span> paddleocr_parser</td>
+                </tr>
+                <tr>
+                    <td><strong>向量数据库矩阵</strong></td>
+                    <td>覆盖仓库数 / 引擎数</td>
+                    <td><strong>29 仓库</strong> · 8 引擎（SQLite/Milvus/Neo4j/pgvector/ES/Qdrant/Redis/ClickHouse）</td>
+                    <td><span class="code-pill">v_all_local_git_repositories</span></td>
+                </tr>
+                <tr>
+                    <td><strong>开源依赖生态</strong></td>
+                    <td>成熟库集成 / 8 层</td>
+                    <td><strong>45+ 库</strong>：FastAPI/pydantic · langgraph/transformers/diffusers · qdrant/pymilvus/neo4j · ezdxf/shapely/trimesh/kiwisolver/ortools · R 统计 9 包 · React18/zustand/recharts</td>
+                    <td><span class="code-pill">requirements.txt / pyproject.toml / package.json</span> 实测</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 style="font-size:15px; margin:26px 0 10px; color:var(--text-primary);">四、质量把控与工程认知</h3>
+        <p style="font-size:13.5px; color:var(--text-secondary); line-height:1.8;">
+            本案例最有价值的一步是<strong>反向审计</strong>：对 AI 装配的研报初稿逐格核对原始 ODS 表格后，发现若干"正文结论与表格数字不符"（如把 p=0.90 的不显著系数写成 p&lt;0.001 的显著结论、置信区间跨 1 的 OR 被解读为因果）。由此确立<strong>"以引擎原始表格为唯一数字真源，叙事文字必须与断言区间一致"</strong>的质检规则，并将显著性表述统一为学术规范（*/**/***/ns）。这正是统计学专业背景在 Vibe Coding 流程中作为"AI 幻觉终结者"的直接体现。<br/><br/>
+            <span style="font-size:12px; font-family:'JetBrains Mono',monospace; color:var(--text-tertiary);">数据真源 · 单源直达：<code>career_analytics_lake.duckdb</code> → 视图群 <code>v_survey_sas_key_stats</code> / <code>v_survey_macro_gold</code> / <code>v_survey_pain_points</code> / <code>v_survey_engineering_evidence</code> / <code>v_survey_empirical_bronze</code> / <code>v_survey_empirical_audit</code>（<code>data/views_survey_empirical_direct_lake.sql</code>），bronze 层底账 <code>data/survey_empirical_bronze.parquet</code> 77 条实证记录，覆盖引擎数字 + 多源工程证据 + 第三方开源依赖生态（8 层 45+ 成熟库）+ Agent 运行时实跑痕迹（hermes 23 skills / 3 cron + DSH 9 项目 session），每条带证据来源与清洗口径，SQL 可复验。</span>
+        </p>
+    </section>
+
     <!-- 统一底层单一真实源数据依据 -->
     <section id="sec-provenance" class="card" style="margin-top: 36px;">
         <div class="card-caption-bar">
@@ -833,7 +1178,7 @@
             <span class="card-tag">SOURCES ｜ PRJ-AI-VIBE-2026</span>
         </div>
         <p style="font-size:14px; color:var(--text-secondary); line-height:1.75; margin-bottom:14px;">
-            本研报所述 8 大核心受控仓库（2,804 万行代码）、120.8 小时 WakaTime 真实实操编码记录、1.99 万轮 AI 开发交互日志及 6 大垂直场景自研业务原型，均来自本地 Git 仓库提交记录、DuckDB 分析视图及 Linux 生产环境部署实测，数据真实透明、代码完全受控。
+            本研报所述 8 大核心受控仓库（2,804 万行代码）、120.8 小时 WakaTime 真实实操编码记录、1.99 万轮 AI 开发交互日志及 6 大垂直场景自研业务原型，均来自本地 Git 仓库提交记录、DuckDB 分析视图及 Linux 生产环境部署实测，数据真实透明、代码完全受控。§ 5 统计实证案例全部数字可溯源至本地仓库 <code>~/projects/survey-analysis</code>：SAS 官方云端原生 ODS 输出（6,281 行 HTML）、执行日志与截图录屏凭据、SPSS 引擎原生结果文本，以及 DuckDB gold 层回灌表。
         </p>
 
         <div style="font-size:13px; color:var(--text-tertiary); line-height:1.6; margin-bottom:16px;">
