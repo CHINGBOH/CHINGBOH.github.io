@@ -11,47 +11,37 @@ export default function Timeline() {
         </div>
       </div>
 
-      <div className="booktabs-container">
-        <table className="booktabs-table">
-          <thead>
-            <tr>
-              <th style={{ width: 140 }}>起止周期</th>
-              <th style={{ width: 220 }}>机构与主体</th>
-              <th style={{ width: 220 }}>职务 / 业务角色</th>
-              <th>核心工作职责与操盘要点</th>
-            </tr>
-          </thead>
-          <tbody>
-            {timeline.rows.map((row) => (
-              <tr key={row.period}>
-                <td className="cell-period">
-                  {row.period}
-                  <div className="cell-duration">({row.duration})</div>
-                </td>
-                <td>
-                  <div className="cell-org">{row.org}</div>
-                </td>
-                <td>
-                  <div className="cell-role">{row.role}</div>
-                </td>
-                <td>
-                  <ul className="bullet-list">
-                    {row.bullets.map((b, i) => (
-                      <li key={i}>{b}</li>
-                    ))}
-                  </ul>
-                  <div className="tag-row">
-                    {row.tags.map((t) => (
-                      <span className="tag" key={t}>
-                        {t}
-                      </span>
-                    ))}
-                  </div>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+      <div className="career-timeline">
+        {timeline.rows.map((row) => (
+          <div className="timeline-entry" key={row.period}>
+            <div className="timeline-marker" aria-hidden="true">
+              <span className="timeline-dot" />
+              <span className="timeline-line" />
+            </div>
+
+            <div className="timeline-period">
+              <div className="period-text">{row.period}</div>
+              <div className="duration-text">{row.duration}</div>
+            </div>
+
+            <div className="timeline-card">
+              <div className="timeline-org">{row.org}</div>
+              <div className="timeline-role">{row.role}</div>
+              <ul className="bullet-list">
+                {row.bullets.map((b, i) => (
+                  <li key={i}>{b}</li>
+                ))}
+              </ul>
+              <div className="tag-row">
+                {row.tags.map((t) => (
+                  <span className="tag" key={t}>
+                    {t}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
