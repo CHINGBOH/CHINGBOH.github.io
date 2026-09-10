@@ -22,3 +22,26 @@ npm-debug.log*
 
 # 研报渲染备份（隔离目录，不入 git）
 /data/monographs_backup/
+
+# ── 未纳管背景文件（磁盘保留，仅清出 git status）────────────────
+# AI/编辑器与运行缓存
+.trae/
+**/__pycache__/
+# 渲染临时报告
+/data/monographs_diff_report.txt
+# 旧版/派生研报层（新真源在 data/monographs_src/）
+/data/monographs/
+/data/monographs_md/
+/monographs_md/
+# 其它管线脚本/模板/资产
+/scripts/build_full_intro.py
+/scripts/build_full_intro_assets.sh
+/scripts/build_profile_md.py
+/scripts/templates/
+/data/portfolio-print.css
+# 个人资料与工作区文件
+/data/profile.md
+/data/全案介绍*
+/全案介绍.pdf
+/*.code-workspace
+/data/*.code-workspace
