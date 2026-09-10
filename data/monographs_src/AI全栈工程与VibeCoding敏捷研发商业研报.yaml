@@ -1,3 +1,5 @@
+# 文字真源：scripts/monographs/AI全栈工程与VibeCoding敏捷研发商业研报.html
+# 单一真源铁律：改此文件 text -> build_monographs_from_yaml.py 回填外壳，禁止手改 monographs/*.html
 meta:
   source_file: monographs/AI全栈工程与VibeCoding敏捷研发商业研报.html
   slug: AI全栈工程与VibeCoding敏捷研发商业研报
@@ -2182,3 +2184,39 @@ slots:
   parent: container
   orig: "\n            2026 商业专案库归档\n        "
   text: "\n            2026 商业专案库归档\n        "
+- key: s363
+  kind: block
+  tag: span
+  parent: container
+  orig: SYSTEM SPECIFICATION FACT TABLE
+  text: SYSTEM SPECIFICATION FACT TABLE
+- key: s364
+  kind: block
+  tag: span
+  parent: container
+  orig: THE 2×2 BALANCED ENGINEERING AXIOM
+  text: THE 2×2 BALANCED ENGINEERING AXIOM
+- key: s365
+  kind: block
+  tag: span
+  parent: container
+  orig: STATISTICAL EMPIRICAL CASE · SURVEY-ANALYSIS
+  text: STATISTICAL EMPIRICAL CASE · SURVEY-ANALYSIS
+- key: s366
+  kind: block
+  tag: strong
+  parent: container
+  orig: 杠杆力学图示
+  text: 杠杆力学图示
+- key: s367
+  kind: block
+  tag: span
+  parent: container
+  orig: AI ENGINEERING METRICS & WORKFLOW CHARTS
+  text: AI ENGINEERING METRICS & WORKFLOW CHARTS
+- key: s368
+  kind: block
+  tag: span
+  parent: container
+  orig: FUNCTIONAL PROTOTYPE REGISTRY
+  text: FUNCTIONAL PROTOTYPE REGISTRY

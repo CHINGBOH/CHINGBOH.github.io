@@ -1,3 +1,5 @@
+# 文字真源：scripts/monographs/湄潭项目全生命周期数据洞察研报.html
+# 单一真源铁律：改此文件 text -> build_monographs_from_yaml.py 回填外壳，禁止手改 monographs/*.html
 meta:
   source_file: monographs/湄潭项目全生命周期数据洞察研报.html
   slug: 湄潭项目全生命周期数据洞察研报
@@ -1150,3 +1152,87 @@ slots:
   parent: container
   orig: "\n            2026 商业专案库归档\n        "
   text: "\n            2026 商业专案库归档\n        "
+- key: s191
+  kind: block
+  tag: span
+  parent: container
+  orig: SECTION I · COMMERCIAL OPERATIONS & RISK CONTROL
+  text: SECTION I · COMMERCIAL OPERATIONS & RISK CONTROL
+- key: s192
+  kind: block
+  tag: span
+  parent: container
+  orig: SECTION II · COMMERCIAL CLOSURE & CASH METRICS
+  text: SECTION II · COMMERCIAL CLOSURE & CASH METRICS
+- key: s193
+  kind: block
+  tag: span
+  parent: container
+  orig: FIG. 01
+  text: FIG. 01
+- key: s194
+  kind: block
+  tag: span
+  parent: container
+  orig: FIG. 02
+  text: FIG. 02
+- key: s195
+  kind: block
+  tag: span
+  parent: container
+  orig: FIG. 03
+  text: FIG. 03
+- key: s196
+  kind: block
+  tag: span
+  parent: container
+  orig: FIG. 04
+  text: FIG. 04
+- key: s197
+  kind: block
+  tag: span
+  parent: container
+  orig: FIG. 05
+  text: FIG. 05
+- key: s198
+  kind: block
+  tag: span
+  parent: container
+  orig: TABLE 02
+  text: TABLE 02
+- key: s199
+  kind: block
+  tag: span
+  parent: container
+  orig: SECTION III · SPATIAL ASSET & DELIVERY TOPOLOGY
+  text: SECTION III · SPATIAL ASSET & DELIVERY TOPOLOGY
+- key: s200
+  kind: block
+  tag: span
+  parent: container
+  orig: FIG. 06
+  text: FIG. 06
+- key: s201
+  kind: block
+  tag: span
+  parent: container
+  orig: FIG. 07
+  text: FIG. 07
+- key: s202
+  kind: block
+  tag: span
+  parent: container
+  orig: FIG. 08
+  text: FIG. 08
+- key: s203
+  kind: block
+  tag: span
+  parent: container
+  orig: FIG. 09
+  text: FIG. 09
+- key: s204
+  kind: block
+  tag: span
+  parent: container
+  orig: TABLE 03
+  text: TABLE 03

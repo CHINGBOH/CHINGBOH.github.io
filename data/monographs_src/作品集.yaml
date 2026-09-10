@@ -1,3 +1,5 @@
+# 文字真源：scripts/作品集.html
+# 单一真源铁律：改此文件 text -> build_monographs_from_yaml.py 回填外壳，禁止手改 monographs/*.html
 meta:
   source_file: 作品集.html
   slug: 作品集
@@ -754,3 +756,39 @@ slots:
   parent: container
   orig: "\n            © 2026 Boone Liang (梁清波) · 个人履历与专业作品集 · 静态单文件自包含成品\n        "
   text: "\n            © 2026 Boone Liang (梁清波) · 个人履历与专业作品集 · 静态单文件自包含成品\n        "
+- key: s125
+  kind: block
+  tag: span
+  parent: container
+  orig: 📚 精选代表作
+  text: 📚 精选代表作
+- key: s126
+  kind: block
+  tag: span
+  parent: container
+  orig: ↓
+  text: ↓
+- key: s127
+  kind: block
+  tag: span
+  parent: container
+  orig: 独立专案档案
+  text: 独立专案档案
+- key: s128
+  kind: block
+  tag: span
+  parent: container
+  orig: 独立专案档案
+  text: 独立专案档案
+- key: s129
+  kind: block
+  tag: span
+  parent: container
+  orig: 独立专案档案
+  text: 独立专案档案
+- key: s130
+  kind: block
+  tag: span
+  parent: container
+  orig: 独立专案档案
+  text: 独立专案档案

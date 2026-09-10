@@ -1,3 +1,5 @@
+# 文字真源：scripts/monographs/深圳市广田云软装科技全生命周期商业操盘与供应链大盘商业研报.html
+# 单一真源铁律：改此文件 text -> build_monographs_from_yaml.py 回填外壳，禁止手改 monographs/*.html
 meta:
   source_file: monographs/深圳市广田云软装科技全生命周期商业操盘与供应链大盘商业研报.html
   slug: 深圳市广田云软装科技全生命周期商业操盘与供应链大盘商业研报
@@ -2032,3 +2034,81 @@ slots:
   parent: container
   orig: "\n            2026 商业专案库归档\n        "
   text: "\n            2026 商业专案库归档\n        "
+- key: s330
+  kind: block
+  tag: span
+  parent: container
+  orig: EXECUTIVE PORTFOLIO & CONTRACT DOSSIER
+  text: EXECUTIVE PORTFOLIO & CONTRACT DOSSIER
+- key: s331
+  kind: block
+  tag: span
+  parent: container
+  orig: THE 2×2 SOFT FURNISHING MANAGEMENT MATRIX
+  text: THE 2×2 SOFT FURNISHING MANAGEMENT MATRIX
+- key: s332
+  kind: block
+  tag: span
+  parent: container
+  orig: CLOUD SOFT FURNISHING CHARTS GRID
+  text: CLOUD SOFT FURNISHING CHARTS GRID
+- key: s333
+  kind: block
+  tag: span
+  parent: container
+  orig: FIG. 01
+  text: FIG. 01
+- key: s334
+  kind: block
+  tag: span
+  parent: container
+  orig: FIG. 02
+  text: FIG. 02
+- key: s335
+  kind: block
+  tag: span
+  parent: container
+  orig: FIG. 03
+  text: FIG. 03
+- key: s336
+  kind: block
+  tag: span
+  parent: container
+  orig: FIG. 04
+  text: FIG. 04
+- key: s337
+  kind: block
+  tag: span
+  parent: container
+  orig: CONTRACTUAL DOSSIER & VERIFIED AUDITS
+  text: CONTRACTUAL DOSSIER & VERIFIED AUDITS
+- key: s338
+  kind: block
+  tag: span
+  parent: container
+  orig: 按合同体量规模排序 · 点击可穿透查阅独立全景研报
+  text: 按合同体量规模排序 · 点击可穿透查阅独立全景研报
+- key: s339
+  kind: block
+  tag: span
+  parent: container
+  orig: § 01 破亿级国宾酒店
+  text: § 01 破亿级国宾酒店
+- key: s340
+  kind: block
+  tag: span
+  parent: container
+  orig: § 02 温泉度假地标
+  text: § 02 温泉度假地标
+- key: s341
+  kind: block
+  tag: span
+  parent: container
+  orig: § 03 五星城市综合体
+  text: § 03 五星城市综合体
+- key: s342
+  kind: block
+  tag: span
+  parent: container
+  orig: § 04 极奢展厅高周转
+  text: § 04 极奢展厅高周转

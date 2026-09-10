@@ -1,3 +1,5 @@
+# 文字真源：scripts/monographs/遵义大酒店五星级软装工程全周期商业操盘研报.html
+# 单一真源铁律：改此文件 text -> build_monographs_from_yaml.py 回填外壳，禁止手改 monographs/*.html
 meta:
   source_file: monographs/遵义大酒店五星级软装工程全周期商业操盘研报.html
   slug: 遵义大酒店五星级软装工程全周期商业操盘研报
@@ -694,3 +696,51 @@ slots:
   parent: container
   orig: "\n            2026 商业专案库归档\n        "
   text: "\n            2026 商业专案库归档\n        "
+- key: s114
+  kind: block
+  tag: span
+  parent: container
+  orig: SECTION I · PROJECT ORIGINATION & SYNERGY
+  text: SECTION I · PROJECT ORIGINATION & SYNERGY
+- key: s115
+  kind: block
+  tag: span
+  parent: container
+  orig: SECTION II · CONTRACT STRUCTURE & CASH FLOW
+  text: SECTION II · CONTRACT STRUCTURE & CASH FLOW
+- key: s116
+  kind: block
+  tag: span
+  parent: container
+  orig: PAYMENT MECHANISM
+  text: PAYMENT MECHANISM
+- key: s117
+  kind: block
+  tag: span
+  parent: container
+  orig: FIG. 01
+  text: FIG. 01
+- key: s118
+  kind: block
+  tag: span
+  parent: container
+  orig: FIG. 02
+  text: FIG. 02
+- key: s119
+  kind: block
+  tag: span
+  parent: container
+  orig: FIG. 03
+  text: FIG. 03
+- key: s120
+  kind: block
+  tag: span
+  parent: container
+  orig: SECTION III · CONTRACT PROVISIONS & COMPLIANCE
+  text: SECTION III · CONTRACT PROVISIONS & COMPLIANCE
+- key: s121
+  kind: block
+  tag: span
+  parent: container
+  orig: SECTION IV · AUDIT & FINAL SETTLEMENT
+  text: SECTION IV · AUDIT & FINAL SETTLEMENT

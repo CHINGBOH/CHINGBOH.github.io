@@ -1,3 +1,5 @@
+# 文字真源：scripts/monographs/上市公司董办合规资本运作与总经办企业运营商业研报.html
+# 单一真源铁律：改此文件 text -> build_monographs_from_yaml.py 回填外壳，禁止手改 monographs/*.html
 meta:
   source_file: monographs/上市公司董办合规资本运作与总经办企业运营商业研报.html
   slug: 上市公司董办合规资本运作与总经办企业运营商业研报
@@ -1168,3 +1170,27 @@ slots:
   parent: container
   orig: "\n            2026 商业专案库归档\n        "
   text: "\n            2026 商业专案库归档\n        "
+- key: s194
+  kind: block
+  tag: span
+  parent: container
+  orig: HEADQUARTERS GOVERNANCE & OPERATIONS FACT TABLE
+  text: HEADQUARTERS GOVERNANCE & OPERATIONS FACT TABLE
+- key: s195
+  kind: block
+  tag: span
+  parent: container
+  orig: THE 2×2 CORPORATE GOVERNANCE & OPERATIONS MATRIX
+  text: THE 2×2 CORPORATE GOVERNANCE & OPERATIONS MATRIX
+- key: s196
+  kind: block
+  tag: span
+  parent: container
+  orig: CORPORATE GOVERNANCE & CAPITAL MARKET CHARTS
+  text: CORPORATE GOVERNANCE & CAPITAL MARKET CHARTS
+- key: s197
+  kind: block
+  tag: span
+  parent: container
+  orig: DUE DILIGENCE CHECKLIST & BOARD MEETING REGISTRY
+  text: DUE DILIGENCE CHECKLIST & BOARD MEETING REGISTRY

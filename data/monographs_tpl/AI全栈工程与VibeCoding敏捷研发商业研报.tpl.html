@@ -511,7 +511,7 @@
     <section id="sec-overview" class="card">
         <div class="card-caption-bar">
             <h2 class="card-heading" data-slot="s38">项目基本盘 · 研发属性与核心业务事实台账</h2>
-            <span class="card-tag">SYSTEM SPECIFICATION FACT TABLE</span>
+            <span class="card-tag" data-slot="s363">SYSTEM SPECIFICATION FACT TABLE</span>
         </div>
         <table class="booktabs-table">
             <thead>
@@ -570,7 +570,7 @@
     <section id="sec-methodology" class="card">
         <div class="card-caption-bar">
             <h2 class="card-heading" data-slot="s66">Vibe Coding 敏捷工程化实录 · 2×2 平衡对称架构</h2>
-            <span class="card-tag">THE 2×2 BALANCED ENGINEERING AXIOM</span>
+            <span class="card-tag" data-slot="s364">THE 2×2 BALANCED ENGINEERING AXIOM</span>
         </div>
         <p style="font-size:14px; color:var(--text-secondary); margin-bottom:12px;" data-slot="s67">
             一句话，就是<strong>"给 AI 讲清楚背景，剩下的活交给它"</strong>：我负责把项目怎么回事讲明白，AI 负责把代码写出来，再用严格的检查兜底，不让它乱跑。这不是放任不管，而是有章法的协作。
@@ -618,7 +618,7 @@
     <section id="sec-statcase" class="card">
         <div class="card-caption-bar">
             <h2 class="card-heading" data-slot="s85">统计实证案例 · Vibe Coding 驱动 SAS / SPSS 多引擎问卷分析全链路</h2>
-            <span class="card-tag">STATISTICAL EMPIRICAL CASE · SURVEY-ANALYSIS</span>
+            <span class="card-tag" data-slot="s365">STATISTICAL EMPIRICAL CASE · SURVEY-ANALYSIS</span>
         </div>
         <p style="font-size:14px; color:var(--text-secondary); margin-bottom:16px;" data-slot="s86">
             以本人统计学专业背景为依托，对两份真实回收的消费券问卷（青年消费券 N=205、浙江省数字消费券 N=208）开展多引擎交叉验证实证研究。全程以 Vibe Coding 方式驱动：AI 代理自动化操控 SAS Studio 官方云端（SAS 9.4 / ODA 集群）与本机 IBM SPSS 统计引擎，R 与 DuckDB 湖仓做对照与数据底座，从原始 Excel 到发布级统计研报形成端到端可复现闭环（仓库 <code>survey-analysis</code>，代码、日志、截图、录屏四重凭据留存）。
@@ -629,7 +629,7 @@
             Vibe Coding 的价值不在「生成代码」——单点生成代码门槛已极低；真正的稀缺能力，是用 <strong>LLM 与 Harness 作为支点，撬动项目 Context 这跟撑杆</strong>，把「数据处理」变成可交付的「工程成果」。整套湖仓视图体系（<code>v_vibe_engineering_overview</code> / <code>v_survey_engineering_evidence</code> / bronze 底账）正是这一原理的实证载体：散落各处的 Context 被压缩、索引、复用进 DuckDB，才能被 LLM（理解）与 Harness（执行）随时撬动。
         </p>
         <div style="background:linear-gradient(120deg,rgba(58,99,81,.10),rgba(28,44,38,.16)); border:1px solid rgba(58,99,81,.28); border-radius:10px; padding:16px 18px; margin:14px 0; font-size:13.5px; line-height:1.8; color:var(--text-primary);">
-            <strong>杠杆力学图示</strong>
+            <strong data-slot="s366">杠杆力学图示</strong>
             <div style="font-family:'JetBrains Mono',monospace; margin-top:8px; font-size:12.5px; color:var(--accent-forest); white-space:pre; overflow-x:auto;" data-slot="s89">
         Context（知识撑杆：82 条 bronze → 95 视图，压缩/索引/复用）
                 │  ▲
@@ -1010,7 +1010,7 @@
     <section id="sec-dashboard" class="card">
         <div class="card-caption-bar">
             <h2 class="card-heading" data-slot="s291">研发效能、AI 智能体分工与全栈技术图表</h2>
-            <span class="card-tag">AI ENGINEERING METRICS & WORKFLOW CHARTS</span>
+            <span class="card-tag" data-slot="s367">AI ENGINEERING METRICS & WORKFLOW CHARTS</span>
         </div>
         <!-- 6 块顶线 KPI 磁贴 -->
         <div class="kpi-deck">
@@ -1116,7 +1116,7 @@
     <section id="sec-prototypes" class="card">
         <div class="card-caption-bar">
             <h2 class="card-heading" data-slot="s324">6 大垂直场景自研业务原型实战与功能交付清单</h2>
-            <span class="card-tag">FUNCTIONAL PROTOTYPE REGISTRY</span>
+            <span class="card-tag" data-slot="s368">FUNCTIONAL PROTOTYPE REGISTRY</span>
         </div>
         <p style="font-size:14px; color:var(--text-secondary); margin-bottom:16px;" data-slot="s325">
             坚持“讲清楚真实功能、解决什么痛点、如何落地，杜绝浮夸概念”。以下 6 座系统原型均基于真实需求构建，具备完整代码实现与本地可运行链路：

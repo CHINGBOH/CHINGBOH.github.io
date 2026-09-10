@@ -1,3 +1,5 @@
+# 文字真源：scripts/monographs/上海华泰中心售楼处全生命周期商业操盘研报.html
+# 单一真源铁律：改此文件 text -> build_monographs_from_yaml.py 回填外壳，禁止手改 monographs/*.html
 meta:
   source_file: monographs/上海华泰中心售楼处全生命周期商业操盘研报.html
   slug: 上海华泰中心售楼处全生命周期商业操盘研报
@@ -790,3 +792,57 @@ slots:
   parent: container
   orig: "\n            2026 商业专案库归档\n        "
   text: "\n            2026 商业专案库归档\n        "
+- key: s131
+  kind: block
+  tag: span
+  parent: container
+  orig: SECTION I · COMMERCIAL OPERATIONS & 2×2 AXIOM
+  text: SECTION I · COMMERCIAL OPERATIONS & 2×2 AXIOM
+- key: s132
+  kind: block
+  tag: span
+  parent: container
+  orig: SECTION II · CASH FLOW & PRICING METRICS
+  text: SECTION II · CASH FLOW & PRICING METRICS
+- key: s133
+  kind: block
+  tag: span
+  parent: container
+  orig: FIG. 01
+  text: FIG. 01
+- key: s134
+  kind: block
+  tag: span
+  parent: container
+  orig: FIG. 02
+  text: FIG. 02
+- key: s135
+  kind: block
+  tag: span
+  parent: container
+  orig: FIG. 03
+  text: FIG. 03
+- key: s136
+  kind: block
+  tag: span
+  parent: container
+  orig: FIG. 04
+  text: FIG. 04
+- key: s137
+  kind: block
+  tag: span
+  parent: container
+  orig: SECTION III · 7 ZONES ASSET LEDGER
+  text: SECTION III · 7 ZONES ASSET LEDGER
+- key: s138
+  kind: block
+  tag: span
+  parent: container
+  orig: FIG. 05
+  text: FIG. 05
+- key: s139
+  kind: block
+  tag: span
+  parent: container
+  orig: TABLE 02
+  text: TABLE 02
