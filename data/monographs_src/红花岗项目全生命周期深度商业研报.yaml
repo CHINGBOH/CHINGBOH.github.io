@@ -1,0 +1,1574 @@
+# 文字真源：monographs/红花岗项目全生命周期深度商业研报.html
+# 单一真源铁律：改此文件 text -> build_monographs_from_yaml.py 回填外壳，禁止手改 monographs/*.html
+meta:
+  source_file: monographs/红花岗项目全生命周期深度商业研报.html
+  slug: 红花岗项目全生命周期深度商业研报
+  title: 遵义红花岗南部城市综合体商业操盘研报 ｜ 梁清波 商业专案库
+  hash: b1d7d4ca81258224ba03dce7be64e288d8a5a98ab1828a993016f0c6e5a53dbe
+slots:
+- key: s00
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            <a href=\"javascript:void(0)\" onclick=\"returnToParentMonograph()\" class=\"nav-back-btn\" style=\"padding:4px 10px;\">\n                ‹ 返回云软装大盘\n            </a>\n            <span class=\"nav-brand-code\">PRJ-HHG-2016</span>\n            <span class=\"eyebrow-sep\" style=\"color:var(--border-strong);margin:0 4px;\">/</span>\n            <span class=\"nav-brand-title\">遵义红花岗南部城市综合体商业操盘研报</span>\n        "
+  text: "\n            \n                ‹ 返回云软装大盘\n            \n            PRJ-HHG-2016\n            /\n            遵义红花岗南部城市综合体商业操盘研报\n        "
+- key: s01
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#dossier">§ I 商业操盘实录</a>
+  text: § I 商业操盘实录
+- key: s02
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#dashboard">§ II 结算看板</a>
+  text: § II 结算看板
+- key: s03
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#spatial-inventory">§ III 空间资产与BOM</a>
+  text: § III 空间资产与BOM
+- key: s04
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            <span>ARCHIVAL MONOGRAPH</span>\n            <span class=\"eyebrow-sep\">/</span>\n            <span>PRJ-HHG-2016</span>\n            <span class=\"eyebrow-sep\">/</span>\n            <span>ZUNYI HONGHUAGANG GRAND SKYLIGHT HOTEL</span>\n        "
+  text: "\n            ARCHIVAL MONOGRAPH\n            /\n            PRJ-HHG-2016\n            /\n            ZUNYI HONGHUAGANG GRAND SKYLIGHT HOTEL\n        "
+- key: s05
+  kind: section-title
+  tag: h1
+  parent: container
+  orig: 遵义红花岗南部城市综合体商业操盘研报
+  text: 遵义红花岗南部城市综合体商业操盘研报
+- key: s06
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            遵义市红花岗区南部城市综合体 · 3,502.90 万元送审申报 · 2,408.99 万元认价锁定 · 1,000 万元业主无息借款 · 14,950 件(套) 实物交付 · 16,478 ㎡ 激光实测核减结算总结\n        "
+  text: "\n            遵义市红花岗区南部城市综合体 · 3,502.90 万元送审申报 · 2,408.99 万元认价锁定 · 1,000 万元业主无息借款 · 14,950 件(套) 实物交付 · 16,478 ㎡ 激光实测核减结算总结\n        "
+- key: s07
+  kind: block
+  tag: div
+  parent: container
+  orig: 操盘模式与主体
+  text: 操盘模式与主体
+- key: s08
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 国资发包 <span>/ 四局总包</span>
+  text: 国资发包 / 四局总包
+- key: s09
+  kind: block
+  tag: div
+  parent: container
+  orig: 广田专业承包（梁清波 采销总控）
+  text: 广田专业承包（梁清波 采销总控）
+- key: s10
+  kind: block
+  tag: div
+  parent: container
+  orig: 送审申报与认价锁定
+  text: 送审申报与认价锁定
+- key: s11
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 3,502.9 ➔ 2,408.99 <span>万</span>
+  text: 3,502.9 ➔ 2,408.99 万
+- key: s12
+  kind: block
+  tag: div
+  parent: container
+  orig: 申报 3502.9万 / 锁定含 120万增项
+  text: 申报 3502.9万 / 锁定含 120万增项
+- key: s13
+  kind: block
+  tag: div
+  parent: container
+  orig: 实测核减计价面积
+  text: 实测核减计价面积
+- key: s14
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 20,000 ➔ 16,478 <span>㎡</span>
+  text: 20,000 ➔ 16,478 ㎡
+- key: s15
+  kind: block
+  tag: div
+  parent: container
+  orig: 原始 22,706 ㎡ / 扣减机房厨房
+  text: 原始 22,706 ㎡ / 扣减机房厨房
+- key: s16
+  kind: block
+  tag: div
+  parent: container
+  orig: 最终审定平米单价
+  text: 最终审定平米单价
+- key: s17
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 1,461.95 <span>元/㎡</span>
+  text: 1,461.95 元/㎡
+- key: s18
+  kind: block
+  tag: div
+  parent: container
+  orig: 按 16,478 ㎡ 纯软装净空间测定
+  text: 按 16,478 ㎡ 纯软装净空间测定
+- key: s19
+  kind: block
+  tag: div
+  parent: container
+  orig: 启动周转借款平账
+  text: 启动周转借款平账
+- key: s20
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 1,000.00 <span>万元</span>
+  text: 1,000.00 万元
+- key: s21
+  kind: block
+  tag: div
+  parent: container
+  orig: 业主无息周转借款 / 0 自有资金挤占
+  text: 业主无息周转借款 / 0 自有资金挤占
+- key: s22
+  kind: block
+  tag: div
+  parent: container
+  orig: 全案实物交付规模
+  text: 全案实物交付规模
+- key: s23
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 14,950 <span>件(套)</span>
+  text: 14,950 件(套)
+- key: s24
+  kind: block
+  tag: div
+  parent: container
+  orig: 390 行原子级微观 BOM 实证点验
+  text: 390 行原子级微观 BOM 实证点验
+- key: s25
+  kind: block
+  tag: div
+  parent: container
+  orig: SECTION I
+  text: SECTION I
+- key: s26
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 商业操盘与履约风控实录
+  text: 商业操盘与履约风控实录
+- key: s27
+  kind: block
+  tag: div
+  parent: container
+  orig: 基于施工总承包专业分包合同原件、送审盖章清单第一册与年前借款协议，系统还原商业操盘的完整闭环
+  text: 基于施工总承包专业分包合同原件、送审盖章清单第一册与年前借款协议，系统还原商业操盘的完整闭环
+- key: s28
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 项目核心基本盘综合台账
+  text: 项目核心基本盘综合台账
+- key: s29
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: EXECUTIVE SUMMARY · CORE PROJECT SPECIFICATIONS
+  text: EXECUTIVE SUMMARY · CORE PROJECT SPECIFICATIONS
+- key: s30
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 管控维度
+  text: 管控维度
+- key: s31
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 关键事实与核心数据
+  text: 关键事实与核心数据
+- key: s32
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 商业背景与操盘意义
+  text: 商业背景与操盘意义
+- key: s33
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 发包界面
+  text: 发包界面
+- key: s34
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>国资发包 ➔ 中建四局总包 ➔ 广田专业承包</strong>
+  text: '**国资发包 ➔ 中建四局总包 ➔ 广田专业承包**'
+- key: s35
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 遵义红花岗城投为发包人，中建四局为总包单位，广田云软装专业承揽全案公区 1-3 层室内软装
+  text: 遵义红花岗城投为发包人，中建四局为总包单位，广田云软装专业承揽全案公区 1-3 层室内软装
+- key: s36
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 工程造价
+  text: 工程造价
+- key: s37
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>报审 3,502.90 万元</strong> ｜ <strong>锁定 2,408.99 万元</strong>
+  text: '**报审 3,502.90 万元** ｜ **锁定 2,408.99 万元**'
+- key: s38
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 直接物料 3,170.62 万 + 规费税金 110.34 万 + 现场抢工赶工配合费 221.94 万；认价锁定含 120 万现场深化增项
+  text: 直接物料 3,170.62 万 + 规费税金 110.34 万 + 现场抢工赶工配合费 221.94 万；认价锁定含 120 万现场深化增项
+- key: s39
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 实测定额
+  text: 实测定额
+- key: s40
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>激光实测净面积 16,478.00 ㎡</strong> ｜ 净单方 <strong>1,461.95 元/㎡</strong>
+  text: '**激光实测净面积 16,478.00 ㎡** ｜ 净单方 **1,461.95 元/㎡**'
+- key: s41
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 原始建筑体量 22,706 ㎡ 扣除机房后经技术抗辩锁定 16,478 ㎡，相比包干面积 20,000 ㎡ (1,751 元/㎡) 真实反映软装造价强度
+  text: 原始建筑体量 22,706 ㎡ 扣除机房后经技术抗辩锁定 16,478 ㎡，相比包干面积 20,000 ㎡ (1,751 元/㎡) 真实反映软装造价强度
+- key: s42
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 资金破局
+  text: 资金破局
+- key: s43
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>业主年前无息借款 1,000.00 万元</strong>
+  text: '**业主年前无息借款 1,000.00 万元**'
+- key: s44
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 2017-01-03 直通红花岗城投高层批复千万元专款借款，0 占用企业自有现金，全额锁定春节期间工厂排产与原材料备货
+  text: 2017-01-03 直通红花岗城投高层批复千万元专款借款，0 占用企业自有现金，全额锁定春节期间工厂排产与原材料备货
+- key: s45
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 现金回款
+  text: 现金回款
+- key: s46
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>产值回款 2,000.00 万元</strong> ｜ 净落袋 <strong>1,850.00 万元</strong>
+  text: '**产值回款 2,000.00 万元** ｜ 净落袋 **1,850.00 万元**'
+- key: s47
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 年后集中交验累计收回 2,000 万进度款全额冲抵还清 1,000 万借款；扣除四局 150 万总包配合费后，净资金 1,850 万全额落袋
+  text: 年后集中交验累计收回 2,000 万进度款全额冲抵还清 1,000 万借款；扣除四局 150 万总包配合费后，净资金 1,850 万全额落袋
+- key: s48
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 交付规模
+  text: 交付规模
+- key: s49
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>390 行微观原子 BOM</strong> ｜ 全案交付 <strong>14,950 件(套)</strong>
+  text: '**390 行微观原子 BOM** ｜ 全案交付 **14,950 件(套)**'
+- key: s50
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 涵盖 96 万元黄铜主雕、89 万元通高原木浮雕、83.86 万元 12 米刺绣；千人宴会大厅 1,500 张餐椅与 3,000 条椅套大宗集采
+  text: 涵盖 96 万元黄铜主雕、89 万元通高原木浮雕、83.86 万元 12 米刺绣；千人宴会大厅 1,500 张餐椅与 3,000 条椅套大宗集采
+- key: s51
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: § 1 业务承揽与总包分包界面界定
+  text: § 1 业务承揽与总包分包界面界定
+- key: s52
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>公建国资标杆承揽</strong>：紧扣遵义南部城市综合体五星级格兰云天国际大酒店开业刚性节点，成功承揽公区 C/D 区 1-3 层软装专业工程。
+  text: '**公建国资标杆承揽**：紧扣遵义南部城市综合体五星级格兰云天国际大酒店开业刚性节点，成功承揽公区 C/D 区 1-3 层软装专业工程。'
+- key: s53
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>法定分包界面清晰</strong>：由遵义红花岗城投发包，中建四局施工总包，广田专业分包。签约暂定金额 3,000 万元，涵盖公区大堂、千人宴会厅、中餐包房群、国际会议中心等全案家具、艺术品、灯具与布艺软饰。
+  text: '**法定分包界面清晰**：由遵义红花岗城投发包，中建四局施工总包，广田专业分包。签约暂定金额 3,000 万元，涵盖公区大堂、千人宴会厅、中餐包房群、国际会议中心等全案家具、艺术品、灯具与布艺软饰。'
+- key: s54
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: § 2 采销多轨博弈定价与利润防波堤
+  text: § 2 采销多轨博弈定价与利润防波堤
+- key: s55
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>多轨阶梯商务防线</strong>：精准穿透珠三角源头工坊出厂成本底盘，设立严密的多级商务防御与谈判缓冲梯级；通过在正式报审报价 (3,502.90 万元) 中预留充分调价弹性，从发端构筑深厚利润蓄水池，从容化解总包与业主的层层压价。
+  text: '**多轨阶梯商务防线**：精准穿透珠三角源头工坊出厂成本底盘，设立严密的多级商务防御与谈判缓冲梯级；通过在正式报审报价 (3,502.90 万元) 中预留充分调价弹性，从发端构筑深厚利润蓄水池，从容化解总包与业主的层层压价。'
+- key: s56
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>增项抵补锁定底盘</strong>：在中建四局认价底线 2,288.99 万元基础上，紧抓现场图纸深化与宴会功能升级机遇，成功追加并锁定 120.00 万元现场增项，最终认价锁定在 2,408.99 万元。
+  text: '**增项抵补锁定底盘**：在中建四局认价底线 2,288.99 万元基础上，紧抓现场图纸深化与宴会功能升级机遇，成功追加并锁定 120.00 万元现场增项，最终认价锁定在 2,408.99 万元。'
+- key: s57
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: § 3 业主千万元借款破局与净回款闭环
+  text: § 3 业主千万元借款破局与净回款闭环
+- key: s58
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>0 自有资金挤占破局</strong>：面对春节前工厂必须见款排产与国资审批漫长的生死矛盾，操盘团队直通红花岗城投高管层，于 2017-01-03 成功签署 1,000 万元无息借款协议，由业主专款垫付，实现自有流动资金零挤占。
+  text: '**0 自有资金挤占破局**：面对春节前工厂必须见款排产与国资审批漫长的生死矛盾，操盘团队直通红花岗城投高管层，于 2017-01-03 成功签署 1,000 万元无息借款协议，由业主专款垫付，实现自有流动资金零挤占。'
+- key: s59
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>年后产值冲抵与现金落袋</strong>：春节后随着大批货品进场摆场，累计收回进度产值款 2,000 万元直接冲抵还清借款；扣除中建四局 150 万元总包管理配合费后，实现 1,850.00 万元充沛经营现金净流入。
+  text: '**年后产值冲抵与现金落袋**：春节后随着大批货品进场摆场，累计收回进度产值款 2,000 万元直接冲抵还清借款；扣除中建四局 150 万元总包管理配合费后，实现 1,850.00 万元充沛经营现金净流入。'
+- key: s60
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: § 4 激光实测面积核减抗辩与实物交付
+  text: § 4 激光实测面积核减抗辩与实物交付
+- key: s61
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>大面积核减技术抗辩</strong>：针对审计方提出的扣减后厨、机房与走廊意见，操盘团队出具激光实测点验底账，在原始 22,706 ㎡ 扣除机房 4,756 ㎡ 基础上，坚决捍卫关键装饰落位，将计价面积锚定在 16,478.00 ㎡。
+  text: '**大面积核减技术抗辩**：针对审计方提出的扣减后厨、机房与走廊意见，操盘团队出具激光实测点验底账，在原始 22,706 ㎡ 扣除机房 4,756 ㎡ 基础上，坚决捍卫关键装饰落位，将计价面积锚定在 16,478.00 ㎡。'
+- key: s62
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>14,950 件(套) 实证闭环</strong>：390 行原子级清单涵盖 96 万黄铜主雕、89 万原木浮雕及千人宴会大厅 1,500 张餐椅与 3,000 条椅套，以不可辩驳的实物证据链支撑全案平稳审计过关。
+  text: '**14,950 件(套) 实证闭环**：390 行原子级清单涵盖 96 万黄铜主雕、89 万原木浮雕及千人宴会大厅 1,500 张餐椅与 3,000 条椅套，以不可辩驳的实物证据链支撑全案平稳审计过关。'
+- key: s63
+  kind: block
+  tag: div
+  parent: container
+  orig: SECTION II
+  text: SECTION II
+- key: s64
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 项目经营结算与资金闭环看板
+  text: 项目经营结算与资金闭环看板
+- key: s65
+  kind: block
+  tag: div
+  parent: container
+  orig: 聚焦报审、认价、借款、产值回收与净现金兑现，不在本区展开空间资产的微观配置
+  text: 聚焦报审、认价、借款、产值回收与净现金兑现，不在本区展开空间资产的微观配置
+- key: s66
+  kind: block
+  tag: div
+  parent: container
+  orig: SUBMITTED SUM
+  text: SUBMITTED SUM
+- key: s67
+  kind: block
+  tag: div
+  parent: container
+  orig: 报审送审总造价
+  text: 报审送审总造价
+- key: s68
+  kind: block
+  tag: div
+  parent: container
+  orig: 3,502.9 <span>万</span>
+  text: 3,502.9 万
+- key: s69
+  kind: block
+  tag: div
+  parent: container
+  orig: 物料3170.6万+规费110万+抢工222万
+  text: 物料3170.6万+规费110万+抢工222万
+- key: s70
+  kind: block
+  tag: div
+  parent: container
+  orig: LOCKED SETTLEMENT
+  text: LOCKED SETTLEMENT
+- key: s71
+  kind: block
+  tag: div
+  parent: container
+  orig: 最终认价锁定值
+  text: 最终认价锁定值
+- key: s72
+  kind: block
+  tag: div
+  parent: container
+  orig: 2,408.99 <span>万</span>
+  text: 2,408.99 万
+- key: s73
+  kind: block
+  tag: div
+  parent: container
+  orig: 认价底线2289万 + 深化增项120万
+  text: 认价底线2289万 + 深化增项120万
+- key: s74
+  kind: block
+  tag: div
+  parent: container
+  orig: CASH INFLOW
+  text: CASH INFLOW
+- key: s75
+  kind: block
+  tag: div
+  parent: container
+  orig: 最终净实收现金
+  text: 最终净实收现金
+- key: s76
+  kind: block
+  tag: div
+  parent: container
+  orig: 1,850.0 <span>万</span>
+  text: 1,850.0 万
+- key: s77
+  kind: block
+  tag: div
+  parent: container
+  orig: 产值2000万 扣除总包配合费150万
+  text: 产值2000万 扣除总包配合费150万
+- key: s78
+  kind: block
+  tag: div
+  parent: container
+  orig: BRIDGING LOAN
+  text: BRIDGING LOAN
+- key: s79
+  kind: block
+  tag: div
+  parent: container
+  orig: 业主无息启动借款
+  text: 业主无息启动借款
+- key: s80
+  kind: block
+  tag: div
+  parent: container
+  orig: 1,000.0 <span>万</span>
+  text: 1,000.0 万
+- key: s81
+  kind: block
+  tag: div
+  parent: container
+  orig: 全额锁定春节排产 / 0 自有资金占用
+  text: 全额锁定春节排产 / 0 自有资金占用
+- key: s82
+  kind: block
+  tag: div
+  parent: container
+  orig: NET MEASURED AREA
+  text: NET MEASURED AREA
+- key: s83
+  kind: block
+  tag: div
+  parent: container
+  orig: 激光实测净面积
+  text: 激光实测净面积
+- key: s84
+  kind: block
+  tag: div
+  parent: container
+  orig: 16,478 <span>㎡</span>
+  text: 16,478 ㎡
+- key: s85
+  kind: block
+  tag: div
+  parent: container
+  orig: 纯软装综合单方 1,461.95 元/㎡
+  text: 纯软装综合单方 1,461.95 元/㎡
+- key: s86
+  kind: block
+  tag: div
+  parent: container
+  orig: ASSET INVENTORY
+  text: ASSET INVENTORY
+- key: s87
+  kind: block
+  tag: div
+  parent: container
+  orig: 全案物料交付量
+  text: 全案物料交付量
+- key: s88
+  kind: block
+  tag: div
+  parent: container
+  orig: 14,950 <span>件(套)</span>
+  text: 14,950 件(套)
+- key: s89
+  kind: block
+  tag: div
+  parent: container
+  orig: 390 行 BOM · 宴会椅1500/椅套3000
+  text: 390 行 BOM · 宴会椅1500/椅套3000
+- key: s90
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 红花岗公区多轨价格博弈阶梯对比 (万元)
+  text: 红花岗公区多轨价格博弈阶梯对比 (万元)
+- key: s91
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: MULTI-TIER PRICING & MARGIN DEFENSE LADDER
+  text: MULTI-TIER PRICING & MARGIN DEFENSE LADDER
+- key: s92
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 报审计申报总造价构成、规费税金与现场抢工费核销表
+  text: 报审计申报总造价构成、规费税金与现场抢工费核销表
+- key: s93
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: SUBMISSION COST BREAKDOWN · 3,502.90 万元
+  text: SUBMISSION COST BREAKDOWN · 3,502.90 万元
+- key: s94
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 造价构成项目名称
+  text: 造价构成项目名称
+- key: s95
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 金额 (万元)
+  text: 金额 (万元)
+- key: s96
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 占比
+  text: 占比
+- key: s97
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 定额组价标准与造价依据说明
+  text: 定额组价标准与造价依据说明
+- key: s98
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>1. 直接软装实物物品合价</strong>
+  text: '**1. 直接软装实物物品合价**'
+- key: s99
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 3,170.62
+  text: 3,170.62
+- key: s100
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 90.51%
+  text: 90.51%
+- key: s101
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 公区 1-3 层家具、灯饰、窗帘、艺术品等 390 行物料
+  text: 公区 1-3 层家具、灯饰、窗帘、艺术品等 390 行物料
+- key: s102
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>2. 工程增值税金 (3.48%)</strong>
+  text: '**2. 工程增值税金 (3.48%)**'
+- key: s103
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '110.34'
+  text: '110.34'
+- key: s104
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 3.15%
+  text: 3.15%
+- key: s105
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 严格执行贵州省建筑装饰工程计价定额计取
+  text: 严格执行贵州省建筑装饰工程计价定额计取
+- key: s106
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>3. 现场赶工抢工配合费 (7%)</strong>
+  text: '**3. 现场赶工抢工配合费 (7%)**'
+- key: s107
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '221.94'
+  text: '221.94'
+- key: s108
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 6.34%
+  text: 6.34%
+- key: s109
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 保障 2017 年 3 月开业交付，夜班排产与现场抢工
+  text: 保障 2017 年 3 月开业交付，夜班排产与现场抢工
+- key: s110
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>报审计申报总额合计</strong>
+  text: '**报审计申报总额合计**'
+- key: s111
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 3,502.90
+  text: 3,502.90
+- key: s112
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 100.00%
+  text: 100.00%
+- key: s113
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 折合 20,000 ㎡ 建筑包干，申报单方 1,751.45 元/㎡
+  text: 折合 20,000 ㎡ 建筑包干，申报单方 1,751.45 元/㎡
+- key: s114
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n                    ※ 审计组价逻辑：直接软装实物 3,170.62 万是微观 390 行物料汇总合价，送审 3,502.90 万元涵盖了法定税金规费与抢工技术措施费，构建了完备的商务谈判防守缓冲层。\n                "
+  text: "\n                    ※ 审计组价逻辑：直接软装实物 3,170.62 万是微观 390 行物料汇总合价，送审 3,502.90 万元涵盖了法定税金规费与抢工技术措施费，构建了完备的商务谈判防守缓冲层。\n                "
+- key: s115
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 官方权威 7 大品类直接造价与工程量双轴全景
+  text: 官方权威 7 大品类直接造价与工程量双轴全景
+- key: s116
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 7-CATEGORY BUDGET & VOLUME DISTRIBUTION
+  text: 7-CATEGORY BUDGET & VOLUME DISTRIBUTION
+- key: s117
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n                    <strong style=\"color: var(--text-secondary);\">注记 (Official Categories)：</strong>家具 (1,206万/38.0%) 与艺术品 (1,185万/37.4%) 为绝对双核心，宴会专属产品 (375万) 与窗帘 (251万) 紧随其后，共同支撑 3,170.62 万元实物大盘。\n                "
+  text: "\n                    注记 (Official Categories)：**家具 (1,206万/38.0%) 与艺术品 (1,185万/37.4%) 为绝对双核心，宴会专属产品 (375万) 与窗帘 (251万) 紧随其后，共同支撑 3,170.62 万元实物大盘。\n                "
+- key: s118
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 空间分区与功能业态造价投资双环嵌套结构 (%)
+  text: 空间分区与功能业态造价投资双环嵌套结构 (%)
+- key: s119
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: SPATIAL TYPOLOGY & ZONE ALLOCATION
+  text: SPATIAL TYPOLOGY & ZONE ALLOCATION
+- key: s120
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n                    <strong style=\"color: var(--text-secondary);\">注记 (Zone Typology)：</strong>公共空间中庭挑空 (37.37%)、D区主大堂与餐饮 (35.76%) 与 C区千人宴会 (26.88%) 形成稳定三角配比，完美契合星级酒店公区动线。\n                "
+  text: "\n                    注记 (Zone Typology)：**公共空间中庭挑空 (37.37%)、D区主大堂与餐饮 (35.76%) 与 C区千人宴会 (26.88%) 形成稳定三角配比，完美契合星级酒店公区动线。\n                "
+- key: s121
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 3,502 万全案资金周转、借款核销与净回款桑基图 (万元)
+  text: 3,502 万全案资金周转、借款核销与净回款桑基图 (万元)
+- key: s122
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: CAPITAL FLOW & BRIDGING LOAN RECONCILIATION SANKEY
+  text: CAPITAL FLOW & BRIDGING LOAN RECONCILIATION SANKEY
+- key: s123
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 公建项目千万级工程商业履约与综合治理六维雷达
+  text: 公建项目千万级工程商业履约与综合治理六维雷达
+- key: s124
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 6D COMMERCIAL GOVERNANCE BENCHMARK
+  text: 6D COMMERCIAL GOVERNANCE BENCHMARK
+- key: s125
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 资金运作流转、进度产值冲账与净现金回款阶梯瀑布
+  text: 资金运作流转、进度产值冲账与净现金回款阶梯瀑布
+- key: s126
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: CASHFLOW STAGES & NET SETTLEMENT WATERFALL
+  text: CASHFLOW STAGES & NET SETTLEMENT WATERFALL
+- key: s127
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 报审计原件官方权威 7 大品类直接造价与占比清单
+  text: 报审计原件官方权威 7 大品类直接造价与占比清单
+- key: s128
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: OFFICIAL 7-CATEGORY BREAKDOWN · 3,170.62 万元
+  text: OFFICIAL 7-CATEGORY BREAKDOWN · 3,170.62 万元
+- key: s129
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 品类序号与大类名称
+  text: 品类序号与大类名称
+- key: s130
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 金额 (万元)
+  text: 金额 (万元)
+- key: s131
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 占比
+  text: 占比
+- key: s132
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 行数
+  text: 行数
+- key: s133
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 核心空间落位与代表物料
+  text: 核心空间落位与代表物料
+- key: s134
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>一、活动与公区家具</strong>
+  text: '**一、活动与公区家具**'
+- key: s135
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 1,206.04
+  text: 1,206.04
+- key: s136
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 38.04%
+  text: 38.04%
+- key: s137
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 285 行
+  text: 285 行
+- key: s138
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 大堂吧卡座、沙发群、包房成套家具
+  text: 大堂吧卡座、沙发群、包房成套家具
+- key: s139
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>二、定制工程灯饰</strong>
+  text: '**二、定制工程灯饰**'
+- key: s140
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '26.19'
+  text: '26.19'
+- key: s141
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 0.83%
+  text: 0.83%
+- key: s142
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 20 行
+  text: 20 行
+- key: s143
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 大堂艺术吊灯、包房调光壁灯
+  text: 大堂艺术吊灯、包房调光壁灯
+- key: s144
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>三、阻燃窗帘工程</strong>
+  text: '**三、阻燃窗帘工程**'
+- key: s145
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '251.27'
+  text: '251.27'
+- key: s146
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 7.92%
+  text: 7.92%
+- key: s147
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 49 行
+  text: 49 行
+- key: s148
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 公区通高电动/手动阻燃窗帘系统
+  text: 公区通高电动/手动阻燃窗帘系统
+- key: s149
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>四、艺术品与主雕</strong>
+  text: '**四、艺术品与主雕**'
+- key: s150
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 1,184.77
+  text: 1,184.77
+- key: s151
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 37.37%
+  text: 37.37%
+- key: s152
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 36 行
+  text: 36 行
+- key: s153
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 96万黄铜主雕、89万木浮雕、83万刺绣
+  text: 96万黄铜主雕、89万木浮雕、83万刺绣
+- key: s154
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>五、面料布艺软饰</strong>
+  text: '**五、面料布艺软饰**'
+- key: s155
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '12.00'
+  text: '12.00'
+- key: s156
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 0.38%
+  text: 0.38%
+- key: s157
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 全案穿透
+  text: 全案穿透
+- key: s158
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 高定抱枕、阻燃座包及防污面料
+  text: 高定抱枕、阻燃座包及防污面料
+- key: s159
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>六、宴会厅专项产品</strong>
+  text: '**六、宴会厅专项产品**'
+- key: s160
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '375.31'
+  text: '375.31'
+- key: s161
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 11.84%
+  text: 11.84%
+- key: s162
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 专属项
+  text: 专属项
+- key: s163
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 千人宴会大厅高档桌椅及活动折叠屏风
+  text: 千人宴会大厅高档桌椅及活动折叠屏风
+- key: s164
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>七、办公配套家具</strong>
+  text: '**七、办公配套家具**'
+- key: s165
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '115.03'
+  text: '115.03'
+- key: s166
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 3.63%
+  text: 3.63%
+- key: s167
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 后勤项
+  text: 后勤项
+- key: s168
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 宴会销售中心、后勤办公室及化妆间配套
+  text: 宴会销售中心、后勤办公室及化妆间配套
+- key: s169
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>直接物料清单合价合计</strong>
+  text: '**直接物料清单合价合计**'
+- key: s170
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 3,170.62
+  text: 3,170.62
+- key: s171
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 100.00%
+  text: 100.00%
+- key: s172
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 390 行
+  text: 390 行
+- key: s173
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 折合 14,950 件(套) 现场交验物料点验实账
+  text: 折合 14,950 件(套) 现场交验物料点验实账
+- key: s174
+  kind: block
+  tag: div
+  parent: container
+  orig: CASH REALIZATION
+  text: CASH REALIZATION
+- key: s175
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 资金兑现与回款转化
+  text: 资金兑现与回款转化
+- key: s176
+  kind: block
+  tag: div
+  parent: container
+  orig: 从送审总额、认价锁定到产值回款与净现金的经营闭环
+  text: 从送审总额、认价锁定到产值回款与净现金的经营闭环
+- key: s177
+  kind: block
+  tag: div
+  parent: container
+  orig: SECTION III
+  text: SECTION III
+- key: s178
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 空间资产数据看板与现场交付明细
+  text: 空间资产数据看板与现场交付明细
+- key: s179
+  kind: block
+  tag: div
+  parent: container
+  orig: 按“空间边界 → 价值配置 → 资产结构 → 重点物料 → BOM 追溯”组织，所有底层聚合均映射真实面积与 BOM 底账
+  text: 按“空间边界 → 价值配置 → 资产结构 → 重点物料 → BOM 追溯”组织，所有底层聚合均映射真实面积与 BOM 底账
+- key: s180
+  kind: block
+  tag: div
+  parent: container
+  orig: NET SPACE
+  text: NET SPACE
+- key: s181
+  kind: block
+  tag: div
+  parent: container
+  orig: 净纯软装计价面积
+  text: 净纯软装计价面积
+- key: s182
+  kind: block
+  tag: div
+  parent: container
+  orig: 16,478 <span>㎡</span>
+  text: 16,478 ㎡
+- key: s183
+  kind: block
+  tag: div
+  parent: container
+  orig: 原始 22,706㎡ 经核减与认价收敛
+  text: 原始 22,706㎡ 经核减与认价收敛
+- key: s184
+  kind: block
+  tag: div
+  parent: container
+  orig: DIRECT ASSET VALUE
+  text: DIRECT ASSET VALUE
+- key: s185
+  kind: block
+  tag: div
+  parent: container
+  orig: BOM 明细归集金额
+  text: BOM 明细归集金额
+- key: s186
+  kind: block
+  tag: div
+  parent: container
+  orig: 3,166.91 <span>万</span>
+  text: 3,166.91 万
+- key: s187
+  kind: block
+  tag: div
+  parent: container
+  orig: 389 条真实编码明细口径
+  text: 389 条真实编码明细口径
+- key: s188
+  kind: block
+  tag: div
+  parent: container
+  orig: SPATIAL GRANULARITY
+  text: SPATIAL GRANULARITY
+- key: s189
+  kind: block
+  tag: div
+  parent: container
+  orig: 具体空间落位
+  text: 具体空间落位
+- key: s190
+  kind: block
+  tag: div
+  parent: container
+  orig: 143 <span>处</span>
+  text: 143 处
+- key: s191
+  kind: block
+  tag: div
+  parent: container
+  orig: 覆盖 C区、D区与公共空间
+  text: 覆盖 C区、D区与公共空间
+- key: s192
+  kind: block
+  tag: div
+  parent: container
+  orig: ASSET CATEGORIES
+  text: ASSET CATEGORIES
+- key: s193
+  kind: block
+  tag: div
+  parent: container
+  orig: 物料类别
+  text: 物料类别
+- key: s194
+  kind: block
+  tag: div
+  parent: container
+  orig: 4 <span>类</span>
+  text: 4 类
+- key: s195
+  kind: block
+  tag: div
+  parent: container
+  orig: 家具、艺术品、窗帘、灯具
+  text: 家具、艺术品、窗帘、灯具
+- key: s196
+  kind: block
+  tag: div
+  parent: container
+  orig: DELIVERY EVIDENCE
+  text: DELIVERY EVIDENCE
+- key: s197
+  kind: block
+  tag: div
+  parent: container
+  orig: BOM 可追溯明细
+  text: BOM 可追溯明细
+- key: s198
+  kind: block
+  tag: div
+  parent: container
+  orig: 389 <span>行</span>
+  text: 389 行
+- key: s199
+  kind: block
+  tag: div
+  parent: container
+  orig: 排除 1 条编码为空的汇总行
+  text: 排除 1 条编码为空的汇总行
+- key: s200
+  kind: block
+  tag: div
+  parent: container
+  orig: A · SPACE BOUNDARY
+  text: A · SPACE BOUNDARY
+- key: s201
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 空间边界与计价依据
+  text: 空间边界与计价依据
+- key: s202
+  kind: block
+  tag: div
+  parent: container
+  orig: 先确认面积如何收敛，再进入各空间的资产配置判断
+  text: 先确认面积如何收敛，再进入各空间的资产配置判断
+- key: s203
+  kind: block
+  tag: div
+  parent: container
+  orig: B · VALUE ALLOCATION
+  text: B · VALUE ALLOCATION
+- key: s204
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 空间价值配置与重点落位
+  text: 空间价值配置与重点落位
+- key: s205
+  kind: block
+  tag: div
+  parent: container
+  orig: 回答钱投向哪些分区、哪些具体空间，以及空间的交付密度是否匹配
+  text: 回答钱投向哪些分区、哪些具体空间，以及空间的交付密度是否匹配
+- key: s206
+  kind: block
+  tag: div
+  parent: container
+  orig: C · ASSET COMPOSITION
+  text: C · ASSET COMPOSITION
+- key: s207
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 资产类别结构与分区配置
+  text: 资产类别结构与分区配置
+- key: s208
+  kind: block
+  tag: div
+  parent: container
+  orig: 从官方品类总盘、金额集中度到分区 × 类别矩阵，识别资产结构的主导因素
+  text: 从官方品类总盘、金额集中度到分区 × 类别矩阵，识别资产结构的主导因素
+- key: s209
+  kind: block
+  tag: div
+  parent: container
+  orig: D · PRIORITY ASSETS
+  text: D · PRIORITY ASSETS
+- key: s210
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 重点物料与价格风险识别
+  text: 重点物料与价格风险识别
+- key: s211
+  kind: block
+  tag: div
+  parent: container
+  orig: 把高价、规模化与高金额物料放在最后一层审视，避免其干扰空间资产总览
+  text: 把高价、规模化与高金额物料放在最后一层审视，避免其干扰空间资产总览
+- key: s212
+  kind: block
+  tag: div
+  parent: container
+  orig: E · DELIVERY EVIDENCE
+  text: E · DELIVERY EVIDENCE
+- key: s213
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 交付证据与 BOM 追溯
+  text: 交付证据与 BOM 追溯
+- key: s214
+  kind: block
+  tag: div
+  parent: container
+  orig: 用代表性大宗交付和分区归类汇总，将图表结论回溯至可核验的物料底账
+  text: 用代表性大宗交付和分区归类汇总，将图表结论回溯至可核验的物料底账
+- key: s215
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 五大核心分区原始体量、核减面积与实测净软装对比 (㎡)
+  text: 五大核心分区原始体量、核减面积与实测净软装对比 (㎡)
+- key: s216
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: SPATIAL MEASUREMENT & DEDUCTION AUDIT
+  text: SPATIAL MEASUREMENT & DEDUCTION AUDIT
+- key: s217
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n                    <strong style=\"color: var(--text-secondary);\">实测依据 (Laser Survey)：</strong>通过出具激光实测测绘底图，坚决抗辩并扣减厨房机房 4,756 ㎡，将纯软装计价面积精准捍卫在 16,478 ㎡。\n                "
+  text: "\n                    实测依据 (Laser Survey)：**通过出具激光实测测绘底图，坚决抗辩并扣减厨房机房 4,756 ㎡，将纯软装计价面积精准捍卫在 16,478 ㎡。\n                "
+- key: s218
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 核心代表性大宗物料现场交付采购量排行 (件/套)
+  text: 核心代表性大宗物料现场交付采购量排行 (件/套)
+- key: s219
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: KEY ASSET DELIVERY VOLUME RANKING
+  text: KEY ASSET DELIVERY VOLUME RANKING
+- key: s220
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n                    <strong style=\"color: var(--text-secondary);\">实录佐证 (Key Quantities)：</strong>千人宴会大厅专属椅套 3,000 条与高档宴会餐椅 1,500 张为采购量峰值，形成规模化集采议价与交付证据。\n                "
+  text: "\n                    实录佐证 (Key Quantities)：**千人宴会大厅专属椅套 3,000 条与高档宴会餐椅 1,500 张为采购量峰值，形成规模化集采议价与交付证据。\n                "
+- key: s221
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 红花岗公区全案软装物料 BOM 分区归类汇总
+  text: 红花岗公区全案软装物料 BOM 分区归类汇总
+- key: s222
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 全量底账映射 · 正在按分区与类别归并
+  text: 全量底账映射 · 正在按分区与类别归并
+- key: s223
+  kind: block
+  tag: option
+  parent: container
+  orig: 全部空间分区 (全量)
+  text: 全部空间分区 (全量)
+- key: s224
+  kind: block
+  tag: option
+  parent: container
+  orig: C 区 (宴会与全日餐)
+  text: C 区 (宴会与全日餐)
+- key: s225
+  kind: block
+  tag: option
+  parent: container
+  orig: D 区 (主大堂与客群)
+  text: D 区 (主大堂与客群)
+- key: s226
+  kind: block
+  tag: option
+  parent: container
+  orig: 公区公共空间 (中庭挑空)
+  text: 公区公共空间 (中庭挑空)
+- key: s227
+  kind: block
+  tag: option
+  parent: container
+  orig: 全部物料类别 (全量)
+  text: 全部物料类别 (全量)
+- key: s228
+  kind: block
+  tag: option
+  parent: container
+  orig: 活动家具 (285项)
+  text: 活动家具 (285项)
+- key: s229
+  kind: block
+  tag: option
+  parent: container
+  orig: 艺术品 (36项)
+  text: 艺术品 (36项)
+- key: s230
+  kind: block
+  tag: option
+  parent: container
+  orig: 布艺窗帘 (49项)
+  text: 布艺窗帘 (49项)
+- key: s231
+  kind: block
+  tag: option
+  parent: container
+  orig: 定制灯具 (20项)
+  text: 定制灯具 (20项)
+- key: s232
+  kind: block
+  tag: button
+  parent: container
+  orig: 重置条件
+  text: 重置条件
+- key: s233
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 分区
+  text: 分区
+- key: s234
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 物料类别
+  text: 物料类别
+- key: s235
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: BOM 行数
+  text: BOM 行数
+- key: s236
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 工程量合计
+  text: 工程量合计
+- key: s237
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 金额 (万元)
+  text: 金额 (万元)
+- key: s238
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 金额占比
+  text: 金额占比
+- key: s239
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 分区 × 物料类别金额热力图
+  text: 分区 × 物料类别金额热力图
+- key: s240
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: ZONE / CATEGORY VALUE CONCENTRATION · DUCKDB GROUP BY
+  text: ZONE / CATEGORY VALUE CONCENTRATION · DUCKDB GROUP BY
+- key: s241
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 物料类别金额帕累托与累计集中度
+  text: 物料类别金额帕累托与累计集中度
+- key: s242
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: CATEGORY VALUE PARETO · DUCKDB AGGREGATION
+  text: CATEGORY VALUE PARETO · DUCKDB AGGREGATION
+- key: s243
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 面积口径收敛阶梯
+  text: 面积口径收敛阶梯
+- key: s244
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: RAW AREA → NET MEASURED → FINAL PRICING AREA
+  text: RAW AREA → NET MEASURED → FINAL PRICING AREA
+- key: s245
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 工程量占比 × 金额占比结构散点
+  text: 工程量占比 × 金额占比结构散点
+- key: s246
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: QUANTITY / VALUE MIX · BUBBLE SIZE = BOM ROWS
+  text: QUANTITY / VALUE MIX · BUBBLE SIZE = BOM ROWS
+- key: s247
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 分区交付密度与金额配置
+  text: 分区交付密度与金额配置
+- key: s248
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: ZONE DELIVERY DENSITY · ROWS / QTY / VALUE
+  text: ZONE DELIVERY DENSITY · ROWS / QTY / VALUE
+- key: s249
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 资金转化率阶梯
+  text: 资金转化率阶梯
+- key: s250
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: SUBMITTED → LOCKED → PROGRESS CASH → NET CASH
+  text: SUBMITTED → LOCKED → PROGRESS CASH → NET CASH
+- key: s251
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 综合单价分布与类别价格带
+  text: 综合单价分布与类别价格带
+- key: s252
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: UNIT PRICE DISTRIBUTION · DUCKDB QUANTILES
+  text: UNIT PRICE DISTRIBUTION · DUCKDB QUANTILES
+- key: s253
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 空间落位金额 Top 20
+  text: 空间落位金额 Top 20
+- key: s254
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: LOCATION VALUE CONCENTRATION · TOP 20
+  text: LOCATION VALUE CONCENTRATION · TOP 20
+- key: s255
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 重点物料单价—工程量—金额关系
+  text: 重点物料单价—工程量—金额关系
+- key: s256
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: PRICE / QUANTITY / VALUE · TOP 50 BY VALUE · COLOR = CATEGORY
+  text: PRICE / QUANTITY / VALUE · TOP 50 BY VALUE · COLOR = CATEGORY
+- key: s257
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 计量单位：工程量与金额结构
+  text: 计量单位：工程量与金额结构
+- key: s258
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: UNIT MIX · QUANTITY / VALUE COMPARISON
+  text: UNIT MIX · QUANTITY / VALUE COMPARISON
+- key: s259
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            <span>ARCHIVAL DOSSIER · PRJ-HHG-2016 · 遵义市红花岗区南部城市综合体软装工程 · 全生命周期商业操盘实录与造价审计报告</span>\n        "
+  text: "\n            ARCHIVAL DOSSIER · PRJ-HHG-2016 · 遵义市红花岗区南部城市综合体软装工程 · 全生命周期商业操盘实录与造价审计报告\n        "
+- key: s260
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            2026 商业专案库归档\n        "
+  text: "\n            2026 商业专案库归档\n        "

@@ -1,0 +1,794 @@
+# 文字真源：monographs/上海华泰中心售楼处全生命周期商业操盘研报.html
+# 单一真源铁律：改此文件 text -> build_monographs_from_yaml.py 回填外壳，禁止手改 monographs/*.html
+meta:
+  source_file: monographs/上海华泰中心售楼处全生命周期商业操盘研报.html
+  slug: 上海华泰中心售楼处全生命周期商业操盘研报
+  title: 上海华泰中心售楼处全生命周期商业操盘研报 ｜ 梁清波 商业专案库
+  hash: 2d634788595a48cc4cd4c8ae5e88162ec0d39361236462daae264e2f91cfb350
+slots:
+- key: s00
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            <a href=\"javascript:void(0)\" onclick=\"returnToParentMonograph()\" class=\"nav-back-btn\" style=\"padding:4px 10px;\">\n                ‹ 返回云软装大盘\n            </a>\n            <span class=\"nav-brand-code\">SH-HT-201508</span>\n            <span class=\"eyebrow-sep\" style=\"color:var(--border-strong);margin:0 4px;\">/</span>\n            <span class=\"nav-brand-title\">上海华泰中心售楼处全生命周期商业操盘研报</span>\n        "
+  text: "\n            \n                ‹ 返回云软装大盘\n            \n            SH-HT-201508\n            /\n            上海华泰中心售楼处全生命周期商业操盘研报\n        "
+- key: s01
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#dossier">§ I 操盘实录</a>
+  text: § I 操盘实录
+- key: s02
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#dashboard">§ II 经营看板</a>
+  text: § II 经营看板
+- key: s03
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#spatial-asset-dashboard">§ III 空间资产</a>
+  text: § III 空间资产
+- key: s04
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            <span>ARCHIVAL MONOGRAPH</span>\n            <span class=\"eyebrow-sep\">/</span>\n            <span>SH-HT-201508</span>\n            <span class=\"eyebrow-sep\">/</span>\n            <span>SHANGHAI HUATAI CENTER MARKETING SUITE</span>\n        "
+  text: "\n            ARCHIVAL MONOGRAPH\n            /\n            SH-HT-201508\n            /\n            SHANGHAI HUATAI CENTER MARKETING SUITE\n        "
+- key: s05
+  kind: section-title
+  tag: h1
+  parent: container
+  orig: 上海华泰中心售楼处全生命周期商业操盘研报
+  text: 上海华泰中心售楼处全生命周期商业操盘研报
+- key: s06
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            上海嘉定江桥核心商办营销中心约 600 ㎡ 软装全案自主承揽、五轮商务博弈、采销双轨定价与履约交付全纪实\n        "
+  text: "\n            上海嘉定江桥核心商办营销中心约 600 ㎡ 软装全案自主承揽、五轮商务博弈、采销双轨定价与履约交付全纪实\n        "
+- key: s07
+  kind: block
+  tag: div
+  parent: container
+  orig: 操盘模式与主体
+  text: 操盘模式与主体
+- key: s08
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 自主承揽 <span>/ 采销总控</span>
+  text: 自主承揽 / 采销总控
+- key: s09
+  kind: block
+  tag: div
+  parent: container
+  orig: 梁清波（独立直签业主投资方）
+  text: 梁清波（独立直签业主投资方）
+- key: s10
+  kind: block
+  tag: div
+  parent: container
+  orig: 合同签约标的
+  text: 合同签约标的
+- key: s11
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 156.66 <span>万元</span>
+  text: 156.66 万元
+- key: s12
+  kind: block
+  tag: div
+  parent: container
+  orig: 固定总价包干（约 600 ㎡）
+  text: 固定总价包干（约 600 ㎡）
+- key: s13
+  kind: block
+  tag: div
+  parent: container
+  orig: 单方造价定额
+  text: 单方造价定额
+- key: s14
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 2,610.92 <span>元/㎡</span>
+  text: 2,610.92 元/㎡
+- key: s15
+  kind: block
+  tag: div
+  parent: container
+  orig: 高品质精奢展示空间定额
+  text: 高品质精奢展示空间定额
+- key: s16
+  kind: block
+  tag: div
+  parent: container
+  orig: 经营毛利锁定
+  text: 经营毛利锁定
+- key: s17
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 约 33.5% <span>毛利率</span>
+  text: 约 33.5% 毛利率
+- key: s18
+  kind: block
+  tag: div
+  parent: container
+  orig: 穿透珠三角源头 5 轮动态捍卫
+  text: 穿透珠三角源头 5 轮动态捍卫
+- key: s19
+  kind: block
+  tag: div
+  parent: container
+  orig: 出货前回款机制
+  text: 出货前回款机制
+- key: s20
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 70.0% <span>(109.7万)</span>
+  text: 70.0% (109.7万)
+- key: s21
+  kind: block
+  tag: div
+  parent: container
+  orig: 全额刚性覆盖采购与干线物流
+  text: 全额刚性覆盖采购与干线物流
+- key: s22
+  kind: block
+  tag: div
+  parent: container
+  orig: 总工期与现场摆场
+  text: 总工期与现场摆场
+- key: s23
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 35 天 <span>/ 集中 3 天</span>
+  text: 35 天 / 集中 3 天
+- key: s24
+  kind: block
+  tag: div
+  parent: container
+  orig: 车间倒排 / 现场集中开盘验收
+  text: 车间倒排 / 现场集中开盘验收
+- key: s25
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 商业操盘与履约风控实录
+  text: 商业操盘与履约风控实录
+- key: s26
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            基于真实工程施工合同与多轮商务磋商底账，系统还原商业操盘的 2×2 对称管理闭环。\n        "
+  text: "\n            基于真实工程施工合同与多轮商务磋商底账，系统还原商业操盘的 2×2 对称管理闭环。\n        "
+- key: s27
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 管控维度
+  text: 管控维度
+- key: s28
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 关键事实与核心数据
+  text: 关键事实与核心数据
+- key: s29
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 业务背景与商业管控重点
+  text: 业务背景与商业管控重点
+- key: s30
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 业主投资方
+  text: 业主投资方
+- key: s31
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>上海华泰置业有限公司</strong>
+  text: '**上海华泰置业有限公司**'
+- key: s32
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 上海核心商办投资商，对售楼处工期要求极其苛刻（紧咬开盘节点）。
+  text: 上海核心商办投资商，对售楼处工期要求极其苛刻（紧咬开盘节点）。
+- key: s33
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 承接模式
+  text: 承接模式
+- key: s34
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>独立直签业主 ｜ 自主总控承揽</strong>
+  text: '**独立直签业主 ｜ 自主总控承揽**'
+- key: s35
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 梁清波独立统领项目拓展、图纸答辩、商务多轮调价博弈、合同签署及供应链履约交付全链路。
+  text: 梁清波独立统领项目拓展、图纸答辩、商务多轮调价博弈、合同签署及供应链履约交付全链路。
+- key: s36
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 包干总额
+  text: 包干总额
+- key: s37
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>固定总价 156.66 万元</strong>（审定确权 156.66 万元）
+  text: '**固定总价 156.66 万元**（审定确权 156.66 万元）'
+- key: s38
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 从初轮测算 176.40 万元经 5 轮拉锯锁定，最终实现 100% 审定闭环零核减。
+  text: 从初轮测算 176.40 万元经 5 轮拉锯锁定，最终实现 100% 审定闭环零核减。
+- key: s39
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 单方定额
+  text: 单方定额
+- key: s40
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>实测约 600 ㎡ ｜ 2,610.92 元/㎡</strong>
+  text: '**实测约 600 ㎡ ｜ 2,610.92 元/㎡**'
+- key: s41
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 一线城市高净值企业总部独栋产品展示定位，高单方造价支撑极奢调性。
+  text: 一线城市高净值企业总部独栋产品展示定位，高单方造价支撑极奢调性。
+- key: s42
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 回款防线
+  text: 回款防线
+- key: s43
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>30/40/25/5 阶段付款 ｜ 出货前回收 70%</strong>
+  text: '**30/40/25/5 阶段付款 ｜ 出货前回收 70%**'
+- key: s44
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 出货前刚性回收 109.66 万元，全额覆盖工厂直接成本(79.66万)，实现极速周转零垫资。
+  text: 出货前刚性回收 109.66 万元，全额覆盖工厂直接成本(79.66万)，实现极速周转零垫资。
+- key: s45
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 履约周期
+  text: 履约周期
+- key: s46
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>35 天极限总工期 ｜ 现场集中 3 天开盘摆场</strong>
+  text: '**35 天极限总工期 ｜ 现场集中 3 天开盘摆场**'
+- key: s47
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 珠三角工厂倒排工期精准排产，跨省专车直达，3天内完成 7 大空间 281 件物料极限摆场。
+  text: 珠三角工厂倒排工期精准排产，跨省专车直达，3天内完成 7 大空间 281 件物料极限摆场。
+- key: s48
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: § 1 商务博弈与五轮调价控制
+  text: § 1 商务博弈与五轮调价控制
+- key: s49
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>前置预留弹性空间</strong>：初轮测算 176.40 万元预留 11.2% 商务谈判空间，主动掌控多轮压价节奏；
+  text: '**前置预留弹性空间**：初轮测算 176.40 万元预留 11.2% 商务谈判空间，主动掌控多轮压价节奏；'
+- key: s50
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>以工艺平替换取价格防守</strong>：在第 3 轮 156.22 万元拉锯中，通过优化灯具水晶挂件与地毯克重，成功保住经营毛利；
+  text: '**以工艺平替换取价格防守**：在第 3 轮 156.22 万元拉锯中，通过优化灯具水晶挂件与地毯克重，成功保住经营毛利；'
+- key: s51
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>最终微调锁定合同</strong>：在第 5 轮微调至 156.66 万元并达成一致签约，始终坚守 33.5% 经营毛利红线。
+  text: '**最终微调锁定合同**：在第 5 轮微调至 156.66 万元并达成一致签约，始终坚守 33.5% 经营毛利红线。'
+- key: s52
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: § 2 采销双轨与源头工厂直连
+  text: § 2 采销双轨与源头工厂直连
+- key: s53
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>穿透珠三角产业集群</strong>：跳过中间二道贩子，直连东莞大岭山家具厂与中山古镇灯具厂，获取源头白胚裸价；
+  text: '**穿透珠三角产业集群**：跳过中间二道贩子，直连东莞大岭山家具厂与中山古镇灯具厂，获取源头白胚裸价；'
+- key: s54
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>大货品质出厂飞检</strong>：亲自飞赴东莞与中山进行大货面漆与结构飞检，确保挑空大吊灯一次性拼装点亮；
+  text: '**大货品质出厂飞检**：亲自飞赴东莞与中山进行大货面漆与结构飞检，确保挑空大吊灯一次性拼装点亮；'
+- key: s55
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>家具与灯具双核驱动</strong>：定制灯具(46.12万)与家具(45.16万)合计占比 58.4%，牢牢掌控高溢价主材。
+  text: '**家具与灯具双核驱动**：定制灯具(46.12万)与家具(45.16万)合计占比 58.4%，牢牢掌控高溢价主材。'
+- key: s56
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: § 3 30/40/25/5 刚性回款防线
+  text: § 3 30/40/25/5 刚性回款防线
+- key: s57
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>签约即付 30% 定金</strong>：合同签订 3 个工作日内到账 47.00 万元，直接启动工厂排产与定金锁定；
+  text: '**签约即付 30% 定金**：合同签订 3 个工作日内到账 47.00 万元，直接启动工厂排产与定金锁定；'
+- key: s58
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>出货前付至 70% 刚性阀门</strong>：大货出厂前严格执行查验打款，回收 62.66 万元，累计收回 109.66 万元；
+  text: '**出货前付至 70% 刚性阀门**：大货出厂前严格执行查验打款，回收 62.66 万元，累计收回 109.66 万元；'
+- key: s59
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>出货前回笼覆盖直接成本</strong>：以 109.66 万元全额刚性覆盖直接采购与干线物流(79.66万)，彻底消除呆死账风险。
+  text: '**出货前回笼覆盖直接成本**：以 109.66 万元全额刚性覆盖直接采购与干线物流(79.66万)，彻底消除呆死账风险。'
+- key: s60
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: § 4 35 天极限工期与现场精细交付
+  text: § 4 35 天极限工期与现场精细交付
+- key: s61
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>35 天车间倒排与干线联运</strong>：设计定板、打样、生产与上海跨省物流无缝衔接，零工期延误；
+  text: '**35 天车间倒排与干线联运**：设计定板、打样、生产与上海跨省物流无缝衔接，零工期延误；'
+- key: s62
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>现场集中 3 天极速安装</strong>：组织高空安装特战队进场，3 天内完成挑空大吊灯力学悬吊与 281 件物料落位；
+  text: '**现场集中 3 天极速安装**：组织高空安装特战队进场，3 天内完成挑空大吊灯力学悬吊与 281 件物料落位；'
+- key: s63
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>开盘前零瑕疵一次性验收</strong>：售楼处如期盛大开盘，获得业主营销总与投资方高度赞誉，尾款按期结清。
+  text: '**开盘前零瑕疵一次性验收**：售楼处如期盛大开盘，获得业主营销总与投资方高度赞誉，尾款按期结清。'
+- key: s64
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 项目经营结算与资金闭环看板
+  text: 项目经营结算与资金闭环看板
+- key: s65
+  kind: block
+  tag: div
+  parent: container
+  orig: CONTRACT SUM
+  text: CONTRACT SUM
+- key: s66
+  kind: block
+  tag: div
+  parent: container
+  orig: 合同签约总价
+  text: 合同签约总价
+- key: s67
+  kind: block
+  tag: div
+  parent: container
+  orig: 156.66 <span>万</span>
+  text: 156.66 万
+- key: s68
+  kind: block
+  tag: div
+  parent: container
+  orig: 固定总价包干签约
+  text: 固定总价包干签约
+- key: s69
+  kind: block
+  tag: div
+  parent: container
+  orig: INITIAL ESTIMATE
+  text: INITIAL ESTIMATE
+- key: s70
+  kind: block
+  tag: div
+  parent: container
+  orig: 初轮测算报价
+  text: 初轮测算报价
+- key: s71
+  kind: block
+  tag: div
+  parent: container
+  orig: 176.40 <span>万</span>
+  text: 176.40 万
+- key: s72
+  kind: block
+  tag: div
+  parent: container
+  orig: 预留 11.2% 商务调价弹性
+  text: 预留 11.2% 商务调价弹性
+- key: s73
+  kind: block
+  tag: div
+  parent: container
+  orig: PRE-SHIPMENT RATE
+  text: PRE-SHIPMENT RATE
+- key: s74
+  kind: block
+  tag: div
+  parent: container
+  orig: 出货前回款率
+  text: 出货前回款率
+- key: s75
+  kind: block
+  tag: div
+  parent: container
+  orig: 70.0 <span>%</span>
+  text: 70.0 %
+- key: s76
+  kind: block
+  tag: div
+  parent: container
+  orig: 回收 109.66 万元盖成本
+  text: 回收 109.66 万元盖成本
+- key: s77
+  kind: block
+  tag: div
+  parent: container
+  orig: OPERATING MARGIN
+  text: OPERATING MARGIN
+- key: s78
+  kind: block
+  tag: div
+  parent: container
+  orig: 综合经营毛利
+  text: 综合经营毛利
+- key: s79
+  kind: block
+  tag: div
+  parent: container
+  orig: 33.5 <span>%</span>
+  text: 33.5 %
+- key: s80
+  kind: block
+  tag: div
+  parent: container
+  orig: 保障健康经营空间
+  text: 保障健康经营空间
+- key: s81
+  kind: block
+  tag: div
+  parent: container
+  orig: DURATION PERIOD
+  text: DURATION PERIOD
+- key: s82
+  kind: block
+  tag: div
+  parent: container
+  orig: 合同履约工期
+  text: 合同履约工期
+- key: s83
+  kind: block
+  tag: div
+  parent: container
+  orig: 35 <span>天</span>
+  text: 35 天
+- key: s84
+  kind: block
+  tag: div
+  parent: container
+  orig: 现场摆场集中 3 天
+  text: 现场摆场集中 3 天
+- key: s85
+  kind: block
+  tag: div
+  parent: container
+  orig: ASSET INVENTORY
+  text: ASSET INVENTORY
+- key: s86
+  kind: block
+  tag: div
+  parent: container
+  orig: 全案物料配置
+  text: 全案物料配置
+- key: s87
+  kind: block
+  tag: div
+  parent: container
+  orig: 281 <span>件(套)</span>
+  text: 281 件(套)
+- key: s88
+  kind: block
+  tag: div
+  parent: container
+  orig: 7 大空间 · 78 款物料
+  text: 7 大空间 · 78 款物料
+- key: s89
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 5 轮商务调价演进轨迹 (万元)
+  text: 5 轮商务调价演进轨迹 (万元)
+- key: s90
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 6 大品类直接造价分布 (万元)
+  text: 6 大品类直接造价分布 (万元)
+- key: s91
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 30/40/25/5 资金流向桑基图 (万元)
+  text: 30/40/25/5 资金流向桑基图 (万元)
+- key: s92
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 商业弹性与履约六维评估
+  text: 商业弹性与履约六维评估
+- key: s93
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 空间资产数据看板与现场交付明细
+  text: 空间资产数据看板与现场交付明细
+- key: s94
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            实物交付口径：281 件(套) · 涵盖成套家具、工程灯具及配套软装陈设，按 7 大空间功能分区归集。\n        "
+  text: "\n            实物交付口径：281 件(套) · 涵盖成套家具、工程灯具及配套软装陈设，按 7 大空间功能分区归集。\n        "
+- key: s95
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 7 大分区物料件数与款式分布
+  text: 7 大分区物料件数与款式分布
+- key: s96
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 7 大分区物料配置明细清单 (78 款 / 281 件)
+  text: 7 大分区物料配置明细清单 (78 款 / 281 件)
+- key: s97
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 功能分区
+  text: 功能分区
+- key: s98
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 款式数
+  text: 款式数
+- key: s99
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 件数
+  text: 件数
+- key: s100
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 代表性核心配置产品
+  text: 代表性核心配置产品
+- key: s101
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>营销核心洽谈区</strong>
+  text: '**营销核心洽谈区**'
+- key: s102
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '36'
+  text: '36'
+- key: s103
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '178'
+  text: '178'
+- key: s104
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 2人沙发*7、单人沙发*2、边几*15、装饰柜*7、台灯*10、高档酒具杯盘*77
+  text: 2人沙发*7、单人沙发*2、边几*15、装饰柜*7、台灯*10、高档酒具杯盘*77
+- key: s105
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>三层行政贵宾专区</strong>
+  text: '**三层行政贵宾专区**'
+- key: s106
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '14'
+  text: '14'
+- key: s107
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '29'
+  text: '29'
+- key: s108
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 3人高定沙发*1、贵宾椅*2、茶几圆几*3、总裁书桌*1、主客书椅*3、地毯
+  text: 3人高定沙发*1、贵宾椅*2、茶几圆几*3、总裁书桌*1、主客书椅*3、地毯
+- key: s109
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>营销办公与经理室</strong>
+  text: '**营销办公与经理室**'
+- key: s110
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '6'
+  text: '6'
+- key: s111
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '22'
+  text: '22'
+- key: s112
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 经理桌*2、主管椅*6、职员办公桌*6、办公椅*6、定制地毯、艺术挂画
+  text: 经理桌*2、主管椅*6、职员办公桌*6、办公椅*6、定制地毯、艺术挂画
+- key: s113
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>公共通道与配套区</strong>
+  text: '**公共通道与配套区**'
+- key: s114
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '7'
+  text: '7'
+- key: s115
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '20'
+  text: '20'
+- key: s116
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 洗手间挂画*1、香薰*2、落地金属花器*4、分类果皮箱*5、不锈钢烟灰缸*8
+  text: 洗手间挂画*1、香薰*2、落地金属花器*4、分类果皮箱*5、不锈钢烟灰缸*8
+- key: s117
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>大堂与前台接待区</strong>
+  text: '**大堂与前台接待区**'
+- key: s118
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '9'
+  text: '9'
+- key: s119
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '18'
+  text: '18'
+- key: s120
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 挑空水晶大吊灯*1、接待椅*4、台灯*2、通高电动遮光窗帘、落地迎宾花器*4
+  text: 挑空水晶大吊灯*1、接待椅*4、台灯*2、通高电动遮光窗帘、落地迎宾花器*4
+- key: s121
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>环幕影音体验厅</strong>
+  text: '**环幕影音体验厅**'
+- key: s122
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '2'
+  text: '2'
+- key: s123
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '9'
+  text: '9'
+- key: s124
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 专属影音体验椅*8、重度商用隔音地毯*1
+  text: 专属影音体验椅*8、重度商用隔音地毯*1
+- key: s125
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>沙盘模型展示区</strong>
+  text: '**沙盘模型展示区**'
+- key: s126
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '4'
+  text: '4'
+- key: s127
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '5'
+  text: '5'
+- key: s128
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 挑空水晶大吊灯(D3000*H4500)*1、通高阻燃窗帘*2、模型落地花器*2
+  text: 挑空水晶大吊灯(D3000*H4500)*1、通高阻燃窗帘*2、模型落地花器*2
+- key: s129
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            <span>ARCHIVAL DOSSIER · SH-HT-201508 · 上海华泰中心售楼处软装工程商业操盘实录</span>\n        "
+  text: "\n            ARCHIVAL DOSSIER · SH-HT-201508 · 上海华泰中心售楼处软装工程商业操盘实录\n        "
+- key: s130
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            2026 商业专案库归档\n        "
+  text: "\n            2026 商业专案库归档\n        "

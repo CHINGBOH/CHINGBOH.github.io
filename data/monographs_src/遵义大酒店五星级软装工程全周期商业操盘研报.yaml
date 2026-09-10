@@ -1,0 +1,698 @@
+# 文字真源：monographs/遵义大酒店五星级软装工程全周期商业操盘研报.html
+# 单一真源铁律：改此文件 text -> build_monographs_from_yaml.py 回填外壳，禁止手改 monographs/*.html
+meta:
+  source_file: monographs/遵义大酒店五星级软装工程全周期商业操盘研报.html
+  slug: 遵义大酒店五星级软装工程全周期商业操盘研报
+  title: 遵义大酒店五星级软装工程全周期商业操盘研报 ｜ 梁清波 商业专案库
+  hash: 9763d2a125b459a576041afaaa2d574efaefac1cd11648c3e45619a4ca2e8322
+slots:
+- key: s00
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            <a href=\"javascript:void(0)\" onclick=\"returnToParentMonograph()\" class=\"nav-back-btn\" style=\"padding:4px 10px;\">\n                ‹ 返回云软装大盘\n            </a>\n            <span class=\"nav-brand-code\">PRJ-ZY-2018</span>\n        "
+  text: "\n            \n                ‹ 返回云软装大盘\n            \n            PRJ-ZY-2018\n        "
+- key: s01
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#sec-origination">§ I 项目承接与协同</a>
+  text: § I 项目承接与协同
+- key: s02
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#sec-deal-structuring">§ II 合同与回款机制</a>
+  text: § II 合同与回款机制
+- key: s03
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#sec-macro-contract">§ III 合同条款与履约</a>
+  text: § III 合同条款与履约
+- key: s04
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#sec-audit-settlement">§ IV 审计与结算审定</a>
+  text: § IV 审计与结算审定
+- key: s05
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            <span>ARCHIVAL MONOGRAPH</span>\n            <span class=\"eyebrow-sep\">/</span>\n            <span>PRJ-ZY-2018</span>\n            <span class=\"eyebrow-sep\">/</span>\n            <span>ZUNYI GRAND HOTEL PROJECT</span>\n        "
+  text: "\n            ARCHIVAL MONOGRAPH\n            /\n            PRJ-ZY-2018\n            /\n            ZUNYI GRAND HOTEL PROJECT\n        "
+- key: s06
+  kind: section-title
+  tag: h1
+  parent: container
+  orig: 遵义大酒店五星级软装工程全周期商业操盘研报
+  text: 遵义大酒店五星级软装工程全周期商业操盘研报
+- key: s07
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            遵义新蒲新区五星级酒店 · 1.25 亿元软装专业分包（母盘 5.0 亿元）· 商务承接、合同风控、工程协同实施与 9,300 万元结算审定总结\n        "
+  text: "\n            遵义新蒲新区五星级酒店 · 1.25 亿元软装专业分包（母盘 5.0 亿元）· 商务承接、合同风控、工程协同实施与 9,300 万元结算审定总结\n        "
+- key: s08
+  kind: block
+  tag: div
+  parent: container
+  orig: 工作分工与角色
+  text: 工作分工与角色
+- key: s09
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 商务承接 <span>/ 工程部实施</span>
+  text: 商务承接 / 工程部实施
+- key: s10
+  kind: block
+  tag: div
+  parent: container
+  orig: 梁清波（业务承接 · 合同谈判 · 结算核对）
+  text: 梁清波（业务承接 · 合同谈判 · 结算核对）
+- key: s11
+  kind: block
+  tag: div
+  parent: container
+  orig: 分包签约标的
+  text: 分包签约标的
+- key: s12
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 1.25 亿 <span>(母盘 5.0 亿)</span>
+  text: 1.25 亿 (母盘 5.0 亿)
+- key: s13
+  kind: block
+  tag: div
+  parent: container
+  orig: 道桥集团发包 / 软装专业分包
+  text: 道桥集团发包 / 软装专业分包
+- key: s14
+  kind: block
+  tag: div
+  parent: container
+  orig: 最终结算审定
+  text: 最终结算审定
+- key: s15
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 9,300 <span>万元</span>
+  text: 9,300 万元
+- key: s16
+  kind: block
+  tag: div
+  parent: container
+  orig: 经审计与商务复核最终审定金额
+  text: 经审计与商务复核最终审定金额
+- key: s17
+  kind: block
+  tag: div
+  parent: container
+  orig: 回款联动比例
+  text: 回款联动比例
+- key: s18
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 25.0% <span>按比联动</span>
+  text: 25.0% 按比联动
+- key: s19
+  kind: block
+  tag: div
+  parent: container
+  orig: 按母公司收到款项同步划拨
+  text: 按母公司收到款项同步划拨
+- key: s20
+  kind: block
+  tag: div
+  parent: container
+  orig: 票据贴现约定
+  text: 票据贴现约定
+- key: s21
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 费用按比分摊
+  text: 费用按比分摊
+- key: s22
+  kind: block
+  tag: div
+  parent: container
+  orig: 商票贴现成本由双方同比例承担
+  text: 商票贴现成本由双方同比例承担
+- key: s23
+  kind: block
+  tag: div
+  parent: container
+  orig: 合同调整限额
+  text: 合同调整限额
+- key: s24
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 5% 变更限额
+  text: 5% 变更限额
+- key: s25
+  kind: block
+  tag: div
+  parent: container
+  orig: 物料变更控制 / 严禁擅自转包
+  text: 物料变更控制 / 严禁擅自转包
+- key: s26
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 项目承接、母子协同与内部交底
+  text: 项目承接、母子协同与内部交底
+- key: s27
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            依托设计院合作基础对接业务，母公司签署总包、软装独立分包；明确施工界面后由工程部驻场实施。\n        "
+  text: "\n            依托设计院合作基础对接业务，母公司签署总包、软装独立分包；明确施工界面后由工程部驻场实施。\n        "
+- key: s28
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 管控维度
+  text: 管控维度
+- key: s29
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 关键事实与核心数据
+  text: 关键事实与核心数据
+- key: s30
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 业务背景与管控重点
+  text: 业务背景与管控重点
+- key: s31
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 工程标的
+  text: 工程标的
+- key: s32
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>精装母盘 5.0 亿元 ｜ 软装分包 1.25 亿元</strong>
+  text: '**精装母盘 5.0 亿元 ｜ 软装分包 1.25 亿元**'
+- key: s33
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 遵义新蒲新区核心板块五星级国宾政务酒店软装工程
+  text: 遵义新蒲新区核心板块五星级国宾政务酒店软装工程
+- key: s34
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 项目分工
+  text: 项目分工
+- key: s35
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>商务主导承接，工程部驻场实施</strong>
+  text: '**商务主导承接，工程部驻场实施**'
+- key: s36
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 业务端负责项目对接、商务合同与回款条款谈判；签约后组织交底由工程部驻场推进施工深化与排产；后期主导竣工审计结算
+  text: 业务端负责项目对接、商务合同与回款条款谈判；签约后组织交底由工程部驻场推进施工深化与排产；后期主导竣工审计结算
+- key: s37
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 结算审定
+  text: 结算审定
+- key: s38
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>最终审定金额 9,300 万元</strong>
+  text: '**最终审定金额 9,300 万元**'
+- key: s39
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 经业主与第三方审计核对工程量及结算凭证，最终审定结算金额为 9,300 万元
+  text: 经业主与第三方审计核对工程量及结算凭证，最终审定结算金额为 9,300 万元
+- key: s40
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 回款约定
+  text: 回款约定
+- key: s41
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>按母公司实收款项 25% 比例同步支付</strong>
+  text: '**按母公司实收款项 25% 比例同步支付**'
+- key: s42
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 约定分包回款与母公司实收工程款挂钩，商票贴现成本同比例承担，防范资金垫付风险
+  text: 约定分包回款与母公司实收工程款挂钩，商票贴现成本同比例承担，防范资金垫付风险
+- key: s43
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 合同约束
+  text: 合同约束
+- key: s44
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>饰品变更限额 5% ｜ 假冒伪劣 2 倍罚则 ｜ 严禁转包</strong>
+  text: '**饰品变更限额 5% ｜ 假冒伪劣 2 倍罚则 ｜ 严禁转包**'
+- key: s45
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 控制现场物料变更比例，保障原厂品质，设立违约责任确保由内部专业团队组织实施
+  text: 控制现场物料变更比例，保障原厂品质，设立违约责任确保由内部专业团队组织实施
+- key: s46
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 执行周期
+  text: 执行周期
+- key: s47
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>2018 年 11 月签署 ｜ 2018–2021 年交付审定</strong>
+  text: '**2018 年 11 月签署 ｜ 2018–2021 年交付审定**'
+- key: s48
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 跟踪地方融资与付款进度，完善签证与结算凭据，保障项目平稳落地与审计合规
+  text: 跟踪地方融资与付款进度，完善签证与结算凭据，保障项目平稳落地与审计合规
+- key: s49
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: § 1 项目承接与业务协同
+  text: § 1 项目承接与业务协同
+- key: s50
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>渠道接洽与立项</strong>：依托设计院长期合作关系，在方案阶段介入并对接遵义道桥项目，推动母公司承接 5.0 亿元精装大盘，软装子公司签署 1.25 亿元专业分包合同。
+  text: '**渠道接洽与立项**：依托设计院长期合作关系，在方案阶段介入并对接遵义道桥项目，推动母公司承接 5.0 亿元精装大盘，软装子公司签署 1.25 亿元专业分包合同。'
+- key: s51
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>母子协同模式</strong>：母公司提供建筑装饰施工资质与大盘承接通道，软装子公司以独立主体签约并独立核算，发挥专业优势。
+  text: '**母子协同模式**：母公司提供建筑装饰施工资质与大盘承接通道，软装子公司以独立主体签约并独立核算，发挥专业优势。'
+- key: s52
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: § 2 施工界面清晰划分
+  text: § 2 施工界面清晰划分
+- key: s53
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>明确施工边界</strong>：大堂挑空主吊灯、客房满铺阻燃地毯纳入硬装母盘；全酒店活动家具、定制艺术灯具、块毯、挂画饰品及布艺花艺纳入软装分包，界面清晰，避免交叉施工争议。
+  text: '**明确施工边界**：大堂挑空主吊灯、客房满铺阻燃地毯纳入硬装母盘；全酒店活动家具、定制艺术灯具、块毯、挂画饰品及布艺花艺纳入软装分包，界面清晰，避免交叉施工争议。'
+- key: s54
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>独立核算保障</strong>：前置约定权责边界，防止硬装变更或工期问题随意向软装摊派成本，保障分包核算独立。
+  text: '**独立核算保障**：前置约定权责边界，防止硬装变更或工期问题随意向软装摊派成本，保障分包核算独立。'
+- key: s55
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: § 3 内部交底与工程协同
+  text: § 3 内部交底与工程协同
+- key: s56
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>内部交底移交</strong>：商务合同签署后，组织专项交底会议，将图纸方案、工期节点与成本控制目标完整交接给工程部驻场团队。
+  text: '**内部交底移交**：商务合同签署后，组织专项交底会议，将图纸方案、工期节点与成本控制目标完整交接给工程部驻场团队。'
+- key: s57
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>分工各司其职</strong>：工程部专业团队专注现场排产深化、物流跟进与安装交付；商务端负责款项催收、资金跟踪与竣工结算对账。
+  text: '**分工各司其职**：工程部专业团队专注现场排产深化、物流跟进与安装交付；商务端负责款项催收、资金跟踪与竣工结算对账。'
+- key: s58
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: § 4 资金安全与合规把控
+  text: § 4 资金安全与合规把控
+- key: s59
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>重视资金安全</strong>：不盲目追求合同数字，通过比例联动回款与贴现成本共担等机制，降低大项目的垫资风险。
+  text: '**重视资金安全**：不盲目追求合同数字，通过比例联动回款与贴现成本共担等机制，降低大项目的垫资风险。'
+- key: s60
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>合规结算确权</strong>：在结算审计阶段以合同约定、供货清单与验收凭据为依据，配合完成 9,300 万元结算审定。
+  text: '**合规结算确权**：在结算审计阶段以合同约定、供货清单与验收凭据为依据，配合完成 9,300 万元结算审定。'
+- key: s61
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 合同结构与回款机制
+  text: 合同结构与回款机制
+- key: s62
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            约定背靠背比例付款与贴现成本分摊，降低垫资风险，保障项目现金流平稳。\n        "
+  text: "\n            约定背靠背比例付款与贴现成本分摊，降低垫资风险，保障项目现金流平稳。\n        "
+- key: s63
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: 背靠背联动付款与商票贴现成本分摊
+  text: 背靠背联动付款与商票贴现成本分摊
+- key: s64
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n                    分包应收款 = 甲方实收款项 × [1500 ÷ 6000] <strong>(25.0%)</strong>\n                "
+  text: "\n                    分包应收款 = 甲方实收款项 × [1500 ÷ 6000] **(25.0%)**\n                "
+- key: s65
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n                针对地方城投付款周期长的特点，合同约定分包款支付与母公司实收工程款挂钩，按 25% 比例同步支付；同时约定商业承兑汇票等票据贴现费用由双方同比例承担，避免分包单方承担资金贴现损失。\n            "
+  text: "\n                针对地方城投付款周期长的特点，合同约定分包款支付与母公司实收工程款挂钩，按 25% 比例同步支付；同时约定商业承兑汇票等票据贴现费用由双方同比例承担，避免分包单方承担资金贴现损失。\n            "
+- key: s66
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 合同投资演进与审定阶梯 (亿元)
+  text: 合同投资演进与审定阶梯 (亿元)
+- key: s67
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 5 亿元精装母盘之软装分包份额 (%)
+  text: 5 亿元精装母盘之软装分包份额 (%)
+- key: s68
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 工程款 X [1500÷6000] 联动资金流向图
+  text: 工程款 X [1500÷6000] 联动资金流向图
+- key: s69
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 合同关键条款与履约把控
+  text: 合同关键条款与履约把控
+- key: s70
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            穿透双方盖章合同核心条款（编号 GY-2018-YW-131），严格落实各项履约与质量合规要求。\n        "
+  text: "\n            穿透双方盖章合同核心条款（编号 GY-2018-YW-131），严格落实各项履约与质量合规要求。\n        "
+- key: s71
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 合同条款项
+  text: 合同条款项
+- key: s72
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 约定条款核心内容 (原件摘录)
+  text: 约定条款核心内容 (原件摘录)
+- key: s73
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 业务含义与管控重点
+  text: 业务含义与管控重点
+- key: s74
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>第二条 · 承包范围与工序界面</strong>
+  text: '**第二条 · 承包范围与工序界面**'
+- key: s75
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 包含活动家具、灯具（吊灯、壁灯除外）、窗帘、活动块毯（满铺毯除外）、挂画、美陈饰品、布艺、花艺等物料配置、物流配送、现场摆设及安装等工作。
+  text: 包含活动家具、灯具（吊灯、壁灯除外）、窗帘、活动块毯（满铺毯除外）、挂画、美陈饰品、布艺、花艺等物料配置、物流配送、现场摆设及安装等工作。
+- key: s76
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>明确硬装与软装分工界面</strong>：大堂主吊灯与满铺地毯归母盘硬装，所有活动类与艺术陈设划归软装分包，界面清晰，避免交叉施工推诿。
+  text: '**明确硬装与软装分工界面**：大堂主吊灯与满铺地毯归母盘硬装，所有活动类与艺术陈设划归软装分包，界面清晰，避免交叉施工推诿。'
+- key: s77
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>第五条 · 联动回款与贴现共担</strong>
+  text: '**第五条 · 联动回款与贴现共担**'
+- key: s78
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 甲方收到道桥集团款项后 5 个工作日内向乙方支付：分包应收款 = 甲方实收款项 × [1500 ÷ 6000] (25.0%)。如涉及资金成本（贴现），乙方按实收金额分摊相应成本。
+  text: 甲方收到道桥集团款项后 5 个工作日内向乙方支付：分包应收款 = 甲方实收款项 × [1500 ÷ 6000] (25.0%)。如涉及资金成本（贴现），乙方按实收金额分摊相应成本。
+- key: s79
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>明确回款与贴现机制</strong>：锁定 25% 回款联动份额，约定商票贴现成本按实收比例共同分摊，降低资金占用风险。
+  text: '**明确回款与贴现机制**：锁定 25% 回款联动份额，约定商票贴现成本按实收比例共同分摊，降低资金占用风险。'
+- key: s80
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>第六条 · 饰品选型 5% 调整红线</strong>
+  text: '**第六条 · 饰品选型 5% 调整红线**'
+- key: s81
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 如需更换物料，调整部分的饰品价格与饰品总价比例<strong>必须控制在 5% 以内</strong>；所更换物料由道桥集团审核或协商确定单价执行，超额不得索赔。
+  text: 如需更换物料，调整部分的饰品价格与饰品总价比例**必须控制在 5% 以内**；所更换物料由道桥集团审核或协商确定单价执行，超额不得索赔。
+- key: s82
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>控制非标物料变更</strong>：设定 5% 调整限额，防止现场随意增项或换样导致成本超支。
+  text: '**控制非标物料变更**：设定 5% 调整限额，防止现场随意增项或换样导致成本超支。'
+- key: s83
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>第八条 · 原厂制造双倍违约罚则</strong>
+  text: '**第八条 · 原厂制造双倍违约罚则**'
+- key: s84
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 材料、设备生产厂家品牌必须为原厂生产，禁止使用委托第三方生产后贴用品牌。一经发现按假冒伪劣处理，<strong>按该部分材料设备总价 2 倍向发包人支付违约金</strong>。
+  text: 材料、设备生产厂家品牌必须为原厂生产，禁止使用委托第三方生产后贴用品牌。一经发现按假冒伪劣处理，**按该部分材料设备总价 2 倍向发包人支付违约金**。
+- key: s85
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>严格保证材料品质</strong>：要求材料设备原厂制造，严禁贴牌代工，保证五星级国宾酒店工程品质。
+  text: '**严格保证材料品质**：要求材料设备原厂制造，严禁贴牌代工，保证五星级国宾酒店工程品质。'
+- key: s86
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>第十一条 · 严禁擅自转包违约责任</strong>
+  text: '**第十一条 · 严禁擅自转包违约责任**'
+- key: s87
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 若乙方有擅自转包行为的，按合同暂定总金额的 <strong>10% (1,250.00 万元)</strong> 向甲方支付违约金。
+  text: 若乙方有擅自转包行为的，按合同暂定总金额的 **10% (1,250.00 万元)** 向甲方支付违约金。
+- key: s88
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>保障自主实施团队</strong>：设立违约责任，杜绝层层转包，由内部专业工程部保质履约。
+  text: '**保障自主实施团队**：设立违约责任，杜绝层层转包，由内部专业工程部保质履约。'
+- key: s89
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 竣工结算与 9,300 万元审计审定
+  text: 竣工结算与 9,300 万元审计审定
+- key: s90
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            工程完工后主导结算对账，经过多轮资料核对与据实沟通，最终审定结算金额为 9,300 万元。\n        "
+  text: "\n            工程完工后主导结算对账，经过多轮资料核对与据实沟通，最终审定结算金额为 9,300 万元。\n        "
+- key: s91
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 结算核对阶段
+  text: 结算核对阶段
+- key: s92
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 审计核实重点与沟通焦点
+  text: 审计核实重点与沟通焦点
+- key: s93
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 核对要点与依据凭据
+  text: 核对要点与依据凭据
+- key: s94
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 核定结果
+  text: 核定结果
+- key: s95
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>第一阶段 · 合同与清单核对<br><span style="font-size:11px;color:var(--text-tertiary);">合同暂定额核实</span></strong>
+  text: '**第一阶段 · 合同与清单核对
+
+    合同暂定额核实**'
+- key: s96
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 核实 1.25 亿元暂定总价合同与现场实际供货范围的对应关系。
+  text: 核实 1.25 亿元暂定总价合同与现场实际供货范围的对应关系。
+- key: s97
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 以图纸与深化排产清单为准，梳理实际供货与原合同暂定清单的差异，剔除未实施部分，锁定有效供货清单。
+  text: 以图纸与深化排产清单为准，梳理实际供货与原合同暂定清单的差异，剔除未实施部分，锁定有效供货清单。
+- key: s98
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 范围明确
+  text: 范围明确
+- key: s99
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>第二阶段 · 签证与单价审核<br><span style="font-size:11px;color:var(--text-tertiary);">变更限额与材料合规</span></strong>
+  text: '**第二阶段 · 签证与单价审核
+
+    变更限额与材料合规**'
+- key: s100
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 审计方重点核验非标定制品单价、现场签证变更及材料原厂合格证明。
+  text: 审计方重点核验非标定制品单价、现场签证变更及材料原厂合格证明。
+- key: s101
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 出具各批次深化确认图纸、现场进场验收签证单及原厂检测报告，严格遵循饰品变更 5% 调价约定据实对账。
+  text: 出具各批次深化确认图纸、现场进场验收签证单及原厂检测报告，严格遵循饰品变更 5% 调价约定据实对账。
+- key: s102
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 单价与签证确认
+  text: 单价与签证确认
+- key: s103
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>第三阶段 · 审计审定与确权<br><span style="font-size:11px;color:var(--text-tertiary);">最终达成审定共识</span></strong>
+  text: '**第三阶段 · 审计审定与确权
+
+    最终达成审定共识**'
+- key: s104
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 结合工程总体造价控制要求，开展多方结算综合会商与对账。
+  text: 结合工程总体造价控制要求，开展多方结算综合会商与对账。
+- key: s105
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 在合法合规的前提下，经商务复核与多轮据实协商，最终各方达成一致，审定结算金额为 9,300.00 万元（审减率 25.6%）。
+  text: 在合法合规的前提下，经商务复核与多轮据实协商，最终各方达成一致，审定结算金额为 9,300.00 万元（审减率 25.6%）。
+- key: s106
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 9,300.00 万元
+  text: 9,300.00 万元
+- key: s107
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n                项目总结与管控要点\n            "
+  text: "\n                项目总结与管控要点\n            "
+- key: s108
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n                <strong>一、 业务对接与协同分工</strong>：依托设计院长期合作基础获取项目契机，促成母公司承接精装总包、软装公司独立签署 1.25 亿元专业分包合同，实现上市公司平台优势与专业公司的协同。\n            "
+  text: "\n                **一、 业务对接与协同分工**：依托设计院长期合作基础获取项目契机，促成母公司承接精装总包、软装公司独立签署 1.25 亿元专业分包合同，实现上市公司平台优势与专业公司的协同。\n            "
+- key: s109
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n                <strong>二、 付款联动与资金把控</strong>：针对地方城投回款周期特点，合同前置约定 <code>分包应收款 = 甲方实收款项 × [1500 ÷ 6000]</code>（25%）背靠背支付，并明确商票贴现利息按比分摊，从源头控制资金垫付风险。\n            "
+  text: "\n                **二、 付款联动与资金把控**：针对地方城投回款周期特点，合同前置约定 `分包应收款 = 甲方实收款项 × [1500 ÷ 6000]`（25%）背靠背支付，并明确商票贴现利息按比分摊，从源头控制资金垫付风险。\n            "
+- key: s110
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n                <strong>三、 内部交底与工程实施</strong>：合同签订与施工界面清晰界定后，及时组织内部交底移交工程部驻场团队深化排产与施工，商务口转入资金跟踪与城投融资动态关注。\n            "
+  text: "\n                **三、 内部交底与工程实施**：合同签订与施工界面清晰界定后，及时组织内部交底移交工程部驻场团队深化排产与施工，商务口转入资金跟踪与城投融资动态关注。\n            "
+- key: s111
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n                <strong>四、 审计对账与结算确权</strong>：工程完工后主导结算对账工作，以现场图纸、签证及合规凭据为依托，经过多轮沟通核实，最终审定结算金额为 9,300 万元，实现项目平稳收官。\n            "
+  text: "\n                **四、 审计对账与结算确权**：工程完工后主导结算对账工作，以现场图纸、签证及合规凭据为依托，经过多轮沟通核实，最终审定结算金额为 9,300 万元，实现项目平稳收官。\n            "
+- key: s112
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            <span>ARCHIVAL DOSSIER · PRJ-ZY-2018 · 遵义大酒店五星级软装工程商业操盘总结</span>\n        "
+  text: "\n            ARCHIVAL DOSSIER · PRJ-ZY-2018 · 遵义大酒店五星级软装工程商业操盘总结\n        "
+- key: s113
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            2026 商业专案库归档\n        "
+  text: "\n            2026 商业专案库归档\n        "

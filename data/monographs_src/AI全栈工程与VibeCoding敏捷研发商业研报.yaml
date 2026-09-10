@@ -1,0 +1,2186 @@
+# 文字真源：monographs/AI全栈工程与VibeCoding敏捷研发商业研报.html
+# 单一真源铁律：改此文件 text -> build_monographs_from_yaml.py 回填外壳，禁止手改 monographs/*.html
+meta:
+  source_file: monographs/AI全栈工程与VibeCoding敏捷研发商业研报.html
+  slug: AI全栈工程与VibeCoding敏捷研发商业研报
+  title: AI 全栈工程操盘与 Vibe Coding 敏捷研发 ｜ 梁清波 商业专案库
+  hash: f7702fc7d1987cff56bd16a1c33bf5ad85e1583b30d2f34c548499726d811773
+slots:
+- key: s00
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            <span class=\"nav-brand-code\">PRJ-AI-VIBE-2026</span>\n            <span class=\"eyebrow-sep\" style=\"color:var(--border-strong);margin:0 4px;\">/</span>\n            <span class=\"nav-brand-title\">AI 全栈工程操盘与 Vibe Coding 敏捷研发</span>\n        "
+  text: "\n            PRJ-AI-VIBE-2026\n            /\n            AI 全栈工程操盘与 Vibe Coding 敏捷研发\n        "
+- key: s01
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#sec-overview">§ 1 项目基本盘</a>
+  text: § 1 项目基本盘
+- key: s02
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#sec-methodology">§ 2 核心方法论</a>
+  text: § 2 核心方法论
+- key: s03
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#sec-statcase">§ 3 统计实证案例</a>
+  text: § 3 统计实证案例
+- key: s04
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#sec-dashboard">§ 4 研发效能图表</a>
+  text: § 4 研发效能图表
+- key: s05
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#sec-prototypes">§ 5 六大业务原型</a>
+  text: § 5 六大业务原型
+- key: s06
+  kind: block
+  tag: button
+  parent: container
+  orig: "\n            <span>‹ 返回总舱</span>\n        "
+  text: "\n            ‹ 返回总舱\n        "
+- key: s07
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            <span>ARCHIVAL MONOGRAPH</span>\n            <span class=\"eyebrow-sep\">/</span>\n            <span>PRJ-AI-VIBE-2026</span>\n            <span class=\"eyebrow-sep\">/</span>\n            <span>AI FULLSTACK & VIBE CODING RAPID DELIVERY</span>\n        "
+  text: "\n            ARCHIVAL MONOGRAPH\n            /\n            PRJ-AI-VIBE-2026\n            /\n            AI FULLSTACK & VIBE CODING RAPID DELIVERY\n        "
+- key: s08
+  kind: section-title
+  tag: h1
+  parent: container
+  orig: AI 全栈工程操盘与 Vibe Coding 敏捷研发
+  text: AI 全栈工程操盘与 Vibe Coding 敏捷研发
+- key: s09
+  kind: block
+  tag: div
+  parent: container
+  orig: ——把"怎么做"教给 AI，我一人干一个团队的活
+  text: ——把"怎么做"教给 AI，我一人干一个团队的活
+- key: s10
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            我的工作方式很朴素：<strong>自己定思路和标准，让 AI 负责动手干活</strong>。一个人就能完成从写代码、搭系统、做数据分析到上线运行的全流程。这个能力根植于计算机专业功底，用在真实业务上——从<strong>外贸获客、工程造价、CAD 制图，到消费券问卷的统计分析（SAS / SPSS / R）</strong>，再到<strong>出海拓客的数据看板（Superset / FineBI / n8n）</strong>，都做出了能实际跑起来的成果。全程<strong>一个人，一套思路，落地多个领域</strong>。"
+  text: "\n            我的工作方式很朴素：**自己定思路和标准，让 AI 负责动手干活**。一个人就能完成从写代码、搭系统、做数据分析到上线运行的全流程。这个能力根植于计算机专业功底，用在真实业务上——从**外贸获客、工程造价、CAD 制图，到消费券问卷的统计分析（SAS / SPSS / R）**，再到**出海拓客的数据看板（Superset / FineBI / n8n）**，都做出了能实际跑起来的成果。全程**一个人，一套思路，落地多个领域**。"
+- key: s11
+  kind: block
+  tag: div
+  parent: container
+  orig: 工程定位
+  text: 工程定位
+- key: s12
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 敏捷原型研发
+  text: 敏捷原型研发
+- key: s13
+  kind: block
+  tag: div
+  parent: container
+  orig: 探索型验证系统 (PoC / MVP)
+  text: 探索型验证系统 (PoC / MVP)
+- key: s14
+  kind: block
+  tag: div
+  parent: container
+  orig: 系统底座与部署
+  text: 系统底座与部署
+- key: s15
+  kind: kpi
+  tag: div
+  parent: container
+  orig: Ubuntu 24.04 <small>原生</small>
+  text: Ubuntu 24.04 原生
+- key: s16
+  kind: block
+  tag: div
+  parent: container
+  orig: Linux 云服务器 · Docker 容器集群 · Nginx / systemd
+  text: Linux 云服务器 · Docker 容器集群 · Nginx / systemd
+- key: s17
+  kind: block
+  tag: div
+  parent: container
+  orig: 核心能力
+  text: 核心能力
+- key: s18
+  kind: kpi
+  tag: div
+  parent: container
+  orig: Vibe Coding
+  text: Vibe Coding
+- key: s19
+  kind: block
+  tag: div
+  parent: container
+  orig: 架构编排与跨语言全栈交付
+  text: 架构编排与跨语言全栈交付
+- key: s20
+  kind: block
+  tag: div
+  parent: container
+  orig: 研发历时
+  text: 研发历时
+- key: s21
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 近 10 个月 <small>(288天)</small>
+  text: 近 10 个月 (288天)
+- key: s22
+  kind: block
+  tag: div
+  parent: container
+  orig: 93 个实盘编码工作日 (740+工时)
+  text: 93 个实盘编码工作日 (740+工时)
+- key: s23
+  kind: block
+  tag: div
+  parent: container
+  orig: 纯实操工时
+  text: 纯实操工时
+- key: s24
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 120.8 <small>小时</small>
+  text: 120.8 小时
+- key: s25
+  kind: block
+  tag: div
+  parent: container
+  orig: 4,077 次心跳采样 · 剔除摸鱼待机
+  text: 4,077 次心跳采样 · 剔除摸鱼待机
+- key: s26
+  kind: block
+  tag: div
+  parent: container
+  orig: 受控代码资产
+  text: 受控代码资产
+- key: s27
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 2,804 <small>万行</small>
+  text: 2,804 万行
+- key: s28
+  kind: block
+  tag: div
+  parent: container
+  orig: 8 大自研系统 · 41.3 万受控文件
+  text: 8 大自研系统 · 41.3 万受控文件
+- key: s29
+  kind: block
+  tag: div
+  parent: container
+  orig: 一句话 · 我在做什么
+  text: 一句话 · 我在做什么
+- key: s30
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: "让 AI 当我的\"超级帮手\"，用 <span style=\"color:#ffd479;\">120.8 小时</span>\n            干出一个团队 <span style=\"color:#ffd479;\">61 个工程</span> 的活。\n        "
+  text: "让 AI 当我的\"超级帮手\"，用 120.8 小时\n            干出一个团队 61 个工程 的活。\n        "
+- key: s31
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            简单说，我不写重复的代码，而是<strong>把\"怎么做\"教给 AI，让它按我的思路高速执行</strong>。从统计调研（SAS/SPSS/R）到商业看板（Superset/FineBI）再到自动化流程（n8n），我一人就能覆盖数据分析到系统落地的整条链路。\n        "
+  text: "\n            简单说，我不写重复的代码，而是**把\"怎么做\"教给 AI，让它按我的思路高速执行**。从统计调研（SAS/SPSS/R）到商业看板（Superset/FineBI）再到自动化流程（n8n），我一人就能覆盖数据分析到系统落地的整条链路。\n        "
+- key: s32
+  kind: block
+  tag: div
+  parent: container
+  orig: 8 <span style="font-size:13px;">套王牌系统</span>
+  text: 8 套王牌系统
+- key: s33
+  kind: block
+  tag: div
+  parent: container
+  orig: 2,804 万行代码 · 都是能跑的真系统
+  text: 2,804 万行代码 · 都是能跑的真系统
+- key: s34
+  kind: block
+  tag: div
+  parent: container
+  orig: 13 <span style="font-size:13px;">个 AI 帮手</span>
+  text: 13 个 AI 帮手
+- key: s35
+  kind: block
+  tag: div
+  parent: container
+  orig: 近 2 万次协作调教 · 不同工具各司其职
+  text: 近 2 万次协作调教 · 不同工具各司其职
+- key: s36
+  kind: block
+  tag: div
+  parent: container
+  orig: 120.8 <span style="font-size:13px;">小时</span>
+  text: 120.8 小时
+- key: s37
+  kind: block
+  tag: div
+  parent: container
+  orig: 纯干活的时长 · 大约等于 15 个工作日
+  text: 纯干活的时长 · 大约等于 15 个工作日
+- key: s38
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 项目基本盘 · 研发属性与核心业务事实台账
+  text: 项目基本盘 · 研发属性与核心业务事实台账
+- key: s39
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 维度
+  text: 维度
+- key: s40
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 关键事实与核心数据
+  text: 关键事实与核心数据
+- key: s41
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 商业背景与操盘意义
+  text: 商业背景与操盘意义
+- key: s42
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 研发范式
+  text: 研发范式
+- key: s43
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>Vibe Coding 架构编排</strong>（自然语言意图 ➔ 数据契约 ➔ 严密断言）
+  text: '**Vibe Coding 架构编排**（自然语言意图 ➔ 数据契约 ➔ 严密断言）'
+- key: s44
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 摒弃低效的传统手写脚手架与死板搬砖，将工程核心聚焦于需求边界拆解、状态机流转与接口契约设计，驱动 AI 编写具体实现，开发交付效率提升数倍。
+  text: 摒弃低效的传统手写脚手架与死板搬砖，将工程核心聚焦于需求边界拆解、状态机流转与接口契约设计，驱动 AI 编写具体实现，开发交付效率提升数倍。
+- key: s45
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 操作系统与宿主
+  text: 操作系统与宿主
+- key: s46
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>Ubuntu 24.04 LTS 原生 Linux 宿主</strong>（Linux Kernel 7.0+ 原生内核环境）
+  text: '**Ubuntu 24.04 LTS 原生 Linux 宿主**（Linux Kernel 7.0+ 原生内核环境）'
+- key: s47
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 全套研发直接构建于纯正 Linux 终端生态与 POSIX 工具链之上，深刻掌握 Linux 进程管理、文件权限、cgroups v2 与 epoll 异步 I/O；开发环境与线上生产服务器完全同构，彻底消除跨平台环境漂移与路径换行符痛点。
+  text: 全套研发直接构建于纯正 Linux 终端生态与 POSIX 工具链之上，深刻掌握 Linux 进程管理、文件权限、cgroups v2 与 epoll 异步 I/O；开发环境与线上生产服务器完全同构，彻底消除跨平台环境漂移与路径换行符痛点。
+- key: s48
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 服务器部署与交付
+  text: 服务器部署与交付
+- key: s49
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>Linux 云服务器生产部署</strong>（Docker Compose 容器编排 / Nginx 反代 / systemd 守护自愈）
+  text: '**Linux 云服务器生产部署**（Docker Compose 容器编排 / Nginx 反代 / systemd 守护自愈）'
+- key: s50
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 跨越本地玩具 demo 鸿沟，具备独立 Linux 云主机配置、Docker 多容器生产栈网络隔离、Nginx 动静分离与 SSL/TLS 证书自动化运维、以及 systemd 单元守护（崩溃自动重启与日志监控）全流程生产交付经验，已实现独立公网系统线上平稳运行。
+  text: 跨越本地玩具 demo 鸿沟，具备独立 Linux 云主机配置、Docker 多容器生产栈网络隔离、Nginx 动静分离与 SSL/TLS 证书自动化运维、以及 systemd 单元守护（崩溃自动重启与日志监控）全流程生产交付经验，已实现独立公网系统线上平稳运行。
+- key: s51
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 系统工程底账
+  text: 系统工程底账
+- key: s52
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>8 大自研系统王牌</strong>（413,966 个受控文件，2,804 万行源码）；<strong>全仓 61 个工程</strong>累计 <strong>8,688 万行</strong>
+  text: '**8 大自研系统王牌**（413,966 个受控文件，2,804 万行源码）；**全仓 61 个工程**累计 **8,688 万行**'
+- key: s53
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 自研仓库均为围绕真实业务需求构建的敏捷探索型系统原型（PoC / MVP），跨越外贸、商业 BI、造价、CAD、企微多领域，全部支持端到端运行验证。口径分列：<strong>8 大王牌自研 2,804 万行</strong>（核心交付）与<strong>全仓 61 工程 8,688 万行</strong>（含开源引入研读/运维中台），二者分别对应湖仓视图 <code>v_ai_git_repositories</code> 与 <code>v_all_local_git_repositories</code>，SQL 可复核。
+  text: 自研仓库均为围绕真实业务需求构建的敏捷探索型系统原型（PoC / MVP），跨越外贸、商业 BI、造价、CAD、企微多领域，全部支持端到端运行验证。口径分列：**8 大王牌自研 2,804 万行**（核心交付）与**全仓 61 工程 8,688 万行**（含开源引入研读/运维中台），二者分别对应湖仓视图 `v_ai_git_repositories` 与 `v_all_local_git_repositories`，SQL 可复核。
+- key: s54
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 实战研发投入
+  text: 实战研发投入
+- key: s55
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>93 个实战工作日 · 历时近 10 个月</strong>（约 740+ 研发工时，纯敲代码 120.8h）
+  text: '**93 个实战工作日 · 历时近 10 个月**（约 740+ 研发工时，纯敲代码 120.8h）'
+- key: s56
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 以 93 个全职研发日为周期持续实战演进（日历跨度 288 天）；IDE 键盘监控真实记录 120.8 小时纯代码编写心流（4,077 次心跳采样点，剔除查资料与摸鱼等待）。相当于标准软件团队近半年专注投入的代码产出密度，体现扎实且持续的高密度研发沉淀。
+  text: 以 93 个全职研发日为周期持续实战演进（日历跨度 288 天）；IDE 键盘监控真实记录 120.8 小时纯代码编写心流（4,077 次心跳采样点，剔除查资料与摸鱼等待）。相当于标准软件团队近半年专注投入的代码产出密度，体现扎实且持续的高密度研发沉淀。
+- key: s57
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: AI 交互矩阵
+  text: AI 交互矩阵
+- key: s58
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>13 款主流开发智能体</strong> 深度实盘（累计 19,983 轮对话与调用）
+  text: '**13 款主流开发智能体** 深度实盘（累计 19,983 轮对话与调用）'
+- key: s59
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 熟练运用 Claude Code (7,025 轮)、Cursor (4,047 轮)、DSH (2,410 轮)、Codex (2,256 轮)、AGY (1,820 轮)、Windsurf (1,120 轮) 等工具协同攻坚。
+  text: 熟练运用 Claude Code (7,025 轮)、Cursor (4,047 轮)、DSH (2,410 轮)、Codex (2,256 轮)、AGY (1,820 轮)、Windsurf (1,120 轮) 等工具协同攻坚。
+- key: s60
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 现代湖仓与 MCP
+  text: 现代湖仓与 MCP
+- key: s61
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>DuckDB 插件生态 (vss/httpfs/spatial)</strong> + <strong>MCP 智能体协议</strong> + <strong>Superset/FineBI</strong>
+  text: '**DuckDB 插件生态 (vss/httpfs/spatial)** + **MCP 智能体协议** + **Superset/FineBI**'
+- key: s62
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 精通现代湖仓一体架构与 DuckDB 扩展插件生态（vss 向量相似度检索、httpfs 远程无拷贝直读、spatial 空间几何、跨源 scanner 联邦）；深度落地 Model Context Protocol (MCP) 标准数据总线，赋能 AI Agent 安全可控的即席数据洞察；贯通上层 Superset / FineBI 商业智能驾驶舱全流程指标建模与呈现。
+  text: 精通现代湖仓一体架构与 DuckDB 扩展插件生态（vss 向量相似度检索、httpfs 远程无拷贝直读、spatial 空间几何、跨源 scanner 联邦）；深度落地 Model Context Protocol (MCP) 标准数据总线，赋能 AI Agent 安全可控的即席数据洞察；贯通上层 Superset / FineBI 商业智能驾驶舱全流程指标建模与呈现。
+- key: s63
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 认知底座把控
+  text: 认知底座把控
+- key: s64
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>11 大核心专题</strong>，<strong>186.6 万字</strong> 扎实底层知识库储备
+  text: '**11 大核心专题**，**186.6 万字** 扎实底层知识库储备'
+- key: s65
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 依托华中科技大学 (985) 数学系统计学背景，系统性构建操作系统、计算机网络、数据库原理与商业法务知识库，成为审查与终结 AI 幻觉的坚实防线。
+  text: 依托华中科技大学 (985) 数学系统计学背景，系统性构建操作系统、计算机网络、数据库原理与商业法务知识库，成为审查与终结 AI 幻觉的坚实防线。
+- key: s66
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: Vibe Coding 敏捷工程化实录 · 2×2 平衡对称架构
+  text: Vibe Coding 敏捷工程化实录 · 2×2 平衡对称架构
+- key: s67
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            一句话，就是<strong>\"给 AI 讲清楚背景，剩下的活交给它\"</strong>：我负责把项目怎么回事讲明白，AI 负责把代码写出来，再用严格的检查兜底，不让它乱跑。这不是放任不管，而是有章法的协作。\n        "
+  text: "\n            一句话，就是**\"给 AI 讲清楚背景，剩下的活交给它\"**：我负责把项目怎么回事讲明白，AI 负责把代码写出来，再用严格的检查兜底，不让它乱跑。这不是放任不管，而是有章法的协作。\n        "
+- key: s68
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            <strong>全篇立论</strong>　AI 的价值不只在\"写代码\"，更在<strong>你给它多少梳理好的背景资料</strong>。我把平时积累的知识、方法、数据都整理好存进一个\"资料库\"，AI 需要时随时调用——给它喂得越清楚，它干得越靠谱。下文的工程方法（§ 2）、统计分析（§ 3）、数据看板（§ 4），本质都是这样：<strong>先把背景整理明白，再让 AI 照着做，最后把成果落地</strong>。本研报所有关键数字，都能在资料库里查证复核。\n        "
+  text: "\n            **全篇立论**　AI 的价值不只在\"写代码\"，更在**你给它多少梳理好的背景资料**。我把平时积累的知识、方法、数据都整理好存进一个\"资料库\"，AI 需要时随时调用——给它喂得越清楚，它干得越靠谱。下文的工程方法（§ 2）、统计分析（§ 3）、数据看板（§ 4），本质都是这样：**先把背景整理明白，再让 AI 照着做，最后把成果落地**。本研报所有关键数字，都能在资料库里查证复核。\n        "
+- key: s69
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: § 1 业务需求敏捷转化与契约前置 (Intent to Architecture)
+  text: § 1 业务需求敏捷转化与契约前置 (Intent to Architecture)
+- key: s70
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>自然语言精准解构</strong>：面对各行业离散且模糊的业务诉求，首先通过自然语言梳理业务实体、核心状态机与数据流向，将其转化为严谨的接口规范；
+  text: '**自然语言精准解构**：面对各行业离散且模糊的业务诉求，首先通过自然语言梳理业务实体、核心状态机与数据流向，将其转化为严谨的接口规范；'
+- key: s71
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>数据契约先行定型</strong>：在编写第一行实现代码前，前置完成 JSON Schema、SQL DDL 与 API 契约定义，严格圈定模块边界，杜绝大模型盲目生成的结构失控；
+  text: '**数据契约先行定型**：在编写第一行实现代码前，前置完成 JSON Schema、SQL DDL 与 API 契约定义，严格圈定模块边界，杜绝大模型盲目生成的结构失控；'
+- key: s72
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>单一职责原子拆解</strong>：将复杂系统拆分为高内聚、低耦合的微小功能单元，使 AI 始终在清晰、局部的上下文中高精度执行。
+  text: '**单一职责原子拆解**：将复杂系统拆分为高内聚、低耦合的微小功能单元，使 AI 始终在清晰、局部的上下文中高精度执行。'
+- key: s73
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: § 2 跨语言全栈交付与极速原型验证 (Fullstack Rapid PoC)
+  text: § 2 跨语言全栈交付与极速原型验证 (Fullstack Rapid PoC)
+- key: s74
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>场景驱动的语言选型</strong>：后端并发与高吞吐清洗采用 Python / Go，前端交互与跨平台桌面采用 TypeScript / React / Electron，高性能底层工具采用 Rust，分析统揽采用 SQL；
+  text: '**场景驱动的语言选型**：后端并发与高吞吐清洗采用 Python / Go，前端交互与跨平台桌面采用 TypeScript / React / Electron，高性能底层工具采用 Rust，分析统揽采用 SQL；'
+- key: s75
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>小时级 MVP 闭环</strong>：以“可交互、可运行、可断言”为唯一目标，通过 AI 结对在数小时内快速产出功能原型，迅速求证技术路线与商业场景可行性；
+  text: '**小时级 MVP 闭环**：以“可交互、可运行、可断言”为唯一目标，通过 AI 结对在数小时内快速产出功能原型，迅速求证技术路线与商业场景可行性；'
+- key: s76
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>代码资产持续沉淀</strong>：探索形成的通用组件（如长连接心跳管理、邮件探测器、CAD 解析器）沉淀为模块库，在后续项目中实现开箱即用复用。
+  text: '**代码资产持续沉淀**：探索形成的通用组件（如长连接心跳管理、邮件探测器、CAD 解析器）沉淀为模块库，在后续项目中实现开箱即用复用。'
+- key: s77
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: § 3 DuckDB 插件生态 (vss/httpfs/spatial)、MCP 智能体协议与现代湖仓 (DuckDB Ecosystem, MCP & BI Matrix)
+  text: § 3 DuckDB 插件生态 (vss/httpfs/spatial)、MCP 智能体协议与现代湖仓 (DuckDB Ecosystem, MCP & BI Matrix)
+- key: s78
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>DuckDB 扩展插件深度集成</strong>：熟练运用 <code>vss</code> 向量相似度插件（HNSW 索引与余弦距离）在数据库内直接实现混合检索；基于 <code>httpfs</code> 插件实现对远端 S3 / HTTPS 上的 Parquet/CSV 进行免 ETL 零拷贝直读（谓词下推与 Range 剪裁）；通过 <code>scanner</code> 插件与 <code>spatial</code> 空间几何库实现跨源异构联邦与 CAD/GIS 分析；
+  text: '**DuckDB 扩展插件深度集成**：熟练运用 `vss` 向量相似度插件（HNSW 索引与余弦距离）在数据库内直接实现混合检索；基于 `httpfs` 插件实现对远端 S3 / HTTPS 上的 Parquet/CSV 进行免 ETL 零拷贝直读（谓词下推与 Range 剪裁）；通过 `scanner` 插件与 `spatial` 空间几何库实现跨源异构联邦与 CAD/GIS 分析；'
+- key: s79
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>Model Context Protocol (MCP) 统一数据总线</strong>：基于 <code>mcp-server-duckdb</code> 与 FastMCP 封装标准 MCP 工具集（<code>read_query</code>, <code>describe_table</code>, <code>list_tables</code>），配合 <code>--readonly</code> 严格安全沙箱，赋予 AI Agent 对本地及远程湖仓高效、确定性的即席分析与工具闭环能力；
+  text: '**Model Context Protocol (MCP) 统一数据总线**：基于 `mcp-server-duckdb` 与 FastMCP 封装标准 MCP 工具集（`read_query`, `describe_table`, `list_tables`），配合 `--readonly` 严格安全沙箱，赋予 AI Agent 对本地及远程湖仓高效、确定性的即席分析与工具闭环能力；'
+- key: s80
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>主流商业看板双轨驱动</strong>：将底层列式湖仓与业务指标池通过 Apache Superset 与帆软 FineBI 构建可视化驾驶舱，在电商、采销与获客场景中闭环呈现 RFM 分群、留存漏斗与动销排行。
+  text: '**主流商业看板双轨驱动**：将底层列式湖仓与业务指标池通过 Apache Superset 与帆软 FineBI 构建可视化驾驶舱，在电商、采销与获客场景中闭环呈现 RFM 分群、留存漏斗与动销排行。'
+- key: s81
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: § 4 Linux 原生底座、云端部署与质量防线 (Linux Host, Cloud Deploy & Quality Gate)
+  text: § 4 Linux 原生底座、云端部署与质量防线 (Linux Host, Cloud Deploy & Quality Gate)
+- key: s82
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>Ubuntu 24.04 LTS 原生开发底座</strong>：扎根纯正 Linux 原生环境，深刻掌握 Linux 内核调度、进程信号、网络协议栈（TCP / UDP / WebSocket）与 epoll 异步 I/O 并发机制，熟练编写 Shell / Bash 自动化流水线与 POSIX 生产脚本；
+  text: '**Ubuntu 24.04 LTS 原生开发底座**：扎根纯正 Linux 原生环境，深刻掌握 Linux 内核调度、进程信号、网络协议栈（TCP / UDP / WebSocket）与 epoll 异步 I/O 并发机制，熟练编写 Shell / Bash 自动化流水线与 POSIX 生产脚本；'
+- key: s83
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>云服务器容器化编排与部署</strong>：跨越本地 demo 阶段，熟练运用 Docker & Docker Compose 编排生产级多服务拓扑（PostgreSQL / Redis / FastAPI / Node），配置 Nginx 反向代理、动静分离与 SSL/TLS 证书自动化签发续期；
+  text: '**云服务器容器化编排与部署**：跨越本地 demo 阶段，熟练运用 Docker & Docker Compose 编排生产级多服务拓扑（PostgreSQL / Redis / FastAPI / Node），配置 Nginx 反向代理、动静分离与 SSL/TLS 证书自动化签发续期；'
+- key: s84
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>systemd 守护自愈与质量门禁</strong>：编写 systemd 生产服务单元实现进程崩溃无缝自愈拉起与日志轮转监控；坚持“实证证据优先（Empirical Proof）”，交付代码严守自动化单元测试与线上心跳探针，从物理上终结 AI 幻觉。
+  text: '**systemd 守护自愈与质量门禁**：编写 systemd 生产服务单元实现进程崩溃无缝自愈拉起与日志轮转监控；坚持“实证证据优先（Empirical Proof）”，交付代码严守自动化单元测试与线上心跳探针，从物理上终结 AI 幻觉。'
+- key: s85
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 统计实证案例 · Vibe Coding 驱动 SAS / SPSS 多引擎问卷分析全链路
+  text: 统计实证案例 · Vibe Coding 驱动 SAS / SPSS 多引擎问卷分析全链路
+- key: s86
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            以本人统计学专业背景为依托，对两份真实回收的消费券问卷（青年消费券 N=205、浙江省数字消费券 N=208）开展多引擎交叉验证实证研究。全程以 Vibe Coding 方式驱动：AI 代理自动化操控 SAS Studio 官方云端（SAS 9.4 / ODA 集群）与本机 IBM SPSS 统计引擎，R 与 DuckDB 湖仓做对照与数据底座，从原始 Excel 到发布级统计研报形成端到端可复现闭环（仓库 <code>survey-analysis</code>，代码、日志、截图、录屏四重凭据留存）。\n        "
+  text: "\n            以本人统计学专业背景为依托，对两份真实回收的消费券问卷（青年消费券 N=205、浙江省数字消费券 N=208）开展多引擎交叉验证实证研究。全程以 Vibe Coding 方式驱动：AI 代理自动化操控 SAS Studio 官方云端（SAS 9.4 / ODA 集群）与本机 IBM SPSS 统计引擎，R 与 DuckDB 湖仓做对照与数据底座，从原始 Excel 到发布级统计研报形成端到端可复现闭环（仓库 `survey-analysis`，代码、日志、截图、录屏四重凭据留存）。\n        "
+- key: s87
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: 零、Vibe Coding 的本质 —— Context 管理杠杆（LLM × Harness）
+  text: 零、Vibe Coding 的本质 —— Context 管理杠杆（LLM × Harness）
+- key: s88
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            Vibe Coding 的价值不在「生成代码」——单点生成代码门槛已极低；真正的稀缺能力，是用 <strong>LLM 与 Harness 作为支点，撬动项目 Context 这跟撑杆</strong>，把「数据处理」变成可交付的「工程成果」。整套湖仓视图体系（<code>v_vibe_engineering_overview</code> / <code>v_survey_engineering_evidence</code> / bronze 底账）正是这一原理的实证载体：散落各处的 Context 被压缩、索引、复用进 DuckDB，才能被 LLM（理解）与 Harness（执行）随时撬动。\n        "
+  text: "\n            Vibe Coding 的价值不在「生成代码」——单点生成代码门槛已极低；真正的稀缺能力，是用 **LLM 与 Harness 作为支点，撬动项目 Context 这跟撑杆**，把「数据处理」变成可交付的「工程成果」。整套湖仓视图体系（`v_vibe_engineering_overview` / `v_survey_engineering_evidence` / bronze 底账）正是这一原理的实证载体：散落各处的 Context 被压缩、索引、复用进 DuckDB，才能被 LLM（理解）与 Harness（执行）随时撬动。\n        "
+- key: s89
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n        Context（知识撑杆：82 条 bronze → 95 视图，压缩/索引/复用）\n                │  ▲\n            [压缩]  [索引]\n                ▼  │\n        Agent 数据处理闭环（Compress → Index → Reuse）\n                ▲\n                │ 杠杆曲率 =\n        ┌───────┴───────┐\n        │  LLM × Harness   │ ← 支点\n        └───────────────┘\n                ▲\n                │\n        ┌───────┴────────┐\n        │  负载 = 工程成果  │（61 工程 / 8,688 万行 / 95 视角，全部 SQL 可复验）\n        └────────────────┘\n            "
+  text: "\n        Context（知识撑杆：82 条 bronze → 95 视图，压缩/索引/复用）\n                │  ▲\n            [压缩]  [索引]\n                ▼  │\n        Agent 数据处理闭环（Compress → Index → Reuse）\n                ▲\n                │ 杠杆曲率 =\n        ┌───────┴───────┐\n        │  LLM × Harness   │ ← 支点\n        └───────────────┘\n                ▲\n                │\n        ┌───────┴────────┐\n        │  负载 = 工程成果  │（61 工程 / 8,688 万行 / 95 视角，全部 SQL 可复验）\n        └────────────────┘\n            "
+- key: s90
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 杠杆元件
+  text: 杠杆元件
+- key: s91
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 角色
+  text: 角色
+- key: s92
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 实证映射
+  text: 实证映射
+- key: s93
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>LLM</strong>（支点·脑）
+  text: '**LLM**（支点·脑）'
+- key: s94
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 理解 Context 的推理中枢
+  text: 理解 Context 的推理中枢
+- key: s95
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: deepseek-v4-flash / Claude Code / OpenAI Codex 驱动：读 ODML、判显著性、规划三代迭代；13 代理累计 19,983 轮实跑会话。
+  text: deepseek-v4-flash / Claude Code / OpenAI Codex 驱动：读 ODML、判显著性、规划三代迭代；13 代理累计 19,983 轮实跑会话。
+- key: s96
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>Harness</strong>（支点·躯干）
+  text: '**Harness**（支点·躯干）'
+- key: s97
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 把理解变成可执行动作
+  text: 把理解变成可执行动作
+- key: s98
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: DSH 50 插件包 + hermes 23 skills/3 cron + n8n 17 工作流 + Koishi 桥接 + Playwright 驱动：自动化操控 SAS 云端、SPSS 本机与 FineBI/Superset 看板。
+  text: DSH 50 插件包 + hermes 23 skills/3 cron + n8n 17 工作流 + Koishi 桥接 + Playwright 驱动：自动化操控 SAS 云端、SPSS 本机与 FineBI/Superset 看板。
+- key: s99
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>Context</strong>（撑杆·知识）
+  text: '**Context**（撑杆·知识）'
+- key: s100
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 被压缩/索引化后随时可撬的知识资产
+  text: 被压缩/索引化后随时可撬的知识资产
+- key: s101
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 6,281 行 ODS → bronze 82 条（压缩 76×）；243 行《UI 功能键登记手册》；61 工程 → 湖仓 95 视图（全仓 SQL 直达）。
+  text: 6,281 行 ODS → bronze 82 条（压缩 76×）；243 行《UI 功能键登记手册》；61 工程 → 湖仓 95 视图（全仓 SQL 直达）。
+- key: s102
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            无 LLM → Context 休眠在文件里；无 Harness → LLM 只会「说」不会「做」。<strong>LLM 给方向、Harness 给执行力、Context 给燃料</strong>，三者咬合成一根杠杆，才撬得动整个工程——下述 9 步过程实录，就是这条杠杆在 SAS / SPSS / 全栈工程上的每一次落笔。\n        "
+  text: "\n            无 LLM → Context 休眠在文件里；无 Harness → LLM 只会「说」不会「做」。**LLM 给方向、Harness 给执行力、Context 给燃料**，三者咬合成一根杠杆，才撬得动整个工程——下述 9 步过程实录，就是这条杠杆在 SAS / SPSS / 全栈工程上的每一次落笔。\n        "
+- key: s103
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: 一、Vibe Coding 工程化过程实录
+  text: 一、Vibe Coding 工程化过程实录
+- key: s104
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 步骤
+  text: 步骤
+- key: s105
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 工程动作
+  text: 工程动作
+- key: s106
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 具体实现
+  text: 具体实现
+- key: s107
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 实证凭据
+  text: 实证凭据
+- key: s108
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>01</strong>
+  text: '**01**'
+- key: s109
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>界面逆向与操作地图沉淀</strong>
+  text: '**界面逆向与操作地图沉淀**'
+- key: s110
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: Playwright 实时解构 SAS Studio 3.8 全界面 DOM 树，逐一登记功能按键的 DOM ID 与精准定位器，形成《UI 功能键权威登记手册》，作为后续全部自动化脚本的接口契约。
+  text: Playwright 实时解构 SAS Studio 3.8 全界面 DOM 树，逐一登记功能按键的 DOM ID 与精准定位器，形成《UI 功能键权威登记手册》，作为后续全部自动化脚本的接口契约。
+- key: s111
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">probe_sas_dom.py</span> <span class="code-pill">ui_button_registry.md</span> 界面实拍截图 8 幅
+  text: probe_sas_dom.py ui_button_registry.md 界面实拍截图 8 幅
+- key: s112
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>02</strong>
+  text: '**02**'
+- key: s113
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>先验后跑：AST 语法门禁</strong>
+  text: '**先验后跑：AST 语法门禁**'
+- key: s114
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 自研基于 tree-sitter-sas 的 SAS 语法抽象语法树检查器，任何程序上云执行前先过静态校验，杜绝大模型生成代码的语法幻觉。
+  text: 自研基于 tree-sitter-sas 的 SAS 语法抽象语法树检查器，任何程序上云执行前先过静态校验，杜绝大模型生成代码的语法幻觉。
+- key: s115
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">sas_ast_checker.py</span>
+  text: sas_ast_checker.py
+- key: s116
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>03</strong>
+  text: '**03**'
+- key: s117
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>云端执行全自动闭环</strong>
+  text: '**云端执行全自动闭环**'
+- key: s118
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: Headless Chrome 自动登录 → 注入 .sas 程序 → F3 提交官方云端集群计算 → 抓取 LOG / RESULTS → 下载原生 ODS HTML 报表，全程无人值守。
+  text: Headless Chrome 自动登录 → 注入 .sas 程序 → F3 提交官方云端集群计算 → 抓取 LOG / RESULTS → 下载原生 ODS HTML 报表，全程无人值守。
+- key: s119
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">run_sas_survey2_master.py</span> 执行日志 + 过程截图
+  text: run_sas_survey2_master.py 执行日志 + 过程截图
+- key: s120
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>04</strong>
+  text: '**04**'
+- key: s121
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>三代迭代收敛数据质量</strong>
+  text: '**三代迭代收敛数据质量**'
+- key: s122
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: full → master → clean 三代流水线演进：针对中文乱码与跳转逻辑缺失值，前置 Python 清洗产出 54 列标准宽表与多选题长表，最终云端日志收敛为 <strong>错误 0 · 警告 0</strong>。
+  text: full → master → clean 三代流水线演进：针对中文乱码与跳转逻辑缺失值，前置 Python 清洗产出 54 列标准宽表与多选题长表，最终云端日志收敛为 **错误 0 · 警告 0**。
+- key: s123
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">clean_survey_for_sas.py</span> <span class="code-pill">sas_clean_survey.csv</span>
+  text: clean_survey_for_sas.py sas_clean_survey.csv
+- key: s124
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>05</strong>
+  text: '**05**'
+- key: s125
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>报表程序化转译与装配</strong>
+  text: '**报表程序化转译与装配**'
+- key: s126
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: BeautifulSoup 解析 6,281 行原始 ODS HTML，程序化转译为中文统计研报（Markdown / Word），并自动截取 APA7 三线表渲染取证，杜绝手抄数字。
+  text: BeautifulSoup 解析 6,281 行原始 ODS HTML，程序化转译为中文统计研报（Markdown / Word），并自动截取 APA7 三线表渲染取证，杜绝手抄数字。
+- key: s127
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">build_rich_sas_md_report.py</span> 8 模块统计研报 md + docx
+  text: build_rich_sas_md_report.py 8 模块统计研报 md + docx
+- key: s128
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>06</strong>
+  text: '**06**'
+- key: s129
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>DuckDB 湖仓分层回灌</strong>
+  text: '**DuckDB 湖仓分层回灌**'
+- key: s130
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: bronze → silver → gold 三层建模，SAS 回归参数、多选题渗透率等结果回灌 gold 视图表，实现研报数字的 SQL 级溯源。
+  text: bronze → silver → gold 三层建模，SAS 回归参数、多选题渗透率等结果回灌 gold 视图表，实现研报数字的 SQL 级溯源。
+- key: s131
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">gold_sas_reg_params</span> <span class="code-pill">gold_sas_pain_points</span>
+  text: gold_sas_reg_params gold_sas_pain_points
+- key: s132
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>07</strong>
+  text: '**07**'
+- key: s133
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>SPSS 一键流水线（Windows 侧）</strong>
+  text: '**SPSS 一键流水线（Windows 侧）**'
+- key: s134
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 零依赖解析 xlsx → 生成含中文变量/值标签的 .sps 语法 → SPSS 引擎真跑 → 原生输出自动装配学术 Word 报告，批处理脚本双击复跑。
+  text: 零依赖解析 xlsx → 生成含中文变量/值标签的 .sps 语法 → SPSS 引擎真跑 → 原生输出自动装配学术 Word 报告，批处理脚本双击复跑。
+- key: s135
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">run_pipeline.py</span> <span class="code-pill">analysis.sps</span> SPSS 原生结果文本
+  text: run_pipeline.py analysis.sps SPSS 原生结果文本
+- key: s136
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>08</strong>
+  text: '**08**'
+- key: s137
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>多引擎 BI 驾驶舱 + 工作流编排 + Agent 运行时</strong>
+  text: '**多引擎 BI 驾驶舱 + 工作流编排 + Agent 运行时**'
+- key: s138
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 同一套 Vibe Coding 方法向全栈延伸：<strong>BI 层</strong>—Apache Superset（49 大盘 / 363 图表 / 106 数据源 / 1380 字段，44MB 元数据库）、帆软 FineBI 6.0（Playwright 全自动驱动 21 脚本 / 37 截图 + Next.js 控制台）、Grafana（2 套运维看板 14 面板 JSON provisioning）、自研 Django 看板（8 模块 914 行含登录认证）；<strong>工作流编排层</strong>—n8n 2.x 生产实例双线部署：全渠道 Copilot 8 工作流 / 71 节点 / 54 连接（企微+飞书+钉钉+邮件+WhatsApp+BeautyOS），外贸拓客助手编排底座 9 工作流 / 55 节点 / 43 连接（飞书多维表格双表闭环+海外买家回信实时监控+LangChain AI Agent 智能拓客+海关进口商情报+自主买家决策人穿透），配套 Playwright 自动登录与 Docker psql 工作流同步；<strong>Agent 运行时层</strong>—DeepSeek-Harness（DSH）50 插件包（core/llm/sandbox/mcp/workflow/skill），Koishi 4.18 多平台桥接（160 行 cordis 配置，Landlock 沙箱 + DSH SDK 驱动，Telegram/企微/飞书三平台汇聚），LangGraph Hybrid Agent（business-agent-system 20,275 行 / 27 模块，StateGraph + ReAct + Forced-RAG + 循环检测 + 自学习循环，graph.py 4,527 行 + tools.py 6,221 行），外贸拓客助手 Dify 兼容标准 Agent 服务器（端口 8096，3 个 Dify OpenAPI 端点，bowen_agent + rag_retriever 436 行），Ollama 本地大模型 qwen3:8b 驱动 n8n 原生 LangChain AI Agent 智能拓客推理。AI 代理即席 SQL 对接 ClickHouse / DuckDB 数据底座完成指标建模与看板装配。
+  text: 同一套 Vibe Coding 方法向全栈延伸：**BI 层**—Apache Superset（49 大盘 / 363 图表 / 106 数据源 / 1380 字段，44MB 元数据库）、帆软 FineBI 6.0（Playwright 全自动驱动 21 脚本 / 37 截图 + Next.js 控制台）、Grafana（2 套运维看板 14 面板 JSON provisioning）、自研 Django 看板（8 模块 914 行含登录认证）；**工作流编排层**—n8n 2.x 生产实例双线部署：全渠道 Copilot 8 工作流 / 71 节点 / 54 连接（企微+飞书+钉钉+邮件+WhatsApp+BeautyOS），外贸拓客助手编排底座 9 工作流 / 55 节点 / 43 连接（飞书多维表格双表闭环+海外买家回信实时监控+LangChain AI Agent 智能拓客+海关进口商情报+自主买家决策人穿透），配套 Playwright 自动登录与 Docker psql 工作流同步；**Agent 运行时层**—DeepSeek-Harness（DSH）50 插件包（core/llm/sandbox/mcp/workflow/skill），Koishi 4.18 多平台桥接（160 行 cordis 配置，Landlock 沙箱 + DSH SDK 驱动，Telegram/企微/飞书三平台汇聚），LangGraph Hybrid Agent（business-agent-system 20,275 行 / 27 模块，StateGraph + ReAct + Forced-RAG + 循环检测 + 自学习循环，graph.py 4,527 行 + tools.py 6,221 行），外贸拓客助手 Dify 兼容标准 Agent 服务器（端口 8096，3 个 Dify OpenAPI 端点，bowen_agent + rag_retriever 436 行），Ollama 本地大模型 qwen3:8b 驱动 n8n 原生 LangChain AI Agent 智能拓客推理。AI 代理即席 SQL 对接 ClickHouse / DuckDB 数据底座完成指标建模与看板装配。
+- key: s139
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">~/.superset/superset.db</span> <span class="code-pill">tools/finebi_pw/</span> <span class="code-pill">n8n-dify-omnichannel/workflows/</span> <span class="code-pill">DeepSeek-Harness/packages/</span> <span class="code-pill">dsh-koishi-bridge/bridge.cordis.yml</span>
+  text: ~/.superset/superset.db tools/finebi_pw/ n8n-dify-omnichannel/workflows/ DeepSeek-Harness/packages/ dsh-koishi-bridge/bridge.cordis.yml
+- key: s140
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>09</strong>
+  text: '**09**'
+- key: s141
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>空间建模 + AI 渲染 + 多模态数据底座</strong>
+  text: '**空间建模 + AI 渲染 + 多模态数据底座**'
+- key: s142
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>3D/CAD 层</strong>—FreeCAD 参数化 BIM 建模（71,998 LOC，FreeCADBlenderBridge XML-RPC，参数化 B-Rep + 墙体开洞 + 2D 图纸 .FCStd）、Blender Cycles 光追渲染（9 个同步脚本，PBR 材质 + Cycles 灯光 + .blend/.glb 导出 + 照片级渲染）、AutoCAD MCP Server（4,083 LOC，8 个 MCP 工具 drawing/entity/layer/block/annotation/pid/view/system，ezdxf 无头后端 + Win32 IPC + 3 个 AutoLISP）；<strong>AI 渲染层</strong>—ComfyUI + FLUX.1-dev（FP8）+ ControlNet Depth v3（35,831 LOC，36 个 JSON 工作流模板，空间容器→0.05s 实时 3D 景深→空间锁定，RTX 4070）；<strong>文档解析层</strong>—飞桨 PaddleOCR（135 文件引用跨 4 仓库，RAGFlow deepdoc paddleocr_parser）；<strong>多模态数据底座</strong>—向量数据库矩阵覆盖 29 仓库（SQLite 29 + Redis 14 + Milvus 14 + Neo4j 13 + PostgreSQL/pgvector 13 + Elasticsearch 11 + Qdrant 6 + ClickHouse 5）。
+  text: '**3D/CAD 层**—FreeCAD 参数化 BIM 建模（71,998 LOC，FreeCADBlenderBridge XML-RPC，参数化 B-Rep + 墙体开洞 + 2D 图纸 .FCStd）、Blender Cycles 光追渲染（9 个同步脚本，PBR 材质 + Cycles 灯光 + .blend/.glb 导出 + 照片级渲染）、AutoCAD MCP Server（4,083 LOC，8 个 MCP 工具 drawing/entity/layer/block/annotation/pid/view/system，ezdxf 无头后端 + Win32 IPC + 3 个 AutoLISP）；**AI 渲染层**—ComfyUI + FLUX.1-dev（FP8）+ ControlNet Depth v3（35,831 LOC，36 个 JSON 工作流模板，空间容器→0.05s 实时 3D 景深→空间锁定，RTX 4070）；**文档解析层**—飞桨 PaddleOCR（135 文件引用跨 4 仓库，RAGFlow deepdoc paddleocr_parser）；**多模态数据底座**—向量数据库矩阵覆盖 29 仓库（SQLite 29 + Redis 14 + Milvus 14 + Neo4j 13 + PostgreSQL/pgvector 13 + Elasticsearch 11 + Qdrant 6 + ClickHouse 5）。'
+- key: s143
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">open-floorplan-cad/</span> <span class="code-pill">comfyui-sdcpp-hotel-workflow/</span> <span class="code-pill">autocad-mcp/</span> <span class="code-pill">v_all_local_git_repositories</span>
+  text: open-floorplan-cad/ comfyui-sdcpp-hotel-workflow/ autocad-mcp/ v_all_local_git_repositories
+- key: s144
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: 二、SAS 统计方法深度拆解 · 每个检验"验什么、发现什么"
+  text: 二、SAS 统计方法深度拆解 · 每个检验"验什么、发现什么"
+- key: s145
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            这一节不讲工具，讲<strong>统计判断本身</strong>——每一行结论背后是一整套\"先验前提 → 检验 → 解读 → 稳健性兜底\"的实证链条，全部在 SAS 9.4 官方云端真跑、ODS 原始输出留证。\n        "
+  text: "\n            这一节不讲工具，讲**统计判断本身**——每一行结论背后是一整套\"先验前提 → 检验 → 解读 → 稳健性兜底\"的实证链条，全部在 SAS 9.4 官方云端真跑、ODS 原始输出留证。\n        "
+- key: s146
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: ① 测量质量把关：信度 + 效度 + 正态性 三层设防
+  text: ① 测量质量把关：信度 + 效度 + 正态性 三层设防
+- key: s147
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>验什么</strong>：问卷量表先过"测得好不好"这一关,才谈分析；
+  text: '**验什么**：问卷量表先过"测得好不好"这一关,才谈分析；'
+- key: s148
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>怎么做</strong>：PROC CORR 求 Cronbach's α=0.8819 信度；结合 KMO/Bartlett 效度；PROC UNIVARIATE 检验偏度(|·|&lt;0.5)/峰度(|·|&lt;0.35) 论证参数检验前提；
+  text: '**怎么做**：PROC CORR 求 Cronbach''s α=0.8819 信度；结合 KMO/Bartlett 效度；PROC UNIVARIATE 检验偏度(|·|<0.5)/峰度(|·|<0.35) 论证参数检验前提；'
+- key: s149
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>发现什么</strong>：量表内部一致性、取样充分性、正态性三项全部达标，为后续 t/ANOVA/回归铺平统计前提——这是避免"先下结论、后补检验"的严谨起点。
+  text: '**发现什么**：量表内部一致性、取样充分性、正态性三项全部达标，为后续 t/ANOVA/回归铺平统计前提——这是避免"先下结论、后补检验"的严谨起点。'
+- key: s150
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: ② 组间差异验证：参数 + 非参数双引擎互证
+  text: ② 组间差异验证：参数 + 非参数双引擎互证
+- key: s151
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>验什么</strong>：生活费高低、性别是否显著影响用券水平；
+  text: '**验什么**：生活费高低、性别是否显著影响用券水平；'
+- key: s152
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>怎么做</strong>：PROC TTEST（参数 t 检验）与 Wilcoxon 秩和（非参，对序数/偏态稳健）双跑，避免单一检验被分布假设绑架；
+  text: '**怎么做**：PROC TTEST（参数 t 检验）与 Wilcoxon 秩和（非参，对序数/偏态稳健）双跑，避免单一检验被分布假设绑架；'
+- key: s153
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>发现什么</strong>：性别增量 p=0.49 不显著、生活费×用券卡方 p=0.76 无显著倾向——<strong>诚实地承认"无差异"</strong>，比勉强凑显著更难、也更可信。
+  text: '**发现什么**：性别增量 p=0.49 不显著、生活费×用券卡方 p=0.76 无显著倾向——**诚实地承认"无差异"**，比勉强凑显著更难、也更可信。'
+- key: s154
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: ③ 拉动机制建模：方差分析 + 多元回归 定位强杠杆
+  text: ③ 拉动机制建模：方差分析 + 多元回归 定位强杠杆
+- key: s155
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>验什么</strong>：什么变量真正拉动消费券使用；
+  text: '**验什么**：什么变量真正拉动消费券使用；'
+- key: s156
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>怎么做</strong>：PROC GLM 做 ANOVA F=3.60 (p=0.0074) + Tukey HSD 多重比较（定位组间具体差异）；PROC REG 建 OLS（R²=0.2686, F=7.40），累计节省 B=0.384 (p&lt;0.0001)、使用频次 (p=0.018) 达显著，全程 VIF&lt;1.5 排除共线性；
+  text: '**怎么做**：PROC GLM 做 ANOVA F=3.60 (p=0.0074) + Tukey HSD 多重比较（定位组间具体差异）；PROC REG 建 OLS（R²=0.2686, F=7.40），累计节省 B=0.384 (p<0.0001)、使用频次 (p=0.018) 达显著，全程 VIF<1.5 排除共线性；'
+- key: s157
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>发现什么</strong>：<strong>"累计节省金额"是等号右侧最强的行为杠杆</strong>——分得越省越愿意用，这个发现可直接指导发券策略（如加大满减抵扣力度）。
+  text: '**发现什么**：**"累计节省金额"是等号右侧最强的行为杠杆**——分得越省越愿意用，这个发现可直接指导发券策略（如加大满减抵扣力度）。'
+- key: s158
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: ④ 行为分类模型 + 发散型结构探索
+  text: ④ 行为分类模型 + 发散型结构探索
+- key: s159
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>做法</strong>：PROC LOGISTIC（DESCENDING/EXPB）冲动消费分类（评估各因子的概率影响）；派生专题再上 FACTOR 因子降维、FASTCLUS 三群聚类、CORRESP 收入×痛点知觉图、CALIS 结构方程、DISCRIM 判别、ROC 曲线；
+  text: '**做法**：PROC LOGISTIC（DESCENDING/EXPB）冲动消费分类（评估各因子的概率影响）；派生专题再上 FACTOR 因子降维、FASTCLUS 三群聚类、CORRESP 收入×痛点知觉图、CALIS 结构方程、DISCRIM 判别、ROC 曲线；'
+- key: s160
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>价值</strong>：从"单一数值结论"升级到"人群分群 + 结构关系 + 判别能力"的多层级刻画——回答"哪些人、因何事、如何触发用券"。
+  text: '**价值**：从"单一数值结论"升级到"人群分群 + 结构关系 + 判别能力"的多层级刻画——回答"哪些人、因何事、如何触发用券"。'
+- key: s161
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: ⑤ 方法即跨界：同一套实证能力横跨"问卷 × 宏观"
+  text: ⑤ 方法即跨界：同一套实证能力横跨"问卷 × 宏观"
+- key: s162
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>含义</strong>：上述 SAS 方法链不只作用于消费券问卷——同一套 <strong>PROC 家族（CORR / GLM / REG / LOGISTIC / AUTOREG / VARMAX）</strong> 也用于利率相关的宏观计量（见下节「另 · 利率专题独立 SAS 分析」）；
+  text: '**含义**：上述 SAS 方法链不只作用于消费券问卷——同一套 **PROC 家族（CORR / GLM / REG / LOGISTIC / AUTOREG / VARMAX）** 也用于利率相关的宏观计量（见下节「另 · 利率专题独立 SAS 分析」）；'
+- key: s163
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>价值</strong>：证明这套实证能力能轻松横跨"问卷横截面"与"宏观时序"两种数据形态，不是只会一种统计场景。
+  text: '**价值**：证明这套实证能力能轻松横跨"问卷横截面"与"宏观时序"两种数据形态，不是只会一种统计场景。'
+- key: s164
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: ⑥ 三引擎交叉互校：杜绝单一工具"自说自话"
+  text: ⑥ 三引擎交叉互校：杜绝单一工具"自说自话"
+- key: s165
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>做法</strong>：SAS 与 R（psych/ggplot2）、SPSS 对同一份卷独立复算；
+  text: '**做法**：SAS 与 R（psych/ggplot2）、SPSS 对同一份卷独立复算；'
+- key: s166
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>发现什么</strong>：频率分布、信度 α、回归系数三引擎口径互校一致——<strong>结论可信不依赖任何单一软件</strong>，从源头规避"工具输出即真理"的盲从。
+  text: '**发现什么**：频率分布、信度 α、回归系数三引擎口径互校一致——**结论可信不依赖任何单一软件**，从源头规避"工具输出即真理"的盲从。'
+- key: s167
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: 另 · 利率专题独立 SAS 分析：货币政策与收益率曲线的实证
+  text: 另 · 利率专题独立 SAS 分析：货币政策与收益率曲线的实证
+- key: s168
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            除了消费券问卷，还有一条<strong>独立的利率相关 SAS 计量线</strong>——把宏观货币政策的\"泰勒基准利率\"、债券市场\"收益率曲线倒挂\"、\"利率波动率\"等做真刀真枪的实证。所有序列来自 FRED 官方，落地为 DuckDB 数据湖仓（原始层→规整层→成果层），SAS 在官方云端真跑、ODS 原始输出留证。\n        "
+  text: "\n            除了消费券问卷，还有一条**独立的利率相关 SAS 计量线**——把宏观货币政策的\"泰勒基准利率\"、债券市场\"收益率曲线倒挂\"、\"利率波动率\"等做真刀真枪的实证。所有序列来自 FRED 官方，落地为 DuckDB 数据湖仓（原始层→规整层→成果层），SAS 在官方云端真跑、ODS 原始输出留证。\n        "
+- key: s169
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: A. 泰勒基准利率规则（泰勒规则）
+  text: A. 泰勒基准利率规则（泰勒规则）
+- key: s170
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>验什么</strong>：政策利率是否遵循"通胀+增长"的泰勒反应函数；
+  text: '**验什么**：政策利率是否遵循"通胀+增长"的泰勒反应函数；'
+- key: s171
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>怎么做</strong>：FRED 6 序列 → SAS AUTOREG 拟合 Taylor Rule；
+  text: '**怎么做**：FRED 6 序列 → SAS AUTOREG 拟合 Taylor Rule；'
+- key: s172
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>发现什么</strong>：R²=0.3727 (F=92.97, p&lt;.0001)——政策利率对通胀/增长存在显著、可在统计上被识别的反应路径。
+  text: '**发现什么**：R²=0.3727 (F=92.97, p<.0001)——政策利率对通胀/增长存在显著、可在统计上被识别的反应路径。'
+- key: s173
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: B. 收益率曲线倒挂：衰退预警的第一课
+  text: B. 收益率曲线倒挂：衰退预警的第一课
+- key: s174
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>验什么</strong>：10Y-2Y 收益率曲线是否真的在倒挂提前发出衰退警报；
+  text: '**验什么**：10Y-2Y 收益率曲线是否真的在倒挂提前发出衰退警报；'
+- key: s175
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>怎么做</strong>：PROC LOGISTIC 把倒挂形态映射到未来衰退事件；
+  text: '**怎么做**：PROC LOGISTIC 把倒挂形态映射到未来衰退事件；'
+- key: s176
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>发现什么</strong>：OR=39.23 (p=0.0012, AUC=0.671)——曲线倒挂与衰退风险高度相关，是"藏在 K 线深处的预警信号"。
+  text: '**发现什么**：OR=39.23 (p=0.0012, AUC=0.671)——曲线倒挂与衰退风险高度相关，是"藏在 K 线深处的预警信号"。'
+- key: s177
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: C. GARCH 波动率：利率市场的"情绪仪表"
+  text: C. GARCH 波动率：利率市场的"情绪仪表"
+- key: s178
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>验什么</strong>：利率序列的波动是否"扎堆"（大波动跟着大波动）；
+  text: '**验什么**：利率序列的波动是否"扎堆"（大波动跟着大波动）；'
+- key: s179
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>怎么做</strong>：PROC AUTOREG 条件异方差建模（GARCH）；
+  text: '**怎么做**：PROC AUTOREG 条件异方差建模（GARCH）；'
+- key: s180
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>发现什么</strong>：识别出波动率聚集效应，为利率风险度量提供统计依据。
+  text: '**发现什么**：识别出波动率聚集效应，为利率风险度量提供统计依据。'
+- key: s181
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: D. 跨行业时序预测：SARIMA 民航客运
+  text: D. 跨行业时序预测：SARIMA 民航客运
+- key: s182
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>做法</strong>：SARIMA(0,1,1)(0,1,1)₁₂ 对民航客运建模（ACF/PACF + 白噪声检验 + 24 个月预测区间）；
+  text: '**做法**：SARIMA(0,1,1)(0,1,1)₁₂ 对民航客运建模（ACF/PACF + 白噪声检验 + 24 个月预测区间）；'
+- key: s183
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>价值</strong>：同样的 SAS 时序能力，既能算利率、也能预测行业客流——再一次印证"跨领域可运行"。配套萨姆规则 Jupyter 交互看板批量出告警级结论。
+  text: '**价值**：同样的 SAS 时序能力，既能算利率、也能预测行业客流——再一次印证"跨领域可运行"。配套萨姆规则 Jupyter 交互看板批量出告警级结论。'
+- key: s184
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: 三、工程证据与产物清单（多源采集 · SQL 可复验）
+  text: 三、工程证据与产物清单（多源采集 · SQL 可复验）
+- key: s185
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 证据域
+  text: 证据域
+- key: s186
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 指标
+  text: 指标
+- key: s187
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 实证值
+  text: 实证值
+- key: s188
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 来源与口径
+  text: 来源与口径
+- key: s189
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>Git 版本记录</strong>
+  text: '**Git 版本记录**'
+- key: s190
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 提交 Commit 数
+  text: 提交 Commit 数
+- key: s191
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '<strong>1</strong> (HEAD: c8825f0)'
+  text: '**1** (HEAD: c8825f0)'
+- key: s192
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '<span class="code-pill">git log</span> 主题：feat: complete SAS survey analysis pipeline with DuckDB ELT'
+  text: 'git log 主题：feat: complete SAS survey analysis pipeline with DuckDB ELT'
+- key: s193
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>SAS 云端执行日志</strong>
+  text: '**SAS 云端执行日志**'
+- key: s194
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 日志体量 / NOTE / 警告 / 错误
+  text: 日志体量 / NOTE / 警告 / 错误
+- key: s195
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>228 KB</strong> · NOTE 342 · 警告 20 · 错误 65 (full 世代) → clean 世代收敛 <strong>0 错 0 警</strong>
+  text: '**228 KB** · NOTE 342 · 警告 20 · 错误 65 (full 世代) → clean 世代收敛 **0 错 0 警**'
+- key: s196
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">output/sas_survey2_execution.log</span> 三段计数
+  text: output/sas_survey2_execution.log 三段计数
+- key: s197
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>发布级报告文档</strong>
+  text: '**发布级报告文档**'
+- key: s198
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: docs 下 md / docx / html 合计
+  text: docs 下 md / docx / html 合计
+- key: s199
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>9 份</strong> · 3.9 MB
+  text: '**9 份** · 3.9 MB'
+- key: s200
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">docs/</span> 含 ODS 原生 HTML + 中文研报 + Word + PDF
+  text: docs/ 含 ODS 原生 HTML + 中文研报 + Word + PDF
+- key: s201
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>实证截图</strong>
+  text: '**实证截图**'
+- key: s202
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: output 下 .png 合计
+  text: output 下 .png 合计
+- key: s203
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>91 张</strong>
+  text: '**91 张**'
+- key: s204
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">output/</span> 含登录/注入/LOG/RESULTS/APA7 三线表/看板
+  text: output/ 含登录/注入/LOG/RESULTS/APA7 三线表/看板
+- key: s205
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>SAS 程序代码</strong>
+  text: '**SAS 程序代码**'
+- key: s206
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: git 已跟踪 .sas 文件
+  text: git 已跟踪 .sas 文件
+- key: s207
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>6 个</strong> · 2,186 行
+  text: '**6 个** · 2,186 行'
+- key: s208
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">git ls-files | *.sas</span>
+  text: git ls-files | *.sas
+- key: s209
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>Python 自动化脚本</strong>
+  text: '**Python 自动化脚本**'
+- key: s210
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: git 已跟踪 .py 文件
+  text: git 已跟踪 .py 文件
+- key: s211
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>13 个</strong> · 4,999 行
+  text: '**13 个** · 4,999 行'
+- key: s212
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">git ls-files | *.py</span>
+  text: git ls-files | *.py
+- key: s213
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>UI 登记手册</strong>
+  text: '**UI 登记手册**'
+- key: s214
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: DOM 定位器条目
+  text: DOM 定位器条目
+- key: s215
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>243 行</strong>
+  text: '**243 行**'
+- key: s216
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">docs/sas_studio_ui_button_registry.md</span> 界面接口契约
+  text: docs/sas_studio_ui_button_registry.md 界面接口契约
+- key: s217
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>FineBI 驾驶舱</strong>
+  text: '**FineBI 驾驶舱**'
+- key: s218
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: Playwright 脚本 / 看板截图 / 控制台
+  text: Playwright 脚本 / 看板截图 / 控制台
+- key: s219
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>21 脚本</strong> · <strong>37 截图</strong> · Next.js 16.3.1
+  text: '**21 脚本** · **37 截图** · Next.js 16.3.1'
+- key: s220
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">tools/finebi_pw/</span> 登录/数据导入/血缘校验全程取证
+  text: tools/finebi_pw/ 登录/数据导入/血缘校验全程取证
+- key: s221
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>Apache Superset</strong>
+  text: '**Apache Superset**'
+- key: s222
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 看板 / 图表 / 数据源表 / 字段定义
+  text: 看板 / 图表 / 数据源表 / 字段定义
+- key: s223
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>49 看板</strong> · <strong>363 图表</strong> · <strong>466 图表位</strong> · 106 数据源 · 1380 字段
+  text: '**49 看板** · **363 图表** · **466 图表位** · 106 数据源 · 1380 字段'
+- key: s224
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">~/.superset/superset.db</span> 44MB 元数据库 + 105 导出 YAML
+  text: ~/.superset/superset.db 44MB 元数据库 + 105 导出 YAML
+- key: s225
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>Grafana 运维监控</strong>
+  text: '**Grafana 运维监控**'
+- key: s226
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: JSON 看板面板
+  text: JSON 看板面板
+- key: s227
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>2 套</strong> · 电商可观测性 6 面板 + RAG 学习系统 8 面板
+  text: '**2 套** · 电商可观测性 6 面板 + RAG 学习系统 8 面板'
+- key: s228
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">platform/observability/grafana/</span> provisioning JSON
+  text: platform/observability/grafana/ provisioning JSON
+- key: s229
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>自研 Django 看板</strong>
+  text: '**自研 Django 看板**'
+- key: s230
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 看板模块文件 / 行数
+  text: 看板模块文件 / 行数
+- key: s231
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>8 模块</strong> · 914 行（含登录认证）
+  text: '**8 模块** · 914 行（含登录认证）'
+- key: s232
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">rag-dashboard/django-service/dashboard/</span>
+  text: rag-dashboard/django-service/dashboard/
+- key: s233
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>n8n 工作流引擎</strong>
+  text: '**n8n 工作流引擎**'
+- key: s234
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: JSON 工作流 / 节点 / 连接
+  text: JSON 工作流 / 节点 / 连接
+- key: s235
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>17 工作流</strong> · <strong>126 节点</strong> · 97 连接（双线部署）
+  text: '**17 工作流** · **126 节点** · 97 连接（双线部署）'
+- key: s236
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">n8n-dify-omnichannel/</span> 全渠道 Copilot 8 WF + <span class="code-pill">外贸拓客助手/</span> 编排底座 9 WF
+  text: n8n-dify-omnichannel/ 全渠道 Copilot 8 WF + 外贸拓客助手/ 编排底座 9 WF
+- key: s237
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>DeepSeek-Harness (DSH)</strong>
+  text: '**DeepSeek-Harness (DSH)**'
+- key: s238
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 插件包 / 运行时 session
+  text: 插件包 / 运行时 session
+- key: s239
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>50 插件包</strong> · <strong>9 项目 session</strong>（deepseek-v4-flash 驱动）
+  text: '**50 插件包** · **9 项目 session**（deepseek-v4-flash 驱动）'
+- key: s240
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">DeepSeek-Harness/</span> 1,028,807 LOC + <span class="code-pill">~/.dsh/</span>
+  text: DeepSeek-Harness/ 1,028,807 LOC + ~/.dsh/
+- key: s241
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>hermes-agent 运行时</strong>
+  text: '**hermes-agent 运行时**'
+- key: s242
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 自定义 skills / cron 自治任务
+  text: 自定义 skills / cron 自治任务
+- key: s243
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>23 skills</strong> · 3 cron 任务 · 872,413 LOC 自有 Fork
+  text: '**23 skills** · 3 cron 任务 · 872,413 LOC 自有 Fork'
+- key: s244
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">~/.hermes/</span> BeautyOS agent 分发 + 多通道 gateway
+  text: ~/.hermes/ BeautyOS agent 分发 + 多通道 gateway
+- key: s245
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>Koishi 多平台桥接</strong>
+  text: '**Koishi 多平台桥接**'
+- key: s246
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: cordis 配置 / 覆盖平台
+  text: cordis 配置 / 覆盖平台
+- key: s247
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>160 行</strong> · 3 平台（Telegram / 企微 / 飞书）
+  text: '**160 行** · 3 平台（Telegram / 企微 / 飞书）'
+- key: s248
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">dsh-koishi-bridge/bridge.cordis.yml</span> Landlock 沙箱
+  text: dsh-koishi-bridge/bridge.cordis.yml Landlock 沙箱
+- key: s249
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>LangGraph Hybrid Agent</strong>
+  text: '**LangGraph Hybrid Agent**'
+- key: s250
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: Agent 模块行数 / 模块数
+  text: Agent 模块行数 / 模块数
+- key: s251
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>20,275 行</strong> · 27 模块（StateGraph + ReAct + Forced-RAG）
+  text: '**20,275 行** · 27 模块（StateGraph + ReAct + Forced-RAG）'
+- key: s252
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">business-agent-system/.../agent/</span> graph.py 4,527 + tools.py 6,221
+  text: business-agent-system/.../agent/ graph.py 4,527 + tools.py 6,221
+- key: s253
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>Dify 兼容 Agent 服务器</strong>
+  text: '**Dify 兼容 Agent 服务器**'
+- key: s254
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: API 端点 / 行数
+  text: API 端点 / 行数
+- key: s255
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>3 端点</strong> · 436 行（/v1/chat-messages + /workflows/run + /datasets）
+  text: '**3 端点** · 436 行（/v1/chat-messages + /workflows/run + /datasets）'
+- key: s256
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">外贸拓客助手/services/dify_agent_engine/</span> 端口 8096
+  text: 外贸拓客助手/services/dify_agent_engine/ 端口 8096
+- key: s257
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>Ollama 本地大模型</strong>
+  text: '**Ollama 本地大模型**'
+- key: s258
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: qwen3:8b 引用文件
+  text: qwen3:8b 引用文件
+- key: s259
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>3 文件</strong>（n8n LangChain Agent + 飞书 WS Agent + 测试）
+  text: '**3 文件**（n8n LangChain Agent + 飞书 WS Agent + 测试）'
+- key: s260
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">native_langchain_agent_pipeline.n8n.json</span>
+  text: native_langchain_agent_pipeline.n8n.json
+- key: s261
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>ComfyUI + FLUX.1</strong>
+  text: '**ComfyUI + FLUX.1**'
+- key: s262
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: AI 渲染引擎代码行数
+  text: AI 渲染引擎代码行数
+- key: s263
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>35,831 LOC</strong> · 36 JSON 模板 · FLUX.1-dev + ControlNet Depth
+  text: '**35,831 LOC** · 36 JSON 模板 · FLUX.1-dev + ControlNet Depth'
+- key: s264
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">comfyui-sdcpp-hotel-workflow/</span> RTX 4070
+  text: comfyui-sdcpp-hotel-workflow/ RTX 4070
+- key: s265
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>FreeCAD BIM 建模</strong>
+  text: '**FreeCAD BIM 建模**'
+- key: s266
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 参数化 CAD 代码行数
+  text: 参数化 CAD 代码行数
+- key: s267
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>71,998 LOC</strong> · FreeCADBlenderBridge XML-RPC
+  text: '**71,998 LOC** · FreeCADBlenderBridge XML-RPC'
+- key: s268
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">open-floorplan-cad/</span> .FCStd / .obj / .glb
+  text: open-floorplan-cad/ .FCStd / .obj / .glb
+- key: s269
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>Blender Cycles 渲染</strong>
+  text: '**Blender Cycles 渲染**'
+- key: s270
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 光追渲染脚本数
+  text: 光追渲染脚本数
+- key: s271
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>9 脚本</strong> · PBR 材质 + Cycles 灯光 + .blend/.glb
+  text: '**9 脚本** · PBR 材质 + Cycles 灯光 + .blend/.glb'
+- key: s272
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">open-floorplan-cad/scripts/</span>
+  text: open-floorplan-cad/scripts/
+- key: s273
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>AutoCAD MCP Server</strong>
+  text: '**AutoCAD MCP Server**'
+- key: s274
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: MCP 工具 / 代码行数
+  text: MCP 工具 / 代码行数
+- key: s275
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>8 工具</strong> · 4,083 LOC · ezdxf 无头 + Win32 IPC
+  text: '**8 工具** · 4,083 LOC · ezdxf 无头 + Win32 IPC'
+- key: s276
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">autocad-mcp/</span> 3 AutoLISP
+  text: autocad-mcp/ 3 AutoLISP
+- key: s277
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>飞桨 PaddleOCR</strong>
+  text: '**飞桨 PaddleOCR**'
+- key: s278
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: OCR 引擎引用文件数
+  text: OCR 引擎引用文件数
+- key: s279
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>135 文件</strong> · 跨 4 仓库 · RAGFlow deepdoc
+  text: '**135 文件** · 跨 4 仓库 · RAGFlow deepdoc'
+- key: s280
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">agent-infra-hub/</span> paddleocr_parser
+  text: agent-infra-hub/ paddleocr_parser
+- key: s281
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>向量数据库矩阵</strong>
+  text: '**向量数据库矩阵**'
+- key: s282
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 覆盖仓库数 / 引擎数
+  text: 覆盖仓库数 / 引擎数
+- key: s283
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>29 仓库</strong> · 8 引擎（SQLite/Milvus/Neo4j/pgvector/ES/Qdrant/Redis/ClickHouse）
+  text: '**29 仓库** · 8 引擎（SQLite/Milvus/Neo4j/pgvector/ES/Qdrant/Redis/ClickHouse）'
+- key: s284
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">v_all_local_git_repositories</span>
+  text: v_all_local_git_repositories
+- key: s285
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>开源依赖生态</strong>
+  text: '**开源依赖生态**'
+- key: s286
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 成熟库集成 / 8 层
+  text: 成熟库集成 / 8 层
+- key: s287
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>45+ 库</strong>：FastAPI/pydantic · langgraph/transformers/diffusers · qdrant/pymilvus/neo4j · ezdxf/shapely/trimesh/kiwisolver/ortools · R 统计 9 包 · React18/zustand/recharts
+  text: '**45+ 库**：FastAPI/pydantic · langgraph/transformers/diffusers · qdrant/pymilvus/neo4j · ezdxf/shapely/trimesh/kiwisolver/ortools · R 统计 9 包 · React18/zustand/recharts'
+- key: s288
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">requirements.txt / pyproject.toml / package.json</span> 实测
+  text: requirements.txt / pyproject.toml / package.json 实测
+- key: s289
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: 四、质量把控与工程认知
+  text: 四、质量把控与工程认知
+- key: s290
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            本案例最有价值的一步是<strong>反向审计</strong>：对 AI 装配的研报初稿逐格核对原始 ODS 表格后，发现若干\"正文结论与表格数字不符\"（如把 p=0.90 的不显著系数写成 p&lt;0.001 的显著结论、置信区间跨 1 的 OR 被解读为因果）。由此确立<strong>\"以引擎原始表格为唯一数字真源，叙事文字必须与断言区间一致\"</strong>的质检规则，并将显著性表述统一为学术规范（*/**/***/ns）。这正是统计学专业背景在 Vibe Coding 流程中作为\"AI 幻觉终结者\"的直接体现。\n        "
+  text: "\n            本案例最有价值的一步是**反向审计**：对 AI 装配的研报初稿逐格核对原始 ODS 表格后，发现若干\"正文结论与表格数字不符\"（如把 p=0.90 的不显著系数写成 p<0.001 的显著结论、置信区间跨 1 的 OR 被解读为因果）。由此确立**\"以引擎原始表格为唯一数字真源，叙事文字必须与断言区间一致\"**的质检规则，并将显著性表述统一为学术规范（*/**/***/ns）。这正是统计学专业背景在 Vibe Coding 流程中作为\"AI 幻觉终结者\"的直接体现。\n        "
+- key: s291
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 研发效能、AI 智能体分工与全栈技术图表
+  text: 研发效能、AI 智能体分工与全栈技术图表
+- key: s292
+  kind: block
+  tag: div
+  parent: container
+  orig: DEVELOPMENT SPAN
+  text: DEVELOPMENT SPAN
+- key: s293
+  kind: block
+  tag: div
+  parent: container
+  orig: 实盘研发历时
+  text: 实盘研发历时
+- key: s294
+  kind: block
+  tag: div
+  parent: container
+  orig: 近 10 <span>个月</span>
+  text: 近 10 个月
+- key: s295
+  kind: block
+  tag: div
+  parent: container
+  orig: 288 天自然跨度 (2025.11 - 2026.09)
+  text: 288 天自然跨度 (2025.11 - 2026.09)
+- key: s296
+  kind: block
+  tag: div
+  parent: container
+  orig: ACTIVE WORKDAYS
+  text: ACTIVE WORKDAYS
+- key: s297
+  kind: block
+  tag: div
+  parent: container
+  orig: 高强度实操投入
+  text: 高强度实操投入
+- key: s298
+  kind: block
+  tag: div
+  parent: container
+  orig: 93 <span>个工作日</span>
+  text: 93 个工作日
+- key: s299
+  kind: block
+  tag: div
+  parent: container
+  orig: 折合 740+ 研发工时 · 纯敲代码 120.8h
+  text: 折合 740+ 研发工时 · 纯敲代码 120.8h
+- key: s300
+  kind: block
+  tag: div
+  parent: container
+  orig: AI AGENT CALLS
+  text: AI AGENT CALLS
+- key: s301
+  kind: block
+  tag: div
+  parent: container
+  orig: AI 交互与指令轮次
+  text: AI 交互与指令轮次
+- key: s302
+  kind: block
+  tag: div
+  parent: container
+  orig: 1.99 <span>万次</span>
+  text: 1.99 万次
+- key: s303
+  kind: block
+  tag: div
+  parent: container
+  orig: Claude Code / Cursor / Windsurf
+  text: Claude Code / Cursor / Windsurf
+- key: s304
+  kind: block
+  tag: div
+  parent: container
+  orig: POLYGLOT STACK
+  text: POLYGLOT STACK
+- key: s305
+  kind: block
+  tag: div
+  parent: container
+  orig: 全栈交付语言
+  text: 全栈交付语言
+- key: s306
+  kind: block
+  tag: div
+  parent: container
+  orig: 5 <span>大主语言</span>
+  text: 5 大主语言
+- key: s307
+  kind: block
+  tag: div
+  parent: container
+  orig: Python / TS / SQL / Rust / Go
+  text: Python / TS / SQL / Rust / Go
+- key: s308
+  kind: block
+  tag: div
+  parent: container
+  orig: BUSINESS PROTOTYPES
+  text: BUSINESS PROTOTYPES
+- key: s309
+  kind: block
+  tag: div
+  parent: container
+  orig: 垂直业务原型
+  text: 垂直业务原型
+- key: s310
+  kind: block
+  tag: div
+  parent: container
+  orig: 6 <span>座</span>
+  text: 6 座
+- key: s311
+  kind: block
+  tag: div
+  parent: container
+  orig: 外贸 / 电商 / 造价 / CAD / 企微 / 法务
+  text: 外贸 / 电商 / 造价 / CAD / 企微 / 法务
+- key: s312
+  kind: block
+  tag: div
+  parent: container
+  orig: LINUX HOST & DEPLOY
+  text: LINUX HOST & DEPLOY
+- key: s313
+  kind: block
+  tag: div
+  parent: container
+  orig: 系统底座与云端部署
+  text: 系统底座与云端部署
+- key: s314
+  kind: block
+  tag: div
+  parent: container
+  orig: Ubuntu <span>24.04</span>
+  text: Ubuntu 24.04
+- key: s315
+  kind: block
+  tag: div
+  parent: container
+  orig: Linux 原生开发 · 云服务器 Docker/Nginx/systemd
+  text: Linux 原生开发 · 云服务器 Docker/Nginx/systemd
+- key: s316
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: "\n                        <span class=\"chart-fig-num\">FIG. 01</span>\n                        <span class=\"chart-title\">软件研发交付周期对比：传统开发 vs. Vibe Coding 敏捷协同</span>\n                    "
+  text: "\n                        FIG. 01\n                        软件研发交付周期对比：传统开发 vs. Vibe Coding 敏捷协同\n                    "
+- key: s317
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: "\n                    注：单位为常规研发耗时（天）。直观呈现 Vibe Coding 对脚手架、核心编码、单元测试与原型交付的 5x~8x 提效倍率，同时凸显人脑在架构设计与边界把控上的核心不可替代性。\n                "
+  text: "\n                    注：单位为常规研发耗时（天）。直观呈现 Vibe Coding 对脚手架、核心编码、单元测试与原型交付的 5x~8x 提效倍率，同时凸显人脑在架构设计与边界把控上的核心不可替代性。\n                "
+- key: s318
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: "\n                        <span class=\"chart-fig-num\">FIG. 02</span>\n                        <span class=\"chart-title\">13 款主流开发智能体实战调用分布与工种拓扑 (1.99万次交互)</span>\n                    "
+  text: "\n                        FIG. 02\n                        13 款主流开发智能体实战调用分布与工种拓扑 (1.99万次交互)\n                    "
+- key: s319
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: "\n                    注：基于开发环境多 Agent 实际交互采样统计，呈现终端自驱代理（Claude Code 35.2%）、行内辅助（Cursor 20.3%）、深度推理（DSH 12.1%）等多工种协作格局。\n                "
+  text: "\n                    注：基于开发环境多 Agent 实际交互采样统计，呈现终端自驱代理（Claude Code 35.2%）、行内辅助（Cursor 20.3%）、深度推理（DSH 12.1%）等多工种协作格局。\n                "
+- key: s320
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: "\n                        <span class=\"chart-fig-num\">FIG. 03</span>\n                        <span class=\"chart-title\">跨语言全栈交付生态 (Python / TS / SQL / Rust / Go)</span>\n                    "
+  text: "\n                        FIG. 03\n                        跨语言全栈交付生态 (Python / TS / SQL / Rust / Go)\n                    "
+- key: s321
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: "\n                    注：真实代码库语言分布。体现后端并发与计算（Python 42%）、前端与企微交互（TS 28%）、湖仓分析（SQL 18%）、底层高性能工具（Rust 7%）与运维代理（Go 5%）的跨语言交付体系。\n                "
+  text: "\n                    注：真实代码库语言分布。体现后端并发与计算（Python 42%）、前端与企微交互（TS 28%）、湖仓分析（SQL 18%）、底层高性能工具（Rust 7%）与运维代理（Go 5%）的跨语言交付体系。\n                "
+- key: s322
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: "\n                        <span class=\"chart-fig-num\">FIG. 04</span>\n                        <span class=\"chart-title\">6 大自研业务原型场景覆盖与功能解决力象限</span>\n                    "
+  text: "\n                        FIG. 04\n                        6 大自研业务原型场景覆盖与功能解决力象限\n                    "
+- key: s323
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: "\n                    注：气泡面积代表代码规模（LOC）。横轴映射系统技术栈与底层门槛，纵轴映射解决的业务痛点功能数。直观展现 6 个原型在各自垂直业务领域的落地深度。\n                "
+  text: "\n                    注：气泡面积代表代码规模（LOC）。横轴映射系统技术栈与底层门槛，纵轴映射解决的业务痛点功能数。直观展现 6 个原型在各自垂直业务领域的落地深度。\n                "
+- key: s324
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 6 大垂直场景自研业务原型实战与功能交付清单
+  text: 6 大垂直场景自研业务原型实战与功能交付清单
+- key: s325
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            坚持“讲清楚真实功能、解决什么痛点、如何落地，杜绝浮夸概念”。以下 6 座系统原型均基于真实需求构建，具备完整代码实现与本地可运行链路：\n        "
+  text: "\n            坚持“讲清楚真实功能、解决什么痛点、如何落地，杜绝浮夸概念”。以下 6 座系统原型均基于真实需求构建，具备完整代码实现与本地可运行链路：\n        "
+- key: s326
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 序号
+  text: 序号
+- key: s327
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 业务原型系统名称
+  text: 业务原型系统名称
+- key: s328
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 代码规模统计
+  text: 代码规模统计
+- key: s329
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 核心业务功能与解决痛点
+  text: 核心业务功能与解决痛点
+- key: s330
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 技术底座与关键实现
+  text: 技术底座与关键实现
+- key: s331
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>01</strong>
+  text: '**01**'
+- key: s332
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong style=\"color:var(--text-primary);\">外贸自动化拓客助手</strong><br/>\n                        <span class=\"pill-badge\">B2B 出海拓客</span>\n                    "
+  text: "\n                        外贸自动化拓客助手**\n\n                        B2B 出海拓客\n                    "
+- key: s333
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong style=\"font-family:'JetBrains Mono';\">119,595</strong> 行<br/>\n                        <span style=\"font-size:11.5px; color:var(--text-tertiary);\">37 commits · 928 files</span>\n                    "
+  text: "\n                        119,595** 行\n\n                        37 commits · 928 files\n                    "
+- key: s334
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong>解决海外买家线索分散、邮箱真伪难辨、开发信石沉大海痛点</strong>：<br/>\n                        多渠道抓取海外采购商企业画像与关键决策人，通过真实 DNS MX 协议探测邮箱存活状态，基于行业背景与买家特征自动化生成高转化外贸开发信。\n                    "
+  text: "\n                        **解决海外买家线索分散、邮箱真伪难辨、开发信石沉大海痛点**：\n\n                        多渠道抓取海外采购商企业画像与关键决策人，通过真实 DNS MX 协议探测邮箱存活状态，基于行业背景与买家特征自动化生成高转化外贸开发信。\n                    "
+- key: s335
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <span class=\"code-pill\">Ubuntu / Linux</span> <span class=\"code-pill\">Python</span><br/>\n                        <span class=\"code-pill\">SQLite</span> DNS MX 路由探针<br/>\n                        WhatsApp / 飞书 WS 网关\n                    "
+  text: "\n                        Ubuntu / Linux Python\n\n                        SQLite DNS MX 路由探针\n\n                        WhatsApp / 飞书 WS 网关\n                    "
+- key: s336
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>02</strong>
+  text: '**02**'
+- key: s337
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong style=\"color:var(--text-primary);\">电商商业分析与 BI 矩阵</strong><br/>\n                        <span class=\"pill-badge\">数据中枢与大盘</span>\n                    "
+  text: "\n                        电商商业分析与 BI 矩阵**\n\n                        数据中枢与大盘\n                    "
+- key: s338
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong style=\"font-family:'JetBrains Mono';\">114,529</strong> 行<br/>\n                        <span style=\"font-size:11.5px; color:var(--text-tertiary);\">20 commits · 1,776 files</span>\n                    "
+  text: "\n                        114,529** 行\n\n                        20 commits · 1,776 files\n                    "
+- key: s339
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong>解决海量电商订单聚合迟缓、智能体无法直接分析离线湖仓痛点</strong>：<br/>\n                        依托 DuckDB 现代进程内列式湖仓与 MCP 协议，赋予 Agent 免运维即席 SQL 分析与向量检索能力；支持用户 RFM 分群、留存率分析；构建 Apache Superset 深度探索大盘与 FineBI 商业驾驶舱。\n                    "
+  text: "\n                        **解决海量电商订单聚合迟缓、智能体无法直接分析离线湖仓痛点**：\n\n                        依托 DuckDB 现代进程内列式湖仓与 MCP 协议，赋予 Agent 免运维即席 SQL 分析与向量检索能力；支持用户 RFM 分群、留存率分析；构建 Apache Superset 深度探索大盘与 FineBI 商业驾驶舱。\n                    "
+- key: s340
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <span class=\"code-pill\">DuckDB (vss/httpfs)</span><br/>\n                        <span class=\"code-pill\">DuckDB MCP 协议</span><br/>\n                        <span class=\"code-pill\">Superset / FineBI</span>\n                    "
+  text: "\n                        DuckDB (vss/httpfs)\n\n                        DuckDB MCP 协议\n\n                        Superset / FineBI\n                    "
+- key: s341
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>03</strong>
+  text: '**03**'
+- key: s342
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong style=\"color:var(--text-primary);\">工程造价与软装核算平台</strong><br/>\n                        <span class=\"pill-badge\">垂直行业 RAG</span>\n                    "
+  text: "\n                        工程造价与软装核算平台**\n\n                        垂直行业 RAG\n                    "
+- key: s343
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong style=\"font-family:'JetBrains Mono';\">120,103</strong> 行<br/>\n                        <span style=\"font-size:11.5px; color:var(--text-tertiary);\">68 commits · 616 files</span>\n                    "
+  text: "\n                        120,103** 行\n\n                        68 commits · 616 files\n                    "
+- key: s344
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong>解决工程定额规范晦涩、材料清单与单价匹配耗时易错痛点</strong>：<br/>\n                        融合稠密向量 (Dense)、关键词精确匹配 (BM25)、定额层级图谱 (Neo4j) 与 BGE 重排模型，实现秒级高精度工程定额检索与软装 BOM 造价核算。\n                    "
+  text: "\n                        **解决工程定额规范晦涩、材料清单与单价匹配耗时易错痛点**：\n\n                        融合稠密向量 (Dense)、关键词精确匹配 (BM25)、定额层级图谱 (Neo4j) 与 BGE 重排模型，实现秒级高精度工程定额检索与软装 BOM 造价核算。\n                    "
+- key: s345
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <span class=\"code-pill\">Neo4j</span> <span class=\"code-pill\">Milvus</span> <span class=\"code-pill\">BM25</span><br/>\n                        FastAPI + 混合多路重排<br/>\n                        云服务器集群 + Nginx 反代部署\n                    "
+  text: "\n                        Neo4j Milvus BM25\n\n                        FastAPI + 混合多路重排\n\n                        云服务器集群 + Nginx 反代部署\n                    "
+- key: s346
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>04</strong>
+  text: '**04**'
+- key: s347
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong style=\"color:var(--text-primary);\">建筑 CAD 户型拓扑解析引擎</strong><br/>\n                        <span class=\"pill-badge\">CAD/BIM 几何计算</span>\n                    "
+  text: "\n                        建筑 CAD 户型拓扑解析引擎**\n\n                        CAD/BIM 几何计算\n                    "
+- key: s348
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong style=\"font-family:'JetBrains Mono';\">71,998</strong> 行<br/>\n                        <span style=\"font-size:11.5px; color:var(--text-tertiary);\">9 commits · 2,932 files</span>\n                    "
+  text: "\n                        71,998** 行\n\n                        9 commits · 2,932 files\n                    "
+- key: s349
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong>解决 CAD 施工图离散线段无法自动识别人体工学、房间与面积痛点</strong>：<br/>\n                        基于 DCEL 双半边数据结构实现离散线段自动构面与闭合，运行 Isovist 空间视域通透性分析算法，并支持自动化生成并导出标准化建筑 DXF 图纸。\n                    "
+  text: "\n                        **解决 CAD 施工图离散线段无法自动识别人体工学、房间与面积痛点**：\n\n                        基于 DCEL 双半边数据结构实现离散线段自动构面与闭合，运行 Isovist 空间视域通透性分析算法，并支持自动化生成并导出标准化建筑 DXF 图纸。\n                    "
+- key: s350
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <span class=\"code-pill\">Python</span> <span class=\"code-pill\">ezdxf</span><br/>\n                        DCEL 双半边拓扑算法<br/>\n                        Isovist 空间视域计算\n                    "
+  text: "\n                        Python ezdxf\n\n                        DCEL 双半边拓扑算法\n\n                        Isovist 空间视域计算\n                    "
+- key: s351
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>05</strong>
+  text: '**05**'
+- key: s352
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong style=\"color:var(--text-primary);\">美业私域客户运营与智能客服</strong><br/>\n                        <span class=\"pill-badge\">企微私域自动化</span>\n                    "
+  text: "\n                        美业私域客户运营与智能客服**\n\n                        企微私域自动化\n                    "
+- key: s353
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong style=\"font-family:'JetBrains Mono';\">132,510</strong> 行<br/>\n                        <span style=\"font-size:11.5px; color:var(--text-tertiary);\">189 commits · 5,421 files</span>\n                    "
+  text: "\n                        132,510** 行\n\n                        189 commits · 5,421 files\n                    "
+- key: s354
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong>解决私域社群响应不及时、预约排班与客情流转低效脱节痛点</strong>：<br/>\n                        原生对接企业微信 (WeCom API & WebSocket 长连接)，实现客户咨询多轮智能应答、预约排班自动同步、客户服务历史与画像归集。\n                    "
+  text: "\n                        **解决私域社群响应不及时、预约排班与客情流转低效脱节痛点**：\n\n                        原生对接企业微信 (WeCom API & WebSocket 长连接)，实现客户咨询多轮智能应答、预约排班自动同步、客户服务历史与画像归集。\n                    "
+- key: s355
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <span class=\"code-pill\">TypeScript</span> <span class=\"code-pill\">WeCom</span><br/>\n                        PostgreSQL (pgvector)<br/>\n                        systemd 守护自愈 + WebSocket\n                    "
+  text: "\n                        TypeScript WeCom\n\n                        PostgreSQL (pgvector)\n\n                        systemd 守护自愈 + WebSocket\n                    "
+- key: s356
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>06</strong>
+  text: '**06**'
+- key: s357
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong style=\"color:var(--text-primary);\">法律合规文书知识图谱</strong><br/>\n                        <span class=\"pill-badge\">法律知识工程</span>\n                    "
+  text: "\n                        法律合规文书知识图谱**\n\n                        法律知识工程\n                    "
+- key: s358
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong style=\"font-family:'JetBrains Mono';\">86,154</strong> 行<br/>\n                        <span style=\"font-size:11.5px; color:var(--text-tertiary);\">10 commits · 528 files</span>\n                    "
+  text: "\n                        86,154** 行\n\n                        10 commits · 528 files\n                    "
+- key: s359
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong>解决企业法务合同审查耗时漫长、合规条款难以全面溯源痛点</strong>：<br/>\n                        构建司法裁判文书与法律条文知识图谱，实现合同条款关键法律风险自动对标、潜在违约条款预警与依据法规精准引证溯源。\n                    "
+  text: "\n                        **解决企业法务合同审查耗时漫长、合规条款难以全面溯源痛点**：\n\n                        构建司法裁判文书与法律条文知识图谱，实现合同条款关键法律风险自动对标、潜在违约条款预警与依据法规精准引证溯源。\n                    "
+- key: s360
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <span class=\"code-pill\">Neo4j</span> <span class=\"code-pill\">PostgreSQL</span><br/>\n                        法律实体拓扑抽取<br/>\n                        合同合规风险检测\n                    "
+  text: "\n                        Neo4j PostgreSQL\n\n                        法律实体拓扑抽取\n\n                        合同合规风险检测\n                    "
+- key: s361
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            <span>ARCHIVAL DOSSIER · PRJ-AI-VIBE-2026 · AI全栈工程实证档案</span>\n        "
+  text: "\n            ARCHIVAL DOSSIER · PRJ-AI-VIBE-2026 · AI全栈工程实证档案\n        "
+- key: s362
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            2026 商业专案库归档\n        "
+  text: "\n            2026 商业专案库归档\n        "

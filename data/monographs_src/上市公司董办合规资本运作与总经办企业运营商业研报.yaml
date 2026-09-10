@@ -1,0 +1,1172 @@
+# 文字真源：monographs/上市公司董办合规资本运作与总经办企业运营商业研报.html
+# 单一真源铁律：改此文件 text -> build_monographs_from_yaml.py 回填外壳，禁止手改 monographs/*.html
+meta:
+  source_file: monographs/上市公司董办合规资本运作与总经办企业运营商业研报.html
+  slug: 上市公司董办合规资本运作与总经办企业运营商业研报
+  title: 上市公司董办合规资本运作与总经办企业运营商业研报 ｜ 梁清波 商业专案库
+  hash: a18da59d9d3aa1fae85442ef9e959a7711821c97f159b916f36a3578a46473bf
+slots:
+- key: s00
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            <span class=\"nav-brand-code\">PRJ-CORP-GOV-2014</span>\n            <span class=\"eyebrow-sep\" style=\"color:var(--border-strong);margin:0 4px;\">/</span>\n            <span class=\"nav-brand-title\">上市公司董办合规资本运作与总经办企业运营商业研报</span>\n        "
+  text: "\n            PRJ-CORP-GOV-2014\n            /\n            上市公司董办合规资本运作与总经办企业运营商业研报\n        "
+- key: s01
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#sec-overview">§ 1 项目基本盘</a>
+  text: § 1 项目基本盘
+- key: s02
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#sec-methodology">§ 2 核心方法论</a>
+  text: § 2 核心方法论
+- key: s03
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#sec-dashboard">§ 3 经营与资本图表</a>
+  text: § 3 经营与资本图表
+- key: s04
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#sec-dossiers">§ 4 履职底账台账</a>
+  text: § 4 履职底账台账
+- key: s05
+  kind: block
+  tag: button
+  parent: container
+  orig: "\n            <span>‹ 返回总舱</span>\n        "
+  text: "\n            ‹ 返回总舱\n        "
+- key: s06
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            <span>ARCHIVAL MONOGRAPH</span>\n            <span class=\"eyebrow-sep\">/</span>\n            <span>PRJ-CORP-GOV-2014</span>\n            <span class=\"eyebrow-sep\">/</span>\n            <span>LISTED BOARD & GM OFFICE GOVERNANCE</span>\n        "
+  text: "\n            ARCHIVAL MONOGRAPH\n            /\n            PRJ-CORP-GOV-2014\n            /\n            LISTED BOARD & GM OFFICE GOVERNANCE\n        "
+- key: s07
+  kind: section-title
+  tag: h1
+  parent: container
+  orig: 上市公司董办合规资本运作与总经办企业运营商业研报
+  text: 上市公司董办合规资本运作与总经办企业运营商业研报
+- key: s08
+  kind: block
+  tag: div
+  parent: container
+  orig: ——从总部经营督办、同业深度对标到三会治理与资本运作全景闭环
+  text: ——从总部经营督办、同业深度对标到三会治理与资本运作全景闭环
+- key: s09
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            系统阐述在深圳广田集团股份有限公司（A股主板建筑装饰龙头，SZ.002482）总部的全职管理实践。前期作为<strong>总经理办公室数统专员与运营参谋</strong>（2011.03-2012.02），负责总裁日常经营执行中枢，抓经营管理例会决策、决议动态督办台账（销号率 97.9%）、全司运营信息数据库与年度目标责任书分解，并主笔《建筑装饰行业分析报告》与《同行业上市公司间比较分析》，深度对标金螳螂、亚厦、洪涛等头部竞品；后期晋升并转任<strong>董事会办公室 / 证券事务部核心执行操盘</strong>（2012.03-2014.02，整24个月），直接向分管高管兼董秘（王宏坤，主管全局）与证代（郭文宁）对接汇报，具体承办 12 亿元公司债 55 大类专业尽调底稿封包、首期股票期权 1,113.6 万股行权（2.28 亿自筹资金落地）与二期自主行权推进、超募资金 1.32 亿元产业并购（方特 51% + 成都华南 60%）与新华丰生态并购、牵头承办设立软装子公司（2013.11 董事会审议设立 ➔ 2014.01 完成工商登记，为 2014.02 正式奔赴全资子公司广田云软装担任筹办核心奠定法定基础）、接待华夏/广发/大成/景顺长城等 50+ 场顶级公私募机构现场调研，并在第二届董事会历次三会中落实 10 步刚性合规闭环；在职全周期信披公告 345 篇（证券部专职期 206 篇），深交所信息披露评级持续保持最高 A 级（0 监管问询、0 处罚）。\n        "
+  text: "\n            系统阐述在深圳广田集团股份有限公司（A股主板建筑装饰龙头，SZ.002482）总部的全职管理实践。前期作为**总经理办公室数统专员与运营参谋**（2011.03-2012.02），负责总裁日常经营执行中枢，抓经营管理例会决策、决议动态督办台账（销号率 97.9%）、全司运营信息数据库与年度目标责任书分解，并主笔《建筑装饰行业分析报告》与《同行业上市公司间比较分析》，深度对标金螳螂、亚厦、洪涛等头部竞品；后期晋升并转任**董事会办公室 / 证券事务部核心执行操盘**（2012.03-2014.02，整24个月），直接向分管高管兼董秘（王宏坤，主管全局）与证代（郭文宁）对接汇报，具体承办 12 亿元公司债 55 大类专业尽调底稿封包、首期股票期权 1,113.6 万股行权（2.28 亿自筹资金落地）与二期自主行权推进、超募资金 1.32 亿元产业并购（方特 51% + 成都华南 60%）与新华丰生态并购、牵头承办设立软装子公司（2013.11 董事会审议设立 ➔ 2014.01 完成工商登记，为 2014.02 正式奔赴全资子公司广田云软装担任筹办核心奠定法定基础）、接待华夏/广发/大成/景顺长城等 50+ 场顶级公私募机构现场调研，并在第二届董事会历次三会中落实 10 步刚性合规闭环；在职全周期信披公告 345 篇（证券部专职期 206 篇），深交所信息披露评级持续保持最高 A 级（0 监管问询、0 处罚）。\n        "
+- key: s10
+  kind: block
+  tag: div
+  parent: container
+  orig: 专案定位
+  text: 专案定位
+- key: s11
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 上市公司双核中枢
+  text: 上市公司双核中枢
+- key: s12
+  kind: block
+  tag: div
+  parent: container
+  orig: 日常经营执行权 vs 法定法人治理权
+  text: 日常经营执行权 vs 法定法人治理权
+- key: s13
+  kind: block
+  tag: div
+  parent: container
+  orig: 操盘角色
+  text: 操盘角色
+- key: s14
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 总经办 ➔ 证券助理
+  text: 总经办 ➔ 证券助理
+- key: s15
+  kind: block
+  tag: div
+  parent: container
+  orig: 总经办运营参谋 ➔ 董办核心执行操盘
+  text: 总经办运营参谋 ➔ 董办核心执行操盘
+- key: s16
+  kind: block
+  tag: div
+  parent: container
+  orig: 履职历时
+  text: 履职历时
+- key: s17
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 整 3 年 <small>(36个月)</small>
+  text: 整 3 年 (36个月)
+- key: s18
+  kind: block
+  tag: div
+  parent: container
+  orig: 2011.03 至 2014.02 全职在职 ➔ 调任云软装
+  text: 2011.03 至 2014.02 全职在职 ➔ 调任云软装
+- key: s19
+  kind: block
+  tag: div
+  parent: container
+  orig: 资本运作体量
+  text: 资本运作体量
+- key: s20
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 15.6+ 亿元
+  text: 15.6+ 亿元
+- key: s21
+  kind: block
+  tag: div
+  parent: container
+  orig: 12亿发债底稿 + 1.32亿并购 + 2.28亿行权 + 软装新设
+  text: 12亿发债底稿 + 1.32亿并购 + 2.28亿行权 + 软装新设
+- key: s22
+  kind: block
+  tag: div
+  parent: container
+  orig: 信披与合规质量
+  text: 信披与合规质量
+- key: s23
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 深交所 A 级 <small>(0问询)</small>
+  text: 深交所 A 级 (0问询)
+- key: s24
+  kind: block
+  tag: div
+  parent: container
+  orig: 证券部206篇(全期345篇) · 0 监管问询与处罚
+  text: 证券部206篇(全期345篇) · 0 监管问询与处罚
+- key: s25
+  kind: block
+  tag: div
+  parent: container
+  orig: 经营督办大盘
+  text: 经营督办大盘
+- key: s26
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 61.96 亿元
+  text: 61.96 亿元
+- key: s27
+  kind: block
+  tag: div
+  parent: container
+  orig: 9 大大区订单穿透 · 督办销号率 96.8%
+  text: 9 大大区订单穿透 · 督办销号率 96.8%
+- key: s28
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 项目基本盘 · 上市公司总部治理与企业运营事实台账
+  text: 项目基本盘 · 上市公司总部治理与企业运营事实台账
+- key: s29
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 维度
+  text: 维度
+- key: s30
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 关键事实与核心数据
+  text: 关键事实与核心数据
+- key: s31
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 商业背景与操盘意义
+  text: 商业背景与操盘意义
+- key: s32
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 两府中枢职能
+  text: 两府中枢职能
+- key: s33
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>总经办（经营执行权）+ 董办（法定治理权）</strong>双轮协同
+  text: '**总经办（经营执行权）+ 董办（法定治理权）**双轮协同'
+- key: s34
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 总经办作为总裁行政执行中枢，抓经营分析、例会督办与制度总纲；董办作为董事会资本运作中枢，抓信息披露、三会合规与市值管理。两者交织形成全景战略掌控力。
+  text: 总经办作为总裁行政执行中枢，抓经营分析、例会督办与制度总纲；董办作为董事会资本运作中枢，抓信息披露、三会合规与市值管理。两者交织形成全景战略掌控力。
+- key: s35
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 董办团队与分工
+  text: 董办团队与分工
+- key: s36
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>董秘(王宏坤) · 证代(郭文宁) · 证券助理(梁清波)</strong>
+  text: '**董秘(王宏坤) · 证代(郭文宁) · 证券助理(梁清波)**'
+- key: s37
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 由分管高管兼董秘王宏坤主持全面工作（王亦为郭直接上级）；梁清波作为证券部核心操盘人员，直接对接董秘与证代两位开展工作：既配合董秘承办 12 亿元发债底稿封包、50+ 场机构一线同台调研接待与对标专报，又协同证代落实深交所日常信披报送（专职期间 206 篇公告）、三会文件归档与合规核查，形成高效落地的治理闭环。
+  text: 由分管高管兼董秘王宏坤主持全面工作（王亦为郭直接上级）；梁清波作为证券部核心操盘人员，直接对接董秘与证代两位开展工作：既配合董秘承办 12 亿元发债底稿封包、50+ 场机构一线同台调研接待与对标专报，又协同证代落实深交所日常信披报送（专职期间 206 篇公告）、三会文件归档与合规核查，形成高效落地的治理闭环。
+- key: s38
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 发债资本运作
+  text: 发债资本运作
+- key: s39
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>2013 公司债券 12 亿元公开发行</strong>（55 大类专业底稿体系）
+  text: '**2013 公司债券 12 亿元公开发行**（55 大类专业底稿体系）'
+- key: s40
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 具体牵头 54 个核查细项的专业法律与财务工作底稿收集、穿透核验与保荐机构（国金证券/平安证券）交接封包，确立审计级完备证据链，支撑 12 亿公司债于 2013 年 4 月获证监会核准并在深交所成功挂牌上市交易。
+  text: 具体牵头 54 个核查细项的专业法律与财务工作底稿收集、穿透核验与保荐机构（国金证券/平安证券）交接封包，确立审计级完备证据链，支撑 12 亿公司债于 2013 年 4 月获证监会核准并在深交所成功挂牌上市交易。
+- key: s41
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 股权激励与行权
+  text: 股权激励与行权
+- key: s42
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>股票期权首期行权(1,113.6万股) + 二期自主行权</strong>（2.28 亿元自筹监管）
+  text: '**股票期权首期行权(1,113.6万股) + 二期自主行权**（2.28 亿元自筹监管）'
+- key: s43
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 具体执行 50 位骨干首次行权账户与 2.28 亿自筹资金落地（行权价 20.43 元除权后）；2013 年底接续推进第二个行权期条件成就与深交所首批“自主行权模式”创新落地，推动市值跃过百亿大关。
+  text: 具体执行 50 位骨干首次行权账户与 2.28 亿自筹资金落地（行权价 20.43 元除权后）；2013 年底接续推进第二个行权期条件成就与深交所首批“自主行权模式”创新落地，推动市值跃过百亿大关。
+- key: s44
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 超募资金产业并购
+  text: 超募资金产业并购
+- key: s45
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>超募并购方特/成都华南/新华丰</strong>（累计逾 1.32 亿元）
+  text: '**超募并购方特/成都华南/新华丰**（累计逾 1.32 亿元）'
+- key: s46
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 合规落地使用超募资金收购方特装饰 51%（补强幕墙一级资质）、成都华南 60%（更名广田华南，设立西南战略总部）及新华丰生态 51%，前置完成尽调、资产评估、律所见证与内幕知情人排查。
+  text: 合规落地使用超募资金收购方特装饰 51%（补强幕墙一级资质）、成都华南 60%（更名广田华南，设立西南战略总部）及新华丰生态 51%，前置完成尽调、资产评估、律所见证与内幕知情人排查。
+- key: s47
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 软装设立与孵化
+  text: 软装设立与孵化
+- key: s48
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>设立全资子公司广田软装</strong>（2013.11 决议 ➔ 2014.01 登记 ➔ 2014.02 调任）
+  text: '**设立全资子公司广田软装**（2013.11 决议 ➔ 2014.01 登记 ➔ 2014.02 调任）'
+- key: s49
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 2013 年 11 月在董办具体承办第二届第二十四次董事会《关于使用部分超募资金设立软装公司的议案》及保荐核查；2014 年 1 月 18 日完成工商登记信披；2014 年 2 月梁清波正式由集团董办奔赴该子公司（广田云软装）作为筹办核心团队，开启 10 年软装大盘操盘历程。
+  text: 2013 年 11 月在董办具体承办第二届第二十四次董事会《关于使用部分超募资金设立软装公司的议案》及保荐核查；2014 年 1 月 18 日完成工商登记信披；2014 年 2 月梁清波正式由集团董办奔赴该子公司（广田云软装）作为筹办核心团队，开启 10 年软装大盘操盘历程。
+- key: s50
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 法定信披与零问询
+  text: 法定信披与零问询
+- key: s51
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>任期 345 篇公告 (证券部 206 篇) · 0 监管问询函件</strong>
+  text: '**任期 345 篇公告 (证券部 206 篇) · 0 监管问询函件**'
+- key: s52
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 深交所官方披露与监管记录核实：在职全周期（2011.03-2014.02）披露 345 篇公告（证券部专职期 206 篇），深交所监管函件/问询为 0（广田首份问询发生在离任后 2015 年），信息披露持续蝉联最高 A 级。
+  text: 深交所官方披露与监管记录核实：在职全周期（2011.03-2014.02）披露 345 篇公告（证券部专职期 206 篇），深交所监管函件/问询为 0（广田首份问询发生在离任后 2015 年），信息披露持续蝉联最高 A 级。
+- key: s53
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 投资者关系 (IR)
+  text: 投资者关系 (IR)
+- key: s54
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>50+ 场主流机构现场调研</strong>，深交所官方编号披露备案
+  text: '**50+ 场主流机构现场调研**，深交所官方编号披露备案'
+- key: s55
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 一线主导华夏、广发、大成、景顺长城、国金、泽熙等顶级公私募基金经理现场调研接待，撰写《投资者关系活动记录表》并于深交所互动易合规备案。
+  text: 一线主导华夏、广发、大成、景顺长城、国金、泽熙等顶级公私募基金经理现场调研接待，撰写《投资者关系活动记录表》并于深交所互动易合规备案。
+- key: s56
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 经营例会与督办
+  text: 经营例会与督办
+- key: s57
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>19 期办公例会与督办闭环</strong>（决议督办销号率达 97.9%）
+  text: '**19 期办公例会与督办闭环**（决议督办销号率达 97.9%）'
+- key: s58
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 在总经办建立决议督办动态台账，每周滚动通报；层层分解各大区分公司年度目标责任书；监控 50 万元以上重大经营与商誉风险，推行一票否决预警。
+  text: 在总经办建立决议督办动态台账，每周滚动通报；层层分解各大区分公司年度目标责任书；监控 50 万元以上重大经营与商誉风险，推行一票否决预警。
+- key: s59
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 行业与同业对标
+  text: 行业与同业对标
+- key: s60
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>主笔建筑装饰行业分析与同业深度对标专报</strong>（金螳螂/亚厦/广田/洪涛）
+  text: '**主笔建筑装饰行业分析与同业深度对标专报**（金螳螂/亚厦/广田/洪涛）'
+- key: s61
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 独立撰写《建筑装饰行业分析报告》与《同行业上市公司间比较分析报告》（含 7 期行业及竞品周报），从宏观产业周期、公装与住宅精装趋势、企业边界定位，穿透对标四巨头营收增速（31.2%~56.9%）、毛利率与期间费用率，呈报总裁决策。
+  text: 独立撰写《建筑装饰行业分析报告》与《同行业上市公司间比较分析报告》（含 7 期行业及竞品周报），从宏观产业周期、公装与住宅精装趋势、企业边界定位，穿透对标四巨头营收增速（31.2%~56.9%）、毛利率与期间费用率，呈报总裁决策。
+- key: s62
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 企业治理与资本运筹 · 2×2 对称平衡方法论矩阵
+  text: 企业治理与资本运筹 · 2×2 对称平衡方法论矩阵
+- key: s63
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            在上市公司总部运转体系中，经营执行力与资本合规治理是驱动企业稳健扩张的双翼，遵循四大核心法则：\n        "
+  text: "\n            在上市公司总部运转体系中，经营执行力与资本合规治理是驱动企业稳健扩张的双翼，遵循四大核心法则：\n        "
+- key: s64
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: § 1 总经办企业运营中枢与全司例会督办闭环 (Operations Executive Tracking)
+  text: § 1 总经办企业运营中枢与全司例会督办闭环 (Operations Executive Tracking)
+- key: s65
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>例会纪要与督办台账</strong>：每周统筹总经理办公例会与部长例会（第1-19期），撰写规范纪要并拆解为“责任人、完成标准、时限”三要素台账，督办销号率达 97.9%；
+  text: '**例会纪要与督办台账**：每周统筹总经理办公例会与部长例会（第1-19期），撰写规范纪要并拆解为“责任人、完成标准、时限”三要素台账，督办销号率达 97.9%；'
+- key: s66
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>目标责任书层层分解</strong>：将董事会下达的年度营收、净利润、回款及新签订单指标，拆解至全国各大区与事业部，组织签署仪式并跟踪季度达成率；
+  text: '**目标责任书层层分解**：将董事会下达的年度营收、净利润、回款及新签订单指标，拆解至全国各大区与事业部，组织签署仪式并跟踪季度达成率；'
+- key: s67
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>制度总纲与审批提效</strong>：主导《公司制度建设管理条例》总纲起草，对跨部门审批节点进行流程梳理与精简，破除部门壁垒与业务推诿。
+  text: '**制度总纲与审批提效**：主导《公司制度建设管理条例》总纲起草，对跨部门审批节点进行流程梳理与精简，破除部门壁垒与业务推诿。'
+- key: s68
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: § 2 宏观产业情报与同业四巨头深度对标 (Macro Industry Intelligence)
+  text: § 2 宏观产业情报与同业四巨头深度对标 (Macro Industry Intelligence)
+- key: s69
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>主笔行业分析与上市同业深度对标专报</strong>：独立撰写《建筑装饰行业分析报告》与《同行业上市公司间比较分析报告》（涵盖 7 期行业及竞品研判周报），从宏观产业周期、公装与住宅精装赛道扩容、企业边界定位，穿透对标金螳螂、亚厦、广田、洪涛四巨头的营收增速、盈利质量、业务区域结构、应收账款与期间费用控制策略；
+  text: '**主笔行业分析与上市同业深度对标专报**：独立撰写《建筑装饰行业分析报告》与《同行业上市公司间比较分析报告》（涵盖 7 期行业及竞品研判周报），从宏观产业周期、公装与住宅精装赛道扩容、企业边界定位，穿透对标金螳螂、亚厦、广田、洪涛四巨头的营收增速、盈利质量、业务区域结构、应收账款与期间费用控制策略；'
+- key: s70
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>竞争对手动态周报追踪</strong>：创刊并每周编发《行业及竞争对手信息周报》（第1-7期）与房产调控专刊，深度复盘亚厦并购上海蓝天、金螳螂全国扩张动作；
+  text: '**竞争对手动态周报追踪**：创刊并每周编发《行业及竞争对手信息周报》（第1-7期）与房产调控专刊，深度复盘亚厦并购上海蓝天、金螳螂全国扩张动作；'
+- key: s71
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>经营决策参谋支持</strong>：月度/季度汇总各职能中心与 9 大大区分公司实际完成数据，与年度预算对比找出偏差归因，为总裁经营班子提供前瞻依据。
+  text: '**经营决策参谋支持**：月度/季度汇总各职能中心与 9 大大区分公司实际完成数据，与年度预算对比找出偏差归因，为总裁经营班子提供前瞻依据。'
+- key: s72
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: § 3 上市公司法人治理与“三会”运作法定闭环 (Board Governance Protocol)
+  text: § 3 上市公司法人治理与“三会”运作法定闭环 (Board Governance Protocol)
+- key: s73
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>10 步刚性流转法定程序</strong>：从业务部门发起议案、前置法务审核、提前发出通知、独立董事发表书面意见，到现场表决票签署、监票计票、决议签署封包；
+  text: '**10 步刚性流转法定程序**：从业务部门发起议案、前置法务审核、提前发出通知、独立董事发表书面意见，到现场表决票签署、监票计票、决议签署封包；'
+- key: s74
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>中介机构专业把关协同</strong>：协同财富里昂/国金保荐代表人、中伦/君合/国浩执业律师、天职国际注册会计师，出具专项核查意见与法律意见书；
+  text: '**中介机构专业把关协同**：协同财富里昂/国金保荐代表人、中伦/君合/国浩执业律师、天职国际注册会计师，出具专项核查意见与法律意见书；'
+- key: s75
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>知情人防火墙与 A 级信披</strong>：对重大收购及定期报告敏感期执行 100% 严格知情人登记与股票自查，保障任期内深交所信息披露考核持续荣获最高 A 级评级。
+  text: '**知情人防火墙与 A 级信披**：对重大收购及定期报告敏感期执行 100% 严格知情人登记与股票自查，保障任期内深交所信息披露考核持续荣获最高 A 级评级。'
+- key: s76
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: § 4 资本运作发债底稿封包与投资者关系市值管理 (Capital Ops & IR Synergy)
+  text: § 4 资本运作发债底稿封包与投资者关系市值管理 (Capital Ops & IR Synergy)
+- key: s77
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>发债 55 大类专业底稿交付</strong>：针对 12 亿元公司债券公开发行，牵头收集、核查并封包 54 个核查细项的专业法律与财务卷宗，满足证监会发审委严苛审查；
+  text: '**发债 55 大类专业底稿交付**：针对 12 亿元公司债券公开发行，牵头收集、核查并封包 54 个核查细项的专业法律与财务卷宗，满足证监会发审委严苛审查；'
+- key: s78
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>1.32 亿产业并购全案落地</strong>：统筹方特装饰 51%（8,310万）与成都华南 60%（4,896万）超募并购，完成评估对价核验、工商变更与公告批复；
+  text: '**1.32 亿产业并购全案落地**：统筹方特装饰 51%（8,310万）与成都华南 60%（4,896万）超募并购，完成评估对价核验、工商变更与公告批复；'
+- key: s79
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>市值演进与机构调研维护</strong>：接待华夏、广发、大成、景顺长城等 50+ 场主流机构一线调研，精准传递百亿战略，支撑市值由 85.1 亿攀升至 132.2 亿峰值。
+  text: '**市值演进与机构调研维护**：接待华夏、广发、大成、景顺长城等 50+ 场主流机构一线调研，精准传递百亿战略，支撑市值由 85.1 亿攀升至 132.2 亿峰值。'
+- key: s80
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 总经办运营督办、资本市场运作与董办合规图表 (2×2 矩阵)
+  text: 总经办运营督办、资本市场运作与董办合规图表 (2×2 矩阵)
+- key: s81
+  kind: block
+  tag: div
+  parent: container
+  orig: CORPORATE SPAN
+  text: CORPORATE SPAN
+- key: s82
+  kind: block
+  tag: div
+  parent: container
+  orig: 实盘履职周期
+  text: 实盘履职周期
+- key: s83
+  kind: block
+  tag: div
+  parent: container
+  orig: 36 <span>个月</span>
+  text: 36 个月
+- key: s84
+  kind: block
+  tag: div
+  parent: container
+  orig: 2011.03 - 2014.02 总经办+证券部 ➔ 调任云软装
+  text: 2011.03 - 2014.02 总经办+证券部 ➔ 调任云软装
+- key: s85
+  kind: block
+  tag: div
+  parent: container
+  orig: GM SUPERVISION
+  text: GM SUPERVISION
+- key: s86
+  kind: block
+  tag: div
+  parent: container
+  orig: 例会决议督办
+  text: 例会决议督办
+- key: s87
+  kind: block
+  tag: div
+  parent: container
+  orig: 97.9% <span>销号</span>
+  text: 97.9% 销号
+- key: s88
+  kind: block
+  tag: div
+  parent: container
+  orig: 19 期经营例会 · 下达 94 项办结销号 92 项
+  text: 19 期经营例会 · 下达 94 项办结销号 92 项
+- key: s89
+  kind: block
+  tag: div
+  parent: container
+  orig: DUE DILIGENCE PACK
+  text: DUE DILIGENCE PACK
+- key: s90
+  kind: block
+  tag: div
+  parent: container
+  orig: 发债工作底稿
+  text: 发债工作底稿
+- key: s91
+  kind: block
+  tag: div
+  parent: container
+  orig: 55 <span>大类</span>
+  text: 55 大类
+- key: s92
+  kind: block
+  tag: div
+  parent: container
+  orig: 12 亿元公司债券 · 54 个核查细项封包上市
+  text: 12 亿元公司债券 · 54 个核查细项封包上市
+- key: s93
+  kind: block
+  tag: div
+  parent: container
+  orig: M&A & EXPANSION
+  text: M&A & EXPANSION
+- key: s94
+  kind: block
+  tag: div
+  parent: container
+  orig: 产业并购与新设
+  text: 产业并购与新设
+- key: s95
+  kind: block
+  tag: div
+  parent: container
+  orig: 6.25 <span>亿元</span>
+  text: 6.25 亿元
+- key: s96
+  kind: block
+  tag: div
+  parent: container
+  orig: 方特/华南并购 + 全资设立软装子公司
+  text: 方特/华南并购 + 全资设立软装子公司
+- key: s97
+  kind: block
+  tag: div
+  parent: container
+  orig: INFO DISCLOSURE
+  text: INFO DISCLOSURE
+- key: s98
+  kind: block
+  tag: div
+  parent: container
+  orig: 证券部信披公告
+  text: 证券部信披公告
+- key: s99
+  kind: block
+  tag: div
+  parent: container
+  orig: 206 <span>篇</span>
+  text: 206 篇
+- key: s100
+  kind: block
+  tag: div
+  parent: container
+  orig: 专职 206 篇 (全期 345 篇) · 深交所 0 监管问询
+  text: 专职 206 篇 (全期 345 篇) · 深交所 0 监管问询
+- key: s101
+  kind: block
+  tag: div
+  parent: container
+  orig: MARKET CAP PEAK
+  text: MARKET CAP PEAK
+- key: s102
+  kind: block
+  tag: div
+  parent: container
+  orig: 任期总市值峰值
+  text: 任期总市值峰值
+- key: s103
+  kind: block
+  tag: div
+  parent: container
+  orig: 132.2 <span>亿元</span>
+  text: 132.2 亿元
+- key: s104
+  kind: block
+  tag: div
+  parent: container
+  orig: 全周期 36 个月 · 较筑底 71.8 亿攀升 +84.2%
+  text: 全周期 36 个月 · 较筑底 71.8 亿攀升 +84.2%
+- key: s105
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: "\n                        <span class=\"chart-fig-num\">FIG. 01</span>\n                        <span class=\"chart-title\">总经办 19 期经营办公例会决策督办与分类按期销号台账</span>\n                    "
+  text: "\n                        FIG. 01\n                        总经办 19 期经营办公例会决策督办与分类按期销号台账\n                    "
+- key: s106
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: "\n                    <strong>数据来源</strong>：总经办经营例会督办与销号跟踪台账。统计覆盖全司重点工程履约、商务结算与清收、制度总纲建设、大区属地化扩张、采购供应链等 5 大核心业务板块，督办办结闭环率达 97.9%（下达 94 项，按期销号 92 项），体现总经办中枢决策执行闭环能力。\n                "
+  text: "\n                    **数据来源**：总经办经营例会督办与销号跟踪台账。统计覆盖全司重点工程履约、商务结算与清收、制度总纲建设、大区属地化扩张、采购供应链等 5 大核心业务板块，督办办结闭环率达 97.9%（下达 94 项，按期销号 92 项），体现总经办中枢决策执行闭环能力。\n                "
+- key: s107
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: "\n                        <span class=\"chart-fig-num\">FIG. 02</span>\n                        <span class=\"chart-title\">广田股份 2011-2014 季度收盘价与总市值演进全景时序 (2011.03 入职至 2014.02 调任)</span>\n                    "
+  text: "\n                        FIG. 02\n                        广田股份 2011-2014 季度收盘价与总市值演进全景时序 (2011.03 入职至 2014.02 调任)\n                    "
+- key: s108
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: "\n                    <strong>数据来源</strong>：深交所公开交易行情与法定披露公告档案。完整穿透 36 个月履职全景：从 2011Q1 入职总经办（105.2 亿）到宏观调控筑底（71.8 亿），再到转任证券部推进超募并购、首期期权行权破百亿（108.9 亿）、12 亿公司债上市挂牌，市值最高达 132.2 亿元，2014Q1 设立软装子公司后调任云软装筹办。\n                "
+  text: "\n                    **数据来源**：深交所公开交易行情与法定披露公告档案。完整穿透 36 个月履职全景：从 2011Q1 入职总经办（105.2 亿）到宏观调控筑底（71.8 亿），再到转任证券部推进超募并购、首期期权行权破百亿（108.9 亿）、12 亿公司债上市挂牌，市值最高达 132.2 亿元，2014Q1 设立软装子公司后调任云软装筹办。\n                "
+- key: s109
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: "\n                        <span class=\"chart-fig-num\">FIG. 03</span>\n                        <span class=\"chart-title\">证券事务部专职期间 206 篇官方公告构成与 0 监管问询合规质量 (2012.03-2014.02)</span>\n                    "
+  text: "\n                        FIG. 03\n                        证券事务部专职期间 206 篇官方公告构成与 0 监管问询合规质量 (2012.03-2014.02)\n                    "
+- key: s110
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: "\n                    <strong>数据来源</strong>：深交所官方披露公告档案与监管函件底账。专职操盘期间合规完成 206 篇公告（涵盖法定信披、三会决议、财报快报、股权激励、公司债及产业并购等），深交所监管问询函件 0 份、行政处罚 0 次，信息披露考核保持最高 A 级。\n                "
+  text: "\n                    **数据来源**：深交所官方披露公告档案与监管函件底账。专职操盘期间合规完成 206 篇公告（涵盖法定信披、三会决议、财报快报、股权激励、公司债及产业并购等），深交所监管问询函件 0 份、行政处罚 0 次，信息披露考核保持最高 A 级。\n                "
+- key: s111
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: "\n                        <span class=\"chart-fig-num\">FIG. 04</span>\n                        <span class=\"chart-title\">超募资金重大产业并购 (方特/成都华南) 与软装新设资本配置结构</span>\n                    "
+  text: "\n                        FIG. 04\n                        超募资金重大产业并购 (方特/成都华南) 与软装新设资本配置结构\n                    "
+- key: s112
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: "\n                    <strong>数据来源</strong>：深交所超募资金专项决议公告档案。累计高效配置超募资金 6.25 亿元：8,310 万元控股方特装饰 51%、4,896 万元控股成都华南 60%、3,000 万元全资设立软装子公司（筹备云软装）、6,013.6 万元购置广州商办、8,500 万元还贷优化杠杆、3.18 亿元投建绿色产业园与主营补流。\n                "
+  text: "\n                    **数据来源**：深交所超募资金专项决议公告档案。累计高效配置超募资金 6.25 亿元：8,310 万元控股方特装饰 51%、4,896 万元控股成都华南 60%、3,000 万元全资设立软装子公司（筹备云软装）、6,013.6 万元购置广州商办、8,500 万元还贷优化杠杆、3.18 亿元投建绿色产业园与主营补流。\n                "
+- key: s113
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 专业履职底账 · 55 大类发债底稿与第二届董事会历次三会闭环记录
+  text: 专业履职底账 · 55 大类发债底稿与第二届董事会历次三会闭环记录
+- key: s114
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: 1. 2013 公司债券 12 亿元发行 · 55 大类专业法律与财务尽职调查底稿分布 (部分精选)
+  text: 1. 2013 公司债券 12 亿元发行 · 55 大类专业法律与财务尽职调查底稿分布 (部分精选)
+- key: s115
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 模块编号
+  text: 模块编号
+- key: s116
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 尽调专业模块名称
+  text: 尽调专业模块名称
+- key: s117
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 核查具体内容与调查事项
+  text: 核查具体内容与调查事项
+- key: s118
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 交付标准与责任归口
+  text: 交付标准与责任归口
+- key: s119
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">MOD-01</span>
+  text: MOD-01
+- key: s120
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>主体资格与历史沿革</strong>
+  text: '**主体资格与历史沿革**'
+- key: s121
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 公司设立、历次变更企业法人营业执照、章程修正案、出资验资报告
+  text: 公司设立、历次变更企业法人营业执照、章程修正案、出资验资报告
+- key: s122
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 工商档案调档原件及律师见证 ｜ 董办(梁清波)
+  text: 工商档案调档原件及律师见证 ｜ 董办(梁清波)
+- key: s123
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">MOD-02</span>
+  text: MOD-02
+- key: s124
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>股权结构与实际控制人</strong>
+  text: '**股权结构与实际控制人**'
+- key: s125
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 公司股权控制关系拓扑图（追溯至叶远西先生）、前十大股东穿透核查
+  text: 公司股权控制关系拓扑图（追溯至叶远西先生）、前十大股东穿透核查
+- key: s126
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 中登公司持股名册及券商核对 ｜ 董办(梁清波)
+  text: 中登公司持股名册及券商核对 ｜ 董办(梁清波)
+- key: s127
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">MOD-03</span>
+  text: MOD-03
+- key: s128
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>资信与资质许可</strong>
+  text: '**资信与资质许可**'
+- key: s129
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 建筑装修装饰工程专业承包壹级、建筑幕墙设计与施工壹级资质证书有效性
+  text: 建筑装修装饰工程专业承包壹级、建筑幕墙设计与施工壹级资质证书有效性
+- key: s130
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 住建部/住建厅官方许可原件 ｜ 运营部/董办
+  text: 住建部/住建厅官方许可原件 ｜ 运营部/董办
+- key: s131
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">MOD-04</span>
+  text: MOD-04
+- key: s132
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>重大资产与土地房产</strong>
+  text: '**重大资产与土地房产**'
+- key: s133
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 全司办公物业、在建绿色装饰研发产业园土地使用权证、权属抵押核查
+  text: 全司办公物业、在建绿色装饰研发产业园土地使用权证、权属抵押核查
+- key: s134
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 不动产权属证书及银行他项权证明 ｜ 财务/董办
+  text: 不动产权属证书及银行他项权证明 ｜ 财务/董办
+- key: s135
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">MOD-05</span>
+  text: MOD-05
+- key: s136
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>重大商务合同履约</strong>
+  text: '**重大商务合同履约**'
+- key: s137
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 对其生产经营有重大影响的采购、施工总承包合同及回款执行履约记录
+  text: 对其生产经营有重大影响的采购、施工总承包合同及回款执行履约记录
+- key: s138
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 合同台账、发票与进场施工凭单 ｜ 法务部/董办
+  text: 合同台账、发票与进场施工凭单 ｜ 法务部/董办
+- key: s139
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">MOD-06</span>
+  text: MOD-06
+- key: s140
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>财税与纳税合规</strong>
+  text: '**财税与纳税合规**'
+- key: s141
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 近三年纳税申报表、完税凭证、享受高新技术企业 15% 所得税优惠批复
+  text: 近三年纳税申报表、完税凭证、享受高新技术企业 15% 所得税优惠批复
+- key: s142
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 税务局官方出具无违规完税证明 ｜ 财务中心
+  text: 税务局官方出具无违规完税证明 ｜ 财务中心
+- key: s143
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span class="code-pill">MOD-07</span>
+  text: MOD-07
+- key: s144
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>诉讼与行政处罚</strong>
+  text: '**诉讼与行政处罚**'
+- key: s145
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 涉及涉案金额 50 万元以上未结重大诉讼、仲裁及行政处罚全面排查
+  text: 涉及涉案金额 50 万元以上未结重大诉讼、仲裁及行政处罚全面排查
+- key: s146
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 全国法院被执行人查询及律师函件 ｜ 法务合规部
+  text: 全国法院被执行人查询及律师函件 ｜ 法务合规部
+- key: s147
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: 2. 第二届董事会历次核心会议法定审议闭环台账 (2012-2013 全景实证)
+  text: 2. 第二届董事会历次核心会议法定审议闭环台账 (2012-2013 全景实证)
+- key: s148
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 会议届次与日期
+  text: 会议届次与日期
+- key: s149
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 审议核心重大议案
+  text: 审议核心重大议案
+- key: s150
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 独立董事与中介机构意见
+  text: 独立董事与中介机构意见
+- key: s151
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 合规状态与法定公告
+  text: 合规状态与法定公告
+- key: s152
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong>第二届第十次会议</strong><br/>\n                        <span class=\"code-pill\">2012-04-24</span>\n                    "
+  text: "\n                        **第二届第十次会议**\n\n                        2012-04-24\n                    "
+- key: s153
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 审议使用超募资金 4,896 万元收购成都华南装饰 60% 股权、2011 年年度报告
+  text: 审议使用超募资金 4,896 万元收购成都华南装饰 60% 股权、2011 年年度报告
+- key: s154
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 马挺贵、魏达志独董书面同意；财富里昂保荐意见；中伦法律意见书
+  text: 马挺贵、魏达志独董书面同意；财富里昂保荐意见；中伦法律意见书
+- key: s155
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 知情人保密登记；深交所决议公告及 13 项法定附件归档
+  text: 知情人保密登记；深交所决议公告及 13 项法定附件归档
+- key: s156
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong>第二届第十二次会议</strong><br/>\n                        <span class=\"code-pill\">2012-06-19</span>\n                    "
+  text: "\n                        **第二届第十二次会议**\n\n                        2012-06-19\n                    "
+- key: s157
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 审议关于调整股票期权激励计划期权数量和行权价格、向兴业银行申请综合授信
+  text: 审议关于调整股票期权激励计划期权数量和行权价格、向兴业银行申请综合授信
+- key: s158
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 独董出具期权调整意见；北京市君合律师事务所出具专项核查意见
+  text: 独董出具期权调整意见；北京市君合律师事务所出具专项核查意见
+- key: s159
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 罗岸丰/范志全计票，赵波监票；会议原件全套封包
+  text: 罗岸丰/范志全计票，赵波监票；会议原件全套封包
+- key: s160
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong>第二届第十五次会议</strong><br/>\n                        <span class=\"code-pill\">2012-09-28</span>\n                    "
+  text: "\n                        **第二届第十五次会议**\n\n                        2012-09-28\n                    "
+- key: s161
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 审议使用超募资金 8,310 万元收购深圳市方特装饰工程有限公司 51% 股权
+  text: 审议使用超募资金 8,310 万元收购深圳市方特装饰工程有限公司 51% 股权
+- key: s162
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 马挺贵、魏达志、王红兵独董同意；国浩律所法律意见与资产评估报告
+  text: 马挺贵、魏达志、王红兵独董同意；国浩律所法律意见与资产评估报告
+- key: s163
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 全案知情人内幕交易自查 0 违规；高效完成工商变更与公告
+  text: 全案知情人内幕交易自查 0 违规；高效完成工商变更与公告
+- key: s164
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong>第二届第十七次会议</strong><br/>\n                        <span class=\"code-pill\">2012-12-04</span>\n                    "
+  text: "\n                        **第二届第十七次会议**\n\n                        2012-12-04\n                    "
+- key: s165
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 审议首期股票期权激励首次行权条件成就并办理行权手续（1,113.6 万股）
+  text: 审议首期股票期权激励首次行权条件成就并办理行权手续（1,113.6 万股）
+- key: s166
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 薪酬委员会及独董书面同意；上海荣正财务顾问报告；中伦律所意见
+  text: 薪酬委员会及独董书面同意；上海荣正财务顾问报告；中伦律所意见
+- key: s167
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 监管 2.28 亿行权资金；中登公司办理过户；市值跨越百亿
+  text: 监管 2.28 亿行权资金；中登公司办理过户；市值跨越百亿
+- key: s168
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong>第二届第十八次会议</strong><br/>\n                        <span class=\"code-pill\">2013-01-09</span>\n                    "
+  text: "\n                        **第二届第十八次会议**\n\n                        2013-01-09\n                    "
+- key: s169
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 审议关于公开发行不超过 12 亿元公司债券方案及召开临时股东大会
+  text: 审议关于公开发行不超过 12 亿元公司债券方案及召开临时股东大会
+- key: s170
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 独立董事出具发行公司债券专项意见；国金/平安保荐机构专项核查
+  text: 独立董事出具发行公司债券专项意见；国金/平安保荐机构专项核查
+- key: s171
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 逐项全票表决通过；发债内幕知情人保密登记；深交所挂牌公告
+  text: 逐项全票表决通过；发债内幕知情人保密登记；深交所挂牌公告
+- key: s172
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong>第二届第二十次会议</strong><br/>\n                        <span class=\"code-pill\">2013-04-24</span>\n                    "
+  text: "\n                        **第二届第二十次会议**\n\n                        2013-04-24\n                    "
+- key: s173
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 审议 2012 年度报告全文及摘要、内部控制自我评价报告、利润分配预案
+  text: 审议 2012 年度报告全文及摘要、内部控制自我评价报告、利润分配预案
+- key: s174
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 独立董事发表综合意见；天职国际标准无保留审计报告；中伦核查
+  text: 独立董事发表综合意见；天职国际标准无保留审计报告；中伦核查
+- key: s175
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 窗口期董监高股票锁定自查；获深交所中小板年报信披 A 级评级
+  text: 窗口期董监高股票锁定自查；获深交所中小板年报信披 A 级评级
+- key: s176
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong>第二届第二十二次会议</strong><br/>\n                        <span class=\"code-pill\">2013-08-07</span>\n                    "
+  text: "\n                        **第二届第二十二次会议**\n\n                        2013-08-07\n                    "
+- key: s177
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 审议 2013 年半年度报告全文及摘要、募集资金存放与实际使用情况专项报告
+  text: 审议 2013 年半年度报告全文及摘要、募集资金存放与实际使用情况专项报告
+- key: s178
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 独立董事对资金占用出具专项意见；国金证券保荐机构募集资金专项核查
+  text: 独立董事对资金占用出具专项意见；国金证券保荐机构募集资金专项核查
+- key: s179
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 深交所半年度信披规范披露；12 亿公司债发行后首期募集资金专项合规
+  text: 深交所半年度信披规范披露；12 亿公司债发行后首期募集资金专项合规
+- key: s180
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong>第二届第二十四次会议</strong><br/>\n                        <span class=\"code-pill\">2013-11-25</span>\n                    "
+  text: "\n                        **第二届第二十四次会议**\n\n                        2013-11-25\n                    "
+- key: s181
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 审议使用部分超募资金设立软装公司、股票期权第二期行权、与恒大续签战略合作
+  text: 审议使用部分超募资金设立软装公司、股票期权第二期行权、与恒大续签战略合作
+- key: s182
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 独立董事出具书面同意意见；财富里昂证券保荐核查意见；中伦律所法律意见书
+  text: 独立董事出具书面同意意见；财富里昂证券保荐核查意见；中伦律所法律意见书
+- key: s183
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 软装业务独立法人孵化获批；确立 2014.02 梁清波调任筹办云软装的法定根基
+  text: 软装业务独立法人孵化获批；确立 2014.02 梁清波调任筹办云软装的法定根基
+- key: s184
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong>第二届第二十六次会议</strong><br/>\n                        <span class=\"code-pill\">2013-12-27</span>\n                    "
+  text: "\n                        **第二届第二十六次会议**\n\n                        2013-12-27\n                    "
+- key: s185
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 审议使用超募资金收购深圳市新华丰生态环境发展有限公司 51% 股权
+  text: 审议使用超募资金收购深圳市新华丰生态环境发展有限公司 51% 股权
+- key: s186
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 独董发表书面独立意见；财富里昂保荐核查；国浩律所见证与资产评估报告
+  text: 独董发表书面独立意见；财富里昂保荐核查；国浩律所见证与资产评估报告
+- key: s187
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 超募并购生态版图扩展；内幕知情人全案严密登记备查；深交所法定公告封包
+  text: 超募并购生态版图扩展；内幕知情人全案严密登记备查；深交所法定公告封包
+- key: s188
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong>软装落地与自主行权</strong><br/>\n                        <span class=\"code-pill\">2014-01-18 ~ 01-22</span>\n                    "
+  text: "\n                        **软装落地与自主行权**\n\n                        2014-01-18 ~ 01-22\n                    "
+- key: s189
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 全资子公司深圳市广田软装艺术有限公司完成工商登记信披；第二期期权自主行权提示
+  text: 全资子公司深圳市广田软装艺术有限公司完成工商登记信披；第二期期权自主行权提示
+- key: s190
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 深圳市市场监管局核准执照；深交所业务专区首批“自主行权模式”系统对接
+  text: 深圳市市场监管局核准执照；深交所业务专区首批“自主行权模式”系统对接
+- key: s191
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 办结全套公告后，梁清波于 2014 年 2 月正式调任奔赴云软装，开启 10 年软装大盘操盘
+  text: 办结全套公告后，梁清波于 2014 年 2 月正式调任奔赴云软装，开启 10 年软装大盘操盘
+- key: s192
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            <span>ARCHIVAL DOSSIER · PRJ-CORP-GOV-2014 · 董办合规与经营治理实证档案</span>\n        "
+  text: "\n            ARCHIVAL DOSSIER · PRJ-CORP-GOV-2014 · 董办合规与经营治理实证档案\n        "
+- key: s193
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            2026 商业专案库归档\n        "
+  text: "\n            2026 商业专案库归档\n        "

@@ -1,0 +1,1154 @@
+# 文字真源：monographs/湄潭项目全生命周期数据洞察研报.html
+# 单一真源铁律：改此文件 text -> build_monographs_from_yaml.py 回填外壳，禁止手改 monographs/*.html
+meta:
+  source_file: monographs/湄潭项目全生命周期数据洞察研报.html
+  slug: 湄潭项目全生命周期数据洞察研报
+  title: 湄潭项目全生命周期数据洞察研报 ｜ 梁清波 商业专案库
+  hash: cb49b8844df4a52474804976006ac95cb1af58ca5e6c28d73d2fbd66bebf3ce2
+slots:
+- key: s00
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            <a href=\"javascript:void(0)\" onclick=\"returnToParentMonograph()\" class=\"nav-back-btn\" style=\"padding:4px 10px;\">\n                ‹ 返回云软装大盘\n            </a>\n            <span class=\"nav-brand-code\">PRJ-MEITAN-2016</span>\n            <span class=\"eyebrow-sep\" style=\"color:var(--border-strong);margin:0 4px;\">/</span>\n            <span class=\"nav-brand-title\">湄潭项目全生命周期数据洞察研报</span>\n        "
+  text: "\n            \n                ‹ 返回云软装大盘\n            \n            PRJ-MEITAN-2016\n            /\n            湄潭项目全生命周期数据洞察研报\n        "
+- key: s01
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#dossier">§ I 操盘实录</a>
+  text: § I 操盘实录
+- key: s02
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#dashboard">§ II 经营看板</a>
+  text: § II 经营看板
+- key: s03
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#spatial-asset-dashboard">§ III 空间资产</a>
+  text: § III 空间资产
+- key: s04
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            <span>ARCHIVAL MONOGRAPH</span>\n            <span class=\"eyebrow-sep\">/</span>\n            <span>PRJ-MEITAN-2016</span>\n            <span class=\"eyebrow-sep\">/</span>\n            <span>ZUNYI MEIJIANG HOT SPRING RESORT HOTEL</span>\n        "
+  text: "\n            ARCHIVAL MONOGRAPH\n            /\n            PRJ-MEITAN-2016\n            /\n            ZUNYI MEIJIANG HOT SPRING RESORT HOTEL\n        "
+- key: s05
+  kind: section-title
+  tag: h1
+  parent: container
+  orig: 湄潭项目全生命周期数据洞察研报
+  text: 湄潭项目全生命周期数据洞察研报
+- key: s06
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            贵州遵义标杆五星级文旅温泉度假酒店群 · 17,241 ㎡ 室内空间总承包、四轨博弈定价、47 ㎡ 样板先行集采降本与 2,570 万现金回款闭环纪实\n        "
+  text: "\n            贵州遵义标杆五星级文旅温泉度假酒店群 · 17,241 ㎡ 室内空间总承包、四轨博弈定价、47 ㎡ 样板先行集采降本与 2,570 万现金回款闭环纪实\n        "
+- key: s07
+  kind: block
+  tag: div
+  parent: container
+  orig: 操盘模式与主体
+  text: 操盘模式与主体
+- key: s08
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 国资发包 <span>/ 四局总包</span>
+  text: 国资发包 / 四局总包
+- key: s09
+  kind: block
+  tag: div
+  parent: container
+  orig: 广田专业承包（梁清波 采销总控）
+  text: 广田专业承包（梁清波 采销总控）
+- key: s10
+  kind: block
+  tag: div
+  parent: container
+  orig: 送审与审定总额
+  text: 送审与审定总额
+- key: s11
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 2,798.5 ➔ 2,650 <span>万</span>
+  text: 2,798.5 ➔ 2,650 万
+- key: s12
+  kind: block
+  tag: div
+  parent: container
+  orig: 送审2798.5万 / 审减仅 5.31%
+  text: 送审2798.5万 / 审减仅 5.31%
+- key: s13
+  kind: block
+  tag: div
+  parent: container
+  orig: 激光实测面积定额
+  text: 激光实测面积定额
+- key: s14
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 17,241 <span>㎡</span>
+  text: 17,241 ㎡
+- key: s15
+  kind: block
+  tag: div
+  parent: container
+  orig: 五星级度假酒店 1,537 元/㎡
+  text: 五星级度假酒店 1,537 元/㎡
+- key: s16
+  kind: block
+  tag: div
+  parent: container
+  orig: 综合经营毛利锁定
+  text: 综合经营毛利锁定
+- key: s17
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 约 28.5% <span>毛利率</span>
+  text: 约 28.5% 毛利率
+- key: s18
+  kind: block
+  tag: div
+  parent: container
+  orig: 扣除中建四局 12% 配合费后
+  text: 扣除中建四局 12% 配合费后
+- key: s19
+  kind: block
+  tag: div
+  parent: container
+  orig: 最终结算现金回款
+  text: 最终结算现金回款
+- key: s20
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 2,570.50 <span>万元</span>
+  text: 2,570.50 万元
+- key: s21
+  kind: block
+  tag: div
+  parent: container
+  orig: 97% 节点 / 现金达成率 100%
+  text: 97% 节点 / 现金达成率 100%
+- key: s22
+  kind: block
+  tag: div
+  parent: container
+  orig: 总工期与大货摆场
+  text: 总工期与大货摆场
+- key: s23
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 91 天 <span>/ 集中 20 天</span>
+  text: 91 天 / 集中 20 天
+- key: s24
+  kind: block
+  tag: div
+  parent: container
+  orig: 样板先行 / 跨省干线物流倒排
+  text: 样板先行 / 跨省干线物流倒排
+- key: s25
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 商业操盘与履约风控实录
+  text: 商业操盘与履约风控实录
+- key: s26
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            基于施工分包合同原件、竣工结算报告第一册与多轮四轨调价底账，系统还原商业操盘的完整闭环。\n        "
+  text: "\n            基于施工分包合同原件、竣工结算报告第一册与多轮四轨调价底账，系统还原商业操盘的完整闭环。\n        "
+- key: s27
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 管控维度
+  text: 管控维度
+- key: s28
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 关键事实与核心数据
+  text: 关键事实与核心数据
+- key: s29
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 业务背景与商业管控重点
+  text: 业务背景与商业管控重点
+- key: s30
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 发包业主主体
+  text: 发包业主主体
+- key: s31
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>遵义市通途公路建设投资有限公司</strong>
+  text: '**遵义市通途公路建设投资有限公司**'
+- key: s32
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 遵义市国资重点文旅平台，承担湄江温泉旅游度假区整体开发建设。
+  text: 遵义市国资重点文旅平台，承担湄江温泉旅游度假区整体开发建设。
+- key: s33
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 总包与配合费
+  text: 总包与配合费
+- key: s34
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>中建四局第三建筑工程有限公司</strong>（配合费 12%）
+  text: '**中建四局第三建筑工程有限公司**（配合费 12%）'
+- key: s35
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 中建四局总承包，广田专业承包；合同约定向总包支付 12% 配合费，商务测算前置预留利差空间。
+  text: 中建四局总承包，广田专业承包；合同约定向总包支付 12% 配合费，商务测算前置预留利差空间。
+- key: s36
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 送审与审定确权
+  text: 送审与审定确权
+- key: s37
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>送审 2,798.50 万 ➔ 审定 2,650.00 万</strong>（审减率仅 5.31%）
+  text: '**送审 2,798.50 万 ➔ 审定 2,650.00 万**（审减率仅 5.31%）'
+- key: s38
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 包含包干金额 2,686.20 万元与现场签证 112.30 万元；多轮审计抗辩审减仅 148.5 万元，实现行业顶尖防御效果。
+  text: 包含包干金额 2,686.20 万元与现场签证 112.30 万元；多轮审计抗辩审减仅 148.5 万元，实现行业顶尖防御效果。
+- key: s39
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 实收现金与达成
+  text: 实收现金与达成
+- key: s40
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>实收现金 2,570.50 万元</strong>（合同结算 97% 节点达成率 100%）
+  text: '**实收现金 2,570.50 万元**（合同结算 97% 节点达成率 100%）'
+- key: s41
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 严格按 30% 预付 + 80% 形象进度 + 85% 竣工 + 97% 结算执行，余 3% (79.5万) 为质保金。
+  text: 严格按 30% 预付 + 80% 形象进度 + 85% 竣工 + 97% 结算执行，余 3% (79.5万) 为质保金。
+- key: s42
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 空间体量定额
+  text: 空间体量定额
+- key: s43
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>实测面积 17,241 ㎡ · 综合单方 1,537 元/㎡</strong>
+  text: '**实测面积 17,241 ㎡ · 综合单方 1,537 元/㎡**'
+- key: s44
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 全案 10 大功能区域激光实测闭环，单方造价 1,537 元/㎡，高度符合国内五星级温泉度假酒店投资定额。
+  text: 全案 10 大功能区域激光实测闭环，单方造价 1,537 元/㎡，高度符合国内五星级温泉度假酒店投资定额。
+- key: s45
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 工期与极速抢工
+  text: 工期与极速抢工
+- key: s46
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>总工期 91 天 · 集中进场 20 天高效摆场</strong>
+  text: '**总工期 91 天 · 集中进场 20 天高效摆场**'
+- key: s47
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 47 ㎡ 样板房先行封样，珠三角产业集群批量排产，大货 20 天内极速进场摆场就位，确保盛大开业。
+  text: 47 ㎡ 样板房先行封样，珠三角产业集群批量排产，大货 20 天内极速进场摆场就位，确保盛大开业。
+- key: s48
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: § 1 四轨定价策略与利差锁定
+  text: § 1 四轨定价策略与利差锁定
+- key: s49
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>四轨价格模型构建</strong>：系统建立出厂基准裸价、内部控制预算、商务谈判底限、正式报审报价四轨机制；
+  text: '**四轨价格模型构建**：系统建立出厂基准裸价、内部控制预算、商务谈判底限、正式报审报价四轨机制；'
+- key: s50
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>前置预留配合费空间</strong>：将中建四局 12% 配合费与税费刚性计入模型，确保多轮压价拉锯后仍锁定 28.5% 综合经营毛利；
+  text: '**前置预留配合费空间**：将中建四局 12% 配合费与税费刚性计入模型，确保多轮压价拉锯后仍锁定 28.5% 综合经营毛利；'
+- key: s51
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>品类差异化溢价策略</strong>：艺术品与高定家具高毛利防守，标品灯具与布艺规模走量，实现结构性利差平衡。
+  text: '**品类差异化溢价策略**：艺术品与高定家具高毛利防守，标品灯具与布艺规模走量，实现结构性利差平衡。'
+- key: s52
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: § 2 样板先行与规模集采降本
+  text: § 2 样板先行与规模集采降本
+- key: s53
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>47 ㎡ 豪华套房先行封样</strong>：以典型客房为突破口，提前打样封样，锁定面料阻燃、漆面封闭度及五金标准；
+  text: '**47 ㎡ 豪华套房先行封样**：以典型客房为突破口，提前打样封样，锁定面料阻燃、漆面封闭度及五金标准；'
+- key: s54
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>规模集采撬动让利</strong>：以封样标准为基准，向珠三角源头工厂批量发包，平均降本幅度达 32.8%（沙发降 36.1%、书桌降 34.4%）；
+  text: '**规模集采撬动让利**：以封样标准为基准，向珠三角源头工厂批量发包，平均降本幅度达 32.8%（沙发降 36.1%、书桌降 34.4%）；'
+- key: s55
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>白胚飞检源头把关</strong>：亲赴工厂白胚飞检，规避进场返工风险，实现批量大货一次性验收通过。
+  text: '**白胚飞检源头把关**：亲赴工厂白胚飞检，规避进场返工风险，实现批量大货一次性验收通过。'
+- key: s56
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: § 3 现场签证 112.3 万审计证据链
+  text: § 3 现场签证 112.3 万审计证据链
+- key: s57
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>三批次签证严密归档</strong>：针对 A2 会见厅增设沙发(27.1万)、专议11号改床(6.6万)、XMB-128总套变更(78.5万)建立完整卷宗；
+  text: '**三批次签证严密归档**：针对 A2 会见厅增设沙发(27.1万)、专议11号改床(6.6万)、XMB-128总套变更(78.5万)建立完整卷宗；'
+- key: s58
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>政府与国资纪要为据</strong>：所有增项均取得政府联系单与通途酒店会议纪要盖章签字，实现变更 100% 留痕；
+  text: '**政府与国资纪要为据**：所有增项均取得政府联系单与通途酒店会议纪要盖章签字，实现变更 100% 留痕；'
+- key: s59
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>冲抵造价审减防线</strong>：在多轮第三方审计中据理力争，以 112.3 万元全额核准增项有效冲抵合同包干审减，锁定 2,650 万元审定大盘。
+  text: '**冲抵造价审减防线**：在多轮第三方审计中据理力争，以 112.3 万元全额核准增项有效冲抵合同包干审减，锁定 2,650 万元审定大盘。'
+- key: s60
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: § 4 资金链条闭环与现金流保障
+  text: § 4 资金链条闭环与现金流保障
+- key: s61
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>严格节点确权收款</strong>：狠抓 30% 预付款与 80% 出货进度款，确保出货前覆盖工厂采购直接成本，实现零垫资；
+  text: '**严格节点确权收款**：狠抓 30% 预付款与 80% 出货进度款，确保出货前覆盖工厂采购直接成本，实现零垫资；'
+- key: s62
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>结算款 97% 刚性回笼</strong>：竣工验收后以审计终审报告为依托，迅速锁定 2,570.50 万元现金到账，回款达成率 100%；
+  text: '**结算款 97% 刚性回笼**：竣工验收后以审计终审报告为依托，迅速锁定 2,570.50 万元现金到账，回款达成率 100%；'
+- key: s63
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>总包配合费合规核销</strong>：与中建四局合规清算 318 万元配合费，账实相符，全面终结潜在经济与法务纠纷。
+  text: '**总包配合费合规核销**：与中建四局合规清算 318 万元配合费，账实相符，全面终结潜在经济与法务纠纷。'
+- key: s64
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 项目经营结算与资金闭环看板
+  text: 项目经营结算与资金闭环看板
+- key: s65
+  kind: block
+  tag: div
+  parent: container
+  orig: SUBMITTED SUM
+  text: SUBMITTED SUM
+- key: s66
+  kind: block
+  tag: div
+  parent: container
+  orig: 报审送审总造价
+  text: 报审送审总造价
+- key: s67
+  kind: block
+  tag: div
+  parent: container
+  orig: 2,798.5 <span>万</span>
+  text: 2,798.5 万
+- key: s68
+  kind: block
+  tag: div
+  parent: container
+  orig: 包干 2686.2万 + 签证 112.3万
+  text: 包干 2686.2万 + 签证 112.3万
+- key: s69
+  kind: block
+  tag: div
+  parent: container
+  orig: AUDITED SUM
+  text: AUDITED SUM
+- key: s70
+  kind: block
+  tag: div
+  parent: container
+  orig: 最终审定总额
+  text: 最终审定总额
+- key: s71
+  kind: block
+  tag: div
+  parent: container
+  orig: 2,650.0 <span>万</span>
+  text: 2,650.0 万
+- key: s72
+  kind: block
+  tag: div
+  parent: container
+  orig: 审减率仅 5.31% 防御极佳
+  text: 审减率仅 5.31% 防御极佳
+- key: s73
+  kind: block
+  tag: div
+  parent: container
+  orig: CASH INFLOW
+  text: CASH INFLOW
+- key: s74
+  kind: block
+  tag: div
+  parent: container
+  orig: 最终实收现金
+  text: 最终实收现金
+- key: s75
+  kind: block
+  tag: div
+  parent: container
+  orig: 2,570.5 <span>万</span>
+  text: 2,570.5 万
+- key: s76
+  kind: block
+  tag: div
+  parent: container
+  orig: 97% 结算款达成率 100%
+  text: 97% 结算款达成率 100%
+- key: s77
+  kind: block
+  tag: div
+  parent: container
+  orig: OPERATING MARGIN
+  text: OPERATING MARGIN
+- key: s78
+  kind: block
+  tag: div
+  parent: container
+  orig: 综合经营毛利
+  text: 综合经营毛利
+- key: s79
+  kind: block
+  tag: div
+  parent: container
+  orig: 28.5 <span>%</span>
+  text: 28.5 %
+- key: s80
+  kind: block
+  tag: div
+  parent: container
+  orig: 扣减中建四局 12% 配合费后
+  text: 扣减中建四局 12% 配合费后
+- key: s81
+  kind: block
+  tag: div
+  parent: container
+  orig: MEASURED AREA
+  text: MEASURED AREA
+- key: s82
+  kind: block
+  tag: div
+  parent: container
+  orig: 激光实测面积
+  text: 激光实测面积
+- key: s83
+  kind: block
+  tag: div
+  parent: container
+  orig: 17,241 <span>㎡</span>
+  text: 17,241 ㎡
+- key: s84
+  kind: block
+  tag: div
+  parent: container
+  orig: 包干综合单方 1,537 元/㎡
+  text: 包干综合单方 1,537 元/㎡
+- key: s85
+  kind: block
+  tag: div
+  parent: container
+  orig: ASSET INVENTORY
+  text: ASSET INVENTORY
+- key: s86
+  kind: block
+  tag: div
+  parent: container
+  orig: 合同发包采购量
+  text: 合同发包采购量
+- key: s87
+  kind: block
+  tag: div
+  parent: container
+  orig: 12,850 <span>件(套)</span>
+  text: 12,850 件(套)
+- key: s88
+  kind: block
+  tag: div
+  parent: container
+  orig: 449 行 BOM · 含全案家具及配套布艺饰品
+  text: 449 行 BOM · 含全案家具及配套布艺饰品
+- key: s89
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 18 大品类四轨价格博弈阶梯 (万元)
+  text: 18 大品类四轨价格博弈阶梯 (万元)
+- key: s90
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 样板房先行 vs 大货批量采购降本幅度 (%)
+  text: 样板房先行 vs 大货批量采购降本幅度 (%)
+- key: s91
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 2,798 万全案资金流动网络桑基图 (万元)
+  text: 2,798 万全案资金流动网络桑基图 (万元)
+- key: s92
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 千万级工程商业履约与综合治理六维雷达
+  text: 千万级工程商业履约与综合治理六维雷达
+- key: s93
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 合同现金流履约五阶里程碑与核销阶梯瀑布
+  text: 合同现金流履约五阶里程碑与核销阶梯瀑布
+- key: s94
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 现场签证 112.3 万元三大批次成因归因与审计证据链
+  text: 现场签证 112.3 万元三大批次成因归因与审计证据链
+- key: s95
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 批次
+  text: 批次
+- key: s96
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 凭证编号
+  text: 凭证编号
+- key: s97
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 指令依据与变更成因
+  text: 指令依据与变更成因
+- key: s98
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 现场签证主要内容
+  text: 现场签证主要内容
+- key: s99
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 送审(万)
+  text: 送审(万)
+- key: s100
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 审计结论
+  text: 审计结论
+- key: s101
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>01</strong>
+  text: '**01**'
+- key: s102
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span style="font-family:var(--font-mono); font-weight:700; color:var(--accent-navy);">XMB-39</span>
+  text: XMB-39
+- key: s103
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 市委市政府及县政府提出的意见
+  text: 市委市政府及县政府提出的意见
+- key: s104
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: A2 会见厅增加 12 张沙发和 12 张方几
+  text: A2 会见厅增加 12 张沙发和 12 张方几
+- key: s105
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '27.13'
+  text: '27.13'
+- key: s106
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span style="padding:1px 5px; background:#edf5ee; color:#2a4c38; font-weight:700; font-size:11px; border-radius:2px;">全额确认</span>
+  text: 全额确认
+- key: s107
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>02</strong>
+  text: '**02**'
+- key: s108
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span style="font-family:var(--font-mono); font-weight:700; color:var(--accent-navy);">专议11号</span>
+  text: 专议11号
+- key: s109
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 通途酒店专议[2016]11号会议要求
+  text: 通途酒店专议[2016]11号会议要求
+- key: s110
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: A1/A2 两套房改床；三联套户外新增茶托、阳伞、书架等
+  text: A1/A2 两套房改床；三联套户外新增茶托、阳伞、书架等
+- key: s111
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '6.65'
+  text: '6.65'
+- key: s112
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span style="padding:1px 5px; background:#edf5ee; color:#2a4c38; font-weight:700; font-size:11px; border-radius:2px;">全额确认</span>
+  text: 全额确认
+- key: s113
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>03</strong>
+  text: '**03**'
+- key: s114
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span style="font-family:var(--font-mono); font-weight:700; color:var(--accent-navy);">XMB-128</span>
+  text: XMB-128
+- key: s115
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 市政府领导与业主通途公司要求
+  text: 市政府领导与业主通途公司要求
+- key: s116
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 增换总套书桌、中餐包房餐桌、手动改电动窗帘、泡池加窗帘
+  text: 增换总套书桌、中餐包房餐桌、手动改电动窗帘、泡池加窗帘
+- key: s117
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '78.52'
+  text: '78.52'
+- key: s118
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <span style="padding:1px 5px; background:#edf5ee; color:#2a4c38; font-weight:700; font-size:11px; border-radius:2px;">全额确认</span>
+  text: 全额确认
+- key: s119
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>现场签证增补送审总额合计</strong>
+  text: '**现场签证增补送审总额合计**'
+- key: s120
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '112.30'
+  text: '112.30'
+- key: s121
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 全额核准
+  text: 全额核准
+- key: s122
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 空间资产数据看板与现场交付明细
+  text: 空间资产数据看板与现场交付明细
+- key: s123
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            按“空间边界 → 价值配置 → 资产结构 → 交付证据”组织；BOM 明细金额与结算送审金额清晰分离。\n        "
+  text: "\n            按“空间边界 → 价值配置 → 资产结构 → 交付证据”组织；BOM 明细金额与结算送审金额清晰分离。\n        "
+- key: s124
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 10 大主要区域包干结算造价分布 (万元)
+  text: 10 大主要区域包干结算造价分布 (万元)
+- key: s125
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 公区 vs 客房业态造价投资双环嵌套结构 (%)
+  text: 公区 vs 客房业态造价投资双环嵌套结构 (%)
+- key: s126
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 全案五大软装核心品类造价与工程量双轴全景
+  text: 全案五大软装核心品类造价与工程量双轴全景
+- key: s127
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 79 款大货家具出货摆场空间落位分布排行 (件)
+  text: 79 款大货家具出货摆场空间落位分布排行 (件)
+- key: s128
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 10 大功能区域激光实测面积与包干明细 (17,241.36 ㎡ 实测底账)
+  text: 10 大功能区域激光实测面积与包干明细 (17,241.36 ㎡ 实测底账)
+- key: s129
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 功能空间区域
+  text: 功能空间区域
+- key: s130
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 实测建筑面积 (㎡)
+  text: 实测建筑面积 (㎡)
+- key: s131
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 包干综合单价 (元)
+  text: 包干综合单价 (元)
+- key: s132
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 报审合价 (万元)
+  text: 报审合价 (万元)
+- key: s133
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 商业定位与主要配置
+  text: 商业定位与主要配置
+- key: s134
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>A2 栋一层 (大堂/西餐/汤屋)</strong>
+  text: '**A2 栋一层 (大堂/西餐/汤屋)**'
+- key: s135
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 5,043.12
+  text: 5,043.12
+- key: s136
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 1,558.00
+  text: 1,558.00
+- key: s137
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '785.72'
+  text: '785.72'
+- key: s138
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 大堂前厅挑空艺术大吊灯、接待总台、全日制西餐厅桌椅、温泉前台
+  text: 大堂前厅挑空艺术大吊灯、接待总台、全日制西餐厅桌椅、温泉前台
+- key: s139
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>A2 栋二层 (中餐厅/包厢)</strong>
+  text: '**A2 栋二层 (中餐厅/包厢)**'
+- key: s140
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 2,914.00
+  text: 2,914.00
+- key: s141
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 1,558.00
+  text: 1,558.00
+- key: s142
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '454.00'
+  text: '454.00'
+- key: s143
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 中餐散座宴会桌椅、高档餐饮豪华贵宾包间定制家具、艺术挂画
+  text: 中餐散座宴会桌椅、高档餐饮豪华贵宾包间定制家具、艺术挂画
+- key: s144
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>A2 栋三层 (会议中心/客房)</strong>
+  text: '**A2 栋三层 (会议中心/客房)**'
+- key: s145
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 1,858.00
+  text: 1,858.00
+- key: s146
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 1,558.00
+  text: 1,558.00
+- key: s147
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '289.48'
+  text: '289.48'
+- key: s148
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 多功能会议大厅会议桌椅、宴会布草、无柱式多媒体影音厅地毯
+  text: 多功能会议大厅会议桌椅、宴会布草、无柱式多媒体影音厅地毯
+- key: s149
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>A2 栋四层 (豪华套房区)</strong>
+  text: '**A2 栋四层 (豪华套房区)**'
+- key: s150
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 1,422.00
+  text: 1,422.00
+- key: s151
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 1,558.00
+  text: 1,558.00
+- key: s152
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '221.55'
+  text: '221.55'
+- key: s153
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 豪华套房客厅定制沙发组、茶几、高档书桌椅、定织羊毛印花地毯
+  text: 豪华套房客厅定制沙发组、茶几、高档书桌椅、定织羊毛印花地毯
+- key: s154
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>A2 栋五层 (总统套房与行政区)</strong>
+  text: '**A2 栋五层 (总统套房与行政区)**'
+- key: s155
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 1,422.00
+  text: 1,422.00
+- key: s156
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 1,558.00
+  text: 1,558.00
+- key: s157
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '221.55'
+  text: '221.55'
+- key: s158
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 总统套房高定奢华家具组、行政接待专用实木办公桌、全手工纯毛地毯
+  text: 总统套房高定奢华家具组、行政接待专用实木办公桌、全手工纯毛地毯
+- key: s159
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>A2 负一层温泉泳池区</strong>
+  text: '**A2 负一层温泉泳池区**'
+- key: s160
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 1,001.16
+  text: 1,001.16
+- key: s161
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 1,558.00
+  text: 1,558.00
+- key: s162
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '155.98'
+  text: '155.98'
+- key: s163
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 室内温泉汤池耐水防潮躺椅、户外遮阳伞、休闲茶几、防腐木置物架
+  text: 室内温泉汤池耐水防潮躺椅、户外遮阳伞、休闲茶几、防腐木置物架
+- key: s164
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>A2 二联套二层</strong>
+  text: '**A2 二联套二层**'
+- key: s165
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '992.76'
+  text: '992.76'
+- key: s166
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 1,558.00
+  text: 1,558.00
+- key: s167
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '154.67'
+  text: '154.67'
+- key: s168
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 联排度假套房卧房组家具、定制床头柜、遮光阻燃窗帘及挂画
+  text: 联排度假套房卧房组家具、定制床头柜、遮光阻燃窗帘及挂画
+- key: s169
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>A1 栋二层 (标准客房区)</strong>
+  text: '**A1 栋二层 (标准客房区)**'
+- key: s170
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '959.33'
+  text: '959.33'
+- key: s171
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 1,558.00
+  text: 1,558.00
+- key: s172
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '149.46'
+  text: '149.46'
+- key: s173
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 标准双床房床架、写字桌、活动行李架、迷你吧酒柜、定制壁灯
+  text: 标准双床房床架、写字桌、活动行李架、迷你吧酒柜、定制壁灯
+- key: s174
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>A1 栋一层 (客房与配套区)</strong>
+  text: '**A1 栋一层 (客房与配套区)**'
+- key: s175
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '887.44'
+  text: '887.44'
+- key: s176
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 1,558.00
+  text: 1,558.00
+- key: s177
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '138.26'
+  text: '138.26'
+- key: s178
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 标准大床房、衣柜内置物架、走廊过道指示灯具及艺术装饰挂画
+  text: 标准大床房、衣柜内置物架、走廊过道指示灯具及艺术装饰挂画
+- key: s179
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>A2 二联套一层</strong>
+  text: '**A2 二联套一层**'
+- key: s180
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '741.55'
+  text: '741.55'
+- key: s181
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 1,558.00
+  text: 1,558.00
+- key: s182
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '115.53'
+  text: '115.53'
+- key: s183
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 度假庭院休闲沙发桌椅、会客厅配套电视柜及全套装饰陈设
+  text: 度假庭院休闲沙发桌椅、会客厅配套电视柜及全套装饰陈设
+- key: s184
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>现场签证 3 大批次 (增项合计)</strong>
+  text: '**现场签证 3 大批次 (增项合计)**'
+- key: s185
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '-'
+  text: '-'
+- key: s186
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 签证审计定额
+  text: 签证审计定额
+- key: s187
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '112.30'
+  text: '112.30'
+- key: s188
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 根据业主联系单变更增补家具、灯具及现场硬装配合调整
+  text: 根据业主联系单变更增补家具、灯具及现场硬装配合调整
+- key: s189
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            <span>ARCHIVAL DOSSIER · PRJ-MEITAN-2016 · 遵义市湄江温泉大酒店软装工程商业操盘实录</span>\n        "
+  text: "\n            ARCHIVAL DOSSIER · PRJ-MEITAN-2016 · 遵义市湄江温泉大酒店软装工程商业操盘实录\n        "
+- key: s190
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            2026 商业专案库归档\n        "
+  text: "\n            2026 商业专案库归档\n        "

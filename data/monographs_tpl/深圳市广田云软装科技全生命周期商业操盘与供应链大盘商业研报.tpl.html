@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>广田云软装 · 全资子公司十年实盘 ｜ 梁清波</title>
+    <!-- Google Fonts 典藏学术与静奢排版字体族 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=JetBrains+Mono:ital,wght@0,400..700;1,400..700&family=Noto+Serif+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <!-- ECharts 5 现代交互图表库 -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <style>
+        :root {
+            /* 静奢典藏自然羊皮纸调色盘 (Quiet Luxury & Archival Paper) */
+            --bg-page: #fbfbfa;           /* 典藏羊皮纸本白底色 */
+            --bg-card: #ffffff;           /* 纯净研报卡片白 */
+            --bg-subtle: #f5f4ef;         /* 雅致羊皮纸浅底 */
+            --bg-table-head: #f5f4ef;     /* 雅致古籍米灰 */
+            --border-hairline: rgba(18, 19, 22, 0.08); /* 0.5px 极细发丝分割线 */
+            --border-strong: rgba(18, 19, 22, 0.22);   /* 书籍装订骨架线 */
+            --border-accent: #8a6839;     /* 沉香古铜金装饰线 */
+            
+            --text-primary: #121316;      /* 碳素墨黑，沉稳高对比度 */
+            --text-secondary: #383b42;    /* 铅印中灰，用于正文叙述 */
+            --text-tertiary: #6e727d;     /* 浅注银灰，用于旁注与规格参数 */
+            --text-bronze: #8a6839;       /* 沉香古铜金文字 */
+            
+            --accent-navy: #162a45;       /* 萨维尔街牛津深海蓝，严正权威 */
+            --accent-bronze: #8a6839;     /* 沉香古铜金，低奢灵魂标色 */
+            --accent-gold: #c5a059;       /* 典雅明金 */
+            --accent-sage: #2a4c38;       /* 英国皇家墨玉绿 */
+            --accent-forest: #3a6351;     /* 森林墨绿 */
+            --accent-slate: #475569;      /* 冷板岩深灰 */
+            --accent-crimson: #8b263e;    /* 典雅绯红 */
+            
+            --font-serif: "Noto Serif SC", "EB Garamond", "Songti SC", STSong, "Times New Roman", SimSun, serif;
+            --font-mono: "JetBrains Mono", Consolas, "Courier New", monospace;
+            
+            --card-shadow: 0 1px 3px rgba(18, 19, 22, 0.04), 0 8px 24px -6px rgba(18, 19, 22, 0.03);
+            --card-hover-shadow: 0 4px 12px -2px rgba(18, 19, 22, 0.06), 0 16px 36px -8px rgba(18, 19, 22, 0.06);
+            --radius-lg: 8px;
+            --radius-md: 4px;
+            --radius-sm: 2px;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        
+        body {
+            background-color: var(--bg-page);
+            color: var(--text-primary);
+            font-family: var(--font-serif);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+            font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+            font-kerning: normal;
+            line-height: 1.76;
+            padding: 40px 24px 80px 24px;
+        }
+
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+        }
+
+        /* 顶部导航与锚点 (专案典藏录 Registry) */
+        .nav-dock {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(251, 251, 250, 0.94);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-md);
+            padding: 12px 28px;
+            margin-bottom: 48px;
+            position: sticky;
+            top: 20px;
+            z-index: 100;
+            box-shadow: 0 2px 12px rgba(18, 19, 22, 0.03);
+        }
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            white-space: nowrap;
+        }
+        .nav-brand-code {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            color: #ffffff;
+            background: var(--accent-navy);
+            padding: 2px 7px;
+            border-radius: 2px;
+            white-space: nowrap;
+        }
+        .nav-brand-title {
+            font-family: var(--font-serif);
+            font-size: 13.5px;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: 0.02em;
+            white-space: nowrap;
+        }
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+            align-items: center;
+        }
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            transition: color 0.2s ease;
+            white-space: nowrap;
+        }
+        .nav-links a:hover {
+            color: var(--accent-bronze);
+            text-decoration: underline;
+        }
+
+        .nav-back-btn {
+            background: rgba(138, 104, 57, 0.08);
+            border: 1px solid rgba(138, 104, 57, 0.28);
+            color: var(--accent-bronze);
+            font-family: var(--font-serif);
+            font-size: 12px;
+            font-weight: 700;
+            padding: 5px 14px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            white-space: nowrap;
+            text-decoration: none;
+        }
+        .nav-back-btn:hover {
+            background: var(--accent-bronze);
+            color: #ffffff;
+            border-color: var(--accent-bronze);
+        }
+
+        /* 头部 Hero 区域 */
+        .hero {
+            padding: 24px 0 52px 0;
+            border-bottom: 2px solid var(--border-strong);
+            margin-bottom: 52px;
+        }
+        .archival-eyebrow {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--accent-bronze);
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .eyebrow-sep {
+            color: var(--border-hairline);
+        }
+        .hero-title {
+            font-size: 36px;
+            font-weight: 900;
+            letter-spacing: -0.01em;
+            line-height: 1.28;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+        .hero-subhead {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--accent-navy);
+            display: inline-block;
+            margin-bottom: 16px;
+        }
+        .hero-subtitle {
+            font-size: 14.5px;
+            line-height: 1.85;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+            text-align: justify;
+        }
+        .hero-subtitle strong {
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+
+        /* 规格矩阵台 / KPI 卡片群 */
+        .spec-matrix, .kpi-deck {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 1px;
+            background: var(--border-hairline);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+        }
+        .spec-cell, .kpi-card {
+            background: var(--bg-card);
+            padding: 20px 22px;
+            transition: background-color 0.2s ease;
+        }
+        .spec-cell:hover, .kpi-card:hover {
+            background-color: #faf9f6;
+        }
+        .spec-label, .kpi-label {
+            font-family: var(--font-mono);
+            font-size: 10.5px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--text-tertiary);
+            margin-bottom: 8px;
+        }
+        .spec-value, .kpi-value {
+            font-size: 21px;
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1.25;
+            margin-bottom: 6px;
+        }
+        .spec-value small, .kpi-value small {
+            font-size: 12px;
+            font-weight: 400;
+            color: var(--text-tertiary);
+            margin-left: 4px;
+        }
+        .spec-desc, .kpi-desc {
+            font-size: 11.5px;
+            color: var(--text-tertiary);
+            line-height: 1.5;
+        }
+
+        /* 卡片容器与三线表 */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-md);
+            padding: 32px 36px;
+            margin-bottom: 36px;
+            box-shadow: var(--card-shadow);
+        }
+        .card-caption-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-hairline);
+            padding-bottom: 14px;
+            margin-bottom: 22px;
+        }
+        .card-heading {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: -0.01em;
+        }
+        .card-tag {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            color: var(--accent-bronze);
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13.5px;
+            line-height: 1.6;
+            margin-top: 14px;
+        }
+        .data-table th, .data-table td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-hairline);
+        }
+        .data-table th {
+            background-color: var(--bg-table-head);
+            font-weight: 700;
+            color: var(--text-primary);
+            border-top: 1.5px solid var(--border-strong);
+            border-bottom: 1.5px solid var(--border-strong);
+            font-size: 13px;
+            letter-spacing: 0.04em;
+        }
+        .data-table tr:last-child td {
+            border-bottom: 1.5px solid var(--border-strong);
+        }
+
+        /* 徽章与药丸标签 */
+        .code-pill {
+            display: inline-block;
+            font-family: var(--font-mono);
+            font-size: 11px;
+            padding: 2px 7px;
+            background: var(--bg-subtle);
+            border: 1px solid var(--border-hairline);
+            border-radius: 2px;
+            color: var(--text-secondary);
+        }
+        .pill-badge {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 2px;
+            background: rgba(138, 104, 57, 0.1);
+            color: var(--accent-bronze);
+        }
+
+        /* 页脚 */
+        .archival-footer, .footer {
+            margin-top: 60px;
+            padding-top: 24px;
+            border-top: 1.5px solid var(--border-hairline);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            color: var(--text-tertiary);
+        }
+
+        /* 媒体查询响应式支持 */
+        @media (max-width: 1150px) {
+            .nav-brand-title { display: none; }
+        }
+        @media (max-width: 1024px) {
+            .spec-matrix, .kpi-deck { grid-template-columns: repeat(2, 1fr); }
+            .card { padding: 24px 20px; }
+        }
+        @media (max-width: 640px) {
+            .spec-matrix, .kpi-deck { grid-template-columns: 1fr; }
+            .nav-dock { flex-direction: column; gap: 12px; }
+            .nav-links { flex-wrap: wrap; justify-content: center; gap: 12px; }
+            .hero-title { font-size: 26px; }
+            .hero-subhead { font-size: 18px; }
+        }
+
+            /* 图表容器与标题 —— 修复模板渲染时图表样式段丢失导致的图表不可见 */
+        .chart-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+        .chart-header { margin-bottom: 14px; }
+        .chart-fig-num { font-family: "JetBrains Mono", monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; color: var(--accent-bronze); }
+        .chart-title { font-size: 14px; font-weight: 700; color: var(--text-primary); margin-top: 4px; }
+        .chart-title-wrap { display: flex; align-items: center; gap: 8px; min-width: 0; }
+        .chart-container { width: 100%; height: 380px; }
+        #chart-sankey { height: 440px; }
+        @media (max-width: 760px) { .chart-grid { grid-template-columns: 1fr; } }
+
+    
+        /* academic 三线表 —— 修复表格线条缺失 */
+        .academic-table { width: 100%; border-collapse: collapse; font-size: 13px; border-top: 2.2px solid var(--border-strong); border-bottom: 2.2px solid var(--border-strong); }
+        .academic-table th { text-align: left; font-size: 12px; font-weight: 700; letter-spacing: 0.05em; color: var(--text-primary); padding: 12px 14px; border-bottom: 1.2px solid var(--border-strong); background-color: var(--bg-table-head); white-space: nowrap; }
+        .academic-table td { padding: 12px 14px; border-bottom: 1px solid var(--border-hairline); color: var(--text-secondary); line-height: 1.6; }
+        .academic-table tr:last-child td { border-bottom: none; }
+        .academic-table tr:hover td { background-color: #f7f6f1; }
+
+        /* dossier 2×2 对称排版 */
+        .dossier-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-bottom: 36px; }
+        .dossier-item { background: #ffffff; border: 1px solid var(--border-hairline); border-left: 3.5px solid var(--accent-bronze); border-radius: var(--radius-md); padding: 24px 26px; box-shadow: var(--card-shadow); display: flex; flex-direction: column; justify-content: flex-start; }
+        .dossier-item h3 { font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+        .dossier-item h3 span { font-family: "JetBrains Mono", monospace; font-size: 12px; font-weight: 600; color: var(--text-tertiary); }
+        .dossier-item ul { list-style: none; font-size: 13.5px; color: var(--text-secondary); line-height: 1.78; }
+        .dossier-item li { position: relative; padding-left: 18px; margin-bottom: 10px; text-align: justify; }
+        .dossier-item li::before { content: "◆"; position: absolute; left: 4px; top: 6px; color: var(--accent-bronze); font-size: 7px; }
+        .dossier-item strong { color: var(--text-primary); font-weight: 700; }
+        @media (max-width: 760px) { .dossier-grid { grid-template-columns: 1fr; } }
+
+        /* KPI 顶栏瓷砖 */
+        .kpi-tile { background: var(--bg-card); border: 1px solid var(--border-hairline); border-top: 3px solid var(--accent-bronze); border-radius: var(--radius-md); padding: 20px 16px; box-shadow: var(--card-shadow); }
+        .kpi-eyebrow { font-family: "JetBrains Mono", monospace; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-bronze); margin-bottom: 4px; }
+        .kpi-figure { font-size: 26px; font-weight: 700; letter-spacing: -0.02em; color: var(--text-primary); margin: 6px 0 2px 0; font-variant-numeric: tabular-nums lining-nums; white-space: nowrap; }
+        .kpi-figure span { font-size: 13px; font-weight: 600; color: var(--accent-bronze); }
+        .kpi-subtext { font-size: 11px; color: var(--text-tertiary); margin-top: 4px; line-height: 1.4; }
+        .kpi-title-zh { font-size: 13px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px; }
+
+        /* 图注说明 */
+        .chart-desc { font-size: 12.5px; color: var(--text-secondary); margin-bottom: 16px; line-height: 1.55; }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- 顶部导航 Dock -->
+    <nav class="nav-dock">
+        <div class="nav-brand">
+        </div>
+        <ul class="nav-links">
+            <li data-slot="s00"><a href="#sec-overview">§ 1 项目基本盘</a></li>
+            <li data-slot="s01"><a href="#sec-methodology">§ 2 核心方法论</a></li>
+            <li data-slot="s02"><a href="#sec-dashboard">§ 3 商业大盘图表</a></li>
+            <li data-slot="s03"><a href="#sec-contracts">§ 4 二十四大标杆台账</a></li>
+        </ul>
+        <button class="nav-back-btn" onclick="handleBackToParent()" title="返回总舱" data-slot="s04">
+            <span>‹ 返回总舱</span>
+        </button>
+    </nav>
+
+    <!-- 头部扉页 Hero -->
+    <header class="hero">
+        <div class="archival-eyebrow" data-slot="s05">
+            <span>ARCHIVAL MONOGRAPH</span>
+            <span class="eyebrow-sep">/</span>
+            <span>PRJ-CLOUD-DECO-2024</span>
+            <span class="eyebrow-sep">/</span>
+            <span>GUANGTIAN CLOUD SOFT FURNISHING MASTER PORTFOLIO</span>
+        </div>
+        <h1 class="hero-title" data-slot="s06">广田云软装 · 全资子公司十年实盘</h1>
+        <div class="hero-subhead" data-slot="s07">——全资子公司从0到1组建 45 人团队，统筹十大标杆项目与 135 份契约所承载的全周期工程实录</div>
+        <p class="hero-subtitle" data-slot="s08">深圳市广田云软装科技（深圳市广田软装艺术有限公司）是广田集团旗下全资子公司，本专案实录梁清波自 2014 年 2 月至 2024 年 2 月历时十年的全周期深耕经历。</p>
+        <p class="hero-subtitle" style="margin-top:8px;" data-slot="s09"><strong>初创奠基期（2014.02–2015.02）</strong>：作为筹办与初创负责人，承接集团超募资金 3,000 万元设立公司的成果，从 0 到 1 组建 45 人团队（设计 18 / 工程 12 / 商务 8 / 综合 7），主笔《广田云软装制度》八大模块 730 条条款、28 类审批流与底薪提成双轨制，打造 1,491 ㎡ 艺展中心展厅，实现劳动合同 100% 签署、十年零劳动仲裁。</p>
+        <p class="hero-subtitle" style="margin-top:8px;" data-slot="s10"><strong>大项目牵头期（2015–2024）</strong>：以重大标杆项目为专班战元，跨设计/工程/造价/采购拉通专业力量、端到端下沉一线，统筹全盘 <strong>135 份盖章合同（签约 6.83 亿元，锁定产值 5.92 亿元）</strong>，覆盖遵义三大破亿工程（遵义大酒店 1.25 亿 / 汇川康养城 1.09 亿 / 遵义开元名都 1.03 亿）、仁怀温泉小镇、景德镇婺源婺女洲及全国五星酒店集群；主抓采销双轨调价（锁定 30%~35% 毛利）、四维资金回款防线与多轮竣工结算抗辩。其中 24 个代表性标杆工程为全盘合同的骨干子集。</p>
+
+        <div class="spec-matrix">
+            <div class="spec-cell">
+                <div class="spec-label" data-slot="s11">专案定位</div>
+                <div class="spec-value" data-slot="s12">全资子公司操盘大盘</div>
+                <div class="spec-desc" data-slot="s13">从0到1奠基 ➔ 十年大盘</div>
+            </div>
+            <div class="spec-cell">
+                <div class="spec-label" data-slot="s14">操盘模式</div>
+                <div class="spec-value" data-slot="s15">跨部门敏捷专班制</div>
+                <div class="spec-desc" data-slot="s16">项目总牵头 ➔ 全链条下沉</div>
+            </div>
+            <div class="spec-cell">
+                <div class="spec-label" data-slot="s17">统筹周期</div>
+                <div class="spec-value" data-slot="s18">十年实盘全历程</div>
+                <div class="spec-desc" data-slot="s19">2014.02 - 2024.02</div>
+            </div>
+            <div class="spec-cell">
+                <div class="spec-label" data-slot="s20">遵义三大破亿</div>
+                <div class="spec-value" data-slot="s21">3.37 亿元母盘</div>
+                <div class="spec-desc" data-slot="s22">遵义/汇川/开元名都</div>
+            </div>
+            <div class="spec-cell">
+                <div class="spec-label" data-slot="s23">仁怀及文旅大盘</div>
+                <div class="spec-value" data-slot="s24">7,141 万元标杆</div>
+                <div class="spec-desc" data-slot="s25">仁怀小镇5200万/婺女洲1941万</div>
+            </div>
+            <div class="spec-cell">
+                <div class="spec-label" data-slot="s26">全景盖章总盘</div>
+                <div class="spec-value" data-slot="s27">6.83 亿 ➔ 5.92 亿</div>
+                <div class="spec-desc" data-slot="s28">135份真实盖章合同大盘</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 专案特化核心正文插槽 -->
+    <!-- 01 项目基本盘 (三线表台账) -->
+    <section id="sec-overview" class="card">
+        <div class="card-caption-bar">
+            <h2 class="card-heading" data-slot="s29">项目基本盘与十年核心事实</h2>
+            <span class="card-tag">EXECUTIVE PORTFOLIO & CONTRACT DOSSIER</span>
+        </div>
+        <p style="font-size:14px; color:var(--text-secondary); margin-bottom:16px;" data-slot="s30">
+            系统梳理广田云软装从设立孵化、初创期组织与制度建设，到十年间标杆工程与全景合同大盘操盘的核心商业事实：
+        </p>
+        <table class="academic-table">
+            <thead>
+                <tr>
+                    <th style="width:160px;" data-slot="s31">核心维度</th>
+                    <th style="width:340px;" data-slot="s32">关键事实与核心数据</th>
+                    <th data-slot="s33">业务逻辑与管控价值</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="table-dim" data-slot="s34">组织设立与孵化</td>
+                    <td class="table-fact" data-slot="s35"><strong>超募资金 3,000 万元设立全资子公司</strong>（2013.11 决议 ➔ 2014.01 登记 ➔ 2014.02 调任）</td>
+                    <td data-slot="s36">承接 Project 06 董办资本运作成果，作为筹办与初创核心团队奔赴新设全资子公司，开启集团大家居软装蓝海产业布局，实现上市公司战略意图落地。</td>
+                </tr>
+                <tr>
+                    <td class="table-dim" data-slot="s37">初创团队与制度</td>
+                    <td class="table-fact" data-slot="s38"><strong>从 0 到 1 组建 45 人编制 · 730 条制度总纲</strong>（设计18/工程12/商务8/综合7）</td>
+                    <td data-slot="s39">编制《广田云软装制度》八大模块（奖惩145条、考勤112条、技能培训96条、招聘88条、薪酬85条等），建立 28 类标准审批流，构建月薪+提成双轨制。</td>
+                </tr>
+                <tr>
+                    <td class="table-dim" data-slot="s40">遵义三大破亿工程</td>
+                    <td class="table-fact" data-slot="s41"><strong>遵义三大标志性工程累计签约 3.37 亿元</strong>（审定 2.86 亿元）</td>
+                    <td data-slot="s42">总揽遵义大酒店（1.25亿，审定9,300万）、汇川温泉康养城（1.09亿，审定9,800万）、遵义开元名都大酒店（1.03亿，审定9,500万），奠定西南五星级地标龙头地位。</td>
+                </tr>
+                <tr>
+                    <td class="table-dim" data-slot="s43">重点酒旅与文旅胜地</td>
+                    <td class="table-fact" data-slot="s44"><strong>仁怀温泉小镇 5,200 万元 · 江西婺女洲 1,941 万元</strong></td>
+                    <td data-slot="s45">操盘酒都仁怀交投/三森三大标段总包干 5,200 万元；统领江西婺源婺女洲二期 4 份合同原件 1,941.26 万元（无梦北区/南区/东篱下独栋/西街民宿）。</td>
+                </tr>
+                <tr>
+                    <td class="table-dim" data-slot="s46">全景盖章合同大盘</td>
+                    <td class="table-fact" data-slot="s47"><strong>135 份盖章合同签约 6.83 亿元 ➔ 锁定产值 5.92 亿元</strong></td>
+                    <td data-slot="s48">穿透全量合同底账：24 大核心代表性标杆（签约 6.88 亿 / 审定 6.14 亿），外加恒大全国 93 份样板房战采、奥园三大战采、万科红树东岸等，全盘业绩 100% 对应红章合同。</td>
+                </tr>
+                <tr>
+                    <td class="table-dim" data-slot="s49">敏捷专班与实战下沉</td>
+                    <td class="table-fact" data-slot="s50"><strong>重大项目跨部门敏捷专班 · 全链条端到端实操</strong></td>
+                    <td data-slot="s51">打破僵化科层，以项目为战元动态跨职能抽调设计、工程、造价、采购精锐；个人亲自把关商务条款谈判、亲赴源头工厂白胚面漆飞检、现场放线交底与竣工审计答辩。</td>
+                </tr>
+                <tr>
+                    <td class="table-dim" data-slot="s52">采销双轨调价机制</td>
+                    <td class="table-fact" data-slot="s53"><strong>买入裸价 vs 卖出工程报价双轨运行</strong>（刚性锁定 30%~35% 毛利）</td>
+                    <td data-slot="s54">工厂出厂裸价前置加乘运杂费(10%)、税金(11%)与综合业务费(12%)，在多轮调价拉锯中坚守底线，结合规模集采降本 8% 实现利润最大化。</td>
+                </tr>
+                <tr>
+                    <td class="table-dim" data-slot="s55">四维资金回款模型</td>
+                    <td class="table-fact" data-slot="s56"><strong>联动型 / 进度型 / 极速型 / 战采型</strong> 四类现金流防御机制</td>
+                    <td data-slot="s57">遵义 25% 比例联动回款；湄潭 30+80+95 节点进度款；华泰/宾阳出货前 70%~90% 覆盖工厂直接成本零垫资；奥园/恒大全国战采批量流水式回款。</td>
+                </tr>
+                <tr>
+                    <td class="table-dim" data-slot="s58">行政资产与用工合规</td>
+                    <td class="table-fact" data-slot="s59"><strong>1,491 ㎡ 艺展中心旗舰展厅 · 100% 劳动合同合规 · 0 仲裁</strong></td>
+                    <td data-slot="s60">建成艺展中心美学体验展厅与盛华大厦办公场地，全员劳动合同/社保全覆盖，首年薪酬总盘 513.6 万元，人均行政运营费节约 14.2%，保持零用工仲裁记录。</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- 02 核心方法论 (2×2 平衡矩阵) -->
+    <section id="sec-methodology" class="card">
+        <div class="card-caption-bar">
+            <h2 class="card-heading" data-slot="s61">供应链管控 · 2×2 对称平衡方法论</h2>
+            <span class="card-tag">THE 2×2 SOFT FURNISHING MANAGEMENT MATRIX</span>
+        </div>
+        <p style="font-size:14px; color:var(--text-secondary); margin-bottom:20px;" data-slot="s62">
+            在大型工程与采销大盘运转体系中，组织奠基、专班协同、采销利差与资金风控构成四大核心支柱：
+        </p>
+        <div class="dossier-grid">
+            <div class="dossier-item">
+                <h3 data-slot="s63">§ 1 组织奠基与制度治理闭环 (Organizational Foundation & Governance)</h3>
+                <ul>
+                    <li data-slot="s64"><strong>45 人跨职能团队矩阵</strong>：从 0 到 1 组建方案设计（18人）、工程交付（12人）、商务采销（8人）与行政综合（7人）四大序列，专业序列占比超 66.7%；</li>
+                    <li data-slot="s65"><strong>八大模块 730 条制度总纲</strong>：起草《广田云软装制度》，涵盖考勤、奖惩、招聘、培训、薪酬等八大板块，建立 28 类标准审批节点，实现流程化提效；</li>
+                    <li data-slot="s66"><strong>薪酬提成双轨与用工零仲裁</strong>：推行月薪+提成+年薪双轨制，提成与回款进度强绑定，劳动合同与社保 100% 签署，十年保持零用工诉讼与劳动仲裁。</li>
+                </ul>
+            </div>
+            <div class="dossier-item">
+                <h3 data-slot="s67">§ 2 大项目敏捷专班与实战下沉 (Agile Task Force & Hands-on Leadership)</h3>
+                <ul>
+                    <li data-slot="s68"><strong>重大项目跨部门专班制</strong>：打破传统部门壁垒与冗余科层，以破亿级标杆交付为战元，项目总牵头跨职能动态抽调设计深化、工程驻场、造价与采销精锐组建攻坚突击队；</li>
+                    <li data-slot="s69"><strong>全链条端到端实操操盘</strong>：坚持深入一线实战，从前期大客户商务谈判、严密合同条款拟定，到中期驻场交底与关键工序穿插协调，亲力亲为穿透全生命周期；</li>
+                    <li data-slot="s70"><strong>源头工厂品质飞检把关</strong>：亲赴定制家具源头工厂进行出厂前白胚结构与面漆封闭飞检，确保平顶山温德姆、平度雅高美爵等国际品牌联检一次性封样过关。</li>
+                </ul>
+            </div>
+            <div class="dossier-item">
+                <h3 data-slot="s71">§ 3 采销双轨报价与多轮调价控制 (Dual-Track Pricing & Margin Control)</h3>
+                <ul>
+                    <li data-slot="s72"><strong>买入成本裸价 vs 卖出工程报价</strong>：工厂出厂裸价前置锁定，结合运杂费(10%)、税金(11%)与综合业务费(12%)计算测算毛利，杜绝跑冒滴漏；</li>
+                    <li data-slot="s73"><strong>多轮调价与抗压博弈</strong>：在多轮送审与认价调价拉锯中，以工艺选型平替与批量排产优化为筹码，始终坚守 30%~35% 经营毛利率红线；</li>
+                    <li data-slot="s74"><strong>规模集采降本杠杆</strong>：通过整合全国多项目同品类家具、灯具面料集采，争取工厂让利 8%~12%，撬动项目预估净利润显著激增。</li>
+                </ul>
+            </div>
+            <div class="dossier-item">
+                <h3 data-slot="s75">§ 4 四维资金回款与供应链防线 (Four-Dimensional Cashflow Defense)</h3>
+                <ul>
+                    <li data-slot="s76"><strong>比例联动回款模型</strong>：针对遵义大酒店等超大型工程，约定“分包应收款 = 母公司实收 × [1500 ÷ 6000]”刚性联动，贴现成本共担，防范支付推诿；</li>
+                    <li data-slot="s77"><strong>阶段节点确权模型</strong>：针对湄潭、海南生态园等项目，执行 30% 预付 + 80% 形象进度 + 95% 验收确权，按月度监理确权闭环，出货前锁定 80% 现金流；</li>
+                    <li data-slot="s78"><strong>极速出厂覆盖模型</strong>：针对上海华泰、宾阳华美达等高周转项目，出厂前提货款付至 70%~90%，以甲方付款刚性覆盖直接出厂成本，实现零垫资运作；</li>
+                    <li data-slot="s79"><strong>五轮送审答辩确权</strong>：重构签证联系单、原厂代换凭据与实测实量底账，亲自挂帅审计抗辩，确保遵义 9300 万审定、红花岗 2200 万资产对冲锁定。</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 03 核心数据看板与 ECharts 原生图表 (2×2 矩阵) -->
+    <section id="sec-dashboard" class="card">
+        <div class="card-caption-bar">
+            <h2 class="card-heading" data-slot="s80">关键指标、核心项目对比与组织图表</h2>
+            <span class="card-tag">CLOUD SOFT FURNISHING CHARTS GRID</span>
+        </div>
+
+        <!-- 6 块顶线 KPI 磁贴 -->
+        <div class="kpi-deck">
+            <div class="kpi-tile">
+                <div class="kpi-eyebrow" data-slot="s81">MASTER PORTFOLIO</div>
+                <div class="kpi-title-zh" data-slot="s82">全景盖章总盘</div>
+                <div class="kpi-figure" data-slot="s83">6.83 <span>亿元</span></div>
+                <div class="kpi-subtext" data-slot="s84">全盘 135 份真实合同 (产值5.92亿)</div>
+            </div>
+            <div class="kpi-tile">
+                <div class="kpi-eyebrow" data-slot="s85">ZUNYI 100M+ TRIO</div>
+                <div class="kpi-title-zh" data-slot="s86">遵义三大破亿</div>
+                <div class="kpi-figure" data-slot="s87">3.37 <span>亿元</span></div>
+                <div class="kpi-subtext" data-slot="s88">遵义大酒店+汇川康养+开元名都</div>
+            </div>
+            <div class="kpi-tile">
+                <div class="kpi-eyebrow" data-slot="s89">KAIYUAN GRAND HOTEL</div>
+                <div class="kpi-title-zh" data-slot="s90">遵义开元名都</div>
+                <div class="kpi-figure" data-slot="s91">1.03 <span>亿元</span></div>
+                <div class="kpi-subtext" data-slot="s92">豪华五星级涉外政商度假酒店</div>
+            </div>
+            <div class="kpi-tile">
+                <div class="kpi-eyebrow" data-slot="s93">RENHUAI RESORT</div>
+                <div class="kpi-title-zh" data-slot="s94">仁怀温泉小镇</div>
+                <div class="kpi-figure" data-slot="s95">5,200 <span>万元</span></div>
+                <div class="kpi-subtext" data-slot="s96">酒都温泉度假三大标段总包干</div>
+            </div>
+            <div class="kpi-tile">
+                <div class="kpi-eyebrow" data-slot="s97">WUNVZHO RESORT</div>
+                <div class="kpi-title-zh" data-slot="s98">江西婺女洲二期</div>
+                <div class="kpi-figure" data-slot="s99">1,941 <span>万元</span></div>
+                <div class="kpi-subtext" data-slot="s100">知名文旅度假区 4 份合同原件</div>
+            </div>
+            <div class="kpi-tile">
+                <div class="kpi-eyebrow" data-slot="s101">FOUNDING TEAM & RULES</div>
+                <div class="kpi-title-zh" data-slot="s102">初创编制与制度</div>
+                <div class="kpi-figure" data-slot="s103">45<span>人</span>/730<span>条</span></div>
+                <div class="kpi-subtext" data-slot="s104">八大管理模块 · 0 劳动仲裁纠纷</div>
+            </div>
+        </div>
+
+        <!-- 2×2 商业大盘 ECharts 原生图表栅格 -->
+        <div class="chart-grid">
+            <!-- FIG.01 云软装核心代表性标杆工程签约金额与审定确权对比分组柱状图 -->
+            <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
+                <div class="chart-header">
+                    <div class="chart-title-wrap">
+                        <span class="chart-fig-num">FIG. 01</span>
+                        <div class="chart-title" data-slot="s105">核心标杆工程签约金额与审定确权对比 (万元)</div>
+                    </div>
+                </div>
+                <div id="chart-contracts-bar" class="chart-container"></div>
+                <div class="chart-desc" data-slot="s106">
+                    <strong>数据来源</strong>：24 大核心标杆工程经济合同台账。重点囊括遵义三大破亿工程（遵义大酒店 1.25 亿 / 汇川康养城 1.09 亿 / 遵义开元名都 1.03 亿）、仁怀温泉小镇（5,200 万）、湄江温泉大酒店（3,380 万）、汕头国际大酒店（3,285 万）、红花岗南部综合体（3,112.5 万）、海南生态园（2,664.8 万）与婺女洲度假区（1,941.3 万）等核心资产。
+                </div>
+            </div>
+
+            <!-- FIG.02 云软装四大业务板块投资权重与金额分布环形图 -->
+            <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
+                <div class="chart-header">
+                    <div class="chart-title-wrap">
+                        <span class="chart-fig-num">FIG. 02</span>
+                        <div class="chart-title" data-slot="s107">云软装全盘 6.83 亿元合同业务板块投资结构分布</div>
+                    </div>
+                </div>
+                <div id="chart-types-pie" class="chart-container"></div>
+                <div class="chart-desc" data-slot="s108">
+                    <strong>数据来源</strong>：全盘 6.83 亿元业务板块结构台账。遵义三大破亿工程占比 49.31%（3.37 亿元），全国五星级豪华酒店及国宾馆群占比 34.38%（2.35 亿元），海外重大公建及文旅度假村占比 9.47%（6,472 万元），头部房企全国战采与高端商办占比 6.84%（4,676 万元）。
+                </div>
+            </div>
+
+            <!-- FIG.03 初创第一年 45 人组织编制与八大管理模块 730 条制度条款分布条形图 -->
+            <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
+                <div class="chart-header">
+                    <div class="chart-title-wrap">
+                        <span class="chart-fig-num">FIG. 03</span>
+                        <div class="chart-title" data-slot="s109">初创第一年组织职系编制与八大制度模块条款分布</div>
+                    </div>
+                </div>
+                <div id="chart-hr-bar" class="chart-container"></div>
+                <div class="chart-desc" data-slot="s110">
+                    <strong>数据来源</strong>：初创期团队花名册与组织架构台账。初创团队编制 45 人（设计18/工程12/商务8/综合7）；八大管理制度包含 730 条刚性条款，其中奖惩管理（145条）与考勤工时（112条）占比最高，支撑从0到1组建且全周期 0 劳动仲裁。
+                </div>
+            </div>
+
+            <!-- FIG.04 全景 135 份盖章合同大盘与四大资金回款风控矩阵 -->
+            <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
+                <div class="chart-header">
+                    <div class="chart-title-wrap">
+                        <span class="chart-fig-num">FIG. 04</span>
+                        <div class="chart-title" data-slot="s111">全景 135 份盖章合同大盘与审定产值结构 (万元)</div>
+                    </div>
+                </div>
+                <div id="chart-cashflow-grid" class="chart-container"></div>
+                <div class="chart-desc" data-slot="s112">
+                    <strong>数据来源</strong>：全盘 135 份用印合同与结算审定档案。统筹破亿级大盘（3.37亿）、五星酒店及国宾馆群（2.35亿）、海外公建与文旅胜地（6,472万）及头部房企战采（4,676万），累计签约 6.83 亿元，审定确权产值 5.92 亿元。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 04 真实标杆履职底账台账 -->
+    <section id="sec-contracts" class="card">
+        <div class="card-caption-bar">
+            <h2 class="card-heading" data-slot="s113">二十四大核心工程的履约与确权底账</h2>
+            <span class="card-tag">CONTRACTUAL DOSSIER & VERIFIED AUDITS</span>
+        </div>
+        <p style="font-size:14px; color:var(--text-secondary); margin-bottom:16px;" data-slot="s114">
+            基于真实签署合同盖章扫描件与工程结算审定单核算，客观还原全盘核心代表性工程操盘细节：
+        </p>
+
+        <!-- 核心标杆工程独立商业研报档案直达 -->
+        <div style="margin-bottom: 24px;">
+            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom: 12px; border-bottom: 1px dashed var(--border-hairline); padding-bottom: 8px;">
+                <h3 style="font-size:15px; font-weight:700; color:var(--accent-navy); display:flex; align-items:center; gap:8px;" data-slot="s115">
+                    <span>🏛️</span>
+                    <span>四大核心工程的独立详情档案</span>
+                </h3>
+                <span style="font-family:var(--font-mono); font-size:11.5px; color:var(--text-tertiary);">按合同体量规模排序 · 点击可穿透查阅独立全景研报</span>
+            </div>
+            <div style="display:grid; grid-template-columns: repeat(4, 1fr); gap: 14px;">
+                <a href="javascript:void(0)" onclick="openSubMonograph('monograph-zy', '遵义大酒店五星级软装工程全周期商业操盘研报.html')" style="text-decoration:none; background:var(--bg-card); border:1px solid var(--border-hairline); border-top:3px solid var(--accent-gold); border-radius:4px; padding:12px 14px; display:flex; flex-direction:column; justify-content:space-between; transition:all 0.2s ease;">
+                    <div>
+                        <span style="font-family:var(--font-mono); font-size:10.5px; font-weight:700; color:var(--accent-forest); background:rgba(58,99,81,0.08); padding:2px 6px; border-radius:2px;">§ 01 破亿级国宾酒店</span>
+                        <h4 style="font-size:14px; font-weight:700; color:var(--text-primary); margin:8px 0 4px 0;" data-slot="s116">遵义大酒店超五星级工程</h4>
+                        <div style="font-family:var(--font-mono); font-size:11.5px; color:var(--accent-gold); font-weight:700;" data-slot="s117">签约 1.25 亿 / 审定 9,300 万</div>
+                    </div>
+                    <div style="font-size:12px; color:var(--accent-navy); font-weight:600; margin-top:10px; display:flex; justify-content:space-between; align-items:center;" data-slot="s118">
+                        <span>查看独立研报</span>
+                        <span>➔</span>
+                    </div>
+                </a>
+
+                <a href="javascript:void(0)" onclick="openSubMonograph('monograph-mt', '湄潭项目全生命周期数据洞察研报.html')" style="text-decoration:none; background:var(--bg-card); border:1px solid var(--border-hairline); border-top:3px solid var(--accent-gold); border-radius:4px; padding:12px 14px; display:flex; flex-direction:column; justify-content:space-between; transition:all 0.2s ease;">
+                    <div>
+                        <span style="font-family:var(--font-mono); font-size:10.5px; font-weight:700; color:var(--accent-forest); background:rgba(58,99,81,0.08); padding:2px 6px; border-radius:2px;">§ 02 温泉度假地标</span>
+                        <h4 style="font-size:14px; font-weight:700; color:var(--text-primary); margin:8px 0 4px 0;" data-slot="s119">遵义湄江温泉大酒店</h4>
+                        <div style="font-family:var(--font-mono); font-size:11.5px; color:var(--accent-gold); font-weight:700;" data-slot="s120">签约 3,380 万 / 审定 2,798 万</div>
+                    </div>
+                    <div style="font-size:12px; color:var(--accent-navy); font-weight:600; margin-top:10px; display:flex; justify-content:space-between; align-items:center;" data-slot="s121">
+                        <span>查看独立研报</span>
+                        <span>➔</span>
+                    </div>
+                </a>
+
+                <a href="javascript:void(0)" onclick="openSubMonograph('monograph-hhg', '红花岗项目全生命周期深度商业研报.html')" style="text-decoration:none; background:var(--bg-card); border:1px solid var(--border-hairline); border-top:3px solid var(--accent-gold); border-radius:4px; padding:12px 14px; display:flex; flex-direction:column; justify-content:space-between; transition:all 0.2s ease;">
+                    <div>
+                        <span style="font-family:var(--font-mono); font-size:10.5px; font-weight:700; color:var(--accent-forest); background:rgba(58,99,81,0.08); padding:2px 6px; border-radius:2px;">§ 03 五星城市综合体</span>
+                        <h4 style="font-size:14px; font-weight:700; color:var(--text-primary); margin:8px 0 4px 0;" data-slot="s122">红花岗南部城市综合体</h4>
+                        <div style="font-family:var(--font-mono); font-size:11.5px; color:var(--accent-gold); font-weight:700;" data-slot="s123">签约 3,112 万 / 审定 2,200 万</div>
+                    </div>
+                    <div style="font-size:12px; color:var(--accent-navy); font-weight:600; margin-top:10px; display:flex; justify-content:space-between; align-items:center;" data-slot="s124">
+                        <span>查看独立研报</span>
+                        <span>➔</span>
+                    </div>
+                </a>
+
+                <a href="javascript:void(0)" onclick="openSubMonograph('monograph-ht', '上海华泰中心售楼处全生命周期商业操盘研报.html')" style="text-decoration:none; background:var(--bg-card); border:1px solid var(--border-hairline); border-top:3px solid var(--accent-gold); border-radius:4px; padding:12px 14px; display:flex; flex-direction:column; justify-content:space-between; transition:all 0.2s ease;">
+                    <div>
+                        <span style="font-family:var(--font-mono); font-size:10.5px; font-weight:700; color:var(--accent-forest); background:rgba(58,99,81,0.08); padding:2px 6px; border-radius:2px;">§ 04 极奢展厅高周转</span>
+                        <h4 style="font-size:14px; font-weight:700; color:var(--text-primary); margin:8px 0 4px 0;" data-slot="s125">上海华泰中心售楼处</h4>
+                        <div style="font-family:var(--font-mono); font-size:11.5px; color:var(--accent-gold); font-weight:700;" data-slot="s126">签约 156.7 万 / 审定 156.7 万</div>
+                    </div>
+                    <div style="font-size:12px; color:var(--accent-navy); font-weight:600; margin-top:10px; display:flex; justify-content:space-between; align-items:center;" data-slot="s127">
+                        <span>查看独立研报</span>
+                        <span>➔</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <table class="academic-table">
+            <thead>
+                <tr>
+                    <th style="width:40px;" data-slot="s128">#</th>
+                    <th style="width:190px;" data-slot="s129">工程标的与合同编号</th>
+                    <th style="width:170px;" data-slot="s130">发包业主单位</th>
+                    <th style="width:140px;" data-slot="s131">业态分类</th>
+                    <th style="width:70px;" data-slot="s132">年份</th>
+                    <th style="width:95px; text-align:right;" data-slot="s133">合同额(万)</th>
+                    <th style="width:95px; text-align:right;" data-slot="s134">审定额(万)</th>
+                    <th data-slot="s135">核心付款机制与风控防线</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background: rgba(22, 42, 69, 0.03);">
+                    <td data-slot="s136">1</td>
+                    <td class="table-dim" data-slot="s137">遵义大酒店软装工程 <a href="javascript:void(0)" onclick="openSubMonograph('monograph-zy', '遵义大酒店五星级软装工程全周期商业操盘研报.html')" style="display:inline-block; margin-left:6px; font-size:11px; padding:1px 6px; border:1px solid var(--accent-navy); border-radius:2px; color:var(--accent-navy); text-decoration:none; background:#fff; font-weight:600;">专案 ↗</a><br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GY-2018-YW-131</span></td>
+                    <td data-slot="s138">遵义道桥建设集团 (母体分包)</td>
+                    <td data-slot="s139">超五星级国宾政务度假酒店</td>
+                    <td data-slot="s140">2018</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700;" data-slot="s141">12,500.00</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700; color:var(--accent-forest);" data-slot="s142">9,300.00</td>
+                    <td data-slot="s143">分包应收款 = 母公司实收 × [1500÷6000]，贴现成本按比共担，最终确权 9,300 万元</td>
+                </tr>
+                <tr style="background: rgba(22, 42, 69, 0.03);">
+                    <td data-slot="s144">2</td>
+                    <td class="table-dim" data-slot="s145">汇川区汇川温泉康养城建设工程<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">汇川城投2017合同</span></td>
+                    <td data-slot="s146">遵义市汇川区城投</td>
+                    <td data-slot="s147">百亿级国企温泉康养综合体</td>
+                    <td data-slot="s148">2017</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700;" data-slot="s149">10,900.00</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700; color:var(--accent-forest);" data-slot="s150">9,800.00</td>
+                    <td data-slot="s151">大型国企城投公建，按月度形象产值申报与节点支付，实现大体量确权推进</td>
+                </tr>
+                <tr style="background: rgba(197, 160, 89, 0.08);">
+                    <td data-slot="s152">3</td>
+                    <td class="table-dim" data-slot="s153">遵义开元名都大酒店项目<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">开元名都2017合同</span></td>
+                    <td data-slot="s154">遵义新区房开 (开元旅业运营)</td>
+                    <td data-slot="s155">国际豪华五星级政商度假酒店</td>
+                    <td data-slot="s156">2017</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700; color:var(--accent-gold);" data-slot="s157">10,300.00</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700; color:var(--accent-forest);" data-slot="s158">9,500.00</td>
+                    <td data-slot="s159">大床房样板间先行打样封样，全案深化大宗工程款按期推进，破亿级涉外五星标杆</td>
+                </tr>
+                <tr style="background: rgba(58, 99, 81, 0.05);">
+                    <td data-slot="s160">4</td>
+                    <td class="table-dim" data-slot="s161">仁怀温泉小镇（一期）酒店工程<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">三森2021分包合同</span></td>
+                    <td data-slot="s162">深圳三森装饰 / 仁怀交投</td>
+                    <td data-slot="s163">酒都重点温泉康养度假小镇</td>
+                    <td data-slot="s164">2021</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700; color:var(--accent-forest);" data-slot="s165">5,200.00</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700; color:var(--accent-forest);" data-slot="s166">4,800.00</td>
+                    <td data-slot="s167">三大标段(2587万+1504万+1109万)总包干，统筹酒都大型温泉度假小镇整体软装</td>
+                </tr>
+                <tr>
+                    <td data-slot="s168">5</td>
+                    <td class="table-dim" data-slot="s169">遵义市湄江温泉大酒店建设项目 <a href="javascript:void(0)" onclick="openSubMonograph('monograph-mt', '湄潭项目全生命周期数据洞察研报.html')" style="display:inline-block; margin-left:6px; font-size:11px; padding:1px 6px; border:1px solid var(--accent-navy); border-radius:2px; color:var(--accent-navy); text-decoration:none; background:#fff; font-weight:600;">专案 ↗</a><br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GY-2016-YW-001</span></td>
+                    <td data-slot="s170">遵义市通途公路建设投资</td>
+                    <td data-slot="s171">国际五星级温泉度假酒店</td>
+                    <td data-slot="s172">2016</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700;" data-slot="s173">3,380.00</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700; color:var(--accent-forest);" data-slot="s174">2,798.50</td>
+                    <td data-slot="s175">30%预付 + 80%进度 + 95%竣工验收款，报审 2,798.50 万，实收达成率 97.0%</td>
+                </tr>
+                <tr>
+                    <td data-slot="s176">6</td>
+                    <td class="table-dim" data-slot="s177">汕头国际大酒店及宜华大酒店全案<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GR-2014-SJ-003/004/017/018</span></td>
+                    <td data-slot="s178">汕头宜华国际大酒店</td>
+                    <td data-slot="s179">五星级地标国际大酒店</td>
+                    <td data-slot="s180">2014</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700;" data-slot="s181">3,285.00</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700; color:var(--accent-forest);" data-slot="s182">3,285.00</td>
+                    <td data-slot="s183">4份原件合同覆盖21层高端配饰/家具销售与1-19层公区客房全案，总额 3,285 万元</td>
+                </tr>
+                <tr>
+                    <td data-slot="s184">7</td>
+                    <td class="table-dim" data-slot="s185">恒大集团全国战略集采大盘<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GY-2015~2020批次 (93标段)</span></td>
+                    <td data-slot="s186">恒大地产集团总部及各区域公司</td>
+                    <td data-slot="s187">全国样板间及售楼处年度战采</td>
+                    <td data-slot="s188">2017</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700;" data-slot="s189">3,250.00</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700; color:var(--accent-forest);" data-slot="s190">2,800.00</td>
+                    <td data-slot="s191">覆盖全国30+重点城市93个标段，年度框架协议排期滚动，分批开工批量流水式回款</td>
+                </tr>
+                <tr>
+                    <td data-slot="s192">8</td>
+                    <td class="table-dim" data-slot="s193">红花岗南部城市综合体工程项目 <a href="javascript:void(0)" onclick="openSubMonograph('monograph-hhg', '红花岗项目全生命周期深度商业研报.html')" style="display:inline-block; margin-left:6px; font-size:11px; padding:1px 6px; border:1px solid var(--accent-navy); border-radius:2px; color:var(--accent-navy); text-decoration:none; background:#fff; font-weight:600;">专案 ↗</a><br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GY-2016-YW-049</span></td>
+                    <td data-slot="s194">中建四局 / 遵义红花岗城投</td>
+                    <td data-slot="s195">五星级城市综合体酒店 (格兰云天)</td>
+                    <td data-slot="s196">2017</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700;" data-slot="s197">3,112.50</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700; color:var(--accent-forest);" data-slot="s198">2,200.00</td>
+                    <td data-slot="s199">送审 3,502.90 万元，以 1100 ㎡ 核心公区全款 2,200 万元一次性商务确权对冲锁定</td>
+                </tr>
+                <tr>
+                    <td data-slot="s200">9</td>
+                    <td class="table-dim" data-slot="s201">海南生态软件园C地块五期酒店<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">采购合同 0402</span></td>
+                    <td data-slot="s202">海南生态软件园投资发展</td>
+                    <td data-slot="s203">自贸港高端国际度假酒店</td>
+                    <td data-slot="s204">2018</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700;" data-slot="s205">2,664.79</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700; color:var(--accent-forest);" data-slot="s206">2,664.79</td>
+                    <td data-slot="s207">30%预付 + 生产出厂初验付至 80% 极速回款，全套滨海抗盐耐候家具按期保质交付</td>
+                </tr>
+                <tr>
+                    <td data-slot="s208">10</td>
+                    <td class="table-dim" data-slot="s209">莫斯科华铭园中国商务中心综合体<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">华铭园海外合同</span></td>
+                    <td data-slot="s210">莫斯科华铭园集团</td>
+                    <td data-slot="s211">海外国家级商务综合体</td>
+                    <td data-slot="s212">2018</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700;" data-slot="s213">2,180.00</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700; color:var(--accent-forest);" data-slot="s214">2,180.00</td>
+                    <td data-slot="s215">涉外国家级重大公建，通过不可撤销信用证与国际海关报关验收推进，确权 2,180 万</td>
+                </tr>
+                <tr style="background: rgba(197, 160, 89, 0.05);">
+                    <td data-slot="s216">11</td>
+                    <td class="table-dim" data-slot="s217">江西婺源婺女洲二期度假区酒店群<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GY-2021-YW-044(1~4)</span></td>
+                    <td data-slot="s218">江西鑫邦文化旅游投资发展</td>
+                    <td data-slot="s219">知名文旅度假胜地酒店群</td>
+                    <td data-slot="s220">2021</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700; color:var(--accent-gold);" data-slot="s221">1,941.26</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700; color:var(--accent-forest);" data-slot="s222">1,941.26</td>
+                    <td data-slot="s223">4份盖章合同原件覆盖无梦北区/南区/东篱下独栋/西街民宿整体软装，实签 1,941.26 万</td>
+                </tr>
+                <tr>
+                    <td data-slot="s224">12</td>
+                    <td class="table-dim" data-slot="s225">平度雅高美爵酒店精装修工程<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GT-2016-SY1.G-068</span></td>
+                    <td data-slot="s226">青岛永新华文化发展有限公司</td>
+                    <td data-slot="s227">国际联号豪华星级酒店 (雅高美爵)</td>
+                    <td data-slot="s228">2016</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700;" data-slot="s229">1,854.00</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700; color:var(--accent-forest);" data-slot="s230">1,854.00</td>
+                    <td data-slot="s231">国际酒店品牌标准样板间封样验收，大货按期保质交付，合同额 1,854 万元</td>
+                </tr>
+                <tr>
+                    <td data-slot="s232">13</td>
+                    <td class="table-dim" data-slot="s233">平顶山温德姆国际大酒店<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">温德姆2016合同</span></td>
+                    <td data-slot="s234">盛源锦江国际大酒店有限公司</td>
+                    <td data-slot="s235">国际高端品牌星级酒店 (温德姆)</td>
+                    <td data-slot="s236">2016</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700;" data-slot="s237">1,631.00</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700; color:var(--accent-forest);" data-slot="s238">1,631.00</td>
+                    <td data-slot="s239">外资酒店品牌审计标准，环保 E0 级板材与阻燃面料严格管控，确权 1,631 万元</td>
+                </tr>
+                <tr>
+                    <td data-slot="s240">14</td>
+                    <td class="table-dim" data-slot="s241">广西荔园饭店改造工程<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GY-2017-YW-012</span></td>
+                    <td data-slot="s242">广西荔园饭店投资有限公司</td>
+                    <td data-slot="s243">高规格国宾政务接待饭店改造</td>
+                    <td data-slot="s244">2017</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700;" data-slot="s245">1,426.00</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700; color:var(--accent-forest);" data-slot="s246">1,426.00</td>
+                    <td data-slot="s247">省级政务国宾馆修缮改造，高标准现场保护与精密收口安装，确权 1,426 万元</td>
+                </tr>
+                <tr>
+                    <td data-slot="s248">15</td>
+                    <td class="table-dim" data-slot="s249">北京恒大丽宫独栋顶豪别墅<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GY-2017-YW-009/018</span></td>
+                    <td data-slot="s250">恒大地产集团北京公司</td>
+                    <td data-slot="s251">顶级豪宅独栋别墅群 (58栋182#)</td>
+                    <td data-slot="s252">2017</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700;" data-slot="s253">1,200.00</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700; color:var(--accent-forest);" data-slot="s254">1,200.00</td>
+                    <td data-slot="s255">顶级独栋豪宅全案高端软装定制，恒大战略集采排期协同，审定金额 1,200 万元</td>
+                </tr>
+                <tr>
+                    <td data-slot="s256">16</td>
+                    <td class="table-dim" data-slot="s257">九寨鲁能中查沟一期希尔顿酒店<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GT-2016-SY11.G-148</span></td>
+                    <td data-slot="s258">四川九寨鲁能生态旅游投资</td>
+                    <td data-slot="s259">国际超五星级度假酒店 (Hilton)</td>
+                    <td data-slot="s260">2016</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700;" data-slot="s261">903.00</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700; color:var(--accent-forest);" data-slot="s262">903.00</td>
+                    <td data-slot="s263">央企鲁能生态度假工程，严格执行高寒高海拔特殊运输与防潮保质要求</td>
+                </tr>
+                <tr>
+                    <td data-slot="s264">17</td>
+                    <td class="table-dim" data-slot="s265">汕头龙湖宾馆改造一期<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GY-2019-YW-033</span></td>
+                    <td data-slot="s266">汕头市龙湖宾馆有限公司</td>
+                    <td data-slot="s267">四星级国宾接待酒店改造</td>
+                    <td data-slot="s268">2019</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700;" data-slot="s269">850.00</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700; color:var(--accent-forest);" data-slot="s270">850.00</td>
+                    <td data-slot="s271">老牌国宾馆修缮升级，分批进场深化排产，结算尾款全流程法务闭环跟进</td>
+                </tr>
+                <tr>
+                    <td data-slot="s272">18</td>
+                    <td class="table-dim" data-slot="s273">保利东江首府皇冠假日酒店室内艺术品<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GR-2014-SJ-013</span></td>
+                    <td data-slot="s274">保利增城房地产开发有限公司</td>
+                    <td data-slot="s275">央企保利豪华星级酒店 (皇冠假日)</td>
+                    <td data-slot="s276">2014</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700;" data-slot="s277">577.00</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700; color:var(--accent-forest);" data-slot="s278">577.00</td>
+                    <td data-slot="s279">央企保利集采框架，大型艺术装置与雕塑现场力学吊装计算及成品验收</td>
+                </tr>
+                <tr>
+                    <td data-slot="s280">19</td>
+                    <td class="table-dim" data-slot="s281">陆川九龙山庄改造提升工程<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GY-2021-YW-050</span></td>
+                    <td data-slot="s282">陆川县乐源温泉开发</td>
+                    <td data-slot="s283">温泉康养生态度假村</td>
+                    <td data-slot="s284">2021</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700;" data-slot="s285">550.00</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700; color:var(--accent-forest);" data-slot="s286">550.00</td>
+                    <td data-slot="s287">货到 80% 款项到位，28 天极限抢工交付 1-6 层定制家具与洁具灯具系统</td>
+                </tr>
+                <tr>
+                    <td data-slot="s288">20</td>
+                    <td class="table-dim" data-slot="s289">苏州协鑫广场商业综合体<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GY-2016-YW-007</span></td>
+                    <td data-slot="s290">苏州协鑫置业有限公司</td>
+                    <td data-slot="s291">商业综合体/酒店式公寓</td>
+                    <td data-slot="s292">2016</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700;" data-slot="s293">450.00</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700; color:var(--accent-forest);" data-slot="s294">450.00</td>
+                    <td data-slot="s295">30%预付 + 50%进度 + 17%验收款，酒店式公寓精装软装一体化工程顺利交付</td>
+                </tr>
+                <tr>
+                    <td data-slot="s296">21</td>
+                    <td class="table-dim" data-slot="s297">中国奥园集团三大战略集采<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GY-2017-YW-015等</span></td>
+                    <td data-slot="s298">中国奥园集团(3883.HK)</td>
+                    <td data-slot="s299">地产战略集采(售楼处/样板房)</td>
+                    <td data-slot="s300">2017</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700;" data-slot="s301">225.65</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700; color:var(--accent-forest);" data-slot="s302">225.65</td>
+                    <td data-slot="s303">统筹梅州奥园天悦湾、韶关印象岭南与奥园·峯荟，战采协议基准毛利 32.8%</td>
+                </tr>
+                <tr>
+                    <td data-slot="s304">22</td>
+                    <td class="table-dim" data-slot="s305">珠海万科红树东岸展示样品房工程<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GY-2016-YW-040</span></td>
+                    <td data-slot="s306">万科集团 (Vanke)</td>
+                    <td data-slot="s307">头部房企顶级滨海豪宅样板房</td>
+                    <td data-slot="s308">2016</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700;" data-slot="s309">185.00</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700; color:var(--accent-forest);" data-slot="s310">185.00</td>
+                    <td data-slot="s311">万科顶级滨海样板房全案定制，标准战采验收，按期交付回款 185 万元</td>
+                </tr>
+                <tr>
+                    <td data-slot="s312">23</td>
+                    <td class="table-dim" data-slot="s313">上海华泰中心售楼处 <a href="javascript:void(0)" onclick="openSubMonograph('monograph-ht', '上海华泰中心售楼处全生命周期商业操盘研报.html')" style="display:inline-block; margin-left:6px; font-size:11px; padding:1px 6px; border:1px solid var(--accent-navy); border-radius:2px; color:var(--accent-navy); text-decoration:none; background:#fff; font-weight:600;">专案 ↗</a><br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">PRJ_SHANGHAI_HUATAI</span></td>
+                    <td data-slot="s314">上海华泰置业有限公司</td>
+                    <td data-slot="s315">一线城市极奢商务地标售楼处</td>
+                    <td data-slot="s316">2015</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700;" data-slot="s317">156.66</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700; color:var(--accent-forest);" data-slot="s318">156.66</td>
+                    <td data-slot="s319">极速开盘工期出厂前刚性收回 70% 现款覆盖全部采购直接成本，经营毛利 33.5%</td>
+                </tr>
+                <tr>
+                    <td data-slot="s320">24</td>
+                    <td class="table-dim" data-slot="s321">宾阳华美达广场酒店全案<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">BY-HMD-2018-001等</span></td>
+                    <td data-slot="s322">南宁宾阳城建集团</td>
+                    <td data-slot="s323">国际联号星级商务酒店</td>
+                    <td data-slot="s324">2018</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700;" data-slot="s325">108.28</td>
+                    <td style="text-align:right; font-family:var(--font-mono); font-weight:700; color:var(--accent-forest);" data-slot="s326">108.28</td>
+                    <td data-slot="s327">提货前付至 90% 极速回款模式，实现零垫资交付，单体项目结算利润率 34.2%</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- 统一底层单一真实源数据依据 -->
+
+    <!-- 页脚版权与底注 -->
+    <footer class="archival-footer">
+        <div data-slot="s328">
+            <span>ARCHIVAL DOSSIER · PRJ-CLOUD-DECO-2024 · 广田云软装十年实盘档案</span>
+        </div>
+        <div style="font-family:var(--font-mono); font-size:11px;" data-slot="s329">
+            2026 商业专案库归档
+        </div>
+    </footer>
+
+</div>
+
+<!-- 基础通信与安全交互脚本 -->
+<script>
+    // 返回总舱：无条件跳转到总舱（不依赖 history / iframe 父级，避免无反应）
+    window.handleBackToParent = function() {
+        window.location.href = '../';
+    };
+
+    // 子专案返回父大盘
+    window.returnToParentMonograph = function() {
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({ type: 'NAVIGATE_BACK' }, '*');
+        } else {
+            window.location.href = '深圳市广田云软装科技全生命周期商业操盘与供应链大盘商业研报.html';
+        }
+    };
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const palette = {
+            navy: '#162a45',
+            slate: '#334155',
+            bronze: '#8c7355',
+            forest: '#3a6351',
+            crimson: '#8b263e',
+            gold: '#c5a059',
+            lightGray: '#f1f5f9',
+            border: '#cbd5e1'
+        };
+
+        // FIG.01 云软装核心标杆工程签约与审定对比
+        const chartCBarEl = document.getElementById('chart-contracts-bar');
+        if (chartCBarEl) {
+            const chartContractsBar = echarts.init(chartCBarEl);
+            chartContractsBar.setOption({
+                backgroundColor: 'transparent',
+                tooltip: {
+                    trigger: 'axis',
+                    axisPointer: { type: 'shadow' },
+                    formatter: function(params) {
+                        let res = '<strong>' + params[0].name + '</strong><br/>';
+                        params.forEach(p => {
+                            res += p.marker + ' ' + p.seriesName + ': <strong>' + p.value + ' 万元</strong><br/>';
+                        });
+                        return res;
+                    }
+                },
+                legend: {
+                    data: ['签约合同金额', '审定确权金额'],
+                    top: 0,
+                    right: 0,
+                    textStyle: { fontFamily: 'JetBrains Mono', fontSize: 11, color: palette.slate }
+                },
+                grid: { top: 35, bottom: 50, left: 65, right: 20 },
+                xAxis: {
+                    type: 'category',
+                    data: [
+                        '遵义大酒店', '汇川温泉城', '遵义开元名都', '仁怀温泉小镇', '湄江温泉酒店',
+                        '汕头国际酒店', '恒大全国战采', '红花岗综合体', '海南生态园', '莫斯科华铭园',
+                        '婺女洲度假区', '平度雅高美爵'
+                    ],
+                    axisLabel: {
+                        fontFamily: 'Noto Serif SC',
+                        fontSize: 10.5,
+                        color: palette.slate,
+                        interval: 0,
+                        rotate: 28
+                    },
+                    axisLine: { lineStyle: { color: palette.border } }
+                },
+                yAxis: {
+                    type: 'value',
+                    name: '万元',
+                    nameTextStyle: { fontFamily: 'JetBrains Mono', fontSize: 10, color: palette.slate },
+                    axisLabel: { fontFamily: 'JetBrains Mono', fontSize: 10, color: palette.slate },
+                    splitLine: { lineStyle: { color: '#f1f5f9', type: 'dashed' } }
+                },
+                series: [
+                    {
+                        name: '签约合同金额',
+                        type: 'bar',
+                        barWidth: 13,
+                        data: [12500, 10900, 10300, 5200, 3380, 3285, 3250, 3112.5, 2664.79, 2180, 1941.26, 1854],
+                        itemStyle: { color: palette.navy, borderRadius: [2, 2, 0, 0] }
+                    },
+                    {
+                        name: '审定确权金额',
+                        type: 'bar',
+                        barWidth: 13,
+                        data: [9300, 9800, 9500, 4800, 2798.5, 3285, 2800, 2200, 2664.79, 2180, 1941.26, 1854],
+                        itemStyle: { color: palette.forest, borderRadius: [2, 2, 0, 0] }
+                    }
+                ]
+            });
+            window.addEventListener('resize', () => chartContractsBar.resize());
+        }
+
+        // FIG.02 云软装四大业务板块投资权重与金额分布环形图
+        const chartTPieEl = document.getElementById('chart-types-pie');
+        if (chartTPieEl) {
+            const chartTypesPie = echarts.init(chartTPieEl);
+            chartTypesPie.setOption({
+                backgroundColor: 'transparent',
+                tooltip: {
+                    trigger: 'item',
+                    formatter: '{b}: <strong>{c} 万元</strong> ({d}%)'
+                },
+                legend: {
+                    orient: 'vertical',
+                    right: '2%',
+                    top: 'middle',
+                    itemWidth: 12,
+                    itemHeight: 12,
+                    textStyle: { fontFamily: 'Noto Serif SC', fontSize: 10.5, color: palette.slate }
+                },
+                series: [
+                    {
+                        name: '业态投资占比',
+                        type: 'pie',
+                        radius: ['45%', '72%'],
+                        center: ['36%', '50%'],
+                        avoidLabelOverlap: false,
+                        itemStyle: {
+                            borderRadius: 4,
+                            borderColor: '#fff',
+                            borderWidth: 2
+                        },
+                        label: { show: false },
+                        emphasis: {
+                            label: {
+                                show: true,
+                                fontSize: 11.5,
+                                fontWeight: 'bold',
+                                fontFamily: 'Noto Serif SC'
+                            }
+                        },
+                        data: [
+                            { value: 33700.00, name: '遵义三大破亿超级工程 (49.3%)', itemStyle: { color: palette.navy } },
+                            { value: 23500.00, name: '全国五星酒店及国宾馆群 (34.4%)', itemStyle: { color: palette.forest } },
+                            { value: 6472.00, name: '海外公建及知名文旅胜地 (9.5%)', itemStyle: { color: palette.gold } },
+                            { value: 4676.00, name: '头部房企战采与高端商办 (6.8%)', itemStyle: { color: palette.bronze } }
+                        ]
+                    }
+                ]
+            });
+            window.addEventListener('resize', () => chartTypesPie.resize());
+        }
+
+        // FIG.03 初创第一年 45 人组织编制与八大管理模块 730 条制度
+        const chartHrEl = document.getElementById('chart-hr-bar');
+        if (chartHrEl) {
+            const chartHrBar = echarts.init(chartHrEl);
+            chartHrBar.setOption({
+                backgroundColor: 'transparent',
+                tooltip: {
+                    trigger: 'axis',
+                    axisPointer: { type: 'shadow' },
+                    formatter: '{b}: <strong>{c} 条款</strong>'
+                },
+                grid: { top: 20, bottom: 25, left: 140, right: 35 },
+                xAxis: {
+                    type: 'value',
+                    axisLabel: { fontFamily: 'JetBrains Mono', fontSize: 10, color: palette.slate },
+                    splitLine: { lineStyle: { color: '#f1f5f9', type: 'dashed' } }
+                },
+                yAxis: {
+                    type: 'category',
+                    data: [
+                        '商务出差与报销标准',
+                        '行政资产与展厅物业',
+                        '绩效考核与评估机制',
+                        '薪酬福利与绩效双轨制',
+                        '招聘与录用合规程序',
+                        '培训与专业技能发展',
+                        '考勤与工时休假管理',
+                        '奖惩管理与合规红线'
+                    ],
+                    axisLabel: { fontFamily: 'Noto Serif SC', fontSize: 11, color: palette.slate },
+                    axisLine: { lineStyle: { color: palette.border } }
+                },
+                series: [
+                    {
+                        name: '条款数量',
+                        type: 'bar',
+                        barWidth: 16,
+                        data: [58, 68, 78, 85, 88, 96, 112, 145],
+                        itemStyle: {
+                            color: function(params) {
+                                const colors = ['#cbd5e1', '#94a3b8', '#8c7355', '#3a6351', '#3a6351', '#8c7355', '#162a45', '#162a45'];
+                                return colors[params.dataIndex];
+                            },
+                            borderRadius: [0, 3, 3, 0]
+                        },
+                        label: {
+                            show: true,
+                            position: 'right',
+                            fontFamily: 'JetBrains Mono',
+                            fontSize: 10,
+                            color: palette.slate,
+                            formatter: '{c} 条'
+                        }
+                    }
+                ]
+            });
+            window.addEventListener('resize', () => chartHrBar.resize());
+        }
+
+        // FIG.04 全景 135 份盖章合同大盘与审定产值结构
+        const chartCashflowEl = document.getElementById('chart-cashflow-grid');
+        if (chartCashflowEl) {
+            const chartCashflowGrid = echarts.init(chartCashflowEl);
+            chartCashflowGrid.setOption({
+                backgroundColor: 'transparent',
+                tooltip: {
+                    trigger: 'axis',
+                    axisPointer: { type: 'shadow' },
+                    formatter: function(params) {
+                        let res = '<strong>' + params[0].name + '</strong><br/>';
+                        params.forEach(p => {
+                            res += p.marker + ' ' + p.seriesName + ': <strong>' + p.value + ' 万元</strong><br/>';
+                        });
+                        return res;
+                    }
+                },
+                legend: {
+                    data: ['签约合同额', '审定产值'],
+                    top: 0,
+                    right: 0,
+                    textStyle: { fontFamily: 'JetBrains Mono', fontSize: 11, color: palette.slate }
+                },
+                grid: { top: 35, bottom: 40, left: 65, right: 20 },
+                xAxis: {
+                    type: 'category',
+                    data: ['破亿级标杆盘', '五星酒店及国宾馆', '文旅胜地民宿', '头部房企全国战采'],
+                    axisLabel: { fontFamily: 'Noto Serif SC', fontSize: 11, color: palette.slate },
+                    axisLine: { lineStyle: { color: palette.border } }
+                },
+                yAxis: {
+                    type: 'value',
+                    name: '万元',
+                    nameTextStyle: { fontFamily: 'JetBrains Mono', fontSize: 10, color: palette.slate },
+                    axisLabel: { fontFamily: 'JetBrains Mono', fontSize: 10, color: palette.slate },
+                    splitLine: { lineStyle: { color: '#f1f5f9', type: 'dashed' } }
+                },
+                series: [
+                    {
+                        name: '签约合同额',
+                        type: 'bar',
+                        barWidth: 18,
+                        data: [33700, 23500, 6472, 4676],
+                        itemStyle: { color: palette.navy, borderRadius: [2, 2, 0, 0] }
+                    },
+                    {
+                        name: '审定产值',
+                        type: 'bar',
+                        barWidth: 18,
+                        data: [28600, 20600, 6100, 3915.5],
+                        itemStyle: { color: palette.bronze, borderRadius: [2, 2, 0, 0] }
+                    }
+                ]
+            });
+            window.addEventListener('resize', () => chartCashflowGrid.resize());
+        }
+    });
+
+    // 联动打开核心工程独立专案详情
+    function openSubMonograph(key, fallbackUrl) {
+        window.open(fallbackUrl, '_blank');
+    }
+</script>
+
+</body>
+</html>

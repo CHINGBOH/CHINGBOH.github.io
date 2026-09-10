@@ -19,3 +19,6 @@ npm-debug.log*
 
 # OS
 .DS_Store
+
+# 研报渲染备份（隔离目录，不入 git）
+/data/monographs_backup/

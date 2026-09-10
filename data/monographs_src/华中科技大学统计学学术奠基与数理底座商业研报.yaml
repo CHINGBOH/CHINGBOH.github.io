@@ -1,0 +1,1832 @@
+# 文字真源：monographs/华中科技大学统计学学术奠基与数理底座商业研报.html
+# 单一真源铁律：改此文件 text -> build_monographs_from_yaml.py 回填外壳，禁止手改 monographs/*.html
+meta:
+  source_file: monographs/华中科技大学统计学学术奠基与数理底座商业研报.html
+  slug: 华中科技大学统计学学术奠基与数理底座商业研报
+  title: 华中科技大学统计学学术奠基与数理认知底座 ｜ 梁清波
+  hash: 5d6ffa0e77115007246b339b0f35189036d7ab188ee29a68e1390178c3166848
+slots:
+- key: s00
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            <span class=\"nav-brand-code\">PRJ-ACAD-HUST-2006</span>\n        "
+  text: "\n            PRJ-ACAD-HUST-2006\n        "
+- key: s01
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#pedigree">学术坐标</a>
+  text: 学术坐标
+- key: s02
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#kpi">核心指标</a>
+  text: 核心指标
+- key: s03
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#curriculum">培养架构</a>
+  text: 培养架构
+- key: s04
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#charts">图表分析</a>
+  text: 图表分析
+- key: s05
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#lbm-pipeline">LBM 算法</a>
+  text: LBM 算法
+- key: s06
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#bridge">二十年映射</a>
+  text: 二十年映射
+- key: s07
+  kind: block
+  tag: button
+  parent: container
+  orig: "\n            <span>‹ 返回总舱</span>\n        "
+  text: "\n            ‹ 返回总舱\n        "
+- key: s08
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            <span>HUST School of Mathematics & Statistics</span>\n            <span class=\"eyebrow-sep\">·</span>\n            <span>Class of 2002 Statistics (B.S.)</span>\n            <span class=\"eyebrow-sep\">·</span>\n            <span>National 985 Foundation Cohort</span>\n        "
+  text: "\n            HUST School of Mathematics & Statistics\n            ·\n            Class of 2002 Statistics (B.S.)\n            ·\n            National 985 Foundation Cohort\n        "
+- key: s09
+  kind: section-title
+  tag: h1
+  parent: container
+  orig: 华中科技大学统计学学术奠基与数理认知底座
+  text: 华中科技大学统计学学术奠基与数理认知底座
+- key: s10
+  kind: block
+  tag: div
+  parent: container
+  orig: 2002 级统计学理学学士 · 数理训练向商业实践与现代系统设计的思维迁移
+  text: 2002 级统计学理学学士 · 数理训练向商业实践与现代系统设计的思维迁移
+- key: s11
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            本文依托四年教学培养计划与经典教材体系，梳理毕业设计《格子玻尔兹曼 (LBM) 算法与数值模拟》的数学物理推导与计算实现，并客观阐述该数理底座在随后上市公司资本运作、工程采销供应链与 AI 全栈开发中的逻辑与方法支撑。\n        "
+  text: "\n            本文依托四年教学培养计划与经典教材体系，梳理毕业设计《格子玻尔兹曼 (LBM) 算法与数值模拟》的数学物理推导与计算实现，并客观阐述该数理底座在随后上市公司资本运作、工程采销供应链与 AI 全栈开发中的逻辑与方法支撑。\n        "
+- key: s12
+  kind: block
+  tag: div
+  parent: container
+  orig: ACADEMIC COHORT
+  text: ACADEMIC COHORT
+- key: s13
+  kind: block
+  tag: div
+  parent: container
+  orig: 学院历史坐标
+  text: 学院历史坐标
+- key: s14
+  kind: block
+  tag: div
+  parent: container
+  orig: 985 <span>首届</span>
+  text: 985 首届
+- key: s15
+  kind: block
+  tag: div
+  parent: container
+  orig: 新学院成立后首届本科生
+  text: 新学院成立后首届本科生
+- key: s16
+  kind: block
+  tag: div
+  parent: container
+  orig: DEGREE PROFILE
+  text: DEGREE PROFILE
+- key: s17
+  kind: block
+  tag: div
+  parent: container
+  orig: 数学系科班
+  text: 数学系科班
+- key: s18
+  kind: block
+  tag: div
+  parent: container
+  orig: 理学学士 <span>(B.S.)</span>
+  text: 理学学士 (B.S.)
+- key: s19
+  kind: block
+  tag: div
+  parent: container
+  orig: 并轨修读分析与高代
+  text: 并轨修读分析与高代
+- key: s20
+  kind: block
+  tag: div
+  parent: container
+  orig: TOTAL CREDITS
+  text: TOTAL CREDITS
+- key: s21
+  kind: block
+  tag: div
+  parent: container
+  orig: 四年总学分
+  text: 四年总学分
+- key: s22
+  kind: block
+  tag: div
+  parent: container
+  orig: 160+ <span>学分</span>
+  text: 160+ 学分
+- key: s23
+  kind: block
+  tag: div
+  parent: container
+  orig: 30+ 门数理与计算骨干课
+  text: 30+ 门数理与计算骨干课
+- key: s24
+  kind: block
+  tag: div
+  parent: container
+  orig: THESIS RESEARCH
+  text: THESIS RESEARCH
+- key: s25
+  kind: block
+  tag: div
+  parent: container
+  orig: 毕业论文课题
+  text: 毕业论文课题
+- key: s26
+  kind: block
+  tag: div
+  parent: container
+  orig: D2Q9 <span>LBM</span>
+  text: D2Q9 LBM
+- key: s27
+  kind: block
+  tag: div
+  parent: container
+  orig: 介观 LBGK 状态机演化仿真
+  text: 介观 LBGK 状态机演化仿真
+- key: s28
+  kind: block
+  tag: div
+  parent: container
+  orig: RIGOROUS PROOF
+  text: RIGOROUS PROOF
+- key: s29
+  kind: block
+  tag: div
+  parent: container
+  orig: 审慎思维习惯
+  text: 审慎思维习惯
+- key: s30
+  kind: block
+  tag: div
+  parent: container
+  orig: 严密推导
+  text: 严密推导
+- key: s31
+  kind: block
+  tag: div
+  parent: container
+  orig: 严格实分析形式化推导训练
+  text: 严格实分析形式化推导训练
+- key: s32
+  kind: block
+  tag: div
+  parent: container
+  orig: CAREER SPAN
+  text: CAREER SPAN
+- key: s33
+  kind: block
+  tag: div
+  parent: container
+  orig: 长期实践迁移
+  text: 长期实践迁移
+- key: s34
+  kind: block
+  tag: div
+  parent: container
+  orig: 20 <span>年</span>
+  text: 20 年
+- key: s35
+  kind: block
+  tag: div
+  parent: container
+  orig: 数理逻辑贯通治理与 AI
+  text: 数理逻辑贯通治理与 AI
+- key: s36
+  kind: block
+  tag: div
+  parent: container
+  orig: SECTION 01 · STANDARDIZED ACADEMIC MATRIX
+  text: SECTION 01 · STANDARDIZED ACADEMIC MATRIX
+- key: s37
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 培养规格与学术基本盘
+  text: 培养规格与学术基本盘
+- key: s38
+  kind: block
+  tag: div
+  parent: container
+  orig: 基于四年教学培养方案与经典教材体系的学术基本盘一览
+  text: 基于四年教学培养方案与经典教材体系的学术基本盘一览
+- key: s39
+  kind: block
+  tag: div
+  parent: container
+  orig: 培养维度 · 时代坐标 · 商业转化
+  text: 培养维度 · 时代坐标 · 商业转化
+- key: s40
+  kind: block
+  tag: div
+  parent: container
+  orig: STANDARDIZED ACADEMIC MATRIX
+  text: STANDARDIZED ACADEMIC MATRIX
+- key: s41
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 培养维度 / 时代坐标
+  text: 培养维度 / 时代坐标
+- key: s42
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 历史事实与严密培养参数
+  text: 历史事实与严密培养参数
+- key: s43
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 商业实战与技术工程转化意义
+  text: 商业实战与技术工程转化意义
+- key: s44
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>学院沿革与学科定位</strong>
+  text: '**学院沿革与学科定位**'
+- key: s45
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        华中科技大学（原华中理工大学、同济医科大学、武汉城市建设学院于 2000 年合并组建，国家首批“985工程”顶尖高校）。<br>\n                        数学学科历经华中工学院基础科学系、1984年数学力学系、1997年应用数学系。<strong>2002 年正式成立数学与统计学院，2002 级为首届统计学本科生</strong>。\n                    "
+  text: "\n                        华中科技大学（原华中理工大学、同济医科大学、武汉城市建设学院于 2000 年合并组建，国家首批“985工程”顶尖高校）。\n\n                        数学学科历经华中工学院基础科学系、1984年数学力学系、1997年应用数学系。**2002 年正式成立数学与统计学院，2002 级为首届统计学本科生**。\n                    "
+- key: s46
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong>专业骨干师资教学投入</strong><br>\n                        修读由万建平教授、刘次华教授等编写的国家规划教材，系统接受概率公理化体系、参数估计与统计推断大题推导训练。\n                    "
+  text: "\n                        **专业骨干师资教学投入**\n\n                        修读由万建平教授、刘次华教授等编写的国家规划教材，系统接受概率公理化体系、参数估计与统计推断大题推导训练。\n                    "
+- key: s47
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>理学培养标准 (非经管)</strong>
+  text: '**理学培养标准 (非经管)**'
+- key: s48
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        行政隶属数学系，严格执行<strong>理学学士 (Bachelor of Science)</strong> 标准。从大一到大二直接与数学与应用数学专业完全并轨修读高强度的《数学分析 (I/II/III)》与《高等代数与几何 (I/II)》，共 33 学分。\n                    "
+  text: "\n                        行政隶属数学系，严格执行**理学学士 (Bachelor of Science)** 标准。从大一到大二直接与数学与应用数学专业完全并轨修读高强度的《数学分析 (I/II/III)》与《高等代数与几何 (I/II)》，共 33 学分。\n                    "
+- key: s49
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong>严密逻辑与推导思维</strong><br>\n                        深入实数完备性定理、Jordan 标准型与极限定理推导，对长链条业务逻辑与复杂数据关系建立严密的审慎核验习惯。\n                    "
+  text: "\n                        **严密逻辑与推导思维**\n\n                        深入实数完备性定理、Jordan 标准型与极限定理推导，对长链条业务逻辑与复杂数据关系建立严密的审慎核验习惯。\n                    "
+- key: s50
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>华科工科底蕴融合</strong>
+  text: '**华科工科底蕴融合**'
+- key: s51
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        依托华科工科建模与计算机应用氛围，修读《C 语言程序设计》《数据结构与算法》《数值分析》《运筹学与线性规划》《常微分方程》《偏微分方程数值解》及 MATLAB/SAS 上机。\n                    "
+  text: "\n                        依托华科工科建模与计算机应用氛围，修读《C 语言程序设计》《数据结构与算法》《数值分析》《运筹学与线性规划》《常微分方程》《偏微分方程数值解》及 MATLAB/SAS 上机。\n                    "
+- key: s52
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong>底层内存与算法实现基础</strong><br>\n                        系统掌握指针连续内存分配、数组局部性与大规模数值矩阵计算，为后续理解 DuckDB 列式计算与数据流转打下扎实功底。\n                    "
+  text: "\n                        **底层内存与算法实现基础**\n\n                        系统掌握指针连续内存分配、数组局部性与大规模数值矩阵计算，为后续理解 DuckDB 列式计算与数据流转打下扎实功底。\n                    "
+- key: s53
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>毕业科研论文课题</strong>
+  text: '**毕业科研论文课题**'
+- key: s54
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        大四阶段师从计算数学与数值解导师团队，开展毕业设计：<strong>《格子玻尔兹曼 (LBM) 算法与流体力学数值模拟》</strong>（采用 D2Q9 离散速度网格模型与 LBGK 单松弛时间演化方程）。\n                    "
+  text: "\n                        大四阶段师从计算数学与数值解导师团队，开展毕业设计：**《格子玻尔兹曼 (LBM) 算法与流体力学数值模拟》**（采用 D2Q9 离散速度网格模型与 LBGK 单松弛时间演化方程）。\n                    "
+- key: s55
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: "\n                        <strong>介观状态机与离散演化模型</strong><br>\n                        突破传统宏观连续方程全局求逆的计算瓶颈，理解微观局部规则向宏观连续介质演化的离散状态机机理，为后续理解复杂状态机与数据流编排提供良好认知。\n                    "
+  text: "\n                        **介观状态机与离散演化模型**\n\n                        突破传统宏观连续方程全局求逆的计算瓶颈，理解微观局部规则向宏观连续介质演化的离散状态机机理，为后续理解复杂状态机与数据流编排提供良好认知。\n                    "
+- key: s56
+  kind: block
+  tag: div
+  parent: container
+  orig: SECTION 02 · 2×2 BALANCED DOSSIER GRID
+  text: SECTION 02 · 2×2 BALANCED DOSSIER GRID
+- key: s57
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 四大递进培养阶段
+  text: 四大递进培养阶段
+- key: s58
+  kind: block
+  tag: div
+  parent: container
+  orig: 纯数分析底座 ➔ 概率推断中枢 ➔ 运筹科学计算 ➔ 算法工程实践的四年递进梯次
+  text: 纯数分析底座 ➔ 概率推断中枢 ➔ 运筹科学计算 ➔ 算法工程实践的四年递进梯次
+- key: s59
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: 阶段一：纯数学严谨分析与代数底座 <span>(大一 ~ 大二 · 48 学分)</span>
+  text: 阶段一：纯数学严谨分析与代数底座 (大一 ~ 大二 · 48 学分)
+- key: s60
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>数理学术内核</strong>：彻底超越浅层工科微积分公式套用，深入 ε-δ 极限实数完备性定理、含参变量积分、Green/Gauss 场论公式；线性空间同构、特征子空间分解、Jordan 标准型与二次型正定性判别。
+  text: '**数理学术内核**：彻底超越浅层工科微积分公式套用，深入 ε-δ 极限实数完备性定理、含参变量积分、Green/Gauss 场论公式；线性空间同构、特征子空间分解、Jordan 标准型与二次型正定性判别。'
+- key: s61
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>终局业务映射</strong>：<strong>严密逻辑与反幻觉基石</strong>。培养对事实证据链的苛刻要求，在上市公司披露与造价审计中杜绝任何主观臆断与模糊推断。
+  text: '**终局业务映射**：**严密逻辑与反幻觉基石**。培养对事实证据链的苛刻要求，在上市公司披露与造价审计中杜绝任何主观臆断与模糊推断。'
+- key: s62
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: 阶段二：概率论与现代统计推断中枢 <span>(大二 ~ 大三 · 42 学分)</span>
+  text: 阶段二：概率论与现代统计推断中枢 (大二 ~ 大三 · 42 学分)
+- key: s63
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>数理学术内核</strong>：Kolmogorov 概率公理化体系、充分统计量、无偏估计、极大似然 (MLE)、Neyman-Pearson 假设检验；高维空间协方差分解、正交投影降维与时序平稳性判别。
+  text: '**数理学术内核**：Kolmogorov 概率公理化体系、充分统计量、无偏估计、极大似然 (MLE)、Neyman-Pearson 假设检验；高维空间协方差分解、正交投影降维与时序平稳性判别。'
+- key: s64
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>终局业务映射</strong>：<strong>AI 向量度量与商业推断底座</strong>。大模型高维 Embedding 余弦检索的多元统计数学本质；上市公司三项费用回归预测与万级物料质量抽检。
+  text: '**终局业务映射**：**AI 向量度量与商业推断底座**。大模型高维 Embedding 余弦检索的多元统计数学本质；上市公司三项费用回归预测与万级物料质量抽检。'
+- key: s65
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: 阶段三：运筹最优化与大规模科学计算 <span>(大三 ~ 大四 · 36 学分)</span>
+  text: 阶段三：运筹最优化与大规模科学计算 (大三 ~ 大四 · 36 学分)
+- key: s66
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>数理学术内核</strong>：大规模矩阵数值直接与迭代求解、偏微分方程有限差分网格离散化；单纯形法、对偶理论、灵敏度分析、网络流运输调度模型、约束满足问题 (CSP)。
+  text: '**数理学术内核**：大规模矩阵数值直接与迭代求解、偏微分方程有限差分网格离散化；单纯形法、对偶理论、灵敏度分析、网络流运输调度模型、约束满足问题 (CSP)。'
+- key: s67
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>终局业务映射</strong>：<strong>工程排产与成本双轨最优化</strong>。大型工程采销与 46 个商业项目转化为运筹排产模型；创立动态加乘双轨定价方程，在峰值 70 人团队下实现年产值跨越 2 亿元。
+  text: '**终局业务映射**：**工程排产与成本双轨最优化**。大型工程采销与 46 个商业项目转化为运筹排产模型；创立动态加乘双轨定价方程，在峰值 70 人团队下实现年产值跨越 2 亿元。'
+- key: s68
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: 阶段四：算法工程实践与科研攻坚闭环 <span>(贯穿四年 · 34 学分)</span>
+  text: 阶段四：算法工程实践与科研攻坚闭环 (贯穿四年 · 34 学分)
+- key: s69
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>数理学术内核</strong>：物理指针运算、连续内存动态分配 (malloc/free)、数组 Cache 局部性；关系代数与集合运算；LBGK 碰撞-迁移介观动力学演化与局部状态机编程。
+  text: '**数理学术内核**：物理指针运算、连续内存动态分配 (malloc/free)、数组 Cache 局部性；关系代数与集合运算；LBGK 碰撞-迁移介观动力学演化与局部状态机编程。'
+- key: s70
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>终局业务映射</strong>：<strong>现代化湖仓与全栈 AI 工程</strong>。DuckDB 列式向量化内存感知；LBM 状态机迁移思想直通现代 AI Agent 状态图总线，一人自研交付 8 大重工业级系统。
+  text: '**终局业务映射**：**现代化湖仓与全栈 AI 工程**。DuckDB 列式向量化内存感知；LBM 状态机迁移思想直通现代 AI Agent 状态图总线，一人自研交付 8 大重工业级系统。'
+- key: s71
+  kind: block
+  tag: div
+  parent: container
+  orig: SECTION 03 · QUANTITATIVE CAPABILITY CHARTS
+  text: SECTION 03 · QUANTITATIVE CAPABILITY CHARTS
+- key: s72
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 数理学术图谱与量化能力分布
+  text: 数理学术图谱与量化能力分布
+- key: s73
+  kind: block
+  tag: div
+  parent: container
+  orig: 四年 160+ 必修学分结构、六维素养雷达、介观状态机时序演化与二十年实践映射桑基流向
+  text: 四年 160+ 必修学分结构、六维素养雷达、介观状态机时序演化与二十年实践映射桑基流向
+- key: s74
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: "\n                    <span class=\"fig-badge\">FIG. 01</span>\n                    <span class=\"chart-title\">四大培养阶段学分分布与课程结构</span>\n                "
+  text: "\n                    FIG. 01\n                    四大培养阶段学分分布与课程结构\n                "
+- key: s75
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 160+ CREDITS · 4 STAGES
+  text: 160+ CREDITS · 4 STAGES
+- key: s76
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 160+ 总学分在纯数基石、概率推断、计算运筹与算法工程四大阶段的权重配比与骨干科目数
+  text: 160+ 总学分在纯数基石、概率推断、计算运筹与算法工程四大阶段的权重配比与骨干科目数
+- key: s77
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: "\n                    <span class=\"fig-badge\">FIG. 02</span>\n                    <span class=\"chart-title\">统计学专业六维数理能力与核心素养</span>\n                "
+  text: "\n                    FIG. 02\n                    统计学专业六维数理能力与核心素养\n                "
+- key: s78
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 6-DIMENSIONAL RADAR MODEL
+  text: 6-DIMENSIONAL RADAR MODEL
+- key: s79
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 基于华科四年严密理学训练构建的六维核心能力雷达模型
+  text: 基于华科四年严密理学训练构建的六维核心能力雷达模型
+- key: s80
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: "\n                    <span class=\"fig-badge\">FIG. 03</span>\n                    <span class=\"chart-title\">LBM 介观动力学演化与状态机迁移时序</span>\n                "
+  text: "\n                    FIG. 03\n                    LBM 介观动力学演化与状态机迁移时序\n                "
+- key: s81
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: LBGK D2Q9 STATE MACHINE
+  text: LBGK D2Q9 STATE MACHINE
+- key: s82
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 从微观局部松弛碰撞到连续介质宏观物理量统计恢复的算法演化管线
+  text: 从微观局部松弛碰撞到连续介质宏观物理量统计恢复的算法演化管线
+- key: s83
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: "\n                    <span class=\"fig-badge\">FIG. 04</span>\n                    <span class=\"chart-title\">二十年职业实践中数理映射全局桑基图</span>\n                "
+  text: "\n                    FIG. 04\n                    二十年职业实践中数理映射全局桑基图\n                "
+- key: s84
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 20-YEAR CAREER SANKEY FLOW
+  text: 20-YEAR CAREER SANKEY FLOW
+- key: s85
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 从华科统计学学术根基到上市公司治理、两亿供应链大盘及现代 AI 全栈的贯通流向
+  text: 从华科统计学学术根基到上市公司治理、两亿供应链大盘及现代 AI 全栈的贯通流向
+- key: s86
+  kind: block
+  tag: div
+  parent: container
+  orig: SECTION 04 · THESIS NUMERICAL SIMULATION
+  text: SECTION 04 · THESIS NUMERICAL SIMULATION
+- key: s87
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 毕业设计课题：《格子玻尔兹曼 (LBM) 算法与数值模拟》
+  text: 毕业设计课题：《格子玻尔兹曼 (LBM) 算法与数值模拟》
+- key: s88
+  kind: block
+  tag: div
+  parent: container
+  orig: 介观动理论 D2Q9 离散晶格模型、LBGK 单松弛时间演化方程与连续内存状态机演算
+  text: 介观动理论 D2Q9 离散晶格模型、LBGK 单松弛时间演化方程与连续内存状态机演算
+- key: s89
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            在华科 2006 年本科毕业设计阶段，梁清波选择流体力学数值模拟课题：<strong>《格子玻尔兹曼 (Lattice Boltzmann Method, LBM) 算法与流体力学数值模拟》</strong>（由科学计算与偏微分方程数值解导师指导）。\n        "
+  text: "\n            在华科 2006 年本科毕业设计阶段，梁清波选择流体力学数值模拟课题：**《格子玻尔兹曼 (Lattice Boltzmann Method, LBM) 算法与流体力学数值模拟》**（由科学计算与偏微分方程数值解导师指导）。\n        "
+- key: s90
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n                    <span>\U0001F52C LBM 算法数学模型与离散演化机理</span>\n                "
+  text: "\n                    \U0001F52C LBM 算法数学模型与离散演化机理\n                "
+- key: s91
+  kind: block
+  tag: div
+  parent: container
+  orig: LATTICE BOLTZMANN METHOD (LBGK / D2Q9)
+  text: LATTICE BOLTZMANN METHOD (LBGK / D2Q9)
+- key: s92
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n                1. 传统宏观连续介质力学对比瓶颈 (Navier-Stokes Equations)：\n            "
+  text: "\n                1. 传统宏观连续介质力学对比瓶颈 (Navier-Stokes Equations)：\n            "
+- key: s93
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n                ∂u/∂t + (u · ∇)u = - (1/ρ) ∇p + ν ∇²u + F\n            "
+  text: "\n                ∂u/∂t + (u · ∇)u = - (1/ρ) ∇p + ν ∇²u + F\n            "
+- key: s94
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n                传统宏观计算流体力学 (CFD) 直接离散求解连续非线性偏微分方程组，存在高阶非线性对流项 <code>(u · ∇)u</code> 与全局压力 Poisson 方程求逆的巨大计算瓶颈，网格生成复杂且难以高效实现大规模并行计算。\n            "
+  text: "\n                传统宏观计算流体力学 (CFD) 直接离散求解连续非线性偏微分方程组，存在高阶非线性对流项 `(u · ∇)u` 与全局压力 Poisson 方程求逆的巨大计算瓶颈，网格生成复杂且难以高效实现大规模并行计算。\n            "
+- key: s95
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n                2. 介观动力学模型 (LBGK 单松弛时间演化方程)：\n            "
+  text: "\n                2. 介观动力学模型 (LBGK 单松弛时间演化方程)：\n            "
+- key: s96
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n                f_i(x + e_i · Δt, t + Δt) - f_i(x, t) = - (1/τ) · [ f_i(x, t) - f_i^(eq)(x, t) ]\n            "
+  text: "\n                f_i(x + e_i · Δt, t + Δt) - f_i(x, t) = - (1/τ) · [ f_i(x, t) - f_i^(eq)(x, t) ]\n            "
+- key: s97
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n                基于微观分子动力学 (MD) 与介观动理论，采用统计粒子速度分布函数 <code>f_i(x, t)</code> 描述流体。通过单松弛时间 <code>τ</code> 逼近 Maxwell-Boltzmann 平衡态分布 <code>f_i^(eq)</code>，将连续非线性偏微分方程转化为<strong>局部的代数松弛与相邻格点的数据迁移</strong>。\n            "
+  text: "\n                基于微观分子动力学 (MD) 与介观动理论，采用统计粒子速度分布函数 `f_i(x, t)` 描述流体。通过单松弛时间 `τ` 逼近 Maxwell-Boltzmann 平衡态分布 `f_i^(eq)`，将连续非线性偏微分方程转化为**局部的代数松弛与相邻格点的数据迁移**。\n            "
+- key: s98
+  kind: block
+  tag: div
+  parent: container
+  orig: STEP 01
+  text: STEP 01
+- key: s99
+  kind: block
+  tag: div
+  parent: container
+  orig: D2Q9 离散速度网格
+  text: D2Q9 离散速度网格
+- key: s100
+  kind: block
+  tag: div
+  parent: container
+  orig: 二维正方晶格上构造 9 个离散速度向量：中心静止点 (4/9)、正交轴向 (1/9) 与对角线 (1/36)，对称性保证宏观各向同性。
+  text: 二维正方晶格上构造 9 个离散速度向量：中心静止点 (4/9)、正交轴向 (1/9) 与对角线 (1/36)，对称性保证宏观各向同性。
+- key: s101
+  kind: block
+  tag: div
+  parent: container
+  orig: STEP 02
+  text: STEP 02
+- key: s102
+  kind: block
+  tag: div
+  parent: container
+  orig: 局部代数碰撞 (Collision)
+  text: 局部代数碰撞 (Collision)
+- key: s103
+  kind: block
+  tag: div
+  parent: container
+  orig: 计算各格点粒子松弛弛豫 <code>f_i^* = f_i - (1/τ)[f_i - f_i^(eq)]</code>。格点间局部计算解耦，具备良好的数组并行性。
+  text: 计算各格点粒子松弛弛豫 `f_i^* = f_i - (1/τ)[f_i - f_i^(eq)]`。格点间局部计算解耦，具备良好的数组并行性。
+- key: s104
+  kind: block
+  tag: div
+  parent: container
+  orig: STEP 03
+  text: STEP 03
+- key: s105
+  kind: block
+  tag: div
+  parent: container
+  orig: 相邻节点迁移 (Streaming)
+  text: 相邻节点迁移 (Streaming)
+- key: s106
+  kind: block
+  tag: div
+  parent: container
+  orig: 粒子沿离散速度方向位移至邻域格点 <code>f_i(x+e_i·Δt) = f_i^*</code>。无矩阵求逆，本质是连续内存指针位移。
+  text: 粒子沿离散速度方向位移至邻域格点 `f_i(x+e_i·Δt) = f_i^*`。无矩阵求逆，本质是连续内存指针位移。
+- key: s107
+  kind: block
+  tag: div
+  parent: container
+  orig: STEP 04
+  text: STEP 04
+- key: s108
+  kind: block
+  tag: div
+  parent: container
+  orig: 宏观统计矩恢复
+  text: 宏观统计矩恢复
+- key: s109
+  kind: block
+  tag: div
+  parent: container
+  orig: 对速度空间求零阶矩与一阶矩无损恢复宏观场：密度 <code>ρ = ∑ f_i</code>，流速 <code>ρu = ∑ f_i·e_i</code>，压力 <code>p = c_s²·ρ</code>。
+  text: 对速度空间求零阶矩与一阶矩无损恢复宏观场：密度 `ρ = ∑ f_i`，流速 `ρu = ∑ f_i·e_i`，压力 `p = c_s²·ρ`。
+- key: s110
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            <strong>\U0001F4A1 思考与体会：LBM 算法对后续复杂工程与系统设计的方法论借鉴</strong><br>\n            1. <strong>局部状态转移与宏观涌现机制</strong>：LBM 算法通过微观格点的局部碰撞与相邻迁移，无需全局矩阵求逆即可自然演化出宏观流动。这种由局部确定性状态转移演化为全局复杂行为的建模方法，在今天复杂分布式业务流和 <strong>现代 AI Agent 状态图机（如 LangGraph / Multi-Agent Swarm）</strong> 的状态转移设计中具备深刻的方法共通性。<br>\n            2. <strong>连续内存与数组计算基础</strong>：LBM 要求在多维连续数组内存中完成数十万次时间步演化，注重数据连续性（Cache Locality）与内存访问效率。这为日后理解 <strong>DuckDB 列式向量化存储、Parquet 二进制切片与高性能数据湖仓</strong> 提供了良好的底层物理直觉。\n        "
+  text: "\n            **\U0001F4A1 思考与体会：LBM 算法对后续复杂工程与系统设计的方法论借鉴**\n\n            1. **局部状态转移与宏观涌现机制**：LBM 算法通过微观格点的局部碰撞与相邻迁移，无需全局矩阵求逆即可自然演化出宏观流动。这种由局部确定性状态转移演化为全局复杂行为的建模方法，在今天复杂分布式业务流和 **现代 AI Agent 状态图机（如 LangGraph / Multi-Agent Swarm）** 的状态转移设计中具备深刻的方法共通性。\n\n            2. **连续内存与数组计算基础**：LBM 要求在多维连续数组内存中完成数十万次时间步演化，注重数据连续性（Cache Locality）与内存访问效率。这为日后理解 **DuckDB 列式向量化存储、Parquet 二进制切片与高性能数据湖仓** 提供了良好的底层物理直觉。\n        "
+- key: s111
+  kind: block
+  tag: div
+  parent: container
+  orig: SECTION 05 · CORE CURRICULUM ARCHIVE
+  text: SECTION 05 · CORE CURRICULUM ARCHIVE
+- key: s112
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 24 门骨干课程
+  text: 24 门骨干课程
+- key: s113
+  kind: block
+  tag: div
+  parent: container
+  orig: 学期时序分布、教材出处、核心理论训练与终局工程映射一览（支持上下滑动）
+  text: 学期时序分布、教材出处、核心理论训练与终局工程映射一览（支持上下滑动）
+- key: s114
+  kind: block
+  tag: div
+  parent: container
+  orig: 24 门核心必修科目 学期分布、经典教材出处与业务映射一览
+  text: 24 门核心必修科目 学期分布、经典教材出处与业务映射一览
+- key: s115
+  kind: block
+  tag: div
+  parent: container
+  orig: 'DUCKDB DIRECT LAKE VIEW: v_hust_core_course_matrix ｜ 共 24 门课程 · 支持上下滑动浏览 ↕'
+  text: 'DUCKDB DIRECT LAKE VIEW: v_hust_core_course_matrix ｜ 共 24 门课程 · 支持上下滑动浏览 ↕'
+- key: s116
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 课程编号
+  text: 课程编号
+- key: s117
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 课程名称
+  text: 课程名称
+- key: s118
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 开设学期
+  text: 开设学期
+- key: s119
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 学分
+  text: 学分
+- key: s120
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 经典教材及权威出处
+  text: 经典教材及权威出处
+- key: s121
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 数理学术核心训练
+  text: 数理学术核心训练
+- key: s122
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 终局商业与技术映射
+  text: 终局商业与技术映射
+- key: s123
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <code>MATH101</code>
+  text: '`MATH101`'
+- key: s124
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>数学分析 I</strong>
+  text: '**数学分析 I**'
+- key: s125
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 第 1 学期
+  text: 第 1 学期
+- key: s126
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '6.0'
+  text: '6.0'
+- key: s127
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 华东师大 / 华科自编教材
+  text: 华东师大 / 华科自编教材
+- key: s128
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: ε-δ 极限严格语言、实数连续性定理、导数与微分中值定理
+  text: ε-δ 极限严格语言、实数连续性定理、导数与微分中值定理
+- key: s129
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 严密逻辑与反驳推导能力
+  text: 严密逻辑与反驳推导能力
+- key: s130
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <code>MATH102</code>
+  text: '`MATH102`'
+- key: s131
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>数学分析 II</strong>
+  text: '**数学分析 II**'
+- key: s132
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 第 2 学期
+  text: 第 2 学期
+- key: s133
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '6.0'
+  text: '6.0'
+- key: s134
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 华东师大 / 华科自编教材
+  text: 华东师大 / 华科自编教材
+- key: s135
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: Riemann 积分理论、反常积分、无穷级数一致收敛性判别
+  text: Riemann 积分理论、反常积分、无穷级数一致收敛性判别
+- key: s136
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 长周期资金贴现积分测算
+  text: 长周期资金贴现积分测算
+- key: s137
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <code>MATH103</code>
+  text: '`MATH103`'
+- key: s138
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>数学分析 III</strong>
+  text: '**数学分析 III**'
+- key: s139
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 第 3 学期
+  text: 第 3 学期
+- key: s140
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '5.0'
+  text: '5.0'
+- key: s141
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 华东师大 / 华科自编教材
+  text: 华东师大 / 华科自编教材
+- key: s142
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 多元微积分、重积分、曲线曲面积分与 Green/Gauss 场论公式
+  text: 多元微积分、重积分、曲线曲面积分与 Green/Gauss 场论公式
+- key: s143
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 三维空间 CAD 几何微积分
+  text: 三维空间 CAD 几何微积分
+- key: s144
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <code>MATH104</code>
+  text: '`MATH104`'
+- key: s145
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>高等代数与几何 I</strong>
+  text: '**高等代数与几何 I**'
+- key: s146
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 第 1 学期
+  text: 第 1 学期
+- key: s147
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '5.0'
+  text: '5.0'
+- key: s148
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 北京大学数学系《高等代数》
+  text: 北京大学数学系《高等代数》
+- key: s149
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 线性方程组理论、行列式、矩阵代数、向量空间与线性映射
+  text: 线性方程组理论、行列式、矩阵代数、向量空间与线性映射
+- key: s150
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 高维特征向量变换本质
+  text: 高维特征向量变换本质
+- key: s151
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <code>MATH105</code>
+  text: '`MATH105`'
+- key: s152
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>高等代数与几何 II</strong>
+  text: '**高等代数与几何 II**'
+- key: s153
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 第 2 学期
+  text: 第 2 学期
+- key: s154
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '5.0'
+  text: '5.0'
+- key: s155
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 北京大学数学系《高等代数》
+  text: 北京大学数学系《高等代数》
+- key: s156
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: λ-矩阵、Jordan 标准型、二次型对角化与正定性判别
+  text: λ-矩阵、Jordan 标准型、二次型对角化与正定性判别
+- key: s157
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 权重矩阵奇异值分解 (SVD)
+  text: 权重矩阵奇异值分解 (SVD)
+- key: s158
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <code>MATH106</code>
+  text: '`MATH106`'
+- key: s159
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>解析几何</strong>
+  text: '**解析几何**'
+- key: s160
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 第 1 学期
+  text: 第 1 学期
+- key: s161
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '3.0'
+  text: '3.0'
+- key: s162
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 吕林根 / 许子道《解析几何》
+  text: 吕林根 / 许子道《解析几何》
+- key: s163
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 仿射坐标系、二次曲面分类、空间投影与正交变换
+  text: 仿射坐标系、二次曲面分类、空间投影与正交变换
+- key: s164
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 3D BIM 空间坐标投影算法
+  text: 3D BIM 空间坐标投影算法
+- key: s165
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <code>MATH107</code>
+  text: '`MATH107`'
+- key: s166
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>常微分方程 (ODE)</strong>
+  text: '**常微分方程 (ODE)**'
+- key: s167
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 第 3 学期
+  text: 第 3 学期
+- key: s168
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '4.0'
+  text: '4.0'
+- key: s169
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 王高雄《常微分方程》
+  text: 王高雄《常微分方程》
+- key: s170
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 初等积分法、线性微分方程组、相平面分析与稳定性理论
+  text: 初等积分法、线性微分方程组、相平面分析与稳定性理论
+- key: s171
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 动态经营系统连续动力学
+  text: 动态经营系统连续动力学
+- key: s172
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <code>MATH108</code>
+  text: '`MATH108`'
+- key: s173
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>复变函数论</strong>
+  text: '**复变函数论**'
+- key: s174
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 第 4 学期
+  text: 第 4 学期
+- key: s175
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '3.0'
+  text: '3.0'
+- key: s176
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 余家荣 / 钟玉泉《复变函数》
+  text: 余家荣 / 钟玉泉《复变函数》
+- key: s177
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 解析函数、Cauchy 积分定理、Taylor 与 Laurent 级数、留数
+  text: 解析函数、Cauchy 积分定理、Taylor 与 Laurent 级数、留数
+- key: s178
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 物理场解析变换与频域分析
+  text: 物理场解析变换与频域分析
+- key: s179
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <code>STAT201</code>
+  text: '`STAT201`'
+- key: s180
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>概率论</strong>
+  text: '**概率论**'
+- key: s181
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 第 3 学期
+  text: 第 3 学期
+- key: s182
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '4.0'
+  text: '4.0'
+- key: s183
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>万建平 / 华科出版社</strong>
+  text: '**万建平 / 华科出版社**'
+- key: s184
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: Kolmogorov 公理体系、随机变量及其分布、数字特征、极限定理
+  text: Kolmogorov 公理体系、随机变量及其分布、数字特征、极限定理
+- key: s185
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 风险概率分布与期望值求解
+  text: 风险概率分布与期望值求解
+- key: s186
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <code>STAT202</code>
+  text: '`STAT202`'
+- key: s187
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>数理统计</strong>
+  text: '**数理统计**'
+- key: s188
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 第 4 学期
+  text: 第 4 学期
+- key: s189
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '4.0'
+  text: '4.0'
+- key: s190
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>万建平 / 高等教育出版社</strong>
+  text: '**万建平 / 高等教育出版社**'
+- key: s191
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 充分统计量、无偏估计、极大似然 (MLE)、假设检验与方差分析
+  text: 充分统计量、无偏估计、极大似然 (MLE)、假设检验与方差分析
+- key: s192
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: A/B 测试与物料方差审计
+  text: A/B 测试与物料方差审计
+- key: s193
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <code>STAT203</code>
+  text: '`STAT203`'
+- key: s194
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>随机过程</strong>
+  text: '**随机过程**'
+- key: s195
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 第 5 学期
+  text: 第 5 学期
+- key: s196
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '4.0'
+  text: '4.0'
+- key: s197
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>刘次华 / 华科出版社</strong>
+  text: '**刘次华 / 华科出版社**'
+- key: s198
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: Poisson 过程、Markov 链及其转移概率矩阵、Brownian 运动、鞅论
+  text: Poisson 过程、Markov 链及其转移概率矩阵、Brownian 运动、鞅论
+- key: s199
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 状态转移图与用户流失预测
+  text: 状态转移图与用户流失预测
+- key: s200
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <code>STAT204</code>
+  text: '`STAT204`'
+- key: s201
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>多元统计分析</strong>
+  text: '**多元统计分析**'
+- key: s202
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 第 5 学期
+  text: 第 5 学期
+- key: s203
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '4.0'
+  text: '4.0'
+- key: s204
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 何晓群《多元统计分析》
+  text: 何晓群《多元统计分析》
+- key: s205
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 主成分分析 (PCA)、因子分析、判别分析、系统聚类
+  text: 主成分分析 (PCA)、因子分析、判别分析、系统聚类
+- key: s206
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 高维 Embedding 降维与客户分群
+  text: 高维 Embedding 降维与客户分群
+- key: s207
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <code>STAT205</code>
+  text: '`STAT205`'
+- key: s208
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>应用回归分析</strong>
+  text: '**应用回归分析**'
+- key: s209
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 第 5 学期
+  text: 第 5 学期
+- key: s210
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '3.0'
+  text: '3.0'
+- key: s211
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 何晓群《应用回归分析》
+  text: 何晓群《应用回归分析》
+- key: s212
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 多元线性回归、多重共线性诊断、残差分析与逐步回归筛选
+  text: 多元线性回归、多重共线性诊断、残差分析与逐步回归筛选
+- key: s213
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 三项费用与毛利敏感性分析
+  text: 三项费用与毛利敏感性分析
+- key: s214
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <code>STAT206</code>
+  text: '`STAT206`'
+- key: s215
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>时间序列分析</strong>
+  text: '**时间序列分析**'
+- key: s216
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 第 6 学期
+  text: 第 6 学期
+- key: s217
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '3.0'
+  text: '3.0'
+- key: s218
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 王振龙《时间序列分析》
+  text: 王振龙《时间序列分析》
+- key: s219
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 平稳时序、ARMA/ARIMA 模型、自相关函数 (ACF/PACF)、谱分析
+  text: 平稳时序、ARMA/ARIMA 模型、自相关函数 (ACF/PACF)、谱分析
+- key: s220
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 市值演进趋势预测与供应链备料
+  text: 市值演进趋势预测与供应链备料
+- key: s221
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <code>STAT207</code>
+  text: '`STAT207`'
+- key: s222
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>抽样技术与调查</strong>
+  text: '**抽样技术与调查**'
+- key: s223
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 第 6 学期
+  text: 第 6 学期
+- key: s224
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '3.0'
+  text: '3.0'
+- key: s225
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 杜子芳《抽样技术》
+  text: 杜子芳《抽样技术》
+- key: s226
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 简单随机抽样、分层抽样、整群抽样与估计误差界控制
+  text: 简单随机抽样、分层抽样、整群抽样与估计误差界控制
+- key: s227
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 工程现场实测抽检合格率核算
+  text: 工程现场实测抽检合格率核算
+- key: s228
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <code>COMP301</code>
+  text: '`COMP301`'
+- key: s229
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>数值分析与计算方法</strong>
+  text: '**数值分析与计算方法**'
+- key: s230
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 第 5 学期
+  text: 第 5 学期
+- key: s231
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '4.0'
+  text: '4.0'
+- key: s232
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 李庆扬 / 华科出版社
+  text: 李庆扬 / 华科出版社
+- key: s233
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 误差理论、线性方程组直接法与迭代法、数值微积分与样条插值
+  text: 误差理论、线性方程组直接法与迭代法、数值微积分与样条插值
+- key: s234
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 大规模稀疏矩阵迭代逼近
+  text: 大规模稀疏矩阵迭代逼近
+- key: s235
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <code>COMP302</code>
+  text: '`COMP302`'
+- key: s236
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>运筹学与线性规划</strong>
+  text: '**运筹学与线性规划**'
+- key: s237
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 第 6 学期
+  text: 第 6 学期
+- key: s238
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '4.0'
+  text: '4.0'
+- key: s239
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 钱颂迪 / 清华大学出版社
+  text: 钱颂迪 / 清华大学出版社
+- key: s240
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 单纯形法、对偶理论、灵敏度分析、运输问题与网络流模型
+  text: 单纯形法、对偶理论、灵敏度分析、运输问题与网络流模型
+- key: s241
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 万级 BOM 采购加乘定价排产
+  text: 万级 BOM 采购加乘定价排产
+- key: s242
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <code>COMP303</code>
+  text: '`COMP303`'
+- key: s243
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>微分方程数值解</strong>
+  text: '**微分方程数值解**'
+- key: s244
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 第 6 学期
+  text: 第 6 学期
+- key: s245
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '3.0'
+  text: '3.0'
+- key: s246
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 李荣华《微分方程数值解法》
+  text: 李荣华《微分方程数值解法》
+- key: s247
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 椭圆与双曲偏微分方程、有限差分格式、稳定性与收敛性分析
+  text: 椭圆与双曲偏微分方程、有限差分格式、稳定性与收敛性分析
+- key: s248
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 流体流动与空间温度场离散求解
+  text: 流体流动与空间温度场离散求解
+- key: s249
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <code>COMP304</code>
+  text: '`COMP304`'
+- key: s250
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>数学建模与仿真</strong>
+  text: '**数学建模与仿真**'
+- key: s251
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 第 6 学期
+  text: 第 6 学期
+- key: s252
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '3.0'
+  text: '3.0'
+- key: s253
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 姜启源《数学模型》
+  text: 姜启源《数学模型》
+- key: s254
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 机理建模与经验建模、蒙特卡洛随机模拟、系统动力学仿真
+  text: 机理建模与经验建模、蒙特卡洛随机模拟、系统动力学仿真
+- key: s255
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 现金流断裂压力测试仿真
+  text: 现金流断裂压力测试仿真
+- key: s256
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <code>ENGR401</code>
+  text: '`ENGR401`'
+- key: s257
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>C 语言高级程序设计</strong>
+  text: '**C 语言高级程序设计**'
+- key: s258
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 第 2 学期
+  text: 第 2 学期
+- key: s259
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '4.0'
+  text: '4.0'
+- key: s260
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 谭浩强 / 华科出版社
+  text: 谭浩强 / 华科出版社
+- key: s261
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 指针运算、结构体、动态内存管理 (malloc/free)、位运算与硬件级优化
+  text: 指针运算、结构体、动态内存管理 (malloc/free)、位运算与硬件级优化
+- key: s262
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 高性能底层计算与内存连续性
+  text: 高性能底层计算与内存连续性
+- key: s263
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <code>ENGR402</code>
+  text: '`ENGR402`'
+- key: s264
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>数据结构与算法</strong>
+  text: '**数据结构与算法**'
+- key: s265
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 第 3 学期
+  text: 第 3 学期
+- key: s266
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '4.0'
+  text: '4.0'
+- key: s267
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 严蔚敏《数据结构(C语言版)》
+  text: 严蔚敏《数据结构(C语言版)》
+- key: s268
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 线性表、树与二叉树、图论遍历、哈希表、排序与检索算法
+  text: 线性表、树与二叉树、图论遍历、哈希表、排序与检索算法
+- key: s269
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: AI Agent 状态图机拓扑遍历
+  text: AI Agent 状态图机拓扑遍历
+- key: s270
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <code>ENGR403</code>
+  text: '`ENGR403`'
+- key: s271
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>数据库系统原理</strong>
+  text: '**数据库系统原理**'
+- key: s272
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 第 4 学期
+  text: 第 4 学期
+- key: s273
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '3.0'
+  text: '3.0'
+- key: s274
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 萨师煊《数据库系统概论》
+  text: 萨师煊《数据库系统概论》
+- key: s275
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 关系代数、SQL 语言、范式理论 (1NF-3NF)、事务 ACID 机制
+  text: 关系代数、SQL 语言、范式理论 (1NF-3NF)、事务 ACID 机制
+- key: s276
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: DuckDB 现代湖仓关系建模
+  text: DuckDB 现代湖仓关系建模
+- key: s277
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <code>ENGR404</code>
+  text: '`ENGR404`'
+- key: s278
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>统计软件与计算实验</strong>
+  text: '**统计软件与计算实验**'
+- key: s279
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 第 5 学期
+  text: 第 5 学期
+- key: s280
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '3.0'
+  text: '3.0'
+- key: s281
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 院系自编上机实验大纲
+  text: 院系自编上机实验大纲
+- key: s282
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: MATLAB 矩阵运算、SAS 统计报表、R 语言统计建模与模拟
+  text: MATLAB 矩阵运算、SAS 统计报表、R 语言统计建模与模拟
+- key: s283
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 大规模商业数据统计分析自动化
+  text: 大规模商业数据统计分析自动化
+- key: s284
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <code>THESIS</code>
+  text: '`THESIS`'
+- key: s285
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>毕业论文：LBM数值模拟</strong>
+  text: '**毕业论文：LBM数值模拟**'
+- key: s286
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 第 8 学期
+  text: 第 8 学期
+- key: s287
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '8.0'
+  text: '8.0'
+- key: s288
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 计算力学导师组前沿科研文献
+  text: 计算力学导师组前沿科研文献
+- key: s289
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 格子玻尔兹曼 (LBM) 算法在流体模拟中的数学建模、D2Q9 编程仿真
+  text: 格子玻尔兹曼 (LBM) 算法在流体模拟中的数学建模、D2Q9 编程仿真
+- key: s290
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 非线性介观状态机演化与并发计算
+  text: 非线性介观状态机演化与并发计算
+- key: s291
+  kind: block
+  tag: div
+  parent: container
+  orig: SECTION 06 · CAREER APPLICATION MAPPING
+  text: SECTION 06 · CAREER APPLICATION MAPPING
+- key: s292
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 二十年职业实践中数理思维的实践迁移与业务支撑
+  text: 二十年职业实践中数理思维的实践迁移与业务支撑
+- key: s293
+  kind: block
+  tag: div
+  parent: container
+  orig: 上市公司合规运作 (2011-2014) ➔ 2 亿实体供应链大盘 (2014-2024) ➔ 现代 AI 全栈与湖仓工程 (2024至今)
+  text: 上市公司合规运作 (2011-2014) ➔ 2 亿实体供应链大盘 (2014-2024) ➔ 现代 AI 全栈与湖仓工程 (2024至今)
+- key: s294
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            华科数学系科班培养的推演与建模思维，在随后的实体工作实践中逐步转化为严谨求实、重证据链的<strong>方法支撑</strong>：\n        "
+  text: "\n            华科数学系科班培养的推演与建模思维，在随后的实体工作实践中逐步转化为严谨求实、重证据链的**方法支撑**：\n        "
+- key: s295
+  kind: block
+  tag: div
+  parent: container
+  orig: STAGE 01 (2011-2014)
+  text: STAGE 01 (2011-2014)
+- key: s296
+  kind: block
+  tag: div
+  parent: container
+  orig: 上市公司合规资本运作
+  text: 上市公司合规资本运作
+- key: s297
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n                    <strong>运用统计推断与逻辑严密性，支撑法定信息披露与财务对标</strong><br>\n                    • <strong>433 行同业财报对标专报</strong>：运用多元回归与残差分析，对标金螳螂、亚厦、洪涛三项费用控制与毛利弹性；<br>\n                    • <strong>12 亿发债 55 类专业底稿</strong>：以审计级假设检验与方差复核，确保发债资产现金流测算严密闭环；<br>\n                    • <strong>深交所 206 篇法定公告</strong>：专职期间保持零监管函件、零行政处罚，深交所信息披露考评持续最高 A 级。\n                "
+  text: "\n                    **运用统计推断与逻辑严密性，支撑法定信息披露与财务对标**\n\n                    • **433 行同业财报对标专报**：运用多元回归与残差分析，对标金螳螂、亚厦、洪涛三项费用控制与毛利弹性；\n\n                    • **12 亿发债 55 类专业底稿**：以审计级假设检验与方差复核，确保发债资产现金流测算严密闭环；\n\n                    • **深交所 206 篇法定公告**：专职期间保持零监管函件、零行政处罚，深交所信息披露考评持续最高 A 级。\n                "
+- key: s298
+  kind: block
+  tag: div
+  parent: container
+  orig: STAGE 02 (2014-2024)
+  text: STAGE 02 (2014-2024)
+- key: s299
+  kind: block
+  tag: div
+  parent: container
+  orig: 2 亿实体商业与供应链
+  text: 2 亿实体商业与供应链
+- key: s300
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n                    <strong>运用运筹规划与量化测算思维，辅助工程物料排产与采销定价</strong><br>\n                    • <strong>运筹排产模型应用</strong>：统领 24 大核心标杆工程（6.88 亿签约/6.14 亿审定）与 135 份全盘合同（6.83 亿签约/5.92 亿产值）；<br>\n                    • <strong>动态双轨加乘定价测算</strong>：精确求解万级 BOM 采购与商务报价区间，锁定毛利安全边界；<br>\n                    • <strong>联动回款数学模型</strong>：执行 <span class=\"formula-badge\">X × [1500 ÷ 6000]</span> 联动回款，实现贴现成本等比分摊与资金风险可控。\n                "
+  text: "\n                    **运用运筹规划与量化测算思维，辅助工程物料排产与采销定价**\n\n                    • **运筹排产模型应用**：统领 24 大核心标杆工程（6.88 亿签约/6.14 亿审定）与 135 份全盘合同（6.83 亿签约/5.92 亿产值）；\n\n                    • **动态双轨加乘定价测算**：精确求解万级 BOM 采购与商务报价区间，锁定毛利安全边界；\n\n                    • **联动回款数学模型**：执行 X × [1500 ÷ 6000] 联动回款，实现贴现成本等比分摊与资金风险可控。\n                "
+- key: s301
+  kind: block
+  tag: div
+  parent: container
+  orig: STAGE 03 (2024-PRESENT)
+  text: STAGE 03 (2024-PRESENT)
+- key: s302
+  kind: block
+  tag: div
+  parent: container
+  orig: 现代 AI 全栈与湖仓工程
+  text: 现代 AI 全栈与湖仓工程
+- key: s303
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n                    <strong>运用线性代数与状态转移机理，理解并驾驭向量检索与数据湖仓</strong><br>\n                    • <strong>多元统计高维投影</strong>：直接映射为大模型余弦相似度度量与混合 RAG 架构，提升知识检索精度；<br>\n                    • <strong>网格状态机转移思想</strong>：借鉴至 LangGraph 分布式 Agent 确定性调度流，提高流程鲁棒性；<br>\n                    • <strong>连续内存数组认知</strong>：直接转化至 DuckDB 列式向量化内存计算感知，独立自研交付 8 大系统原型（2,804 万行源码）。\n                "
+  text: "\n                    **运用线性代数与状态转移机理，理解并驾驭向量检索与数据湖仓**\n\n                    • **多元统计高维投影**：直接映射为大模型余弦相似度度量与混合 RAG 架构，提升知识检索精度；\n\n                    • **网格状态机转移思想**：借鉴至 LangGraph 分布式 Agent 确定性调度流，提高流程鲁棒性；\n\n                    • **连续内存数组认知**：直接转化至 DuckDB 列式向量化内存计算感知，独立自研交付 8 大系统原型（2,804 万行源码）。\n                "

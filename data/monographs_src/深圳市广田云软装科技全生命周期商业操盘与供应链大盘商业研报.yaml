@@ -1,0 +1,2036 @@
+# 文字真源：monographs/深圳市广田云软装科技全生命周期商业操盘与供应链大盘商业研报.html
+# 单一真源铁律：改此文件 text -> build_monographs_from_yaml.py 回填外壳，禁止手改 monographs/*.html
+meta:
+  source_file: monographs/深圳市广田云软装科技全生命周期商业操盘与供应链大盘商业研报.html
+  slug: 深圳市广田云软装科技全生命周期商业操盘与供应链大盘商业研报
+  title: 广田云软装 · 全资子公司十年实盘 ｜ 梁清波
+  hash: c4a4e646ec5b6fa0e6e85398ef09e83a7dbc6c34ff8a637f52f59f34946d5161
+slots:
+- key: s00
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#sec-overview">§ 1 项目基本盘</a>
+  text: § 1 项目基本盘
+- key: s01
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#sec-methodology">§ 2 核心方法论</a>
+  text: § 2 核心方法论
+- key: s02
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#sec-dashboard">§ 3 商业大盘图表</a>
+  text: § 3 商业大盘图表
+- key: s03
+  kind: li
+  tag: li
+  parent: container
+  orig: <a href="#sec-contracts">§ 4 二十四大标杆台账</a>
+  text: § 4 二十四大标杆台账
+- key: s04
+  kind: block
+  tag: button
+  parent: container
+  orig: "\n            <span>‹ 返回总舱</span>\n        "
+  text: "\n            ‹ 返回总舱\n        "
+- key: s05
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            <span>ARCHIVAL MONOGRAPH</span>\n            <span class=\"eyebrow-sep\">/</span>\n            <span>PRJ-CLOUD-DECO-2024</span>\n            <span class=\"eyebrow-sep\">/</span>\n            <span>GUANGTIAN CLOUD SOFT FURNISHING MASTER PORTFOLIO</span>\n        "
+  text: "\n            ARCHIVAL MONOGRAPH\n            /\n            PRJ-CLOUD-DECO-2024\n            /\n            GUANGTIAN CLOUD SOFT FURNISHING MASTER PORTFOLIO\n        "
+- key: s06
+  kind: section-title
+  tag: h1
+  parent: container
+  orig: 广田云软装 · 全资子公司十年实盘
+  text: 广田云软装 · 全资子公司十年实盘
+- key: s07
+  kind: block
+  tag: div
+  parent: container
+  orig: ——全资子公司从0到1组建 45 人团队，统筹十大标杆项目与 135 份契约所承载的全周期工程实录
+  text: ——全资子公司从0到1组建 45 人团队，统筹十大标杆项目与 135 份契约所承载的全周期工程实录
+- key: s08
+  kind: p
+  tag: p
+  parent: container
+  orig: 深圳市广田云软装科技（深圳市广田软装艺术有限公司）是广田集团旗下全资子公司，本专案实录梁清波自 2014 年 2 月至 2024 年 2 月历时十年的全周期深耕经历。
+  text: 深圳市广田云软装科技（深圳市广田软装艺术有限公司）是广田集团旗下全资子公司，本专案实录梁清波自 2014 年 2 月至 2024 年 2 月历时十年的全周期深耕经历。
+- key: s09
+  kind: p
+  tag: p
+  parent: container
+  orig: <strong>初创奠基期（2014.02–2015.02）</strong>：作为筹办与初创负责人，承接集团超募资金 3,000 万元设立公司的成果，从 0 到 1 组建 45 人团队（设计 18 / 工程 12 / 商务 8 / 综合 7），主笔《广田云软装制度》八大模块 730 条条款、28 类审批流与底薪提成双轨制，打造 1,491 ㎡ 艺展中心展厅，实现劳动合同 100% 签署、十年零劳动仲裁。
+  text: '**初创奠基期（2014.02–2015.02）**：作为筹办与初创负责人，承接集团超募资金 3,000 万元设立公司的成果，从 0 到 1 组建 45 人团队（设计 18 / 工程 12 / 商务 8 / 综合 7），主笔《广田云软装制度》八大模块 730 条条款、28 类审批流与底薪提成双轨制，打造 1,491 ㎡ 艺展中心展厅，实现劳动合同 100% 签署、十年零劳动仲裁。'
+- key: s10
+  kind: p
+  tag: p
+  parent: container
+  orig: <strong>大项目牵头期（2015–2024）</strong>：以重大标杆项目为专班战元，跨设计/工程/造价/采购拉通专业力量、端到端下沉一线，统筹全盘 <strong>135 份盖章合同（签约 6.83 亿元，锁定产值 5.92 亿元）</strong>，覆盖遵义三大破亿工程（遵义大酒店 1.25 亿 / 汇川康养城 1.09 亿 / 遵义开元名都 1.03 亿）、仁怀温泉小镇、景德镇婺源婺女洲及全国五星酒店集群；主抓采销双轨调价（锁定 30%~35% 毛利）、四维资金回款防线与多轮竣工结算抗辩。其中 24 个代表性标杆工程为全盘合同的骨干子集。
+  text: '**大项目牵头期（2015–2024）**：以重大标杆项目为专班战元，跨设计/工程/造价/采购拉通专业力量、端到端下沉一线，统筹全盘 **135 份盖章合同（签约 6.83 亿元，锁定产值 5.92 亿元）**，覆盖遵义三大破亿工程（遵义大酒店 1.25 亿 / 汇川康养城 1.09 亿 / 遵义开元名都 1.03 亿）、仁怀温泉小镇、景德镇婺源婺女洲及全国五星酒店集群；主抓采销双轨调价（锁定 30%~35% 毛利）、四维资金回款防线与多轮竣工结算抗辩。其中 24 个代表性标杆工程为全盘合同的骨干子集。'
+- key: s11
+  kind: block
+  tag: div
+  parent: container
+  orig: 专案定位
+  text: 专案定位
+- key: s12
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 全资子公司操盘大盘
+  text: 全资子公司操盘大盘
+- key: s13
+  kind: block
+  tag: div
+  parent: container
+  orig: 从0到1奠基 ➔ 十年大盘
+  text: 从0到1奠基 ➔ 十年大盘
+- key: s14
+  kind: block
+  tag: div
+  parent: container
+  orig: 操盘模式
+  text: 操盘模式
+- key: s15
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 跨部门敏捷专班制
+  text: 跨部门敏捷专班制
+- key: s16
+  kind: block
+  tag: div
+  parent: container
+  orig: 项目总牵头 ➔ 全链条下沉
+  text: 项目总牵头 ➔ 全链条下沉
+- key: s17
+  kind: block
+  tag: div
+  parent: container
+  orig: 统筹周期
+  text: 统筹周期
+- key: s18
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 十年实盘全历程
+  text: 十年实盘全历程
+- key: s19
+  kind: block
+  tag: div
+  parent: container
+  orig: 2014.02 - 2024.02
+  text: 2014.02 - 2024.02
+- key: s20
+  kind: block
+  tag: div
+  parent: container
+  orig: 遵义三大破亿
+  text: 遵义三大破亿
+- key: s21
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 3.37 亿元母盘
+  text: 3.37 亿元母盘
+- key: s22
+  kind: block
+  tag: div
+  parent: container
+  orig: 遵义/汇川/开元名都
+  text: 遵义/汇川/开元名都
+- key: s23
+  kind: block
+  tag: div
+  parent: container
+  orig: 仁怀及文旅大盘
+  text: 仁怀及文旅大盘
+- key: s24
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 7,141 万元标杆
+  text: 7,141 万元标杆
+- key: s25
+  kind: block
+  tag: div
+  parent: container
+  orig: 仁怀小镇5200万/婺女洲1941万
+  text: 仁怀小镇5200万/婺女洲1941万
+- key: s26
+  kind: block
+  tag: div
+  parent: container
+  orig: 全景盖章总盘
+  text: 全景盖章总盘
+- key: s27
+  kind: kpi
+  tag: div
+  parent: container
+  orig: 6.83 亿 ➔ 5.92 亿
+  text: 6.83 亿 ➔ 5.92 亿
+- key: s28
+  kind: block
+  tag: div
+  parent: container
+  orig: 135份真实盖章合同大盘
+  text: 135份真实盖章合同大盘
+- key: s29
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 项目基本盘与十年核心事实
+  text: 项目基本盘与十年核心事实
+- key: s30
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            系统梳理广田云软装从设立孵化、初创期组织与制度建设，到十年间标杆工程与全景合同大盘操盘的核心商业事实：\n        "
+  text: "\n            系统梳理广田云软装从设立孵化、初创期组织与制度建设，到十年间标杆工程与全景合同大盘操盘的核心商业事实：\n        "
+- key: s31
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 核心维度
+  text: 核心维度
+- key: s32
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 关键事实与核心数据
+  text: 关键事实与核心数据
+- key: s33
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 业务逻辑与管控价值
+  text: 业务逻辑与管控价值
+- key: s34
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 组织设立与孵化
+  text: 组织设立与孵化
+- key: s35
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>超募资金 3,000 万元设立全资子公司</strong>（2013.11 决议 ➔ 2014.01 登记 ➔ 2014.02 调任）
+  text: '**超募资金 3,000 万元设立全资子公司**（2013.11 决议 ➔ 2014.01 登记 ➔ 2014.02 调任）'
+- key: s36
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 承接 Project 06 董办资本运作成果，作为筹办与初创核心团队奔赴新设全资子公司，开启集团大家居软装蓝海产业布局，实现上市公司战略意图落地。
+  text: 承接 Project 06 董办资本运作成果，作为筹办与初创核心团队奔赴新设全资子公司，开启集团大家居软装蓝海产业布局，实现上市公司战略意图落地。
+- key: s37
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 初创团队与制度
+  text: 初创团队与制度
+- key: s38
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>从 0 到 1 组建 45 人编制 · 730 条制度总纲</strong>（设计18/工程12/商务8/综合7）
+  text: '**从 0 到 1 组建 45 人编制 · 730 条制度总纲**（设计18/工程12/商务8/综合7）'
+- key: s39
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 编制《广田云软装制度》八大模块（奖惩145条、考勤112条、技能培训96条、招聘88条、薪酬85条等），建立 28 类标准审批流，构建月薪+提成双轨制。
+  text: 编制《广田云软装制度》八大模块（奖惩145条、考勤112条、技能培训96条、招聘88条、薪酬85条等），建立 28 类标准审批流，构建月薪+提成双轨制。
+- key: s40
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 遵义三大破亿工程
+  text: 遵义三大破亿工程
+- key: s41
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>遵义三大标志性工程累计签约 3.37 亿元</strong>（审定 2.86 亿元）
+  text: '**遵义三大标志性工程累计签约 3.37 亿元**（审定 2.86 亿元）'
+- key: s42
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 总揽遵义大酒店（1.25亿，审定9,300万）、汇川温泉康养城（1.09亿，审定9,800万）、遵义开元名都大酒店（1.03亿，审定9,500万），奠定西南五星级地标龙头地位。
+  text: 总揽遵义大酒店（1.25亿，审定9,300万）、汇川温泉康养城（1.09亿，审定9,800万）、遵义开元名都大酒店（1.03亿，审定9,500万），奠定西南五星级地标龙头地位。
+- key: s43
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 重点酒旅与文旅胜地
+  text: 重点酒旅与文旅胜地
+- key: s44
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>仁怀温泉小镇 5,200 万元 · 江西婺女洲 1,941 万元</strong>
+  text: '**仁怀温泉小镇 5,200 万元 · 江西婺女洲 1,941 万元**'
+- key: s45
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 操盘酒都仁怀交投/三森三大标段总包干 5,200 万元；统领江西婺源婺女洲二期 4 份合同原件 1,941.26 万元（无梦北区/南区/东篱下独栋/西街民宿）。
+  text: 操盘酒都仁怀交投/三森三大标段总包干 5,200 万元；统领江西婺源婺女洲二期 4 份合同原件 1,941.26 万元（无梦北区/南区/东篱下独栋/西街民宿）。
+- key: s46
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 全景盖章合同大盘
+  text: 全景盖章合同大盘
+- key: s47
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>135 份盖章合同签约 6.83 亿元 ➔ 锁定产值 5.92 亿元</strong>
+  text: '**135 份盖章合同签约 6.83 亿元 ➔ 锁定产值 5.92 亿元**'
+- key: s48
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 穿透全量合同底账：24 大核心代表性标杆（签约 6.88 亿 / 审定 6.14 亿），外加恒大全国 93 份样板房战采、奥园三大战采、万科红树东岸等，全盘业绩 100% 对应红章合同。
+  text: 穿透全量合同底账：24 大核心代表性标杆（签约 6.88 亿 / 审定 6.14 亿），外加恒大全国 93 份样板房战采、奥园三大战采、万科红树东岸等，全盘业绩 100% 对应红章合同。
+- key: s49
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 敏捷专班与实战下沉
+  text: 敏捷专班与实战下沉
+- key: s50
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>重大项目跨部门敏捷专班 · 全链条端到端实操</strong>
+  text: '**重大项目跨部门敏捷专班 · 全链条端到端实操**'
+- key: s51
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 打破僵化科层，以项目为战元动态跨职能抽调设计、工程、造价、采购精锐；个人亲自把关商务条款谈判、亲赴源头工厂白胚面漆飞检、现场放线交底与竣工审计答辩。
+  text: 打破僵化科层，以项目为战元动态跨职能抽调设计、工程、造价、采购精锐；个人亲自把关商务条款谈判、亲赴源头工厂白胚面漆飞检、现场放线交底与竣工审计答辩。
+- key: s52
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 采销双轨调价机制
+  text: 采销双轨调价机制
+- key: s53
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>买入裸价 vs 卖出工程报价双轨运行</strong>（刚性锁定 30%~35% 毛利）
+  text: '**买入裸价 vs 卖出工程报价双轨运行**（刚性锁定 30%~35% 毛利）'
+- key: s54
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 工厂出厂裸价前置加乘运杂费(10%)、税金(11%)与综合业务费(12%)，在多轮调价拉锯中坚守底线，结合规模集采降本 8% 实现利润最大化。
+  text: 工厂出厂裸价前置加乘运杂费(10%)、税金(11%)与综合业务费(12%)，在多轮调价拉锯中坚守底线，结合规模集采降本 8% 实现利润最大化。
+- key: s55
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 四维资金回款模型
+  text: 四维资金回款模型
+- key: s56
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>联动型 / 进度型 / 极速型 / 战采型</strong> 四类现金流防御机制
+  text: '**联动型 / 进度型 / 极速型 / 战采型** 四类现金流防御机制'
+- key: s57
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 遵义 25% 比例联动回款；湄潭 30+80+95 节点进度款；华泰/宾阳出货前 70%~90% 覆盖工厂直接成本零垫资；奥园/恒大全国战采批量流水式回款。
+  text: 遵义 25% 比例联动回款；湄潭 30+80+95 节点进度款；华泰/宾阳出货前 70%~90% 覆盖工厂直接成本零垫资；奥园/恒大全国战采批量流水式回款。
+- key: s58
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 行政资产与用工合规
+  text: 行政资产与用工合规
+- key: s59
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: <strong>1,491 ㎡ 艺展中心旗舰展厅 · 100% 劳动合同合规 · 0 仲裁</strong>
+  text: '**1,491 ㎡ 艺展中心旗舰展厅 · 100% 劳动合同合规 · 0 仲裁**'
+- key: s60
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 建成艺展中心美学体验展厅与盛华大厦办公场地，全员劳动合同/社保全覆盖，首年薪酬总盘 513.6 万元，人均行政运营费节约 14.2%，保持零用工仲裁记录。
+  text: 建成艺展中心美学体验展厅与盛华大厦办公场地，全员劳动合同/社保全覆盖，首年薪酬总盘 513.6 万元，人均行政运营费节约 14.2%，保持零用工仲裁记录。
+- key: s61
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 供应链管控 · 2×2 对称平衡方法论
+  text: 供应链管控 · 2×2 对称平衡方法论
+- key: s62
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            在大型工程与采销大盘运转体系中，组织奠基、专班协同、采销利差与资金风控构成四大核心支柱：\n        "
+  text: "\n            在大型工程与采销大盘运转体系中，组织奠基、专班协同、采销利差与资金风控构成四大核心支柱：\n        "
+- key: s63
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: § 1 组织奠基与制度治理闭环 (Organizational Foundation & Governance)
+  text: § 1 组织奠基与制度治理闭环 (Organizational Foundation & Governance)
+- key: s64
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>45 人跨职能团队矩阵</strong>：从 0 到 1 组建方案设计（18人）、工程交付（12人）、商务采销（8人）与行政综合（7人）四大序列，专业序列占比超 66.7%；
+  text: '**45 人跨职能团队矩阵**：从 0 到 1 组建方案设计（18人）、工程交付（12人）、商务采销（8人）与行政综合（7人）四大序列，专业序列占比超 66.7%；'
+- key: s65
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>八大模块 730 条制度总纲</strong>：起草《广田云软装制度》，涵盖考勤、奖惩、招聘、培训、薪酬等八大板块，建立 28 类标准审批节点，实现流程化提效；
+  text: '**八大模块 730 条制度总纲**：起草《广田云软装制度》，涵盖考勤、奖惩、招聘、培训、薪酬等八大板块，建立 28 类标准审批节点，实现流程化提效；'
+- key: s66
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>薪酬提成双轨与用工零仲裁</strong>：推行月薪+提成+年薪双轨制，提成与回款进度强绑定，劳动合同与社保 100% 签署，十年保持零用工诉讼与劳动仲裁。
+  text: '**薪酬提成双轨与用工零仲裁**：推行月薪+提成+年薪双轨制，提成与回款进度强绑定，劳动合同与社保 100% 签署，十年保持零用工诉讼与劳动仲裁。'
+- key: s67
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: § 2 大项目敏捷专班与实战下沉 (Agile Task Force & Hands-on Leadership)
+  text: § 2 大项目敏捷专班与实战下沉 (Agile Task Force & Hands-on Leadership)
+- key: s68
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>重大项目跨部门专班制</strong>：打破传统部门壁垒与冗余科层，以破亿级标杆交付为战元，项目总牵头跨职能动态抽调设计深化、工程驻场、造价与采销精锐组建攻坚突击队；
+  text: '**重大项目跨部门专班制**：打破传统部门壁垒与冗余科层，以破亿级标杆交付为战元，项目总牵头跨职能动态抽调设计深化、工程驻场、造价与采销精锐组建攻坚突击队；'
+- key: s69
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>全链条端到端实操操盘</strong>：坚持深入一线实战，从前期大客户商务谈判、严密合同条款拟定，到中期驻场交底与关键工序穿插协调，亲力亲为穿透全生命周期；
+  text: '**全链条端到端实操操盘**：坚持深入一线实战，从前期大客户商务谈判、严密合同条款拟定，到中期驻场交底与关键工序穿插协调，亲力亲为穿透全生命周期；'
+- key: s70
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>源头工厂品质飞检把关</strong>：亲赴定制家具源头工厂进行出厂前白胚结构与面漆封闭飞检，确保平顶山温德姆、平度雅高美爵等国际品牌联检一次性封样过关。
+  text: '**源头工厂品质飞检把关**：亲赴定制家具源头工厂进行出厂前白胚结构与面漆封闭飞检，确保平顶山温德姆、平度雅高美爵等国际品牌联检一次性封样过关。'
+- key: s71
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: § 3 采销双轨报价与多轮调价控制 (Dual-Track Pricing & Margin Control)
+  text: § 3 采销双轨报价与多轮调价控制 (Dual-Track Pricing & Margin Control)
+- key: s72
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>买入成本裸价 vs 卖出工程报价</strong>：工厂出厂裸价前置锁定，结合运杂费(10%)、税金(11%)与综合业务费(12%)计算测算毛利，杜绝跑冒滴漏；
+  text: '**买入成本裸价 vs 卖出工程报价**：工厂出厂裸价前置锁定，结合运杂费(10%)、税金(11%)与综合业务费(12%)计算测算毛利，杜绝跑冒滴漏；'
+- key: s73
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>多轮调价与抗压博弈</strong>：在多轮送审与认价调价拉锯中，以工艺选型平替与批量排产优化为筹码，始终坚守 30%~35% 经营毛利率红线；
+  text: '**多轮调价与抗压博弈**：在多轮送审与认价调价拉锯中，以工艺选型平替与批量排产优化为筹码，始终坚守 30%~35% 经营毛利率红线；'
+- key: s74
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>规模集采降本杠杆</strong>：通过整合全国多项目同品类家具、灯具面料集采，争取工厂让利 8%~12%，撬动项目预估净利润显著激增。
+  text: '**规模集采降本杠杆**：通过整合全国多项目同品类家具、灯具面料集采，争取工厂让利 8%~12%，撬动项目预估净利润显著激增。'
+- key: s75
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: § 4 四维资金回款与供应链防线 (Four-Dimensional Cashflow Defense)
+  text: § 4 四维资金回款与供应链防线 (Four-Dimensional Cashflow Defense)
+- key: s76
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>比例联动回款模型</strong>：针对遵义大酒店等超大型工程，约定“分包应收款 = 母公司实收 × [1500 ÷ 6000]”刚性联动，贴现成本共担，防范支付推诿；
+  text: '**比例联动回款模型**：针对遵义大酒店等超大型工程，约定“分包应收款 = 母公司实收 × [1500 ÷ 6000]”刚性联动，贴现成本共担，防范支付推诿；'
+- key: s77
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>阶段节点确权模型</strong>：针对湄潭、海南生态园等项目，执行 30% 预付 + 80% 形象进度 + 95% 验收确权，按月度监理确权闭环，出货前锁定 80% 现金流；
+  text: '**阶段节点确权模型**：针对湄潭、海南生态园等项目，执行 30% 预付 + 80% 形象进度 + 95% 验收确权，按月度监理确权闭环，出货前锁定 80% 现金流；'
+- key: s78
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>极速出厂覆盖模型</strong>：针对上海华泰、宾阳华美达等高周转项目，出厂前提货款付至 70%~90%，以甲方付款刚性覆盖直接出厂成本，实现零垫资运作；
+  text: '**极速出厂覆盖模型**：针对上海华泰、宾阳华美达等高周转项目，出厂前提货款付至 70%~90%，以甲方付款刚性覆盖直接出厂成本，实现零垫资运作；'
+- key: s79
+  kind: li
+  tag: li
+  parent: container
+  orig: <strong>五轮送审答辩确权</strong>：重构签证联系单、原厂代换凭据与实测实量底账，亲自挂帅审计抗辩，确保遵义 9300 万审定、红花岗 2200 万资产对冲锁定。
+  text: '**五轮送审答辩确权**：重构签证联系单、原厂代换凭据与实测实量底账，亲自挂帅审计抗辩，确保遵义 9300 万审定、红花岗 2200 万资产对冲锁定。'
+- key: s80
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 关键指标、核心项目对比与组织图表
+  text: 关键指标、核心项目对比与组织图表
+- key: s81
+  kind: block
+  tag: div
+  parent: container
+  orig: MASTER PORTFOLIO
+  text: MASTER PORTFOLIO
+- key: s82
+  kind: block
+  tag: div
+  parent: container
+  orig: 全景盖章总盘
+  text: 全景盖章总盘
+- key: s83
+  kind: block
+  tag: div
+  parent: container
+  orig: 6.83 <span>亿元</span>
+  text: 6.83 亿元
+- key: s84
+  kind: block
+  tag: div
+  parent: container
+  orig: 全盘 135 份真实合同 (产值5.92亿)
+  text: 全盘 135 份真实合同 (产值5.92亿)
+- key: s85
+  kind: block
+  tag: div
+  parent: container
+  orig: ZUNYI 100M+ TRIO
+  text: ZUNYI 100M+ TRIO
+- key: s86
+  kind: block
+  tag: div
+  parent: container
+  orig: 遵义三大破亿
+  text: 遵义三大破亿
+- key: s87
+  kind: block
+  tag: div
+  parent: container
+  orig: 3.37 <span>亿元</span>
+  text: 3.37 亿元
+- key: s88
+  kind: block
+  tag: div
+  parent: container
+  orig: 遵义大酒店+汇川康养+开元名都
+  text: 遵义大酒店+汇川康养+开元名都
+- key: s89
+  kind: block
+  tag: div
+  parent: container
+  orig: KAIYUAN GRAND HOTEL
+  text: KAIYUAN GRAND HOTEL
+- key: s90
+  kind: block
+  tag: div
+  parent: container
+  orig: 遵义开元名都
+  text: 遵义开元名都
+- key: s91
+  kind: block
+  tag: div
+  parent: container
+  orig: 1.03 <span>亿元</span>
+  text: 1.03 亿元
+- key: s92
+  kind: block
+  tag: div
+  parent: container
+  orig: 豪华五星级涉外政商度假酒店
+  text: 豪华五星级涉外政商度假酒店
+- key: s93
+  kind: block
+  tag: div
+  parent: container
+  orig: RENHUAI RESORT
+  text: RENHUAI RESORT
+- key: s94
+  kind: block
+  tag: div
+  parent: container
+  orig: 仁怀温泉小镇
+  text: 仁怀温泉小镇
+- key: s95
+  kind: block
+  tag: div
+  parent: container
+  orig: 5,200 <span>万元</span>
+  text: 5,200 万元
+- key: s96
+  kind: block
+  tag: div
+  parent: container
+  orig: 酒都温泉度假三大标段总包干
+  text: 酒都温泉度假三大标段总包干
+- key: s97
+  kind: block
+  tag: div
+  parent: container
+  orig: WUNVZHO RESORT
+  text: WUNVZHO RESORT
+- key: s98
+  kind: block
+  tag: div
+  parent: container
+  orig: 江西婺女洲二期
+  text: 江西婺女洲二期
+- key: s99
+  kind: block
+  tag: div
+  parent: container
+  orig: 1,941 <span>万元</span>
+  text: 1,941 万元
+- key: s100
+  kind: block
+  tag: div
+  parent: container
+  orig: 知名文旅度假区 4 份合同原件
+  text: 知名文旅度假区 4 份合同原件
+- key: s101
+  kind: block
+  tag: div
+  parent: container
+  orig: FOUNDING TEAM & RULES
+  text: FOUNDING TEAM & RULES
+- key: s102
+  kind: block
+  tag: div
+  parent: container
+  orig: 初创编制与制度
+  text: 初创编制与制度
+- key: s103
+  kind: block
+  tag: div
+  parent: container
+  orig: 45<span>人</span>/730<span>条</span>
+  text: 45人/730条
+- key: s104
+  kind: block
+  tag: div
+  parent: container
+  orig: 八大管理模块 · 0 劳动仲裁纠纷
+  text: 八大管理模块 · 0 劳动仲裁纠纷
+- key: s105
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 核心标杆工程签约金额与审定确权对比 (万元)
+  text: 核心标杆工程签约金额与审定确权对比 (万元)
+- key: s106
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: "\n                    <strong>数据来源</strong>：24 大核心标杆工程经济合同台账。重点囊括遵义三大破亿工程（遵义大酒店 1.25 亿 / 汇川康养城 1.09 亿 / 遵义开元名都 1.03 亿）、仁怀温泉小镇（5,200 万）、湄江温泉大酒店（3,380 万）、汕头国际大酒店（3,285 万）、红花岗南部综合体（3,112.5 万）、海南生态园（2,664.8 万）与婺女洲度假区（1,941.3 万）等核心资产。\n                "
+  text: "\n                    **数据来源**：24 大核心标杆工程经济合同台账。重点囊括遵义三大破亿工程（遵义大酒店 1.25 亿 / 汇川康养城 1.09 亿 / 遵义开元名都 1.03 亿）、仁怀温泉小镇（5,200 万）、湄江温泉大酒店（3,380 万）、汕头国际大酒店（3,285 万）、红花岗南部综合体（3,112.5 万）、海南生态园（2,664.8 万）与婺女洲度假区（1,941.3 万）等核心资产。\n                "
+- key: s107
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 云软装全盘 6.83 亿元合同业务板块投资结构分布
+  text: 云软装全盘 6.83 亿元合同业务板块投资结构分布
+- key: s108
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: "\n                    <strong>数据来源</strong>：全盘 6.83 亿元业务板块结构台账。遵义三大破亿工程占比 49.31%（3.37 亿元），全国五星级豪华酒店及国宾馆群占比 34.38%（2.35 亿元），海外重大公建及文旅度假村占比 9.47%（6,472 万元），头部房企全国战采与高端商办占比 6.84%（4,676 万元）。\n                "
+  text: "\n                    **数据来源**：全盘 6.83 亿元业务板块结构台账。遵义三大破亿工程占比 49.31%（3.37 亿元），全国五星级豪华酒店及国宾馆群占比 34.38%（2.35 亿元），海外重大公建及文旅度假村占比 9.47%（6,472 万元），头部房企全国战采与高端商办占比 6.84%（4,676 万元）。\n                "
+- key: s109
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 初创第一年组织职系编制与八大制度模块条款分布
+  text: 初创第一年组织职系编制与八大制度模块条款分布
+- key: s110
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: "\n                    <strong>数据来源</strong>：初创期团队花名册与组织架构台账。初创团队编制 45 人（设计18/工程12/商务8/综合7）；八大管理制度包含 730 条刚性条款，其中奖惩管理（145条）与考勤工时（112条）占比最高，支撑从0到1组建且全周期 0 劳动仲裁。\n                "
+  text: "\n                    **数据来源**：初创期团队花名册与组织架构台账。初创团队编制 45 人（设计18/工程12/商务8/综合7）；八大管理制度包含 730 条刚性条款，其中奖惩管理（145条）与考勤工时（112条）占比最高，支撑从0到1组建且全周期 0 劳动仲裁。\n                "
+- key: s111
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: 全景 135 份盖章合同大盘与审定产值结构 (万元)
+  text: 全景 135 份盖章合同大盘与审定产值结构 (万元)
+- key: s112
+  kind: chart-caption
+  tag: div
+  parent: container
+  orig: "\n                    <strong>数据来源</strong>：全盘 135 份用印合同与结算审定档案。统筹破亿级大盘（3.37亿）、五星酒店及国宾馆群（2.35亿）、海外公建与文旅胜地（6,472万）及头部房企战采（4,676万），累计签约 6.83 亿元，审定确权产值 5.92 亿元。\n                "
+  text: "\n                    **数据来源**：全盘 135 份用印合同与结算审定档案。统筹破亿级大盘（3.37亿）、五星酒店及国宾馆群（2.35亿）、海外公建与文旅胜地（6,472万）及头部房企战采（4,676万），累计签约 6.83 亿元，审定确权产值 5.92 亿元。\n                "
+- key: s113
+  kind: sec-heading
+  tag: h2
+  parent: container
+  orig: 二十四大核心工程的履约与确权底账
+  text: 二十四大核心工程的履约与确权底账
+- key: s114
+  kind: p
+  tag: p
+  parent: container
+  orig: "\n            基于真实签署合同盖章扫描件与工程结算审定单核算，客观还原全盘核心代表性工程操盘细节：\n        "
+  text: "\n            基于真实签署合同盖章扫描件与工程结算审定单核算，客观还原全盘核心代表性工程操盘细节：\n        "
+- key: s115
+  kind: sec-heading
+  tag: h3
+  parent: container
+  orig: "\n                    <span>\U0001F3DB️</span>\n                    <span>四大核心工程的独立详情档案</span>\n                "
+  text: "\n                    \U0001F3DB️\n                    四大核心工程的独立详情档案\n                "
+- key: s116
+  kind: sec-heading
+  tag: h4
+  parent: container
+  orig: 遵义大酒店超五星级工程
+  text: 遵义大酒店超五星级工程
+- key: s117
+  kind: block
+  tag: div
+  parent: container
+  orig: 签约 1.25 亿 / 审定 9,300 万
+  text: 签约 1.25 亿 / 审定 9,300 万
+- key: s118
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n                        <span>查看独立研报</span>\n                        <span>➔</span>\n                    "
+  text: "\n                        查看独立研报\n                        ➔\n                    "
+- key: s119
+  kind: sec-heading
+  tag: h4
+  parent: container
+  orig: 遵义湄江温泉大酒店
+  text: 遵义湄江温泉大酒店
+- key: s120
+  kind: block
+  tag: div
+  parent: container
+  orig: 签约 3,380 万 / 审定 2,798 万
+  text: 签约 3,380 万 / 审定 2,798 万
+- key: s121
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n                        <span>查看独立研报</span>\n                        <span>➔</span>\n                    "
+  text: "\n                        查看独立研报\n                        ➔\n                    "
+- key: s122
+  kind: sec-heading
+  tag: h4
+  parent: container
+  orig: 红花岗南部城市综合体
+  text: 红花岗南部城市综合体
+- key: s123
+  kind: block
+  tag: div
+  parent: container
+  orig: 签约 3,112 万 / 审定 2,200 万
+  text: 签约 3,112 万 / 审定 2,200 万
+- key: s124
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n                        <span>查看独立研报</span>\n                        <span>➔</span>\n                    "
+  text: "\n                        查看独立研报\n                        ➔\n                    "
+- key: s125
+  kind: sec-heading
+  tag: h4
+  parent: container
+  orig: 上海华泰中心售楼处
+  text: 上海华泰中心售楼处
+- key: s126
+  kind: block
+  tag: div
+  parent: container
+  orig: 签约 156.7 万 / 审定 156.7 万
+  text: 签约 156.7 万 / 审定 156.7 万
+- key: s127
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n                        <span>查看独立研报</span>\n                        <span>➔</span>\n                    "
+  text: "\n                        查看独立研报\n                        ➔\n                    "
+- key: s128
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: '#'
+  text: '#'
+- key: s129
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 工程标的与合同编号
+  text: 工程标的与合同编号
+- key: s130
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 发包业主单位
+  text: 发包业主单位
+- key: s131
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 业态分类
+  text: 业态分类
+- key: s132
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 年份
+  text: 年份
+- key: s133
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 合同额(万)
+  text: 合同额(万)
+- key: s134
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 审定额(万)
+  text: 审定额(万)
+- key: s135
+  kind: table-cell
+  tag: th
+  parent: container
+  orig: 核心付款机制与风控防线
+  text: 核心付款机制与风控防线
+- key: s136
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '1'
+  text: '1'
+- key: s137
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 遵义大酒店软装工程 <a href="javascript:void(0)" onclick="openSubMonograph('monograph-zy', '遵义大酒店五星级软装工程全周期商业操盘研报.html')" style="display:inline-block; margin-left:6px; font-size:11px; padding:1px 6px; border:1px solid var(--accent-navy); border-radius:2px; color:var(--accent-navy); text-decoration:none; background:#fff; font-weight:600;">专案 ↗</a><br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GY-2018-YW-131</span>
+  text: '遵义大酒店软装工程 专案 ↗
+
+    GY-2018-YW-131'
+- key: s138
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 遵义道桥建设集团 (母体分包)
+  text: 遵义道桥建设集团 (母体分包)
+- key: s139
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 超五星级国宾政务度假酒店
+  text: 超五星级国宾政务度假酒店
+- key: s140
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '2018'
+  text: '2018'
+- key: s141
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 12,500.00
+  text: 12,500.00
+- key: s142
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 9,300.00
+  text: 9,300.00
+- key: s143
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 分包应收款 = 母公司实收 × [1500÷6000]，贴现成本按比共担，最终确权 9,300 万元
+  text: 分包应收款 = 母公司实收 × [1500÷6000]，贴现成本按比共担，最终确权 9,300 万元
+- key: s144
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '2'
+  text: '2'
+- key: s145
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 汇川区汇川温泉康养城建设工程<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">汇川城投2017合同</span>
+  text: '汇川区汇川温泉康养城建设工程
+
+    汇川城投2017合同'
+- key: s146
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 遵义市汇川区城投
+  text: 遵义市汇川区城投
+- key: s147
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 百亿级国企温泉康养综合体
+  text: 百亿级国企温泉康养综合体
+- key: s148
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '2017'
+  text: '2017'
+- key: s149
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 10,900.00
+  text: 10,900.00
+- key: s150
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 9,800.00
+  text: 9,800.00
+- key: s151
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 大型国企城投公建，按月度形象产值申报与节点支付，实现大体量确权推进
+  text: 大型国企城投公建，按月度形象产值申报与节点支付，实现大体量确权推进
+- key: s152
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '3'
+  text: '3'
+- key: s153
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 遵义开元名都大酒店项目<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">开元名都2017合同</span>
+  text: '遵义开元名都大酒店项目
+
+    开元名都2017合同'
+- key: s154
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 遵义新区房开 (开元旅业运营)
+  text: 遵义新区房开 (开元旅业运营)
+- key: s155
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 国际豪华五星级政商度假酒店
+  text: 国际豪华五星级政商度假酒店
+- key: s156
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '2017'
+  text: '2017'
+- key: s157
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 10,300.00
+  text: 10,300.00
+- key: s158
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 9,500.00
+  text: 9,500.00
+- key: s159
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 大床房样板间先行打样封样，全案深化大宗工程款按期推进，破亿级涉外五星标杆
+  text: 大床房样板间先行打样封样，全案深化大宗工程款按期推进，破亿级涉外五星标杆
+- key: s160
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '4'
+  text: '4'
+- key: s161
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 仁怀温泉小镇（一期）酒店工程<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">三森2021分包合同</span>
+  text: '仁怀温泉小镇（一期）酒店工程
+
+    三森2021分包合同'
+- key: s162
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 深圳三森装饰 / 仁怀交投
+  text: 深圳三森装饰 / 仁怀交投
+- key: s163
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 酒都重点温泉康养度假小镇
+  text: 酒都重点温泉康养度假小镇
+- key: s164
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '2021'
+  text: '2021'
+- key: s165
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 5,200.00
+  text: 5,200.00
+- key: s166
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 4,800.00
+  text: 4,800.00
+- key: s167
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 三大标段(2587万+1504万+1109万)总包干，统筹酒都大型温泉度假小镇整体软装
+  text: 三大标段(2587万+1504万+1109万)总包干，统筹酒都大型温泉度假小镇整体软装
+- key: s168
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '5'
+  text: '5'
+- key: s169
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 遵义市湄江温泉大酒店建设项目 <a href="javascript:void(0)" onclick="openSubMonograph('monograph-mt', '湄潭项目全生命周期数据洞察研报.html')" style="display:inline-block; margin-left:6px; font-size:11px; padding:1px 6px; border:1px solid var(--accent-navy); border-radius:2px; color:var(--accent-navy); text-decoration:none; background:#fff; font-weight:600;">专案 ↗</a><br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GY-2016-YW-001</span>
+  text: '遵义市湄江温泉大酒店建设项目 专案 ↗
+
+    GY-2016-YW-001'
+- key: s170
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 遵义市通途公路建设投资
+  text: 遵义市通途公路建设投资
+- key: s171
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 国际五星级温泉度假酒店
+  text: 国际五星级温泉度假酒店
+- key: s172
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '2016'
+  text: '2016'
+- key: s173
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 3,380.00
+  text: 3,380.00
+- key: s174
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 2,798.50
+  text: 2,798.50
+- key: s175
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 30%预付 + 80%进度 + 95%竣工验收款，报审 2,798.50 万，实收达成率 97.0%
+  text: 30%预付 + 80%进度 + 95%竣工验收款，报审 2,798.50 万，实收达成率 97.0%
+- key: s176
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '6'
+  text: '6'
+- key: s177
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 汕头国际大酒店及宜华大酒店全案<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GR-2014-SJ-003/004/017/018</span>
+  text: '汕头国际大酒店及宜华大酒店全案
+
+    GR-2014-SJ-003/004/017/018'
+- key: s178
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 汕头宜华国际大酒店
+  text: 汕头宜华国际大酒店
+- key: s179
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 五星级地标国际大酒店
+  text: 五星级地标国际大酒店
+- key: s180
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '2014'
+  text: '2014'
+- key: s181
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 3,285.00
+  text: 3,285.00
+- key: s182
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 3,285.00
+  text: 3,285.00
+- key: s183
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 4份原件合同覆盖21层高端配饰/家具销售与1-19层公区客房全案，总额 3,285 万元
+  text: 4份原件合同覆盖21层高端配饰/家具销售与1-19层公区客房全案，总额 3,285 万元
+- key: s184
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '7'
+  text: '7'
+- key: s185
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 恒大集团全国战略集采大盘<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GY-2015~2020批次 (93标段)</span>
+  text: '恒大集团全国战略集采大盘
+
+    GY-2015~2020批次 (93标段)'
+- key: s186
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 恒大地产集团总部及各区域公司
+  text: 恒大地产集团总部及各区域公司
+- key: s187
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 全国样板间及售楼处年度战采
+  text: 全国样板间及售楼处年度战采
+- key: s188
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '2017'
+  text: '2017'
+- key: s189
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 3,250.00
+  text: 3,250.00
+- key: s190
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 2,800.00
+  text: 2,800.00
+- key: s191
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 覆盖全国30+重点城市93个标段，年度框架协议排期滚动，分批开工批量流水式回款
+  text: 覆盖全国30+重点城市93个标段，年度框架协议排期滚动，分批开工批量流水式回款
+- key: s192
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '8'
+  text: '8'
+- key: s193
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 红花岗南部城市综合体工程项目 <a href="javascript:void(0)" onclick="openSubMonograph('monograph-hhg', '红花岗项目全生命周期深度商业研报.html')" style="display:inline-block; margin-left:6px; font-size:11px; padding:1px 6px; border:1px solid var(--accent-navy); border-radius:2px; color:var(--accent-navy); text-decoration:none; background:#fff; font-weight:600;">专案 ↗</a><br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GY-2016-YW-049</span>
+  text: '红花岗南部城市综合体工程项目 专案 ↗
+
+    GY-2016-YW-049'
+- key: s194
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 中建四局 / 遵义红花岗城投
+  text: 中建四局 / 遵义红花岗城投
+- key: s195
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 五星级城市综合体酒店 (格兰云天)
+  text: 五星级城市综合体酒店 (格兰云天)
+- key: s196
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '2017'
+  text: '2017'
+- key: s197
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 3,112.50
+  text: 3,112.50
+- key: s198
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 2,200.00
+  text: 2,200.00
+- key: s199
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 送审 3,502.90 万元，以 1100 ㎡ 核心公区全款 2,200 万元一次性商务确权对冲锁定
+  text: 送审 3,502.90 万元，以 1100 ㎡ 核心公区全款 2,200 万元一次性商务确权对冲锁定
+- key: s200
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '9'
+  text: '9'
+- key: s201
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 海南生态软件园C地块五期酒店<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">采购合同 0402</span>
+  text: '海南生态软件园C地块五期酒店
+
+    采购合同 0402'
+- key: s202
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 海南生态软件园投资发展
+  text: 海南生态软件园投资发展
+- key: s203
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 自贸港高端国际度假酒店
+  text: 自贸港高端国际度假酒店
+- key: s204
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '2018'
+  text: '2018'
+- key: s205
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 2,664.79
+  text: 2,664.79
+- key: s206
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 2,664.79
+  text: 2,664.79
+- key: s207
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 30%预付 + 生产出厂初验付至 80% 极速回款，全套滨海抗盐耐候家具按期保质交付
+  text: 30%预付 + 生产出厂初验付至 80% 极速回款，全套滨海抗盐耐候家具按期保质交付
+- key: s208
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '10'
+  text: '10'
+- key: s209
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 莫斯科华铭园中国商务中心综合体<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">华铭园海外合同</span>
+  text: '莫斯科华铭园中国商务中心综合体
+
+    华铭园海外合同'
+- key: s210
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 莫斯科华铭园集团
+  text: 莫斯科华铭园集团
+- key: s211
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 海外国家级商务综合体
+  text: 海外国家级商务综合体
+- key: s212
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '2018'
+  text: '2018'
+- key: s213
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 2,180.00
+  text: 2,180.00
+- key: s214
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 2,180.00
+  text: 2,180.00
+- key: s215
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 涉外国家级重大公建，通过不可撤销信用证与国际海关报关验收推进，确权 2,180 万
+  text: 涉外国家级重大公建，通过不可撤销信用证与国际海关报关验收推进，确权 2,180 万
+- key: s216
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '11'
+  text: '11'
+- key: s217
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 江西婺源婺女洲二期度假区酒店群<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GY-2021-YW-044(1~4)</span>
+  text: '江西婺源婺女洲二期度假区酒店群
+
+    GY-2021-YW-044(1~4)'
+- key: s218
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 江西鑫邦文化旅游投资发展
+  text: 江西鑫邦文化旅游投资发展
+- key: s219
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 知名文旅度假胜地酒店群
+  text: 知名文旅度假胜地酒店群
+- key: s220
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '2021'
+  text: '2021'
+- key: s221
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 1,941.26
+  text: 1,941.26
+- key: s222
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 1,941.26
+  text: 1,941.26
+- key: s223
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 4份盖章合同原件覆盖无梦北区/南区/东篱下独栋/西街民宿整体软装，实签 1,941.26 万
+  text: 4份盖章合同原件覆盖无梦北区/南区/东篱下独栋/西街民宿整体软装，实签 1,941.26 万
+- key: s224
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '12'
+  text: '12'
+- key: s225
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 平度雅高美爵酒店精装修工程<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GT-2016-SY1.G-068</span>
+  text: '平度雅高美爵酒店精装修工程
+
+    GT-2016-SY1.G-068'
+- key: s226
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 青岛永新华文化发展有限公司
+  text: 青岛永新华文化发展有限公司
+- key: s227
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 国际联号豪华星级酒店 (雅高美爵)
+  text: 国际联号豪华星级酒店 (雅高美爵)
+- key: s228
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '2016'
+  text: '2016'
+- key: s229
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 1,854.00
+  text: 1,854.00
+- key: s230
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 1,854.00
+  text: 1,854.00
+- key: s231
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 国际酒店品牌标准样板间封样验收，大货按期保质交付，合同额 1,854 万元
+  text: 国际酒店品牌标准样板间封样验收，大货按期保质交付，合同额 1,854 万元
+- key: s232
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '13'
+  text: '13'
+- key: s233
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 平顶山温德姆国际大酒店<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">温德姆2016合同</span>
+  text: '平顶山温德姆国际大酒店
+
+    温德姆2016合同'
+- key: s234
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 盛源锦江国际大酒店有限公司
+  text: 盛源锦江国际大酒店有限公司
+- key: s235
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 国际高端品牌星级酒店 (温德姆)
+  text: 国际高端品牌星级酒店 (温德姆)
+- key: s236
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '2016'
+  text: '2016'
+- key: s237
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 1,631.00
+  text: 1,631.00
+- key: s238
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 1,631.00
+  text: 1,631.00
+- key: s239
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 外资酒店品牌审计标准，环保 E0 级板材与阻燃面料严格管控，确权 1,631 万元
+  text: 外资酒店品牌审计标准，环保 E0 级板材与阻燃面料严格管控，确权 1,631 万元
+- key: s240
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '14'
+  text: '14'
+- key: s241
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 广西荔园饭店改造工程<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GY-2017-YW-012</span>
+  text: '广西荔园饭店改造工程
+
+    GY-2017-YW-012'
+- key: s242
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 广西荔园饭店投资有限公司
+  text: 广西荔园饭店投资有限公司
+- key: s243
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 高规格国宾政务接待饭店改造
+  text: 高规格国宾政务接待饭店改造
+- key: s244
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '2017'
+  text: '2017'
+- key: s245
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 1,426.00
+  text: 1,426.00
+- key: s246
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 1,426.00
+  text: 1,426.00
+- key: s247
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 省级政务国宾馆修缮改造，高标准现场保护与精密收口安装，确权 1,426 万元
+  text: 省级政务国宾馆修缮改造，高标准现场保护与精密收口安装，确权 1,426 万元
+- key: s248
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '15'
+  text: '15'
+- key: s249
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 北京恒大丽宫独栋顶豪别墅<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GY-2017-YW-009/018</span>
+  text: '北京恒大丽宫独栋顶豪别墅
+
+    GY-2017-YW-009/018'
+- key: s250
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 恒大地产集团北京公司
+  text: 恒大地产集团北京公司
+- key: s251
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 顶级豪宅独栋别墅群 (58栋182#)
+  text: 顶级豪宅独栋别墅群 (58栋182#)
+- key: s252
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '2017'
+  text: '2017'
+- key: s253
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 1,200.00
+  text: 1,200.00
+- key: s254
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 1,200.00
+  text: 1,200.00
+- key: s255
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 顶级独栋豪宅全案高端软装定制，恒大战略集采排期协同，审定金额 1,200 万元
+  text: 顶级独栋豪宅全案高端软装定制，恒大战略集采排期协同，审定金额 1,200 万元
+- key: s256
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '16'
+  text: '16'
+- key: s257
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 九寨鲁能中查沟一期希尔顿酒店<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GT-2016-SY11.G-148</span>
+  text: '九寨鲁能中查沟一期希尔顿酒店
+
+    GT-2016-SY11.G-148'
+- key: s258
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 四川九寨鲁能生态旅游投资
+  text: 四川九寨鲁能生态旅游投资
+- key: s259
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 国际超五星级度假酒店 (Hilton)
+  text: 国际超五星级度假酒店 (Hilton)
+- key: s260
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '2016'
+  text: '2016'
+- key: s261
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '903.00'
+  text: '903.00'
+- key: s262
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '903.00'
+  text: '903.00'
+- key: s263
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 央企鲁能生态度假工程，严格执行高寒高海拔特殊运输与防潮保质要求
+  text: 央企鲁能生态度假工程，严格执行高寒高海拔特殊运输与防潮保质要求
+- key: s264
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '17'
+  text: '17'
+- key: s265
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 汕头龙湖宾馆改造一期<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GY-2019-YW-033</span>
+  text: '汕头龙湖宾馆改造一期
+
+    GY-2019-YW-033'
+- key: s266
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 汕头市龙湖宾馆有限公司
+  text: 汕头市龙湖宾馆有限公司
+- key: s267
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 四星级国宾接待酒店改造
+  text: 四星级国宾接待酒店改造
+- key: s268
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '2019'
+  text: '2019'
+- key: s269
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '850.00'
+  text: '850.00'
+- key: s270
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '850.00'
+  text: '850.00'
+- key: s271
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 老牌国宾馆修缮升级，分批进场深化排产，结算尾款全流程法务闭环跟进
+  text: 老牌国宾馆修缮升级，分批进场深化排产，结算尾款全流程法务闭环跟进
+- key: s272
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '18'
+  text: '18'
+- key: s273
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 保利东江首府皇冠假日酒店室内艺术品<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GR-2014-SJ-013</span>
+  text: '保利东江首府皇冠假日酒店室内艺术品
+
+    GR-2014-SJ-013'
+- key: s274
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 保利增城房地产开发有限公司
+  text: 保利增城房地产开发有限公司
+- key: s275
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 央企保利豪华星级酒店 (皇冠假日)
+  text: 央企保利豪华星级酒店 (皇冠假日)
+- key: s276
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '2014'
+  text: '2014'
+- key: s277
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '577.00'
+  text: '577.00'
+- key: s278
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '577.00'
+  text: '577.00'
+- key: s279
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 央企保利集采框架，大型艺术装置与雕塑现场力学吊装计算及成品验收
+  text: 央企保利集采框架，大型艺术装置与雕塑现场力学吊装计算及成品验收
+- key: s280
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '19'
+  text: '19'
+- key: s281
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 陆川九龙山庄改造提升工程<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GY-2021-YW-050</span>
+  text: '陆川九龙山庄改造提升工程
+
+    GY-2021-YW-050'
+- key: s282
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 陆川县乐源温泉开发
+  text: 陆川县乐源温泉开发
+- key: s283
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 温泉康养生态度假村
+  text: 温泉康养生态度假村
+- key: s284
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '2021'
+  text: '2021'
+- key: s285
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '550.00'
+  text: '550.00'
+- key: s286
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '550.00'
+  text: '550.00'
+- key: s287
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 货到 80% 款项到位，28 天极限抢工交付 1-6 层定制家具与洁具灯具系统
+  text: 货到 80% 款项到位，28 天极限抢工交付 1-6 层定制家具与洁具灯具系统
+- key: s288
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '20'
+  text: '20'
+- key: s289
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 苏州协鑫广场商业综合体<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GY-2016-YW-007</span>
+  text: '苏州协鑫广场商业综合体
+
+    GY-2016-YW-007'
+- key: s290
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 苏州协鑫置业有限公司
+  text: 苏州协鑫置业有限公司
+- key: s291
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 商业综合体/酒店式公寓
+  text: 商业综合体/酒店式公寓
+- key: s292
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '2016'
+  text: '2016'
+- key: s293
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '450.00'
+  text: '450.00'
+- key: s294
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '450.00'
+  text: '450.00'
+- key: s295
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 30%预付 + 50%进度 + 17%验收款，酒店式公寓精装软装一体化工程顺利交付
+  text: 30%预付 + 50%进度 + 17%验收款，酒店式公寓精装软装一体化工程顺利交付
+- key: s296
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '21'
+  text: '21'
+- key: s297
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 中国奥园集团三大战略集采<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GY-2017-YW-015等</span>
+  text: '中国奥园集团三大战略集采
+
+    GY-2017-YW-015等'
+- key: s298
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 中国奥园集团(3883.HK)
+  text: 中国奥园集团(3883.HK)
+- key: s299
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 地产战略集采(售楼处/样板房)
+  text: 地产战略集采(售楼处/样板房)
+- key: s300
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '2017'
+  text: '2017'
+- key: s301
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '225.65'
+  text: '225.65'
+- key: s302
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '225.65'
+  text: '225.65'
+- key: s303
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 统筹梅州奥园天悦湾、韶关印象岭南与奥园·峯荟，战采协议基准毛利 32.8%
+  text: 统筹梅州奥园天悦湾、韶关印象岭南与奥园·峯荟，战采协议基准毛利 32.8%
+- key: s304
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '22'
+  text: '22'
+- key: s305
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 珠海万科红树东岸展示样品房工程<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">GY-2016-YW-040</span>
+  text: '珠海万科红树东岸展示样品房工程
+
+    GY-2016-YW-040'
+- key: s306
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 万科集团 (Vanke)
+  text: 万科集团 (Vanke)
+- key: s307
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 头部房企顶级滨海豪宅样板房
+  text: 头部房企顶级滨海豪宅样板房
+- key: s308
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '2016'
+  text: '2016'
+- key: s309
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '185.00'
+  text: '185.00'
+- key: s310
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '185.00'
+  text: '185.00'
+- key: s311
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 万科顶级滨海样板房全案定制，标准战采验收，按期交付回款 185 万元
+  text: 万科顶级滨海样板房全案定制，标准战采验收，按期交付回款 185 万元
+- key: s312
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '23'
+  text: '23'
+- key: s313
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 上海华泰中心售楼处 <a href="javascript:void(0)" onclick="openSubMonograph('monograph-ht', '上海华泰中心售楼处全生命周期商业操盘研报.html')" style="display:inline-block; margin-left:6px; font-size:11px; padding:1px 6px; border:1px solid var(--accent-navy); border-radius:2px; color:var(--accent-navy); text-decoration:none; background:#fff; font-weight:600;">专案 ↗</a><br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">PRJ_SHANGHAI_HUATAI</span>
+  text: '上海华泰中心售楼处 专案 ↗
+
+    PRJ_SHANGHAI_HUATAI'
+- key: s314
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 上海华泰置业有限公司
+  text: 上海华泰置业有限公司
+- key: s315
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 一线城市极奢商务地标售楼处
+  text: 一线城市极奢商务地标售楼处
+- key: s316
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '2015'
+  text: '2015'
+- key: s317
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '156.66'
+  text: '156.66'
+- key: s318
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '156.66'
+  text: '156.66'
+- key: s319
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 极速开盘工期出厂前刚性收回 70% 现款覆盖全部采购直接成本，经营毛利 33.5%
+  text: 极速开盘工期出厂前刚性收回 70% 现款覆盖全部采购直接成本，经营毛利 33.5%
+- key: s320
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '24'
+  text: '24'
+- key: s321
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 宾阳华美达广场酒店全案<br><span style="font-family:var(--font-mono); font-size:11px; color:var(--text-tertiary);">BY-HMD-2018-001等</span>
+  text: '宾阳华美达广场酒店全案
+
+    BY-HMD-2018-001等'
+- key: s322
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 南宁宾阳城建集团
+  text: 南宁宾阳城建集团
+- key: s323
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 国际联号星级商务酒店
+  text: 国际联号星级商务酒店
+- key: s324
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '2018'
+  text: '2018'
+- key: s325
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '108.28'
+  text: '108.28'
+- key: s326
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: '108.28'
+  text: '108.28'
+- key: s327
+  kind: table-cell
+  tag: td
+  parent: container
+  orig: 提货前付至 90% 极速回款模式，实现零垫资交付，单体项目结算利润率 34.2%
+  text: 提货前付至 90% 极速回款模式，实现零垫资交付，单体项目结算利润率 34.2%
+- key: s328
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            <span>ARCHIVAL DOSSIER · PRJ-CLOUD-DECO-2024 · 广田云软装十年实盘档案</span>\n        "
+  text: "\n            ARCHIVAL DOSSIER · PRJ-CLOUD-DECO-2024 · 广田云软装十年实盘档案\n        "
+- key: s329
+  kind: block
+  tag: div
+  parent: container
+  orig: "\n            2026 商业专案库归档\n        "
+  text: "\n            2026 商业专案库归档\n        "

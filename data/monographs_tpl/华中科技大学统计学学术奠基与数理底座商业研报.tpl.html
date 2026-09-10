@@ -1,0 +1,1721 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>华中科技大学统计学学术奠基与数理认知底座 ｜ 梁清波</title>
+        <!-- 典藏级学术印刷字体体系：EB Garamond + Cormorant Garamond + Noto Serif SC (思源宋体) + JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=JetBrains+Mono:ital,wght@0,400..700;1,400..700&family=Noto+Serif+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <!-- ECharts 5 现代交互图表库 -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+        <style>
+        :root {
+            /* 典藏级低奢色彩体系 (Quiet Luxury & Archival Paper System) */
+            --bg-page: #fbfbfa;          /* 温暖高克重天然棉浆纸柔白底色 */
+            --bg-card: #ffffff;          /* 纯净白书写纸 */
+            --bg-subtle: #f5f4ef;        /* 雅致羊皮纸浅底 */
+            --bg-table-head: #f7f6f1;    /* 经典研报表头纸底 */
+            
+            --text-primary: #111317;      /* 浓郁深炭黑，沉稳苍劲 */
+            --text-secondary: #2c3238;    /* 矿石深灰，字脊清晰 */
+            --text-tertiary: #5e6670;     /* 辅助说明灰，绝无浮虚 */
+            --text-bronze: #8a6839;       /* 沉香古铜金文字 */
+            
+            --accent-navy: #162a45;       /* 萨维尔街牛津深海蓝 */
+            --accent-bronze: #8a6839;     /* 沉香古铜金，低奢灵魂色 */
+            --accent-sage: #2a4c38;       /* 英国皇家墨玉绿 */
+            --accent-slate: #475569;      /* 冷板岩深灰 */
+            --accent-blue: #0284c7;       /* 数学理学高亮蓝 */
+            --accent-purple: #6d28d9;     /* 算法工程紫 */
+            
+            --border-hairline: rgba(18, 19, 22, 0.08); /* 极细毛细分割线 */
+            --border-strong: rgba(18, 19, 22, 0.22);   /* 书籍装订骨架线 */
+            
+            --card-shadow: 0 1px 3px rgba(18, 19, 22, 0.04), 0 8px 24px -6px rgba(18, 19, 22, 0.03);
+            --card-hover-shadow: 0 4px 12px -2px rgba(18, 19, 22, 0.06), 0 16px 36px -8px rgba(18, 19, 22, 0.06);
+            --radius-lg: 8px;             /* 极简雅正微圆角 */
+            --radius-md: 4px;
+            --radius-sm: 2px;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            background-color: var(--bg-page);
+            color: var(--text-primary);
+            font-family: "Noto Serif SC", "EB Garamond", "Songti SC", STSong, "Times New Roman", SimSun, serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+            font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+            font-kerning: normal;
+            line-height: 1.76;
+            padding: 40px 24px 80px 24px;
+        }
+
+        /* 全局页面优雅浅色滚动条 */
+        html {
+            scrollbar-width: thin;
+            scrollbar-color: #cbd5e1 #f8fafc;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f8fafc;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+            border: 2px solid #f8fafc;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+        }
+
+        /* 顶部导航与锚点 (专案典藏录 Registry) */
+        .nav-dock {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(251, 251, 250, 0.94);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-md);
+            padding: 12px 28px;
+            margin-bottom: 48px;
+            position: sticky;
+            top: 20px;
+            z-index: 100;
+            box-shadow: 0 2px 12px rgba(18, 19, 22, 0.03);
+        }
+        .nav-brand {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .nav-brand-code {
+            color: var(--accent-bronze);
+            font-weight: 700;
+        }
+        .nav-brand-title {
+            font-family: "Noto Serif SC", "EB Garamond", serif;
+            font-size: 13.5px;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: 0.02em;
+        }
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+        }
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            transition: color 0.2s ease;
+        }
+        .nav-links a:hover {
+            color: var(--accent-bronze);
+            text-decoration: underline;
+        }
+
+        /* 头部 Hero 区域 */
+        .hero {
+            padding: 24px 0 48px 0;
+            border-bottom: 2px solid var(--border-strong);
+            margin-bottom: 48px;
+        }
+        .archival-eyebrow {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--accent-bronze);
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .eyebrow-sep {
+            color: var(--border-hairline);
+        }
+        .hero-title {
+            font-family: "Noto Serif SC", "EB Garamond", serif;
+            font-size: 36px;
+            font-weight: 900;
+            letter-spacing: -0.01em;
+            line-height: 1.25;
+            color: var(--text-primary);
+            margin-bottom: 14px;
+        }
+        .hero-subhead {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--accent-navy);
+            display: inline-block;
+            margin-bottom: 14px;
+            font-family: "Noto Serif SC", serif;
+        }
+        .hero-subtitle {
+            font-size: 15.5px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            max-width: 1040px;
+            line-height: 1.75;
+            margin-bottom: 32px;
+            text-align: justify;
+        }
+
+        /* 6 格精密规格矩阵台 (Executive Spec Matrix) */
+        .spec-matrix {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            border: 1px solid var(--border-hairline);
+            border-top: 3.5px solid var(--accent-bronze);
+            background: #ffffff;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(18, 19, 22, 0.04);
+        }
+        .spec-matrix-cell {
+            padding: 18px 20px;
+            border-right: 1px solid var(--border-hairline);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: background 0.2s ease;
+        }
+        .spec-matrix-cell:hover {
+            background: #faf9f5;
+        }
+        .spec-matrix-cell:last-child {
+            border-right: none;
+        }
+        .spec-matrix-k {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-tertiary);
+            margin-bottom: 8px;
+        }
+        .spec-matrix-v {
+            font-family: "JetBrains Mono", "EB Garamond", serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1.3;
+        }
+        .spec-matrix-v span {
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+        .spec-matrix-sub {
+            font-size: 11.5px;
+            color: var(--text-tertiary);
+            margin-top: 6px;
+            line-height: 1.4;
+        }
+
+        /* 章节分段标题 (Standard Section Header) */
+        .section-header {
+            margin: 44px 0 24px 0;
+            padding-bottom: 12px;
+            border-bottom: 1.5px solid var(--border-strong);
+        }
+        .section-badge {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            color: var(--accent-bronze);
+            margin-bottom: 4px;
+        }
+        .section-header h2 {
+            font-family: "Noto Serif SC", "EB Garamond", serif;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            color: var(--text-primary);
+        }
+        .section-subtext {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-top: 6px;
+        }
+
+        /* 驾驶舱 KPI 模块 (研报顶线瓷砖) */
+        .kpi-deck {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 16px;
+            margin-bottom: 36px;
+        }
+        .kpi-tile {
+            background: var(--bg-card);
+            border: 1px solid var(--border-hairline);
+            border-top: 3px solid var(--accent-bronze);
+            border-radius: var(--radius-md);
+            padding: 20px 16px;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .kpi-tile:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--card-hover-shadow);
+        }
+        .kpi-eyebrow {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--accent-bronze);
+            margin-bottom: 4px;
+        }
+        .kpi-title-zh {
+            font-family: "Noto Serif SC", "EB Garamond", serif;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+        .kpi-figure {
+            font-family: "JetBrains Mono", "EB Garamond", serif;
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: var(--text-primary);
+            margin: 6px 0 2px 0;
+            font-variant-numeric: tabular-nums lining-nums;
+            white-space: nowrap;
+        }
+        .kpi-figure span {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent-bronze);
+        }
+        .kpi-subtext {
+            font-family: "Noto Serif SC", serif;
+            font-size: 11px;
+            color: var(--text-tertiary);
+            margin-top: 4px;
+            line-height: 1.4;
+        }
+
+        /* 白色卡片 */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-lg);
+            padding: 36px 40px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 36px;
+            transition: box-shadow 0.2s ease;
+        }
+        .card:hover {
+            box-shadow: var(--card-hover-shadow);
+        }
+        .card-caption-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 16px;
+        }
+        .card-heading {
+            font-family: "Noto Serif SC", "EB Garamond", serif;
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+        .card-tag {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            color: var(--accent-bronze);
+        }
+
+        /* 专案文本排版 (2×2 经典对称平衡矩阵) */
+        .dossier-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin-bottom: 36px;
+        }
+        .dossier-item {
+            background: #ffffff;
+            border: 1px solid var(--border-hairline);
+            border-left: 3.5px solid var(--accent-bronze);
+            border-radius: var(--radius-md);
+            padding: 24px 26px;
+            box-shadow: var(--card-shadow);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .dossier-item h3 {
+            font-family: "Noto Serif SC", "EB Garamond", serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .dossier-item h3 span {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-tertiary);
+        }
+        .dossier-item ul {
+            list-style: none;
+            font-size: 13.5px;
+            color: var(--text-secondary);
+            line-height: 1.78;
+        }
+        .dossier-item li {
+            position: relative;
+            padding-left: 18px;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+        .dossier-item li::before {
+            content: "◆";
+            position: absolute;
+            left: 4px;
+            top: 6px;
+            color: var(--accent-bronze);
+            font-size: 7px;
+        }
+        .dossier-item strong {
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+
+        /* 基本盘看板表格 (LaTeX 标准三线表 booktabs 规范) */
+        .booktabs-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            border-top: 2.2px solid var(--border-strong);
+            border-bottom: 2.2px solid var(--border-strong);
+        }
+        .booktabs-table th {
+            text-align: left;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            color: var(--text-primary);
+            padding: 12px 14px;
+            border-bottom: 1.2px solid var(--border-strong);
+            background-color: var(--bg-table-head);
+            white-space: nowrap;
+        }
+        .booktabs-table td {
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--border-hairline);
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .booktabs-table tr:last-child td {
+            border-bottom: none;
+        }
+        .booktabs-table tr:hover td {
+            background-color: #f7f6f1;
+        }
+
+        /* 24 门核心课程表格滑动容器 */
+        .table-scroll-container {
+            max-height: 480px;
+            overflow-y: auto;
+            overflow-x: auto;
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-md);
+            background: #ffffff;
+            position: relative;
+            scrollbar-width: thin;
+            scrollbar-color: #cbd5e1 #f8fafc;
+        }
+        .table-scroll-container::-webkit-scrollbar {
+            width: 7px;
+            height: 7px;
+        }
+        .table-scroll-container::-webkit-scrollbar-track {
+            background: #f8fafc;
+        }
+        .table-scroll-container::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+            border: 2px solid #f8fafc;
+        }
+        .table-scroll-container::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        .table-scroll-container .booktabs-table {
+            margin: 0;
+            border: none;
+        }
+        .table-scroll-container .booktabs-table thead th {
+            position: sticky;
+            top: 0;
+            background: #fafaf9;
+            z-index: 10;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            border-top: none;
+        }
+
+        /* 全局行内代码与公式徽章 (高对比度浅底、深海蓝文字、精致微边框) */
+        code {
+            font-family: "JetBrains Mono", Consolas, monospace !important;
+            font-size: 12px !important;
+            font-weight: 700 !important;
+            padding: 2px 7px !important;
+            border-radius: 4px !important;
+            background-color: #f2eee5 !important; /* 雅致温润羊皮纸浅底 */
+            color: #162a45 !important;            /* 萨维尔街深海蓝，清晰文字 */
+            border: 1px solid #dfd8cb !important;
+            line-height: 1.4 !important;
+            display: inline-block !important;
+            letter-spacing: 0.02em !important;
+        }
+        .booktabs-table td code {
+            background-color: #e0f2fe !important; /* 雅致浅冰蓝底 */
+            color: #0369a1 !important;            /* 醒目明晰深天蓝 */
+            border: 1px solid #bae6fd !important;
+            font-size: 11.5px !important;
+            padding: 2.5px 7px !important;
+        }
+        .formula-badge {
+            display: inline-flex;
+            align-items: center;
+            background: #f7f4ee !important;
+            color: #162a45 !important;
+            font-family: "JetBrains Mono", Consolas, monospace;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 4px;
+            border: 1.5px solid #8a6839 !important;
+            margin: 2px 0;
+            letter-spacing: 0.02em;
+            box-shadow: 0 1px 3px rgba(138, 104, 57, 0.08);
+        }
+        .formula-badge strong {
+            color: #8a6839;
+            margin-left: 6px;
+            font-weight: 800;
+        }
+
+        /* 图表栅格与经典图版 */
+        .chart-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin-bottom: 36px;
+        }
+        .chart-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-md);
+            padding: 24px;
+            box-shadow: var(--card-shadow);
+        }
+        .chart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 14px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-hairline);
+            gap: 10px;
+        }
+        .chart-title-wrap {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            min-width: 0;
+        }
+        .fig-badge {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            color: var(--accent-bronze);
+            background: var(--bg-subtle);
+            padding: 2px 6px;
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-sm);
+            flex-shrink: 0;
+        }
+        .chart-title {
+            font-family: "Noto Serif SC", "EB Garamond", serif;
+            font-size: 14.5px;
+            font-weight: 700;
+            color: var(--text-primary);
+            white-space: nowrap;
+        }
+        .chart-caption {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 9.5px;
+            color: var(--text-tertiary);
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            flex-shrink: 0;
+            text-align: right;
+            text-transform: uppercase;
+        }
+        .chart-desc {
+            font-size: 12.5px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            line-height: 1.55;
+        }
+        .echarts-render {
+            width: 100%;
+            height: 380px;
+        }
+
+        /* 算法与公式研报典藏卡 (Quiet Luxury Academic Formula Card) */
+        .algo-card {
+            background: #fafaf9;
+            color: var(--text-primary);
+            border-radius: var(--radius-lg);
+            padding: 32px 36px;
+            margin: 24px 0;
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--border-hairline);
+            border-top: 3.5px solid var(--accent-navy);
+        }
+        .algo-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-hairline);
+            padding-bottom: 14px;
+            margin-bottom: 22px;
+        }
+        .algo-title {
+            font-family: "Noto Serif SC", serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .algo-tag {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 11px;
+            color: var(--accent-navy);
+            background: #f1f5f9;
+            border: 1px solid #e2e8f0;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        .algo-subheading {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+            margin-top: 20px;
+        }
+        .algo-subheading:first-of-type {
+            margin-top: 0;
+        }
+        .formula-block {
+            background: #ffffff;
+            border: 1px solid var(--border-hairline);
+            border-left: 4px solid var(--accent-navy);
+            border-radius: 6px;
+            padding: 16px 22px;
+            margin: 12px 0;
+            font-family: "EB Garamond", "Times New Roman", serif;
+            font-size: 18px;
+            color: #0f172a;
+            letter-spacing: 0.02em;
+            line-height: 1.6;
+            box-shadow: 0 1px 3px rgba(15, 23, 42, 0.03);
+        }
+        .formula-desc {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-size: 13.5px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+        .formula-desc code {
+            background: #f1f5f9;
+            color: var(--accent-navy);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 12.5px;
+            font-family: "JetBrains Mono", monospace;
+            border: 1px solid #e2e8f0;
+        }
+        .algo-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-top: 24px;
+        }
+        .algo-step-item {
+            background: #ffffff;
+            border: 1px solid var(--border-hairline);
+            border-radius: 6px;
+            padding: 18px;
+            box-shadow: 0 1px 3px rgba(15, 23, 42, 0.02);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .algo-step-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(15, 23, 42, 0.05);
+        }
+        .algo-step-k {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 11px;
+            color: var(--accent-navy);
+            font-weight: 700;
+            margin-bottom: 6px;
+            letter-spacing: 0.05em;
+        }
+        .algo-step-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 6px;
+        }
+        .algo-step-body {
+            font-size: 12.5px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .algo-step-body code {
+            background: #f1f5f9;
+            color: #1e293b;
+            padding: 1px 4px;
+            border-radius: 3px;
+            font-size: 11.5px;
+            font-family: "JetBrains Mono", monospace;
+        }
+
+        /* 提示与引用微调块 */
+        .callout-box {
+            background: #f8fafc;
+            border: 1px solid var(--border-hairline);
+            border-left: 4px solid var(--accent-bronze);
+            border-radius: var(--radius-md);
+            padding: 18px 24px;
+            margin: 22px 0;
+            font-size: 14px;
+            line-height: 1.7;
+            color: var(--text-secondary);
+        }
+        .callout-box.blue {
+            background: #f0f9ff;
+            border-left-color: var(--accent-blue);
+            color: #0369a1;
+        }
+        .callout-box.sage {
+            background: #f0fdf4;
+            border-left-color: var(--accent-sage);
+            color: #166534;
+        }
+        .callout-box strong {
+            color: var(--text-primary);
+        }
+
+        /* 响应式适配 */
+        @media (max-width: 1024px) {
+            .spec-matrix { grid-template-columns: repeat(3, 1fr); }
+            .kpi-deck { grid-template-columns: repeat(3, 1fr); }
+            .chart-grid { grid-template-columns: 1fr; }
+            .dossier-grid { grid-template-columns: 1fr; }
+            .algo-steps { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 640px) {
+            .spec-matrix { grid-template-columns: repeat(2, 1fr); }
+            .kpi-deck { grid-template-columns: repeat(2, 1fr); }
+            .nav-links { display: none; }
+            .algo-steps { grid-template-columns: 1fr; }
+            body { padding: 20px 14px; }
+        }
+    /* 返回总舱按钮 */
+        .nav-back-btn { background: rgba(138, 104, 57, 0.08); border: 1px solid rgba(138, 104, 57, 0.28); color: var(--accent-bronze); font-family: "JetBrains Mono", monospace; font-size: 11.5px; font-weight: 600; letter-spacing: 0.04em; padding: 6px 14px; border-radius: var(--radius-sm); cursor: pointer; transition: all 0.2s ease; white-space: nowrap; }
+        .nav-back-btn:hover { background: rgba(138, 104, 57, 0.16); text-decoration: underline; }
+
+        </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- 顶部吸顶导航 -->
+    <div class="nav-dock">
+        <div class="nav-brand" data-slot="s00">
+            <span class="nav-brand-code">PRJ-ACAD-HUST-2006</span>
+        </div>
+        <ul class="nav-links">
+            <li data-slot="s01"><a href="#pedigree">学术坐标</a></li>
+            <li data-slot="s02"><a href="#kpi">核心指标</a></li>
+            <li data-slot="s03"><a href="#curriculum">培养架构</a></li>
+            <li data-slot="s04"><a href="#charts">图表分析</a></li>
+            <li data-slot="s05"><a href="#lbm-pipeline">LBM 算法</a></li>
+            <li data-slot="s06"><a href="#bridge">二十年映射</a></li>
+        </ul>
+        <button class="nav-back-btn" onclick="handleBackToParent()" title="返回总舱" data-slot="s07">
+            <span>‹ 返回总舱</span>
+        </button>
+    </div>
+
+    <!-- 头部 Hero 区域 -->
+    <div class="hero" id="pedigree">
+        <div class="archival-eyebrow" data-slot="s08">
+            <span>HUST School of Mathematics & Statistics</span>
+            <span class="eyebrow-sep">·</span>
+            <span>Class of 2002 Statistics (B.S.)</span>
+            <span class="eyebrow-sep">·</span>
+            <span>National 985 Foundation Cohort</span>
+        </div>
+        <h1 class="hero-title" data-slot="s09">华中科技大学统计学学术奠基与数理认知底座</h1>
+        <div class="hero-subhead" data-slot="s10">2002 级统计学理学学士 · 数理训练向商业实践与现代系统设计的思维迁移</div>
+        <p class="hero-subtitle" data-slot="s11">
+            本文依托四年教学培养计划与经典教材体系，梳理毕业设计《格子玻尔兹曼 (LBM) 算法与数值模拟》的数学物理推导与计算实现，并客观阐述该数理底座在随后上市公司资本运作、工程采销供应链与 AI 全栈开发中的逻辑与方法支撑。
+        </p>
+    </div>
+
+    <!-- 6 核心 KPI 事实甲板 -->
+    <div class="kpi-deck" id="kpi">
+        <div class="kpi-tile">
+            <div class="kpi-eyebrow" data-slot="s12">ACADEMIC COHORT</div>
+            <div class="kpi-title-zh" data-slot="s13">学院历史坐标</div>
+            <div class="kpi-figure" data-slot="s14">985 <span>首届</span></div>
+            <div class="kpi-subtext" data-slot="s15">新学院成立后首届本科生</div>
+        </div>
+        <div class="kpi-tile">
+            <div class="kpi-eyebrow" data-slot="s16">DEGREE PROFILE</div>
+            <div class="kpi-title-zh" data-slot="s17">数学系科班</div>
+            <div class="kpi-figure" data-slot="s18">理学学士 <span>(B.S.)</span></div>
+            <div class="kpi-subtext" data-slot="s19">并轨修读分析与高代</div>
+        </div>
+        <div class="kpi-tile">
+            <div class="kpi-eyebrow" data-slot="s20">TOTAL CREDITS</div>
+            <div class="kpi-title-zh" data-slot="s21">四年总学分</div>
+            <div class="kpi-figure" data-slot="s22">160+ <span>学分</span></div>
+            <div class="kpi-subtext" data-slot="s23">30+ 门数理与计算骨干课</div>
+        </div>
+        <div class="kpi-tile">
+            <div class="kpi-eyebrow" data-slot="s24">THESIS RESEARCH</div>
+            <div class="kpi-title-zh" data-slot="s25">毕业论文课题</div>
+            <div class="kpi-figure" data-slot="s26">D2Q9 <span>LBM</span></div>
+            <div class="kpi-subtext" data-slot="s27">介观 LBGK 状态机演化仿真</div>
+        </div>
+        <div class="kpi-tile">
+            <div class="kpi-eyebrow" data-slot="s28">RIGOROUS PROOF</div>
+            <div class="kpi-title-zh" data-slot="s29">审慎思维习惯</div>
+            <div class="kpi-figure" data-slot="s30">严密推导</div>
+            <div class="kpi-subtext" data-slot="s31">严格实分析形式化推导训练</div>
+        </div>
+        <div class="kpi-tile">
+            <div class="kpi-eyebrow" data-slot="s32">CAREER SPAN</div>
+            <div class="kpi-title-zh" data-slot="s33">长期实践迁移</div>
+            <div class="kpi-figure" data-slot="s34">20 <span>年</span></div>
+            <div class="kpi-subtext" data-slot="s35">数理逻辑贯通治理与 AI</div>
+        </div>
+    </div>
+
+<!-- 专案基本盘台账 (LaTeX 标准三线表 booktabs) -->
+    <div class="section-header" id="curriculum">
+        <div class="section-badge" data-slot="s36">SECTION 01 · STANDARDIZED ACADEMIC MATRIX</div>
+        <h2 data-slot="s37">培养规格与学术基本盘</h2>
+        <div class="section-subtext" data-slot="s38">基于四年教学培养方案与经典教材体系的学术基本盘一览</div>
+    </div>
+    <div class="card">
+        <div class="card-caption-bar">
+            <div class="card-heading" data-slot="s39">培养维度 · 时代坐标 · 商业转化</div>
+            <div class="card-tag" data-slot="s40">STANDARDIZED ACADEMIC MATRIX</div>
+        </div>
+        <table class="booktabs-table">
+            <thead>
+                <tr>
+                    <th style="width: 22%;" data-slot="s41">培养维度 / 时代坐标</th>
+                    <th style="width: 40%;" data-slot="s42">历史事实与严密培养参数</th>
+                    <th style="width: 38%;" data-slot="s43">商业实战与技术工程转化意义</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-slot="s44"><strong>学院沿革与学科定位</strong></td>
+                    <td data-slot="s45">
+                        华中科技大学（原华中理工大学、同济医科大学、武汉城市建设学院于 2000 年合并组建，国家首批“985工程”顶尖高校）。<br>
+                        数学学科历经华中工学院基础科学系、1984年数学力学系、1997年应用数学系。<strong>2002 年正式成立数学与统计学院，2002 级为首届统计学本科生</strong>。
+                    </td>
+                    <td data-slot="s46">
+                        <strong>专业骨干师资教学投入</strong><br>
+                        修读由万建平教授、刘次华教授等编写的国家规划教材，系统接受概率公理化体系、参数估计与统计推断大题推导训练。
+                    </td>
+                </tr>
+                <tr>
+                    <td data-slot="s47"><strong>理学培养标准 (非经管)</strong></td>
+                    <td data-slot="s48">
+                        行政隶属数学系，严格执行<strong>理学学士 (Bachelor of Science)</strong> 标准。从大一到大二直接与数学与应用数学专业完全并轨修读高强度的《数学分析 (I/II/III)》与《高等代数与几何 (I/II)》，共 33 学分。
+                    </td>
+                    <td data-slot="s49">
+                        <strong>严密逻辑与推导思维</strong><br>
+                        深入实数完备性定理、Jordan 标准型与极限定理推导，对长链条业务逻辑与复杂数据关系建立严密的审慎核验习惯。
+                    </td>
+                </tr>
+                <tr>
+                    <td data-slot="s50"><strong>华科工科底蕴融合</strong></td>
+                    <td data-slot="s51">
+                        依托华科工科建模与计算机应用氛围，修读《C 语言程序设计》《数据结构与算法》《数值分析》《运筹学与线性规划》《常微分方程》《偏微分方程数值解》及 MATLAB/SAS 上机。
+                    </td>
+                    <td data-slot="s52">
+                        <strong>底层内存与算法实现基础</strong><br>
+                        系统掌握指针连续内存分配、数组局部性与大规模数值矩阵计算，为后续理解 DuckDB 列式计算与数据流转打下扎实功底。
+                    </td>
+                </tr>
+                <tr>
+                    <td data-slot="s53"><strong>毕业科研论文课题</strong></td>
+                    <td data-slot="s54">
+                        大四阶段师从计算数学与数值解导师团队，开展毕业设计：<strong>《格子玻尔兹曼 (LBM) 算法与流体力学数值模拟》</strong>（采用 D2Q9 离散速度网格模型与 LBGK 单松弛时间演化方程）。
+                    </td>
+                    <td data-slot="s55">
+                        <strong>介观状态机与离散演化模型</strong><br>
+                        突破传统宏观连续方程全局求逆的计算瓶颈，理解微观局部规则向宏观连续介质演化的离散状态机机理，为后续理解复杂状态机与数据流编排提供良好认知。
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 2×2 四大递进培养阶段平衡矩阵 -->
+    <div class="section-header">
+        <div class="section-badge" data-slot="s56">SECTION 02 · 2×2 BALANCED DOSSIER GRID</div>
+        <h2 data-slot="s57">四大递进培养阶段</h2>
+        <div class="section-subtext" data-slot="s58">纯数分析底座 ➔ 概率推断中枢 ➔ 运筹科学计算 ➔ 算法工程实践的四年递进梯次</div>
+    </div>
+    <div class="dossier-grid">
+        <div class="dossier-item blue-edge">
+            <h3 data-slot="s59">阶段一：纯数学严谨分析与代数底座 <span>(大一 ~ 大二 · 48 学分)</span></h3>
+            <ul>
+                <li data-slot="s60"><strong>数理学术内核</strong>：彻底超越浅层工科微积分公式套用，深入 ε-δ 极限实数完备性定理、含参变量积分、Green/Gauss 场论公式；线性空间同构、特征子空间分解、Jordan 标准型与二次型正定性判别。</li>
+                <li data-slot="s61"><strong>终局业务映射</strong>：<strong>严密逻辑与反幻觉基石</strong>。培养对事实证据链的苛刻要求，在上市公司披露与造价审计中杜绝任何主观臆断与模糊推断。</li>
+            </ul>
+        </div>
+        <div class="dossier-item navy-edge">
+            <h3 data-slot="s62">阶段二：概率论与现代统计推断中枢 <span>(大二 ~ 大三 · 42 学分)</span></h3>
+            <ul>
+                <li data-slot="s63"><strong>数理学术内核</strong>：Kolmogorov 概率公理化体系、充分统计量、无偏估计、极大似然 (MLE)、Neyman-Pearson 假设检验；高维空间协方差分解、正交投影降维与时序平稳性判别。</li>
+                <li data-slot="s64"><strong>终局业务映射</strong>：<strong>AI 向量度量与商业推断底座</strong>。大模型高维 Embedding 余弦检索的多元统计数学本质；上市公司三项费用回归预测与万级物料质量抽检。</li>
+            </ul>
+        </div>
+        <div class="dossier-item sage-edge">
+            <h3 data-slot="s65">阶段三：运筹最优化与大规模科学计算 <span>(大三 ~ 大四 · 36 学分)</span></h3>
+            <ul>
+                <li data-slot="s66"><strong>数理学术内核</strong>：大规模矩阵数值直接与迭代求解、偏微分方程有限差分网格离散化；单纯形法、对偶理论、灵敏度分析、网络流运输调度模型、约束满足问题 (CSP)。</li>
+                <li data-slot="s67"><strong>终局业务映射</strong>：<strong>工程排产与成本双轨最优化</strong>。大型工程采销与 46 个商业项目转化为运筹排产模型；创立动态加乘双轨定价方程，在峰值 70 人团队下实现年产值跨越 2 亿元。</li>
+            </ul>
+        </div>
+        <div class="dossier-item purple-edge">
+            <h3 data-slot="s68">阶段四：算法工程实践与科研攻坚闭环 <span>(贯穿四年 · 34 学分)</span></h3>
+            <ul>
+                <li data-slot="s69"><strong>数理学术内核</strong>：物理指针运算、连续内存动态分配 (malloc/free)、数组 Cache 局部性；关系代数与集合运算；LBGK 碰撞-迁移介观动力学演化与局部状态机编程。</li>
+                <li data-slot="s70"><strong>终局业务映射</strong>：<strong>现代化湖仓与全栈 AI 工程</strong>。DuckDB 列式向量化内存感知；LBM 状态机迁移思想直通现代 AI Agent 状态图总线，一人自研交付 8 大重工业级系统。</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 4 大 ECharts 交互图表卡片 -->
+    <div class="section-header" id="charts">
+        <div class="section-badge" data-slot="s71">SECTION 03 · QUANTITATIVE CAPABILITY CHARTS</div>
+        <h2 data-slot="s72">数理学术图谱与量化能力分布</h2>
+        <div class="section-subtext" data-slot="s73">四年 160+ 必修学分结构、六维素养雷达、介观状态机时序演化与二十年实践映射桑基流向</div>
+    </div>
+    <div class="chart-grid">
+        <div class="chart-box">
+            <div class="chart-header">
+                <div class="chart-title-wrap" data-slot="s74">
+                    <span class="fig-badge">FIG. 01</span>
+                    <span class="chart-title">四大培养阶段学分分布与课程结构</span>
+                </div>
+                <div class="chart-caption" data-slot="s75">160+ CREDITS · 4 STAGES</div>
+            </div>
+            <div class="chart-desc" data-slot="s76">160+ 总学分在纯数基石、概率推断、计算运筹与算法工程四大阶段的权重配比与骨干科目数</div>
+            <div id="chart-stage-distribution" class="echarts-render"></div>
+        </div>
+        <div class="chart-box">
+            <div class="chart-header">
+                <div class="chart-title-wrap" data-slot="s77">
+                    <span class="fig-badge">FIG. 02</span>
+                    <span class="chart-title">统计学专业六维数理能力与核心素养</span>
+                </div>
+                <div class="chart-caption" data-slot="s78">6-DIMENSIONAL RADAR MODEL</div>
+            </div>
+            <div class="chart-desc" data-slot="s79">基于华科四年严密理学训练构建的六维核心能力雷达模型</div>
+            <div id="chart-math-radar" class="echarts-render"></div>
+        </div>
+        <div class="chart-box">
+            <div class="chart-header">
+                <div class="chart-title-wrap" data-slot="s80">
+                    <span class="fig-badge">FIG. 03</span>
+                    <span class="chart-title">LBM 介观动力学演化与状态机迁移时序</span>
+                </div>
+                <div class="chart-caption" data-slot="s81">LBGK D2Q9 STATE MACHINE</div>
+            </div>
+            <div class="chart-desc" data-slot="s82">从微观局部松弛碰撞到连续介质宏观物理量统计恢复的算法演化管线</div>
+            <div id="chart-lbm-state-machine" class="echarts-render"></div>
+        </div>
+        <div class="chart-box">
+            <div class="chart-header">
+                <div class="chart-title-wrap" data-slot="s83">
+                    <span class="fig-badge">FIG. 04</span>
+                    <span class="chart-title">二十年职业实践中数理映射全局桑基图</span>
+                </div>
+                <div class="chart-caption" data-slot="s84">20-YEAR CAREER SANKEY FLOW</div>
+            </div>
+            <div class="chart-desc" data-slot="s85">从华科统计学学术根基到上市公司治理、两亿供应链大盘及现代 AI 全栈的贯通流向</div>
+            <div id="chart-math-tri-bridge" class="echarts-render"></div>
+        </div>
+    </div>
+
+    <!-- 毕业课题攻坚详解：LBM 算法与数值模拟 -->
+    <div class="section-header" id="lbm-pipeline">
+        <div class="section-badge" data-slot="s86">SECTION 04 · THESIS NUMERICAL SIMULATION</div>
+        <h2 data-slot="s87">毕业设计课题：《格子玻尔兹曼 (LBM) 算法与数值模拟》</h2>
+        <div class="section-subtext" data-slot="s88">介观动理论 D2Q9 离散晶格模型、LBGK 单松弛时间演化方程与连续内存状态机演算</div>
+    </div>
+    <div class="card">
+        <p style="font-size: 15px; margin-bottom: 20px; line-height: 1.8;" data-slot="s89">
+            在华科 2006 年本科毕业设计阶段，梁清波选择流体力学数值模拟课题：<strong>《格子玻尔兹曼 (Lattice Boltzmann Method, LBM) 算法与流体力学数值模拟》</strong>（由科学计算与偏微分方程数值解导师指导）。
+        </p>
+
+        <div class="algo-card">
+            <div class="algo-header">
+                <div class="algo-title" data-slot="s90">
+                    <span>🔬 LBM 算法数学模型与离散演化机理</span>
+                </div>
+                <div class="algo-tag" data-slot="s91">LATTICE BOLTZMANN METHOD (LBGK / D2Q9)</div>
+            </div>
+
+            <div class="algo-subheading" data-slot="s92">
+                1. 传统宏观连续介质力学对比瓶颈 (Navier-Stokes Equations)：
+            </div>
+            <div class="formula-block" data-slot="s93">
+                ∂u/∂t + (u · ∇)u = - (1/ρ) ∇p + ν ∇²u + F
+            </div>
+            <div class="formula-desc" data-slot="s94">
+                传统宏观计算流体力学 (CFD) 直接离散求解连续非线性偏微分方程组，存在高阶非线性对流项 <code>(u · ∇)u</code> 与全局压力 Poisson 方程求逆的巨大计算瓶颈，网格生成复杂且难以高效实现大规模并行计算。
+            </div>
+
+            <div class="algo-subheading" data-slot="s95">
+                2. 介观动力学模型 (LBGK 单松弛时间演化方程)：
+            </div>
+            <div class="formula-block" data-slot="s96">
+                f_i(x + e_i · Δt, t + Δt) - f_i(x, t) = - (1/τ) · [ f_i(x, t) - f_i^(eq)(x, t) ]
+            </div>
+            <div class="formula-desc" data-slot="s97">
+                基于微观分子动力学 (MD) 与介观动理论，采用统计粒子速度分布函数 <code>f_i(x, t)</code> 描述流体。通过单松弛时间 <code>τ</code> 逼近 Maxwell-Boltzmann 平衡态分布 <code>f_i^(eq)</code>，将连续非线性偏微分方程转化为<strong>局部的代数松弛与相邻格点的数据迁移</strong>。
+            </div>
+
+            <div class="algo-steps">
+                <div class="algo-step-item">
+                    <div class="algo-step-k" data-slot="s98">STEP 01</div>
+                    <div class="algo-step-title" data-slot="s99">D2Q9 离散速度网格</div>
+                    <div class="algo-step-body" data-slot="s100">二维正方晶格上构造 9 个离散速度向量：中心静止点 (4/9)、正交轴向 (1/9) 与对角线 (1/36)，对称性保证宏观各向同性。</div>
+                </div>
+                <div class="algo-step-item">
+                    <div class="algo-step-k" data-slot="s101">STEP 02</div>
+                    <div class="algo-step-title" data-slot="s102">局部代数碰撞 (Collision)</div>
+                    <div class="algo-step-body" data-slot="s103">计算各格点粒子松弛弛豫 <code>f_i^* = f_i - (1/τ)[f_i - f_i^(eq)]</code>。格点间局部计算解耦，具备良好的数组并行性。</div>
+                </div>
+                <div class="algo-step-item">
+                    <div class="algo-step-k" data-slot="s104">STEP 03</div>
+                    <div class="algo-step-title" data-slot="s105">相邻节点迁移 (Streaming)</div>
+                    <div class="algo-step-body" data-slot="s106">粒子沿离散速度方向位移至邻域格点 <code>f_i(x+e_i·Δt) = f_i^*</code>。无矩阵求逆，本质是连续内存指针位移。</div>
+                </div>
+                <div class="algo-step-item">
+                    <div class="algo-step-k" data-slot="s107">STEP 04</div>
+                    <div class="algo-step-title" data-slot="s108">宏观统计矩恢复</div>
+                    <div class="algo-step-body" data-slot="s109">对速度空间求零阶矩与一阶矩无损恢复宏观场：密度 <code>ρ = ∑ f_i</code>，流速 <code>ρu = ∑ f_i·e_i</code>，压力 <code>p = c_s²·ρ</code>。</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="callout-box sage" data-slot="s110">
+            <strong>💡 思考与体会：LBM 算法对后续复杂工程与系统设计的方法论借鉴</strong><br>
+            1. <strong>局部状态转移与宏观涌现机制</strong>：LBM 算法通过微观格点的局部碰撞与相邻迁移，无需全局矩阵求逆即可自然演化出宏观流动。这种由局部确定性状态转移演化为全局复杂行为的建模方法，在今天复杂分布式业务流和 <strong>现代 AI Agent 状态图机（如 LangGraph / Multi-Agent Swarm）</strong> 的状态转移设计中具备深刻的方法共通性。<br>
+            2. <strong>连续内存与数组计算基础</strong>：LBM 要求在多维连续数组内存中完成数十万次时间步演化，注重数据连续性（Cache Locality）与内存访问效率。这为日后理解 <strong>DuckDB 列式向量化存储、Parquet 二进制切片与高性能数据湖仓</strong> 提供了良好的底层物理直觉。
+        </div>
+    </div>
+
+    <!-- 24 门核心课程全景明细表 -->
+    <div class="section-header">
+        <div class="section-badge" data-slot="s111">SECTION 05 · CORE CURRICULUM ARCHIVE</div>
+        <h2 data-slot="s112">24 门骨干课程</h2>
+        <div class="section-subtext" data-slot="s113">学期时序分布、教材出处、核心理论训练与终局工程映射一览（支持上下滑动）</div>
+    </div>
+    <div class="card">
+        <div class="card-caption-bar">
+            <div class="card-heading" data-slot="s114">24 门核心必修科目 学期分布、经典教材出处与业务映射一览</div>
+            <div class="card-tag" data-slot="s115">DUCKDB DIRECT LAKE VIEW: v_hust_core_course_matrix ｜ 共 24 门课程 · 支持上下滑动浏览 ↕</div>
+        </div>
+        <div class="table-scroll-container">
+        <table class="booktabs-table">
+            <thead>
+                <tr>
+                    <th style="width: 10%;" data-slot="s116">课程编号</th>
+                    <th style="width: 14%;" data-slot="s117">课程名称</th>
+                    <th style="width: 9%;" data-slot="s118">开设学期</th>
+                    <th style="width: 7%;" data-slot="s119">学分</th>
+                    <th style="width: 20%;" data-slot="s120">经典教材及权威出处</th>
+                    <th style="width: 24%;" data-slot="s121">数理学术核心训练</th>
+                    <th style="width: 16%;" data-slot="s122">终局商业与技术映射</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-slot="s123"><code>MATH101</code></td>
+                    <td data-slot="s124"><strong>数学分析 I</strong></td>
+                    <td data-slot="s125">第 1 学期</td>
+                    <td data-slot="s126">6.0</td>
+                    <td data-slot="s127">华东师大 / 华科自编教材</td>
+                    <td data-slot="s128">ε-δ 极限严格语言、实数连续性定理、导数与微分中值定理</td>
+                    <td data-slot="s129">严密逻辑与反驳推导能力</td>
+                </tr>
+                <tr>
+                    <td data-slot="s130"><code>MATH102</code></td>
+                    <td data-slot="s131"><strong>数学分析 II</strong></td>
+                    <td data-slot="s132">第 2 学期</td>
+                    <td data-slot="s133">6.0</td>
+                    <td data-slot="s134">华东师大 / 华科自编教材</td>
+                    <td data-slot="s135">Riemann 积分理论、反常积分、无穷级数一致收敛性判别</td>
+                    <td data-slot="s136">长周期资金贴现积分测算</td>
+                </tr>
+                <tr>
+                    <td data-slot="s137"><code>MATH103</code></td>
+                    <td data-slot="s138"><strong>数学分析 III</strong></td>
+                    <td data-slot="s139">第 3 学期</td>
+                    <td data-slot="s140">5.0</td>
+                    <td data-slot="s141">华东师大 / 华科自编教材</td>
+                    <td data-slot="s142">多元微积分、重积分、曲线曲面积分与 Green/Gauss 场论公式</td>
+                    <td data-slot="s143">三维空间 CAD 几何微积分</td>
+                </tr>
+                <tr>
+                    <td data-slot="s144"><code>MATH104</code></td>
+                    <td data-slot="s145"><strong>高等代数与几何 I</strong></td>
+                    <td data-slot="s146">第 1 学期</td>
+                    <td data-slot="s147">5.0</td>
+                    <td data-slot="s148">北京大学数学系《高等代数》</td>
+                    <td data-slot="s149">线性方程组理论、行列式、矩阵代数、向量空间与线性映射</td>
+                    <td data-slot="s150">高维特征向量变换本质</td>
+                </tr>
+                <tr>
+                    <td data-slot="s151"><code>MATH105</code></td>
+                    <td data-slot="s152"><strong>高等代数与几何 II</strong></td>
+                    <td data-slot="s153">第 2 学期</td>
+                    <td data-slot="s154">5.0</td>
+                    <td data-slot="s155">北京大学数学系《高等代数》</td>
+                    <td data-slot="s156">λ-矩阵、Jordan 标准型、二次型对角化与正定性判别</td>
+                    <td data-slot="s157">权重矩阵奇异值分解 (SVD)</td>
+                </tr>
+                <tr>
+                    <td data-slot="s158"><code>MATH106</code></td>
+                    <td data-slot="s159"><strong>解析几何</strong></td>
+                    <td data-slot="s160">第 1 学期</td>
+                    <td data-slot="s161">3.0</td>
+                    <td data-slot="s162">吕林根 / 许子道《解析几何》</td>
+                    <td data-slot="s163">仿射坐标系、二次曲面分类、空间投影与正交变换</td>
+                    <td data-slot="s164">3D BIM 空间坐标投影算法</td>
+                </tr>
+                <tr>
+                    <td data-slot="s165"><code>MATH107</code></td>
+                    <td data-slot="s166"><strong>常微分方程 (ODE)</strong></td>
+                    <td data-slot="s167">第 3 学期</td>
+                    <td data-slot="s168">4.0</td>
+                    <td data-slot="s169">王高雄《常微分方程》</td>
+                    <td data-slot="s170">初等积分法、线性微分方程组、相平面分析与稳定性理论</td>
+                    <td data-slot="s171">动态经营系统连续动力学</td>
+                </tr>
+                <tr>
+                    <td data-slot="s172"><code>MATH108</code></td>
+                    <td data-slot="s173"><strong>复变函数论</strong></td>
+                    <td data-slot="s174">第 4 学期</td>
+                    <td data-slot="s175">3.0</td>
+                    <td data-slot="s176">余家荣 / 钟玉泉《复变函数》</td>
+                    <td data-slot="s177">解析函数、Cauchy 积分定理、Taylor 与 Laurent 级数、留数</td>
+                    <td data-slot="s178">物理场解析变换与频域分析</td>
+                </tr>
+                <tr>
+                    <td data-slot="s179"><code>STAT201</code></td>
+                    <td data-slot="s180"><strong>概率论</strong></td>
+                    <td data-slot="s181">第 3 学期</td>
+                    <td data-slot="s182">4.0</td>
+                    <td data-slot="s183"><strong>万建平 / 华科出版社</strong></td>
+                    <td data-slot="s184">Kolmogorov 公理体系、随机变量及其分布、数字特征、极限定理</td>
+                    <td data-slot="s185">风险概率分布与期望值求解</td>
+                </tr>
+                <tr>
+                    <td data-slot="s186"><code>STAT202</code></td>
+                    <td data-slot="s187"><strong>数理统计</strong></td>
+                    <td data-slot="s188">第 4 学期</td>
+                    <td data-slot="s189">4.0</td>
+                    <td data-slot="s190"><strong>万建平 / 高等教育出版社</strong></td>
+                    <td data-slot="s191">充分统计量、无偏估计、极大似然 (MLE)、假设检验与方差分析</td>
+                    <td data-slot="s192">A/B 测试与物料方差审计</td>
+                </tr>
+                <tr>
+                    <td data-slot="s193"><code>STAT203</code></td>
+                    <td data-slot="s194"><strong>随机过程</strong></td>
+                    <td data-slot="s195">第 5 学期</td>
+                    <td data-slot="s196">4.0</td>
+                    <td data-slot="s197"><strong>刘次华 / 华科出版社</strong></td>
+                    <td data-slot="s198">Poisson 过程、Markov 链及其转移概率矩阵、Brownian 运动、鞅论</td>
+                    <td data-slot="s199">状态转移图与用户流失预测</td>
+                </tr>
+                <tr>
+                    <td data-slot="s200"><code>STAT204</code></td>
+                    <td data-slot="s201"><strong>多元统计分析</strong></td>
+                    <td data-slot="s202">第 5 学期</td>
+                    <td data-slot="s203">4.0</td>
+                    <td data-slot="s204">何晓群《多元统计分析》</td>
+                    <td data-slot="s205">主成分分析 (PCA)、因子分析、判别分析、系统聚类</td>
+                    <td data-slot="s206">高维 Embedding 降维与客户分群</td>
+                </tr>
+                <tr>
+                    <td data-slot="s207"><code>STAT205</code></td>
+                    <td data-slot="s208"><strong>应用回归分析</strong></td>
+                    <td data-slot="s209">第 5 学期</td>
+                    <td data-slot="s210">3.0</td>
+                    <td data-slot="s211">何晓群《应用回归分析》</td>
+                    <td data-slot="s212">多元线性回归、多重共线性诊断、残差分析与逐步回归筛选</td>
+                    <td data-slot="s213">三项费用与毛利敏感性分析</td>
+                </tr>
+                <tr>
+                    <td data-slot="s214"><code>STAT206</code></td>
+                    <td data-slot="s215"><strong>时间序列分析</strong></td>
+                    <td data-slot="s216">第 6 学期</td>
+                    <td data-slot="s217">3.0</td>
+                    <td data-slot="s218">王振龙《时间序列分析》</td>
+                    <td data-slot="s219">平稳时序、ARMA/ARIMA 模型、自相关函数 (ACF/PACF)、谱分析</td>
+                    <td data-slot="s220">市值演进趋势预测与供应链备料</td>
+                </tr>
+                <tr>
+                    <td data-slot="s221"><code>STAT207</code></td>
+                    <td data-slot="s222"><strong>抽样技术与调查</strong></td>
+                    <td data-slot="s223">第 6 学期</td>
+                    <td data-slot="s224">3.0</td>
+                    <td data-slot="s225">杜子芳《抽样技术》</td>
+                    <td data-slot="s226">简单随机抽样、分层抽样、整群抽样与估计误差界控制</td>
+                    <td data-slot="s227">工程现场实测抽检合格率核算</td>
+                </tr>
+                <tr>
+                    <td data-slot="s228"><code>COMP301</code></td>
+                    <td data-slot="s229"><strong>数值分析与计算方法</strong></td>
+                    <td data-slot="s230">第 5 学期</td>
+                    <td data-slot="s231">4.0</td>
+                    <td data-slot="s232">李庆扬 / 华科出版社</td>
+                    <td data-slot="s233">误差理论、线性方程组直接法与迭代法、数值微积分与样条插值</td>
+                    <td data-slot="s234">大规模稀疏矩阵迭代逼近</td>
+                </tr>
+                <tr>
+                    <td data-slot="s235"><code>COMP302</code></td>
+                    <td data-slot="s236"><strong>运筹学与线性规划</strong></td>
+                    <td data-slot="s237">第 6 学期</td>
+                    <td data-slot="s238">4.0</td>
+                    <td data-slot="s239">钱颂迪 / 清华大学出版社</td>
+                    <td data-slot="s240">单纯形法、对偶理论、灵敏度分析、运输问题与网络流模型</td>
+                    <td data-slot="s241">万级 BOM 采购加乘定价排产</td>
+                </tr>
+                <tr>
+                    <td data-slot="s242"><code>COMP303</code></td>
+                    <td data-slot="s243"><strong>微分方程数值解</strong></td>
+                    <td data-slot="s244">第 6 学期</td>
+                    <td data-slot="s245">3.0</td>
+                    <td data-slot="s246">李荣华《微分方程数值解法》</td>
+                    <td data-slot="s247">椭圆与双曲偏微分方程、有限差分格式、稳定性与收敛性分析</td>
+                    <td data-slot="s248">流体流动与空间温度场离散求解</td>
+                </tr>
+                <tr>
+                    <td data-slot="s249"><code>COMP304</code></td>
+                    <td data-slot="s250"><strong>数学建模与仿真</strong></td>
+                    <td data-slot="s251">第 6 学期</td>
+                    <td data-slot="s252">3.0</td>
+                    <td data-slot="s253">姜启源《数学模型》</td>
+                    <td data-slot="s254">机理建模与经验建模、蒙特卡洛随机模拟、系统动力学仿真</td>
+                    <td data-slot="s255">现金流断裂压力测试仿真</td>
+                </tr>
+                <tr>
+                    <td data-slot="s256"><code>ENGR401</code></td>
+                    <td data-slot="s257"><strong>C 语言高级程序设计</strong></td>
+                    <td data-slot="s258">第 2 学期</td>
+                    <td data-slot="s259">4.0</td>
+                    <td data-slot="s260">谭浩强 / 华科出版社</td>
+                    <td data-slot="s261">指针运算、结构体、动态内存管理 (malloc/free)、位运算与硬件级优化</td>
+                    <td data-slot="s262">高性能底层计算与内存连续性</td>
+                </tr>
+                <tr>
+                    <td data-slot="s263"><code>ENGR402</code></td>
+                    <td data-slot="s264"><strong>数据结构与算法</strong></td>
+                    <td data-slot="s265">第 3 学期</td>
+                    <td data-slot="s266">4.0</td>
+                    <td data-slot="s267">严蔚敏《数据结构(C语言版)》</td>
+                    <td data-slot="s268">线性表、树与二叉树、图论遍历、哈希表、排序与检索算法</td>
+                    <td data-slot="s269">AI Agent 状态图机拓扑遍历</td>
+                </tr>
+                <tr>
+                    <td data-slot="s270"><code>ENGR403</code></td>
+                    <td data-slot="s271"><strong>数据库系统原理</strong></td>
+                    <td data-slot="s272">第 4 学期</td>
+                    <td data-slot="s273">3.0</td>
+                    <td data-slot="s274">萨师煊《数据库系统概论》</td>
+                    <td data-slot="s275">关系代数、SQL 语言、范式理论 (1NF-3NF)、事务 ACID 机制</td>
+                    <td data-slot="s276">DuckDB 现代湖仓关系建模</td>
+                </tr>
+                <tr>
+                    <td data-slot="s277"><code>ENGR404</code></td>
+                    <td data-slot="s278"><strong>统计软件与计算实验</strong></td>
+                    <td data-slot="s279">第 5 学期</td>
+                    <td data-slot="s280">3.0</td>
+                    <td data-slot="s281">院系自编上机实验大纲</td>
+                    <td data-slot="s282">MATLAB 矩阵运算、SAS 统计报表、R 语言统计建模与模拟</td>
+                    <td data-slot="s283">大规模商业数据统计分析自动化</td>
+                </tr>
+                <tr>
+                    <td data-slot="s284"><code>THESIS</code></td>
+                    <td data-slot="s285"><strong>毕业论文：LBM数值模拟</strong></td>
+                    <td data-slot="s286">第 8 学期</td>
+                    <td data-slot="s287">8.0</td>
+                    <td data-slot="s288">计算力学导师组前沿科研文献</td>
+                    <td data-slot="s289">格子玻尔兹曼 (LBM) 算法在流体模拟中的数学建模、D2Q9 编程仿真</td>
+                    <td data-slot="s290">非线性介观状态机演化与并发计算</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+    <!-- 数理学术底座向二十年职业生涯的三重映射 -->
+    <div class="section-header" id="bridge">
+        <div class="section-badge" data-slot="s291">SECTION 06 · CAREER APPLICATION MAPPING</div>
+        <h2 data-slot="s292">二十年职业实践中数理思维的实践迁移与业务支撑</h2>
+        <div class="section-subtext" data-slot="s293">上市公司合规运作 (2011-2014) ➔ 2 亿实体供应链大盘 (2014-2024) ➔ 现代 AI 全栈与湖仓工程 (2024至今)</div>
+    </div>
+    <div class="card">
+        <p style="font-size: 15px; margin-bottom: 24px; line-height: 1.8;" data-slot="s294">
+            华科数学系科班培养的推演与建模思维，在随后的实体工作实践中逐步转化为严谨求实、重证据链的<strong>方法支撑</strong>：
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+            <div style="background: #fafaf9; border: 1px solid var(--border-hairline); border-top: 3.5px solid var(--accent-navy); border-radius: var(--radius-md); padding: 24px;">
+                <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--accent-navy); font-weight: 700; margin-bottom: 8px;" data-slot="s295">STAGE 01 (2011-2014)</div>
+                <div style="font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 12px;" data-slot="s296">上市公司合规资本运作</div>
+                <div style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.7; text-align: justify;" data-slot="s297">
+                    <strong>运用统计推断与逻辑严密性，支撑法定信息披露与财务对标</strong><br>
+                    • <strong>433 行同业财报对标专报</strong>：运用多元回归与残差分析，对标金螳螂、亚厦、洪涛三项费用控制与毛利弹性；<br>
+                    • <strong>12 亿发债 55 类专业底稿</strong>：以审计级假设检验与方差复核，确保发债资产现金流测算严密闭环；<br>
+                    • <strong>深交所 206 篇法定公告</strong>：专职期间保持零监管函件、零行政处罚，深交所信息披露考评持续最高 A 级。
+                </div>
+            </div>
+
+            <div style="background: #fafaf9; border: 1px solid var(--border-hairline); border-top: 3.5px solid var(--accent-bronze); border-radius: var(--radius-md); padding: 24px;">
+                <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--accent-bronze); font-weight: 700; margin-bottom: 8px;" data-slot="s298">STAGE 02 (2014-2024)</div>
+                <div style="font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 12px;" data-slot="s299">2 亿实体商业与供应链</div>
+                <div style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.7; text-align: justify;" data-slot="s300">
+                    <strong>运用运筹规划与量化测算思维，辅助工程物料排产与采销定价</strong><br>
+                    • <strong>运筹排产模型应用</strong>：统领 24 大核心标杆工程（6.88 亿签约/6.14 亿审定）与 135 份全盘合同（6.83 亿签约/5.92 亿产值）；<br>
+                    • <strong>动态双轨加乘定价测算</strong>：精确求解万级 BOM 采购与商务报价区间，锁定毛利安全边界；<br>
+                    • <strong>联动回款数学模型</strong>：执行 <span class="formula-badge">X × [1500 ÷ 6000]</span> 联动回款，实现贴现成本等比分摊与资金风险可控。
+                </div>
+            </div>
+
+            <div style="background: #fafaf9; border: 1px solid var(--border-hairline); border-top: 3.5px solid var(--accent-purple); border-radius: var(--radius-md); padding: 24px;">
+                <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--accent-purple); font-weight: 700; margin-bottom: 8px;" data-slot="s301">STAGE 03 (2024-PRESENT)</div>
+                <div style="font-size: 16px; font-weight: 700; color: var(--text-primary); margin-bottom: 12px;" data-slot="s302">现代 AI 全栈与湖仓工程</div>
+                <div style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.7; text-align: justify;" data-slot="s303">
+                    <strong>运用线性代数与状态转移机理，理解并驾驭向量检索与数据湖仓</strong><br>
+                    • <strong>多元统计高维投影</strong>：直接映射为大模型余弦相似度度量与混合 RAG 架构，提升知识检索精度；<br>
+                    • <strong>网格状态机转移思想</strong>：借鉴至 LangGraph 分布式 Agent 确定性调度流，提高流程鲁棒性；<br>
+                    • <strong>连续内存数组认知</strong>：直接转化至 DuckDB 列式向量化内存计算感知，独立自研交付 8 大系统原型（2,804 万行源码）。
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 真实源数据审计凭据区 (Provenience Vault) -->
+</div>
+
+<!-- ECharts 交互渲染脚本 -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // 调色盘规范
+    const PALETTE = {
+        navy: '#162a45',
+        bronze: '#8a6839',
+        sage: '#2a4c38',
+        slate: '#475569',
+        blue: '#0284c7',
+        purple: '#6d28d9',
+        lightBg: '#f8fafc',
+        border: 'rgba(18, 19, 22, 0.1)'
+    };
+
+    // ==========================================
+    // FIG 01: 四大递进培养阶段学分分布与课程结构柱状图
+    // ==========================================
+    const chartStage = echarts.init(document.getElementById('chart-stage-distribution'));
+    const optionStage = {
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: { type: 'shadow' },
+            formatter: function(params) {
+                let res = '<strong>' + params[0].name + '</strong><br/>';
+                params.forEach(p => {
+                    res += p.marker + p.seriesName + ': <strong>' + p.value + (p.seriesIndex === 0 ? ' 学分' : ' 门') + '</strong><br/>';
+                });
+                return res;
+            }
+        },
+        legend: {
+            data: ['必修学分', '骨干课程门数'],
+            top: 0,
+            right: 15,
+            textStyle: { fontSize: 11.5, color: '#383b42' }
+        },
+        grid: { top: 38, right: 40, bottom: 42, left: 50 },
+        xAxis: {
+            type: 'category',
+            data: ['阶段一\n纯数分析与代数', '阶段二\n概率与统计推断', '阶段三\n计算与运筹优化', '阶段四\n算法与科研闭环'],
+            axisLabel: { interval: 0, fontSize: 11, color: '#475569', lineHeight: 15 },
+            axisLine: { lineStyle: { color: PALETTE.border } }
+        },
+        yAxis: [
+            {
+                type: 'value',
+                name: '学分',
+                nameTextStyle: { color: '#6e727d', fontSize: 11 },
+                max: 55,
+                axisLabel: { color: '#6e727d' },
+                splitLine: { lineStyle: { stroke: PALETTE.border, type: 'dashed' } }
+            },
+            {
+                type: 'value',
+                name: '门数',
+                nameTextStyle: { color: '#6e727d', fontSize: 11 },
+                max: 10,
+                axisLabel: { color: '#6e727d' },
+                splitLine: { show: false }
+            }
+        ],
+        series: [
+            {
+                name: '必修学分',
+                type: 'bar',
+                data: [48, 42, 36, 34],
+                barWidth: 32,
+                itemStyle: {
+                    color: function(params) {
+                        const colors = [PALETTE.blue, PALETTE.navy, PALETTE.sage, PALETTE.purple];
+                        return colors[params.dataIndex];
+                    },
+                    borderRadius: [4, 4, 0, 0]
+                },
+                label: {
+                    show: true,
+                    position: 'top',
+                    formatter: '{c} 学分',
+                    fontSize: 11,
+                    fontWeight: 700,
+                    color: '#121316'
+                }
+            },
+            {
+                name: '骨干课程门数',
+                type: 'line',
+                yAxisIndex: 1,
+                data: [8, 7, 6, 5],
+                symbol: 'circle',
+                symbolSize: 8,
+                itemStyle: { color: PALETTE.bronze },
+                lineStyle: { width: 2.5, color: PALETTE.bronze },
+                label: {
+                    show: true,
+                    position: 'top',
+                    formatter: '{c} 门',
+                    fontSize: 11,
+                    fontWeight: 700,
+                    color: PALETTE.bronze
+                }
+            }
+        ]
+    };
+    chartStage.setOption(optionStage);
+
+    // ==========================================
+    // FIG 02: 统计学六维数理能力与核心素养雷达图
+    // ==========================================
+    const chartRadar = echarts.init(document.getElementById('chart-math-radar'));
+    const optionRadar = {
+        tooltip: { trigger: 'item' },
+        radar: {
+            radius: '62%',
+            center: ['50%', '52%'],
+            indicator: [
+                { name: '形式化严格逻辑证明\n(ε-δ 分析 / 代数同构)', max: 100 },
+                { name: '概率建模与统计推断\n(假设检验 / 似然估计)', max: 100 },
+                { name: '多元降维与高维几何\n(PCA / 协方差分解)', max: 100 },
+                { name: '运筹排产与极值优化\n(单纯形 / 约束满足)', max: 100 },
+                { name: '连续内存与计算优化\n(指针 / 数组 Cache)', max: 100 },
+                { name: '离散状态机与动态仿真\n(LBM 碰撞迁移演化)', max: 100 }
+            ],
+            axisName: {
+                color: '#383b42',
+                fontSize: 11.5,
+                lineHeight: 15,
+                fontWeight: 600
+            },
+            splitArea: {
+                areaStyle: {
+                    color: ['#ffffff', '#fbfbfa', '#f5f4ef', '#faf9f5']
+                }
+            },
+            splitLine: { lineStyle: { color: PALETTE.border } },
+            axisLine: { lineStyle: { color: PALETTE.border } }
+        },
+        series: [
+            {
+                name: '数理综合能力剖面',
+                type: 'radar',
+                data: [
+                    {
+                        value: [98, 96, 95, 94, 95, 97],
+                        name: '华科 02 级科班统计学素养',
+                        itemStyle: { color: PALETTE.navy },
+                        lineStyle: { width: 2.5, color: PALETTE.navy },
+                        areaStyle: { color: 'rgba(22, 42, 69, 0.22)' }
+                    }
+                ]
+            }
+        ]
+    };
+    chartRadar.setOption(optionRadar);
+
+    // ==========================================
+    // FIG 03: LBM 介观动力学演化与局部状态机时序流程图
+    // ==========================================
+    const chartLBM = echarts.init(document.getElementById('chart-lbm-state-machine'));
+    const optionLBM = {
+        tooltip: {
+            trigger: 'item',
+            formatter: function(params) {
+                return '<strong>' + params.name + '</strong><br/>' + (params.data.detail || '');
+            }
+        },
+        series: [
+            {
+                type: 'graph',
+                layout: 'none',
+                roam: false,
+                label: {
+                    show: true,
+                    position: 'inside',
+                    fontSize: 11.5,
+                    fontWeight: 700,
+                    color: '#ffffff',
+                    lineHeight: 15
+                },
+                edgeSymbol: ['circle', 'arrow'],
+                edgeSymbolSize: [4, 8],
+                edgeLabel: { fontSize: 10, color: '#6e727d' },
+                data: [
+                    {
+                        name: '空间初值\n& 宏观场',
+                        x: 90, y: 165,
+                        symbolSize: [80, 46],
+                        symbol: 'roundRect',
+                        itemStyle: { color: PALETTE.slate },
+                        detail: '设定初始流体速度 u(x,0) 与压力密度 ρ(x,0)'
+                    },
+                    {
+                        name: 'D2Q9 平衡态\n初始化 f^(eq)',
+                        x: 210, y: 165,
+                        symbolSize: [92, 46],
+                        symbol: 'roundRect',
+                        itemStyle: { color: PALETTE.navy },
+                        detail: '依据 Maxwell 速度空间离散分布计算 9 速度方向平衡态'
+                    },
+                    {
+                        name: '局部碰撞松弛\n(Collision)',
+                        x: 340, y: 90,
+                        symbolSize: [96, 46],
+                        symbol: 'roundRect',
+                        itemStyle: { color: PALETTE.blue },
+                        detail: 'LBGK 单松弛时间代数松弛：f_i^* = f_i - (1/τ)[f_i - f_i^(eq)]，无矩阵求逆'
+                    },
+                    {
+                        name: '相邻晶格迁移\n(Streaming)',
+                        x: 470, y: 90,
+                        symbolSize: [96, 46],
+                        symbol: 'roundRect',
+                        itemStyle: { color: PALETTE.purple },
+                        detail: '沿 9 个离散速度向量位移至邻域格点，纯内存指针数据交换'
+                    },
+                    {
+                        name: '半步反弹壁面\n(Bounce-Back)',
+                        x: 470, y: 230,
+                        symbolSize: [96, 46],
+                        symbol: 'roundRect',
+                        itemStyle: { color: PALETTE.bronze },
+                        detail: '遇到固体固壁时粒子沿相反方向原路弹回，实现无滑移物理流动'
+                    },
+                    {
+                        name: '统计矩恢复\n宏观量场 (ρ,u)',
+                        x: 340, y: 230,
+                        symbolSize: [96, 46],
+                        symbol: 'roundRect',
+                        itemStyle: { color: PALETTE.sage },
+                        detail: '求零阶矩与一阶矩：ρ = ∑f_i, ρu = ∑f_i·e_i，无损还原宏观流动'
+                    }
+                ],
+                links: [
+                    { source: '空间初值\n& 宏观场', target: 'D2Q9 平衡态\n初始化 f^(eq)' },
+                    { source: 'D2Q9 平衡态\n初始化 f^(eq)', target: '局部碰撞松弛\n(Collision)' },
+                    { source: '局部碰撞松弛\n(Collision)', target: '相邻晶格迁移\n(Streaming)' },
+                    { source: '相邻晶格迁移\n(Streaming)', target: '半步反弹壁面\n(Bounce-Back)' },
+                    { source: '半步反弹壁面\n(Bounce-Back)', target: '统计矩恢复\n宏观量场 (ρ,u)' },
+                    { source: '统计矩恢复\n宏观量场 (ρ,u)', target: '局部碰撞松弛\n(Collision)', lineStyle: { curveness: 0.2, type: 'dashed' } }
+                ],
+                lineStyle: {
+                    color: '#94a3b8',
+                    width: 2,
+                    curveness: 0.05
+                }
+            }
+        ]
+    };
+    chartLBM.setOption(optionLBM);
+
+    // ==========================================
+    // FIG 04: 二十年职业生涯“数理底座三重映射”全局桑基图
+    // ==========================================
+    const chartBridge = echarts.init(document.getElementById('chart-math-tri-bridge'));
+    const optionBridge = {
+        tooltip: {
+            trigger: 'item',
+            triggerOn: 'mousemove'
+        },
+        series: [
+            {
+                type: 'sankey',
+                left: '15%',
+                right: '30%',
+                top: 15,
+                bottom: 15,
+                nodeGap: 16,
+                nodeWidth: 18,
+                label: {
+                    fontSize: 11,
+                    color: '#121316',
+                    fontFamily: 'Noto Serif SC',
+                    fontWeight: 600,
+                    position: 'right',
+                    width: 120,
+                    overflow: 'break',
+                    lineHeight: 14,
+                    formatter: function(params) {
+                        return params.name;
+                    }
+                },
+                lineStyle: {
+                    color: 'gradient',
+                    curveness: 0.5,
+                    opacity: 0.4
+                },
+                data: [
+                    // 左侧：数理根基
+                    { name: '纯数分析与代数证明', itemStyle: { color: PALETTE.blue } },
+                    { name: '概率统计与推断中枢', itemStyle: { color: PALETTE.navy } },
+                    { name: '运筹排产与最优化算法', itemStyle: { color: PALETTE.sage } },
+                    { name: 'LBM 状态机与底层编程', itemStyle: { color: PALETTE.purple } },
+
+                    // 中间：转化方法论
+                    { name: '审计级反幻觉逻辑', itemStyle: { color: PALETTE.bronze } },
+                    { name: '多维财务回归对标', itemStyle: { color: PALETTE.navy } },
+                    { name: '动态加乘双轨定价方程', itemStyle: { color: PALETTE.sage } },
+                    { name: '联动回款资金模型', itemStyle: { color: PALETTE.bronze } },
+                    { name: 'AI 向量高维余弦度量', itemStyle: { color: PALETTE.blue } },
+                    { name: 'Agent 状态图机调度流', itemStyle: { color: PALETTE.purple } },
+                    { name: 'DuckDB 列式向量化湖仓', itemStyle: { color: PALETTE.slate } },
+
+                    // 右侧：终局商业与技术成果
+                    { name: '206篇信披0监管问询(A级)', itemStyle: { color: PALETTE.navy } },
+                    { name: '12亿发债55类底稿封包', itemStyle: { color: PALETTE.navy } },
+                    { name: '24大标杆工程6.88亿签约', itemStyle: { color: PALETTE.sage } },
+                    { name: '135份合同5.92亿产值大盘', itemStyle: { color: PALETTE.sage } },
+                    { name: '8大自研系统2804万行源码', itemStyle: { color: PALETTE.purple } }
+                ],
+                links: [
+                    { source: '纯数分析与代数证明', target: '审计级反幻觉逻辑', value: 10 },
+                    { source: '概率统计与推断中枢', target: '多维财务回归对标', value: 8 },
+                    { source: '概率统计与推断中枢', target: 'AI 向量高维余弦度量', value: 12 },
+                    { source: '运筹排产与最优化算法', target: '动态加乘双轨定价方程', value: 14 },
+                    { source: '运筹排产与最优化算法', target: '联动回款资金模型', value: 10 },
+                    { source: 'LBM 状态机与底层编程', target: 'Agent 状态图机调度流', value: 12 },
+                    { source: 'LBM 状态机与底层编程', target: 'DuckDB 列式向量化湖仓', value: 10 },
+
+                    { source: '审计级反幻觉逻辑', target: '206篇信披0监管问询(A级)', value: 6 },
+                    { source: '审计级反幻觉逻辑', target: '12亿发债55类底稿封包', value: 4 },
+                    { source: '多维财务回归对标', target: '206篇信披0监管问询(A级)', value: 8 },
+                    { source: '动态加乘双轨定价方程', target: '24大标杆工程6.88亿签约', value: 8 },
+                    { source: '动态加乘双轨定价方程', target: '135份合同5.92亿产值大盘', value: 6 },
+                    { source: '联动回款资金模型', target: '24大标杆工程6.88亿签约', value: 6 },
+                    { source: '联动回款资金模型', target: '135份合同5.92亿产值大盘', value: 4 },
+                    { source: 'AI 向量高维余弦度量', target: '8大自研系统2804万行源码', value: 12 },
+                    { source: 'Agent 状态图机调度流', target: '8大自研系统2804万行源码', value: 12 },
+                    { source: 'DuckDB 列式向量化湖仓', target: '8大自研系统2804万行源码', value: 10 }
+                ]
+            }
+        ]
+    };
+    chartBridge.setOption(optionBridge);
+
+    // 窗口尺寸自适应
+    window.addEventListener('resize', function() {
+        chartStage.resize();
+        chartRadar.resize();
+        chartLBM.resize();
+        chartBridge.resize();
+    });
+});
+
+    // 返回总舱：无条件直跳
+    window.handleBackToParent = function() {
+        window.location.href = '../';
+    };
+</script>
+
+</body>
+</html>
