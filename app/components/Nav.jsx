@@ -1,5 +1,7 @@
 import Link from 'next/link';
-import { navLinks } from '../../data/profile';
+import navLinksData from '../../data/profile.json';
+
+const navLinks = navLinksData.nav;
 
 export default function Nav() {
   return (

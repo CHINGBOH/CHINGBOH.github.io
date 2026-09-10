@@ -427,7 +427,6 @@
             <li><a href="#sec-statcase">§ 3 统计实证案例</a></li>
             <li><a href="#sec-dashboard">§ 4 研发效能图表</a></li>
             <li><a href="#sec-prototypes">§ 5 六大业务原型</a></li>
-            <li><a href="#sec-provenance">§ 6 数据依据与来源</a></li>
         </ul>
         <button class="nav-back-btn" onclick="handleBackToParent()" title="返回总舱">
             <span>‹ 返回总舱</span>
@@ -514,7 +513,6 @@
             <h2 class="card-heading">项目基本盘 · 研发属性与核心业务事实台账</h2>
             <span class="card-tag">SYSTEM SPECIFICATION FACT TABLE</span>
         </div>
-        <p style="font-size:13px; color:var(--accent-forest); margin:0 0 10px;"><span class="code-pill">✔ 湖仓溯源</span> 全部事实台账基于 <code>v_all_local_git_repositories</code>（61 工程 8,688 万行）/ <code>v_ai_git_repositories</code>（8 王牌 2,804 万行）/ 认知底座 <code>v_ai_cognition_vault</code>（186.6 万字），SQL 单源直达可复核</p>
         <table class="booktabs-table">
             <thead>
                 <tr>
@@ -839,10 +837,6 @@
                 </ul>
             </div>
         </div>
-        <p style="font-size:12.5px; color:var(--text-secondary); margin:8px 0 0;">
-            <span class="code-pill">V 关联</span> 数据真源 <code>macro_analysis.duckdb</code>（bronze 6 FRED 序列 → silver 318 行规整 → gold SAS 计量回灌）；产出 <code>01_macro_monetary_deepdive.ipynb</code> 与宏观研报 HTML。
-        </p>
-
         <h3 style="font-size:15px; margin:26px 0 10px; color:var(--text-primary);">三、工程证据与产物清单（多源采集 · SQL 可复验）</h3>
         <table class="archival-table">
             <thead>
@@ -1009,8 +1003,7 @@
 
         <h3 style="font-size:15px; margin:26px 0 10px; color:var(--text-primary);">四、质量把控与工程认知</h3>
         <p style="font-size:13.5px; color:var(--text-secondary); line-height:1.8;">
-            本案例最有价值的一步是<strong>反向审计</strong>：对 AI 装配的研报初稿逐格核对原始 ODS 表格后，发现若干"正文结论与表格数字不符"（如把 p=0.90 的不显著系数写成 p&lt;0.001 的显著结论、置信区间跨 1 的 OR 被解读为因果）。由此确立<strong>"以引擎原始表格为唯一数字真源，叙事文字必须与断言区间一致"</strong>的质检规则，并将显著性表述统一为学术规范（*/**/***/ns）。这正是统计学专业背景在 Vibe Coding 流程中作为"AI 幻觉终结者"的直接体现。<br/><br/>
-            <span style="font-size:12px; font-family:'JetBrains Mono',monospace; color:var(--text-tertiary);">数据真源 · 单源直达：<code>career_analytics_lake.duckdb</code> → 视图群 <code>v_survey_sas_key_stats</code> / <code>v_survey_macro_gold</code> / <code>v_survey_pain_points</code> / <code>v_survey_engineering_evidence</code> / <code>v_survey_empirical_bronze</code> / <code>v_survey_empirical_audit</code>（<code>data/views_survey_empirical_direct_lake.sql</code>），bronze 层底账 <code>data/survey_empirical_bronze.parquet</code> 77 条实证记录，覆盖引擎数字 + 多源工程证据 + 第三方开源依赖生态（8 层 45+ 成熟库）+ Agent 运行时实跑痕迹（hermes 23 skills / 3 cron + DSH 9 项目 session），每条带证据来源与清洗口径，SQL 可复验。</span>
+            本案例最有价值的一步是<strong>反向审计</strong>：对 AI 装配的研报初稿逐格核对原始 ODS 表格后，发现若干"正文结论与表格数字不符"（如把 p=0.90 的不显著系数写成 p&lt;0.001 的显著结论、置信区间跨 1 的 OR 被解读为因果）。由此确立<strong>"以引擎原始表格为唯一数字真源，叙事文字必须与断言区间一致"</strong>的质检规则，并将显著性表述统一为学术规范（*/**/***/ns）。这正是统计学专业背景在 Vibe Coding 流程中作为"AI 幻觉终结者"的直接体现。
         </p>
     </section>
     <!-- 03 核心数据看板与 AI 专属原生图表 (ECharts 2×2 矩阵) -->
@@ -1019,8 +1012,6 @@
             <h2 class="card-heading">研发效能、AI 智能体分工与全栈技术图表</h2>
             <span class="card-tag">AI ENGINEERING METRICS & WORKFLOW CHARTS</span>
         </div>
-        <p style="font-size:13px; color:var(--accent-forest); margin:0 0 6px;"><span class="code-pill">✔ 湖仓溯源</span> KPI 数字源自 <code>v_ai_work_summary</code>（120.8h 纯工时）/ <code>v_ai_tools_runtime</code>（13 代理 19,983 轮）/ <code>v_ai_git_repositories</code>（8 王牌 2,804 万行）</p>
-
         <!-- 6 块顶线 KPI 磁贴 -->
         <div class="kpi-deck">
             <div class="kpi-tile">
@@ -1127,7 +1118,6 @@
             <h2 class="card-heading">6 大垂直场景自研业务原型实战与功能交付清单</h2>
             <span class="card-tag">FUNCTIONAL PROTOTYPE REGISTRY</span>
         </div>
-        <p style="font-size:13px; color:var(--accent-forest); margin:0 0 6px;"><span class="code-pill">✔ 湖仓溯源</span> 6 大原型对应 <code>v_all_local_git_repositories</code>（外贸拓客 / 商业 BI / 造价 / CAD / 企微 / 法务）</p>
         <p style="font-size:14px; color:var(--text-secondary); margin-bottom:16px;">
             坚持“讲清楚真实功能、解决什么痛点、如何落地，杜绝浮夸概念”。以下 6 座系统原型均基于真实需求构建，具备完整代码实现与本地可运行链路：
         </p>
@@ -1269,33 +1259,6 @@
 
 
     <!-- 统一底层单一真实源数据依据 -->
-    <section id="sec-provenance" class="card" style="margin-top: 36px;">
-        <div class="card-caption-bar">
-            <h2 class="card-heading">数据依据与来源说明</h2>
-            <span class="card-tag">SOURCES ｜ PRJ-AI-VIBE-2026</span>
-        </div>
-        <p style="font-size:14px; color:var(--text-secondary); line-height:1.75; margin-bottom:14px;">
-            本研报所述 8 大核心受控仓库（2,804 万行代码）、120.8 小时 WakaTime 真实实操编码记录、1.99 万轮 AI 开发交互日志及 6 大垂直场景自研业务原型，均来自本地 Git 仓库提交记录、DuckDB 分析视图及 Linux 生产环境部署实测，数据真实透明、代码完全受控。§ 3 统计实证案例全部数字可溯源至本地仓库 <code>~/projects/survey-analysis</code>：SAS 官方云端原生 ODS 输出（6,281 行 HTML）、执行日志与截图录屏凭据、SPSS 引擎原生结果文本，以及 DuckDB gold 层回灌表。
-        </p>
-
-        <div style="font-size:13px; color:var(--text-tertiary); line-height:1.6; margin-bottom:16px;">
-            <strong>参考标准</strong>：IEEE 829 软件测试文档规范 / Git Commit 标准日志 / WakaTime 国际工时核算准则 ｜ <strong>归档状态</strong>：商业专案库确认版 (PRJ-AI-VIBE-2026)
-        </div>
-
-        <div style="background:#f7f6f2; border:1px solid rgba(18,19,22,0.1); border-radius:4px; padding:14px 18px; font-family:var(--font-mono); font-size:11.5px; color:#2c3238; line-height:1.7;">
-            <div style="font-weight:700; color:var(--accent-bronze); margin-bottom:6px; display:flex; align-items:center; gap:6px;">
-                <span>📊</span><span>数据查询参考</span>
-            </div>
-            <code style="color:#162a45;">
-                ATTACH 'data/career_analytics_lake.duckdb' AS lake (READ_ONLY);
-.read data/views_ai_engineering_direct_lake.sql
-SELECT * FROM v_ai_git_repositories;
-SELECT * FROM v_ai_work_summary;
-SELECT * FROM v_ai_physical_telemetry;
-
-            </code>
-        </div>
-    </section>
 
     <!-- 页脚版权与底注 -->
     <footer class="archival-footer">

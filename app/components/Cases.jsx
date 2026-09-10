@@ -1,5 +1,8 @@
 import Link from 'next/link';
-import { cases, monographHref } from '../../data/profile';
+import profile from '../../data/profile.json';
+
+const { cases, monographs } = profile;
+const monographHref = (k) => `/monographs/${encodeURIComponent(monographs[k].file)}`;
 
 export default function Cases() {
   return (
@@ -26,7 +29,7 @@ export default function Cases() {
             </div>
             <div className="case-footer">
               <span style={{ fontSize: 12, color: 'var(--text-tertiary)' }}>独立专案档案</span>
-              <Link className="btn-view-detail" href={monographHref(c.monograph)}>
+              <Link className="btn-view-detail" href={monographHref(c.monograph)} prefetch={false}>
                 <span>{c.cta}</span>
                 <span>➔</span>
               </Link>

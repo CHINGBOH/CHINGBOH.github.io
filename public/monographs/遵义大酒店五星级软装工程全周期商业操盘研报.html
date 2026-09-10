@@ -720,31 +720,6 @@
     </section>
 
     <!-- 统一底层单一真实源数据依据 -->
-    <section id="sec-provenance" class="card" style="margin-top: 36px;">
-        <div class="card-caption-bar">
-            <h2 class="card-heading">数据依据与来源说明</h2>
-            <span class="card-tag">SOURCES ｜ PRJ-ZY-2018</span>
-        </div>
-        <p style="font-size:14px; color:var(--text-secondary); line-height:1.75; margin-bottom:14px;">
-            本研报所述遵义大酒店五星级软装工程（签约合同 1.25 亿元、最终审定金额 9,300.00 万元），数据源自双方盖章的《建设工程专业分包合同》（合同编号：GY-2018-YW-131）原件、最终工程结算审定签署文件与资金清算记录。
-        </p>
-
-        <div style="font-size:13px; color:var(--text-tertiary); line-height:1.6; margin-bottom:16px;">
-            <strong>参考标准</strong>：建设工程施工合同（示范文本）/ 建设工程造价审计规范 / 广田云软装合同管理制度 ｜ <strong>归档状态</strong>：商业专案库确认版 (PRJ-ZY-2018)
-        </div>
-
-        <div style="background:#f7f6f2; border:1px solid rgba(18,19,22,0.1); border-radius:4px; padding:14px 18px; font-family:var(--font-mono); font-size:11.5px; color:#2c3238; line-height:1.7;">
-            <div style="font-weight:700; color:var(--accent-bronze); margin-bottom:6px; display:flex; align-items:center; gap:6px;">
-                <span>📊</span><span>数据查询参考</span>
-            </div>
-            <code style="color:#162a45;">
-                ATTACH 'data/career_analytics_lake.duckdb' AS lake (READ_ONLY);
-.read data/views_guangtian_cloud_master.sql
-SELECT * FROM v_gt_contracts_master WHERE 项目名称 LIKE '%遵义大酒店%';
-
-            </code>
-        </div>
-    </section>
 
     <!-- 页脚版权与底注 -->
     <footer class="archival-footer">

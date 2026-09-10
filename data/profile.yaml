@@ -1,7 +1,7 @@
 # ============================================================
 # CHINGBOH.github.io 简历内容——唯一编辑真源 (Single Source of Truth)
 # 由 scripts/build_data.py 编译为 data/profile.json 供 Next.js 渲染
-# 数字口径与 data/career_analytics_lake.duckdb 视图一致，可 SQL 复验
+# 数字口径均经本地数据视图核验一致
 # ============================================================
 
 # 8 大研报映射

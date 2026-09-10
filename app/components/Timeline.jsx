@@ -1,4 +1,5 @@
-import { timeline } from '../../data/profile';
+import profile from '../../data/profile.json';
+const timeline = profile.timeline;
 
 export default function Timeline() {
   return (

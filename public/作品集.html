@@ -991,55 +991,8 @@
         </div>
     </section>
 
-    <!-- 审计底单与数据来源 -->
     <footer id="provenance" class="provenance-footnote">
-        <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px;">
-            <strong style="color:var(--text-secondary);">🏛️ 审计级数据来源与单一真实源声明 (Single Source of Truth)</strong>
-            <span>数据库底座: data/career_analytics_lake.duckdb</span>
-        </div>
-        <p style="line-height:1.6; color:var(--text-tertiary); margin-bottom:8px;">
-            关键量化指标在构建时由本地 DuckDB 湖仓视图群实时查询并通过断言后注入；下方保留本次构建的实证快照：
-        </p>
-        <div class="provenance-views-list">
-            <div class="provenance-item">
-                <div class="provenance-name">v_profile_flyleaf_summary & v_profile_career_pillars</div>
-                <div style="color:var(--text-secondary); margin-top:2px;">履历扉页概括性指标集市 (SSOT 单一真实源)</div>
-            </div>
-            <div class="provenance-item">
-                <div class="provenance-name">v_hust_curriculum_stages & v_hust_core_course_matrix</div>
-                <div style="color:var(--text-secondary); margin-top:2px;">华中科技大学培养阶段 160 学分、24 门核心课与 98 学分核心矩阵</div>
-            </div>
-            <div class="provenance-item">
-                <div class="provenance-name">v_guangtian_announcements_tenure & v_sec_bond_due_diligence</div>
-                <div style="color:var(--text-secondary); margin-top:2px;">董办任职期 345 条公告记录与 54 项发债尽调条目</div>
-            </div>
-            <div class="provenance-item">
-                <div class="provenance-name">v_gt_contracts_master & v_gt_portfolio_all_135</div>
-                <div style="color:var(--text-secondary); margin-top:2px;">24 项标杆工程与 135 份合同汇总（6.8348 亿签约、5.92155 亿审定）</div>
-            </div>
-            <div class="provenance-item">
-                <div class="provenance-name">v_ai_git_repositories & v_ai_work_summary</div>
-                <div style="color:var(--text-secondary); margin-top:2px;">8 个核心代码仓库、WakaTime 工时与 AI 工程资产实录</div>
-            </div>
-        </div>
-        <div class="runtime-audit" style="margin-top:18px; padding:12px 14px; background:#f7f6f1; border:1px solid var(--border-hairline);">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom:7px; flex-wrap: wrap; gap: 6px;">
-                <div style="font-family:'JetBrains Mono'; font-size:11px; color:var(--accent-bronze); font-weight:700;">
-                    DUCKDB FASTMCP DIRECT-LAKE ENGINE · VERIFIED
-                </div>
-                <div style="font-family:'JetBrains Mono'; font-size:10px; color:var(--accent-navy); background:#fff; padding:1px 6px; border-radius:2px; border:1px solid var(--border-hairline);">
-                    EXTENSIONS: PARQUET · JSON · VSS · SPATIAL · HTTPFS · EXCEL
-                </div>
-            </div>
-            <div style="display:flex; flex-wrap:wrap; gap:8px 18px; color:var(--text-secondary); font-size:12px;">
-                <span>AI 旗舰仓库 8 个 / 28,038,054 LOC</span>
-                <span>WakaTime 120.8 小时</span>
-                <span>云软装 135 份合同 / 68,348.00 万元</span>
-                <span>断言通过 10 项</span>
-                <span>湖仓视图群 128 个</span>
-            </div>
-        </div>
-        <div style="text-align:center; margin-top:24px; color:var(--text-tertiary); font-size:11.5px;">
+                <div style="text-align:center; margin-top:24px; color:var(--text-tertiary); font-size:11.5px;">
             © 2026 Boone Liang (梁清波) · 个人履历与专业作品集 · 静态单文件自包含成品
         </div>
     </footer>

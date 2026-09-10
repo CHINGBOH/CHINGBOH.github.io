@@ -405,7 +405,6 @@
             <li><a href="#sec-methodology">§ 2 核心方法论</a></li>
             <li><a href="#sec-dashboard">§ 3 商业大盘图表</a></li>
             <li><a href="#sec-contracts">§ 4 二十四大标杆台账</a></li>
-            <li><a href="#sec-provenance">§ 5 数据核实依据</a></li>
         </ul>
         <button class="nav-back-btn" onclick="handleBackToParent()" title="返回总舱">
             <span>‹ 返回总舱</span>
@@ -1011,32 +1010,6 @@
     </section>
 
     <!-- 统一底层单一真实源数据依据 -->
-    <section id="sec-provenance" class="card" style="margin-top: 36px;">
-        <div class="card-caption-bar">
-            <h2 class="card-heading">数据依据与来源说明</h2>
-            <span class="card-tag">SOURCES ｜ PRJ-CLOUD-DECO-2024</span>
-        </div>
-        <p style="font-size:14px; color:var(--text-secondary); line-height:1.75; margin-bottom:14px;">
-            本专案所述全盘 135 份用印合同（签约 6.83 亿元，审定确权产值 5.92 亿元）、24 大核心代表性标杆（签约 6.88 亿 / 审定 6.14 亿）、45 人初创花名册及八大模块 730 条管理制度，均整理自企业真实经营档案、合同扫描归档件及财务竣工结算审定单，合同与财务流水相互印证。
-        </p>
-
-        <div style="font-size:13px; color:var(--text-tertiary); line-height:1.6; margin-bottom:16px;">
-            <strong>参考标准</strong>：中华人民共和国民法典合同编 / 建设工程施工合同审计规范 / 广田云软装合同管理制度 ｜ <strong>归档状态</strong>：商业专案库确认版 (PRJ-CLOUD-DECO-2024)
-        </div>
-
-        <div style="background:#f7f6f2; border:1px solid rgba(18,19,22,0.1); border-radius:4px; padding:14px 18px; font-family:var(--font-mono); font-size:11.5px; color:#2c3238; line-height:1.7;">
-            <div style="font-weight:700; color:var(--accent-bronze); margin-bottom:6px; display:flex; align-items:center; gap:6px;">
-                <span>📊</span><span>数据查询参考</span>
-            </div>
-            <code style="color:#162a45;">
-                ATTACH 'data/career_analytics_lake.duckdb' AS lake (READ_ONLY);
-.read data/views_guangtian_cloud_master.sql
-SELECT * FROM v_gt_contracts_master;
-SELECT * FROM v_gt_portfolio_all_135;
-
-            </code>
-        </div>
-    </section>
 
     <!-- 页脚版权与底注 -->
     <footer class="archival-footer">

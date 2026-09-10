@@ -3,12 +3,13 @@
 数据真源校验与快照注入脚本（AGENTS.md 单一真源铁律）
 ====================================================
 从本地 DuckDB 湖仓 (data/career_analytics_lake.duckdb) 查询关键视图，
-校验 data/profile.js 中使用的数字锚点口径，并把校验结果快照为
-data/verified_numbers.json 随仓库提交，供 Next.js 构建与审计引用。
+校验叙事数字锚点口径，并把校验结果快照为 data/verified_numbers.json。
+同时将 data/profile.yaml（编辑真源）编译为 data/profile.json 供 Next.js 渲染，
+实现「YAML 编辑真源 + JSON 构建产物」双存。
 
 用法：
-    python3 scripts/build_data.py            # 校验并生成快照
-    python3 scripts/build_data.py --verify   # 仅校验，不写快照
+    python3 scripts/build_data.py            # 校验 + 生成快照 + 编译 profile.json
+    python3 scripts/build_data.py --verify   # 仅校验，不写快照与 profile.json
 """
 import json
 import os
@@ -41,12 +42,14 @@ def main():
         print(f"[WARN] DuckDB 湖仓不存在: {DB_PATH}（跳过校验）")
         if "--verify" in sys.argv:
             sys.exit(0)
+        compile_profile_from_yaml()
         return
 
     try:
         import duckdb
     except ImportError:
         print("[WARN] 未安装 duckdb 模块（跳过校验）")
+        compile_profile_from_yaml()
         return
 
     conn = duckdb.connect(DB_PATH, read_only=True)
@@ -120,6 +123,49 @@ def main():
     with open(SNAPSHOT_PATH, "w", encoding="utf-8") as f:
         json.dump(report, f, ensure_ascii=False, indent=2, default=_default)
     print(f"\n快照已写入: {SNAPSHOT_PATH} | 校验{'通过' if report['passed'] else '存在不一致'}")
+
+    compile_profile_from_yaml()
+
+
+def compile_profile_from_yaml():
+    """将 data/profile.yaml（编辑真源）编译为 data/profile.json（React 产物）。
+
+    主要转换：hero.thesis 中的 **xxx** 标记还原为 <strong>xxx</strong>，
+    其余字段按 YAML 结构原样保留，保证纯数据可被任意工具直读。
+    """
+    import re
+
+    yaml_path = os.path.join(REPO_ROOT, "data", "profile.yaml")
+    json_path = os.path.join(REPO_ROOT, "data", "profile.json")
+
+    if not os.path.exists(yaml_path):
+        print(f"[WARN] profile.yaml 不存在: {yaml_path}（跳过编译）")
+        return
+
+    try:
+        import yaml
+    except ImportError:
+        print("[WARN] 未安装 PyYAML（跳过 profile.json 编译）")
+        return
+
+    with open(yaml_path, encoding="utf-8") as f:
+        data = yaml.safe_load(f)
+
+    # thessis：**xxx** → <strong>xxx</strong>（递归遍历 string 字段）
+    def _boldify(obj):
+        if isinstance(obj, dict):
+            return {k: _boldify(v) for k, v in obj.items()}
+        if isinstance(obj, list):
+            return [_boldify(v) for v in obj]
+        if isinstance(obj, str):
+            return re.sub(r"\*\*(\S(?:.*?\S)?)\*\*", r"<strong>\1</strong>", obj)
+        return obj
+
+    data = _boldify(data)
+
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    print(f"profile.json 已编译: {json_path}")
 
 
 if __name__ == "__main__":

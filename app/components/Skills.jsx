@@ -1,4 +1,5 @@
-import { skills } from '../../data/profile';
+import profile from '../../data/profile.json';
+const skills = profile.skills;
 
 export default function Skills() {
   return (

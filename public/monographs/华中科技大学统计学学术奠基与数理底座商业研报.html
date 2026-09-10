@@ -749,52 +749,6 @@
             color: var(--text-primary);
         }
 
-        /* 真实源代码审计凭据区 (Provenience Vault) */
-        .provenance-card {
-            background: #ffffff;
-            border: 1px solid var(--border-hairline);
-            border-radius: var(--radius-lg);
-            padding: 36px 40px;
-            box-shadow: var(--card-shadow);
-            margin-top: 48px;
-            border-top: 3.5px solid var(--accent-navy);
-        }
-        .provenance-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .provenance-title {
-            font-family: "Noto Serif SC", serif;
-            font-size: 17px;
-            font-weight: 700;
-            color: var(--text-primary);
-        }
-        .provenance-tag {
-            font-family: "JetBrains Mono", monospace;
-            font-size: 11px;
-            font-weight: 600;
-            color: var(--accent-bronze);
-        }
-        .sql-box {
-            background: #fafaf9;
-            border-radius: var(--radius-md);
-            padding: 24px 28px;
-            overflow-x: auto;
-            border: 1px solid var(--border-hairline);
-            font-family: "JetBrains Mono", Consolas, Menlo, monospace;
-            font-size: 12.5px;
-            line-height: 1.75;
-            color: #1e293b;
-            white-space: pre;
-        }
-        .sql-box .kw { color: #0284c7; font-weight: 700; }
-        .sql-box .fn { color: #b45309; font-weight: 600; }
-        .sql-box .str { color: #047857; }
-        .sql-box .cm { color: #64748b; font-style: italic; }
-        .sql-box .tbl { color: #6d28d9; font-weight: 600; }
-
         /* 响应式适配 */
         @media (max-width: 1024px) {
             .spec-matrix { grid-template-columns: repeat(3, 1fr); }
@@ -831,7 +785,6 @@
             <li><a href="#charts">图表分析</a></li>
             <li><a href="#lbm-pipeline">LBM 算法</a></li>
             <li><a href="#bridge">二十年映射</a></li>
-            <li><a href="#provenance">真实源存证</a></li>
         </ul>
         <button class="nav-back-btn" onclick="handleBackToParent()" title="返回总舱">
             <span>‹ 返回总舱</span>
@@ -1413,41 +1366,6 @@
     </div>
 
     <!-- 真实源数据审计凭据区 (Provenience Vault) -->
-    <div class="provenance-card" id="provenance">
-        <div class="provenance-header">
-            <div>
-                <div class="provenance-title">DuckDB Direct Lake 统一真实源与审计复核凭据</div>
-                <div style="font-size: 12.5px; color: var(--text-tertiary); margin-top: 4px;">AUDITABLE SINGLE SOURCE OF TRUTH ｜ PRJ-ACAD-HUST-2006</div>
-            </div>
-            <div class="provenance-tag">DATA SOURCE: data/views_hust_statistics_direct_lake.sql</div>
-        </div>
-        <p style="font-size: 13.5px; color: var(--text-secondary); margin-bottom: 16px;">
-            本文所引用的 160+ 学分分布、24 门骨干课程清单、LBM 算法演化节点及跨界映射数据，均严格遵循本地数据湖单一真实源依据，杜绝任何人工估算。以下 SQL 均可在本地 DuckDB 环境中直接执行复核：
-        </p>
-
-        <div class="sql-box">
-<span class="cm">-- 1. 验证华科统计学四年四大递进培养阶段与学分分布 (总学分 160+)</span>
-<span class="kw">SELECT</span> 阶段序号, 阶段名称, 修读学年, 学分总数, 学分占比_百分比, 核心科目数, 骨干代表课程
-<span class="kw">FROM</span> <span class="tbl">v_hust_curriculum_stages</span>
-<span class="kw">ORDER BY</span> 阶段序号;
-
-<span class="cm">-- 2. 验证 24 门核心必修课程模块结构与学分汇总</span>
-<span class="kw">SELECT</span> 所属模块, <span class="fn">COUNT</span>(*) <span class="kw">AS</span> 课程门数, <span class="fn">SUM</span>(学分) <span class="kw">AS</span> 模块学分, <span class="fn">STRING_AGG</span>(课程名称, <span class="str">'、'</span>) <span class="kw">AS</span> 课程清单
-<span class="kw">FROM</span> <span class="tbl">v_hust_core_course_matrix</span>
-<span class="kw">GROUP BY</span> 所属模块
-<span class="kw">ORDER BY</span> 模块学分 <span class="kw">DESC</span>;
-
-<span class="cm">-- 3. 验证格子玻尔兹曼 (LBM) 算法介观动力学演化管线与状态机各节点</span>
-<span class="kw">SELECT</span> 流程序号, 管线节点名称, 物理_算法分类, 核心数学方程与表达式, 计算力学机理与计算优势
-<span class="kw">FROM</span> <span class="tbl">v_hust_lbm_algorithm_pipeline</span>
-<span class="kw">ORDER BY</span> 流程序号;
-
-<span class="cm">-- 4. 验证数理学术底座向二十年职业实践的业务支撑映射实证</span>
-<span class="kw">SELECT</span> 职业阶段, 经历时序, 组织平台与业务场景, 核心应用数理理论, 数理工程深层转化意义
-<span class="kw">FROM</span> <span class="tbl">v_hust_math_to_business_bridge</span>
-<span class="kw">ORDER BY</span> 职业阶段;
-        </div>
-    </div>
 </div>
 
 <!-- ECharts 交互渲染脚本 -->

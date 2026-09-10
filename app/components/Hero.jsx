@@ -1,5 +1,8 @@
 import Link from 'next/link';
-import { hero, monographHref } from '../../data/profile';
+import profile from '../../data/profile.json';
+
+const { hero, monographs } = profile;
+const monographHref = (k) => `/monographs/${encodeURIComponent(monographs[k].file)}`;
 
 export default function Hero() {
   return (
@@ -39,7 +42,7 @@ export default function Hero() {
         <span className="hero-headline-chip">{hero.headline}</span>
       </div>
 
-      <div className="hero-thesis">{hero.thesis}</div>
+      <div className="hero-thesis" dangerouslySetInnerHTML={{ __html: hero.thesis }} />
 
       <div className="hero-pillars-grid">
         {hero.pillars.map((p) => (
@@ -55,6 +58,7 @@ export default function Hero() {
               className="btn-view-detail"
               style={{ marginTop: 'auto', paddingTop: 10, alignSelf: 'flex-start' }}
               href={monographHref(p.monograph)}
+              prefetch={false}
               aria-label={`查看${p.title}专案`}
             >
               查看专案 →
