@@ -69,6 +69,7 @@ def render_slots(slug, doc, tpl_str, orig_check=True, force=False, errors=None):
     if len(set(keys)) != len(keys):
         errors.append(f"[{slug}] slot key 重复")
     pending = set(keys)
+    edits = []
     for s in doc["slots"]:
         key = s["key"]
         pending.discard(key)
@@ -85,8 +86,11 @@ def render_slots(slug, doc, tpl_str, orig_check=True, force=False, errors=None):
         text = s.get("text")
         if text == lin or (text is None and current_inner == orig):
             continue  # 未编辑：保留 orig
-        new_inner = slotlib.render_md(text)
+        edits.append((inner_start, close_start, slotlib.render_md(text)))
+    # 按偏移降序应用替换：先改尾部，保证前部偏移在字符串中仍有效
+    for inner_start, close_start, new_inner in sorted(edits, key=lambda e: e[0], reverse=True):
         out = out[:inner_start] + new_inner + out[close_start:]
+
     if pending:
         for key in sorted(pending):
             errors.append(f"[{slug}] yaml slot {key} 未在外壳中找到 data-slot")

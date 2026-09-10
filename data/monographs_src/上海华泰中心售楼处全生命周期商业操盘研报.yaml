@@ -1,5 +1,3 @@
-# 文字真源：monographs/上海华泰中心售楼处全生命周期商业操盘研报.html
-# 单一真源铁律：改此文件 text -> build_monographs_from_yaml.py 回填外壳，禁止手改 monographs/*.html
 meta:
   source_file: monographs/上海华泰中心售楼处全生命周期商业操盘研报.html
   slug: 上海华泰中心售楼处全生命周期商业操盘研报
@@ -17,7 +15,7 @@ slots:
   tag: li
   parent: container
   orig: <a href="#dossier">§ I 操盘实录</a>
-  text: § I 操盘实录
+  text: § I 统筹实录
 - key: s02
   kind: li
   tag: li
@@ -53,7 +51,7 @@ slots:
   tag: div
   parent: container
   orig: 操盘模式与主体
-  text: 操盘模式与主体
+  text: 统筹模式与主体
 - key: s08
   kind: kpi
   tag: div
@@ -161,13 +159,13 @@ slots:
   tag: h2
   parent: container
   orig: 商业操盘与履约风控实录
-  text: 商业操盘与履约风控实录
+  text: 商业统筹与履约风控实录
 - key: s26
   kind: p
   tag: p
   parent: container
   orig: "\n            基于真实工程施工合同与多轮商务磋商底账，系统还原商业操盘的 2×2 对称管理闭环。\n        "
-  text: "\n            基于真实工程施工合同与多轮商务磋商底账，系统还原商业操盘的 2×2 对称管理闭环。\n        "
+  text: "\n            基于真实工程施工合同与多轮商务磋商底账，系统还原商业统筹的 2×2 对称管理闭环。\n        "
 - key: s27
   kind: table-cell
   tag: th
