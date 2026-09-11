@@ -258,6 +258,25 @@
         configurable: false,
     });
 </script>
+
+
+
+
+<style>
+  /* 彻底屏蔽静态提示 Toast 与右下角水印 */
+  [data-radix-toast-viewport],
+  ol[tabindex="-1"],
+  li[role="status"],
+  a[href*="marimo-team/marimo"],
+  a[href*="marimo.io"],
+  footer:has(a[href*="marimo"]) {
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    visibility: hidden !important;
+  }
+</style>
+
 </head>
   <body>
     <div id="root"></div>
