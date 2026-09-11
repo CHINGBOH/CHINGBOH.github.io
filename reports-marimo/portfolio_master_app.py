@@ -164,6 +164,33 @@ def render_hero_frontispiece(mo, NAVY, BRONZE, BG_CREAM, BORDER_HAIR):
     # 典藏级超级大扉页 (Grand Frontispiece & 4-Pillar Spec Grid)
     hero_frontispiece = mo.md(
         f"""
+        <style>
+          *, *::before, *::after {{
+            box-sizing: border-box !important;
+          }}
+          svg {{
+            width: 100% !important;
+            max-width: 100% !important;
+            height: auto !important;
+            display: block !important;
+          }}
+          img {{
+            max-width: 100% !important;
+            height: auto !important;
+          }}
+          [style*="display:grid"], [style*="display: grid"], [style*="display:flex"], [style*="display: flex"] {{
+            box-sizing: border-box !important;
+            max-width: 100% !important;
+          }}
+          [style*="display:grid"] > div, [style*="display: grid"] > div, [style*="display:flex"] > div, [style*="display: flex"] > div {{
+            min-width: 0 !important;
+            max-width: 100% !important;
+            box-sizing: border-box !important;
+          }}
+          [data-radix-toast-viewport], ol[tabindex="-1"], li[role="status"], a[href*="marimo-team/marimo"], a[href*="marimo.io"] {{
+            display: none !important;
+          }}
+        </style>
         <div style="border-bottom: 1px solid {BORDER_HAIR}; padding-bottom: 24px; margin-bottom: 24px;">
             <!-- 档案题眉 -->
             <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: {BRONZE}; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 10px;">

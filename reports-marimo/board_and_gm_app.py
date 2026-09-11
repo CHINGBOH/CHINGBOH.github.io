@@ -287,8 +287,18 @@ def render_static_board_charts(
 ):
     def _render():
         def clean_svg(buf):
-            val = buf.getvalue()
-            return val.replace('<svg ', '<svg style="width:100%; max-width:100%; height:auto; display:block; margin:0 auto;" ')
+            import re
+            svg_raw = buf.getvalue()
+            s = re.sub(r"<\?xml[^>]*\?>", "", svg_raw)
+            s = re.sub(r"<!DOCTYPE[^>]*>", "", s)
+            def repl_svg(m):
+                tag = m.group(0)
+                tag = re.sub(r"""\s+width="[^"]*\"""", "", tag)
+                tag = re.sub(r"""\s+height="[^"]*\"""", "", tag)
+                tag = re.sub(r"""\s+style="[^"]*\"""", "", tag)
+                return tag.replace("<svg", '<svg style="width:100%; max-width:100%; height:auto; display:block; margin:0 auto;" preserveAspectRatio="xMidYMid meet"')
+            s = re.sub(r"<svg[^>]*>", repl_svg, s, count=1)
+            return s.strip()
 
         c_blue = "#1e3a8a"
         c_teal = "#0d9488"
@@ -555,11 +565,11 @@ def render_main_tabs(
 以深厚数理分析底座转化为**同业财务对标、全司例会督办、12 亿公司债尽调封包与 206 篇官方公告 A 级信披零问询**的扎实业绩，全周期护航市值跨越百亿大关。
         """),
         mo.Html(f"""
-        <div style="display:grid; grid-template-columns:1.1fr 0.9fr; gap:16px; margin:16px 0;">
-            <div style="background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; box-shadow:0 1px 3px rgba(0,0,0,0.04);">
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(340px, 1fr)); gap:16px; margin:16px 0;">
+            <div style="background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; box-shadow:0 1px 3px rgba(0,0,0,0.04); min-width:0; overflow:hidden;">
                 {svg_chart1}
             </div>
-            <div style="background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; box-shadow:0 1px 3px rgba(0,0,0,0.04);">
+            <div style="background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; box-shadow:0 1px 3px rgba(0,0,0,0.04); min-width:0; overflow:hidden;">
                 {svg_chart2}
             </div>
         </div>
@@ -586,11 +596,11 @@ def render_main_tabs(
 同时主导使用超募资金完成**成都华南装饰 60% 股权收购 (4896 万)、方特装饰 51% 股权收购 (8310 万) 及投资设立广田软装全资子公司 (3000 万)**，完成大公装与大家居产业链闭环布局。
         """),
         mo.Html(f"""
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:16px 0;">
-            <div style="background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; box-shadow:0 1px 3px rgba(0,0,0,0.04);">
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(340px, 1fr)); gap:16px; margin:16px 0;">
+            <div style="background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; box-shadow:0 1px 3px rgba(0,0,0,0.04); min-width:0; overflow:hidden;">
                 {svg_chart3}
             </div>
-            <div style="background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; box-shadow:0 1px 3px rgba(0,0,0,0.04);">
+            <div style="background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; box-shadow:0 1px 3px rgba(0,0,0,0.04); min-width:0; overflow:hidden;">
                 {svg_valuation}
             </div>
         </div>
@@ -725,12 +735,31 @@ def render_main_tabs(
         font-family: "Latin Modern Mono", "Computer Modern Typewriter", "JetBrains Mono", monospace !important;
       }
 
-      .chart-card svg, .marimo-app svg {
+      *, *::before, *::after {
+        box-sizing: border-box !important;
+      }
+
+      svg, .chart-card svg, .marimo-app svg {
         width: 100% !important;
         max-width: 100% !important;
         height: auto !important;
         display: block !important;
         margin: 0 auto !important;
+      }
+
+      [style*="display:grid"], [style*="display: grid"], [style*="display:flex"], [style*="display: flex"] {
+        box-sizing: border-box !important;
+        max-width: 100% !important;
+      }
+
+      [style*="display:grid"] > div, [style*="display: grid"] > div, [style*="display:flex"] > div, [style*="display: flex"] > div {
+        min-width: 0 !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+      }
+
+      [data-radix-toast-viewport], ol[tabindex="-1"], li[role="status"], a[href*="marimo-team/marimo"], a[href*="marimo.io"] {
+        display: none !important;
       }
 
       /* 侧边栏控件全宽与杜绝单字竖排折行 */

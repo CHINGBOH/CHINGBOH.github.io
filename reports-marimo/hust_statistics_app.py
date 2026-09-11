@@ -268,8 +268,18 @@ def render_static_academic_charts(
 ):
     def _render():
         def clean_svg(buf):
-            val = buf.getvalue()
-            return val.replace('<svg ', '<svg style="width:100%; max-width:100%; height:auto; display:block; margin:0 auto;" ')
+            import re
+            svg_raw = buf.getvalue()
+            s = re.sub(r"<\?xml[^>]*\?>", "", svg_raw)
+            s = re.sub(r"<!DOCTYPE[^>]*>", "", s)
+            def repl_svg(m):
+                tag = m.group(0)
+                tag = re.sub(r"""\s+width="[^"]*\"""", "", tag)
+                tag = re.sub(r"""\s+height="[^"]*\"""", "", tag)
+                tag = re.sub(r"""\s+style="[^"]*\"""", "", tag)
+                return tag.replace("<svg", '<svg style="width:100%; max-width:100%; height:auto; display:block; margin:0 auto;" preserveAspectRatio="xMidYMid meet"')
+            s = re.sub(r"<svg[^>]*>", repl_svg, s, count=1)
+            return s.strip()
 
         # 调色盘
         c_blue = "#1e3a8a"
@@ -575,11 +585,11 @@ def render_main_tabs(
 华中科技大学数学与统计学院 2002 级首届统计学本科生，与数学系并轨修读 33 学分纯数学基石课程，四年累计完成 **160+ 必修学分**，建立起兼具**形式化逻辑证明**与**大规模科学计算**的复合知识体系。
         """),
         mo.Html(f"""
-        <div style="display:grid; grid-template-columns:1.05fr 0.95fr; gap:16px; margin:16px 0;">
-            <div style="background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; box-shadow:0 1px 3px rgba(0,0,0,0.04);">
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(340px, 1fr)); gap:16px; margin:16px 0;">
+            <div style="background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; box-shadow:0 1px 3px rgba(0,0,0,0.04); min-width:0; overflow:hidden;">
                 {svg_chart1}
             </div>
-            <div style="background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; box-shadow:0 1px 3px rgba(0,0,0,0.04);">
+            <div style="background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; box-shadow:0 1px 3px rgba(0,0,0,0.04); min-width:0; overflow:hidden;">
                 {svg_chart2}
             </div>
         </div>
@@ -604,8 +614,8 @@ def render_main_tabs(
 本课题师从偏微分方程数值解导师团队，推导微观粒子动理论演化方程，在 **D2Q9 正方晶格** 上实现局部代数松弛与位移，并以 **C 语言多维连续内存指针** 编程完成高并发数值演化。
         """),
         mo.Html(f"""
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:16px 0;">
-            <div style="background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; box-shadow:0 1px 3px rgba(0,0,0,0.04);">
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(340px, 1fr)); gap:16px; margin:16px 0;">
+            <div style="background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; box-shadow:0 1px 3px rgba(0,0,0,0.04); min-width:0; overflow:hidden;">
                 <div style="font-size:13px; font-weight:700; color:#1e293b; margin-bottom:8px;">🎯 介观仿真现场运行监控</div>
                 <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px; padding:10px 14px; margin-bottom:12px; font-size:12px; line-height:1.7;">
                     • <strong>介观松弛时间 τ</strong>: <code>{active_tau:.2f}</code> (在左侧侧边栏调节)<br/>
@@ -616,7 +626,7 @@ def render_main_tabs(
                 </div>
                 {svg_sim}
             </div>
-            <div style="background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; box-shadow:0 1px 3px rgba(0,0,0,0.04);">
+            <div style="background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; box-shadow:0 1px 3px rgba(0,0,0,0.04); min-width:0; overflow:hidden;">
                 <div style="font-size:13px; font-weight:700; color:#1e293b; margin-bottom:8px;">📐 算法拓扑管线 (7大关键节点)</div>
                 {svg_chart3}
                 <div style="margin-top:14px; font-size:12px; color:#475569; line-height:1.6;">
@@ -752,12 +762,31 @@ def render_main_tabs(
         font-family: "Latin Modern Mono", "Computer Modern Typewriter", "JetBrains Mono", monospace !important;
       }
 
-      .chart-card svg, .marimo-app svg {
+      *, *::before, *::after {
+        box-sizing: border-box !important;
+      }
+
+      svg, .chart-card svg, .marimo-app svg {
         width: 100% !important;
         max-width: 100% !important;
         height: auto !important;
         display: block !important;
         margin: 0 auto !important;
+      }
+
+      [style*="display:grid"], [style*="display: grid"], [style*="display:flex"], [style*="display: flex"] {
+        box-sizing: border-box !important;
+        max-width: 100% !important;
+      }
+
+      [style*="display:grid"] > div, [style*="display: grid"] > div, [style*="display:flex"] > div, [style*="display: flex"] > div {
+        min-width: 0 !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+      }
+
+      [data-radix-toast-viewport], ol[tabindex="-1"], li[role="status"], a[href*="marimo-team/marimo"], a[href*="marimo.io"] {
+        display: none !important;
       }
 
       /* 侧边栏控件全宽与杜绝单字竖排折行 */

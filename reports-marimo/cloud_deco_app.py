@@ -218,10 +218,23 @@ def render_static_svg_charts(
     ax1.spines["right"].set_visible(False)
     fig1.tight_layout()
 
+    def clean_svg(svg_raw):
+        import re
+        s = re.sub(r"<\?xml[^>]*\?>", "", svg_raw)
+        s = re.sub(r"<!DOCTYPE[^>]*>", "", s)
+        def repl_svg(m):
+            tag = m.group(0)
+            tag = re.sub(r"""\s+width="[^"]*\"""", "", tag)
+            tag = re.sub(r"""\s+height="[^"]*\"""", "", tag)
+            tag = re.sub(r"""\s+style="[^"]*\"""", "", tag)
+            return tag.replace("<svg", '<svg style="width:100%; max-width:100%; height:auto; display:block; margin:0 auto;" preserveAspectRatio="xMidYMid meet"')
+        s = re.sub(r"<svg[^>]*>", repl_svg, s, count=1)
+        return s.strip()
+
     buf1 = io.StringIO()
     fig1.savefig(buf1, format="svg", bbox_inches="tight")
     plt.close(fig1)
-    svg_chart1 = buf1.getvalue()
+    svg_chart1 = clean_svg(buf1.getvalue())
 
     # -------------------------------------------------------------
     # 图 2：敏捷专班核心攻坚项目 vs 平台标杆工程签约与确权对比
@@ -257,7 +270,7 @@ def render_static_svg_charts(
     buf2 = io.StringIO()
     fig2.savefig(buf2, format="svg", bbox_inches="tight")
     plt.close(fig2)
-    svg_chart2 = buf2.getvalue()
+    svg_chart2 = clean_svg(buf2.getvalue())
 
     # -------------------------------------------------------------
     # 图 3：初创 45 人跨职系团队编制与人效分布
@@ -299,7 +312,7 @@ def render_static_svg_charts(
     buf3 = io.StringIO()
     fig3.savefig(buf3, format="svg", bbox_inches="tight")
     plt.close(fig3)
-    svg_chart3 = buf3.getvalue()
+    svg_chart3 = clean_svg(buf3.getvalue())
 
     # -------------------------------------------------------------
     # 图 4：八大管理制度 730 条刚性条款分布
@@ -331,7 +344,7 @@ def render_static_svg_charts(
     buf4 = io.StringIO()
     fig4.savefig(buf4, format="svg", bbox_inches="tight")
     plt.close(fig4)
-    svg_chart4 = buf4.getvalue()
+    svg_chart4 = clean_svg(buf4.getvalue())
 
     return (
         svg_chart1,
@@ -357,11 +370,11 @@ def render_main_monograph_tab(
 - **主笔《广田云软装制度》730 条刚性条款**：亲自主持编制八大模块 730 条制度条款，配套 28 类电子审批流与底薪提成双轨制；实现劳动合同 100% 前置签署，创造了**十年跨度零劳动争议、零劳动仲裁**的治理典范；
 - **打造艺展中心 1,491 ㎡ 美学展厅**：主导罗湖艺展中心 1,491 ㎡ 高端软装美学展厅设计、装修与软装陈设，成为集团承接大宗工程与地产战采的核心封样基地。
 
-<div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:20px 0;">
-    <div style="background:#fff; border:1px solid #e2e8f0; border-radius:6px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.05); text-align:center;">
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(360px, 1fr)); gap:16px; margin:20px 0;">
+    <div style="background:#fff; border:1px solid #e2e8f0; border-radius:6px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.05); text-align:center; min-width:0; overflow:hidden;">
         {svg_chart3}
     </div>
-    <div style="background:#fff; border:1px solid #e2e8f0; border-radius:6px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.05); text-align:center;">
+    <div style="background:#fff; border:1px solid #e2e8f0; border-radius:6px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.05); text-align:center; min-width:0; overflow:hidden;">
         {svg_chart4}
     </div>
 </div>
@@ -378,11 +391,11 @@ def render_main_monograph_tab(
   * 亲自主操攻坚包括：**遵义大酒店（1.25亿母盘，中建四局专业分包）**、**遵义湄江温泉大酒店（3,380万，出厂回款覆盖率 144%）**、**红花岗南部城市综合体（3,112.5万，实测签证据实结算）**、**上海华泰售楼处（156.66万，一次性闭口竞标与零垫资风控）**、**广西陆川九龙山庄（550万，28天极限抢工）** 等核心标杆工程；
 - **全流程业务能力贯通**：涵盖业务承接、清单核算、报价竞标、物料白皮书深化、佛山东莞工厂源头验厂验胚、现场放线交底、大宗货品成品保护至竣工验收审计确权全流程。
 
-<div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:20px 0;">
-    <div style="background:#fff; border:1px solid #e2e8f0; border-radius:6px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.05); text-align:center;">
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(360px, 1fr)); gap:16px; margin:20px 0;">
+    <div style="background:#fff; border:1px solid #e2e8f0; border-radius:6px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.05); text-align:center; min-width:0; overflow:hidden;">
         {svg_chart1}
     </div>
-    <div style="background:#fff; border:1px solid #e2e8f0; border-radius:6px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.05); text-align:center;">
+    <div style="background:#fff; border:1px solid #e2e8f0; border-radius:6px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.05); text-align:center; min-width:0; overflow:hidden;">
         {svg_chart2}
     </div>
 </div>
@@ -666,6 +679,39 @@ def assemble_full_app(
 
       code, pre, .mono-num {
         font-family: "Latin Modern Mono", "Computer Modern Typewriter", "JetBrains Mono", monospace !important;
+      }
+
+      /* 强制所有图表具备 100% 容器自适应缩放与弹性伸缩 */
+      *, *::before, *::after {
+        box-sizing: border-box !important;
+      }
+
+      svg {
+        max-width: 100% !important;
+        height: auto !important;
+        width: 100% !important;
+        display: block !important;
+      }
+
+      img {
+        max-width: 100% !important;
+        height: auto !important;
+        display: block !important;
+      }
+
+      [style*="display:grid"], [style*="display: grid"], [style*="display:flex"], [style*="display: flex"] {
+        box-sizing: border-box !important;
+        max-width: 100% !important;
+      }
+
+      [style*="display:grid"] > div, [style*="display: grid"] > div, [style*="display:flex"] > div, [style*="display: flex"] > div {
+        min-width: 0 !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+      }
+
+      [data-radix-toast-viewport], ol[tabindex="-1"], li[role="status"], a[href*="marimo-team/marimo"], a[href*="marimo.io"] {
+        display: none !important;
       }
     </style>
     """)

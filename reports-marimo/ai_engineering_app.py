@@ -180,8 +180,18 @@ def render_all_six_visual_charts(
     c_red = "#dc2626"
 
     def clean_svg(buf):
-        val = buf.getvalue()
-        return val.replace('<svg ', '<svg style="width:100%; max-width:100%; height:auto; display:block; margin:0 auto;" ')
+        import re
+        svg_raw = buf.getvalue()
+        s = re.sub(r"<\?xml[^>]*\?>", "", svg_raw)
+        s = re.sub(r"<!DOCTYPE[^>]*>", "", s)
+        def repl_svg(m):
+            tag = m.group(0)
+            tag = re.sub(r"""\s+width="[^"]*\"""", "", tag)
+            tag = re.sub(r"""\s+height="[^"]*\"""", "", tag)
+            tag = re.sub(r"""\s+style="[^"]*\"""", "", tag)
+            return tag.replace("<svg", '<svg style="width:100%; max-width:100%; height:auto; display:block; margin:0 auto;" preserveAspectRatio="xMidYMid meet"')
+        s = re.sub(r"<svg[^>]*>", repl_svg, s, count=1)
+        return s.strip()
 
     # =========================================================================
     # 图 1：13 大工具实操会话量排行（横向对比柱状图）
@@ -441,14 +451,14 @@ def render_tab1_visual_matrix(
     svg_chart6,
 ):
     gallery_html = f"""
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin:16px 0;">
-        <div class="chart-card" style="background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; box-shadow:0 1px 3px rgba(0,0,0,0.05); text-align:center;">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(340px, 1fr)); gap:20px; margin:16px 0;">
+        <div class="chart-card" style="background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; box-shadow:0 1px 3px rgba(0,0,0,0.05); text-align:center; min-width:0; overflow:hidden;">
             {svg_chart1}
             <div style="font-size:12px; color:#64748b; margin-top:8px; text-align:left;">
                 💡 <strong>核心实证</strong>：Codex (7,613次) 与 AGY (4,221次) 领衔高并发代码生成与多 Agent 协同调度，实战规模累计超 19,000+ Sessions。
             </div>
         </div>
-        <div class="chart-card" style="background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; box-shadow:0 1px 3px rgba(0,0,0,0.05); text-align:center;">
+        <div class="chart-card" style="background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; box-shadow:0 1px 3px rgba(0,0,0,0.05); text-align:center; min-width:0; overflow:hidden;">
             {svg_chart2}
             <div style="font-size:12px; color:#64748b; margin-top:8px; text-align:left;">
                 💡 <strong>核心实证</strong>：融合 Gemini 2M 超长上下文、Claude 3.5 代码自愈与 DeepSeek R1 深度推理，实现 90%+ 复合工况驾驭覆盖。
@@ -456,14 +466,14 @@ def render_tab1_visual_matrix(
         </div>
     </div>
 
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin:20px 0;">
-        <div class="chart-card" style="background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; box-shadow:0 1px 3px rgba(0,0,0,0.05); text-align:center;">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(340px, 1fr)); gap:20px; margin:20px 0;">
+        <div class="chart-card" style="background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; box-shadow:0 1px 3px rgba(0,0,0,0.05); text-align:center; min-width:0; overflow:hidden;">
             {svg_chart3}
             <div style="font-size:12px; color:#64748b; margin-top:8px; text-align:left;">
                 💡 <strong>核心实证</strong>：全盘 2.06 亿行物理交互通信取证，涵盖 VS Code (46M)、Claude (38M)、Cursor (36M) 等本地受控挂载日志。
             </div>
         </div>
-        <div class="chart-card" style="background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; box-shadow:0 1px 3px rgba(0,0,0,0.05); text-align:center;">
+        <div class="chart-card" style="background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; box-shadow:0 1px 3px rgba(0,0,0,0.05); text-align:center; min-width:0; overflow:hidden;">
             {svg_chart4}
             <div style="font-size:12px; color:#64748b; margin-top:8px; text-align:left;">
                 💡 <strong>核心实证</strong>：WakaTime 真实时段打卡呈现独特的“早间冲刺 (10:00) + 深夜极高频攻坚 (00:00~02:00)”心流双峰节律。
@@ -471,14 +481,14 @@ def render_tab1_visual_matrix(
         </div>
     </div>
 
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin:20px 0;">
-        <div class="chart-card" style="background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; box-shadow:0 1px 3px rgba(0,0,0,0.05); text-align:center;">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(340px, 1fr)); gap:20px; margin:20px 0;">
+        <div class="chart-card" style="background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; box-shadow:0 1px 3px rgba(0,0,0,0.05); text-align:center; min-width:0; overflow:hidden;">
             {svg_chart5}
             <div style="font-size:12px; color:#64748b; margin-top:8px; text-align:left;">
                 💡 <strong>核心实证</strong>：聚焦造价智能、外贸拓客、电商中台等 6 大核心自研生产级系统，累计沉淀核心业务源码 64.5 万行与 433 次工程迭代。
             </div>
         </div>
-        <div class="chart-card" style="background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; box-shadow:0 1px 3px rgba(0,0,0,0.05); text-align:center;">
+        <div class="chart-card" style="background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:16px; box-shadow:0 1px 3px rgba(0,0,0,0.05); text-align:center; min-width:0; overflow:hidden;">
             {svg_chart6}
             <div style="font-size:12px; color:#64748b; margin-top:8px; text-align:left;">
                 💡 <strong>核心实证</strong>：全面挂载 25+ 工业级 MCP 协议服务，贯通数据湖仓、终端执行、浏览器感知与实时文档探针全生态。
@@ -648,7 +658,11 @@ def assemble_full_app(
         font-family: "Latin Modern Mono", "Computer Modern Typewriter", "JetBrains Mono", monospace !important;
       }
 
-      .chart-card svg, .marimo-app svg {
+      *, *::before, *::after {
+        box-sizing: border-box !important;
+      }
+
+      svg, .chart-card svg, .marimo-app svg {
         width: 100% !important;
         max-width: 100% !important;
         height: auto !important;
@@ -659,6 +673,22 @@ def assemble_full_app(
       .chart-card {
         overflow: hidden !important;
         box-sizing: border-box !important;
+        min-width: 0 !important;
+      }
+
+      [style*="display:grid"], [style*="display: grid"], [style*="display:flex"], [style*="display: flex"] {
+        box-sizing: border-box !important;
+        max-width: 100% !important;
+      }
+
+      [style*="display:grid"] > div, [style*="display: grid"] > div, [style*="display:flex"] > div, [style*="display: flex"] > div {
+        min-width: 0 !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+      }
+
+      [data-radix-toast-viewport], ol[tabindex="-1"], li[role="status"], a[href*="marimo-team/marimo"], a[href*="marimo.io"] {
+        display: none !important;
       }
     </style>
     """)
