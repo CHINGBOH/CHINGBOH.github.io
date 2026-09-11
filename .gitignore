@@ -45,3 +45,10 @@ npm-debug.log*
 /全案介绍.pdf
 /*.code-workspace
 /data/*.code-workspace
+.vscode/
+_next/
+reports-marimo/*.png
+reports-marimo/__marimo__/
+verify_*.py
+reports-django/
+reports-quarto/

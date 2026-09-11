@@ -44,6 +44,25 @@ export default function Hero() {
 
       <div className="hero-thesis" dangerouslySetInnerHTML={{ __html: hero.thesis }} />
 
+      {hero.specMatrix && (
+        <div className="hero-spec-matrix">
+          {hero.specMatrix.map((item, idx) => (
+            <a
+              key={idx}
+              href={monographHref(item.monograph)}
+              className="hero-spec-cell"
+              style={{ textDecoration: 'none', color: 'inherit' }}
+            >
+              <div className="hero-spec-label">{item.label}</div>
+              <div className="hero-spec-val">
+                {item.val} <span className="hero-spec-unit">{item.unit}</span>
+              </div>
+              <div className="hero-spec-desc">{item.desc}</div>
+            </a>
+          ))}
+        </div>
+      )}
+
       <div className="hero-pillars-grid">
         {hero.pillars.map((p) => (
           <div className="hero-pillar-card" key={p.code}>
@@ -54,15 +73,14 @@ export default function Hero() {
             <div className="pillar-title">{p.title}</div>
             <div className="pillar-fact">{p.fact}</div>
             <div className="pillar-mono">{p.mono}</div>
-            <Link
+            <a
               className="btn-view-detail"
-              style={{ marginTop: 'auto', paddingTop: 10, alignSelf: 'flex-start' }}
+              style={{ marginTop: 'auto', paddingTop: 10, alignSelf: 'flex-start', textDecoration: 'none' }}
               href={monographHref(p.monograph)}
-              prefetch={false}
               aria-label={`查看${p.title}专案`}
             >
               查看专案 →
-            </Link>
+            </a>
           </div>
         ))}
       </div>

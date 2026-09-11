@@ -83,7 +83,7 @@ A 股证券账户的社会公众投资者（法律、法规禁止购买者除外
 </pre></details><details id="reconciliation" open><summary>SQL 口径冲突与对账差异</summary><p>差异只说明口径不一致，不把其中任何一组手填数值自动升级为正确金额。万元为本表金额单位。</p><div class="trace-scroll"><table><tr><th>检查项</th><th>左侧</th><th>右侧</th><th>差值</th><th>结论</th></tr><tr><td>24项代表工程签约合计 vs 135份分组签约合计</td><td>68830.14</td><td>68348.0</td><td>482.14</td><td>两套手填视图范围不同，禁止混用为全盘已核实总额</td></tr><tr><td>24项代表工程审定合计 vs 135份分组审定合计</td><td>61386.14</td><td>59215.5</td><td>2170.64</td><td>审定金额缺逐项原件支持；不能由合同额或业绩案例表替代</td></tr><tr><td>原始案例表汇川签约年份 vs SQL主档年份</td><td>2018.0</td><td>2017.0</td><td>1.0</td><td>原始案例表载明2018；旧视图载明2017，需签章合同确认实际签约日期</td></tr><tr><td>原始案例表遵义大酒店签约年份 vs SQL主档年份</td><td>2019.0</td><td>2018.0</td><td>1.0</td><td>原始案例表载明2019；旧视图载明2018，需签章合同确认实际签约日期</td></tr></table></div></details><details class="trace-view" id="views_ai_engineering_direct_lake__v_ai_cognition_vault"><summary>v_ai_cognition_vault · 外部数据可复算；原件与生成过程待核 · 11 行</summary><p><a href="../data/views_ai_engineering_direct_lake.sql">SQL 定义文件</a> · <a href="../data/portfolio_traceability/views/views_ai_engineering_direct_lake__v_ai_cognition_vault.json">完整查询明细 JSON</a></p><ul><li><a href="../data/ai_vault_cognition.parquet">ai_vault_cognition.parquet</a></li></ul><pre>-- ==============================================================================
 -- 梁清波 8 大垂直王牌 AI 旗舰系统、底层认知体系与 VibeCoding 工具湖仓
 -- DuckDB 工业级直接查询视图群 (Direct-Lake AI Engineering Views)
--- 已彻底剔除开源参考与重复原型，业务大一统收敛为 8 座巍峨技术高峰
+-- 资产分层收敛与治理：聚焦具备自主架构与闭环的核心业务系统
 -- 包含：2.01 亿行物理级磁盘交互、WakaTime 国际标准心跳纯工时(15分钟超时)、每日明细与 24 小时作息
 -- ==============================================================================
 
