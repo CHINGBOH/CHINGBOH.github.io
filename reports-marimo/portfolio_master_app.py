@@ -745,6 +745,25 @@ def assemble_master_application(
         }
     )
 
+    # 选项卡上方醒目引导眉题
+    tabs_header = mo.md(
+        f"""
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin: 24px 0 6px 0; padding-bottom: 6px; border-bottom: 1.5px solid rgba(22,42,69,0.12);">
+            <div style="display: flex; align-items: baseline; gap: 8px;">
+                <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; color: {BRONZE}; letter-spacing: 0.1em; text-transform: uppercase;">
+                    CHRONOLOGICAL DOSSIERS
+                </span>
+                <span style="font-size: 16px; font-weight: 800; color: {NAVY};">
+                    生涯核心阶段与专案全息透视
+                </span>
+            </div>
+            <span style="font-size: 11.5px; color: #64748b;">
+                点击下方阶段选项卡，切换深度数理与工程实证 ↘
+            </span>
+        </div>
+        """
+    )
+
     # 5 大多维视角总装 Tabs
     main_tabs = mo.ui.tabs(
         {
@@ -760,6 +779,7 @@ def assemble_master_application(
     app_layout = mo.vstack(
         [
             hero_frontispiece,
+            tabs_header,
             main_tabs,
             mo.md(
                 f"""
