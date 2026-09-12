@@ -72,14 +72,16 @@ def load_lakehouse_and_styles():
 @app.cell
 def setup_sidebar_controls(mo, NAVY, BRONZE, BG_CREAM):
     # 侧边栏生涯阶段直达导航：hash 锚点 + build 注入的 stage 切换 JS，实现首页内原地切换对应阶段
+    # 关键约束：marimo sidebar 内 <a> 带内联 style 会触发 React #62 崩溃，故 a 不带任何 style，
+    # 布局与 hover 高亮全部交给注入 CSS（.career-nav / .career-nav a）
     career_stage_nav = mo.md(
         """
-        <div style="display: flex; flex-direction: column; gap: 3px; font-size: 12.5px; line-height: 1.5;">
-            <a href="#stage-overview" data-stage="overview" style="display: block; padding: 7px 10px; border-left: 3px solid #8a6839; background: rgba(22,42,69,0.05); color: #162a45; text-decoration: none; font-weight: 600; border-radius: 3px;">全景总览 (2002 - 2026)</a>
-            <a href="#stage-hust" data-stage="hust" style="display: block; padding: 7px 10px; border-left: 3px solid transparent; color: #334155; text-decoration: none; border-radius: 3px;" onmouseover="this.style.background='rgba(22,42,69,0.05)';this.style.borderLeftColor='#8a6839'" onmouseout="this.style.background='transparent';this.style.borderLeftColor='transparent'">🎓 华科统计学学术奠基 (2002-2006)</a>
-            <a href="#stage-board" data-stage="board" style="display: block; padding: 7px 10px; border-left: 3px solid transparent; color: #334155; text-decoration: none; border-radius: 3px;" onmouseover="this.style.background='rgba(22,42,69,0.05)';this.style.borderLeftColor='#8a6839'" onmouseout="this.style.background='transparent';this.style.borderLeftColor='transparent'">🏛️ 上市公司董办与总经办 (2011-2014)</a>
-            <a href="#stage-cloud" data-stage="cloud" style="display: block; padding: 7px 10px; border-left: 3px solid transparent; color: #334155; text-decoration: none; border-radius: 3px;" onmouseover="this.style.background='rgba(22,42,69,0.05)';this.style.borderLeftColor='#8a6839'" onmouseout="this.style.background='transparent';this.style.borderLeftColor='transparent'">🏢 广田云实体采销大盘 (2014-2024)</a>
-            <a href="#stage-ai" data-stage="ai" style="display: block; padding: 7px 10px; border-left: 3px solid transparent; color: #334155; text-decoration: none; border-radius: 3px;" onmouseover="this.style.background='rgba(22,42,69,0.05)';this.style.borderLeftColor='#8a6839'" onmouseout="this.style.background='transparent';this.style.borderLeftColor='transparent'">💻 现代自主AI湖仓工程 (2024-至今)</a>
+        <div class="career-nav">
+            <a href="#stage-overview" data-stage="overview">全景总览 (2002 - 2026)</a>
+            <a href="#stage-hust" data-stage="hust">🎓 华科统计学学术奠基 (2002-2006)</a>
+            <a href="#stage-board" data-stage="board">🏛️ 上市公司董办与总经办 (2011-2014)</a>
+            <a href="#stage-cloud" data-stage="cloud">🏢 广田云实体采销大盘 (2014-2024)</a>
+            <a href="#stage-ai" data-stage="ai">💻 现代自主AI湖仓工程 (2024-至今)</a>
         </div>
         """
     )

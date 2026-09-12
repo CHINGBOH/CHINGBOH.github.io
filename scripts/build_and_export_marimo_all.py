@@ -117,6 +117,13 @@ RESPONSIVE_STYLE = """
 # 首页「生涯阶段直达」切换引擎：document 层 JS，穿透 shadow DOM 找到原生 stage 面板，
 # 依据 location.hash 显示对应阶段并滚动顶部。纯 DOM 操作，与 React/Marimo 状态完全解耦。
 STAGE_JS = """
+<style data-stage-style="true">
+  .career-nav { display: flex; flex-direction: column; gap: 3px; font-size: 12.5px; line-height: 1.5; }
+  .career-nav a { display: block; padding: 7px 10px; border-left: 3px solid transparent; color: #334155; text-decoration: none; border-radius: 3px; background: transparent; transition: background .12s, border-color .12s; }
+  .career-nav a[data-stage="overview"] { border-left-color: #8a6839; color: #162a45; font-weight: 600; }
+  .career-nav a:hover { background: rgba(22,42,69,0.05); border-left-color: #8a6839; }
+  .career-nav a.is-active { background: rgba(22,42,69,0.08); border-left-color: #8a6839; color: #162a45; font-weight: 700; }
+</style>
 <script data-stage-switch="true">
 (function () {
   function roots() {
