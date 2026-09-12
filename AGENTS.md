@@ -23,5 +23,5 @@
 
 - `index.html` 与 `monographs/marimo_*.html` 是 **Marimo 导出物**，由导出脚本覆盖；只可作为发布输入和视觉验收对象。
 - `site/` 是一次性发布产物，已忽略，不提交。
-- `.github/workflows/deploy.yml` 只装配/发布已导出的 Marimo 静态页面，不再构建 Next.js。
+- 部署走 GitHub Pages **legacy 分支直接部署**（`source: main` 根目录），推送 `main` 即自动上线，不依赖 Actions workflow（仓库内不保留自定义部署 workflow）。
 - 历史中文文件名 URL 为兼容旧书签保留跳转页，目标均为对应的 Marimo 页面，不再提供旧页面内容。
