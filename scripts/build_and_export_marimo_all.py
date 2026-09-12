@@ -96,6 +96,24 @@ RESPONSIVE_STYLE = """
     max-width: 100% !important;
     box-sizing: border-box !important;
   }
+  /* 移动端响应式网格断点：防止 repeat(4, ...) 强行在手机端压成 4 列造成排版文字竖排 */
+  @media (max-width: 768px) {
+    [style*="grid-template-columns: repeat(4"],
+    [style*="grid-template-columns:repeat(4"],
+    [style*="grid-template-columns: 1fr 1fr 1fr 1fr"],
+    .spec-pillar-grid {
+      grid-template-columns: 1fr !important;
+      gap: 10px !important;
+    }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    [style*="grid-template-columns: repeat(4"],
+    [style*="grid-template-columns:repeat(4"],
+    .spec-pillar-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      gap: 12px !important;
+    }
+  }
   /* 侧边栏及主视图防横向溢出 */
   .marimo-app, main, article, section, [data-marimo-app="true"], #root {
     max-width: 100% !important;
@@ -115,12 +133,11 @@ RESPONSIVE_STYLE = """
 """
 
 # 首页「生涯阶段直达」切换引擎：document 层 JS，穿透 shadow DOM 找到原生 stage 面板，
-# 依据 location.hash 显示对应阶段并滚动顶部。纯 DOM 操作，与 React/Marimo 状态完全解耦。
+# 依据 location.hash 显示对应阶段。纯 DOM 操作，与 React/Marimo 状态完全解耦。
 STAGE_JS = """
 <style data-stage-style="true">
   .career-nav { display: flex; flex-direction: column; gap: 3px; font-size: 12.5px; line-height: 1.5; }
   .career-nav a { display: block; padding: 7px 10px; border-left: 3px solid transparent; color: #334155; text-decoration: none; border-radius: 3px; background: transparent; transition: background .12s, border-color .12s; }
-  .career-nav a[data-stage="overview"] { border-left-color: #8a6839; color: #162a45; font-weight: 600; }
   .career-nav a:hover { background: rgba(22,42,69,0.05); border-left-color: #8a6839; }
   .career-nav a.is-active { background: rgba(22,42,69,0.08); border-left-color: #8a6839; color: #162a45; font-weight: 700; }
 </style>
@@ -154,24 +171,37 @@ STAGE_JS = """
     var raw = (location.hash || '').replace('#', '');
     // hash 存的是 #stage-ai，面板 data-stage 存 ai，需剥离 stage- 前缀以对齐
     var key = raw.indexOf('stage-') === 0 ? raw.slice(6) : raw;
-    return keys.indexOf(key) >= 0 ? key : 'hust';
+    return keys.indexOf(key) >= 0 ? key : 'overview';
   }
-  function apply() {
+  function apply(isInit) {
     var key = keyOf();
     panels().forEach(function (p) {
       var k = (p.getAttribute('data-stage') || '');
-      p.style.display = (k && k === key && key !== 'overview') ? 'block' : 'none';
+      // overview 状态下展示全部阶段面板；单阶段状态下只展示匹配面板
+      p.style.display = (key === 'overview' || k === key) ? 'block' : 'none';
     });
     links().forEach(function (a) {
       if (a.getAttribute('data-stage') === key) { a.classList.add('is-active'); }
       else { a.classList.remove('is-active'); }
     });
-    try { window.scrollTo(0, 0); } catch (e) {}
+    // 仅在用户主动点击 hash 切换时平滑滚动，初次加载不强制跳动
+    if (!isInit && location.hash) {
+      if (key === 'overview') {
+        try { window.scrollTo({ top: 0, behavior: 'smooth' }); } catch (e) {}
+      } else {
+        try {
+          var target = qa('.stage-panel[data-stage="' + key + '"]')[0] || qa('#stage-tabbar')[0];
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        } catch (e) {}
+      }
+    }
   }
-  window.addEventListener('hashchange', apply);
+  window.addEventListener('hashchange', function() { apply(false); });
   var tries = 0;
   function boot() {
-    if (panels().length > 0) { apply(); }
+    if (panels().length > 0) { apply(true); }
     else if (tries++ < 80) { setTimeout(boot, 150); }
   }
   if (document.readyState === 'loading') {

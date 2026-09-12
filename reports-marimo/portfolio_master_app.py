@@ -228,7 +228,7 @@ def render_hero_frontispiece(mo, NAVY, BRONZE, BG_CREAM, BORDER_HAIR):
             </div>
 
             <!-- 四大核心价值兑现支柱 (4-Pillar Spec Grid) -->
-            <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 14px;">
+            <div class="spec-pillar-grid" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 14px;">
                 <!-- ① 成本穿透 -->
                 <div style="background: {BG_CREAM}; border: 1px solid {BORDER_HAIR}; border-top: 3px solid {BRONZE}; border-radius: 4px; padding: 14px 16px; display: flex; flex-direction: column; justify-content: space-between;">
                     <div>
@@ -743,7 +743,8 @@ def assemble_master_application(
       .stage-tbl tr:nth-child(even) td {{ background: #f8fafc; }}
       .stage-tbl tr:hover td {{ background: rgba(22,42,69,0.05); }}
     </style>
-    <div class="stage-tabbar">
+    <div class="stage-tabbar" id="stage-tabbar">
+      <a href="#stage-overview" data-stage="overview">🌐 全景总览</a>
       <a href="#stage-hust" data-stage="hust">🎓 学术奠基</a>
       <a href="#stage-board" data-stage="board">🏛️ 顶层治理</a>
       <a href="#stage-cloud" data-stage="cloud">🏢 供应链大盘</a>
