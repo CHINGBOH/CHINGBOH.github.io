@@ -320,27 +320,51 @@ SHADOW_TABS_ENHANCER = """
       border-radius: 4px !important;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03) !important;
     }
+
+    /* 7. 表格高度收敛与表头吸顶：避免多行表格向下无限拉伸，保持高管卡片紧凑感 */
+    [class*="overflow-auto"] {
+      max-height: 380px !important;
+      overflow-y: auto !important;
+    }
+    [class*="overflow-auto"]::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    [class*="overflow-auto"]::-webkit-scrollbar-track {
+      background: #f1f5f9;
+      border-radius: 3px;
+    }
+    [class*="overflow-auto"]::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 3px;
+    }
+    [class*="overflow-auto"]::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+    th {
+      position: sticky !important;
+      top: 0 !important;
+      z-index: 10 !important;
+      background: #f8fafc !important;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+    }
   `;
 
-  var processedRoots = new WeakSet();
-
   function walkAndInject(root) {
-    if (!root || processedRoots.has(root)) return;
+    if (!root) return;
     
-    if (root.host) {
+    if (root.host && root.host.tagName) {
       var tag = root.host.tagName.toLowerCase();
       if (tag === 'marimo-tabs' && !root.getElementById('executive-tab-style')) {
         var s = document.createElement('style');
         s.id = 'executive-tab-style';
         s.textContent = TAB_CSS;
         root.appendChild(s);
-        processedRoots.add(root);
       } else if (tag === 'marimo-table' && !root.getElementById('executive-table-style')) {
         var st = document.createElement('style');
         st.id = 'executive-table-style';
         st.textContent = TABLE_CSS;
         root.appendChild(st);
-        processedRoots.add(root);
       }
     }
 
@@ -365,13 +389,11 @@ SHADOW_TABS_ENHANCER = """
   }
   window.addEventListener('load', runEnhancer, { once: true });
 
-  // 2. 点击交互时快速触发（零轮询占用 CPU）
+  // 2. 点击交互时快速触发（覆盖所有 Tab 切换，消除延迟）
   document.addEventListener('click', function(e) {
-    var target = e.target;
-    if (target && target.closest && (target.closest('[role="tab"]') || target.closest('marimo-tabs') || target.closest('button'))) {
-      requestAnimationFrame(runEnhancer);
-      setTimeout(runEnhancer, 80);
-    }
+    requestAnimationFrame(runEnhancer);
+    setTimeout(runEnhancer, 50);
+    setTimeout(runEnhancer, 200);
   }, { passive: true });
 
   // 3. 针对动态挂载的轻量 DOM 监听（限频防抖，避免无谓重算）
@@ -381,7 +403,7 @@ SHADOW_TABS_ENHANCER = """
     timeoutId = setTimeout(function() {
       timeoutId = null;
       runEnhancer();
-    }, 150);
+    }, 100);
   });
   observer.observe(document.documentElement, { childList: true, subtree: true });
 })();
