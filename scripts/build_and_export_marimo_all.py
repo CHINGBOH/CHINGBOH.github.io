@@ -192,11 +192,11 @@ RESPONSIVE_STYLE = """
 </style>
 """
 
-# 首页生涯核心阶段选项栏 Shadow DOM 强化注入脚本
+# 首页生涯核心阶段选项栏与表格 Shadow DOM 强化注入脚本
 SHADOW_TABS_ENHANCER = """
 <script id="marimo-executive-tabs-enhancer">
 (function() {
-  var CSS = `
+  var TAB_CSS = `
     [role="tablist"] {
       display: flex !important;
       flex-wrap: wrap !important;
@@ -242,13 +242,104 @@ SHADOW_TABS_ENHANCER = """
     }
   `;
 
+  var TABLE_CSS = `
+    /* 1. 彻底隐藏静态导出截断警告提示条 */
+    div[class*="border-"][class*="shadow-accent"],
+    div[class*="text-primary"][class*="bg-(--blue-1)"],
+    div[class*="whitespace-pre-wrap"][class*="overflow-hidden"][class*="border"],
+    div.border.whitespace-pre-wrap {
+      display: none !important;
+    }
+
+    /* 2. 彻底隐藏表头中的数据类型标签 (如 str, float64, object 等) 消除杂音 */
+    th .text-xs.text-muted-foreground,
+    th div.flex.flex-row.gap-1,
+    th div[class*="text-muted-foreground"] {
+      display: none !important;
+    }
+
+    /* 3. 表头强化：统一商务高级感、清晰稳重 */
+    th {
+      background: #f8fafc !important;
+      color: #162a45 !important;
+      font-weight: 700 !important;
+      font-size: 13px !important;
+      padding: 9px 12px !important;
+      border-bottom: 2px solid rgba(22, 42, 69, 0.22) !important;
+      border-right: 1px solid rgba(22, 42, 69, 0.08) !important;
+      text-align: left !important;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif !important;
+    }
+    th span.font-bold, th [class*="font-bold"] {
+      color: #162a45 !important;
+      font-size: 13px !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.02em !important;
+    }
+
+    /* 4. 数据行与单元格样式：清晰高对比、交替浅色背景、悬停反馈 */
+    td {
+      font-size: 12.5px !important;
+      color: #334155 !important;
+      padding: 8px 12px !important;
+      line-height: 1.55 !important;
+      border-bottom: 1px solid #f1f5f9 !important;
+      border-right: 1px solid #f8fafc !important;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif !important;
+    }
+    tbody tr:nth-child(even) td {
+      background-color: #fafbfd !important;
+    }
+    tbody tr:hover td {
+      background-color: #f1f5f9 !important;
+    }
+
+    /* 5. 隐藏静态展示下无意义的 No selection 提示 */
+    span.text-xs.italic,
+    span[class*="text-muted-foreground"][class*="italic"] {
+      display: none !important;
+    }
+
+    /* 6. 表格外框与间距美化 */
+    .marimo {
+      border: 1px solid rgba(22, 42, 69, 0.12) !important;
+      border-radius: 4px !important;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03) !important;
+    }
+  `;
+
+  function walkShadowRoots(root, callback) {
+    if (!root) return;
+    callback(root);
+    var walker = document.createTreeWalker(root, NodeFilter.SHOW_ELEMENT);
+    var node = walker.nextNode();
+    while (node) {
+      if (node.shadowRoot) {
+        walkShadowRoots(node.shadowRoot, callback);
+      }
+      node = walker.nextNode();
+    }
+  }
+
   function injectShadowStyles() {
-    document.querySelectorAll('marimo-tabs').forEach(function(el) {
-      if (el.shadowRoot && !el.shadowRoot.getElementById('executive-tab-style')) {
-        var s = document.createElement('style');
-        s.id = 'executive-tab-style';
-        s.textContent = CSS;
-        el.shadowRoot.appendChild(s);
+    walkShadowRoots(document.documentElement, function(root) {
+      // 增强 tabs
+      if (root.host && root.host.tagName.toLowerCase() === 'marimo-tabs') {
+        if (!root.getElementById('executive-tab-style')) {
+          var s = document.createElement('style');
+          s.id = 'executive-tab-style';
+          s.textContent = TAB_CSS;
+          root.appendChild(s);
+        }
+      }
+      // 增强 table
+      if (root.host && root.host.tagName.toLowerCase() === 'marimo-table') {
+        if (!root.getElementById('executive-table-style')) {
+          var st = document.createElement('style');
+          st.id = 'executive-table-style';
+          st.textContent = TABLE_CSS;
+          root.appendChild(st);
+        }
       }
     });
   }
@@ -258,6 +349,7 @@ SHADOW_TABS_ENHANCER = """
   injectShadowStyles();
   window.addEventListener('DOMContentLoaded', injectShadowStyles);
   window.addEventListener('load', injectShadowStyles);
+  setInterval(injectShadowStyles, 300);
 })();
 </script>
 """

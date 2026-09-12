@@ -469,6 +469,7 @@ def render_tab2_board(con, pd, plt, io, base64, NAVY, BRONZE, GOLD):
     ax3.set_xticks(_x)
     ax3.set_xticklabels(df_timeline["季度节点"], rotation=35, ha="right", fontsize=8)
     ax3.set_ylabel("总市值 (亿元 RMB)", fontsize=9.5, fontweight="bold", color=NAVY)
+    ax3.set_ylim(0, 160)
     ax3.set_title("FIG.03 深圳广田股份 (SZ.002482) 任期市值走势与重大资本事件 (2011-2014)", fontsize=11, fontweight="bold", color=NAVY, pad=10)
     ax3.grid(axis="y", linestyle="--", alpha=0.3)
     ax3.spines["top"].set_visible(False)
@@ -481,9 +482,9 @@ def render_tab2_board(con, pd, plt, io, base64, NAVY, BRONZE, GOLD):
     plt.close(fig3)
     img_board1 = base64.b64encode(buf3.getvalue()).decode()
 
-    # 206 篇公告底账前 20 篇
+    # 206 篇公告底账前 20 篇（格式化日期为 YYYY-MM-DD，去除微秒时间后缀）
     df_announcements = con.execute(
-        "SELECT 发布日期, 公告标题, 业务事件归类, 公告类型 FROM v_sec_announcements_tenure ORDER BY 发布日期 DESC LIMIT 20"
+        "SELECT strftime(发布日期, '%Y-%m-%d') AS 发布日期, 公告标题, 业务事件归类, 公告类型 FROM v_sec_announcements_tenure ORDER BY 发布日期 DESC LIMIT 20"
     ).df()
 
     # 12 亿发债尽调 55 个模块
@@ -535,28 +536,43 @@ def render_tab3_cloud(con, pd, plt, io, base64, NAVY, BRONZE, GOLD):
 
 @app.cell
 def render_tab4_ai(con, pd, plt, io, base64, NAVY, BRONZE, GOLD):
-    # Tab 4 图表生成：AI 全栈自研工程
+    # Tab 4 图表生成：AI 全栈自研工程（采用学术级无损水平条形图，解决长英文仓库名倾斜截断与标签悬空问题）
     df_ai_repos = con.execute(
         "SELECT 代码工程仓库名, 系统工程评级, 总代码行数_LOC, 核心技术概览, STAR成果与实战亮点 FROM v_ai_git_repositories ORDER BY 总代码行数_LOC DESC"
     ).df()
 
-    fig5, ax5 = plt.subplots(figsize=(7.5, 3.6), dpi=130)
+    fig5, ax5 = plt.subplots(figsize=(7.5, 3.8), dpi=130)
     fig5.patch.set_facecolor("#ffffff")
     ax5.set_facecolor("#ffffff")
 
-    _bars5 = ax5.bar(range(len(df_ai_repos)), df_ai_repos["总代码行数_LOC"] / 10000, color=NAVY, width=0.55)
-    for _b in _bars5:
-        _h = _b.get_height()
-        ax5.text(_b.get_x() + _b.get_width()/2, _h + 15, f"{int(_h)}万行", ha="center", va="bottom", fontsize=8, fontweight="bold", color=BRONZE)
+    # 升序排列保证最大资产位于条形图顶部
+    df_ai_sorted = df_ai_repos.sort_values("总代码行数_LOC", ascending=True)
+    _y_pos = range(len(df_ai_sorted))
+    _loc_w = df_ai_sorted["总代码行数_LOC"] / 10000
 
-    ax5.set_xticks(range(len(df_ai_repos)))
-    ax5.set_xticklabels(df_ai_repos["代码工程仓库名"], rotation=30, ha="right", fontsize=8)
-    ax5.set_ylabel("代码行数 (万行 LOC)", fontsize=9.5, fontweight="bold", color=NAVY)
+    _bars5 = ax5.barh(_y_pos, _loc_w, color=NAVY, height=0.55)
+    for _b in _bars5:
+        _w = _b.get_width()
+        ax5.text(
+            _w + 0.35,
+            _b.get_y() + _b.get_height() / 2,
+            f"{int(_w)} 万行",
+            va="center",
+            ha="left",
+            fontsize=9,
+            fontweight="bold",
+            color=BRONZE,
+        )
+
+    ax5.set_yticks(_y_pos)
+    ax5.set_yticklabels(df_ai_sorted["代码工程仓库名"], fontsize=9, fontweight="bold", color=NAVY)
+    ax5.set_xlim(0, max(_loc_w) * 1.25)
+    ax5.set_xlabel("代码行数 (万行 LOC)", fontsize=9.5, fontweight="bold", color=NAVY)
     ax5.set_title("FIG.05 梁清波 8 大企业级自研核心系统代码资产规模 (总代码: 2,804 万行)", fontsize=11, fontweight="bold", color=NAVY, pad=10)
-    ax5.grid(axis="y", linestyle="--", alpha=0.3)
+    ax5.grid(axis="x", linestyle="--", alpha=0.3)
     ax5.spines["top"].set_visible(False)
     ax5.spines["right"].set_visible(False)
-    plt.subplots_adjust(bottom=0.22, top=0.88)
+    plt.tight_layout()
 
     buf5 = io.BytesIO()
     fig5.savefig(buf5, format="png", bbox_inches="tight")
@@ -617,7 +633,7 @@ def assemble_master_application(
             </div>
 
             <h4 style="color: {NAVY}; margin: 16px 0 8px 0; font-size: 14px; font-weight: 700;">📑 24 门数理核心骨干课程与底层思维训练穿透台账</h4>
-            {mo.ui.table(df_courses, selection=None, pagination=True)}
+            {mo.ui.table(df_courses, selection=None, pagination=True, page_size=50)}
         </div>
         """
     )
@@ -642,15 +658,13 @@ def assemble_master_application(
                 <img src="data:image/png;base64,{img_board1}" style="width: 100%; border: 1px solid #e2e8f0; border-radius: 4px;" />
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 16px; margin-bottom: 16px;">
-                <div>
-                    <h4 style="color: {NAVY}; margin: 8px 0; font-size: 14px; font-weight: 700;">📜 深交所法定信息披露官方公告底账 (206篇抽样)</h4>
-                    {mo.ui.table(df_announcements, selection=None, pagination=True)}
-                </div>
-                <div>
-                    <h4 style="color: {NAVY}; margin: 8px 0; font-size: 14px; font-weight: 700;">💼 12 亿元公司债发债 55 个专业尽调模块</h4>
-                    {mo.ui.table(df_bond_modules, selection=None, pagination=True)}
-                </div>
+            <div style="margin-bottom: 20px;">
+                <h4 style="color: {NAVY}; margin: 16px 0 8px 0; font-size: 14px; font-weight: 700;">📜 深交所法定信息披露官方公告底账 (206篇抽样)</h4>
+                {mo.ui.table(df_announcements, selection=None, pagination=True, page_size=50)}
+            </div>
+            <div style="margin-bottom: 20px;">
+                <h4 style="color: {NAVY}; margin: 16px 0 8px 0; font-size: 14px; font-weight: 700;">💼 12 亿元公司债发债 55 个专业尽调模块</h4>
+                {mo.ui.table(df_bond_modules, selection=None, pagination=True, page_size=60)}
             </div>
         </div>
         """
@@ -677,7 +691,7 @@ def assemble_master_application(
             </div>
 
             <h4 style="color: {NAVY}; margin: 16px 0 8px 0; font-size: 14px; font-weight: 700;">📑 24 大核心标杆工程全生命周期核算底账</h4>
-            {mo.ui.table(df_landmarks, selection=None, pagination=True)}
+            {mo.ui.table(df_landmarks, selection=None, pagination=True, page_size=50)}
         </div>
         """
     )
@@ -702,15 +716,13 @@ def assemble_master_application(
                 <img src="data:image/png;base64,{img_ai1}" style="width: 100%; border: 1px solid #e2e8f0; border-radius: 4px;" />
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 16px; margin-bottom: 16px;">
-                <div>
-                    <h4 style="color: {NAVY}; margin: 8px 0; font-size: 14px; font-weight: 700;">🚀 8 大工业级核心代码资产与商业能力穿透</h4>
-                    {mo.ui.table(df_ai_repos, selection=None, pagination=True)}
-                </div>
-                <div>
-                    <h4 style="color: {NAVY}; margin: 8px 0; font-size: 14px; font-weight: 700;">⏱️ WakaTime 国际标准工作量度量底账</h4>
-                    {mo.ui.table(df_ai_summary, selection=None, pagination=True)}
-                </div>
+            <div style="margin-bottom: 20px;">
+                <h4 style="color: {NAVY}; margin: 16px 0 8px 0; font-size: 14px; font-weight: 700;">🚀 8 大工业级核心代码资产与商业能力穿透</h4>
+                {mo.ui.table(df_ai_repos, selection=None, pagination=True, page_size=50)}
+            </div>
+            <div style="margin-bottom: 20px; max-width: 650px;">
+                <h4 style="color: {NAVY}; margin: 16px 0 8px 0; font-size: 14px; font-weight: 700;">⏱️ WakaTime 国际标准工作量度量底账</h4>
+                {mo.ui.table(df_ai_summary, selection=None, pagination=True, page_size=50)}
             </div>
         </div>
         """
