@@ -71,15 +71,15 @@ def load_lakehouse_and_styles():
 
 @app.cell
 def setup_sidebar_controls(mo, NAVY, BRONZE, BG_CREAM):
-    # 侧边栏生涯阶段直达导航：静态锚点链接，独立于后端交互，静态导出后仍可点击跳转
+    # 侧边栏生涯阶段直达导航：hash 锚点 + build 注入的 stage 切换 JS，实现首页内原地切换对应阶段
     career_stage_nav = mo.md(
         """
         <div style="display: flex; flex-direction: column; gap: 3px; font-size: 12.5px; line-height: 1.5;">
-            <a href="/" style="display: block; padding: 7px 10px; border-left: 3px solid #8a6839; background: rgba(22,42,69,0.05); color: #162a45; text-decoration: none; font-weight: 600; border-radius: 3px;">全景总览 (2002 - 2026)</a>
-            <a href="/monographs/marimo_hust_statistics.html" style="display: block; padding: 7px 10px; border-left: 3px solid transparent; color: #334155; text-decoration: none; border-radius: 3px;" onmouseover="this.style.background='rgba(22,42,69,0.05)';this.style.borderLeftColor='#8a6839'" onmouseout="this.style.background='transparent';this.style.borderLeftColor='transparent'">🎓 华科统计学学术奠基 (2002-2006)</a>
-            <a href="/monographs/marimo_board_and_gm.html" style="display: block; padding: 7px 10px; border-left: 3px solid transparent; color: #334155; text-decoration: none; border-radius: 3px;" onmouseover="this.style.background='rgba(22,42,69,0.05)';this.style.borderLeftColor='#8a6839'" onmouseout="this.style.background='transparent';this.style.borderLeftColor='transparent'">🏛️ 上市公司董办与总经办 (2011-2014)</a>
-            <a href="/monographs/marimo_cloud_deco.html" style="display: block; padding: 7px 10px; border-left: 3px solid transparent; color: #334155; text-decoration: none; border-radius: 3px;" onmouseover="this.style.background='rgba(22,42,69,0.05)';this.style.borderLeftColor='#8a6839'" onmouseout="this.style.background='transparent';this.style.borderLeftColor='transparent'">🏢 广田云实体采销大盘 (2014-2024)</a>
-            <a href="/monographs/marimo_ai_engineering.html" style="display: block; padding: 7px 10px; border-left: 3px solid transparent; color: #334155; text-decoration: none; border-radius: 3px;" onmouseover="this.style.background='rgba(22,42,69,0.05)';this.style.borderLeftColor='#8a6839'" onmouseout="this.style.background='transparent';this.style.borderLeftColor='transparent'">💻 现代自主AI湖仓工程 (2024-至今)</a>
+            <a href="#stage-overview" data-stage="overview" style="display: block; padding: 7px 10px; border-left: 3px solid #8a6839; background: rgba(22,42,69,0.05); color: #162a45; text-decoration: none; font-weight: 600; border-radius: 3px;">全景总览 (2002 - 2026)</a>
+            <a href="#stage-hust" data-stage="hust" style="display: block; padding: 7px 10px; border-left: 3px solid transparent; color: #334155; text-decoration: none; border-radius: 3px;" onmouseover="this.style.background='rgba(22,42,69,0.05)';this.style.borderLeftColor='#8a6839'" onmouseout="this.style.background='transparent';this.style.borderLeftColor='transparent'">🎓 华科统计学学术奠基 (2002-2006)</a>
+            <a href="#stage-board" data-stage="board" style="display: block; padding: 7px 10px; border-left: 3px solid transparent; color: #334155; text-decoration: none; border-radius: 3px;" onmouseover="this.style.background='rgba(22,42,69,0.05)';this.style.borderLeftColor='#8a6839'" onmouseout="this.style.background='transparent';this.style.borderLeftColor='transparent'">🏛️ 上市公司董办与总经办 (2011-2014)</a>
+            <a href="#stage-cloud" data-stage="cloud" style="display: block; padding: 7px 10px; border-left: 3px solid transparent; color: #334155; text-decoration: none; border-radius: 3px;" onmouseover="this.style.background='rgba(22,42,69,0.05)';this.style.borderLeftColor='#8a6839'" onmouseout="this.style.background='transparent';this.style.borderLeftColor='transparent'">🏢 广田云实体采销大盘 (2014-2024)</a>
+            <a href="#stage-ai" data-stage="ai" style="display: block; padding: 7px 10px; border-left: 3px solid transparent; color: #334155; text-decoration: none; border-radius: 3px;" onmouseover="this.style.background='rgba(22,42,69,0.05)';this.style.borderLeftColor='#8a6839'" onmouseout="this.style.background='transparent';this.style.borderLeftColor='transparent'">💻 现代自主AI湖仓工程 (2024-至今)</a>
         </div>
         """
     )
@@ -575,192 +575,190 @@ def assemble_master_application(
     BG_CREAM,
     BORDER_HAIR,
 ):
-    # Tab 1: 华科统计学学术奠基
-    tab_hust = mo.md(
-        f"""
-        <div style="padding: 12px 0;">
-            <div style="background: {BG_CREAM}; border: 1px solid rgba(22,42,69,0.12); padding: 14px 18px; border-radius: 4px; margin-bottom: 16px;">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-                    <h3 style="margin: 0; color: {NAVY}; font-size: 18px;">🎓 华中科技大学统计学学术奠基与数理算法底座</h3>
-                    <a href="/monographs/marimo_hust_statistics.html" target="_blank" style="font-size: 12.5px; font-weight: 700; color: {BRONZE}; text-decoration: none; border: 1px solid {BRONZE}; padding: 3px 10px; border-radius: 3px;">
-                        打开独立全息研报 ↗
-                    </a>
-                </div>
-                <div style="font-size: 13px; color: #475569; line-height: 1.6;">
-                    华中科技大学数学与统计学院 · 2002 级首届统计学本科 · 理学学士 (B.S.)<br>
-                    <strong>培养规格</strong>：四年 160+ 必修学分 · 30+ 门数理与计算机骨干课程 · 《Lattice Boltzmann (LBM) 算法与流体模拟》毕业科研攻坚。
-                </div>
+    # ---- 数据表 → 原生静态 HTML（移除 React 表格组件，改用原生 DOM，保证可被 stage 切换 JS 完全控制）----
+    def _stage_tbl(df, maxrows=None):
+        d = df if maxrows is None else df.head(maxrows)
+        return d.to_html(classes="stage-tbl", border=0, index=False, escape=True)
+
+    df_courses_html = _stage_tbl(df_courses)
+    df_announcements_html = _stage_tbl(df_announcements)
+    df_bond_modules_html = _stage_tbl(df_bond_modules)
+    df_landmarks_html = _stage_tbl(df_landmarks)
+    df_ai_repos_html = _stage_tbl(df_ai_repos)
+    df_ai_summary_html = _stage_tbl(df_ai_summary)
+
+    # 各阶段正文（纯 HTML 字符串，原生 <section class="stage-panel">
+    stage_hust = f"""
+    <section class="stage-panel" id="stage-hust" data-stage="hust" style="padding: 12px 0;">
+        <div style="background: {BG_CREAM}; border: 1px solid rgba(22,42,69,0.12); padding: 14px 18px; border-radius: 4px; margin-bottom: 16px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <h3 style="margin: 0; color: {NAVY}; font-size: 18px;">🎓 华中科技大学统计学学术奠基与数理算法底座</h3>
+                <a href="/monographs/marimo_hust_statistics.html" target="_blank" style="font-size: 12.5px; font-weight: 700; color: {BRONZE}; text-decoration: none; border: 1px solid {BRONZE}; padding: 3px 10px; border-radius: 3px;">打开独立全息研报 ↗</a>
             </div>
-
-            <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 18px;">
-                <div style="flex: 1.5; min-width: 320px;">
-                    <img src="data:image/png;base64,{img_hust1}" style="width: 100%; border: 1px solid #e2e8f0; border-radius: 4px;" />
-                </div>
-                <div style="flex: 1; min-width: 280px;">
-                    <img src="data:image/png;base64,{img_hust2}" style="width: 100%; border: 1px solid #e2e8f0; border-radius: 4px;" />
-                </div>
-            </div>
-
-            <h4 style="color: {NAVY}; margin: 16px 0 8px 0;">📑 24 门数理核心骨干课程与底层思维训练穿透台账</h4>
-            {mo.ui.table(df_courses, selection=None, pagination=True)}
-        </div>
-        """
-    )
-
-    # Tab 2: 广田股份董办与总经办
-    tab_board = mo.md(
-        f"""
-        <div style="padding: 12px 0;">
-            <div style="background: {BG_CREAM}; border: 1px solid rgba(22,42,69,0.12); padding: 14px 18px; border-radius: 4px; margin-bottom: 16px;">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-                    <h3 style="margin: 0; color: {NAVY}; font-size: 18px;">🏛️ 深圳广田股份 (SZ.002482) 董办合规资本运作与总经办企业运营</h3>
-                    <a href="/monographs/marimo_board_and_gm.html" target="_blank" style="font-size: 12.5px; font-weight: 700; color: {BRONZE}; text-decoration: none; border: 1px solid {BRONZE}; padding: 3px 10px; border-radius: 3px;">
-                        打开独立全息研报 ↗
-                    </a>
-                </div>
-                <div style="font-size: 13px; color: #475569; line-height: 1.6;">
-                    历经百亿市值上市公司治理中枢：执笔 206 篇法定公告（深交所最高 A 级信披考评、0 监管函件）、协同 12 亿元公司债发债与 55 个尽调模块封包、总经办经营例会决议 97.8% 闭环督办；任期主导与见证广田股份市值跨越 132.2 亿元巅峰。
-                </div>
-            </div>
-
-            <div style="margin-bottom: 18px;">
-                <img src="data:image/png;base64,{img_board1}" style="width: 100%; border: 1px solid #e2e8f0; border-radius: 4px;" />
-            </div>
-
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 16px; margin-bottom: 16px;">
-                <div>
-                    <h4 style="color: {NAVY}; margin: 8px 0;">📜 深交所法定信息披露官方公告底账 (206篇抽样)</h4>
-                    {mo.ui.table(df_announcements, selection=None, pagination=True)}
-                </div>
-                <div>
-                    <h4 style="color: {NAVY}; margin: 8px 0;">💼 12 亿元公司债发债 55 个专业尽调模块</h4>
-                    {mo.ui.table(df_bond_modules, selection=None, pagination=True)}
-                </div>
+            <div style="font-size: 13px; color: #475569; line-height: 1.6;">
+                华中科技大学数学与统计学院 · 2002 级首届统计学本科 · 理学学士 (B.S.)<br>
+                <strong>培养规格</strong>：四年 160+ 必修学分 · 30+ 门数理与计算机骨干课程 · 《Lattice Boltzmann (LBM) 算法与流体模拟》毕业科研攻坚。
             </div>
         </div>
-        """
-    )
-
-    # Tab 3: 广田云软装 135 份合同大盘
-    tab_cloud = mo.md(
-        f"""
-        <div style="padding: 12px 0;">
-            <div style="background: {BG_CREAM}; border: 1px solid rgba(22,42,69,0.12); padding: 14px 18px; border-radius: 4px; margin-bottom: 16px;">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-                    <h3 style="margin: 0; color: {NAVY}; font-size: 18px;">🏢 深圳市广田云软装科技 · 供应链全周期商业统筹</h3>
-                    <a href="/monographs/marimo_cloud_deco.html" target="_blank" style="font-size: 12.5px; font-weight: 700; color: {BRONZE}; text-decoration: none; border: 1px solid {BRONZE}; padding: 3px 10px; border-radius: 3px;">
-                        打开独立全息研报 ↗
-                    </a>
-                </div>
-                <div style="font-size: 13px; color: #475569; line-height: 1.6;">
-                    全资子公司从 0 到 1 组建奠基：完成团队与制度建设；统筹百余份供货合同的履约，在非标供应链复杂博弈中守住合理的毛利安全边界，覆盖大型酒店、文旅与房企战采等项目类型。
-                </div>
-            </div>
-
-            <div style="margin-bottom: 18px;">
-                <img src="data:image/png;base64,{img_cloud1}" style="width: 100%; border: 1px solid #e2e8f0; border-radius: 4px;" />
-            </div>
-
-            <h4 style="color: {NAVY}; margin: 16px 0 8px 0;">📑 24 大核心标杆工程全生命周期核算底账</h4>
-            {mo.ui.table(df_landmarks, selection=None, pagination=True)}
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 18px;">
+            <div style="flex: 1.5; min-width: 320px;"><img src="data:image/png;base64,{img_hust1}" style="width: 100%; border: 1px solid #e2e8f0; border-radius: 4px;" /></div>
+            <div style="flex: 1; min-width: 280px;"><img src="data:image/png;base64,{img_hust2}" style="width: 100%; border: 1px solid #e2e8f0; border-radius: 4px;" /></div>
         </div>
-        """
-    )
+        <h4 style="color: {NAVY}; margin: 16px 0 8px 0;">📑 24 门数理核心骨干课程与底层思维训练穿透台账</h4>
+        {df_courses_html}
+    </section>
+    """
 
-    # Tab 4: 现代 AI 全栈工程与自治湖仓
-    tab_ai = mo.md(
-        f"""
-        <div style="padding: 12px 0;">
-            <div style="background: {BG_CREAM}; border: 1px solid rgba(22,42,69,0.12); padding: 14px 18px; border-radius: 4px; margin-bottom: 16px;">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-                    <h3 style="margin: 0; color: {NAVY}; font-size: 18px;">💻 现代自主 AI 全栈工程、自治湖仓与自动化系统研发</h3>
-                    <a href="/monographs/marimo_ai_engineering.html" target="_blank" style="font-size: 12.5px; font-weight: 700; color: {BRONZE}; text-decoration: none; border: 1px solid {BRONZE}; padding: 3px 10px; border-radius: 3px;">
-                        打开独立全息研报 ↗
-                    </a>
-                </div>
-                <div style="font-size: 13px; color: #475569; line-height: 1.6;">
-                    将多年商业经验深度代码化：完全独立自研 8 套工业级系统、2,804 万行源码，接入 DuckDB 现代湖仓一体与 WakaTime 国际标准 120.8 小时纯有效工时，实现 100% 实证闭环。
-                </div>
+    stage_board = f"""
+    <section class="stage-panel" id="stage-board" data-stage="board" style="padding: 12px 0;">
+        <div style="background: {BG_CREAM}; border: 1px solid rgba(22,42,69,0.12); padding: 14px 18px; border-radius: 4px; margin-bottom: 16px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <h3 style="margin: 0; color: {NAVY}; font-size: 18px;">🏛️ 深圳广田股份 (SZ.002482) 董办合规资本运作与总经办企业运营</h3>
+                <a href="/monographs/marimo_board_and_gm.html" target="_blank" style="font-size: 12.5px; font-weight: 700; color: {BRONZE}; text-decoration: none; border: 1px solid {BRONZE}; padding: 3px 10px; border-radius: 3px;">打开独立全息研报 ↗</a>
             </div>
-
-            <div style="margin-bottom: 18px;">
-                <img src="data:image/png;base64,{img_ai1}" style="width: 100%; border: 1px solid #e2e8f0; border-radius: 4px;" />
-            </div>
-
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 16px; margin-bottom: 16px;">
-                <div>
-                    <h4 style="color: {NAVY}; margin: 8px 0;">🚀 8 大工业级核心代码资产与商业能力穿透</h4>
-                    {mo.ui.table(df_ai_repos, selection=None, pagination=True)}
-                </div>
-                <div>
-                    <h4 style="color: {NAVY}; margin: 8px 0;">⏱️ WakaTime 国际标准工作量度量底账</h4>
-                    {mo.ui.table(df_ai_summary, selection=None, pagination=True)}
-                </div>
+            <div style="font-size: 13px; color: #475569; line-height: 1.6;">
+                历经百亿市值上市公司治理中枢：执笔 206 篇法定公告（深交所最高 A 级信披考评、0 监管函件）、协同 12 亿元公司债发债与 55 个尽调模块封包、总经办经营例会决议 97.8% 闭环督办；任期主导与见证广田股份市值跨越 132.2 亿元巅峰。
             </div>
         </div>
-        """
-    )
+        <div style="margin-bottom: 18px;"><img src="data:image/png;base64,{img_board1}" style="width: 100%; border: 1px solid #e2e8f0; border-radius: 4px;" /></div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 16px; margin-bottom: 16px;">
+            <div>
+                <h4 style="color: {NAVY}; margin: 8px 0;">📜 深交所法定信息披露官方公告底账 (206篇抽样)</h4>
+                {df_announcements_html}
+            </div>
+            <div>
+                <h4 style="color: {NAVY}; margin: 8px 0;">💼 12 亿元公司债发债 55 个专业尽调模块</h4>
+                {df_bond_modules_html}
+            </div>
+        </div>
+    </section>
+    """
 
-    # Tab 5: 历史商业专案底稿与审计归档 (手风琴)
-    tab_archived = mo.accordion(
-        {
-            "🗄️ ARCH-ZY-01: 遵义大酒店 · 五星级软装工程全周期商务统筹研报（已脱敏）": mo.md(
-                """
-                - **商业模式**：遵义道桥建设集团发包，中建四局总包，深圳广田专业分包；
-                - **审定结果**：完成合同履约、结算审计与确权；
-                - **核心机制**：穿透珠三角源头工坊出厂成本，预留多级调价博弈弹性；签证留痕，结算审计据理力争，各节点款项按期安全回笼。
-                - 🔗 [打开 Marimo 反应式研报](/monographs/marimo_cloud_deco.html)
-                """
-            ),
-            "🗄️ ARCH-HHG-02: 遵义红花岗综合体 · 政府大盘全生命周期商业研报 (3502.9万申报 / 2408.99万认价锁定)": mo.md(
-                """
-                - **商业统筹**：遵义红花岗区城投国资发包，中建四局总包，广田专业分包；
-                - **资金破局**：直面业主决策层化解千万元垫资风险，争取到 1,000 万元业主无息周转借款平账；
-                - **实物盘量**：激光实测据实核定 16,478 ㎡，穿透 390 行原子级 BOM 物料台账，完成 14,950 件(套) 物理实物开箱交付。
-                - 🔗 [打开 Marimo 反应式研报](/monographs/marimo_honghuagang.html)
-                """
-            ),
-            "🗄️ ARCH-MT-03: 遵义湄潭温泉酒店 · 全生命周期数据洞察研报 (单方1537元/㎡ / 审计零坏账安全回笼)": mo.md(
-                """
-                - **项目承揽**：贵州茶旅一体化 AAAA 级景区核心配套，中建四局专业分包，签约 3,380.00 万元；
-                - **降本与回款**：样板房开模先行，52 套客房大货集采单件刚性降本超 36%；出厂货款覆盖率 144% 刚性回笼；
-                - **结算收口**：激光实测 17,241 ㎡，按包干综合单方 1,537 元/㎡ 据实核定，多轮严苛财评零坏账退出。
-                - 🔗 [打开 Marimo 反应式研报](/monographs/marimo_meitan.html)
-                """
-            ),
-            "🗄️ ARCH-HT-04: 上海华泰中心售楼处 · 五轮竞标商务统筹研报 (正式闭口价中标 / 零垫资风控)": mo.md(
-                """
-                - **竞标模式**：开发商正式招投标，五轮商务与方案博弈，闭口价 156.66 万元中标；
-                - **风控防线**：设立对等防守条款，款项到位为发货前提，实现全案零垫资出货与零纠纷交付；
-                - **战略战采**：同线斩获陆川九龙山庄 28 天极限抢工项目与中国奥园集团三大全国战略集采。
-                - 🔗 [打开 Marimo 反应式研报](/monographs/marimo_huatai.html)
-                """
-            ),
-            "🗄️ ARCH-PROV-05: 专案数据与底稿穿透索引 (11.96 MB 历史原件总库)": mo.md(
-                """
-                - **底稿归档总盘**：汇集全量合同原件盖章扫描件、经营决议月度督办单、发债尽调专业工作底稿、现场联系签证单与审计确权凭证；
-                - 🔗 [直达 11.96 MB 专案数据与底稿穿透总索引](/专案数据与底稿穿透索引.html)
-                """
-            ),
-        }
-    )
+    stage_cloud = f"""
+    <section class="stage-panel" id="stage-cloud" data-stage="cloud" style="padding: 12px 0;">
+        <div style="background: {BG_CREAM}; border: 1px solid rgba(22,42,69,0.12); padding: 14px 18px; border-radius: 4px; margin-bottom: 16px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <h3 style="margin: 0; color: {NAVY}; font-size: 18px;">🏢 深圳市广田云软装科技 · 供应链全周期商业统筹</h3>
+                <a href="/monographs/marimo_cloud_deco.html" target="_blank" style="font-size: 12.5px; font-weight: 700; color: {BRONZE}; text-decoration: none; border: 1px solid {BRONZE}; padding: 3px 10px; border-radius: 3px;">打开独立全息研报 ↗</a>
+            </div>
+            <div style="font-size: 13px; color: #475569; line-height: 1.6;">
+                全资子公司从 0 到 1 组建奠基：完成团队与制度建设；统筹百余份供货合同的履约，在非标供应链复杂博弈中守住合理的毛利安全边界，覆盖大型酒店、文旅与房企战采等项目类型。
+            </div>
+        </div>
+        <div style="margin-bottom: 18px;"><img src="data:image/png;base64,{img_cloud1}" style="width: 100%; border: 1px solid #e2e8f0; border-radius: 4px;" /></div>
+        <h4 style="color: {NAVY}; margin: 16px 0 8px 0;">📑 24 大核心标杆工程全生命周期核算底账</h4>
+        {df_landmarks_html}
+    </section>
+    """
 
-    # 5 大多维视角总装 Tabs
-    main_tabs = mo.ui.tabs(
-        {
-            "🎓 学术奠基 · 数理底座": tab_hust,
-            "🏛️ 顶层治理 · 资本合规": tab_board,
-            "🏢 产业统筹 · 供应链大盘": tab_cloud,
-            "💻 现代工程 · 自治湖仓": tab_ai,
-            "🗄️ 历史专案底稿归档": tab_archived,
-        }
-    )
+    stage_ai = f"""
+    <section class="stage-panel" id="stage-ai" data-stage="ai" style="padding: 12px 0;">
+        <div style="background: {BG_CREAM}; border: 1px solid rgba(22,42,69,0.12); padding: 14px 18px; border-radius: 4px; margin-bottom: 16px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <h3 style="margin: 0; color: {NAVY}; font-size: 18px;">💻 现代自主 AI 全栈工程、自治湖仓与自动化系统研发</h3>
+                <a href="/monographs/marimo_ai_engineering.html" target="_blank" style="font-size: 12.5px; font-weight: 700; color: {BRONZE}; text-decoration: none; border: 1px solid {BRONZE}; padding: 3px 10px; border-radius: 3px;">打开独立全息研报 ↗</a>
+            </div>
+            <div style="font-size: 13px; color: #475569; line-height: 1.6;">
+                将多年商业经验深度代码化：完全独立自研 8 套工业级系统、2,804 万行源码，接入 DuckDB 现代湖仓一体与 WakaTime 国际标准 120.8 小时纯有效工时，实现 100% 实证闭环。
+            </div>
+        </div>
+        <div style="margin-bottom: 18px;"><img src="data:image/png;base64,{img_ai1}" style="width: 100%; border: 1px solid #e2e8f0; border-radius: 4px;" /></div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 16px; margin-bottom: 16px;">
+            <div>
+                <h4 style="color: {NAVY}; margin: 8px 0;">🚀 8 大工业级核心代码资产与商业能力穿透</h4>
+                {df_ai_repos_html}
+            </div>
+            <div>
+                <h4 style="color: {NAVY}; margin: 8px 0;">⏱️ WakaTime 国际标准工作量度量底账</h4>
+                {df_ai_summary_html}
+            </div>
+        </div>
+    </section>
+    """
+
+    # 历史商业专案底稿与审计归档（原生 details，恒定在底部，不参与阶段切换）
+    archived_html = f"""
+    <div style="padding: 12px 0; margin-top: 24px; border-top: 1px dashed rgba(138,104,57,0.35); padding-top: 16px;">
+        <h4 style="color: {NAVY}; margin: 0 0 10px 0;">🗄️ 历史商业专案底稿与审计归档</h4>
+        <details style="margin-bottom: 10px; background: {BG_CREAM}; border: 1px solid rgba(22,42,69,0.12); padding: 10px 14px; border-radius: 4px;">
+            <summary style="cursor: pointer; font-weight: 700; color: {NAVY};">ARCH-ZY-01 遵义大酒店 · 五星级软装工程全周期商务统筹研报（已脱敏）</summary>
+            <ul style="font-size: 13px; color: #475569; line-height: 1.7;">
+                <li><strong>商业模式</strong>：遵义道桥建设集团发包，中建四局总包，深圳广田专业分包；</li>
+                <li><strong>审定结果</strong>：完成合同履约、结算审计与确权；</li>
+                <li><strong>核心机制</strong>：穿透珠三角源头工坊出厂成本，预留多级调价博弈弹性；签证留痕，结算审计据理力争，各节点款项按期安全回笼。</li>
+                <li>🔗 <a href="/monographs/marimo_cloud_deco.html">打开 Marimo 反应式研报</a></li>
+            </ul>
+        </details>
+        <details style="margin-bottom: 10px; background: {BG_CREAM}; border: 1px solid rgba(22,42,69,0.12); padding: 10px 14px; border-radius: 4px;">
+            <summary style="cursor: pointer; font-weight: 700; color: {NAVY};">ARCH-HHG-02 遵义红花岗综合体 · 政府大盘全生命周期商业研报 (3502.9万申报 / 2408.99万认价锁定)</summary>
+            <ul style="font-size: 13px; color: #475569; line-height: 1.7;">
+                <li><strong>商业统筹</strong>：遵义红花岗区城投国资发包，中建四局总包，广田专业分包；</li>
+                <li><strong>资金破局</strong>：直面业主决策层化解千万元垫资风险，争取到 1,000 万元业主无息周转借款平账；</li>
+                <li><strong>实物盘量</strong>：激光实测据实核定 16,478 ㎡，穿透 390 行原子级 BOM 物料台账，完成 14,950 件(套) 物理实物开箱交付。</li>
+                <li>🔗 <a href="/monographs/marimo_honghuagang.html">打开 Marimo 反应式研报</a></li>
+            </ul>
+        </details>
+        <details style="margin-bottom: 10px; background: {BG_CREAM}; border: 1px solid rgba(22,42,69,0.12); padding: 10px 14px; border-radius: 4px;">
+            <summary style="cursor: pointer; font-weight: 700; color: {NAVY};">ARCH-MT-03 遵义湄潭温泉酒店 · 全生命周期数据洞察研报 (单方1537元/㎡ / 审计零坏账安全回笼)</summary>
+            <ul style="font-size: 13px; color: #475569; line-height: 1.7;">
+                <li><strong>项目承揽</strong>：贵州茶旅一体化 AAAA 级景区核心配套，中建四局专业分包，签约 3,380.00 万元；</li>
+                <li><strong>降本与回款</strong>：样板房开模先行，52 套客房大货集采单件刚性降本超 36%；出厂货款覆盖率 144% 刚性回笼；</li>
+                <li><strong>结算收口</strong>：激光实测 17,241 ㎡，按包干综合单方 1,537 元/㎡ 据实核定，多轮严苛财评零坏账退出。</li>
+                <li>🔗 <a href="/monographs/marimo_meitan.html">打开 Marimo 反应式研报</a></li>
+            </ul>
+        </details>
+        <details style="margin-bottom: 10px; background: {BG_CREAM}; border: 1px solid rgba(22,42,69,0.12); padding: 10px 14px; border-radius: 4px;">
+            <summary style="cursor: pointer; font-weight: 700; color: {NAVY};">ARCH-HT-04 上海华泰中心售楼处 · 五轮竞标商务统筹研报 (正式闭口价中标 / 零垫资风控)</summary>
+            <ul style="font-size: 13px; color: #475569; line-height: 1.7;">
+                <li><strong>竞标模式</strong>：开发商正式招投标，五轮商务与方案博弈，闭口价 156.66 万元中标；</li>
+                <li><strong>风控防线</strong>：设立对等防守条款，款项到位为发货前提，实现全案零垫资出货与零纠纷交付；</li>
+                <li><strong>战略战采</strong>：同线斩获陆川九龙山庄 28 天极限抢工项目与中国奥园集团三大全国战略集采。</li>
+                <li>🔗 <a href="/monographs/marimo_huatai.html">打开 Marimo 反应式研报</a></li>
+            </ul>
+        </details>
+        <details style="margin-bottom: 4px; background: {BG_CREAM}; border: 1px solid rgba(22,42,69,0.12); padding: 10px 14px; border-radius: 4px;">
+            <summary style="cursor: pointer; font-weight: 700; color: {NAVY};">ARCH-PROV-05 专案数据与底稿穿透索引 (11.96 MB 历史原件总库)</summary>
+            <ul style="font-size: 13px; color: #475569; line-height: 1.7;">
+                <li><strong>底稿归档总盘</strong>：汇集全量合同原件盖章扫描件、经营决议月度督办单、发债尽调专业工作底稿、现场联系签证单与审计确权凭证；</li>
+                <li>🔗 <a href="/专案数据与底稿穿透索引.html">直达 11.96 MB 专案数据与底稿穿透总索引</a></li>
+            </ul>
+        </details>
+    </div>
+    """
+
+    # 生涯阶段总装：原生 tabbar + hash 驱动 stage 面板（react/shadow 完全解耦）
+    stage_tabs_html = f"""
+    <style>
+      .stage-tabbar {{ display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 14px 0; }}
+      .stage-tabbar a {{ display: inline-block; padding: 7px 14px; font-size: 12.5px; font-weight: 700; color: {NAVY}; text-decoration: none;
+                        border: 1px solid rgba(22,42,69,0.18); border-radius: 3px; background: #ffffff; }}
+      .stage-tabbar a.is-active {{ background: {NAVY}; color: #fff; border-color: {NAVY}; }}
+      .stage-panel {{ display: none; }}
+      #stage-hust {{ display: block; }}   /* 无 hash 时默认显示首个阶段 */
+      .stage-tbl {{ width: 100%; border-collapse: collapse; font-size: 12px; font-family: 'Noto Sans CJK SC', sans-serif; }}
+      .stage-tbl th {{ background: {NAVY}; color: #ffffff; font-weight: 600; text-align: left; padding: 6px 9px; border: 1px solid #e2e8f0; }}
+      .stage-tbl td {{ padding: 5px 9px; border: 1px solid #e2e8f0; vertical-align: top; }}
+      .stage-tbl tr:nth-child(even) td {{ background: #f8fafc; }}
+      .stage-tbl tr:hover td {{ background: rgba(22,42,69,0.05); }}
+    </style>
+    <div class="stage-tabbar">
+      <a href="#stage-hust" data-stage="hust">🎓 学术奠基</a>
+      <a href="#stage-board" data-stage="board">🏛️ 顶层治理</a>
+      <a href="#stage-cloud" data-stage="cloud">🏢 供应链大盘</a>
+      <a href="#stage-ai" data-stage="ai">💻 自治湖仓</a>
+    </div>
+    {stage_hust}
+    {stage_board}
+    {stage_cloud}
+    {stage_ai}
+    {archived_html}
+    """
 
     # 页面最终总装
     app_layout = mo.vstack(
         [
             hero_frontispiece,
-            main_tabs,
+            mo.md(stage_tabs_html),
             mo.md(
                 f"""
                 <div style="text-align: center; padding: 28px 0 16px 0; color: #94a3b8; font-size: 11.5px; border-top: 1px solid {BORDER_HAIR}; margin-top: 30px;">

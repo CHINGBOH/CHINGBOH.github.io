@@ -114,6 +114,68 @@ RESPONSIVE_STYLE = """
 </style>
 """
 
+# 首页「生涯阶段直达」切换引擎：document 层 JS，穿透 shadow DOM 找到原生 stage 面板，
+# 依据 location.hash 显示对应阶段并滚动顶部。纯 DOM 操作，与 React/Marimo 状态完全解耦。
+STAGE_JS = """
+<script data-stage-switch="true">
+(function () {
+  function roots() {
+    var r = [document], i = 0;
+    while (i < r.length) {
+      var d = r[i];
+      try { if (d.shadowRoot && r.indexOf(d.shadowRoot) < 0) r.push(d.shadowRoot); } catch (e) {}
+      try {
+        d.querySelectorAll('*').forEach(function (el) {
+          if (el.shadowRoot && r.indexOf(el.shadowRoot) < 0) r.push(el.shadowRoot);
+        });
+      } catch (e) {}
+      i++;
+    }
+    return r;
+  }
+  function qa(sel) {
+    var o = [];
+    roots().forEach(function (rt) {
+      try { o = o.concat([].slice.call(rt.querySelectorAll(sel))); } catch (e) {}
+    });
+    return o;
+  }
+  function panels() { return qa('.stage-panel'); }
+  function links() { return qa('a[data-stage]'); }
+  function keyOf() {
+    var keys = ['overview', 'hust', 'board', 'cloud', 'ai'];
+    var raw = (location.hash || '').replace('#', '');
+    // hash 存的是 #stage-ai，面板 data-stage 存 ai，需剥离 stage- 前缀以对齐
+    var key = raw.indexOf('stage-') === 0 ? raw.slice(6) : raw;
+    return keys.indexOf(key) >= 0 ? key : 'hust';
+  }
+  function apply() {
+    var key = keyOf();
+    panels().forEach(function (p) {
+      var k = (p.getAttribute('data-stage') || '');
+      p.style.display = (k && k === key && key !== 'overview') ? 'block' : 'none';
+    });
+    links().forEach(function (a) {
+      if (a.getAttribute('data-stage') === key) { a.classList.add('is-active'); }
+      else { a.classList.remove('is-active'); }
+    });
+    try { window.scrollTo(0, 0); } catch (e) {}
+  }
+  window.addEventListener('hashchange', apply);
+  var tries = 0;
+  function boot() {
+    if (panels().length > 0) { apply(); }
+    else if (tries++ < 80) { setTimeout(boot, 150); }
+  }
+  if (document.readyState === 'loading') {
+    window.addEventListener('DOMContentLoaded', boot);
+  } else {
+    setTimeout(boot, 300);
+  }
+})();
+</script>
+"""
+
 def clean_html_svgs(content):
     """
     清洗 HTML 内部的 SVG 标签，确保没有任何死锁的 pt/px 宽高阻碍响应式缩放
@@ -186,6 +248,12 @@ def main():
             else:
                 # 如果没有 <body>，注入到 HTML 最开头
                 content = f"{BACK_NAV_BAR}\n{content}"
+        else:
+            # 首页：注入「生涯阶段直达」切换引擎到 </body> 前
+            if "</body>" in content:
+                content = content.replace("</body>", f"{STAGE_JS}\n</body>")
+            else:
+                content = f"{STAGE_JS}\n{content}"
             
         content = clean_html_svgs(content)
         
