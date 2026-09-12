@@ -71,17 +71,17 @@ def load_lakehouse_and_styles():
 
 @app.cell
 def setup_sidebar_controls(mo, NAVY, BRONZE, BG_CREAM):
-    # 侧边栏控制器定义
-    career_stage_radio = mo.ui.radio(
-        options=[
-            "全景总览 (2002 - 2026)",
-            "🎓 华科统计学学术奠基 (2002-2006)",
-            "🏛️ 上市公司董办与总经办 (2011-2014)",
-            "🏢 广田云实体采销大盘 (2014-2024)",
-            "💻 现代自主AI湖仓工程 (2024-至今)",
-        ],
-        value="全景总览 (2002 - 2026)",
-        label="生涯全景阶段导航",
+    # 侧边栏生涯阶段直达导航：静态锚点链接，独立于后端交互，静态导出后仍可点击跳转
+    career_stage_nav = mo.md(
+        """
+        <div style="display: flex; flex-direction: column; gap: 3px; font-size: 12.5px; line-height: 1.5;">
+            <a href="/" style="display: block; padding: 7px 10px; border-left: 3px solid #8a6839; background: rgba(22,42,69,0.05); color: #162a45; text-decoration: none; font-weight: 600; border-radius: 3px;">全景总览 (2002 - 2026)</a>
+            <a href="/monographs/marimo_hust_statistics.html" style="display: block; padding: 7px 10px; border-left: 3px solid transparent; color: #334155; text-decoration: none; border-radius: 3px;" onmouseover="this.style.background='rgba(22,42,69,0.05)';this.style.borderLeftColor='#8a6839'" onmouseout="this.style.background='transparent';this.style.borderLeftColor='transparent'">🎓 华科统计学学术奠基 (2002-2006)</a>
+            <a href="/monographs/marimo_board_and_gm.html" style="display: block; padding: 7px 10px; border-left: 3px solid transparent; color: #334155; text-decoration: none; border-radius: 3px;" onmouseover="this.style.background='rgba(22,42,69,0.05)';this.style.borderLeftColor='#8a6839'" onmouseout="this.style.background='transparent';this.style.borderLeftColor='transparent'">🏛️ 上市公司董办与总经办 (2011-2014)</a>
+            <a href="/monographs/marimo_cloud_deco.html" style="display: block; padding: 7px 10px; border-left: 3px solid transparent; color: #334155; text-decoration: none; border-radius: 3px;" onmouseover="this.style.background='rgba(22,42,69,0.05)';this.style.borderLeftColor='#8a6839'" onmouseout="this.style.background='transparent';this.style.borderLeftColor='transparent'">🏢 广田云实体采销大盘 (2014-2024)</a>
+            <a href="/monographs/marimo_ai_engineering.html" style="display: block; padding: 7px 10px; border-left: 3px solid transparent; color: #334155; text-decoration: none; border-radius: 3px;" onmouseover="this.style.background='rgba(22,42,69,0.05)';this.style.borderLeftColor='#8a6839'" onmouseout="this.style.background='transparent';this.style.borderLeftColor='transparent'">💻 现代自主AI湖仓工程 (2024-至今)</a>
+        </div>
+        """
     )
 
     sidebar_panel = mo.sidebar(
@@ -103,7 +103,7 @@ def setup_sidebar_controls(mo, NAVY, BRONZE, BG_CREAM):
                 """
             ),
             mo.md("#### 🧭 生涯阶段直达"),
-            career_stage_radio,
+            career_stage_nav,
             mo.md("<hr style='margin: 14px 0; border: none; border-top: 1px dashed rgba(22,42,69,0.15);'>"),
             mo.md("#### 🎯 四大核心价值支柱索引"),
             mo.md(
@@ -150,7 +150,7 @@ def setup_sidebar_controls(mo, NAVY, BRONZE, BG_CREAM):
             ),
         ]
     )
-    return career_stage_radio, sidebar_panel
+    return sidebar_panel
 
 
 @app.cell
