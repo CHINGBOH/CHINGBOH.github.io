@@ -174,6 +174,20 @@ RESPONSIVE_STYLE = """
   [role="tab"][data-state="active"] * {
     color: #ffffff !important;
   }
+  /* 页面硬件加速与极致平滑滚动，消除滚轮卡顿与粘滞感 */
+  html, body {
+    scroll-behavior: smooth !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  .overflow-y-auto, [class*="overflow-y-auto"] {
+    scroll-behavior: smooth !important;
+    -webkit-overflow-scrolling: touch !important;
+    overscroll-behavior-y: contain !important;
+  }
+  /* 提升核心大图层，避免滚动重绘掉帧 */
+  img, svg {
+    transform: translateZ(0);
+  }
   /* 侧边栏及主视图防横向溢出 */
   .marimo-app, main, article, section, [data-marimo-app="true"], #root {
     max-width: 100% !important;
@@ -192,7 +206,7 @@ RESPONSIVE_STYLE = """
 </style>
 """
 
-# 首页生涯核心阶段选项栏与表格 Shadow DOM 强化注入脚本
+# 首页生涯核心阶段选项栏与表格 Shadow DOM 强化注入脚本（采用 WeakSet 缓存与防抖，彻底消除 setInterval 轮询）
 SHADOW_TABS_ENHANCER = """
 <script id="marimo-executive-tabs-enhancer">
 (function() {
@@ -308,48 +322,68 @@ SHADOW_TABS_ENHANCER = """
     }
   `;
 
-  function walkShadowRoots(root, callback) {
-    if (!root) return;
-    callback(root);
+  var processedRoots = new WeakSet();
+
+  function walkAndInject(root) {
+    if (!root || processedRoots.has(root)) return;
+    
+    if (root.host) {
+      var tag = root.host.tagName.toLowerCase();
+      if (tag === 'marimo-tabs' && !root.getElementById('executive-tab-style')) {
+        var s = document.createElement('style');
+        s.id = 'executive-tab-style';
+        s.textContent = TAB_CSS;
+        root.appendChild(s);
+        processedRoots.add(root);
+      } else if (tag === 'marimo-table' && !root.getElementById('executive-table-style')) {
+        var st = document.createElement('style');
+        st.id = 'executive-table-style';
+        st.textContent = TABLE_CSS;
+        root.appendChild(st);
+        processedRoots.add(root);
+      }
+    }
+
     var walker = document.createTreeWalker(root, NodeFilter.SHOW_ELEMENT);
     var node = walker.nextNode();
     while (node) {
       if (node.shadowRoot) {
-        walkShadowRoots(node.shadowRoot, callback);
+        walkAndInject(node.shadowRoot);
       }
       node = walker.nextNode();
     }
   }
 
-  function injectShadowStyles() {
-    walkShadowRoots(document.documentElement, function(root) {
-      // 增强 tabs
-      if (root.host && root.host.tagName.toLowerCase() === 'marimo-tabs') {
-        if (!root.getElementById('executive-tab-style')) {
-          var s = document.createElement('style');
-          s.id = 'executive-tab-style';
-          s.textContent = TAB_CSS;
-          root.appendChild(s);
-        }
-      }
-      // 增强 table
-      if (root.host && root.host.tagName.toLowerCase() === 'marimo-table') {
-        if (!root.getElementById('executive-table-style')) {
-          var st = document.createElement('style');
-          st.id = 'executive-table-style';
-          st.textContent = TABLE_CSS;
-          root.appendChild(st);
-        }
-      }
-    });
+  function runEnhancer() {
+    walkAndInject(document.documentElement);
   }
 
-  var observer = new MutationObserver(injectShadowStyles);
+  // 1. 初始化执行
+  runEnhancer();
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', runEnhancer, { once: true });
+  }
+  window.addEventListener('load', runEnhancer, { once: true });
+
+  // 2. 点击交互时快速触发（零轮询占用 CPU）
+  document.addEventListener('click', function(e) {
+    var target = e.target;
+    if (target && target.closest && (target.closest('[role="tab"]') || target.closest('marimo-tabs') || target.closest('button'))) {
+      requestAnimationFrame(runEnhancer);
+      setTimeout(runEnhancer, 80);
+    }
+  }, { passive: true });
+
+  // 3. 针对动态挂载的轻量 DOM 监听（限频防抖，避免无谓重算）
+  var timeoutId = null;
+  var observer = new MutationObserver(function() {
+    if (timeoutId) return;
+    timeoutId = setTimeout(function() {
+      timeoutId = null;
+      runEnhancer();
+    }, 150);
+  });
   observer.observe(document.documentElement, { childList: true, subtree: true });
-  injectShadowStyles();
-  window.addEventListener('DOMContentLoaded', injectShadowStyles);
-  window.addEventListener('load', injectShadowStyles);
-  setInterval(injectShadowStyles, 300);
 })();
 </script>
 """
@@ -412,6 +446,13 @@ def main():
         # 读取导出的 HTML 并注入响应式样式与清洗
         with open(dest_path, "r", encoding="utf-8") as f:
             content = f.read()
+
+        # 注入 CDN 预连接以加速首屏加载
+        if "<head>" in content:
+            cdn_preconnect = """<head>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />"""
+            content = content.replace("<head>", cdn_preconnect, 1)
             
         # 注入 style 到 </head> 前
         if "</head>" in content:
@@ -424,10 +465,14 @@ def main():
             if "<body>" in content:
                 content = content.replace("<body>", f"<body>\n{BACK_NAV_BAR}", 1)
             else:
-                # 如果没有 <body>，注入到 HTML 最开头
                 content = f"{BACK_NAV_BAR}\n{content}"
+            # 研报内同样包含表格，注入表格样式增强
+            if "</body>" in content:
+                content = content.replace("</body>", f"{SHADOW_TABS_ENHANCER}\n</body>")
+            else:
+                content = f"{content}\n{SHADOW_TABS_ENHANCER}"
         else:
-            # 主页：注入核心选项栏 Shadow DOM 增强脚本
+            # 主页：注入核心选项栏与表格 Shadow DOM 增强脚本
             if "</body>" in content:
                 content = content.replace("</body>", f"{SHADOW_TABS_ENHANCER}\n</body>")
             else:
