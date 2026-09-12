@@ -100,16 +100,14 @@ RESPONSIVE_STYLE = """
   @media (max-width: 768px) {
     [style*="grid-template-columns: repeat(4"],
     [style*="grid-template-columns:repeat(4"],
-    [style*="grid-template-columns: 1fr 1fr 1fr 1fr"],
-    .spec-pillar-grid {
+    [style*="grid-template-columns: 1fr 1fr 1fr 1fr"] {
       grid-template-columns: 1fr !important;
       gap: 10px !important;
     }
   }
   @media (min-width: 769px) and (max-width: 1024px) {
     [style*="grid-template-columns: repeat(4"],
-    [style*="grid-template-columns:repeat(4"],
-    .spec-pillar-grid {
+    [style*="grid-template-columns:repeat(4"] {
       grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
       gap: 12px !important;
     }
@@ -130,87 +128,6 @@ RESPONSIVE_STYLE = """
     visibility: hidden !important;
   }
 </style>
-"""
-
-# 首页「生涯阶段直达」切换引擎：document 层 JS，穿透 shadow DOM 找到原生 stage 面板，
-# 依据 location.hash 显示对应阶段。纯 DOM 操作，与 React/Marimo 状态完全解耦。
-STAGE_JS = """
-<style data-stage-style="true">
-  .career-nav { display: flex; flex-direction: column; gap: 3px; font-size: 12.5px; line-height: 1.5; }
-  .career-nav a { display: block; padding: 7px 10px; border-left: 3px solid transparent; color: #334155; text-decoration: none; border-radius: 3px; background: transparent; transition: background .12s, border-color .12s; }
-  .career-nav a:hover { background: rgba(22,42,69,0.05); border-left-color: #8a6839; }
-  .career-nav a.is-active { background: rgba(22,42,69,0.08); border-left-color: #8a6839; color: #162a45; font-weight: 700; }
-</style>
-<script data-stage-switch="true">
-(function () {
-  function roots() {
-    var r = [document], i = 0;
-    while (i < r.length) {
-      var d = r[i];
-      try { if (d.shadowRoot && r.indexOf(d.shadowRoot) < 0) r.push(d.shadowRoot); } catch (e) {}
-      try {
-        d.querySelectorAll('*').forEach(function (el) {
-          if (el.shadowRoot && r.indexOf(el.shadowRoot) < 0) r.push(el.shadowRoot);
-        });
-      } catch (e) {}
-      i++;
-    }
-    return r;
-  }
-  function qa(sel) {
-    var o = [];
-    roots().forEach(function (rt) {
-      try { o = o.concat([].slice.call(rt.querySelectorAll(sel))); } catch (e) {}
-    });
-    return o;
-  }
-  function panels() { return qa('.stage-panel'); }
-  function links() { return qa('a[data-stage]'); }
-  function keyOf() {
-    var keys = ['overview', 'hust', 'board', 'cloud', 'ai'];
-    var raw = (location.hash || '').replace('#', '');
-    // hash 存的是 #stage-ai，面板 data-stage 存 ai，需剥离 stage- 前缀以对齐
-    var key = raw.indexOf('stage-') === 0 ? raw.slice(6) : raw;
-    return keys.indexOf(key) >= 0 ? key : 'overview';
-  }
-  function apply(isInit) {
-    var key = keyOf();
-    panels().forEach(function (p) {
-      var k = (p.getAttribute('data-stage') || '');
-      // overview 状态下展示全部阶段面板；单阶段状态下只展示匹配面板
-      p.style.display = (key === 'overview' || k === key) ? 'block' : 'none';
-    });
-    links().forEach(function (a) {
-      if (a.getAttribute('data-stage') === key) { a.classList.add('is-active'); }
-      else { a.classList.remove('is-active'); }
-    });
-    // 仅在用户主动点击 hash 切换时平滑滚动，初次加载不强制跳动
-    if (!isInit && location.hash) {
-      if (key === 'overview') {
-        try { window.scrollTo({ top: 0, behavior: 'smooth' }); } catch (e) {}
-      } else {
-        try {
-          var target = qa('.stage-panel[data-stage="' + key + '"]')[0] || qa('#stage-tabbar')[0];
-          if (target) {
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
-        } catch (e) {}
-      }
-    }
-  }
-  window.addEventListener('hashchange', function() { apply(false); });
-  var tries = 0;
-  function boot() {
-    if (panels().length > 0) { apply(true); }
-    else if (tries++ < 80) { setTimeout(boot, 150); }
-  }
-  if (document.readyState === 'loading') {
-    window.addEventListener('DOMContentLoaded', boot);
-  } else {
-    setTimeout(boot, 300);
-  }
-})();
-</script>
 """
 
 def clean_html_svgs(content):
@@ -285,12 +202,6 @@ def main():
             else:
                 # 如果没有 <body>，注入到 HTML 最开头
                 content = f"{BACK_NAV_BAR}\n{content}"
-        else:
-            # 首页：注入「生涯阶段直达」切换引擎到 </body> 前
-            if "</body>" in content:
-                content = content.replace("</body>", f"{STAGE_JS}\n</body>")
-            else:
-                content = f"{STAGE_JS}\n{content}"
             
         content = clean_html_svgs(content)
         
