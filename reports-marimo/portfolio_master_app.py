@@ -2,7 +2,7 @@
 import marimo
 
 __generated_with = "0.11.12"
-app = marimo.App(width="full", app_title="BOONE LIANG / 梁清波 · 实证商业操盘与个人履历全息总谱 (Marimo 旗舰版)")
+app = marimo.App(width="full", app_title="BOONE LIANG / 梁清波 · 数据驱动商务决策与个人履历全息总谱 (Marimo 旗舰版)")
 
 
 @app.cell
@@ -679,7 +679,7 @@ def assemble_master_application(
                     </a>
                 </div>
                 <div style="font-size: 13px; color: #475569; line-height: 1.6;">
-                    将二十年商业经验深度代码化：完全独立自研 8 套工业级系统、2,804 万行源码，接入 DuckDB 现代湖仓一体与 WakaTime 国际标准 120.8 小时纯有效工时，实现 100% 实证闭环。
+                    将多年商业经验深度代码化：完全独立自研 8 套工业级系统、2,804 万行源码，接入 DuckDB 现代湖仓一体与 WakaTime 国际标准 120.8 小时纯有效工时，实现 100% 实证闭环。
                 </div>
             </div>
 
@@ -704,7 +704,7 @@ def assemble_master_application(
     # Tab 5: 历史商业专案底稿与审计归档 (手风琴)
     tab_archived = mo.accordion(
         {
-            "🗄️ ARCH-ZY-01: 遵义大酒店 · 五星级软装工程全周期商业操盘研报（已脱敏）": mo.md(
+            "🗄️ ARCH-ZY-01: 遵义大酒店 · 五星级软装工程全周期商务统筹研报（已脱敏）": mo.md(
                 """
                 - **商业模式**：遵义道桥建设集团发包，中建四局总包，深圳广田专业分包；
                 - **审定结果**：完成合同履约、结算审计与确权；
@@ -728,7 +728,7 @@ def assemble_master_application(
                 - 🔗 [打开 Marimo 反应式研报](/monographs/marimo_meitan.html)
                 """
             ),
-            "🗄️ ARCH-HT-04: 上海华泰中心售楼处 · 五轮竞标商业操盘研报 (正式闭口价中标 / 零垫资风控)": mo.md(
+            "🗄️ ARCH-HT-04: 上海华泰中心售楼处 · 五轮竞标商务统筹研报 (正式闭口价中标 / 零垫资风控)": mo.md(
                 """
                 - **竞标模式**：开发商正式招投标，五轮商务与方案博弈，闭口价 156.66 万元中标；
                 - **风控防线**：设立对等防守条款，款项到位为发货前提，实现全案零垫资出货与零纠纷交付；
@@ -750,7 +750,7 @@ def assemble_master_application(
         {
             "🎓 学术奠基 · 数理底座": tab_hust,
             "🏛️ 顶层治理 · 资本合规": tab_board,
-            "🏢 产业操盘 · 供应链大盘": tab_cloud,
+            "🏢 产业统筹 · 供应链大盘": tab_cloud,
             "💻 现代工程 · 自治湖仓": tab_ai,
             "🗄️ 历史专案底稿归档": tab_archived,
         }
@@ -764,7 +764,7 @@ def assemble_master_application(
             mo.md(
                 f"""
                 <div style="text-align: center; padding: 28px 0 16px 0; color: #94a3b8; font-size: 11.5px; border-top: 1px solid {BORDER_HAIR}; margin-top: 30px;">
-                    © 2026 Boone Liang (梁清波) · 个人履历与二十年商业操盘全息总谱 (Marimo 旗舰版) · 驱动引擎: DuckDB Direct-Lake · 弃用 YAML 中间层
+                    © 2026 Boone Liang (梁清波) · 个人履历与商业统筹全息总谱 (Marimo 旗舰版) · 驱动引擎: DuckDB Direct-Lake · 弃用 YAML 中间层
                 </div>
                 """
             ),
