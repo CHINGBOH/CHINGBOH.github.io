@@ -187,11 +187,26 @@ def render_hero_frontispiece(mo, NAVY, BRONZE, BG_CREAM, BORDER_HAIR):
             max-width: 100% !important;
             box-sizing: border-box !important;
           }}
+          /* 全站字体栈大一统：现代无衬线中英文排版体系，杜绝前后字体割裂 */
+          body, #marimo-app, marimo-tabs, marimo-tabs *, .markdown, .markdown *, .prose, .prose *,
+          div, p, span, h1, h2, h3, h4, h5, h6, table, th, td, button, input {{
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "WenQuanYi Micro Hei", sans-serif;
+          }}
+          :is(.markdown, .mo-markdown-renderer) :is(h1, h2, h3, h4, h5, h6),
+          h1, h2, h3, h4, h5, h6 {{
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "WenQuanYi Micro Hei", sans-serif !important;
+          }}
+          [style*="monospace"], [style*="JetBrains Mono"] {{
+            font-family: 'JetBrains Mono', 'Fira Code', monospace !important;
+          }}
+          [style*="EB Garamond"] {{
+            font-family: 'EB Garamond', Georgia, serif !important;
+          }}
           [data-radix-toast-viewport], ol[tabindex="-1"], li[role="status"], a[href*="marimo-team/marimo"], a[href*="marimo.io"] {{
             display: none !important;
           }}
         </style>
-        <div style="border-bottom: 1px solid {BORDER_HAIR}; padding-bottom: 24px; margin-bottom: 24px;">
+        <div style="border-bottom: 1.5px solid rgba(22, 42, 69, 0.12); padding-bottom: 18px; margin-bottom: 16px;">
             <!-- 档案题眉 -->
             <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: {BRONZE}; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 10px;">
                 <span>BOONE LIANG / PROFESSIONAL PORTFOLIO / SELECTED WORK</span>
@@ -201,7 +216,7 @@ def render_hero_frontispiece(mo, NAVY, BRONZE, BG_CREAM, BORDER_HAIR):
             <!-- 主官抬头与联系信息 -->
             <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 12px; margin-bottom: 12px;">
                 <div style="display: flex; align-items: baseline; gap: 12px;">
-                    <h1 style="font-size: 32px; font-weight: 900; color: {NAVY}; margin: 0; line-height: 1.2;">
+                    <h1 style="font-size: 30px; font-weight: 900; color: {NAVY}; margin: 0; line-height: 1.2;">
                         梁清波 <span style="font-family: 'EB Garamond', serif; font-size: 20px; font-weight: 500; color: #64748b; font-style: italic;">Boone Liang</span>
                     </h1>
                 </div>
@@ -215,32 +230,32 @@ def render_hero_frontispiece(mo, NAVY, BRONZE, BG_CREAM, BORDER_HAIR):
 
             <!-- 定位标签 -->
             <div style="margin-bottom: 14px;">
-                <span style="display: inline-block; font-family: 'Noto Serif SC', serif; font-size: 14.5px; font-weight: 700; color: {NAVY}; background: rgba(22, 42, 69, 0.04); border: 1px solid rgba(22, 42, 69, 0.15); padding: 4px 14px; border-radius: 4px; letter-spacing: 0.04em;">
+                <span style="display: inline-block; font-size: 13.5px; font-weight: 700; color: {NAVY}; background: rgba(22, 42, 69, 0.04); border: 1px solid rgba(22, 42, 69, 0.15); padding: 4px 14px; border-radius: 4px; letter-spacing: 0.03em;">
                     [ 数据驱动商务决策 · 招投标编排 · 供应链成本与咨询 ]
                 </span>
             </div>
 
             <!-- 核心公理论纲 (Executive Thesis) -->
-            <div style="font-size: 14px; font-weight: 500; color: #1e293b; line-height: 1.85; background: #ffffff; border: 1px solid {BORDER_HAIR}; border-left: 4px solid {BRONZE}; padding: 16px 20px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.02); text-align: justify; margin-bottom: 18px;">
+            <div style="font-size: 14px; font-weight: 450; color: #1e293b; line-height: 1.8; background: #ffffff; border: 1px solid rgba(22, 42, 69, 0.12); border-left: 3.5px solid {BRONZE}; padding: 16px 20px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.02); text-align: justify; margin-bottom: 14px;">
                 华中科技大学统计学学士，习惯<strong>用数据和证据做决策</strong>。早年在上市公司总经办与董办，把这套方法用于资本市场：法定信息披露、三会运作与公司债发行尽调，做的都是把事实核准、把证据留全、在监管尺度内把话说准。转入工程供应链商务后，同一套方法换了场景——面对一批五星级酒店、破亿级标杆工程与头部房企战略集采，从投标报价、源头成本核算、过程签证到结算审计与账款回笼，每一环都靠把账算透来守住利润，多轮报价测算与审计交锋是常态。近年又将这套贯穿合规与商务的决策方法，沉淀为可复算、可复用的自研数据分析与 BI 工具。
             </div>
 
             <!-- 四大核心价值兑现支柱 (4-Pillar Spec Grid) -->
-            <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 14px;">
+            <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 12px;">
                 <!-- ① 成本穿透 -->
-                <div style="background: {BG_CREAM}; border: 1px solid {BORDER_HAIR}; border-top: 3px solid {BRONZE}; border-radius: 4px; padding: 14px 16px; display: flex; flex-direction: column; justify-content: space-between;">
+                <div style="background: {BG_CREAM}; border: 1px solid rgba(22, 42, 69, 0.12); border-top: 3px solid {BRONZE}; border-radius: 4px; padding: 14px 16px; display: flex; flex-direction: column; justify-content: space-between; gap: 10px; min-height: 228px;">
                     <div>
                         <div style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 11px; margin-bottom: 6px;">
                             <span style="font-weight: 700; color: {BRONZE};">① 成本穿透</span>
                             <span style="color: #64748b;">2014-2024</span>
                         </div>
-                        <div style="font-size: 14.5px; font-weight: 700; color: {NAVY}; margin-bottom: 6px;">成本穿透与利润造血<br><span style="font-size: 12px; font-weight: normal; color: #64748b;">(Profitability)</span></div>
-                        <div style="font-size: 12.5px; color: #334155; line-height: 1.6; margin-bottom: 10px;">
+                        <div style="font-size: 14.5px; font-weight: 700; color: {NAVY}; line-height: 1.35; margin-bottom: 6px;">成本穿透与利润造血<br><span style="font-size: 11.5px; font-weight: normal; color: #64748b;">(Profitability)</span></div>
+                        <div style="font-size: 13px; color: #334155; line-height: 1.65; margin-bottom: 4px;">
                             拒绝拍脑袋报价与模糊预估。基于数理精算穿透非标供应链源头工坊底牌，建立“成本→内控→底限→报价”多轨动态防线，在激烈竞标中守住合理的毛利安全边界。
                         </div>
                     </div>
                     <div>
-                        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: {BRONZE}; background: #ffffff; padding: 5px 8px; border: 1px dashed rgba(138,104,57,0.3); border-radius: 2px; margin-bottom: 8px;">
+                        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: {BRONZE}; background: #ffffff; padding: 5px 8px; border: 1px dashed rgba(138,104,57,0.3); border-radius: 2px; line-height: 1.5; margin-bottom: 8px;">
                             源头成本底盘 · 多轨报价 · 价值工程 · 毛利防线
                         </div>
                         <a href="/monographs/marimo_cloud_deco.html" target="_blank" style="display: inline-block; font-size: 12px; font-weight: 700; color: {NAVY}; text-decoration: none;">
@@ -250,19 +265,19 @@ def render_hero_frontispiece(mo, NAVY, BRONZE, BG_CREAM, BORDER_HAIR):
                 </div>
 
                 <!-- ② 过程风控 -->
-                <div style="background: {BG_CREAM}; border: 1px solid {BORDER_HAIR}; border-top: 3px solid {BRONZE}; border-radius: 4px; padding: 14px 16px; display: flex; flex-direction: column; justify-content: space-between;">
+                <div style="background: {BG_CREAM}; border: 1px solid rgba(22, 42, 69, 0.12); border-top: 3px solid {BRONZE}; border-radius: 4px; padding: 14px 16px; display: flex; flex-direction: column; justify-content: space-between; gap: 10px; min-height: 228px;">
                     <div>
                         <div style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 11px; margin-bottom: 6px;">
                             <span style="font-weight: 700; color: {BRONZE};">② 过程风控</span>
                             <span style="color: #64748b;">2014-2024</span>
                         </div>
-                        <div style="font-size: 14.5px; font-weight: 700; color: {NAVY}; margin-bottom: 6px;">过程风控与确权回款<br><span style="font-size: 12px; font-weight: normal; color: #64748b;">(Assurance)</span></div>
-                        <div style="font-size: 12.5px; color: #334155; line-height: 1.6; margin-bottom: 10px;">
+                        <div style="font-size: 14.5px; font-weight: 700; color: {NAVY}; line-height: 1.35; margin-bottom: 6px;">过程风控与确权回款<br><span style="font-size: 11.5px; font-weight: normal; color: #64748b;">(Assurance)</span></div>
+                        <div style="font-size: 13px; color: #334155; line-height: 1.65; margin-bottom: 4px;">
                             懂人性，懂现场扯皮，更懂法律与审计。从合同条款拟定、履约签证留痕到多轮审计对抗，建立滴水不漏的证据链，把账面应收稳步转化为真实的银行回款。
                         </div>
                     </div>
                     <div>
-                        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: {BRONZE}; background: #ffffff; padding: 5px 8px; border: 1px dashed rgba(138,104,57,0.3); border-radius: 2px; margin-bottom: 8px;">
+                        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: {BRONZE}; background: #ffffff; padding: 5px 8px; border: 1px dashed rgba(138,104,57,0.3); border-radius: 2px; line-height: 1.5; margin-bottom: 8px;">
                             合同闭环 · 签证留痕 · 审计抗辩 · 账款回笼
                         </div>
                         <a href="/monographs/marimo_honghuagang.html" target="_blank" style="display: inline-block; font-size: 12px; font-weight: 700; color: {NAVY}; text-decoration: none;">
@@ -272,19 +287,19 @@ def render_hero_frontispiece(mo, NAVY, BRONZE, BG_CREAM, BORDER_HAIR):
                 </div>
 
                 <!-- ③ 顶层治理 -->
-                <div style="background: {BG_CREAM}; border: 1px solid {BORDER_HAIR}; border-top: 3px solid {BRONZE}; border-radius: 4px; padding: 14px 16px; display: flex; flex-direction: column; justify-content: space-between;">
+                <div style="background: {BG_CREAM}; border: 1px solid rgba(22, 42, 69, 0.12); border-top: 3px solid {BRONZE}; border-radius: 4px; padding: 14px 16px; display: flex; flex-direction: column; justify-content: space-between; gap: 10px; min-height: 228px;">
                     <div>
                         <div style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 11px; margin-bottom: 6px;">
                             <span style="font-weight: 700; color: {BRONZE};">③ 顶层治理</span>
                             <span style="color: #64748b;">2011-2014</span>
                         </div>
-                        <div style="font-size: 14.5px; font-weight: 700; color: {NAVY}; margin-bottom: 6px;">顶层治理与合规底盘<br><span style="font-size: 12px; font-weight: normal; color: #64748b;">(Governance)</span></div>
-                        <div style="font-size: 12.5px; color: #334155; line-height: 1.6; margin-bottom: 10px;">
+                        <div style="font-size: 14.5px; font-weight: 700; color: {NAVY}; line-height: 1.35; margin-bottom: 6px;">顶层治理与合规底盘<br><span style="font-size: 11.5px; font-weight: normal; color: #64748b;">(Governance)</span></div>
+                        <div style="font-size: 13px; color: #334155; line-height: 1.65; margin-bottom: 4px;">
                             历经百亿市值上市公司董办与总经办淬炼，深刻理解资本市场规则、三会运作与信息披露底线。具备统筹发债尽调、同业对标与公司治理的高维视野，守住合规红线。
                         </div>
                     </div>
                     <div>
-                        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: {BRONZE}; background: #ffffff; padding: 5px 8px; border: 1px dashed rgba(138,104,57,0.3); border-radius: 2px; margin-bottom: 8px;">
+                        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: {BRONZE}; background: #ffffff; padding: 5px 8px; border: 1px dashed rgba(138,104,57,0.3); border-radius: 2px; line-height: 1.5; margin-bottom: 8px;">
                             上市公司合规 · 法定信息披露 · 公司债尽调
                         </div>
                         <a href="/monographs/marimo_board_and_gm.html" target="_blank" style="display: inline-block; font-size: 12px; font-weight: 700; color: {NAVY}; text-decoration: none;">
@@ -294,19 +309,19 @@ def render_hero_frontispiece(mo, NAVY, BRONZE, BG_CREAM, BORDER_HAIR):
                 </div>
 
                 <!-- ④ 数字化杠杆 -->
-                <div style="background: {BG_CREAM}; border: 1px solid {BORDER_HAIR}; border-top: 3px solid {BRONZE}; border-radius: 4px; padding: 14px 16px; display: flex; flex-direction: column; justify-content: space-between;">
+                <div style="background: {BG_CREAM}; border: 1px solid rgba(22, 42, 69, 0.12); border-top: 3px solid {BRONZE}; border-radius: 4px; padding: 14px 16px; display: flex; flex-direction: column; justify-content: space-between; gap: 10px; min-height: 228px;">
                     <div>
                         <div style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 11px; margin-bottom: 6px;">
                             <span style="font-weight: 700; color: {BRONZE};">④ 数字化杠杆</span>
                             <span style="color: #64748b;">2024-至今</span>
                         </div>
-                        <div style="font-size: 14.5px; font-weight: 700; color: {NAVY}; margin-bottom: 6px;">数字化自主构建杠杆<br><span style="font-size: 12px; font-weight: normal; color: #64748b;">(Digital Ops)</span></div>
-                        <div style="font-size: 12.5px; color: #334155; line-height: 1.6; margin-bottom: 10px;">
+                        <div style="font-size: 14.5px; font-weight: 700; color: {NAVY}; line-height: 1.35; margin-bottom: 6px;">数字化自主构建杠杆<br><span style="font-size: 11.5px; font-weight: normal; color: #64748b;">(Digital Ops)</span></div>
+                        <div style="font-size: 13px; color: #334155; line-height: 1.65; margin-bottom: 4px;">
                             拒绝“PPT 数字化”与外包黑盒。具备亲自编写 Python/SQL/DuckDB 湖仓的系统构建能力，把复杂的业务流程、成本核算与履约监控转化为可落地的自动化工具。
                         </div>
                     </div>
                     <div>
-                        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: {BRONZE}; background: #ffffff; padding: 5px 8px; border: 1px dashed rgba(138,104,57,0.3); border-radius: 2px; margin-bottom: 8px;">
+                        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: {BRONZE}; background: #ffffff; padding: 5px 8px; border: 1px dashed rgba(138,104,57,0.3); border-radius: 2px; line-height: 1.5; margin-bottom: 8px;">
                             自主全栈 · DuckDB湖仓 · 业务提效工具 · 零黑盒
                         </div>
                         <a href="/monographs/marimo_ai_engineering.html" target="_blank" style="display: inline-block; font-size: 12px; font-weight: 700; color: {NAVY}; text-decoration: none;">
@@ -578,15 +593,15 @@ def assemble_master_application(
     # Tab 1: 华科统计学学术奠基
     tab_hust = mo.md(
         f"""
-        <div style="padding: 12px 0;">
-            <div style="background: {BG_CREAM}; border: 1px solid rgba(22,42,69,0.12); padding: 14px 18px; border-radius: 4px; margin-bottom: 16px;">
+        <div style="padding: 4px 0 16px 0;">
+            <div style="background: {BG_CREAM}; border: 1px solid rgba(22,42,69,0.12); padding: 14px 18px; border-radius: 4px; margin-bottom: 14px;">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-                    <h3 style="margin: 0; color: {NAVY}; font-size: 18px;">🎓 华中科技大学统计学学术奠基与数理算法底座</h3>
-                    <a href="/monographs/marimo_hust_statistics.html" target="_blank" style="font-size: 12.5px; font-weight: 700; color: {BRONZE}; text-decoration: none; border: 1px solid {BRONZE}; padding: 3px 10px; border-radius: 3px;">
+                    <h3 style="margin: 0; color: {NAVY}; font-size: 16px; font-weight: 700; line-height: 1.4;">🎓 华中科技大学统计学学术奠基与数理算法底座</h3>
+                    <a href="/monographs/marimo_hust_statistics.html" target="_blank" style="font-size: 12px; font-weight: 700; color: {BRONZE}; text-decoration: none; border: 1px solid {BRONZE}; padding: 3px 10px; border-radius: 3px;">
                         打开独立全息研报 ↗
                     </a>
                 </div>
-                <div style="font-size: 13px; color: #475569; line-height: 1.6;">
+                <div style="font-size: 13px; color: #475569; line-height: 1.65;">
                     华中科技大学数学与统计学院 · 2002 级首届统计学本科 · 理学学士 (B.S.)<br>
                     <strong>培养规格</strong>：四年 160+ 必修学分 · 30+ 门数理与计算机骨干课程 · 《Lattice Boltzmann (LBM) 算法与流体模拟》毕业科研攻坚。
                 </div>
@@ -601,7 +616,7 @@ def assemble_master_application(
                 </div>
             </div>
 
-            <h4 style="color: {NAVY}; margin: 16px 0 8px 0;">📑 24 门数理核心骨干课程与底层思维训练穿透台账</h4>
+            <h4 style="color: {NAVY}; margin: 16px 0 8px 0; font-size: 14px; font-weight: 700;">📑 24 门数理核心骨干课程与底层思维训练穿透台账</h4>
             {mo.ui.table(df_courses, selection=None, pagination=True)}
         </div>
         """
@@ -610,15 +625,15 @@ def assemble_master_application(
     # Tab 2: 广田股份董办与总经办
     tab_board = mo.md(
         f"""
-        <div style="padding: 12px 0;">
-            <div style="background: {BG_CREAM}; border: 1px solid rgba(22,42,69,0.12); padding: 14px 18px; border-radius: 4px; margin-bottom: 16px;">
+        <div style="padding: 4px 0 16px 0;">
+            <div style="background: {BG_CREAM}; border: 1px solid rgba(22,42,69,0.12); padding: 14px 18px; border-radius: 4px; margin-bottom: 14px;">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-                    <h3 style="margin: 0; color: {NAVY}; font-size: 18px;">🏛️ 深圳广田股份 (SZ.002482) 董办合规资本运作与总经办企业运营</h3>
-                    <a href="/monographs/marimo_board_and_gm.html" target="_blank" style="font-size: 12.5px; font-weight: 700; color: {BRONZE}; text-decoration: none; border: 1px solid {BRONZE}; padding: 3px 10px; border-radius: 3px;">
+                    <h3 style="margin: 0; color: {NAVY}; font-size: 16px; font-weight: 700; line-height: 1.4;">🏛️ 深圳广田股份 (SZ.002482) 董办合规资本运作与总经办企业运营</h3>
+                    <a href="/monographs/marimo_board_and_gm.html" target="_blank" style="font-size: 12px; font-weight: 700; color: {BRONZE}; text-decoration: none; border: 1px solid {BRONZE}; padding: 3px 10px; border-radius: 3px;">
                         打开独立全息研报 ↗
                     </a>
                 </div>
-                <div style="font-size: 13px; color: #475569; line-height: 1.6;">
+                <div style="font-size: 13px; color: #475569; line-height: 1.65;">
                     历经百亿市值上市公司治理中枢：执笔 206 篇法定公告（深交所最高 A 级信披考评、0 监管函件）、协同 12 亿元公司债发债与 55 个尽调模块封包、总经办经营例会决议 97.8% 闭环督办；任期主导与见证广田股份市值跨越 132.2 亿元巅峰。
                 </div>
             </div>
@@ -629,11 +644,11 @@ def assemble_master_application(
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 16px; margin-bottom: 16px;">
                 <div>
-                    <h4 style="color: {NAVY}; margin: 8px 0;">📜 深交所法定信息披露官方公告底账 (206篇抽样)</h4>
+                    <h4 style="color: {NAVY}; margin: 8px 0; font-size: 14px; font-weight: 700;">📜 深交所法定信息披露官方公告底账 (206篇抽样)</h4>
                     {mo.ui.table(df_announcements, selection=None, pagination=True)}
                 </div>
                 <div>
-                    <h4 style="color: {NAVY}; margin: 8px 0;">💼 12 亿元公司债发债 55 个专业尽调模块</h4>
+                    <h4 style="color: {NAVY}; margin: 8px 0; font-size: 14px; font-weight: 700;">💼 12 亿元公司债发债 55 个专业尽调模块</h4>
                     {mo.ui.table(df_bond_modules, selection=None, pagination=True)}
                 </div>
             </div>
@@ -644,15 +659,15 @@ def assemble_master_application(
     # Tab 3: 广田云软装 135 份合同大盘
     tab_cloud = mo.md(
         f"""
-        <div style="padding: 12px 0;">
-            <div style="background: {BG_CREAM}; border: 1px solid rgba(22,42,69,0.12); padding: 14px 18px; border-radius: 4px; margin-bottom: 16px;">
+        <div style="padding: 4px 0 16px 0;">
+            <div style="background: {BG_CREAM}; border: 1px solid rgba(22,42,69,0.12); padding: 14px 18px; border-radius: 4px; margin-bottom: 14px;">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-                    <h3 style="margin: 0; color: {NAVY}; font-size: 18px;">🏢 深圳市广田云软装科技 · 供应链全周期商业统筹</h3>
-                    <a href="/monographs/marimo_cloud_deco.html" target="_blank" style="font-size: 12.5px; font-weight: 700; color: {BRONZE}; text-decoration: none; border: 1px solid {BRONZE}; padding: 3px 10px; border-radius: 3px;">
+                    <h3 style="margin: 0; color: {NAVY}; font-size: 16px; font-weight: 700; line-height: 1.4;">🏢 深圳市广田云软装科技 · 供应链全周期商业统筹</h3>
+                    <a href="/monographs/marimo_cloud_deco.html" target="_blank" style="font-size: 12px; font-weight: 700; color: {BRONZE}; text-decoration: none; border: 1px solid {BRONZE}; padding: 3px 10px; border-radius: 3px;">
                         打开独立全息研报 ↗
                     </a>
                 </div>
-                <div style="font-size: 13px; color: #475569; line-height: 1.6;">
+                <div style="font-size: 13px; color: #475569; line-height: 1.65;">
                     全资子公司从 0 到 1 组建奠基：完成团队与制度建设；统筹百余份供货合同的履约，在非标供应链复杂博弈中守住合理的毛利安全边界，覆盖大型酒店、文旅与房企战采等项目类型。
                 </div>
             </div>
@@ -661,7 +676,7 @@ def assemble_master_application(
                 <img src="data:image/png;base64,{img_cloud1}" style="width: 100%; border: 1px solid #e2e8f0; border-radius: 4px;" />
             </div>
 
-            <h4 style="color: {NAVY}; margin: 16px 0 8px 0;">📑 24 大核心标杆工程全生命周期核算底账</h4>
+            <h4 style="color: {NAVY}; margin: 16px 0 8px 0; font-size: 14px; font-weight: 700;">📑 24 大核心标杆工程全生命周期核算底账</h4>
             {mo.ui.table(df_landmarks, selection=None, pagination=True)}
         </div>
         """
@@ -670,15 +685,15 @@ def assemble_master_application(
     # Tab 4: 现代 AI 全栈工程与自治湖仓
     tab_ai = mo.md(
         f"""
-        <div style="padding: 12px 0;">
-            <div style="background: {BG_CREAM}; border: 1px solid rgba(22,42,69,0.12); padding: 14px 18px; border-radius: 4px; margin-bottom: 16px;">
+        <div style="padding: 4px 0 16px 0;">
+            <div style="background: {BG_CREAM}; border: 1px solid rgba(22,42,69,0.12); padding: 14px 18px; border-radius: 4px; margin-bottom: 14px;">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-                    <h3 style="margin: 0; color: {NAVY}; font-size: 18px;">💻 现代自主 AI 全栈工程、自治湖仓与自动化系统研发</h3>
-                    <a href="/monographs/marimo_ai_engineering.html" target="_blank" style="font-size: 12.5px; font-weight: 700; color: {BRONZE}; text-decoration: none; border: 1px solid {BRONZE}; padding: 3px 10px; border-radius: 3px;">
+                    <h3 style="margin: 0; color: {NAVY}; font-size: 16px; font-weight: 700; line-height: 1.4;">💻 现代自主 AI 全栈工程、自治湖仓与自动化系统研发</h3>
+                    <a href="/monographs/marimo_ai_engineering.html" target="_blank" style="font-size: 12px; font-weight: 700; color: {BRONZE}; text-decoration: none; border: 1px solid {BRONZE}; padding: 3px 10px; border-radius: 3px;">
                         打开独立全息研报 ↗
                     </a>
                 </div>
-                <div style="font-size: 13px; color: #475569; line-height: 1.6;">
+                <div style="font-size: 13px; color: #475569; line-height: 1.65;">
                     将多年商业经验深度代码化：完全独立自研 8 套工业级系统、2,804 万行源码，接入 DuckDB 现代湖仓一体与 WakaTime 国际标准 120.8 小时纯有效工时，实现 100% 实证闭环。
                 </div>
             </div>
@@ -689,11 +704,11 @@ def assemble_master_application(
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 16px; margin-bottom: 16px;">
                 <div>
-                    <h4 style="color: {NAVY}; margin: 8px 0;">🚀 8 大工业级核心代码资产与商业能力穿透</h4>
+                    <h4 style="color: {NAVY}; margin: 8px 0; font-size: 14px; font-weight: 700;">🚀 8 大工业级核心代码资产与商业能力穿透</h4>
                     {mo.ui.table(df_ai_repos, selection=None, pagination=True)}
                 </div>
                 <div>
-                    <h4 style="color: {NAVY}; margin: 8px 0;">⏱️ WakaTime 国际标准工作量度量底账</h4>
+                    <h4 style="color: {NAVY}; margin: 8px 0; font-size: 14px; font-weight: 700;">⏱️ WakaTime 国际标准工作量度量底账</h4>
                     {mo.ui.table(df_ai_summary, selection=None, pagination=True)}
                 </div>
             </div>
@@ -748,7 +763,7 @@ def assemble_master_application(
     # 选项卡上方醒目引导眉题
     tabs_header = mo.md(
         f"""
-        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin: 24px 0 6px 0; padding-bottom: 6px; border-bottom: 1.5px solid rgba(22,42,69,0.12);">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin: 0 0 10px 0; padding-bottom: 4px;">
             <div style="display: flex; align-items: baseline; gap: 8px;">
                 <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; color: {BRONZE}; letter-spacing: 0.1em; text-transform: uppercase;">
                     CHRONOLOGICAL DOSSIERS

@@ -112,25 +112,42 @@ RESPONSIVE_STYLE = """
       gap: 12px !important;
     }
   }
+  /* 全站字体栈大一统：现代无衬线中英文排版系统，杜绝前后字体割裂 */
+  :root, body, #marimo-app, 
+  marimo-tabs, marimo-tabs *, 
+  .markdown, .markdown *, .prose, .prose *,
+  div, p, span, h1, h2, h3, h4, h5, h6, table, th, td, button, input {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "WenQuanYi Micro Hei", sans-serif;
+  }
+  :is(.markdown, .mo-markdown-renderer) :is(h1, h2, h3, h4, h5, h6),
+  h1, h2, h3, h4, h5, h6 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "WenQuanYi Micro Hei", sans-serif !important;
+  }
+  [style*="monospace"], [style*="JetBrains Mono"] {
+    font-family: 'JetBrains Mono', 'Fira Code', monospace !important;
+  }
+  [style*="EB Garamond"] {
+    font-family: 'EB Garamond', Georgia, serif !important;
+  }
   /* ================= 核心生涯选项栏重点强化 (Executive Master Tabs) ================= */
   [role="tablist"] {
     display: flex !important;
     flex-wrap: wrap !important;
-    gap: 8px !important;
+    gap: 6px !important;
     background: #f1f5f9 !important;
     border: 1.5px solid rgba(22, 42, 69, 0.16) !important;
     border-radius: 6px !important;
-    padding: 6px 8px !important;
+    padding: 5px 6px !important;
     max-height: none !important;
     height: auto !important;
     box-shadow: 0 2px 8px rgba(22, 42, 69, 0.06) !important;
-    margin: 8px 0 16px 0 !important;
+    margin: 0 0 14px 0 !important;
   }
   [role="tab"] {
-    font-size: 13.5px !important;
+    font-size: 12.5px !important;
     font-weight: 700 !important;
-    font-family: 'Noto Sans CJK SC', 'PingFang SC', sans-serif !important;
-    padding: 8px 16px !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "WenQuanYi Micro Hei", sans-serif !important;
+    padding: 6px 11px !important;
     border-radius: 4px !important;
     color: #475569 !important;
     background: #ffffff !important;
@@ -183,22 +200,22 @@ SHADOW_TABS_ENHANCER = """
     [role="tablist"] {
       display: flex !important;
       flex-wrap: wrap !important;
-      gap: 10px !important;
+      gap: 6px !important;
       background: #f1f5f9 !important;
       border: 1.5px solid rgba(22, 42, 69, 0.16) !important;
-      border-radius: 8px !important;
-      padding: 8px 10px !important;
+      border-radius: 6px !important;
+      padding: 5px 6px !important;
       max-height: none !important;
       height: auto !important;
-      box-shadow: 0 3px 12px rgba(22, 42, 69, 0.08) !important;
-      margin: 10px 0 18px 0 !important;
+      box-shadow: 0 2px 8px rgba(22, 42, 69, 0.06) !important;
+      margin: 0 0 14px 0 !important;
     }
     [role="tab"] {
-      font-size: 14px !important;
+      font-size: 12.5px !important;
       font-weight: 700 !important;
-      font-family: 'Noto Sans CJK SC', 'PingFang SC', sans-serif !important;
-      padding: 10px 18px !important;
-      border-radius: 6px !important;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "WenQuanYi Micro Hei", sans-serif !important;
+      padding: 6px 11px !important;
+      border-radius: 4px !important;
       color: #334155 !important;
       background: #ffffff !important;
       border: 1px solid rgba(22, 42, 69, 0.12) !important;
@@ -210,14 +227,14 @@ SHADOW_TABS_ENHANCER = """
       color: #162a45 !important;
       border-color: #8a6839 !important;
       transform: translateY(-1px) !important;
-      box-shadow: 0 4px 10px rgba(22, 42, 69, 0.1) !important;
+      box-shadow: 0 2px 6px rgba(22, 42, 69, 0.08) !important;
     }
     [role="tab"][data-state="active"] {
       background: #162a45 !important;
       color: #ffffff !important;
       font-weight: 800 !important;
       border-color: #162a45 !important;
-      box-shadow: 0 4px 14px rgba(22, 42, 69, 0.3) !important;
+      box-shadow: 0 3px 10px rgba(22, 42, 69, 0.25) !important;
       transform: translateY(-1px) !important;
     }
     [role="tab"][data-state="active"] * {

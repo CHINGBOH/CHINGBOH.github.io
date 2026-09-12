@@ -53,3 +53,5 @@ reports-marimo/__marimo__/
 verify_*.py
 reports-django/
 reports-quarto/
+.playwright-cli/
+output/
