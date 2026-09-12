@@ -665,7 +665,7 @@
                 </div>
             </div>
 
-            <!-- FIG.04 全景 135 份盖章合同大盘与四大资金回款风控矩阵 -->
+            <!-- FIG.04 项目组合与资金回款风控矩阵（已脱敏） -->
             <div style="background:#faf9f5; border:1px solid var(--border-hairline); border-radius:var(--radius-md); padding:24px;">
                 <div class="chart-header">
                     <div class="chart-title-wrap">
@@ -1065,13 +1065,13 @@
                     formatter: function(params) {
                         let res = '<strong>' + params[0].name + '</strong><br/>';
                         params.forEach(p => {
-                            res += p.marker + ' ' + p.seriesName + ': <strong>' + p.value + ' 万元</strong><br/>';
+                            res += p.marker + ' ' + p.seriesName + ': <strong>相对量级 ' + p.value + '</strong><br/>';
                         });
                         return res;
                     }
                 },
                 legend: {
-                    data: ['签约合同金额', '审定确权金额'],
+                    data: ['合同量级', '确权量级'],
                     top: 0,
                     right: 0,
                     textStyle: { fontFamily: 'JetBrains Mono', fontSize: 11, color: palette.slate }
@@ -1080,9 +1080,8 @@
                 xAxis: {
                     type: 'category',
                     data: [
-                        '遵义大酒店', '汇川温泉城', '遵义开元名都', '仁怀温泉小镇', '湄江温泉酒店',
-                        '汕头国际酒店', '恒大全国战采', '红花岗综合体', '海南生态园', '莫斯科华铭园',
-                        '婺女洲度假区', '平度雅高美爵'
+                        '项目 A', '项目 B', '项目 C', '项目 D', '项目 E', '项目 F',
+                        '项目 G', '项目 H', '项目 I', '项目 J', '项目 K', '项目 L'
                     ],
                     axisLabel: {
                         fontFamily: 'Noto Serif SC',
@@ -1095,24 +1094,24 @@
                 },
                 yAxis: {
                     type: 'value',
-                    name: '万元',
+                    name: '相对量级（已脱敏）',
                     nameTextStyle: { fontFamily: 'JetBrains Mono', fontSize: 10, color: palette.slate },
                     axisLabel: { fontFamily: 'JetBrains Mono', fontSize: 10, color: palette.slate },
                     splitLine: { lineStyle: { color: '#f1f5f9', type: 'dashed' } }
                 },
                 series: [
                     {
-                        name: '签约合同金额',
+                        name: '合同量级',
                         type: 'bar',
                         barWidth: 13,
-                        data: [12500, 10900, 10300, 5200, 3380, 3285, 3250, 3112.5, 2664.79, 2180, 1941.26, 1854],
+                        data: [100, 87, 82, 42, 27, 26, 26, 25, 21, 17, 16, 15],
                         itemStyle: { color: palette.navy, borderRadius: [2, 2, 0, 0] }
                     },
                     {
-                        name: '审定确权金额',
+                        name: '确权量级',
                         type: 'bar',
                         barWidth: 13,
-                        data: [9300, 9800, 9500, 4800, 2798.5, 3285, 2800, 2200, 2664.79, 2180, 1941.26, 1854],
+                        data: [74, 78, 76, 38, 22, 26, 22, 18, 21, 17, 16, 15],
                         itemStyle: { color: palette.forest, borderRadius: [2, 2, 0, 0] }
                     }
                 ]
@@ -1128,7 +1127,7 @@
                 backgroundColor: 'transparent',
                 tooltip: {
                     trigger: 'item',
-                    formatter: '{b}: <strong>{c} 万元</strong> ({d}%)'
+                    formatter: '{b}: <strong>结构示意</strong>'
                 },
                 legend: {
                     orient: 'vertical',
@@ -1140,7 +1139,7 @@
                 },
                 series: [
                     {
-                        name: '业态投资占比',
+                        name: '项目类型结构（已脱敏）',
                         type: 'pie',
                         radius: ['45%', '72%'],
                         center: ['36%', '50%'],
@@ -1160,10 +1159,10 @@
                             }
                         },
                         data: [
-                            { value: 33700.00, name: '遵义三大破亿超级工程 (49.3%)', itemStyle: { color: palette.navy } },
-                            { value: 23500.00, name: '全国五星酒店及国宾馆群 (34.4%)', itemStyle: { color: palette.forest } },
-                            { value: 6472.00, name: '海外公建及知名文旅胜地 (9.5%)', itemStyle: { color: palette.gold } },
-                            { value: 4676.00, name: '头部房企战采与高端商办 (6.8%)', itemStyle: { color: palette.bronze } }
+                            { value: 45, name: '大型酒店项目', itemStyle: { color: palette.navy } },
+                            { value: 35, name: '五星酒店与国宾馆', itemStyle: { color: palette.forest } },
+                            { value: 12, name: '公建与文旅项目', itemStyle: { color: palette.gold } },
+                            { value: 8, name: '房企战采与商办', itemStyle: { color: palette.bronze } }
                         ]
                     }
                 ]
@@ -1230,7 +1229,7 @@
             window.addEventListener('resize', () => chartHrBar.resize());
         }
 
-        // FIG.04 全景 135 份盖章合同大盘与审定产值结构
+        // FIG.04 项目组合与审定产值结构（已脱敏）
         const chartCashflowEl = document.getElementById('chart-cashflow-grid');
         if (chartCashflowEl) {
             const chartCashflowGrid = echarts.init(chartCashflowEl);
@@ -1242,13 +1241,13 @@
                     formatter: function(params) {
                         let res = '<strong>' + params[0].name + '</strong><br/>';
                         params.forEach(p => {
-                            res += p.marker + ' ' + p.seriesName + ': <strong>' + p.value + ' 万元</strong><br/>';
+                            res += p.marker + ' ' + p.seriesName + ': <strong>相对量级 ' + p.value + '</strong><br/>';
                         });
                         return res;
                     }
                 },
                 legend: {
-                    data: ['签约合同额', '审定产值'],
+                    data: ['合同量级', '确权量级'],
                     top: 0,
                     right: 0,
                     textStyle: { fontFamily: 'JetBrains Mono', fontSize: 11, color: palette.slate }
@@ -1256,30 +1255,30 @@
                 grid: { top: 35, bottom: 40, left: 65, right: 20 },
                 xAxis: {
                     type: 'category',
-                    data: ['破亿级标杆盘', '五星酒店及国宾馆', '文旅胜地民宿', '头部房企全国战采'],
+                    data: ['大型酒店项目', '五星酒店及国宾馆', '文旅项目', '房企战采'],
                     axisLabel: { fontFamily: 'Noto Serif SC', fontSize: 11, color: palette.slate },
                     axisLine: { lineStyle: { color: palette.border } }
                 },
                 yAxis: {
                     type: 'value',
-                    name: '万元',
+                    name: '相对量级（已脱敏）',
                     nameTextStyle: { fontFamily: 'JetBrains Mono', fontSize: 10, color: palette.slate },
                     axisLabel: { fontFamily: 'JetBrains Mono', fontSize: 10, color: palette.slate },
                     splitLine: { lineStyle: { color: '#f1f5f9', type: 'dashed' } }
                 },
                 series: [
                     {
-                        name: '签约合同额',
+                        name: '合同量级',
                         type: 'bar',
                         barWidth: 18,
-                        data: [33700, 23500, 6472, 4676],
+                        data: [100, 70, 20, 14],
                         itemStyle: { color: palette.navy, borderRadius: [2, 2, 0, 0] }
                     },
                     {
-                        name: '审定产值',
+                        name: '确权量级',
                         type: 'bar',
                         barWidth: 18,
-                        data: [28600, 20600, 6100, 3915.5],
+                        data: [85, 62, 18, 12],
                         itemStyle: { color: palette.bronze, borderRadius: [2, 2, 0, 0] }
                     }
                 ]

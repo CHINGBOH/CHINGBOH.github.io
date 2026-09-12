@@ -3,14 +3,17 @@
 Marimo 导出全量静态 HTML 并注入 100% 图表响应式伸缩引擎与去水印保护
 """
 
+import argparse
 import os
 import re
 import subprocess
 import sys
+from pathlib import Path
 
-BASE_DIR = "/home/l/projects/CHINGBOH.github.io"
-PYTHON = "/home/l/.data-science-venv/bin/python"
-MARIMO = "/home/l/.data-science-venv/bin/marimo"
+BASE_DIR = Path(__file__).resolve().parents[1]
+DEFAULT_MARIMO = os.environ.get(
+    "MARIMO_BIN", "/home/l/.data-science-venv/bin/marimo"
+)
 
 TASKS = [
     # (src, dest, is_monograph)
@@ -128,17 +131,39 @@ def clean_html_svgs(content):
     return content
 
 def main():
+    parser = argparse.ArgumentParser(
+        description="Export the Marimo source apps used by the public static site."
+    )
+    parser.add_argument(
+        "--output-dir",
+        default=str(BASE_DIR),
+        help="Directory that receives index.html and monographs/ (default: repository root)",
+    )
+    parser.add_argument(
+        "--marimo-bin",
+        default=DEFAULT_MARIMO,
+        help="marimo executable (or set MARIMO_BIN)",
+    )
+    parser.add_argument(
+        "--only",
+        help="Export only a matching app/output name (for example: huatai)",
+    )
+    args = parser.parse_args()
+    output_dir = Path(args.output_dir).resolve()
     os.chdir(BASE_DIR)
     for src_rel, dest_rel, is_monograph in TASKS:
-        src_path = os.path.join(BASE_DIR, src_rel)
-        dest_path = os.path.join(BASE_DIR, dest_rel)
+        if args.only and args.only.lower() not in f"{src_rel} {dest_rel}".lower():
+            continue
+        src_path = BASE_DIR / src_rel
+        dest_path = output_dir / dest_rel
         
         if not os.path.exists(src_path):
             print(f"Skipping {src_rel}, not found")
             continue
             
         print(f"--> Exporting {src_rel} -> {dest_rel}...")
-        cmd = [MARIMO, "export", "html", src_path, "-o", dest_path, "--no-include-code", "-f"]
+        dest_path.parent.mkdir(parents=True, exist_ok=True)
+        cmd = [args.marimo_bin, "export", "html", str(src_path), "-o", str(dest_path), "--no-include-code", "-f"]
         res = subprocess.run(cmd, capture_output=True, text=True)
         if res.returncode != 0:
             print(f"Error exporting {src_rel}: {res.stderr}")
@@ -167,7 +192,7 @@ def main():
         with open(dest_path, "w", encoding="utf-8") as f:
             f.write(content)
             
-        print(f"    ✓ {'[MONOGRAPH+NAV]' if is_monograph else '[INDEX]'} {dest_rel} ({len(content):,} bytes)")
+        print(f"    ✓ {'[MONOGRAPH+NAV]' if is_monograph else '[INDEX]'} {dest_path} ({len(content):,} bytes)")
 
     print("\nAll Marimo reports exported and patched with responsive engine!")
 

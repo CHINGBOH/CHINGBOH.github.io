@@ -1,4 +1,4 @@
-# 自动构建 Next.js 静态站点并部署到 GitHub Pages
+# 装配已审核的 Marimo 静态导出物并部署到 GitHub Pages
 name: Deploy to GitHub Pages
 
 on:
@@ -22,17 +22,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build static export
-        run: npm run build
+      - name: Assemble Marimo static site
+        run: |
+          python3 scripts/assemble_marimo_site.py --output site
+          python3 scripts/assemble_marimo_site.py --check
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -40,7 +33,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./site
 
   deploy:
     environment:

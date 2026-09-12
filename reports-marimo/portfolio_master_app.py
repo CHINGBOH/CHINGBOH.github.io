@@ -97,7 +97,7 @@ def setup_sidebar_controls(mo, NAVY, BRONZE, BG_CREAM):
                     </div>
                     <div style="font-size: 11.5px; color: #475569; margin-top: 5px; line-height: 1.5;">
                         华中科技大学统计学理学学士<br>
-                        实证商业操盘 · 上市公司合规 · 现代自研工程
+                        数据驱动商务决策 · 招投标编排 · 供应链成本
                     </div>
                 </div>
                 """
@@ -111,7 +111,7 @@ def setup_sidebar_controls(mo, NAVY, BRONZE, BG_CREAM):
                 <div style="background: {BG_CREAM}; border: 1px solid rgba(138,104,57,0.2); border-radius: 4px; padding: 10px 12px; margin-bottom: 12px; font-size: 11.5px; line-height: 1.6; color: #334155;">
                     <div style="margin-bottom: 6px;">
                         <strong style="color: {BRONZE};">① 成本穿透</strong> (2014-2024)<br>
-                        <span style="color: {NAVY}; font-weight: 600;">成本穿透与利润造血</span> · 守住 30%~35% 毛利
+                        <span style="color: {NAVY}; font-weight: 600;">成本穿透与利润造血</span> · 毛利安全边界
                     </div>
                     <div style="margin-bottom: 6px;">
                         <strong style="color: {BRONZE};">② 过程风控</strong> (2014-2024)<br>
@@ -119,7 +119,7 @@ def setup_sidebar_controls(mo, NAVY, BRONZE, BG_CREAM):
                     </div>
                     <div style="margin-bottom: 6px;">
                         <strong style="color: {BRONZE};">③ 顶层治理</strong> (2011-2014)<br>
-                        <span style="color: {NAVY}; font-weight: 600;">顶层治理与合规底盘</span> · 206篇A级信披/12亿债
+                        <span style="color: {NAVY}; font-weight: 600;">顶层治理与合规底盘</span> · 法定信披/公司债尽调
                     </div>
                     <div>
                         <strong style="color: {BRONZE};">④ 数字化杠杆</strong> (2024-至今)<br>
@@ -216,13 +216,13 @@ def render_hero_frontispiece(mo, NAVY, BRONZE, BG_CREAM, BORDER_HAIR):
             <!-- 定位标签 -->
             <div style="margin-bottom: 14px;">
                 <span style="display: inline-block; font-family: 'Noto Serif SC', serif; font-size: 14.5px; font-weight: 700; color: {NAVY}; background: rgba(22, 42, 69, 0.04); border: 1px solid rgba(22, 42, 69, 0.15); padding: 4px 14px; border-radius: 4px; letter-spacing: 0.04em;">
-                    [ 实证商业操盘 · 上市公司合规底盘 · 现代数字化自研工程 ]
+                    [ 数据驱动商务决策 · 招投标编排 · 供应链成本与咨询 ]
                 </span>
             </div>
 
             <!-- 核心公理论纲 (Executive Thesis) -->
             <div style="font-size: 14px; font-weight: 500; color: #1e293b; line-height: 1.85; background: #ffffff; border: 1px solid {BORDER_HAIR}; border-left: 4px solid {BRONZE}; padding: 16px 20px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.02); text-align: justify; margin-bottom: 18px;">
-                华中科技大学统计学理学学士。二十年职业经历坚持一条原则：<strong>在不确定的商业环境中，以严密的数理逻辑与确凿的实证证据，构建确定性的商业结果。</strong>早年历练于广田股份（SZ.002482）总经办与董办，执笔全量法定公告（深交所最高 A 级信披考评），深度参与公司债发债尽调，具备扎实的合规风控与资本视野；深耕工程软装与供应链采销十余年，主导数亿级供货合同全周期签约与结算闭环，精通源头成本穿透、多轨报价测算、过程签证闭环与结算审计确权，在复杂现场严守利润并兑现回款；近年将数理功底与业务经验全面数字化，自主研发 DuckDB 湖仓分析体系与自动化提效工具，兼具战略高度理解力、地面穿透执行力与代码级系统构建能力。
+                华中科技大学统计学学士，习惯<strong>用数据和证据做决策</strong>。早年在上市公司总经办与董办，把这套方法用于资本市场：法定信息披露、三会运作与公司债发行尽调，做的都是把事实核准、把证据留全、在监管尺度内把话说准。转入工程供应链商务后，同一套方法换了场景——面对一批五星级酒店、破亿级标杆工程与头部房企战略集采，从投标报价、源头成本核算、过程签证到结算审计与账款回笼，每一环都靠把账算透来守住利润，多轮报价测算与审计交锋是常态。近年又将这套贯穿合规与商务的决策方法，沉淀为可复算、可复用的自研数据分析与 BI 工具。
             </div>
 
             <!-- 四大核心价值兑现支柱 (4-Pillar Spec Grid) -->
@@ -236,7 +236,7 @@ def render_hero_frontispiece(mo, NAVY, BRONZE, BG_CREAM, BORDER_HAIR):
                         </div>
                         <div style="font-size: 14.5px; font-weight: 700; color: {NAVY}; margin-bottom: 6px;">成本穿透与利润造血<br><span style="font-size: 12px; font-weight: normal; color: #64748b;">(Profitability)</span></div>
                         <div style="font-size: 12.5px; color: #334155; line-height: 1.6; margin-bottom: 10px;">
-                            拒绝拍脑袋报价与模糊预估。基于数理精算穿透非标供应链源头工坊底牌，建立“成本→内控→底限→报价”多轨动态防线，在激烈竞标中守住 30%~35% 的真实毛利。
+                            拒绝拍脑袋报价与模糊预估。基于数理精算穿透非标供应链源头工坊底牌，建立“成本→内控→底限→报价”多轨动态防线，在激烈竞标中守住合理的毛利安全边界。
                         </div>
                     </div>
                     <div>
@@ -285,7 +285,7 @@ def render_hero_frontispiece(mo, NAVY, BRONZE, BG_CREAM, BORDER_HAIR):
                     </div>
                     <div>
                         <div style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: {BRONZE}; background: #ffffff; padding: 5px 8px; border: 1px dashed rgba(138,104,57,0.3); border-radius: 2px; margin-bottom: 8px;">
-                            上市公司合规 · 206篇A级信披 · 12亿发债尽调
+                            上市公司合规 · 法定信息披露 · 公司债尽调
                         </div>
                         <a href="/monographs/marimo_board_and_gm.html" target="_blank" style="display: inline-block; font-size: 12px; font-weight: 700; color: {NAVY}; text-decoration: none;">
                             [ 查看专案 → ]
@@ -647,13 +647,13 @@ def assemble_master_application(
         <div style="padding: 12px 0;">
             <div style="background: {BG_CREAM}; border: 1px solid rgba(22,42,69,0.12); padding: 14px 18px; border-radius: 4px; margin-bottom: 16px;">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-                    <h3 style="margin: 0; color: {NAVY}; font-size: 18px;">🏢 深圳市广田云软装科技 135 份盖章合同 6.83 亿元大盘商业操盘</h3>
+                    <h3 style="margin: 0; color: {NAVY}; font-size: 18px;">🏢 深圳市广田云软装科技 · 供应链全周期商业统筹</h3>
                     <a href="/monographs/marimo_cloud_deco.html" target="_blank" style="font-size: 12.5px; font-weight: 700; color: {BRONZE}; text-decoration: none; border: 1px solid {BRONZE}; padding: 3px 10px; border-radius: 3px;">
                         打开独立全息研报 ↗
                     </a>
                 </div>
                 <div style="font-size: 13px; color: #475569; line-height: 1.6;">
-                    全资子公司从 0 到 1 组建奠基：组建 45 人编制、主笔 730 条制度总纲；统筹 135 份真实合同（签约 6.83 亿 / 审定 5.92 亿），在非标供应链复杂博弈中牢牢守住 30%~35% 的真实综合毛利率底线，攻坚遵义三大破亿工程、全国五星级酒店群与头部房企战采。
+                    全资子公司从 0 到 1 组建奠基：完成团队与制度建设；统筹百余份供货合同的履约，在非标供应链复杂博弈中守住合理的毛利安全边界，覆盖大型酒店、文旅与房企战采等项目类型。
                 </div>
             </div>
 
@@ -704,12 +704,12 @@ def assemble_master_application(
     # Tab 5: 历史商业专案底稿与审计归档 (手风琴)
     tab_archived = mo.accordion(
         {
-            "🗄️ ARCH-ZY-01: 遵义大酒店 · 五星级软装工程全周期商业操盘研报 (1.25亿暂定总价 / 审定9300万)": mo.md(
+            "🗄️ ARCH-ZY-01: 遵义大酒店 · 五星级软装工程全周期商业操盘研报（已脱敏）": mo.md(
                 """
                 - **商业模式**：遵义道桥建设集团发包，中建四局总包，深圳广田专业分包；
-                - **审定结果**：合同暂定金额 12,500.00 万元，最终结算审计审定 9,300.00 万元；
+                - **审定结果**：完成合同履约、结算审计与确权；
                 - **核心机制**：穿透珠三角源头工坊出厂成本，预留多级调价博弈弹性；签证留痕，结算审计据理力争，各节点款项按期安全回笼。
-                - 🔗 [查看独立 Marimo 反应式研报](/monographs/marimo_cloud_deco.html) | [查看原版静态研报档案 (HTML)](/monographs/遵义大酒店五星级软装工程全周期商业操盘研报.html)
+                - 🔗 [打开 Marimo 反应式研报](/monographs/marimo_cloud_deco.html)
                 """
             ),
             "🗄️ ARCH-HHG-02: 遵义红花岗综合体 · 政府大盘全生命周期商业研报 (3502.9万申报 / 2408.99万认价锁定)": mo.md(
@@ -717,7 +717,7 @@ def assemble_master_application(
                 - **商业统筹**：遵义红花岗区城投国资发包，中建四局总包，广田专业分包；
                 - **资金破局**：直面业主决策层化解千万元垫资风险，争取到 1,000 万元业主无息周转借款平账；
                 - **实物盘量**：激光实测据实核定 16,478 ㎡，穿透 390 行原子级 BOM 物料台账，完成 14,950 件(套) 物理实物开箱交付。
-                - 🔗 [查看独立 Marimo 反应式研报](/monographs/marimo_honghuagang.html) | [查看原版静态研报档案 (HTML)](/monographs/红花岗项目全生命周期深度商业研报.html)
+                - 🔗 [打开 Marimo 反应式研报](/monographs/marimo_honghuagang.html)
                 """
             ),
             "🗄️ ARCH-MT-03: 遵义湄潭温泉酒店 · 全生命周期数据洞察研报 (单方1537元/㎡ / 审计零坏账安全回笼)": mo.md(
@@ -725,7 +725,7 @@ def assemble_master_application(
                 - **项目承揽**：贵州茶旅一体化 AAAA 级景区核心配套，中建四局专业分包，签约 3,380.00 万元；
                 - **降本与回款**：样板房开模先行，52 套客房大货集采单件刚性降本超 36%；出厂货款覆盖率 144% 刚性回笼；
                 - **结算收口**：激光实测 17,241 ㎡，按包干综合单方 1,537 元/㎡ 据实核定，多轮严苛财评零坏账退出。
-                - 🔗 [查看独立 Marimo 反应式研报](/monographs/marimo_meitan.html) | [查看原版静态研报档案 (HTML)](/monographs/湄潭项目全生命周期数据洞察研报.html)
+                - 🔗 [打开 Marimo 反应式研报](/monographs/marimo_meitan.html)
                 """
             ),
             "🗄️ ARCH-HT-04: 上海华泰中心售楼处 · 五轮竞标商业操盘研报 (正式闭口价中标 / 零垫资风控)": mo.md(
@@ -733,7 +733,7 @@ def assemble_master_application(
                 - **竞标模式**：开发商正式招投标，五轮商务与方案博弈，闭口价 156.66 万元中标；
                 - **风控防线**：设立对等防守条款，款项到位为发货前提，实现全案零垫资出货与零纠纷交付；
                 - **战略战采**：同线斩获陆川九龙山庄 28 天极限抢工项目与中国奥园集团三大全国战略集采。
-                - 🔗 [查看独立 Marimo 反应式研报](/monographs/marimo_huatai.html) | [查看原版静态研报档案 (HTML)](/monographs/上海华泰中心售楼处全生命周期商业操盘研报.html)
+                - 🔗 [打开 Marimo 反应式研报](/monographs/marimo_huatai.html)
                 """
             ),
             "🗄️ ARCH-PROV-05: 专案数据与底稿穿透索引 (11.96 MB 历史原件总库)": mo.md(

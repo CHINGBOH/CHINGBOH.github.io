@@ -784,26 +784,26 @@ document.addEventListener("DOMContentLoaded", function() {
                     if (p.dataIndex === 0) desc = '道桥发包精装施工总承包母盘';
                     else if (p.dataIndex === 1) desc = '软装专业分包合同暂定签约额';
                     else if (p.dataIndex === 2) desc = '竣工结算审计审定金额';
-                    return `<strong>${p.name}</strong><br/>体量金额：<span style="font-weight:700;color:#162a45;">${p.value} 亿元</span><br/><span style="font-size:11.5px;color:#5e6670;">${desc}</span>`;
+                    return `<strong>${p.name}</strong><br/>相对量级：<span style="font-weight:700;color:#162a45;">${p.value}</span><br/><span style="font-size:11.5px;color:#5e6670;">${desc}</span>`;
                 }
             },
             grid: { left: '4%', right: '5%', top: '15%', bottom: '10%', containLabel: true },
             xAxis: {
                 type: 'category',
-                data: ['精装总包母合同\n(5.00亿暂定)', '软装专业分包\n(1.25亿暂定)', '最终审定确权\n(9,300万锁定)'],
+                data: ['精装总包协同', '软装专业分包', '最终审定确权'],
                 axisLine: { lineStyle: { color: '#111317', width: 1.5 } },
                 axisTick: { lineStyle: { color: '#111317' } },
                 axisLabel: { color: '#2c3238', fontSize: 11.5, fontFamily: '"Noto Serif SC", serif', lineHeight: 15 }
             },
             yAxis: {
                 type: 'value',
-                name: '金额 (亿元)',
+                name: '相对量级（已脱敏）',
                 splitLine: { lineStyle: { color: '#e6e3dc', type: 'dashed' } },
                 axisLabel: { color: '#2c3238', fontFamily: '"JetBrains Mono", serif' }
             },
             series: [{
                 type: 'bar',
-                data: [5.00, 1.25, 0.93],
+                data: [100, 30, 22],
                 barWidth: '40%',
                 itemStyle: {
                     color: function(params) {
@@ -820,7 +820,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     fontSize: 12,
                     fontFamily: '"JetBrains Mono", serif',
                     formatter: function(params) {
-                        const vals = ['5.00 亿元', '1.25 亿元', '9,300 万元'];
+                        const vals = ['总包协同', '专业分包', '已确权'];
                         return vals[params.dataIndex];
                     }
                 }
@@ -834,7 +834,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (chartSEl) {
         const chartShare = echarts.init(chartSEl);
         chartShare.setOption({
-            tooltip: { ...latexTooltip, trigger: 'item', formatter: '{b}: <strong>{c} 亿元</strong> ({d}%)' },
+            tooltip: { ...latexTooltip, trigger: 'item', formatter: '{b}: <strong>结构示意</strong>' },
             legend: {
                 orient: 'vertical',
                 right: '4%',
@@ -857,8 +857,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     fontWeight: 700
                 },
                 data: [
-                    { value: 1.25, name: '软装专业分包 (1.25亿)', itemStyle: { color: '#162a45' } },
-                    { value: 3.75, name: '硬装及机电施工 (3.75亿)', itemStyle: { color: '#cfcac0' } }
+                    { value: 30, name: '软装专业分包', itemStyle: { color: '#162a45' } },
+                    { value: 70, name: '硬装及机电施工', itemStyle: { color: '#cfcac0' } }
                 ]
             }]
         });
@@ -882,15 +882,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 nodeWidth: 16,
                 nodeGap: 24,
                 data: [
-                    { name: '遵义道桥支付工程款\n(6000万基准示例)', itemStyle: { color: '#111317' } },
+                    { name: '业主支付工程款', itemStyle: { color: '#111317' } },
                     { name: '广田集团母体收款', itemStyle: { color: '#8a6839' } },
-                    { name: '软装专业分包 25%\n(1500万 联动划拨)', itemStyle: { color: '#162a45' } },
-                    { name: '硬装施工及其他大盘 75%\n(4500万)', itemStyle: { color: '#cfcac0' } }
+                    { name: '软装专业分包\n（按约定比例联动）', itemStyle: { color: '#162a45' } },
+                    { name: '硬装施工及其他范围', itemStyle: { color: '#cfcac0' } }
                 ],
                 links: [
-                    { source: '遵义道桥支付工程款\n(6000万基准示例)', target: '广田集团母体收款', value: 6000 },
-                    { source: '广田集团母体收款', target: '软装专业分包 25%\n(1500万 联动划拨)', value: 1500 },
-                    { source: '广田集团母体收款', target: '硬装施工及其他大盘 75%\n(4500万)', value: 4500 }
+                    { source: '业主支付工程款', target: '广田集团母体收款', value: 100 },
+                    { source: '广田集团母体收款', target: '软装专业分包\n（按约定比例联动）', value: 30 },
+                    { source: '广田集团母体收款', target: '硬装施工及其他范围', value: 70 }
                 ],
                 lineStyle: { color: 'gradient', curveness: 0.5, opacity: 0.35 },
                 label: { color: '#111317', fontSize: 11.5, fontWeight: 600, fontFamily: '"Noto Serif SC", "EB Garamond", serif', lineHeight: 15 }

@@ -2,13 +2,11 @@
   "name": "chingboh-github-io",
   "version": "1.0.0",
   "private": true,
-  "description": "梁清波 · 个人履历与专业作品集 — Next.js 静态站点（GitHub Pages）",
+  "description": "梁清波 · Marimo / DuckDB 静态作品集与商业研报站",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "predeploy": "npm run build",
-    "data": "python3 scripts/build_monographs_yaml.py && python3 scripts/build_data.py"
+    "export:marimo": "python3 scripts/build_and_export_marimo_all.py",
+    "site": "python3 scripts/assemble_marimo_site.py --output site",
+    "verify:site": "python3 scripts/assemble_marimo_site.py --check"
   },
   "dependencies": {
     "next": "^14.2.15",
